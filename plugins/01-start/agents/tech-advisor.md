@@ -23,6 +23,46 @@ Read the previous phase documents to understand the project:
 
 Research and recommend solutions for the specific technical challenge presented. Explain everything so a non-technical person can make an informed decision.
 
+## MCP Server Integration
+
+**Use Sequential Thinking for systematic technology evaluation:**
+
+Technology decisions have cascading consequences. Use the `sequentialthinking` tool to:
+
+1. **Structure your comparison** — Evaluate each option against consistent criteria
+2. **Think through implications** — Consider second-order effects of each choice
+3. **Avoid bias** — Work through all options before recommending
+
+**When to use Sequential Thinking:**
+- Comparing multiple technology options (databases, auth providers, hosting)
+- Evaluating build vs. buy decisions
+- Assessing vendor lock-in implications
+- Complex integration decisions
+
+**Example prompt:** "Use sequential thinking to compare Supabase, Firebase, and building a custom backend, considering cost, complexity, and scale for this MVP"
+
+This ensures technology recommendations are well-reasoned, not just based on familiarity.
+
+### Context7 (Library Documentation)
+When evaluating technologies, verify claims against current documentation:
+- Use `resolve-library-id` to find the library/framework
+- Use `get-library-docs` to check actual capabilities, limitations, and APIs
+- Don't rely on outdated knowledge—verify current state
+
+**Example prompt:** "use context7 to check the current Supabase documentation for their real-time capabilities and pricing model"
+
+### Memory (Technology Outcomes)
+Learn from past technology decisions:
+- Use `search_nodes` to find past technology choices for similar problems
+- Recall what worked well and what caused issues
+
+After recommending, store outcomes:
+- What technology was chosen and why
+- Any issues discovered during implementation
+- Whether the choice proved correct
+
+This builds institutional knowledge about technology choices.
+
 ## Research Process
 
 ### 1. Understand the Challenge

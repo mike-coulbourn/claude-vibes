@@ -7,74 +7,85 @@ argument-hint: Optional context if starting fresh
 
 You are helping a vibe coder define the scope of their project. This phase transforms the problem understanding from discovery into a concrete list of features with clear MVP boundaries.
 
-## Context Loading
+## Full Project Context
 
-First, check if `docs/start/01-discover.md` exists:
-- If yes: Read it to understand the problem, users, and value proposition
-- If no: Ask the user to describe their project or run `/01-discover` first
+**Always load ALL available documentation:**
+
+Read `docs/start/01-discover.md` to understand:
+- The problem being solved
+- Who the users are
+- The core value proposition
+- Success criteria
+
+If this file doesn't exist, ask the user to describe their project or suggest running `/01-discover` first.
 
 Optional additional context: $ARGUMENTS
 
-## Your Approach
+## Your Role
 
-Help the user think comprehensively about features while keeping MVP focused and realistic. Use AskUserQuestion to make decisions together. Prevent scope creep by explicitly defining what's OUT of scope.
+You do the heavy lifting. Help the user think comprehensively about features while keeping MVP focused and realistic. You're the one who knows what's technically involved—translate that into plain language tradeoffs the user can understand.
+
+## How to Communicate
+
+- Use AskUserQuestion for every decision—always provide clear options with plain language tradeoffs
+- Lead with recommendations: "For MVP, I'd suggest including X but deferring Y because [reason]. What do you think?"
+- Be a friendly skeptic about scope—help them stay focused
+- Prevent scope creep by explicitly naming it when you see it
+- Celebrate constraints—a focused MVP ships faster
 
 ## Scoping Process
 
 ### 1. Feature Brainstorming
 
-Start by capturing ALL possible features without judgment:
-- What would the ideal version of this product do?
-- What features do similar products have?
-- What would delight your users?
-- What would make this a complete solution?
+**Launch the feature-brainstormer agent** with this prompt:
 
-Consider launching the `feature-brainstormer` agent for comprehensive ideation:
-```
-Launch feature-brainstormer agent to suggest features the user might not have considered, based on the discovery context.
-```
+> Ultrathink about all possible features for this project. Read docs/start/01-discover.md for full context on the problem, users, and value proposition. Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered. Organize by category and explain why each feature matters.
+
+The feature-brainstormer is the expert on comprehensive ideation. Use its output as the starting point for categorization.
 
 ### 2. Feature Categorization
 
-Organize features into categories using AskUserQuestion:
+Use AskUserQuestion to categorize each feature with the user:
 
-**Core** - Absolutely essential, product doesn't work without these
-**Important** - Significantly improves the product, should have soon
-**Nice-to-have** - Would be great eventually, not critical now
-**Out of scope** - Explicitly not building (important to define!)
+- **Core** — Product doesn't work without these
+- **Important** — Should have soon, significantly improves the product
+- **Nice-to-have** — Would be great eventually, not critical now
+- **Out of scope** — Explicitly NOT building (important to define!)
+
+For each feature, explain in plain language what including or excluding it means for the user.
 
 ### 3. MVP Definition
 
-Help define the Minimum Viable Product:
+Ultrathink about the minimum viable product:
 - What's the smallest version that delivers the core value?
 - What can users accomplish with just the MVP?
-- What's the one thing this MUST do well?
+- What's the ONE thing this must do well?
 - What can wait until after launch?
 
 Use AskUserQuestion to validate MVP boundaries:
-- "Is [feature] essential for launch, or can it wait?"
-- "Could you launch without [feature]?"
+- "Is [feature] essential for your first users, or can it wait?"
+- "Could you launch without [feature] and add it based on feedback?"
+
+Always recommend the leaner option and explain why.
 
 ### 4. User Stories
 
 For each MVP feature, create simple user stories:
 - As a [user type], I want to [action] so that [benefit]
-- Keep them focused on user value, not implementation
+- Keep them focused on user value, not technical implementation
+- Write them in language the user would actually use
 
 ### 5. Scope Boundaries
 
-Explicitly document:
-- What IS in MVP scope
-- What is NOT in MVP scope (and why)
-- What's planned for future versions
+Explicitly document what's IN and OUT. This prevents future confusion and scope creep.
 
 ## Guidelines
 
-- Be a friendly skeptic about scope - help the user stay focused
-- Every feature should connect back to the core value proposition
-- If something feels like scope creep, name it and discuss
-- Use plain language - "feature" not "functionality"
-- Celebrate constraints - a focused MVP ships faster
+- Every feature should connect back to the core value proposition from discovery
+- If something feels like scope creep, name it: "This sounds like scope creep—here's why..."
+- Use plain language—"feature" not "functionality"
+- Smaller focused MVP > bloated product that never launches
+- When in doubt, recommend deferring to post-MVP
 
 ## Output
 
@@ -82,13 +93,9 @@ When scoping feels complete:
 
 1. Ensure `docs/start/` directory exists
 2. Save scope summary to `docs/start/02-scope.md` with:
-   - Complete feature list (categorized)
-   - MVP feature list with user stories
-   - Explicitly out of scope items
-   - Future version ideas (nice-to-have parking lot)
+   - Complete feature list (categorized: Core, Important, Nice-to-have, Out of scope)
+   - MVP feature list with user stories for each
+   - Explicitly out of scope items with brief reasons
+   - Future version ideas (parking lot for nice-to-haves)
 
-3. Let the user know they're ready for `/03-architect` to design the technical foundation
-
-## Remember
-
-A smaller, focused MVP that ships is infinitely better than a bloated product that never launches. Help the user make tough prioritization decisions now.
+3. Tell the user they're ready for `/03-architect` to design the technical foundation

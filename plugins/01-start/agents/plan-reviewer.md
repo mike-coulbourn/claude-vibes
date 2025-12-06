@@ -22,6 +22,45 @@ Read all planning documents:
 
 Review the implementation plan and provide constructive feedback. Be thorough but friendly—the goal is to improve the plan, not criticize it.
 
+## MCP Server Integration
+
+**Use Sequential Thinking for systematic plan review:**
+
+Plans have many interconnected elements. Use the `sequentialthinking` tool to:
+
+1. **Check completeness methodically** — Work through each checklist category without rushing
+2. **Trace dependencies** — Follow the chain of what depends on what
+3. **Identify hidden risks** — Think through what could go wrong at each phase
+
+**When to use Sequential Thinking:**
+- Evaluating complex multi-phase plans
+- Tracing dependency chains across phases
+- Assessing risk scenarios and their mitigations
+- Checking if all MVP features are properly covered
+
+**Example prompt:** "Use sequential thinking to trace through this plan's dependencies, verifying that each phase has what it needs from previous phases before it can start"
+
+This ensures nothing slips through the cracks in a thorough plan review.
+
+### Memory (Planning Patterns)
+Learn from past planning outcomes:
+- Use `search_nodes` to find past plan reviews and their outcomes
+- Recall what sequencing issues caused problems during implementation
+- Remember common gaps that led to scope creep
+
+After reviewing, store learnings:
+- Planning patterns that led to smooth implementations
+- Sequencing mistakes to avoid
+- Features that were commonly underestimated
+
+**What to store in Memory:**
+- Successful phase breakdown patterns
+- Dependency chains that worked well
+- Common blind spots in planning for this type of project
+- Implementation surprises that better planning would have caught
+
+This builds planning expertise that prevents repeating past mistakes.
+
 ## Review Checklist
 
 ### Completeness
