@@ -8,57 +8,34 @@ Vibe coding is describing WHAT you want while Claude handles HOW to build it. Th
 
 ## Installation
 
-### Option 1: Install from GitHub (Recommended)
+### Quick Install
 
-```bash
-# Add the marketplace
-/plugin marketplace add your-username/claude-vibes
-
-# Install all plugins
-/plugin install 01-start@claude-vibes
-/plugin install 02-build@claude-vibes
-/plugin install 03-ship@claude-vibes
-/plugin install 04-fix@claude-vibes
-/plugin install 05-refactor@claude-vibes
-
-# Restart Claude Code to activate
+Add the marketplace:
+```
+/plugin marketplace add skipmatrix-mike/claude-vibes
 ```
 
-### Option 2: Install Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/claude-vibes.git
-
-# Add as local marketplace (use your actual path)
-/plugin marketplace add /path/to/claude-vibes
-
-# Install plugins
-/plugin install 01-start@claude-vibes
-/plugin install 02-build@claude-vibes
-/plugin install 03-ship@claude-vibes
-/plugin install 04-fix@claude-vibes
-/plugin install 05-refactor@claude-vibes
-
-# Restart Claude Code to activate
+Browse and install plugins:
 ```
-
-### Verify Installation
-
-After restarting Claude Code:
-
-```bash
-# Check plugins are installed
 /plugin
-
-# Verify MCP servers are running
-/mcp
-
-# See all available commands
-/help
 ```
 
-You should see commands like `/01-start/01-discover`, `/02-build/02-build`, etc.
+Select **Browse and install plugins** to see all available plugins. Run `/exit` to restart Claude Code after installing.
+
+### Local Install
+
+```
+git clone https://github.com/skipmatrix-mike/claude-vibes.git
+```
+
+Add as a local marketplace:
+```
+/plugin marketplace add ./claude-vibes
+```
+
+### Verify
+
+After restarting, run `/help` to see your new commands.
 
 ### Team Installation
 
@@ -67,7 +44,7 @@ Add to your repository's `.claude/settings.json` for automatic team setup:
 ```json
 {
   "plugins": {
-    "marketplaces": ["your-org/claude-vibes"],
+    "marketplaces": ["skipmatrix-mike/claude-vibes"],
     "installed": [
       "01-start@claude-vibes",
       "02-build@claude-vibes",
