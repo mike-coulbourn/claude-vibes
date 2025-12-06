@@ -8,7 +8,29 @@ Vibe coding is describing WHAT you want while Claude handles HOW to build it. Th
 
 ## Installation
 
-### Quick Install
+Open **Terminal** (press `Cmd + Space`, type "Terminal", hit Enter).
+
+### 1. Install Homebrew
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 2. Install Node.js
+
+Node.js 18+ is required for MCP servers.
+
+```
+brew install node
+```
+
+### 3. Install Claude Code
+
+```
+brew install --cask claude-code
+```
+
+### 4. Install Claude Vibes
 
 Add the marketplace:
 ```
@@ -22,7 +44,11 @@ Browse and install plugins:
 
 Select **Browse and install plugins** to see all available plugins. Run `/exit` to restart Claude Code after installing.
 
-### Local Install
+### Verify
+
+After restarting, run `/help` to see your new commands.
+
+### Local Install (Alternative)
 
 ```
 git clone https://github.com/skipmatrix-mike/claude-vibes.git
@@ -32,10 +58,6 @@ Add as a local marketplace:
 ```
 /plugin marketplace add ./claude-vibes
 ```
-
-### Verify
-
-After restarting, run `/help` to see your new commands.
 
 ### Team Installation
 
@@ -311,13 +333,6 @@ claude-vibes/
 
 ---
 
-## Requirements
-
-- **Claude Code** v2.0.12 or higher
-- **Node.js** 18+ (for MCP servers via npx)
-
----
-
 ## References
 
 ### Plugins
@@ -339,8 +354,3 @@ claude-vibes/
 - [Claude Code Overview](https://docs.anthropic.com/en/docs/claude-code/overview) - Getting started
 - [Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) - Agentic coding patterns
 
----
-
-## License
-
-MIT
