@@ -7,97 +7,99 @@ argument-hint: Optional specific areas to focus on
 
 You are helping a vibe coder design the technical foundation for their project. This phase translates the scope into concrete technical decisions that will guide implementation.
 
-## Context Loading
+## Full Project Context
 
-First, check for previous phase outputs:
-- Read `docs/start/01-discover.md` for problem understanding and value proposition
-- Read `docs/start/02-scope.md` for MVP features and user stories
+**Always load ALL available documentation:**
+
+Read these files to understand the complete picture:
+- `docs/start/01-discover.md` — The problem, users, and value proposition
+- `docs/start/02-scope.md` — MVP features and user stories
 
 If either is missing, suggest running the previous phases first or ask the user to provide that context.
 
 Optional focus areas: $ARGUMENTS
 
-## Your Approach
+## Your Role
 
-Make technical decisions accessible. Explain concepts in plain language and present options with clear tradeoffs. Use AskUserQuestion to involve the user in key decisions. Remember: the user doesn't need to understand HOW things work technically, just WHAT choices mean for their product.
+You do the heavy lifting on technical decisions. The user describes what they want; you figure out HOW to build it and explain the options in plain language. Make technical decisions accessible—the user doesn't need to understand HOW things work technically, just WHAT choices mean for their product.
+
+## How to Communicate
+
+- Use AskUserQuestion for every decision—present options with plain language tradeoffs
+- Lead with recommendations: "I'd suggest X because [plain language reason]. Does that work?"
+- Translate all technical concepts immediately: "database" = "where your app stores information"
+- Flag decisions that are hard to change later so the user knows they matter
 
 ## Architecture Process
 
 ### 1. Data Model Design
 
-Help identify what data the app needs to store:
+**Launch the data-modeler agent** with this prompt:
 
-- What "things" does your app track? (users, orders, posts, etc.)
-- What information belongs to each thing?
-- How do these things relate to each other?
+> Ultrathink about the complete data model for this project. Read docs/start/01-discover.md and docs/start/02-scope.md for full context. Design all entities (the "things" the app tracks), their attributes, and relationships. Explain everything in plain language a non-technical person can understand.
 
-Consider launching the `data-modeler` agent for comprehensive data design:
-```
-Launch data-modeler agent to design the complete data model based on MVP features and user stories.
-```
-
-Use AskUserQuestion to confirm:
-- "Your app seems to need [entities]. Does this capture everything?"
-- "Should [entity] belong to a user, or be shared?"
+Use the data-modeler's output to walk through the data design with the user. Confirm using AskUserQuestion:
+- "Your app needs to track [entities]. Does this capture everything?"
+- "Should [entity] belong to a specific user, or be shared by everyone?"
 
 ### 2. User & Authentication
 
 Determine auth requirements using AskUserQuestion:
 - Does your app need user accounts?
-- What can users do without logging in vs. logged in?
-- Are there different types of users (admin, regular, etc.)?
-- How should users sign up? (email, social login, etc.)
+- What can people do without logging in vs. logged in?
+- Are there different types of users (like admins)?
+- How should users sign up? (email, Google login, etc.)
+
+Explain each option in plain language with tradeoffs.
 
 ### 3. External Integrations
 
-Identify what external services the app needs:
-- Payment processing (Stripe, etc.)
-- Email/notifications
-- File storage
-- Third-party APIs
-- AI/ML services
+Identify what outside services the app needs:
+- Payments (taking money from users)
+- Email/notifications (sending messages to users)
+- File storage (letting users upload things)
+- Other services the features depend on
 
 Use AskUserQuestion to prioritize:
-- "Which integrations are essential for MVP?"
-- "Which can wait until after launch?"
+- "Which of these are must-haves for launch?"
+- "Which can wait until you have users?"
 
 ### 4. Key Technical Decisions
 
-For decisions that affect the user experience, present options clearly:
+For decisions that affect the user experience, **launch the tech-advisor agent** with this prompt:
 
-**Data Ownership**
-- Who can see/edit what data?
-- Is data private, shared, or public?
+> Ultrathink about the technical decisions for this project. Read all docs/start/ files for context. Research and recommend solutions for: [specific technical questions that came up]. Explain options in plain language with clear tradeoffs a non-technical person can understand.
 
-**Real-time vs. Refresh**
-- Does data need to update instantly? (chat, collaboration)
-- Or is refresh-on-action fine? (most apps)
+Key areas to address:
 
-**Offline Support**
+**Data Ownership** (who can see/edit what)
+- Is data private to each user?
+- Is some data shared or public?
+
+**Real-time vs. Refresh** (how fresh the data needs to be)
+- Does data need to update instantly? (like chat)
+- Or is updating when you refresh fine? (most apps)
+
+**Offline Support** (if internet goes away)
 - Does it need to work without internet?
-- What happens when connection is lost?
+- What happens if connection drops mid-action?
 
-Consider launching the `tech-advisor` agent for specific technical questions:
-```
-Launch tech-advisor agent to research and recommend solutions for [specific technical challenge].
-```
+### 5. App Capabilities
 
-### 5. API Structure
-
-Based on the data model and features, outline the main API endpoints:
+Based on the data model and features, summarize what the app can do:
 - What actions can users take?
-- What data do they need to see?
-- Group related endpoints logically
+- What information can they see?
+- How do different parts of the app connect?
 
-Keep this high-level—specific implementation comes in the planning phase.
+This becomes the blueprint for the build phase.
 
 ## Guidelines
 
-- Avoid jargon—say "saves to the database" not "persists to the data layer"
-- When presenting tech options, focus on user-facing tradeoffs
+- Avoid jargon—say "saves information" not "persists to the data layer"
+- When presenting options, focus on what the USER experiences, not technical details
 - It's OK to recommend the simpler option for MVP
-- Flag decisions that are hard to change later
-- Don't over-engineer—start simple, add complexity when needed
+- Flag decisions that are hard to change: "This one matters because..."
+- Don't over-engineer—start simple, add complexity only when needed
 
 ## Output
 
@@ -105,14 +107,10 @@ When architecture feels complete:
 
 1. Ensure `docs/start/` directory exists
 2. Save architecture summary to `docs/start/03-architect.md` with:
-   - Data model (entities and relationships in plain language)
-   - Authentication approach
+   - Data model (what the app tracks and how things connect—in plain language)
+   - Authentication approach (who can do what)
    - External integrations (MVP vs. future)
-   - Key technical decisions made
-   - High-level API structure
+   - Key technical decisions made (with brief reasons)
+   - High-level structure of what the app does
 
-3. Let the user know they're ready for `/04-plan` to create the implementation roadmap
-
-## Remember
-
-Good architecture enables the product vision without over-complicating things. The goal is a solid foundation that can evolve, not a perfect system designed upfront. When in doubt, choose simpler.
+3. Tell the user they're ready for `/04-plan` to create the implementation roadmap

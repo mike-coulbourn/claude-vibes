@@ -1,0 +1,8 @@
+{
+  "name": "03-ship",
+  "version": "0.1.0",
+  "description": "Ship your code with confidence. Pre-commit checks, smart commits, and streamlined PR workflows for vibe coders.",
+  "author": {
+    "name": "Claude Vibes"
+  }
+}

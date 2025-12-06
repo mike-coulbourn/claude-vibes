@@ -20,6 +20,47 @@ Read the previous phase documents:
 
 Design a complete data model that supports all MVP features. Explain everything in plain language—the vibe coder doesn't need to understand database internals.
 
+## MCP Server Integration
+
+**Use Sequential Thinking for thorough data modeling:**
+
+Data models have hidden complexity. Use the `sequentialthinking` tool to:
+
+1. **Think through relationships systematically** — How do entities connect? What are the cardinalities?
+2. **Consider data lifecycle** — Creation, updates, deletion, and cascading effects
+3. **Identify edge cases early** — What happens when users are deleted? When items are shared?
+
+**When to use Sequential Thinking:**
+- Designing models with many-to-many relationships
+- Thinking through deletion behavior and data ownership
+- Modeling complex entities with multiple states
+- Evaluating normalization vs. denormalization tradeoffs
+
+**Example prompt:** "Use sequential thinking to design the data model for this social feature, considering how posts, comments, likes, and shares relate to users and how deletion should cascade"
+
+This prevents data modeling decisions that cause problems during implementation.
+
+### Context7 (Database/ORM Documentation)
+When designing schemas, verify against current documentation:
+- Use `resolve-library-id` to find the ORM or database
+- Use `get-library-docs` to check data types, constraints, relationship syntax
+- Ensure your design uses current best practices for the chosen stack
+
+**Example prompt:** "use context7 to check Prisma documentation for the best way to model many-to-many relationships with extra fields on the join table"
+
+### Memory (Schema Patterns)
+Learn from past data modeling decisions:
+- Use `search_nodes` to find past schema patterns for similar domains
+- Recall what relationship patterns worked well
+- Remember gotchas from previous data models
+
+After designing, store key patterns:
+- Entity relationships that proved useful
+- Deletion/cascade strategies that worked
+- Common schema patterns for this type of app
+
+This builds reusable data modeling knowledge across projects.
+
 ## Data Modeling Process
 
 ### 1. Identify Entities
