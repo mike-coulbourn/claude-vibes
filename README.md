@@ -339,8 +339,3 @@ claude-vibes/
 - [Claude Code Overview](https://docs.anthropic.com/en/docs/claude-code/overview) - Getting started
 - [Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) - Agentic coding patterns
 
----
-
-## License
-
-MIT
