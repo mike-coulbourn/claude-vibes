@@ -30,19 +30,33 @@ brew install node
 brew install --cask claude-code
 ```
 
-### 4. Install Claude Vibes
+### 4. Start Claude Code
 
-Add the marketplace:
+Navigate to your project folder and start a session:
 ```
-/plugin marketplace add skipmatrix-mike/claude-vibes
-```
-
-Browse and install plugins:
-```
-/plugin
+claude
 ```
 
-Select **Browse and install plugins** to see all available plugins. Run `/exit` to restart Claude Code after installing.
+### 5. Install Claude Vibes
+
+Install all plugins:
+```bash
+npx claude-plugins install @mike-coulbourn/claude-vibes/01-start && \
+npx claude-plugins install @mike-coulbourn/claude-vibes/02-build && \
+npx claude-plugins install @mike-coulbourn/claude-vibes/03-ship && \
+npx claude-plugins install @mike-coulbourn/claude-vibes/04-fix && \
+npx claude-plugins install @mike-coulbourn/claude-vibes/05-refactor
+```
+
+### 6. Add Marketplace (for updates)
+
+Start Claude Code and add the marketplace to receive future updates:
+```
+claude
+```
+```
+/plugin marketplace add mike-coulbourn/claude-vibes
+```
 
 ### Verify
 
@@ -51,7 +65,7 @@ After restarting, run `/help` to see your new commands.
 ### Local Install (Alternative)
 
 ```
-git clone https://github.com/skipmatrix-mike/claude-vibes.git
+git clone https://github.com/mike-coulbourn/claude-vibes.git
 ```
 
 Add as a local marketplace:
@@ -66,7 +80,7 @@ Add to your repository's `.claude/settings.json` for automatic team setup:
 ```json
 {
   "plugins": {
-    "marketplaces": ["skipmatrix-mike/claude-vibes"],
+    "marketplaces": ["mike-coulbourn/claude-vibes"],
     "installed": [
       "01-start@claude-vibes",
       "02-build@claude-vibes",
