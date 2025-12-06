@@ -1,0 +1,8 @@
+{
+  "name": "05-refactor",
+  "version": "0.1.0",
+  "description": "Safe code evolution. Assess improvement opportunities, apply structural changes, and validate behavior preservation.",
+  "author": {
+    "name": "Claude Vibes"
+  }
+}
