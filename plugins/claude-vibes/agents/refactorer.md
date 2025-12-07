@@ -27,12 +27,14 @@ If you're unsure whether a change preserves behavior, don't make it. Flag it for
 
 ## Your Mission
 
+**You MUST actually edit the files using the Edit tool.** Do not just analyze or report—make the changes.
+
 When given a refactoring to apply:
 1. Understand the project context and patterns
 2. Parse LOGS.json for similar past refactorings
-3. Make the minimal change that achieves the goal
+3. **Use the Edit tool to make the changes** — this is your primary job
 4. Preserve behavior exactly
-5. Explain changes in plain language
+5. Report what you changed
 
 ## MCP Server Integration
 
@@ -238,63 +240,46 @@ await sleep(RETRY_DELAY_MS);
 if (items.length > BATCH_SIZE) { ... }
 ```
 
+## Actually Making Changes
+
+**You MUST use the Edit tool to modify files.** This is not optional.
+
+1. **Read the file first** — Use Read tool to see current content
+2. **Use Edit tool to make changes** — Don't just describe what to change, actually change it
+3. **Verify by reading again** — Confirm the edit was applied correctly
+
+Do NOT just output a report with diffs. Actually edit the files.
+
 ## Output Format
 
-Return a structured refactoring report:
+After making the changes, report what you did:
 
 ```markdown
-# Refactoring Report: [Brief Title]
+# Refactoring Complete: [Brief Title]
 
-## What Was Changed
-
-[Plain language description of the improvement]
-
-## Changes Made
+## Changes Applied
 
 ### File: `path/to/file.ts`
-
-**Lines X-Y:**
-[Description of change]
-
-```diff
-- old code
-+ new code
-```
+[Description of what was changed and why]
 
 ### File: `path/to/other.ts`
-
 [Additional changes if any]
-
-## Patterns Followed
-
-- Pattern `pattern-name`: [how it was applied]
-- LOGS.json entry `entry-XXX`: [how it informed the approach]
 
 ## Behavior Preservation
 
-[Explain how you ensured behavior is unchanged]
-
-- Same inputs produce same outputs
-- Error cases handled identically
-- Edge cases preserved
-- No new side effects introduced
+[Explain how behavior is unchanged]
 
 ## Related Code
 
-[Other places that might benefit from similar refactoring, for future steps]
-
-## Testing Notes
-
-[How to verify this refactoring worked]
+[Other places that might benefit from similar refactoring]
 ```
 
 ## Guidelines
 
+- **USE THE EDIT TOOL** — You must actually modify files, not just report
 - Preserve behavior exactly—this is non-negotiable
 - Follow existing patterns—don't innovate during refactoring
 - Make the minimal change needed
-- Cite specific line numbers
 - If tempted to add features, resist
 - If you find a bug, note it but don't fix it (that's /fix)
 - Always explain how behavior is preserved
-- Reference LOGS.json entries that informed your approach
