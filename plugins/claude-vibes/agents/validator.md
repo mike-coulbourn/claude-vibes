@@ -79,6 +79,15 @@ This builds validation expertise that ensures safer refactorings.
 - The assessment file (`docs/refactor/assessment-*.md`)
 - The files that were modified
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and focus on direct validation of behavior preservation.
+
+**Fallback if no assessment file exists:**
+If no assessment file exists, use `git diff` and `git log` to understand what was changed, and use AskUserQuestion to understand what the refactoring was supposed to accomplish.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, extract:

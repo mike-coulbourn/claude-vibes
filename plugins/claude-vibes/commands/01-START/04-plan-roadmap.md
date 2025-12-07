@@ -16,7 +16,13 @@ Read all planning docs to understand the complete picture:
 - `docs/start/02-scope.md` — MVP features and user stories
 - `docs/start/03-architect.md` — Technical foundation and decisions
 
-If any are missing, suggest running the previous phases first.
+**Fallback if these files don't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), use AskUserQuestion to gather the necessary context:
+- What is the project about and who are the users?
+- What features need to be built (MVP scope)?
+- What technical decisions have already been made?
+
+Then proceed with roadmap planning based on the user's answers.
 
 Optional constraints: $ARGUMENTS
 

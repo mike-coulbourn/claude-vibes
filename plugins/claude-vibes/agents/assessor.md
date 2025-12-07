@@ -78,6 +78,12 @@ This builds pattern recognition that compounds across assessments.
 - `LOGS.json` for past refactorings, patterns, and lessons
 - The specific files or areas to assess
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and coding standards.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and identify patterns, conventions, and refactoring opportunities directly from the existing codebase.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, look specifically for:

@@ -18,6 +18,9 @@ Read the discovery document at `docs/start/01-discover.md` to understand:
 - The core value proposition
 - Success criteria
 
+**Fallback if docs/start/01-discover.md doesn't exist:**
+If this file doesn't exist (common when using claude-vibes on an existing project or starting fresh), brainstorm features based on information provided in the prompt. Use AskUserQuestion to gather context about the problem, users, and value proposition before brainstorming.
+
 ## MCP Server Integration
 
 ### Sequential Thinking (Systematic Ideation)

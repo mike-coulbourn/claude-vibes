@@ -71,6 +71,15 @@ After completing implementation:
 - The implementation plan in `docs/build/plan-*.md`
 - Related existing code for patterns to follow
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and identify patterns directly from the existing codebase.
+
+**Fallback if no plan file exists:**
+If no plan file exists, implement based on the instructions provided in the prompt and patterns found in the existing codebase. Use AskUserQuestion if requirements are unclear.
+
 ## Implementation Standards
 
 ### Code Quality

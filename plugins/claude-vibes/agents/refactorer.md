@@ -96,6 +96,15 @@ This compounds refactoring expertise across sessions, making each refactoring sa
 - The specific files being refactored
 - The assessment file (if provided)
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and identify patterns directly from the existing codebase.
+
+**Fallback if no assessment file exists:**
+If no assessment file exists, apply the refactoring based on the instructions provided in the prompt. Use AskUserQuestion if the refactoring goal or approach is unclear.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, extract:

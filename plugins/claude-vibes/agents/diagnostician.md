@@ -69,6 +69,12 @@ This builds debugging expertise that compounds across sessions.
 - `LOGS.json` for past fixes and known issues
 - Any error logs, stack traces, or output the user provides
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and how components interact.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and investigate the issue through direct codebase exploration.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, look specifically for:

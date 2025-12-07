@@ -78,6 +78,15 @@ This ensures thorough reviews that don't miss critical issues.
 - `LOGS.json` for established patterns and standards
 - The implementation plan (to verify it was followed)
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and identify patterns and standards directly from the existing codebase.
+
+**Fallback if no plan file exists:**
+If no plan file exists, review the code based on general best practices and patterns observed in the existing codebase. Use AskUserQuestion to understand what the code was supposed to accomplish.
+
 ## Review Categories
 
 ### Security (BLOCKING if issues found)

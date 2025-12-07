@@ -19,6 +19,9 @@ You orchestrate the implementation and manage the conversation. The code-guru ag
 - `docs/start/` files — Project understanding
 - The plan file specified above
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
 ## How to Communicate
 
 - Show what you're building as you go: "Now implementing the data layer..."
@@ -43,10 +46,11 @@ For each implementation chunk, **launch the code-guru agent** with this prompt:
 >
 > **Read the implementation plan:** [plan file path]
 >
-> **Parse LOGS.json for relevant context:**
+> **Parse LOGS.json for relevant context (if it exists):**
 > - Find established patterns in the `patterns` object
 > - Look for entries matching this feature's `area` or `tags`
 > - Extract lessons from past implementations
+> - If LOGS.json doesn't exist, skip this and focus on codebase exploration
 >
 > **Implement production-grade code:**
 > - Follow the plan exactly

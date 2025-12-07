@@ -19,6 +19,9 @@ Read the previous phase documents to understand the project:
 - `docs/start/02-scope.md` - MVP features
 - `docs/start/03-architect.md` - Architecture decisions (if exists)
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), research and recommend based on information provided in the prompt. Use AskUserQuestion to gather context about the project's requirements, constraints, and preferences before making recommendations.
+
 ## Your Task
 
 Research and recommend solutions for the specific technical challenge presented. Explain everything so a non-technical person can make an informed decision.

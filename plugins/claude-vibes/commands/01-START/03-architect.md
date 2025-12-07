@@ -15,7 +15,14 @@ Read these files to understand the complete picture:
 - `docs/start/01-discover.md` — The problem, users, and value proposition
 - `docs/start/02-scope.md` — MVP features and user stories
 
-If either is missing, suggest running the previous phases first or ask the user to provide that context.
+**Fallback if these files don't exist:**
+If these files don't exist (common when using claude-vibes on an existing project or starting fresh), use AskUserQuestion to gather the necessary context:
+- What problem is this project solving?
+- Who are the target users?
+- What are the core features you want to build?
+- What technical constraints or preferences do you have?
+
+Then proceed with architecture design based on the user's answers.
 
 Optional focus areas: $ARGUMENTS
 

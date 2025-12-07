@@ -21,6 +21,12 @@ You orchestrate the verification and manage the conversation. The verifier agent
 
 These are stable documentation—always load them. The verifier agent will parse LOGS.json and report back specific relevant entries.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if no diagnosis file exists:**
+If no diagnosis file exists, use `git diff` and `git log` to understand what was changed, and use AskUserQuestion to understand what the fix was supposed to accomplish.
+
 ## How to Communicate
 
 - Be clear about what passed and what failed
@@ -54,10 +60,11 @@ Otherwise, find the recent fix:
 > **What was fixed:** [from diagnosis file]
 > **Files changed:** [from git diff or diagnosis]
 >
-> **Parse LOGS.json for context:**
+> **Parse LOGS.json for context (if it exists):**
 > - Find related past fixes to inform testing
 > - Identify patterns that should be verified
 > - Check for areas that commonly regress
+> - If LOGS.json doesn't exist, skip this and focus on direct verification
 >
 > **Verify thoroughly:**
 > - Test the specific issue that was fixed (does it work now?)

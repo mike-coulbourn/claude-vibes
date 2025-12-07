@@ -72,6 +72,15 @@ This ensures the same type of bug doesn't recur across sessions.
 - The diagnosis file (if provided)
 - The specific files that need fixing
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and identify patterns directly from the existing codebase.
+
+**Fallback if no diagnosis file exists:**
+If no diagnosis file exists, implement the fix based on the instructions provided in the prompt and your understanding of the issue. Use AskUserQuestion if the root cause or fix approach is unclear.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, extract:

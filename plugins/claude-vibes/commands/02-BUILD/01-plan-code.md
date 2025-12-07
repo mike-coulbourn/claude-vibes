@@ -23,6 +23,9 @@ You orchestrate the planning process and manage the conversation. The code-archi
 
 These are stable project documentation—always load them.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's purpose, users, and architecture before proceeding.
+
 ## How to Communicate
 
 - **Use AskUserQuestion FIRST** to clarify requirements—don't assume you understand
@@ -60,10 +63,11 @@ Only proceed to code exploration after the user confirms your understanding.
 
 > Ultrathink about implementing [feature/task].
 >
-> **Parse LOGS.json for relevant history:**
+> **Parse LOGS.json for relevant history (if it exists):**
 > - Find entries with matching `area` or `tags`
 > - Identify established patterns in the `patterns` object
 > - Extract relevant past decisions
+> - If LOGS.json doesn't exist, skip this and focus on codebase exploration
 >
 > **Explore the codebase:**
 > - Find similar existing code and patterns to follow

@@ -21,6 +21,9 @@ You orchestrate the investigation and manage the conversation. The diagnostician
 
 These are stable project documentation—always load them.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and how components interact.
+
 ## How to Communicate
 
 - Explain technical errors in plain language
@@ -51,10 +54,11 @@ Get enough detail to begin investigation.
 >
 > **Symptom:** [describe what's wrong based on user input]
 >
-> **Parse LOGS.json for relevant history:**
+> **Parse LOGS.json for relevant history (if it exists):**
 > - Find past fixes in the same `area` or with similar `tags`
 > - Look for patterns in previous `rootCause` entries
 > - Check if this symptom has occurred before
+> - If LOGS.json doesn't exist, skip this and focus on direct codebase investigation
 >
 > **Investigate thoroughly:**
 > - Trace error messages to their source

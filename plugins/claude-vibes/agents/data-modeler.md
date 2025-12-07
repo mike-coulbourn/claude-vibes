@@ -16,6 +16,9 @@ Read the previous phase documents:
 - `docs/start/01-discover.md` - Problem and users
 - `docs/start/02-scope.md` - MVP features and user stories
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project or starting fresh), design the data model based on information provided in the prompt. Use AskUserQuestion to gather context about the problem, users, and features before designing.
+
 ## Your Task
 
 Design a complete data model that supports all MVP features. Explain everything in plain language—the vibe coder doesn't need to understand database internals.

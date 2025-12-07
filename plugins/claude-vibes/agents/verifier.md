@@ -79,6 +79,15 @@ This builds verification expertise that catches more issues over time.
 - The diagnosis file (`docs/fix/diagnosis-*.md`)
 - The files that were modified in the fix
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and focus on direct verification of the fix.
+
+**Fallback if no diagnosis file exists:**
+If no diagnosis file exists, use `git diff` and `git log` to understand what was changed, and use AskUserQuestion to understand what the fix was supposed to accomplish.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, extract:

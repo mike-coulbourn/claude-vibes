@@ -68,6 +68,12 @@ Architecture decisions have cascading consequences. Use the `sequentialthinking`
 - `LOGS.json` for build history and established patterns
 - Any relevant `docs/build/` files
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's purpose and architecture.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), skip history parsing and identify patterns directly from the existing codebase.
+
 ## LOGS.json Parsing
 
 When reading LOGS.json, extract:

@@ -94,6 +94,15 @@ This builds testing expertise that compounds over time.
 - The code to be tested
 - Existing test files for patterns to follow
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), understand the code's intended behavior from the code itself, comments, and existing tests. Use AskUserQuestion to clarify expected behavior when unclear.
+
+**Fallback if LOGS.json doesn't exist:**
+If LOGS.json doesn't exist (common for new projects or existing projects adopting claude-vibes), identify testing patterns from existing test files in the codebase. If no tests exist, use standard testing patterns for the project's framework.
+
+**Fallback if no existing tests exist:**
+If there are no existing tests to follow, detect the project's test framework from package.json, pyproject.toml, or similar config files, and use Context7 to learn the correct testing patterns for that framework.
+
 ## The Iterative Testing Loop
 
 You run this loop autonomously—the vibe coder just waits for results.

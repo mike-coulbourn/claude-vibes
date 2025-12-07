@@ -21,6 +21,12 @@ You orchestrate the review and manage the conversation. The code-reviewer agent 
 
 These are stable documentation—always load them. The code-reviewer agent will parse LOGS.json and report back specific relevant entries.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if no plan file exists:**
+If no plan file exists, review all uncommitted changes or recent commits. Use AskUserQuestion to understand what was supposed to be built.
+
 ## How to Communicate
 
 - Be specific about issues: file, line, what's wrong, how to fix
@@ -51,10 +57,11 @@ Otherwise, find recent work:
 
 > Ultrathink about reviewing this code for production readiness.
 >
-> **Parse LOGS.json for context:**
+> **Parse LOGS.json for context (if it exists):**
 > - Find established patterns to compare against
 > - Look for conventions in the `patterns` object
 > - Check for related previous implementations
+> - If LOGS.json doesn't exist, skip this and identify patterns from the existing codebase
 >
 > **Review the code thoroughly for:**
 > - Security vulnerabilities

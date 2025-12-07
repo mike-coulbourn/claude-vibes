@@ -18,6 +18,9 @@ Read all planning documents:
 - `docs/start/03-architect.md` - Technical foundation
 - `docs/start/04-plan-roadmap.md` - Implementation plan (if exists, or draft provided)
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), review the plan based on information provided in the prompt. Use AskUserQuestion to gather context about the project's goals, scope, and constraints before reviewing.
+
 ## Your Task
 
 Review the implementation plan and provide constructive feedback. Be thorough but friendly—the goal is to improve the plan, not criticize it.

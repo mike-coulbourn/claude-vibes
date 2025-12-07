@@ -31,6 +31,12 @@ This means:
 
 These are stable documentation—always load them. The refactorer agent will parse LOGS.json and report back specific relevant entries.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if no assessment file exists:**
+If no assessment file exists, use AskUserQuestion to understand what improvements the user wants to make, or suggest running `/01-assess-improvements` first for a comprehensive analysis.
+
 ## How to Communicate
 
 - Explain each change in plain language before making it
@@ -92,10 +98,11 @@ Use AskUserQuestion if the approach isn't clear.
 > **Files:** [files to modify]
 > **Expected outcome:** [what should be different]
 >
-> **Parse LOGS.json for relevant patterns:**
+> **Parse LOGS.json for relevant patterns (if it exists):**
 > - Find how similar refactorings were done before
 > - Identify project patterns to follow
 > - Check for related code that might be affected
+> - If LOGS.json doesn't exist, skip this and identify patterns from the existing codebase
 >
 > **Apply the refactoring:**
 > - Preserve existing behavior exactly

@@ -21,6 +21,12 @@ You orchestrate the validation and manage the conversation. The validator agent 
 
 These are stable documentation—always load them. The validator agent will parse LOGS.json and report back specific relevant entries.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if no assessment file exists:**
+If no assessment file exists, use `git diff` and `git log` to understand what was changed, and use AskUserQuestion to understand what the refactoring was supposed to accomplish.
+
 ## How to Communicate
 
 - Be clear about what passed and what failed
@@ -54,10 +60,11 @@ Otherwise, find the recent refactoring:
 > **What was refactored:** [from assessment or git diff]
 > **Expected behavior:** Same as before—no functional changes
 >
-> **Parse LOGS.json for context:**
+> **Parse LOGS.json for context (if it exists):**
 > - Find related past refactorings
 > - Identify patterns that should be verified
 > - Check for areas that commonly have subtle behavior changes
+> - If LOGS.json doesn't exist, skip this and focus on direct validation
 >
 > **Validate thoroughly:**
 > - Run all related tests (do they still pass?)

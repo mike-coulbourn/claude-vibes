@@ -21,6 +21,12 @@ You orchestrate the fix implementation and manage the conversation. The fixer ag
 
 These are stable project documentation—always load them.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
+
+**Fallback if no diagnosis file exists:**
+If no diagnosis file exists and no direct issue description is provided, use AskUserQuestion to understand what needs to be fixed, or suggest running `/01-diagnose-issue` first for a thorough investigation.
+
 ## How to Communicate
 
 - Explain what you're changing and why in plain language
@@ -58,10 +64,11 @@ If anything is unclear, use AskUserQuestion to clarify.
 > **Affected files:** [list from diagnosis]
 > **Proposed approach:** [from diagnosis or user description]
 >
-> **Parse LOGS.json for relevant patterns:**
+> **Parse LOGS.json for relevant patterns (if it exists):**
 > - Find how similar issues were fixed before
 > - Identify project patterns to follow
 > - Check for related code that might be affected
+> - If LOGS.json doesn't exist, skip this and identify patterns from the existing codebase
 >
 > **Implement a minimal, targeted fix:**
 > - Change only what's necessary

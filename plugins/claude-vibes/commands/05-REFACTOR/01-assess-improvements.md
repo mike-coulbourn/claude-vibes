@@ -20,6 +20,9 @@ You orchestrate the assessment and manage the conversation. The assessor agent h
 
 These are stable project documentation—always load them. The assessor agent will parse LOGS.json and report back specific relevant entries.
 
+**Fallback if docs/start/ doesn't exist:**
+If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and coding conventions.
+
 ## How to Communicate
 
 - Explain findings in plain language (no jargon without definition)
