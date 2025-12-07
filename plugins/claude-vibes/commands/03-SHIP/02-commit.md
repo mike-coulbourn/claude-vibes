@@ -27,20 +27,12 @@ Look for `LOGS.json` in the project root or `docs/` directory. Use recent entrie
 
 ## Commit Process
 
-### 1. Check Current State
+### 1. Check for Changes
 
-Run `git status` to understand:
-- What changes exist (staged and unstaged)?
-- What branch are we on?
+Run `git status` to see what's ready to commit.
 
 **If nothing to commit:**
 "No changes to commit. Your working directory is clean."
-
-**If on main or the default branch:**
-Warn the user:
-"You're on the main branch. Best practice is to work on feature branches and merge via PR."
-- Use AskUserQuestion: "Create a feature branch, or commit here anyway?"
-- If they want a branch, ask for name and create it before committing
 
 **If there are changes:**
 Continue to analysis.

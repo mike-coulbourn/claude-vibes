@@ -31,12 +31,6 @@ Run `git status` to understand:
 - What branch are we on?
 - Are we ahead of the remote?
 
-**If on main or the default branch:**
-Warn the user:
-"You're about to push directly to main. Best practice is to push to a feature branch and merge via PR."
-- Use AskUserQuestion: "Create a feature branch, push directly to main, or cancel?"
-- If they want a branch, ask for name and create it before pushing
-
 ### 2. Handle Uncommitted Changes
 
 **If uncommitted changes exist:**
