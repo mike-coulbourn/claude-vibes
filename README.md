@@ -39,15 +39,17 @@ claude
 
 ### 5. Install Claude Vibes
 
-Add the marketplace and install plugins:
+Add the marketplace:
 ```
 /plugin marketplace add mike-coulbourn/claude-vibes
 ```
 
-Then browse and install the plugins you want:
+Then install the plugin:
 ```
 /plugin
 ```
+
+Select **Browse and install plugins** → choose **claude-vibes**.
 
 ### Verify
 
