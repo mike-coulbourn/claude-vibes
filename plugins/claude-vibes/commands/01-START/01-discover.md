@@ -40,6 +40,13 @@ Get enough context to run market research.
 
 > Ultrathink about validating this product idea: [describe the problem and target users based on what you've learned]. Do exhaustive market research including Reddit discussions, competitor analysis, pain point evidence, and SWOT analysis. Find real evidence about whether this problem matters and what solutions already exist.
 >
+> **Use the WebSearch tool extensively for research:**
+> - Search Reddit, forums, and communities for people discussing this problem
+> - Search for competitor products and their reviews/complaints
+> - Search for market trends, demand signals, and pricing insights
+> - Do at least 10-15 different searches with specific queries
+> - Include sources in your findings so they can be verified
+>
 > **Use AskUserQuestion throughout your research:**
 > - If you find conflicting information, ask the user which direction resonates more
 > - If you discover the market is very different than expected, check in before continuing

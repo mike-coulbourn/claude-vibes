@@ -73,30 +73,62 @@ When researching competitors that are developer tools or have public APIs:
 
 Do exhaustive market research to answer: **Is this worth building?**
 
-Ultrathink about the market landscape and use WebSearch extensively to gather real data. Don't make assumptions—find evidence.
+Ultrathink about the market landscape. Don't make assumptions—find evidence.
+
+## WebSearch Tool Usage
+
+**You MUST use the WebSearch tool to conduct real research.** This is your primary research method.
+
+**How to use WebSearch effectively:**
+- Use specific, targeted queries (not generic ones)
+- Do at least 10-15 different searches across different angles
+- Search for recent content (append "2024" or "2025" to queries when relevant)
+- Vary your query patterns:
+  - `"[problem] reddit"` — Find Reddit discussions
+  - `"[problem] frustrated" OR "I wish"` — Find pain points
+  - `"[competitor] review" OR "[competitor] complaints"` — Find competitor sentiment
+  - `"[competitor] vs" OR "[competitor] alternative"` — Find comparison discussions
+  - `"[problem] solution" OR "[problem] tool"` — Find existing solutions
+  - `"[industry] trends 2025"` — Find market trends
+
+**After each WebSearch:**
+- Note the sources you found
+- Extract direct quotes that illustrate pain points
+- Capture specific data points (pricing, features, complaints)
+- Follow up with WebFetch if you need deeper content from a specific URL
+
+## AskUserQuestion Usage
+
+**Use AskUserQuestion throughout your research to avoid assumptions:**
+- If you find conflicting information about the market, ask the user which direction resonates
+- If the market looks very different than expected, check in before continuing
+- If multiple viable niches or user segments exist, ask which one to focus on
+- If you're unsure whether a finding is relevant, ask the user for context
+- Never assume you understand the user's priorities—clarify
 
 ## Research Process
 
 ### 1. Pain Point Discovery
 
-Search for people discussing this problem in the wild:
+Use WebSearch to find people discussing this problem in the wild:
 
-**Reddit Research:**
-- Search Reddit for discussions about this problem
-- Find relevant subreddits where target users hang out
-- Look for complaint threads, help requests, "I wish there was..." posts
+**Reddit Research (use WebSearch):**
+- `"[problem] site:reddit.com"` — Find Reddit discussions
+- `"[problem] subreddit"` — Find relevant communities
+- `"[problem] frustrated site:reddit.com"` — Find complaint threads
+- `"I wish there was [solution] site:reddit.com"` — Find unmet needs
 - Note the language people use to describe their pain
 - Capture specific quotes that illustrate the problem
 
-**Other Public Sources:**
-- Twitter/X discussions and threads
-- Public forums (Stack Overflow, specialized forums, etc.)
-- Blog posts and articles about the problem
-- YouTube comments on related videos
-- Product Hunt discussions
-- Hacker News threads
-- Quora questions and answers
-- Review sites (G2, Capterra, Trustpilot)
+**Other Public Sources (use WebSearch for each):**
+- `"[problem] site:twitter.com"` — Twitter/X discussions
+- `"[problem] site:stackoverflow.com"` — Technical forums
+- `"[problem] blog"` — Blog posts and articles
+- `"[problem] site:producthunt.com"` — Product Hunt discussions
+- `"[problem] site:news.ycombinator.com"` — Hacker News threads
+- `"[problem] site:quora.com"` — Quora questions
+- `"[solution] review site:g2.com"` — G2 reviews
+- `"[solution] review site:capterra.com"` — Capterra reviews
 
 **Key questions to answer:**
 - Are people actively complaining about this problem?
@@ -106,13 +138,14 @@ Search for people discussing this problem in the wild:
 
 ### 2. Competitor Analysis
 
-Find existing solutions in the market:
+Use WebSearch to find existing solutions in the market:
 
-**Direct competitors:**
-- Products that solve the exact same problem
-- Their pricing, features, positioning
-- What do users love about them? (search "[product] review")
-- What do users hate? (search "[product] complaints" or "[product] alternative")
+**Direct competitors (use WebSearch):**
+- `"[problem] software" OR "[problem] tool" OR "[problem] app"` — Find solutions
+- `"[competitor] pricing"` — Find pricing info
+- `"[competitor] review"` — Find what users love
+- `"[competitor] complaints" OR "[competitor] problems"` — Find what users hate
+- `"[competitor] alternative" OR "[competitor] vs"` — Find comparison discussions
 
 **Indirect competitors:**
 - Different approaches to the same problem
@@ -126,33 +159,33 @@ Find existing solutions in the market:
 
 ### 3. Market Signals
 
-Assess market viability:
+Use WebSearch to assess market viability:
 
-**Demand indicators:**
-- Search volume for related terms
-- Growth of related subreddits/communities
-- Trending discussions about the problem
-- Recent news or articles about the space
+**Demand indicators (use WebSearch):**
+- `"[problem] growing" OR "[problem] trend 2025"` — Market growth signals
+- `"[industry] market size"` — Market sizing data
+- `"[problem] statistics"` — Quantitative data
+- `"[problem] news 2025"` — Recent coverage
 
-**Willingness to pay:**
-- What do competing solutions charge?
-- Are people paying for partial solutions?
-- Search for discussions about pricing/value
+**Willingness to pay (use WebSearch):**
+- `"[competitor] pricing" OR "[solution] cost"` — Pricing benchmarks
+- `"worth paying for [solution]"` — Value discussions
+- `"[competitor] too expensive"` — Price sensitivity signals
 
-**Market timing:**
-- Is this problem growing or shrinking?
-- Any regulatory, technological, or social trends affecting it?
-- Is now the right time to build this?
+**Market timing (use WebSearch):**
+- `"[industry] trends 2025"` — Current trends
+- `"[problem] regulation" OR "[problem] legislation"` — Regulatory factors
+- `"[technology] adoption"` — Technology trends affecting the space
 
 ### 4. Target User Profile
 
-Build a picture of who actually has this problem:
+Use WebSearch to build a picture of who actually has this problem:
 
-- Demographics (if discoverable)
-- Where they spend time online (which subreddits, forums, etc.)
-- What other tools/products they use
-- What language/terminology they use
-- Who influences their decisions
+- `"[problem] demographic" OR "who uses [solution]"` — User demographics
+- `"[problem] subreddit" OR "[problem] community"` — Where they spend time online
+- `"[user type] tools" OR "[user type] software stack"` — What tools they use
+- `"[user type] workflow"` — How they work
+- `"[industry] influencers" OR "[industry] thought leaders"` — Who influences them
 
 ### 5. SWOT Synthesis
 
