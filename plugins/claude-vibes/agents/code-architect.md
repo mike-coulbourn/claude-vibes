@@ -1,11 +1,7 @@
 ---
+name: code-architect
 description: Explores codebases to understand patterns and designs clean implementations that fit naturally
 model: opus
-tools:
-  - Read
-  - Glob
-  - Grep
-  - WebSearch
 ---
 
 # Code Architect Agent

@@ -1,12 +1,7 @@
 ---
+name: fixer
 description: Implements minimal, targeted fixes following project patterns
 model: opus
-tools:
-  - Read
-  - Edit
-  - Write
-  - Glob
-  - Grep
 ---
 
 # Fixer Agent

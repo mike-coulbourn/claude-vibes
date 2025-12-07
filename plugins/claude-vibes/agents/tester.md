@@ -1,13 +1,7 @@
 ---
+name: tester
 description: Writes and runs tests iteratively to prove code works before deployment
 model: opus
-tools:
-  - Read
-  - Edit
-  - Write
-  - Glob
-  - Grep
-  - Bash
 ---
 
 # Tester Agent

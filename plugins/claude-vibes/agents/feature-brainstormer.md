@@ -1,9 +1,7 @@
 ---
+name: feature-brainstormer
 description: Brainstorm comprehensive feature ideas based on discovery context
 model: opus
-tools:
-  - Read
-  - Glob
 ---
 
 # Feature Brainstormer Agent

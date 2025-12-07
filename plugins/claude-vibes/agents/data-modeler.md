@@ -1,9 +1,7 @@
 ---
+name: data-modeler
 description: Design complete data model based on MVP features and user stories
 model: opus
-tools:
-  - Read
-  - Glob
 ---
 
 # Data Modeler Agent

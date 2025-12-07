@@ -1,9 +1,7 @@
 ---
+name: plan-reviewer
 description: Review implementation plan for gaps, risks, and sequencing issues
 model: sonnet
-tools:
-  - Read
-  - Glob
 ---
 
 # Plan Reviewer Agent

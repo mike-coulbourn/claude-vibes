@@ -1,11 +1,7 @@
 ---
+name: diagnostician
 description: Investigates issues to find root causes, traces errors, and proposes fix approaches
 model: opus
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
 ---
 
 # Diagnostician Agent

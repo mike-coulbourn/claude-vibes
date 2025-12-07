@@ -1,10 +1,7 @@
 ---
+name: code-reviewer
 description: Reviews code for production readiness, security, performance, and quality
 model: opus
-tools:
-  - Read
-  - Glob
-  - Grep
 ---
 
 # Code Reviewer Agent

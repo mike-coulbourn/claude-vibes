@@ -1,11 +1,7 @@
 ---
+name: market-validator
 description: Research market viability through community discussions, competitor analysis, and pain point validation
 model: opus
-tools:
-  - WebSearch
-  - WebFetch
-  - Read
-  - Glob
 ---
 
 # Market Validator Agent

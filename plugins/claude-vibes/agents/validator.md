@@ -1,11 +1,7 @@
 ---
+name: validator
 description: Verifies refactoring preserved behavior, checks for regressions, and prepares LOGS.json entries
 model: opus
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
 ---
 
 # Validator Agent

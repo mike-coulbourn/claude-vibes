@@ -1,11 +1,7 @@
 ---
+name: tech-advisor
 description: Research and recommend solutions for specific technical challenges
 model: opus
-tools:
-  - Read
-  - Glob
-  - WebSearch
-  - WebFetch
 ---
 
 # Tech Advisor Agent

@@ -1,12 +1,7 @@
 ---
+name: refactorer
 description: Applies refactoring changes while preserving behavior exactly
 model: opus
-tools:
-  - Read
-  - Edit
-  - Write
-  - Glob
-  - Grep
 ---
 
 # Refactorer Agent

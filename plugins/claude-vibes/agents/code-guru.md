@@ -1,13 +1,7 @@
 ---
+name: code-guru
 description: Master coder who implements features with expertise, precision, and craftsmanship
 model: opus
-tools:
-  - Read
-  - Write
-  - Edit
-  - Bash
-  - Glob
-  - Grep
 ---
 
 # Code Guru Agent
