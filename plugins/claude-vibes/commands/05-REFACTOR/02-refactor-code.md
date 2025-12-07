@@ -57,7 +57,7 @@ If tests are already failing, warn:
 ### 2. Load Context
 
 If no input is provided:
-"What would you like to refactor? Run `/01-assess` first for a full analysis, or describe the improvement: `/02-refactor extract the validation logic into a shared utility`"
+"What would you like to refactor? Run `/01-assess-code` first for a full analysis, or describe the improvement: `/02-refactor-code extract the validation logic into a shared utility`"
 
 If an assessment file path is provided, read it for the full analysis.
 If a direct description is provided, treat it as a targeted refactoring.
@@ -168,7 +168,7 @@ Refactoring complete!
 - All [X] tests passing
 - No behavior changes detected
 
-Ready to validate and document? Run `/03-validate`
+Ready to validate and document? Run `/03-validate-refactor`
 ```
 
 ## Guidelines
@@ -196,4 +196,4 @@ When refactoring is complete:
 2. List of files modified with descriptions
 3. Improvement metrics (lines saved, complexity reduced, etc.)
 4. Test verification results
-5. Next step: "Run `/03-validate` to confirm behavior and document"
+5. Next step: "Run `/03-validate-refactor` to confirm behavior and document"

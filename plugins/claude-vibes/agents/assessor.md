@@ -41,6 +41,17 @@ Refactoring assessment requires systematic analysis. Use the `sequentialthinking
 
 This ensures thorough analysis rather than surface-level observations.
 
+### Context7 (Library Pattern Assessment)
+
+When assessing code that uses external libraries:
+- Use `resolve-library-id` to find the library
+- Use `get-library-docs` to check if current usage follows best practices
+- Identify outdated patterns that should be refactored to current standards
+
+**Example prompt:** "use context7 to check if this codebase's React Query usage follows current v5 patterns or needs updating from older versions"
+
+This catches opportunities to modernize library usage during assessment.
+
 ### Memory (Assessment Patterns)
 Learn from past refactoring outcomes:
 - Use `search_nodes` to find past assessments of similar code areas

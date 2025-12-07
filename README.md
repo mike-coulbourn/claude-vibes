@@ -107,7 +107,7 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 | `/claude-vibes:01-START/01-discover` | Understand the problem space and user needs |
 | `/claude-vibes:01-START/02-scope` | Define MVP boundaries and prioritize features |
 | `/claude-vibes:01-START/03-architect` | Plan technical approach and system design |
-| `/claude-vibes:01-START/04-plan` | Create implementation roadmap with phases |
+| `/claude-vibes:01-START/04-plan-roadmap` | Create implementation roadmap with phases |
 
 **Agents:**
 - `market-validator` - Research market viability and competition
@@ -125,9 +125,9 @@ Build features methodically. Plan each feature, implement with best practices, a
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:02-BUILD/01-plan` | Break down feature into implementation steps |
-| `/claude-vibes:02-BUILD/02-build` | Implement the feature with production quality |
-| `/claude-vibes:02-BUILD/03-review` | Review code for production readiness |
+| `/claude-vibes:02-BUILD/01-plan-code` | Plan the code implementation |
+| `/claude-vibes:02-BUILD/02-write-code` | Write the code with production quality |
+| `/claude-vibes:02-BUILD/03-review-code` | Review code for production readiness |
 
 **Agents:**
 - `code-architect` - Design feature architecture and patterns
@@ -143,7 +143,7 @@ Ship with confidence. Run checks, commit cleanly, and create PRs.
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:03-SHIP/01-check` | Run linting, tests, and pre-commit checks |
+| `/claude-vibes:03-SHIP/01-pre-commit` | Run linting, tests, and pre-commit checks |
 | `/claude-vibes:03-SHIP/02-commit` | Create a clean commit with descriptive message |
 | `/claude-vibes:03-SHIP/03-push` | Push to remote branch |
 | `/claude-vibes:03-SHIP/04-pr` | Create pull request with summary |
@@ -157,9 +157,9 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:04-FIX/01-diagnose` | Investigate and identify root cause |
-| `/claude-vibes:04-FIX/02-fix` | Apply the fix with minimal changes |
-| `/claude-vibes:04-FIX/03-verify` | Verify fix works and document in LOGS.json |
+| `/claude-vibes:04-FIX/01-diagnose-issue` | Investigate and identify root cause |
+| `/claude-vibes:04-FIX/02-fix-issue` | Apply the fix with minimal changes |
+| `/claude-vibes:04-FIX/03-verify-fix` | Verify fix works and document in LOGS.json |
 
 **Agents:**
 - `diagnostician` - Deep investigation and root cause analysis
@@ -175,9 +175,9 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:05-REFACTOR/01-assess` | Identify refactoring opportunities |
-| `/claude-vibes:05-REFACTOR/02-refactor` | Apply refactoring with behavior preservation |
-| `/claude-vibes:05-REFACTOR/03-validate` | Verify behavior unchanged, document in LOGS.json |
+| `/claude-vibes:05-REFACTOR/01-assess-code` | Identify refactoring opportunities |
+| `/claude-vibes:05-REFACTOR/02-refactor-code` | Apply refactoring with behavior preservation |
+| `/claude-vibes:05-REFACTOR/03-validate-refactor` | Verify behavior unchanged, document in LOGS.json |
 
 **Agents:**
 - `assessor` - Code archaeology and improvement analysis

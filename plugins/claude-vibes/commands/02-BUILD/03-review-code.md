@@ -43,9 +43,11 @@ Otherwise, find recent work:
 - Check `git log` for recent commits
 - Look at the current plan in `docs/build/`
 
-### 3. Launch Code Reviewer
+### 3. Launch Agents in Parallel
 
-**Launch the code-reviewer agent** with this prompt:
+**Launch BOTH agents simultaneously** — they analyze the code from different angles and don't depend on each other.
+
+**Code Reviewer Agent** (quality, security, patterns):
 
 > Ultrathink about reviewing this code for production readiness.
 >
@@ -73,24 +75,57 @@ Otherwise, find recent work:
 > This allows the main session to read those specific references without parsing all of LOGS.json.
 > Be specific about issues and how to fix them.
 
-### 4. Load Specific References
+**Tester Agent** (prove it works):
 
-After the code-reviewer returns:
+> Ultrathink about testing this code to prove it works.
+>
+> **Code to test:** [files identified for review]
+> **What it should do:** [from plan and docs]
+>
+> **Your mission:**
+> - Write comprehensive tests that prove the implementation is correct
+> - Run the tests yourself—don't ask the user to run them
+> - If tests fail, analyze and fix the issues
+> - Iterate until all tests pass
+> - Only fall back to manual testing instructions if automation is impossible
+>
+> **Test coverage should include:**
+> - Happy paths (things that should work)
+> - Edge cases (empty input, null values, boundaries)
+> - Error conditions (invalid input, failures)
+> - Integration points (if applicable)
+>
+> **Report back with:**
+> - What tests were written and what they prove
+> - Test results (all passing or issues found)
+> - Any bugs found and fixed during testing
+> - Manual testing instructions (only if something couldn't be automated)
+> - Confidence level in the code's correctness
+>
+> The vibe coder should just see results—you do the work.
 
-**Read only the specific references it identified:**
-- Read the exact LOGS.json entries it cited (by ID or content)
-- Read the specific code files/sections it referenced
+### 4. Combine Results
 
-This gives you relevant build history without reading the entire LOGS.json.
+After BOTH agents return:
 
-### 5. Present Findings
+**From Code Reviewer:**
+- Load specific LOGS.json entries it cited
+- Read specific code files/sections it referenced
 
-Present the code-reviewer's findings clearly:
+**From Tester:**
+- Note test results (passing/failing)
+- Note any bugs found and fixed
+- Note confidence level
+
+### 5. Present Combined Findings
+
+Present findings from BOTH agents clearly:
 
 **If issues found:**
 ```
-Review complete. Found 2 issues:
+Review & Testing Complete
 
+CODE REVIEW:
 1. BLOCKING: SQL injection risk in search query
    File: src/api/search.ts:45
    Issue: User input passed directly to query
@@ -101,20 +136,32 @@ Review complete. Found 2 issues:
    Issue: No protection against brute force
    Fix: Add rate limiting middleware
 
-Overall: Good structure, patterns followed. Fix the security issue before shipping.
+TESTING:
+- Tests written: 8 (5 unit, 3 integration)
+- Tests passing: 6/8
+- Bugs found: 2 (both fixed during testing)
+- Confidence: MEDIUM (blocking issue affects test reliability)
+
+Overall: Fix the security issue before shipping.
 ```
 
 **If no issues:**
 ```
-Review complete. Code is production-ready!
+Review & Testing Complete — Ready to Ship!
 
-What's good:
+CODE REVIEW:
 - Clean error handling
 - Follows established patterns
 - Input validation in place
 - Proper authorization checks
 
-Ready to ship!
+TESTING:
+- Tests written: 12 (8 unit, 4 integration)
+- Tests passing: 12/12
+- Bugs found: 0
+- Confidence: HIGH
+
+The code works and meets quality standards!
 ```
 
 Use AskUserQuestion for trade-offs:
@@ -188,10 +235,10 @@ When review is complete:
 2. What's good about the code
 3. Any accepted trade-offs
 4. Confirmation that LOGS.json was updated
-5. Next step: "Run `/03-ship/01-check` before committing"
+5. Next step: "Run `/03-SHIP/01-pre-commit` before committing"
 
 **If failed:**
 1. Clear list of blocking issues
 2. How to fix each one
 3. Offer to fix them
-4. "Re-run `/03-review` after fixes"
+4. "Re-run `/03-review-code` after fixes"

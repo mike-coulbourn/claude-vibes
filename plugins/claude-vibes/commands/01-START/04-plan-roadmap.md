@@ -111,7 +111,7 @@ Create clear checkpoints:
 When planning feels complete:
 
 1. Ensure `docs/start/` directory exists
-2. Save the implementation plan to `docs/start/04-plan.md` with:
+2. Save the implementation plan to `docs/start/04-plan-roadmap.md` with:
    - Project summary (what we're building and why—plain language)
    - Implementation phases with details for each
    - Key milestones and how to know they're achieved
@@ -122,5 +122,5 @@ When planning feels complete:
 
 4. Suggest next steps:
    - Review the complete plan in `docs/start/`
-   - When ready to build, use the `/02-build` plugin commands
-   - Start with `/02-build:01-setup` to set up the project
+   - When ready to build, use the `/02-BUILD` plugin commands
+   - Start with `/02-BUILD:01-plan-code` to plan your first feature

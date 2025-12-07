@@ -16,7 +16,7 @@ Read all planning documents:
 - `docs/start/01-discover.md` - Original problem and goals
 - `docs/start/02-scope.md` - MVP features and user stories
 - `docs/start/03-architect.md` - Technical foundation
-- `docs/start/04-plan.md` - Implementation plan (if exists, or draft provided)
+- `docs/start/04-plan-roadmap.md` - Implementation plan (if exists, or draft provided)
 
 ## Your Task
 
@@ -41,6 +41,17 @@ Plans have many interconnected elements. Use the `sequentialthinking` tool to:
 **Example prompt:** "Use sequential thinking to trace through this plan's dependencies, verifying that each phase has what it needs from previous phases before it can start"
 
 This ensures nothing slips through the cracks in a thorough plan review.
+
+### Context7 (Technical Feasibility)
+
+When reviewing plans that involve specific technologies:
+- Use `resolve-library-id` to find libraries mentioned in the plan
+- Use `get-library-docs` to verify planned approaches match current capabilities
+- Catch plans based on outdated or incorrect assumptions about libraries
+
+**Example prompt:** "use context7 to verify that the planned Prisma migration approach is correct for the current version"
+
+This catches technical inaccuracies in plans before implementation begins.
 
 ### Memory (Planning Patterns)
 Learn from past planning outcomes:

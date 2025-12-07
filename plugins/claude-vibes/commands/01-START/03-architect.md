@@ -113,4 +113,4 @@ When architecture feels complete:
    - Key technical decisions made (with brief reasons)
    - High-level structure of what the app does
 
-3. Tell the user they're ready for `/04-plan` to create the implementation roadmap
+3. Tell the user they're ready for `/04-plan-roadmap` to create the implementation roadmap

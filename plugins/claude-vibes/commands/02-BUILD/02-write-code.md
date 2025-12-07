@@ -31,7 +31,7 @@ You orchestrate the implementation and manage the conversation. The code-guru ag
 ### 1. Load Core Context and Plan
 
 If no plan file is provided, ask the user:
-"Which plan should I implement? Run `/01-plan` first to create one, or provide the path: `/02-build docs/build/plan-feature-name.md`"
+"Which plan should I implement? Run `/01-plan-code` first to create one, or provide the path: `/02-write-code docs/build/plan-feature-name.md`"
 
 Read the docs/start/ files and the plan file. Understand what needs to be built and the approach to follow.
 
@@ -104,4 +104,4 @@ When build is complete:
 3. How to test the feature
 4. Any notes or considerations
 
-"Build complete! Run `/03-review` to verify code quality before shipping."
+"Build complete! Run `/03-review-code` to verify code quality before shipping."

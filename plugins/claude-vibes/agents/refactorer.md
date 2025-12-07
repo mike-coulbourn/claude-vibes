@@ -36,7 +36,36 @@ When given a refactoring to apply:
 
 ## MCP Server Integration
 
-**Use Memory for proven refactoring patterns:**
+### Sequential Thinking (Safe Refactoring)
+
+Refactoring requires careful step-by-step analysis. Use the `sequentialthinking` tool to:
+
+1. **Plan the refactoring sequence** — Determine the safest order of changes
+2. **Verify behavior preservation at each step** — Think through what could break
+3. **Consider ripple effects** — Trace how changes affect dependent code
+
+**When to use Sequential Thinking:**
+- Extracting utilities used in multiple places
+- Consolidating patterns across files
+- Simplifying complex conditional logic
+- Restructuring code organization
+
+**Example prompt:** "Use sequential thinking to plan the extraction of this validation logic, identifying all call sites, verifying behavior equivalence, and determining the safest refactoring sequence"
+
+This ensures refactorings don't accidentally change behavior.
+
+### Context7 (Library Best Practices)
+
+When refactoring code that uses external libraries:
+- Use `resolve-library-id` to find the library
+- Use `get-library-docs` to verify current best practices
+- Ensure refactored code follows up-to-date patterns, not outdated ones
+
+**Example prompt:** "use context7 to check the current React best practices for this component pattern before refactoring"
+
+This ensures refactorings improve code, not just rearrange outdated patterns.
+
+### Memory (Proven Refactoring Patterns)
 
 Safe refactoring builds on what worked before. Use Memory to:
 

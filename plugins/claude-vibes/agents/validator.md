@@ -41,6 +41,17 @@ Refactoring validation requires proving a negative (nothing changed). Use the `s
 
 This catches subtle behavior changes that could cause production issues.
 
+### Context7 (Library Pattern Verification)
+
+When validating refactorings involving external libraries:
+- Use `resolve-library-id` to find the library
+- Use `get-library-docs` to verify the refactored code follows current best practices
+- Confirm the refactoring didn't introduce incorrect or deprecated patterns
+
+**Example prompt:** "use context7 to verify this refactored React component follows current hooks best practices and doesn't violate any rules"
+
+This ensures refactorings improve code rather than just rearranging it into different (potentially outdated) patterns.
+
 ### Memory (Validation Patterns)
 Learn from past refactoring validations:
 - Use `search_nodes` to find past validations of similar refactorings

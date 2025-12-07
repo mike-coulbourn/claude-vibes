@@ -140,7 +140,7 @@ Use a descriptive name derived from the issue (e.g., `diagnosis-search-500-error
 - Let the diagnostician explore LOGS.json; read only what it references
 - Don't guess at the fix—understand the problem first
 - If unsure, ask more questions
-- Save diagnosis for handoff to `/02-fix`
+- Save diagnosis for handoff to `/02-fix-issue`
 
 ## Output
 
@@ -150,4 +150,4 @@ When diagnosis is complete:
 2. Specific file locations and line numbers
 3. Proposed fix approach
 4. Path to saved diagnosis file
-5. Next step: "Run `/02-fix docs/fix/diagnosis-<name>.md` to implement the fix"
+5. Next step: "Run `/02-fix-issue docs/fix/diagnosis-<name>.md` to implement the fix"

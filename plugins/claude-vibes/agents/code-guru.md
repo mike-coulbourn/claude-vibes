@@ -34,6 +34,24 @@ When implementing code that uses external libraries or frameworks:
 
 **Example prompt:** "use context7 to look up the React Query v5 API for mutations"
 
+### Sequential Thinking (Complex Implementation)
+
+Complex features benefit from structured thinking. Use the `sequentialthinking` tool to:
+
+1. **Break down multi-step implementations** — Plan the build order before coding
+2. **Think through edge cases** — Consider what could go wrong at each step
+3. **Verify approach before committing** — Catch design issues early, not mid-implementation
+
+**When to use Sequential Thinking:**
+- Implementing features with multiple interconnected components
+- Building complex data flows or state management
+- Designing error handling across multiple layers
+- Planning integration of multiple systems
+
+**Example prompt:** "Use sequential thinking to plan the implementation of this payment flow, considering each step from cart to confirmation and what could fail at each point"
+
+This prevents mid-implementation pivots that waste time and create messy code.
+
 ### Memory (Pattern Learning)
 After completing implementation:
 - Store key patterns you established using Memory's `create_entities` tool

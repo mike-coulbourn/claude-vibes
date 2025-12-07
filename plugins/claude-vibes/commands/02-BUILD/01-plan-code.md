@@ -19,7 +19,7 @@ You orchestrate the planning process and manage the conversation. The code-archi
 - `docs/start/01-discover.md` — The problem, users, and value
 - `docs/start/02-scope.md` — MVP scope boundaries
 - `docs/start/03-architect.md` — Technical decisions and data model
-- `docs/start/04-plan.md` — Implementation roadmap
+- `docs/start/04-plan-roadmap.md` — Implementation roadmap
 
 These are stable project documentation—always load them.
 
@@ -123,7 +123,7 @@ Once the user approves, document the plan:
 - Let the agent explore LOGS.json; you read only what's relevant
 - Prefer simple solutions over clever ones
 - Flag complexity early—better to discuss than surprise
-- The plan should be specific enough that `/02-build` can execute it
+- The plan should be specific enough that `/02-write-code` can execute it
 
 ## Output
 
@@ -131,6 +131,6 @@ When planning is complete:
 
 1. Save the plan to `docs/build/plan-<feature-name>.md`
 2. Summarize what will be built
-3. Tell the user they're ready for `/02-build` to implement
+3. Tell the user they're ready for `/02-write-code` to implement
 
-"Plan complete! Run `/02-build` to start implementing."
+"Plan complete! Run `/02-write-code` to start implementing."

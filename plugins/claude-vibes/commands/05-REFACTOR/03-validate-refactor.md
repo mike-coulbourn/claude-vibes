@@ -43,9 +43,11 @@ Otherwise, find the recent refactoring:
 - Read the most recent `docs/refactor/assessment-*.md`
 - Look at recently modified files
 
-### 3. Launch Validator
+### 3. Launch Agents in Parallel
 
-**Launch the validator agent** with this prompt:
+**Launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other.
+
+**Validator Agent** (confirm behavior preserved):
 
 > Ultrathink about validating this refactoring.
 >
@@ -77,34 +79,76 @@ Otherwise, find the recent refactoring:
 > This allows the main session to read those specific references without parsing all of LOGS.json.
 > Be specific about validation results.
 
-### 4. Load Specific References
+**Tester Agent** (write tests that prove behavior is preserved):
 
-After the validator returns:
+> Ultrathink about testing this refactored code.
+>
+> **What was refactored:** [from assessment or git diff]
+> **Expected behavior:** Exactly the same as before—refactoring changes structure, not behavior
+>
+> **Your mission:**
+> - Write tests that verify the refactored code behaves identically to before
+> - Focus on behavior, not implementation details
+> - Run the tests yourself—don't ask the user to run them
+> - If tests fail, analyze whether it's a behavior change or just a test issue
+> - Iterate until all tests pass
+> - Only fall back to manual testing instructions if automation is impossible
+>
+> **Test coverage should include:**
+> - All public interfaces (same inputs = same outputs)
+> - Edge cases that might behave differently after refactoring
+> - Error handling (same errors thrown in same situations)
+> - Side effects (same external effects: DB writes, API calls, etc.)
+>
+> **Report back with:**
+> - Tests written that prove behavior is preserved
+> - Test results (all passing or issues found)
+> - Any behavior changes detected (these are bugs in refactoring!)
+> - Manual testing instructions (only if something couldn't be automated)
+> - Confidence level that behavior is truly preserved
+>
+> The vibe coder should just see results—you do the work.
 
-**Read only the specific references it identified:**
-- Read the exact LOGS.json entries it cited (by ID or content)
-- Read the specific code files/sections it referenced
+### 4. Combine Results
 
-This gives you relevant validation history without reading the entire LOGS.json.
+After BOTH agents return:
 
-### 5. Present Findings
+**From Validator:**
+- Load specific LOGS.json entries it cited
+- Note whether behavior is preserved
+- Note whether improvement was achieved
+
+**From Tester:**
+- Note tests written and what they prove
+- Note test results (passing/failing)
+- Note any behavior changes detected
+- Note confidence level
+
+### 5. Present Combined Findings
 
 **If all validations pass:**
 ```
-Validation complete! The refactoring is solid.
+Validation & Testing Complete — Refactoring Verified!
 
-What I verified:
-- Tests: [X] passed, 0 failed (same as baseline)
+VALIDATION:
+- Tests: All passing (same as baseline)
 - Behavior: Preserved—no functional changes detected
-- Improvement: Achieved—[specific improvement metrics]
+- Improvement: Achieved—reduced from 120 lines to 45 lines
 
-The refactoring is ready to ship.
+TESTING:
+- Tests written: 10 (behavior preservation tests)
+- Tests passing: 10/10
+- Behavior changes: None detected
+- Confidence: HIGH
+
+The refactoring is solid and ready to ship.
 ```
 
 **If issues found:**
 ```
-Validation found problems:
+Validation & Testing Found Problems
 
+VALIDATION:
 1. BEHAVIOR CHANGE: Error message format changed
    File: src/api/users.ts:52
    Before: "Invalid email"
@@ -114,6 +158,11 @@ Validation found problems:
 2. TEST FAILURE: test_edge_case now fails
    File: tests/api.test.ts:142
    The refactoring changed how empty inputs are handled.
+
+TESTING:
+- Tests written: 8
+- Tests passing: 5/8
+- 3 behavior changes detected!
 
 These need to be addressed before shipping.
 ```
@@ -195,14 +244,14 @@ When validation is complete:
 3. Improvement metrics achieved
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-ship/01-check` — Run pre-commit checks
-   - `/03-ship/02-commit` — Just commit locally
-   - `/03-ship/03-push` — Commit and push
-   - `/03-ship/04-pr` — Commit, push, and create PR
+   - `/03-SHIP/01-pre-commit` — Run pre-commit checks
+   - `/03-SHIP/02-commit` — Just commit locally
+   - `/03-SHIP/03-push` — Commit and push
+   - `/03-SHIP/04-pr` — Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
 2. Whether they're behavior changes or test failures
 3. How to fix each one
 4. Offer to adjust the refactoring
-5. "Re-run `/03-validate` after fixes"
+5. "Re-run `/03-validate-refactor` after fixes"

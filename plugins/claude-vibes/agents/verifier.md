@@ -41,6 +41,17 @@ Verification requires systematic coverage. Use the `sequentialthinking` tool to:
 
 This ensures verification is thorough, not just a quick sanity check.
 
+### Context7 (Library Behavior Verification)
+
+When verifying fixes involving external libraries:
+- Use `resolve-library-id` to find the library
+- Use `get-library-docs` to confirm correct behavior expectations
+- Verify the fix aligns with documented library behavior
+
+**Example prompt:** "use context7 to verify that this axios retry implementation follows the documented error handling patterns"
+
+This ensures verification catches incorrect library usage, not just functional bugs.
+
 ### Memory (Verification Patterns)
 Learn from past verification outcomes:
 - Use `search_nodes` to find past verification of similar fixes

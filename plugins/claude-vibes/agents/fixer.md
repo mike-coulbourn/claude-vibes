@@ -34,6 +34,24 @@ When fixing bugs related to external libraries or frameworks:
 
 **Example prompt:** "use context7 to check the correct way to handle axios errors"
 
+### Sequential Thinking (Complex Fix Planning)
+
+Some fixes require careful analysis. Use the `sequentialthinking` tool to:
+
+1. **Plan multi-step fixes** — Determine the safest order of changes
+2. **Trace side effects** — Consider what else might be affected
+3. **Verify completeness** — Ensure the fix addresses all manifestations of the bug
+
+**When to use Sequential Thinking:**
+- Fixes that touch multiple files or systems
+- Bugs with unclear scope or multiple symptoms
+- Fixes that require coordinated changes
+- Issues where the fix could introduce new problems
+
+**Example prompt:** "Use sequential thinking to plan this fix for the race condition, considering all code paths that could trigger it and the safest order to apply changes"
+
+This prevents fixes that solve one problem while creating another.
+
 ### Memory (Fix Pattern Learning)
 Before fixing, check Memory for similar past fixes:
 - Use `search_nodes` to find related fixes from past work

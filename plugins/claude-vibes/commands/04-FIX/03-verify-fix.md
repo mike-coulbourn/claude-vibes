@@ -43,9 +43,11 @@ Otherwise, find the recent fix:
 - Read the most recent `docs/fix/diagnosis-*.md`
 - Look at recently modified files
 
-### 3. Launch Verifier
+### 3. Launch Agents in Parallel
 
-**Launch the verifier agent** with this prompt:
+**Launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other.
+
+**Verifier Agent** (confirm fix works, check regressions):
 
 > Ultrathink about verifying this fix.
 >
@@ -76,34 +78,76 @@ Otherwise, find the recent fix:
 > This allows the main session to read those specific references without parsing all of LOGS.json.
 > Be specific about verification results.
 
-### 4. Load Specific References
+**Tester Agent** (write tests that prove the fix):
 
-After the verifier returns:
+> Ultrathink about testing this fix to prove it works.
+>
+> **What was fixed:** [from diagnosis file]
+> **Files changed:** [from git diff or diagnosis]
+>
+> **Your mission:**
+> - Write tests that would have caught the original bug
+> - Write tests that prove the fix works
+> - Run the tests yourself—don't ask the user to run them
+> - If tests fail, analyze and fix the issues
+> - Iterate until all tests pass
+> - Only fall back to manual testing instructions if automation is impossible
+>
+> **Test coverage should include:**
+> - The exact scenario that caused the bug
+> - Edge cases related to the fix
+> - Regression tests to prevent the bug from returning
+> - Integration points affected by the fix
+>
+> **Report back with:**
+> - Tests written that prove the fix works
+> - Tests that would have caught the original bug
+> - Test results (all passing or issues found)
+> - Any additional bugs found during testing
+> - Manual testing instructions (only if something couldn't be automated)
+> - Confidence level that the fix is solid
+>
+> The vibe coder should just see results—you do the work.
 
-**Read only the specific references it identified:**
-- Read the exact LOGS.json entries it cited (by ID or content)
-- Read the specific code files/sections it referenced
+### 4. Combine Results
 
-This gives you relevant fix history without reading the entire LOGS.json.
+After BOTH agents return:
 
-### 5. Present Findings
+**From Verifier:**
+- Load specific LOGS.json entries it cited
+- Note whether original issue is fixed
+- Note any regressions found
+
+**From Tester:**
+- Note tests written and what they prove
+- Note test results (passing/failing)
+- Note confidence level
+
+### 5. Present Combined Findings
 
 **If all verifications pass:**
 ```
-Verification complete! The fix works.
+Verification & Testing Complete — Fix Confirmed!
 
-What I verified:
-- Original issue: [confirmed fixed]
-- Related tests: [X passed, 0 failed]
+VERIFICATION:
+- Original issue: FIXED
+- Related tests: All passing
 - Regressions: None found
 
-The fix is ready to ship.
+TESTING:
+- Tests written: 6 (regression tests for the bug)
+- Tests passing: 6/6
+- This bug can't come back now!
+- Confidence: HIGH
+
+The fix is solid and ready to ship.
 ```
 
 **If issues found:**
 ```
-Verification found problems:
+Verification & Testing Found Problems
 
+VERIFICATION:
 1. REGRESSION: Test 'userSearch' now fails
    File: tests/search.test.ts
    Expected: Results for "café"
@@ -111,6 +155,11 @@ Verification found problems:
 
 2. PARTIAL FIX: Original issue fixed for ASCII, but Unicode still fails
    File: src/api/search.ts:52
+
+TESTING:
+- Tests written: 4
+- Tests passing: 2/4
+- The bug still occurs in some scenarios
 
 These need to be addressed before shipping.
 ```
@@ -186,13 +235,13 @@ When verification is complete:
 3. Any accepted trade-offs
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-ship/01-check` — Run pre-commit checks
-   - `/03-ship/02-commit` — Just commit locally
-   - `/03-ship/03-push` — Commit and push
-   - `/03-ship/04-pr` — Commit, push, and create PR
+   - `/03-SHIP/01-pre-commit` — Run pre-commit checks
+   - `/03-SHIP/02-commit` — Just commit locally
+   - `/03-SHIP/03-push` — Commit and push
+   - `/03-SHIP/04-pr` — Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
 2. How to fix each one
 3. Offer to fix them
-4. "Re-run `/03-verify` after fixes"
+4. "Re-run `/03-verify-fix` after fixes"

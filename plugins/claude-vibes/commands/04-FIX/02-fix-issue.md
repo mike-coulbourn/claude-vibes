@@ -33,7 +33,7 @@ These are stable project documentation—always load them.
 ### 1. Load Core Context and Diagnosis
 
 If no input is provided, ask the user:
-"What issue should I fix? Run `/01-diagnose` first to investigate, or describe the issue directly: `/02-fix the search breaks with special characters`"
+"What issue should I fix? Run `/01-diagnose-issue` first to investigate, or describe the issue directly: `/02-fix-issue the search breaks with special characters`"
 
 If a diagnosis file path is provided, read it for the full analysis.
 If a direct issue description is provided, treat it as a quick fix scenario.
@@ -134,4 +134,4 @@ When fix is complete:
 2. List of files modified with brief descriptions
 3. Explanation of why this fix works
 4. Any notes or caveats
-5. Next step: "Run `/03-verify` to confirm the fix works and check for regressions"
+5. Next step: "Run `/03-verify-fix` to confirm the fix works and check for regressions"
