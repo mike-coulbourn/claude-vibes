@@ -13,6 +13,8 @@ Plan file to implement: $ARGUMENTS
 
 You orchestrate the implementation and manage the conversation. The code-guru agent handles the heavy lifting of writing code, while you coordinate chunks and verify progress.
 
+**CRITICAL: You MUST use the Task tool to launch the code-guru agent for writing code.** Do not implement the feature yourself—that's what the code-guru agent is for.
+
 ## Project Context
 
 **Always read these files for core context:**
@@ -40,7 +42,7 @@ Read the docs/start/ files and the plan file. Understand what needs to be built 
 
 ### 2. Build in Chunks
 
-For each implementation chunk, **launch the code-guru agent** with this prompt:
+For each implementation chunk, **you MUST use the Task tool to launch the code-guru agent.** Use `subagent_type: "claude-vibes:code-guru"` with this prompt:
 
 > Ultrathink about implementing [specific chunk].
 >

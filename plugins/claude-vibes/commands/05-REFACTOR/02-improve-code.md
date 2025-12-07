@@ -11,7 +11,16 @@ Refactoring to apply: $ARGUMENTS
 
 ## Your Role
 
-You orchestrate the refactoring and manage the conversation. The refactorer agent handles the actual code changes, while you coordinate, verify behavior preservation, and explain what's happening.
+You orchestrate the refactoring and manage the conversation. You handle coordination, verification, and communication.
+
+**CRITICAL: You MUST use the Task tool to launch the refactorer agent for the actual refactoring work.** Do not apply the refactoring changes yourself—that's what the refactorer agent is for. Even if the refactoring seems simple, launch the agent.
+
+Your job:
+- Load context and plan the approach
+- Run tests to establish baseline
+- **Launch the refactorer agent** (via Task tool) to apply code changes
+- Verify tests pass after changes
+- Summarize results to the user
 
 ## The Golden Rule
 
@@ -88,9 +97,9 @@ I'll verify tests pass after each step.
 
 Use AskUserQuestion if the approach isn't clear.
 
-### 4. Launch Refactorer
+### 4. Launch Refactorer (REQUIRED)
 
-**Launch the refactorer agent** for each step with this prompt:
+**You MUST use the Task tool to launch the refactorer agent** for each step. Use `subagent_type: "claude-vibes:refactorer"` with this prompt:
 
 > Ultrathink about applying this refactoring.
 >

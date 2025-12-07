@@ -13,6 +13,8 @@ Area to assess: $ARGUMENTS
 
 You orchestrate the assessment and manage the conversation. The assessor agent handles deep analysis, while you present findings in plain language and guide next steps.
 
+**CRITICAL: You MUST use the Task tool to launch the assessor agent for the analysis.** Do not assess the code yourself—that's what the assessor agent is for.
+
 ## Project Context
 
 **Always read these files for core context:**
@@ -48,9 +50,9 @@ If input is vague, use AskUserQuestion to clarify:
 
 Read docs/start/ files to understand project patterns and conventions.
 
-### 3. Launch Assessor
+### 3. Launch Assessor (REQUIRED)
 
-**Launch the assessor agent** with this prompt:
+**You MUST use the Task tool to launch the assessor agent.** Use `subagent_type: "claude-vibes:assessor"` with this prompt:
 
 > Ultrathink about assessing this code for refactoring opportunities.
 >

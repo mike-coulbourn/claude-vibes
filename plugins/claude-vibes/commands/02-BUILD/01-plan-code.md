@@ -13,6 +13,8 @@ Feature to plan: $ARGUMENTS
 
 You orchestrate the planning process and manage the conversation. The code-architect agent handles codebase exploration and LOGS.json parsing, reporting back specific references that you then read.
 
+**CRITICAL: You MUST use the Task tool to launch the code-architect agent for codebase exploration.** Do not explore and design the implementation yourself—that's what the code-architect agent is for.
+
 ## Project Context
 
 **Always read the docs/ files for core context:**
@@ -57,9 +59,9 @@ If `$ARGUMENTS` is provided, start there. If not, use AskUserQuestion:
 
 Only proceed to code exploration after the user confirms your understanding.
 
-### 3. Launch Code Architect
+### 3. Launch Code Architect (REQUIRED)
 
-**Launch the code-architect agent** with this prompt:
+**You MUST use the Task tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:code-architect"` with this prompt:
 
 > Ultrathink about implementing [feature/task].
 >

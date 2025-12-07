@@ -13,6 +13,8 @@ Issue to diagnose: $ARGUMENTS
 
 You orchestrate the investigation and manage the conversation. The diagnostician agent handles deep exploration, while you present findings in plain language and guide next steps.
 
+**CRITICAL: You MUST use the Task tool to launch the diagnostician agent for the investigation.** Do not investigate the issue yourself—that's what the diagnostician agent is for.
+
 ## Project Context
 
 **Always read these files for core context:**
@@ -46,9 +48,9 @@ If `$ARGUMENTS` describes an issue, start there. If not, use AskUserQuestion:
 
 Get enough detail to begin investigation.
 
-### 3. Launch Diagnostician
+### 3. Launch Diagnostician (REQUIRED)
 
-**Launch the diagnostician agent** with this prompt:
+**You MUST use the Task tool to launch the diagnostician agent.** Use `subagent_type: "claude-vibes:diagnostician"` with this prompt:
 
 > Ultrathink about diagnosing this issue.
 >

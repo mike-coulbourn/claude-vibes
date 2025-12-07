@@ -13,6 +13,8 @@ Specific area to validate: $ARGUMENTS
 
 You orchestrate the validation and manage the conversation. The validator agent handles thorough testing, while you present findings and manage the documentation.
 
+**CRITICAL: You MUST use the Task tool to launch the validation agents.** Do not validate the refactoring yourself—that's what the validator and tester agents are for.
+
 ## Project Context
 
 **Always read these files for core context:**
@@ -49,9 +51,9 @@ Otherwise, find the recent refactoring:
 - Read the most recent `docs/refactor/assessment-*.md`
 - Look at recently modified files
 
-### 3. Launch Agents in Parallel
+### 3. Launch Agents in Parallel (REQUIRED)
 
-**Launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other.
+**You MUST use the Task tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:validator"` and `subagent_type: "claude-vibes:tester"`.
 
 **Validator Agent** (confirm behavior preserved):
 

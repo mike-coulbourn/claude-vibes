@@ -13,6 +13,8 @@ Specific area to verify: $ARGUMENTS
 
 You orchestrate the verification and manage the conversation. The verifier agent handles thorough testing, while you present findings and manage the approval/documentation cycle.
 
+**CRITICAL: You MUST use the Task tool to launch the verification agents.** Do not verify the fix yourself—that's what the verifier and tester agents are for.
+
 ## Project Context
 
 **Always read these files for core context:**
@@ -49,9 +51,9 @@ Otherwise, find the recent fix:
 - Read the most recent `docs/fix/diagnosis-*.md`
 - Look at recently modified files
 
-### 3. Launch Agents in Parallel
+### 3. Launch Agents in Parallel (REQUIRED)
 
-**Launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other.
+**You MUST use the Task tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:verifier"` and `subagent_type: "claude-vibes:tester"`.
 
 **Verifier Agent** (confirm fix works, check regressions):
 
