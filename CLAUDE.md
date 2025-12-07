@@ -207,48 +207,7 @@ If you identify risks, tell me in plain terms and suggest how to address them.
 
 ---
 
-## 11. Git Workflow (Vibe Coder Edition)
-
-Git is version control—it tracks every change so you can undo mistakes and see history. Here's how we use it:
-
-### Branch Strategy (Simple & Safe)
-```
-main     → Production code (what users see). NEVER push directly here.
-dev      → Development/testing. Changes go here first.
-feat/*   → New features (e.g., feat/user-login)
-fix/*    → Bug fixes (e.g., fix/broken-checkout)
-```
-
-### The Safe Flow
-1. **Create feature branch** from `dev` for each piece of work
-2. **Make changes** on the feature branch (multiple commits OK)
-3. **Create PR** (Pull Request) to merge into `dev`
-4. **Review & test** on `dev` before promoting to `main`
-5. **Create PR** from `dev` to `main` for production release
-
-### Commands You'll Handle For Me
-- Creating branches with clear names
-- Writing descriptive commit messages (explains WHAT and WHY)
-- Creating PRs with summaries of changes
-- Squash merging (combines messy commits into one clean one)
-
-### Rules
-- **NEVER push directly to `main`** — always use PRs
-- **NEVER delete `dev`** — it's a permanent development branch
-- **ALWAYS use PRs** — creates a review checkpoint and paper trail
-- **Squash merge to `main`** — keeps production history clean and readable
-- Use `gh pr merge --squash` without `--delete-branch` for dev→main merges
-- Feature branches (`feat/*`, `fix/*`) can be deleted after merging
-
-### Why This Matters
-- **Undo mistakes**: Every change is recorded, nothing is permanent
-- **Safe deployments**: Test on `dev` before touching production
-- **Clear history**: Anyone can see what changed and why
-- **Collaboration-ready**: Others can review before changes go live
-
----
-
-## 12. Code Hygiene — Clean As You Go
+## 11. Code Hygiene — Clean As You Go
 
 A clean codebase is one I can understand. Since I won't be reading the code directly, you MUST keep it clean for me.
 
@@ -261,7 +220,7 @@ A clean codebase is one I can understand. Since I won't be reading the code dire
 
 ---
 
-## 13. Technical Debt Prevention
+## 12. Technical Debt Prevention
 
 Technical debt is shortcuts that create future work. We avoid it by doing things right the first time.
 
@@ -273,7 +232,7 @@ Technical debt is shortcuts that create future work. We avoid it by doing things
 
 ---
 
-## 14. Pattern Consistency
+## 13. Pattern Consistency
 
 Consistency makes a codebase predictable. Predictable means fewer surprises.
 
@@ -285,7 +244,7 @@ Consistency makes a codebase predictable. Predictable means fewer surprises.
 
 ---
 
-## 15. Error Recovery Protocol (When Stuck)
+## 14. Error Recovery Protocol (When Stuck)
 
 Getting stuck is normal. Here's what to do:
 
@@ -299,7 +258,7 @@ The goal is to fail fast and recover, not to struggle silently.
 
 ---
 
-## 16. Compounding Learning (Project-Specific)
+## 15. Compounding Learning (Project-Specific)
 
 Every session should make future sessions smarter. This is how knowledge compounds.
 
@@ -327,7 +286,7 @@ Every session should make future sessions smarter. This is how knowledge compoun
 
 ---
 
-## 17. Minimal Dependencies
+## 16. Minimal Dependencies
 
 Every dependency is code you don't control. Fewer dependencies = fewer problems.
 
@@ -339,7 +298,7 @@ Every dependency is code you don't control. Fewer dependencies = fewer problems.
 
 ---
 
-## 18. Self-Documenting Code
+## 17. Self-Documenting Code
 
 The best documentation is code that explains itself.
 
@@ -351,7 +310,7 @@ The best documentation is code that explains itself.
 
 ---
 
-## 19. Testing Discipline
+## 18. Testing Discipline
 
 Tests are your safety net. They catch problems before users do.
 
@@ -363,7 +322,7 @@ Tests are your safety net. They catch problems before users do.
 
 ---
 
-## 20. Defensive Coding
+## 19. Defensive Coding
 
 Assume things will go wrong and code accordingly.
 
