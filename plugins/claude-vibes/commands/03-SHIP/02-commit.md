@@ -27,12 +27,20 @@ Look for `LOGS.json` in the project root or `docs/` directory. Use recent entrie
 
 ## Commit Process
 
-### 1. Check for Changes
+### 1. Check Current State
 
-Run `git status` to see what's ready to commit.
+Run `git status` to understand:
+- What changes exist (staged and unstaged)?
+- What branch are we on?
 
 **If nothing to commit:**
 "No changes to commit. Your working directory is clean."
+
+**If on main or the default branch:**
+Warn the user:
+"You're on the main branch. Best practice is to work on feature branches and merge via PR."
+- Use AskUserQuestion: "Create a feature branch, or commit here anyway?"
+- If they want a branch, ask for name and create it before committing
 
 **If there are changes:**
 Continue to analysis.
@@ -40,6 +48,15 @@ Continue to analysis.
 ### 2. Analyze Changes
 
 Run `git diff --staged` to see staged changes, or `git diff` for unstaged.
+
+**Safety check for sensitive files:**
+Before staging, check for files that shouldn't be committed:
+- `.env`, `.env.local`, `.env.production`
+- `credentials.json`, `secrets.json`
+- Private keys (`*.pem`, `*.key`)
+- `node_modules/`, `__pycache__/`
+
+If found, warn the user and exclude them (or verify .gitignore handles them).
 
 Understand:
 - What files were modified?
@@ -56,10 +73,6 @@ Create a commit message following this format:
 <type>: <concise summary of what changed>
 
 <optional body explaining why, if not obvious>
-
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
 ```
 
 **Types:**
@@ -122,7 +135,6 @@ EOF
 - Use present tense ("add feature" not "added feature")
 - The body explains WHY, the summary explains WHAT
 - Reference LOGS.json context when available
-- Include the Claude Code footer
 
 ## Edge Cases
 
