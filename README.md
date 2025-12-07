@@ -1,8 +1,8 @@
 # Claude Vibes
 
-A production-grade plugin suite for **vibe coding** with Claude Code.
+A production-grade plugin for **vibe coding** with Claude Code.
 
-Vibe coding is describing WHAT you want while Claude handles HOW to build it. These plugins provide structured workflows, specialized agents, and intelligent tools that transform ideas into production-ready code.
+Vibe coding is describing WHAT you want while Claude handles HOW to build it. This plugin provides structured workflows, specialized agents, and intelligent tools that transform ideas into production-ready code.
 
 ---
 
@@ -39,23 +39,14 @@ claude
 
 ### 5. Install Claude Vibes
 
-Install all plugins:
-```bash
-npx claude-plugins install @mike-coulbourn/claude-vibes/01-start && \
-npx claude-plugins install @mike-coulbourn/claude-vibes/02-build && \
-npx claude-plugins install @mike-coulbourn/claude-vibes/03-ship && \
-npx claude-plugins install @mike-coulbourn/claude-vibes/04-fix && \
-npx claude-plugins install @mike-coulbourn/claude-vibes/05-refactor
-```
-
-### 6. Add Marketplace (for updates)
-
-Start Claude Code and add the marketplace to receive future updates:
-```
-claude
-```
+Add the marketplace and install plugins:
 ```
 /plugin marketplace add mike-coulbourn/claude-vibes
+```
+
+Then browse and install the plugins you want:
+```
+/plugin
 ```
 
 ### Verify
@@ -81,46 +72,40 @@ Add to your repository's `.claude/settings.json` for automatic team setup:
 {
   "plugins": {
     "marketplaces": ["mike-coulbourn/claude-vibes"],
-    "installed": [
-      "01-start@claude-vibes",
-      "02-build@claude-vibes",
-      "03-ship@claude-vibes",
-      "04-fix@claude-vibes",
-      "05-refactor@claude-vibes"
-    ]
+    "installed": ["claude-vibes@claude-vibes"]
   }
 }
 ```
 
-When team members trust the repository folder, plugins install automatically.
+When team members trust the repository folder, the plugin installs automatically.
 
 ---
 
 ## The Workflow
 
 ```
-start → build → ship → fix → refactor
+START → BUILD → SHIP → FIX → REFACTOR
   ↓       ↓       ↓      ↓        ↓
  Plan   Code   Deploy  Debug   Evolve
 ```
 
-Each phase has dedicated plugins with commands and agents designed for that stage of development.
+Each phase has dedicated commands and agents designed for that stage of development.
 
 ---
 
-## Plugins
+## Commands & Agents
 
-### 01-start (Discovery & Planning)
+### 01-START (Discovery & Planning)
 
 Plan before you build. Discover the problem space, scope your MVP, and create an implementation roadmap.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/01-start/01-discover` | Understand the problem space and user needs |
-| `/01-start/02-scope` | Define MVP boundaries and prioritize features |
-| `/01-start/03-architect` | Plan technical approach and system design |
-| `/01-start/04-plan` | Create implementation roadmap with phases |
+| `/claude-vibes:01-START/01-discover` | Understand the problem space and user needs |
+| `/claude-vibes:01-START/02-scope` | Define MVP boundaries and prioritize features |
+| `/claude-vibes:01-START/03-architect` | Plan technical approach and system design |
+| `/claude-vibes:01-START/04-plan` | Create implementation roadmap with phases |
 
 **Agents:**
 - `market-validator` - Research market viability and competition
@@ -131,16 +116,16 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 
 ---
 
-### 02-build (Implementation)
+### 02-BUILD (Implementation)
 
 Build features methodically. Plan each feature, implement with best practices, and review before shipping.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/02-build/01-plan` | Break down feature into implementation steps |
-| `/02-build/02-build` | Implement the feature with production quality |
-| `/02-build/03-review` | Review code for production readiness |
+| `/claude-vibes:02-BUILD/01-plan` | Break down feature into implementation steps |
+| `/claude-vibes:02-BUILD/02-build` | Implement the feature with production quality |
+| `/claude-vibes:02-BUILD/03-review` | Review code for production readiness |
 
 **Agents:**
 - `code-architect` - Design feature architecture and patterns
@@ -149,30 +134,30 @@ Build features methodically. Plan each feature, implement with best practices, a
 
 ---
 
-### 03-ship (Deployment)
+### 03-SHIP (Deployment)
 
 Ship with confidence. Run checks, commit cleanly, and create PRs.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/03-ship/01-check` | Run linting, tests, and pre-commit checks |
-| `/03-ship/02-commit` | Create a clean commit with descriptive message |
-| `/03-ship/03-push` | Push to remote branch |
-| `/03-ship/04-pr` | Create pull request with summary |
+| `/claude-vibes:03-SHIP/01-check` | Run linting, tests, and pre-commit checks |
+| `/claude-vibes:03-SHIP/02-commit` | Create a clean commit with descriptive message |
+| `/claude-vibes:03-SHIP/03-push` | Push to remote branch |
+| `/claude-vibes:03-SHIP/04-pr` | Create pull request with summary |
 
 ---
 
-### 04-fix (Debugging)
+### 04-FIX (Debugging)
 
 Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/04-fix/01-diagnose` | Investigate and identify root cause |
-| `/04-fix/02-fix` | Apply the fix with minimal changes |
-| `/04-fix/03-verify` | Verify fix works and document in LOGS.json |
+| `/claude-vibes:04-FIX/01-diagnose` | Investigate and identify root cause |
+| `/claude-vibes:04-FIX/02-fix` | Apply the fix with minimal changes |
+| `/claude-vibes:04-FIX/03-verify` | Verify fix works and document in LOGS.json |
 
 **Agents:**
 - `diagnostician` - Deep investigation and root cause analysis
@@ -181,16 +166,16 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 
 ---
 
-### 05-refactor (Code Evolution)
+### 05-REFACTOR (Code Evolution)
 
 Improve code without changing behavior. Assess opportunities, refactor safely, and validate preservation.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/05-refactor/01-assess` | Identify refactoring opportunities |
-| `/05-refactor/02-refactor` | Apply refactoring with behavior preservation |
-| `/05-refactor/03-validate` | Verify behavior unchanged, document in LOGS.json |
+| `/claude-vibes:05-REFACTOR/01-assess` | Identify refactoring opportunities |
+| `/claude-vibes:05-REFACTOR/02-refactor` | Apply refactoring with behavior preservation |
+| `/claude-vibes:05-REFACTOR/03-validate` | Verify behavior unchanged, document in LOGS.json |
 
 **Agents:**
 - `assessor` - Code archaeology and improvement analysis
@@ -293,25 +278,15 @@ claude-vibes/
 │   └── marketplace.json         # Plugin marketplace manifest
 ├── README.md                    # This file
 └── plugins/
-    ├── 01-start/                # Discovery & Planning
-    │   ├── plugin.json
-    │   ├── commands/
-    │   └── agents/
-    ├── 02-build/                # Implementation
-    │   ├── plugin.json
-    │   ├── commands/
-    │   └── agents/
-    ├── 03-ship/                 # Deployment
-    │   ├── plugin.json
-    │   └── commands/
-    ├── 04-fix/                  # Debugging
-    │   ├── plugin.json
-    │   ├── commands/
-    │   └── agents/
-    └── 05-refactor/             # Code Evolution
-        ├── plugin.json
+    └── claude-vibes/            # Bundled plugin
+        ├── plugin.json          # Plugin manifest with MCP servers
         ├── commands/
-        └── agents/
+        │   ├── 01-START/        # Discovery & Planning
+        │   ├── 02-BUILD/        # Implementation
+        │   ├── 03-SHIP/         # Deployment
+        │   ├── 04-FIX/          # Debugging
+        │   └── 05-REFACTOR/     # Code Evolution
+        └── agents/              # All 14 agents
 ```
 
 ---

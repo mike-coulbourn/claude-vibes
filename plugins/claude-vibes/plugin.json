@@ -1,7 +1,7 @@
 {
-  "name": "01-start",
-  "version": "0.1.0",
-  "description": "Plan and scope your project before building. Discovery, scoping, architecture, and planning workflows for vibe coders.",
+  "name": "claude-vibes",
+  "version": "1.0.0",
+  "description": "Production-grade vibe coding suite. Structured workflows from discovery to deployment: start, build, ship, fix, refactor.",
   "author": {
     "name": "Claude Vibes"
   },

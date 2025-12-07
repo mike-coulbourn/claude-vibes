@@ -1,8 +1,0 @@
-{
-  "name": "02-build",
-  "version": "0.2.0",
-  "description": "Build production-grade code with confidence. Plan, implement, and review in an iterative cycle that maintains code quality throughout.",
-  "author": {
-    "name": "Claude Vibes"
-  }
-}

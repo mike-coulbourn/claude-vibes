@@ -6,29 +6,9 @@
   },
   "plugins": [
     {
-      "name": "01-start",
-      "source": "./plugins/01-start",
-      "description": "Plan and scope your project. Discovery, scoping, architecture, and planning workflows."
-    },
-    {
-      "name": "02-build",
-      "source": "./plugins/02-build",
-      "description": "Build production-grade code. Plan, implement, and review with code quality throughout."
-    },
-    {
-      "name": "03-ship",
-      "source": "./plugins/03-ship",
-      "description": "Ship with confidence. Checks, commits, pushes, and pull requests."
-    },
-    {
-      "name": "04-fix",
-      "source": "./plugins/04-fix",
-      "description": "Debug systematically. Diagnose root causes, apply fixes, verify solutions."
-    },
-    {
-      "name": "05-refactor",
-      "source": "./plugins/05-refactor",
-      "description": "Evolve code safely. Assess opportunities, refactor, validate behavior preservation."
+      "name": "claude-vibes",
+      "source": "./plugins/claude-vibes",
+      "description": "Complete vibe coding suite: start, build, ship, fix, refactor. 17 commands, 14 agents, 3 MCP servers."
     }
   ]
 }
