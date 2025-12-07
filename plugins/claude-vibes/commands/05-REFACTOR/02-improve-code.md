@@ -17,20 +17,14 @@ You orchestrate the refactoring and manage the conversation. You handle coordina
 
 Your job:
 - Load context and plan the approach
-- Run tests to establish baseline
 - **Launch the refactorer agent** (via Task tool) to apply code changes
-- Verify tests pass after changes
 - Summarize results to the user
 
 ## The Golden Rule
 
 **The code must do exactly the same thing before and after—just be structured better.**
 
-This means:
-- Run tests before changes (establish baseline)
-- Make incremental changes with verification
-- Run tests after each change
-- If tests fail, stop and investigate
+Refactoring improves structure without changing behavior. Validation happens in `/03-validate-improvements`.
 
 ## Project Context
 
@@ -56,20 +50,7 @@ If no assessment file exists, use AskUserQuestion to understand what improvement
 
 ## Refactor Process
 
-### 1. Establish Baseline
-
-Before any changes:
-```
-First, let me verify the current state:
-- Running tests to establish baseline...
-- [X] tests passing, [Y] tests total
-- This is our baseline—we'll verify against this after each change.
-```
-
-If tests are already failing, warn:
-"Some tests are failing before we start. Should we fix those first, or proceed carefully with refactoring?"
-
-### 2. Load Context
+### 1. Load Context
 
 If no input is provided:
 "What would you like to improve? Run `/01-assess-improvements` first for a full analysis, or describe the improvement: `/02-improve-code extract the validation logic into a shared utility`"
@@ -77,7 +58,7 @@ If no input is provided:
 If an assessment file path is provided, read it for the full analysis.
 If a direct description is provided, treat it as a targeted refactoring.
 
-### 3. Plan the Changes
+### 2. Plan the Changes
 
 From the assessment or description, confirm:
 - What's being refactored?
@@ -91,13 +72,11 @@ This refactoring has 3 steps:
 1. Extract the shared validation function
 2. Update users.ts to use it
 3. Update orders.ts to use it
-
-I'll verify tests pass after each step.
 ```
 
 Use AskUserQuestion if the approach isn't clear.
 
-### 4. Launch Refactorer (REQUIRED)
+### 3. Launch Refactorer (REQUIRED)
 
 **You MUST use the Task tool to launch the refactorer agent** for each step. Use `subagent_type: "claude-vibes:refactorer"` with this prompt:
 
@@ -144,30 +123,7 @@ After the refactorer returns:
 
 This gives you relevant refactoring history without reading the entire LOGS.json.
 
-### 5. Verify After Each Step
-
-After each step:
-```
-Step 1 complete. Verifying...
-- Running tests...
-- [X] tests passing (same as baseline)
-- Behavior preserved. Moving to step 2.
-```
-
-If tests fail:
-```
-Tests failed after this change:
-- test_user_validation: Expected "valid" but got "error"
-
-This suggests the refactoring changed behavior. Options:
-1. Investigate and fix the refactoring
-2. Roll back this step
-3. Check if the test expectation is wrong
-```
-
-Use AskUserQuestion for the decision.
-
-### 6. Summarize Changes
+### 4. Summarize Changes
 
 After all steps complete:
 
@@ -187,29 +143,16 @@ Refactoring complete!
 - Single point of change for validation logic
 - Consistent validation across endpoints
 
-**Behavior verification:**
-- All [X] tests passing
-- No behavior changes detected
-
-Ready to validate and document? Run `/03-validate-improvements`
+Ready to validate? Run `/03-validate-improvements`
 ```
 
 ## Guidelines
 
-- Always establish test baseline before changes
-- Make incremental changes, verify after each
-- If tests fail, stop and discuss—don't push forward
+- Make incremental changes—one step at a time
 - Follow existing patterns—don't invent new approaches
 - Refactoring ≠ adding features or fixing bugs
 - Let the refactorer explore LOGS.json; read only what it references
-
-## Rollback Strategy
-
-If things go wrong:
-1. Stop immediately when tests fail
-2. Explain what happened clearly
-3. Offer to roll back: `git checkout -- <files>`
-4. Diagnose what went wrong before trying again
+- Validation and testing happen in `/03-validate-improvements`
 
 ## Output
 
@@ -218,5 +161,4 @@ When refactoring is complete:
 1. Summary of what was improved
 2. List of files modified with descriptions
 3. Improvement metrics (lines saved, complexity reduced, etc.)
-4. Test verification results
-5. Next step: "Run `/03-validate-improvements` to confirm behavior and document"
+4. Next step: "Run `/03-validate-improvements` to verify behavior and document"
