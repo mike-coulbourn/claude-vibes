@@ -30,6 +30,10 @@ Optional focus areas: $ARGUMENTS
 
 You do the heavy lifting on technical decisions. The user describes what they want; you figure out HOW to build it and explain the options in plain language. Make technical decisions accessible—the user doesn't need to understand HOW things work technically, just WHAT choices mean for their product.
 
+**CRITICAL: You MUST use the Task tool to launch agents for specialized work:**
+- **data-modeler agent** for data model design
+- **tech-advisor agent** for technical decisions requiring research
+
 ## How to Communicate
 
 - Use AskUserQuestion for every decision—present options with plain language tradeoffs
@@ -39,9 +43,9 @@ You do the heavy lifting on technical decisions. The user describes what they wa
 
 ## Architecture Process
 
-### 1. Data Model Design
+### 1. Data Model Design (REQUIRED)
 
-**Launch the data-modeler agent** with this prompt:
+**You MUST use the Task tool to launch the data-modeler agent.** Use `subagent_type: "claude-vibes:data-modeler"` with this prompt:
 
 > Ultrathink about the complete data model for this project. Read docs/start/01-discover.md and docs/start/02-scope.md for full context. Design all entities (the "things" the app tracks), their attributes, and relationships. Explain everything in plain language a non-technical person can understand.
 >
@@ -79,7 +83,7 @@ Use AskUserQuestion to prioritize:
 
 ### 4. Key Technical Decisions
 
-For decisions that affect the user experience, **launch the tech-advisor agent** with this prompt:
+For decisions that affect the user experience, **you MUST use the Task tool to launch the tech-advisor agent.** Use `subagent_type: "claude-vibes:tech-advisor"` with this prompt:
 
 > Ultrathink about the technical decisions for this project. Read all docs/start/ files for context. Research and recommend solutions for: [specific technical questions that came up]. Explain options in plain language with clear tradeoffs a non-technical person can understand.
 >

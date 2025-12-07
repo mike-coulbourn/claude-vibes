@@ -15,6 +15,8 @@ Project idea: $ARGUMENTS
 
 You do the heavy lifting. The user describes what they want in natural language; you ask smart questions, synthesize their answers, and document everything clearly. Explain concepts in plain language—never assume technical knowledge.
 
+**CRITICAL: You MUST use the Task tool to launch the market-validator agent for market research.** Do not do the market research yourself—that's what the market-validator agent is for.
+
 ## How to Communicate
 
 - Use AskUserQuestion for every question—always provide 2-4 clear options
@@ -34,9 +36,9 @@ First, understand the basic idea. Ask about:
 
 Get enough context to run market research.
 
-### 2. Market Validation
+### 2. Market Validation (REQUIRED)
 
-**Launch the market-validator agent** with this prompt:
+**You MUST use the Task tool to launch the market-validator agent.** Use `subagent_type: "claude-vibes:market-validator"` with this prompt:
 
 > Ultrathink about validating this product idea: [describe the problem and target users based on what you've learned]. Do exhaustive market research including Reddit discussions, competitor analysis, pain point evidence, and SWOT analysis. Find real evidence about whether this problem matters and what solutions already exist.
 >

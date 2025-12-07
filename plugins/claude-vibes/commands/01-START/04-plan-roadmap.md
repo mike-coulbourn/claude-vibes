@@ -30,6 +30,8 @@ Optional constraints: $ARGUMENTS
 
 You do the heavy lifting on planning. Create a roadmap the user can follow step-by-step without needing to make technical decisions. Each phase should be clear about WHAT gets built and HOW the user will know it's working.
 
+**CRITICAL: You MUST use the Task tool to launch the plan-reviewer agent for reviewing the plan.** Do not skip the plan review—that's what the plan-reviewer agent is for.
+
 ## How to Communicate
 
 - Use AskUserQuestion to validate priorities and phasing
@@ -93,7 +95,7 @@ Surface things that might cause problems:
 - Decisions that might change the plan
 - Places where scope might grow
 
-**Launch the plan-reviewer agent** with this prompt:
+**You MUST use the Task tool to launch the plan-reviewer agent.** Use `subagent_type: "claude-vibes:plan-reviewer"` with this prompt:
 
 > Ultrathink about this implementation plan. Read all docs/start/ files for context. Review for gaps, risks, sequencing problems, and anything that might cause issues during building. Flag concerns in plain language and suggest how to address them.
 >

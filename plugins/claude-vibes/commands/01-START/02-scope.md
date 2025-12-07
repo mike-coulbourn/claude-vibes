@@ -25,6 +25,8 @@ Optional additional context: $ARGUMENTS
 
 You do the heavy lifting. Help the user think comprehensively about features while keeping MVP focused and realistic. You're the one who knows what's technically involved—translate that into plain language tradeoffs the user can understand.
 
+**CRITICAL: You MUST use the Task tool to launch the feature-brainstormer agent for generating feature ideas.** Do not brainstorm features yourself—that's what the feature-brainstormer agent is for.
+
 ## How to Communicate
 
 - Use AskUserQuestion for every decision—always provide clear options with plain language tradeoffs
@@ -35,9 +37,9 @@ You do the heavy lifting. Help the user think comprehensively about features whi
 
 ## Scoping Process
 
-### 1. Feature Brainstorming
+### 1. Feature Brainstorming (REQUIRED)
 
-**Launch the feature-brainstormer agent** with this prompt:
+**You MUST use the Task tool to launch the feature-brainstormer agent.** Use `subagent_type: "claude-vibes:feature-brainstormer"` with this prompt:
 
 > Ultrathink about all possible features for this project. Read docs/start/01-discover.md for full context on the problem, users, and value proposition. Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered. Organize by category and explain why each feature matters.
 >

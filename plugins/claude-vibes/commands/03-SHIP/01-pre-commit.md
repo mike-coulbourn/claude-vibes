@@ -13,6 +13,8 @@ Specific checks requested: $ARGUMENTS
 
 You orchestrate parallel checks on uncommitted changes and collect results. Each check runs in its own subagent for efficiency. You translate technical errors into plain language guidance.
 
+**CRITICAL: You MUST use the Task tool to launch subagents for the checks.** Do not run the checks yourself—launch them as parallel subagents for efficiency.
+
 ## How to Communicate
 
 - Report issues in plain language: "There's a variable that's never used" not "ESLint no-unused-vars error"
@@ -36,9 +38,9 @@ Identify what kind of project this is by looking for:
 - `requirements.txt` or `pyproject.toml` → Python project
 - `Cargo.toml` → Rust project
 
-### 3. Launch Parallel Checks
+### 3. Launch Parallel Checks (REQUIRED)
 
-**Launch subagents in parallel** for each applicable check, focusing only on changed files:
+**You MUST use the Task tool to launch subagents in parallel** for each applicable check, focusing only on changed files. Use `subagent_type: "general-purpose"` for each check:
 
 **Linting subagent:**
 > Run linting on these changed files: [list of changed files]. For Node.js: `npx eslint [files]`. For Python: `ruff check [files]`. Report any issues found with file paths and line numbers. Translate errors into plain language.
