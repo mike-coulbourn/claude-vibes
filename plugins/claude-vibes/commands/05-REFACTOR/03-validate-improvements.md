@@ -254,4 +254,4 @@ When validation is complete:
 2. Whether they're behavior changes or test failures
 3. How to fix each one
 4. Offer to adjust the refactoring
-5. "Re-run `/03-validate-refactor` after fixes"
+5. "Re-run `/03-validate-improvements` after fixes"

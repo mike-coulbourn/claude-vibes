@@ -163,16 +163,16 @@ Ship with confidence. Run checks, commit cleanly, and create PRs.
 
 ---
 
-### 🔧 04-FIX (Debugging)
+### 🔧 04-DEBUG (Debugging)
 
 Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:04-FIX/01-diagnose-issue` | Investigate and identify root cause |
-| `/claude-vibes:04-FIX/02-fix-issue` | Apply the fix with minimal changes |
-| `/claude-vibes:04-FIX/03-verify-fix` | Verify fix works and document in LOGS.json |
+| `/claude-vibes:04-DEBUG/01-diagnose-issue` | Investigate and identify root cause |
+| `/claude-vibes:04-DEBUG/02-fix-issue` | Apply the fix with minimal changes |
+| `/claude-vibes:04-DEBUG/03-verify-fix` | Verify fix works and document in LOGS.json |
 
 **Agents:**
 - `diagnostician` - Deep investigation and root cause analysis
@@ -189,9 +189,9 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:05-REFACTOR/01-assess-code` | Identify refactoring opportunities |
-| `/claude-vibes:05-REFACTOR/02-refactor-code` | Apply refactoring with behavior preservation |
-| `/claude-vibes:05-REFACTOR/03-validate-refactor` | Verify behavior unchanged, document in LOGS.json |
+| `/claude-vibes:05-REFACTOR/01-assess-improvements` | Identify improvement opportunities |
+| `/claude-vibes:05-REFACTOR/02-improve-code` | Apply improvements with behavior preservation |
+| `/claude-vibes:05-REFACTOR/03-validate-improvements` | Verify behavior unchanged, document in LOGS.json |
 
 **Agents:**
 - `assessor` - Code archaeology and improvement analysis
@@ -302,7 +302,7 @@ claude-vibes/
         │   ├── 01-START/        # Discovery & Planning
         │   ├── 02-BUILD/        # Implementation
         │   ├── 03-SHIP/         # Deployment
-        │   ├── 04-FIX/          # Debugging
+        │   ├── 04-DEBUG/        # Debugging
         │   └── 05-REFACTOR/     # Code Evolution
         └── agents/              # All 15 agents
 ```

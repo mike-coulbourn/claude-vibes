@@ -34,9 +34,9 @@ These are stable project documentation—always load them. The assessor agent wi
 
 If no input is provided:
 "What would you like me to assess for refactoring opportunities? Examples:
-- A specific file: `/01-assess-code src/api/search.ts`
-- A directory: `/01-assess-code src/utils/`
-- A concept: `/01-assess-code the authentication flow`"
+- A specific file: `/01-assess-improvements src/api/search.ts`
+- A directory: `/01-assess-improvements src/utils/`
+- A concept: `/01-assess-improvements the authentication flow`"
 
 If input is vague, use AskUserQuestion to clarify:
 - "You mentioned 'the API'. Should I assess all API endpoints, or focus on a specific area?"
@@ -159,7 +159,7 @@ Save the assessment to `docs/refactor/assessment-<topic>.md`:
 After presenting findings:
 - Use AskUserQuestion if prioritization isn't clear
 - Offer to proceed with specific refactorings
-- "Ready to refactor? Run `/02-refactor-code docs/refactor/assessment-<topic>.md` or describe what to tackle first"
+- "Ready to improve? Run `/02-improve-code docs/refactor/assessment-<topic>.md` or describe what to tackle first"
 
 ## Guidelines
 
@@ -168,7 +168,7 @@ After presenting findings:
 - Focus on impact over elegance (what actually matters)
 - Don't suggest refactoring working code just to refactor it
 - Consider the cost/benefit tradeoff for each opportunity
-- Save assessment for handoff to /02-refactor-code
+- Save assessment for handoff to /02-improve-code
 
 ## Output
 
@@ -178,4 +178,4 @@ When assessment is complete:
 2. Clear explanation of each opportunity
 3. Recommended order of operations
 4. Confirmation that assessment was saved to docs/refactor/
-5. Next step: "Run `/02-refactor-code` to start improving the code"
+5. Next step: "Run `/02-improve-code` to start improving the code"
