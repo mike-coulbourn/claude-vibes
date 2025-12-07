@@ -281,7 +281,8 @@ claude-vibes/
 ├── README.md                    # This file
 └── plugins/
     └── claude-vibes/            # Bundled plugin
-        ├── plugin.json          # Plugin manifest with MCP servers
+        ├── .claude-plugin/
+        │   └── plugin.json      # Plugin manifest with MCP servers
         ├── commands/
         │   ├── 01-START/        # Discovery & Planning
         │   ├── 02-BUILD/        # Implementation
