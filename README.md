@@ -1,12 +1,12 @@
 # 😎 Claude Vibes
 
-A production-grade plugin for **vibe coding** with Claude Code.
+A plugin for **vibe coding** production-grade apps with Claude Code.
 
 Vibe coding is describing WHAT you want while Claude handles HOW to build it. This plugin provides structured workflows, specialized agents, and intelligent tools that transform ideas into production-ready code.
 
 ---
 
-## Installation
+## 📦 Installation
 
 Open **Terminal** (press `Cmd + Space`, type "Terminal", hit Enter).
 
@@ -83,7 +83,7 @@ When team members trust the repository folder, the plugin installs automatically
 
 ---
 
-## The Workflow
+## 🔄 The Workflow
 
 ```
 START → BUILD → SHIP → FIX → REFACTOR
@@ -95,9 +95,9 @@ Each phase has dedicated commands and agents designed for that stage of developm
 
 ---
 
-## Commands & Agents
+## 🤖 Commands & Agents
 
-### 01-START (Discovery & Planning)
+### 🧐 01-START (Discovery & Planning)
 
 Plan before you build. Discover the problem space, scope your MVP, and create an implementation roadmap.
 
@@ -118,7 +118,7 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 
 ---
 
-### 02-BUILD (Implementation)
+### 🏗️ 02-BUILD (Implementation)
 
 Build features methodically. Plan each feature, implement with best practices, and review before shipping.
 
@@ -136,7 +136,7 @@ Build features methodically. Plan each feature, implement with best practices, a
 
 ---
 
-### 03-SHIP (Deployment)
+### 🚀 03-SHIP (Deployment)
 
 Ship with confidence. Run checks, commit cleanly, and create PRs.
 
@@ -150,7 +150,7 @@ Ship with confidence. Run checks, commit cleanly, and create PRs.
 
 ---
 
-### 04-FIX (Debugging)
+### 🔧 04-FIX (Debugging)
 
 Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work.
 
@@ -168,7 +168,7 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 
 ---
 
-### 05-REFACTOR (Code Evolution)
+### ✨ 05-REFACTOR (Code Evolution)
 
 Improve code without changing behavior. Assess opportunities, refactor safely, and validate preservation.
 
@@ -186,11 +186,11 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 
 ---
 
-## MCP Servers
+## 🔌 MCP Servers
 
 MCP (Model Context Protocol) servers extend Claude Code with additional capabilities. This plugin suite auto-installs essential servers that work out of the box.
 
-### Auto-Installed (No Setup Required)
+### ✅ Auto-Installed (No Setup Required)
 
 These servers start automatically when the plugin is enabled:
 
@@ -205,45 +205,45 @@ These servers start automatically when the plugin is enabled:
 - Memory persists entities, relations, and observations across sessions
 - Sequential Thinking excels at complex multi-step problems
 
-### Optional Servers (Require Setup)
+### ⚙️ Optional Servers (Require Setup)
 
 Add these based on your workflow. Each requires authentication or additional setup.
 
-#### Version Control & Issues
+#### 🔀 Version Control & Issues
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **GitHub** | PR/issue management | `claude mcp add --transport http github https://api.githubcopilot.com/mcp` | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
 | **Linear** | Issue tracking | Connect via `/mcp` | [linear.app/changelog/2025-05-01-mcp](https://linear.app/changelog/2025-05-01-mcp) |
 
-#### Debugging & Testing
+#### 🐛 Debugging & Testing
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **Sentry** | Error tracking | `claude mcp add --transport http sentry https://mcp.sentry.dev/mcp` | [docs.sentry.io/product/sentry-mcp](https://docs.sentry.io/product/sentry-mcp/) |
 | **Playwright** | Browser automation | `claude mcp add playwright -- npx @playwright/mcp@latest` | [github.com/microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) |
 
-#### Database & Backend
+#### 🗄️ Database & Backend
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **Supabase** | Database management | Configure via JSON | [supabase.com/docs/guides/getting-started/mcp](https://supabase.com/docs/guides/getting-started/mcp) |
 | **PostgreSQL** | SQL queries | `claude mcp add-json "postgres" '{"command":"npx","args":["-y","@modelcontextprotocol/server-postgres"]}'` | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
 
-#### Deployment
+#### 🌐 Deployment
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **Cloudflare** | Edge deployment | `claude mcp add --transport sse cloudflare https://mcp.cloudflare.com/sse` | [github.com/cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) |
 | **Vercel** | Frontend hosting | `claude mcp add-json "vercel" '{"command":"npx","args":["-y","vercel-mcp"]}'` | [vercel.com/docs/mcp/vercel-mcp](https://vercel.com/docs/mcp/vercel-mcp) |
 
-### Best Practice
+### 💡 Best Practice
 
 > Start with the auto-installed essentials. Add specialized servers only when you need them. Too many MCP servers can slow down Claude Code startup.
 
 ---
 
-## LOGS.json
+## 📋 LOGS.json
 
 All plugins share a unified `LOGS.json` file at the project root for compounding learning. Each phase writes entries with relevant metadata:
 
@@ -272,7 +272,7 @@ The `phase` field enables filtering while the unified file enables cross-phase l
 
 ---
 
-## Structure
+## 📁 Structure
 
 ```
 claude-vibes/
@@ -294,7 +294,7 @@ claude-vibes/
 
 ---
 
-## References
+## 📚 References
 
 ### Plugins
 - [Plugins Overview](https://code.claude.com/docs/en/plugins) - Install and create plugins
