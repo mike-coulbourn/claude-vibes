@@ -285,43 +285,12 @@ The `phase` field enables filtering while the unified file enables cross-phase l
 
 ---
 
-## Agent MCP Integration
-
-Each agent is configured to use MCP servers when relevant:
-
-| Agent | Context7 | Memory | Sequential Thinking |
-|-------|:--------:|:------:|:-------------------:|
-| **01-start** |
-| tech-advisor | ✓ | ✓ | ✓ |
-| data-modeler | ✓ | ✓ | ✓ |
-| plan-reviewer | — | ✓ | ✓ |
-| **02-build** |
-| code-guru | ✓ | ✓ | — |
-| code-architect | ✓ | ✓ | ✓ |
-| code-reviewer | ✓ | ✓ | ✓ |
-| **04-fix** |
-| diagnostician | ✓ | ✓ | ✓ |
-| fixer | ✓ | ✓ | — |
-| verifier | — | ✓ | ✓ |
-| **05-refactor** |
-| assessor | — | ✓ | ✓ |
-| refactorer | — | ✓ | — |
-| validator | — | ✓ | ✓ |
-
-**How agents use MCP servers:**
-- **Context7**: Fetches current library documentation for accurate code generation and review
-- **Memory**: Stores and recalls project patterns, past decisions, and lessons learned
-- **Sequential Thinking**: Structures complex analysis, diagnosis, and planning tasks
-
----
-
 ## Structure
 
 ```
 claude-vibes/
 ├── .claude-plugin/
 │   └── marketplace.json         # Plugin marketplace manifest
-├── .mcp.json                    # Auto-installed MCP servers
 ├── README.md                    # This file
 └── plugins/
     ├── 01-start/                # Discovery & Planning
