@@ -37,6 +37,12 @@ You do the heavy lifting on technical decisions. The user describes what they wa
 **Launch the data-modeler agent** with this prompt:
 
 > Ultrathink about the complete data model for this project. Read docs/start/01-discover.md and docs/start/02-scope.md for full context. Design all entities (the "things" the app tracks), their attributes, and relationships. Explain everything in plain language a non-technical person can understand.
+>
+> **Use AskUserQuestion throughout design:**
+> - If entities could be structured multiple ways, ask which makes more sense for their use case
+> - If you're unsure about relationships between things, ask the user to clarify
+> - If you see data that could be user-specific vs. shared, ask which they intend
+> - Never assume business rules—clarify how things should relate to each other
 
 Use the data-modeler's output to walk through the data design with the user. Confirm using AskUserQuestion:
 - "Your app needs to track [entities]. Does this capture everything?"
@@ -69,6 +75,12 @@ Use AskUserQuestion to prioritize:
 For decisions that affect the user experience, **launch the tech-advisor agent** with this prompt:
 
 > Ultrathink about the technical decisions for this project. Read all docs/start/ files for context. Research and recommend solutions for: [specific technical questions that came up]. Explain options in plain language with clear tradeoffs a non-technical person can understand.
+>
+> **Use AskUserQuestion for technical decisions:**
+> - When there are multiple valid approaches, present options and ask which fits their priorities
+> - If a decision has significant tradeoffs, explain them and ask the user to choose
+> - If you're unsure about performance vs. simplicity priorities, ask
+> - Never assume technical preferences—clarify what matters most to the user
 
 Key areas to address:
 

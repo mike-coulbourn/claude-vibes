@@ -65,6 +65,12 @@ Otherwise, find the recent fix:
 > - Check for regressions (did we break anything else?)
 > - Verify edge cases mentioned in the diagnosis
 >
+> **Use AskUserQuestion during verification:**
+> - If you're unsure what "fixed" should look like, ask the user to describe expected behavior
+> - If you find an edge case that wasn't covered, ask if it's important
+> - If verification reveals unclear requirements, ask for clarification
+> - If you're unsure whether a behavior change is acceptable, ask
+>
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
 > - Quote the relevant portions from those entries
@@ -98,6 +104,12 @@ Otherwise, find the recent fix:
 > - Edge cases related to the fix
 > - Regression tests to prevent the bug from returning
 > - Integration points affected by the fix
+>
+> **Use AskUserQuestion during testing:**
+> - If you're unsure what the correct behavior should be, ask
+> - If tests reveal ambiguous requirements, ask for clarification
+> - If you find additional bugs, ask about priority
+> - If you need to understand the original bug better, ask the user to describe it
 >
 > **Report back with:**
 > - Tests written that prove the fix works

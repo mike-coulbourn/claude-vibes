@@ -66,6 +66,13 @@ Read docs/start/ files to understand project patterns and conventions.
 > - Performance opportunities
 > - Maintainability improvements
 >
+> **Use AskUserQuestion during assessment:**
+> - If you're unsure whether something is intentional complexity, ask
+> - If multiple improvement strategies exist, ask which direction the user prefers
+> - If you need more context about why code is structured a certain way, ask
+> - If priorities between opportunities are unclear, ask the user what matters most
+> - Never assume code is "bad"—clarify intent before suggesting changes
+>
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
 > - Quote the relevant portions from those entries

@@ -62,6 +62,13 @@ Get enough detail to begin investigation.
 > - Look for edge cases or missing validation
 > - Test hypotheses by reading relevant code
 >
+> **Use AskUserQuestion during investigation:**
+> - If you need more details about when/how the issue occurs, ask
+> - If the symptom could have multiple causes, ask questions to narrow it down
+> - If you find something unexpected that needs context, ask the user about it
+> - If you're unsure whether something is a bug or expected behavior, ask
+> - Never assume you understand the issue—clarify with the user
+>
 > **Report back with:**
 > - Specific LOGS.json entries that are relevant (cite entry IDs)
 > - Exact file paths and line numbers where the issue originates

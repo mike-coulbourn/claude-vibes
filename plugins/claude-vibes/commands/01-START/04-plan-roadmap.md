@@ -90,6 +90,12 @@ Surface things that might cause problems:
 **Launch the plan-reviewer agent** with this prompt:
 
 > Ultrathink about this implementation plan. Read all docs/start/ files for context. Review for gaps, risks, sequencing problems, and anything that might cause issues during building. Flag concerns in plain language and suggest how to address them.
+>
+> **Use AskUserQuestion when reviewing:**
+> - If you find gaps that could be filled multiple ways, ask which approach fits their goals
+> - If risks could be mitigated differently, present options and ask
+> - If sequencing could go multiple directions, ask about priorities
+> - Never assume how to resolve concerns—clarify with the user
 
 ### 6. Define Milestones
 

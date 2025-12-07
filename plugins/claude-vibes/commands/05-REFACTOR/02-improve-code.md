@@ -103,6 +103,13 @@ Use AskUserQuestion if the approach isn't clear.
 > - Don't add new features or fix bugs (that's /fix)
 > - Make the minimal change needed for this step
 >
+> **Use AskUserQuestion during refactoring:**
+> - If you're unsure whether a change preserves behavior, ask the user to clarify expected behavior
+> - If you find related code that should also be updated, ask if the user wants to include it
+> - If the refactoring is more complex than expected, check in before continuing
+> - If you see multiple valid approaches, ask which the user prefers
+> - Never change behavior without asking—refactoring means same behavior, better structure
+>
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
 > - Quote the relevant portions from those entries

@@ -39,6 +39,12 @@ Get enough context to run market research.
 **Launch the market-validator agent** with this prompt:
 
 > Ultrathink about validating this product idea: [describe the problem and target users based on what you've learned]. Do exhaustive market research including Reddit discussions, competitor analysis, pain point evidence, and SWOT analysis. Find real evidence about whether this problem matters and what solutions already exist.
+>
+> **Use AskUserQuestion throughout your research:**
+> - If you find conflicting information, ask the user which direction resonates more
+> - If you discover the market is very different than expected, check in before continuing
+> - If multiple viable niches exist, ask which one to focus on
+> - Never assume—clarify anything ambiguous with the user
 
 This research is crucial—it will either validate the idea or surface important concerns early. Use the findings to:
 - Confirm or challenge assumptions about the problem

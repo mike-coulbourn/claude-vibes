@@ -40,6 +40,12 @@ You do the heavy lifting. Help the user think comprehensively about features whi
 **Launch the feature-brainstormer agent** with this prompt:
 
 > Ultrathink about all possible features for this project. Read docs/start/01-discover.md for full context on the problem, users, and value proposition. Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered. Organize by category and explain why each feature matters.
+>
+> **Use AskUserQuestion throughout brainstorming:**
+> - If you're unsure what level of complexity the user wants, ask
+> - If a feature could go multiple directions, ask which resonates
+> - If you see potential scope creep, flag it and ask how to handle it
+> - Never assume priorities—clarify what matters most to the user
 
 The feature-brainstormer is the expert on comprehensive ideation. Use its output as the starting point for categorization.
 

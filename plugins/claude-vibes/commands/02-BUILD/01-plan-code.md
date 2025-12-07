@@ -25,7 +25,8 @@ These are stable project documentation—always load them.
 
 ## How to Communicate
 
-- Use AskUserQuestion to clarify requirements before planning
+- **Use AskUserQuestion FIRST** to clarify requirements—don't assume you understand
+- Never launch agents until you've confirmed your understanding with the user
 - Lead with recommendations: "Based on the existing patterns, I'd suggest..."
 - Explain design decisions in plain language
 - Flag anything that might be tricky or have alternatives
@@ -41,10 +42,17 @@ Read all available docs/start/ files for project understanding.
 If `$ARGUMENTS` is provided, start there. If not, use AskUserQuestion:
 - "What would you like to build next?"
 
-Clarify until you fully understand:
-- What should this feature DO?
-- Who is it for?
-- Any specific behaviors or edge cases?
+**Use AskUserQuestion to clarify until you fully understand:**
+- What should this feature DO? (specific behavior, not just name)
+- Who is it for? (which user type from docs/start/)
+- What's the expected outcome when it's working?
+- Any specific behaviors or edge cases you're already aware of?
+- What's most important about this feature—speed, simplicity, flexibility?
+
+**Before proceeding, summarize back:**
+"Here's what I understand: [summary]. Is that right, or should I adjust anything?"
+
+Only proceed to code exploration after the user confirms your understanding.
 
 ### 3. Launch Code Architect
 
@@ -67,6 +75,12 @@ Clarify until you fully understand:
 > - Identify files to create/modify
 > - Document key decisions and rationale
 > - Flag potential risks or complexity
+>
+> **Use AskUserQuestion throughout exploration:**
+> - If you find multiple valid patterns to follow, ask which the user prefers
+> - If the feature could be scoped differently, ask about boundaries
+> - If you discover complexity that wasn't anticipated, check in before designing around it
+> - If you're unsure about any requirement, ask—never assume
 >
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")

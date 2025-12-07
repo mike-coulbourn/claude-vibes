@@ -64,6 +64,12 @@ Otherwise, find recent work:
 > - Code quality
 > - Adherence to project patterns
 >
+> **Use AskUserQuestion during review:**
+> - If you find issues that could be fixed multiple ways, ask which approach the user prefers
+> - If something looks intentional but risky, ask if it's deliberate
+> - If you're unsure whether something is a bug or a feature, ask
+> - If trade-offs need to be made (security vs. convenience, etc.), ask the user to decide
+>
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
 > - Quote the relevant portions from those entries
@@ -94,6 +100,12 @@ Otherwise, find recent work:
 > - Edge cases (empty input, null values, boundaries)
 > - Error conditions (invalid input, failures)
 > - Integration points (if applicable)
+>
+> **Use AskUserQuestion during testing:**
+> - If you're unsure what the expected behavior should be, ask
+> - If tests reveal ambiguous requirements, ask for clarification
+> - If you find a bug and aren't sure if it's critical, ask about priority
+> - If manual testing is needed, ask the user to confirm expected behavior
 >
 > **Report back with:**
 > - What tests were written and what they prove

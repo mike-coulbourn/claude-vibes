@@ -70,6 +70,13 @@ If anything is unclear, use AskUserQuestion to clarify.
 > - Handle edge cases that caused this bug
 > - Add defensive checks where appropriate
 >
+> **Use AskUserQuestion during the fix:**
+> - If there are multiple ways to fix the issue, ask which approach the user prefers
+> - If the fix might affect other functionality, ask if that's acceptable
+> - If you're unsure about the intended behavior after the fix, ask
+> - If the fix is growing larger than expected, check in before continuing
+> - Never assume the fix approach—confirm with the user
+>
 > **Report back with:**
 > - Specific LOGS.json entries that informed the approach
 > - Exact changes made (files, line numbers, what changed)

@@ -54,6 +54,13 @@ For each implementation chunk, **launch the code-guru agent** with this prompt:
 > - Include proper error handling
 > - Write clean, documented code
 >
+> **Use AskUserQuestion during implementation:**
+> - If the plan is ambiguous about something, ask before guessing
+> - If you see a better approach than planned, ask if the user wants to adjust
+> - If implementation reveals unexpected complexity, check in before proceeding
+> - If you're unsure about edge case handling, ask about expected behavior
+> - Never deviate from the plan without asking first
+>
 > **Report back with:**
 > - What was created (files, functions, etc.)
 > - Specific LOGS.json entries that informed the approach

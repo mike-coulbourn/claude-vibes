@@ -65,6 +65,12 @@ Otherwise, find the recent refactoring:
 > - Look for subtle changes (error messages, timing, edge cases)
 > - Verify the improvement was achieved (is it actually better?)
 >
+> **Use AskUserQuestion during validation:**
+> - If you find subtle behavior changes, ask if they're acceptable or problematic
+> - If tests reveal unclear expected behavior, ask the user to clarify
+> - If the improvement is hard to quantify, ask what success looks like to them
+> - If you're unsure whether something is a regression, ask
+>
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
 > - Quote the relevant portions from those entries
@@ -99,6 +105,12 @@ Otherwise, find the recent refactoring:
 > - Edge cases that might behave differently after refactoring
 > - Error handling (same errors thrown in same situations)
 > - Side effects (same external effects: DB writes, API calls, etc.)
+>
+> **Use AskUserQuestion during testing:**
+> - If you're unsure what the original behavior was, ask the user to describe it
+> - If tests reveal unclear requirements, ask for clarification
+> - If you detect a behavior change, ask if it was intentional
+> - If you're unsure which scenarios are important to test, ask
 >
 > **Report back with:**
 > - Tests written that prove behavior is preserved
