@@ -133,6 +133,7 @@ Build features methodically. Plan each feature, implement with best practices, a
 - `code-architect` - Design feature architecture and patterns
 - `code-guru` - Implement features with best practices
 - `code-reviewer` - Thorough code review and quality checks
+- `tester` - Write and run tests iteratively to prove code works
 
 ---
 
@@ -165,6 +166,7 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 - `diagnostician` - Deep investigation and root cause analysis
 - `fixer` - Minimal, targeted bug fixes
 - `verifier` - Verification and regression testing
+- `tester` - Write and run tests to prove fixes work
 
 ---
 
@@ -183,6 +185,7 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 - `assessor` - Code archaeology and improvement analysis
 - `refactorer` - Safe structural improvements
 - `validator` - Behavior preservation verification
+- `tester` - Write and run tests to prove behavior preserved
 
 ---
 
@@ -289,7 +292,7 @@ claude-vibes/
         │   ├── 03-SHIP/         # Deployment
         │   ├── 04-FIX/          # Debugging
         │   └── 05-REFACTOR/     # Code Evolution
-        └── agents/              # All 14 agents
+        └── agents/              # All 15 agents
 ```
 
 ---
