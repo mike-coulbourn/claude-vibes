@@ -1,4 +1,4 @@
-# Claude Vibes
+# 😎 Claude Vibes
 
 A production-grade plugin for **vibe coding** with Claude Code.
 
