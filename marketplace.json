@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "claude-vibes",
-      "source": "../plugins/claude-vibes",
+      "source": "./plugins/claude-vibes",
       "description": "Complete vibe coding suite: start, build, ship, fix, refactor. 17 commands, 14 agents, 3 MCP servers."
     }
   ]
