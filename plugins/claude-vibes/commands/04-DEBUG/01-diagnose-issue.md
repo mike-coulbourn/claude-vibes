@@ -87,32 +87,32 @@ After the diagnostician returns:
 
 This gives you relevant context without parsing everything.
 
-### 5. Present Findings
+### 5. Present Preliminary Findings
 
-Explain the diagnosis clearly:
+Present findings as **preliminary observations that require validation**—not conclusions.
 
-```
-Here's what I found:
+Do NOT assume any behavior is a "bug." What looks wrong might be intentional for reasons you don't understand yet.
 
-**What's happening:**
-[Plain language description of the visible problem]
+If the root cause is unclear, be honest and ask for more information.
 
-**Why it's happening:**
-[Root cause explanation - what's actually broken in the code]
+### 6. MANDATORY: Validate Diagnosis with User
 
-**Where it's happening:**
-- File: src/api/search.ts:45
-- The issue: [specific code problem]
+**Do NOT save any diagnosis doc until you complete this step.**
 
-**How to fix it:**
-[Proposed approach]
-```
+Use AskUserQuestion to validate your understanding:
+- Ask if the behavior you identified as "wrong" is actually unintended
+- Ask if what looks like a bug might be intentional for specific use cases
+- Ask if your understanding of the expected behavior is correct
+- Confirm the root cause matches the user's understanding of the problem
 
-If the root cause is unclear, be honest:
-- "I have a few theories but need more information..."
-- "This could be one of two things. Can you tell me..."
+**You must get explicit confirmation from the user** that:
+- The identified behavior is actually a bug (not intended)
+- Your root cause analysis is accurate
+- The proposed fix approach makes sense
 
-### 6. Save Diagnosis
+### 7. Save Validated Diagnosis
+
+**Only after the user has validated your diagnosis**, save it.
 
 Save the diagnosis to `docs/fix/diagnosis-<issue-name>.md`:
 
@@ -145,16 +145,18 @@ Use a descriptive name derived from the issue (e.g., `diagnosis-search-500-error
 
 - Always read docs/ for core context
 - Let the diagnostician explore LOGS.json; read only what it references
+- **NEVER assume behavior is a bug**—always validate with the user first
+- **NEVER save a diagnosis doc without user validation**
 - Don't guess at the fix—understand the problem first
 - If unsure, ask more questions
-- Save diagnosis for handoff to `/02-fix-issue`
+- Save diagnosis for handoff to `/02-fix-issue` only after validation
 
 ## Output
 
 When diagnosis is complete:
 
-1. Summary of what's broken and why (plain language)
-2. Specific file locations and line numbers
-3. Proposed fix approach
-4. Path to saved diagnosis file
+1. Present preliminary findings to user
+2. **Validate diagnosis with AskUserQuestion** before proceeding
+3. Confirm root cause and fix approach with user
+4. Save validated diagnosis to docs/fix/
 5. Next step: "Run `/02-fix-issue docs/fix/diagnosis-<name>.md` to implement the fix"

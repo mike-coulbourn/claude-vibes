@@ -95,39 +95,31 @@ After the assessor returns:
 
 This gives you relevant refactoring history without reading the entire LOGS.json.
 
-### 5. Present Findings
+### 5. Present Preliminary Findings
 
-Organize the assessment clearly:
+Present findings as **preliminary observations that require validation**—not conclusions.
 
-```
-I found [N] refactoring opportunities in [scope]:
+Do NOT assume any behavior is "wrong" or "needs improvement." Code that looks inconsistent or inefficient might be intentional for reasons you don't yet understand.
 
-## High Priority
+### 6. MANDATORY: Validate Each Finding with User
 
-1. **Duplicated validation logic** (5 files)
-   Files: src/api/users.ts, src/api/orders.ts, ...
-   Impact: Single point of change, ~80 lines reduced
-   Complexity: Medium
+**Do NOT save any assessment doc until you complete this step.**
 
-2. **Inefficient search algorithm** (1 file)
-   File: src/search/engine.ts:142
-   Impact: 10x faster for large datasets
-   Complexity: Low
+For EACH potential finding, use AskUserQuestion to validate your assumptions:
+- Ask if the observed behavior is intentional or a problem
+- Ask if apparent inconsistencies serve a purpose you're not aware of
+- Ask if what looks like duplication is separate for a reason
+- Ask if complex logic is necessary for edge cases
 
-## Medium Priority
+**You must get explicit confirmation from the user** about which findings are:
+- Actual opportunities for improvement
+- Intentional design choices that should NOT be changed
 
-3. **Inconsistent error handling** (8 files)
-   Impact: Consistent user experience
-   Complexity: Medium
+Update your assessment based on user responses. Remove any findings the user confirms are intentional.
 
-## Low Priority / Future
+### 7. Save Validated Assessment
 
-4. **Could extract utility functions** (3 files)
-   Impact: Slightly cleaner code
-   Complexity: Low
-```
-
-### 6. Save Assessment
+**Only after the user has validated your findings**, save the assessment.
 
 Save the assessment to `docs/refactor/assessment-<topic>.md`:
 
@@ -161,9 +153,9 @@ Save the assessment to `docs/refactor/assessment-<topic>.md`:
 [Things to watch out for]
 ```
 
-### 7. Guide Next Steps
+### 8. Guide Next Steps
 
-After presenting findings:
+After the user has validated findings:
 - Use AskUserQuestion if prioritization isn't clear
 - Offer to proceed with specific refactorings
 - "Ready to improve? Run `/02-improve-code docs/refactor/assessment-<topic>.md` or describe what to tackle first"
@@ -172,17 +164,19 @@ After presenting findings:
 
 - Always read docs/ for core context
 - Let the assessor explore LOGS.json; read only what it references
+- **NEVER assume code is wrong**—always validate with the user first
+- **NEVER save an assessment doc without user validation**
 - Focus on impact over elegance (what actually matters)
 - Don't suggest refactoring working code just to refactor it
 - Consider the cost/benefit tradeoff for each opportunity
-- Save assessment for handoff to /02-improve-code
+- Save assessment for handoff to /02-improve-code only after validation
 
 ## Output
 
 When assessment is complete:
 
-1. Summary of opportunities found (count by priority)
-2. Clear explanation of each opportunity
-3. Recommended order of operations
-4. Confirmation that assessment was saved to docs/refactor/
+1. Present preliminary findings to user
+2. **Validate EACH finding with AskUserQuestion** before proceeding
+3. Update findings based on user confirmation
+4. Save validated assessment to docs/refactor/
 5. Next step: "Run `/02-improve-code` to start improving the code"
