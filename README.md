@@ -51,9 +51,21 @@ Then install the plugin:
 
 Select **Browse and install plugins** → choose **claude-vibes**.
 
+### 6. Restart Claude Code
+
+Plugins load when Claude Code starts, so you need to restart:
+```
+/exit
+```
+
+Then start a fresh session:
+```
+claude
+```
+
 ### Verify
 
-After restarting, run `/help` to see your new commands.
+Run `/help` to see your new commands.
 
 ### Local Install (Alternative)
 
