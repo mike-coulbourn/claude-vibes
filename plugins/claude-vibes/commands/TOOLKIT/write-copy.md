@@ -233,6 +233,8 @@ Use the market research to write copy that:
 - Addresses known objections naturally
 - Follows patterns that work in this space
 
+Write for accessibility — avoid unexplained jargon and acronyms. If industry terms are necessary, explain them on first use.
+
 Write in a natural, human voice. Avoid these AI-writing patterns:
 - Overused AI words like "delve", "crucial", "comprehensive", "leverage", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal", "multifaceted"
 - Excessive hedging ("It's important to note", "It's worth mentioning", "It should be noted")
@@ -254,7 +256,9 @@ Deliver polished, ready-to-use copy with multiple options for headlines where ap
 
 **Prompt to ai-writing-detector:**
 ```
-Analyze this copy for AI-writing indicators. Be thorough and specific about:
+Analyze this copy for AI-writing indicators. Use the sequential thinking MCP tool to work through your analysis methodically.
+
+Be thorough and specific about:
 
 1. Any passages that sound AI-generated (quote them exactly)
 2. Specific words or phrases that are telltale AI markers

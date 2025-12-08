@@ -139,7 +139,9 @@ Write the draft yourself based on all context gathered.
 
 **Prompt:**
 ```
-Analyze this writing for AI-writing indicators. Be thorough and specific about:
+Analyze this writing for AI-writing indicators. Use the sequential thinking MCP tool to work through your analysis methodically.
+
+Be thorough and specific about:
 
 1. Any passages that sound AI-generated (quote them exactly)
 2. Specific words or phrases that are telltale AI markers
