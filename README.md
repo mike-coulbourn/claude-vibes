@@ -33,7 +33,7 @@ brew install --cask claude-code
 ### 4. Install Claude Vibes
 
 ```bash
-mkdir -p .taskmaster && echo '{"models":{"main":{"provider":"claude-code","modelId":"opus"}}}' > .taskmaster/config.json && grep -qxF '.taskmaster/' .gitignore 2>/dev/null || echo '.taskmaster/' >> .gitignore && claude "/plugin marketplace add mike-coulbourn/claude-vibes"
+mkdir -p .taskmaster && printf '{\n  "models": {\n    "main": {\n      "provider": "claude-code",\n      "modelId": "opus"\n    }\n  }\n}\n' > .taskmaster/config.json && grep -qxF '.taskmaster/' .gitignore 2>/dev/null || echo '.taskmaster/' >> .gitignore && claude "/plugin marketplace add mike-coulbourn/claude-vibes"
 ```
 
 ### 5. Start Using Claude Vibes
