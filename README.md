@@ -30,50 +30,28 @@ brew install node
 brew install --cask claude-code
 ```
 
-### 4. Start Claude Code
+### 4. Install Claude Vibes
 
-Navigate to your project folder and start a session:
+Navigate to your project folder and start Claude Code:
 ```
 claude
 ```
 
-### 5. Install Claude Vibes
-
-Add the marketplace:
+Paste this prompt:
 ```
-/plugin marketplace add mike-coulbourn/claude-vibes
+Install Claude Vibes: 1) Add to ~/.claude/settings.json: {"plugins":{"marketplaces":["mike-coulbourn/claude-vibes"],"installed":["claude-vibes@claude-vibes"]}} 2) Create .taskmaster/config.json with {"models":{"main":{"provider":"claude-code","modelId":"opus"}}} 3) Add .taskmaster/ to .gitignore
 ```
 
-Then install the plugin:
-```
-/plugin
-```
-
-Select **Browse and install plugins** → choose **claude-vibes**.
-
-### 6. Restart Claude Code
-
-Plugins load when Claude Code starts, so you need to restart:
+Approve the permission when asked, then restart:
 ```
 /exit
 ```
 
-Then start a fresh session:
+### 5. Start Using Claude Vibes
+
 ```
 claude
 ```
-
-### 7. Enable Taskmaster (Per Project)
-
-Taskmaster needs a config file to use Claude Code as its AI provider. Run this in your project folder:
-
-```bash
-claude -p 'Create .taskmaster/config.json with: {"models":{"main":{"provider":"claude-code","modelId":"opus"}}} and add .taskmaster/ to .gitignore'
-```
-
-**Model options:** Replace `opus` with `sonnet` for faster, simpler tasks. Opus 4.5 is recommended for reasoning-heavy work like parsing PRDs.
-
-### Verify
 
 Run `/help` to see your new commands.
 
