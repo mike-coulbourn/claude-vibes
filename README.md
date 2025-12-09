@@ -68,10 +68,14 @@ claude
 Taskmaster needs to know to use Claude Code as its AI provider. Run this in your project folder:
 
 ```bash
-mkdir -p .taskmaster && echo '{"models":{"main":{"provider":"claude-code","modelId":"sonnet"}}}' > .taskmaster/config.json
+mkdir -p .taskmaster && echo '{"models":{"main":{"provider":"claude-code","modelId":"opus"}}}' > .taskmaster/config.json
 ```
 
 This creates a config file that tells Taskmaster to use Claude Code (no API key needed).
+
+**Model options:**
+- `opus` - Claude Opus 4.5 (recommended - best for reasoning-heavy tasks like parsing PRDs and planning)
+- `sonnet` - Claude Sonnet 4.5 (faster, for simple tasks like searching)
 
 > **Tip:** Add `.taskmaster/` to your `.gitignore` if you don't want to commit this config.
 
