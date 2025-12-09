@@ -39,7 +39,31 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 Read docs/start/ files for project understanding.
 
-### 2. Understand the Symptom
+### 2. Retrieve Knowledge from Memory
+
+**Use the memory MCP tools** to retrieve learnings from past sessions that might help diagnose this issue.
+
+1. **Search for relevant knowledge:**
+   ```
+   Use search_nodes to find:
+   - "DiagnosticKnowledge" — root causes and patterns from past debugging
+   - "CodebasePatterns" — how things work in this codebase
+   - "ImplementationLessons" — gotchas that might be causing issues
+   ```
+
+2. **Load relevant entities:**
+   ```
+   Use open_nodes to read observations from matching entities
+   ```
+
+3. **Apply this knowledge:**
+   - Past root causes may hint at what's happening now
+   - Known gotchas might explain unexpected behavior
+   - Pattern knowledge helps narrow down where issues originate
+
+**If no memory entities exist yet**, that's fine — they'll be created as you debug. Proceed to the next step.
+
+### 3. Understand the Symptom
 
 If `$ARGUMENTS` describes an issue, start there. If not, use AskUserQuestion:
 - "What's happening that shouldn't be?"
@@ -48,7 +72,7 @@ If `$ARGUMENTS` describes an issue, start there. If not, use AskUserQuestion:
 
 Get enough detail to begin investigation.
 
-### 3. Launch Diagnostician (REQUIRED)
+### 4. Launch Diagnostician (REQUIRED)
 
 **You MUST use the Task tool to launch the diagnostician agent.** Use `subagent_type: "claude-vibes:diagnostician"` with this prompt:
 
@@ -83,7 +107,7 @@ Get enough detail to begin investigation.
 >
 > Explain findings in plain language a non-coder can understand.
 
-### 4. Load Specific References
+### 5. Load Specific References
 
 After the diagnostician returns:
 
@@ -93,7 +117,7 @@ After the diagnostician returns:
 
 This gives you relevant context without parsing everything.
 
-### 5. Present Preliminary Findings
+### 6. Present Preliminary Findings
 
 Present findings as **preliminary observations that require validation**—not conclusions.
 
@@ -101,7 +125,7 @@ Do NOT assume any behavior is a "bug." What looks wrong might be intentional for
 
 If the root cause is unclear, be honest and ask for more information.
 
-### 6. MANDATORY: Validate Diagnosis with User
+### 7. MANDATORY: Validate Diagnosis with User
 
 **Do NOT save any diagnosis doc until you complete this step.**
 
@@ -116,7 +140,7 @@ Use AskUserQuestion to validate your understanding:
 - Your root cause analysis is accurate
 - The proposed fix approach makes sense
 
-### 7. Save Validated Diagnosis
+### 8. Save Validated Diagnosis
 
 **Only after the user has validated your diagnosis**, save it.
 
@@ -166,3 +190,31 @@ When diagnosis is complete:
 3. Confirm root cause and fix approach with user
 4. Save validated diagnosis to docs/fix/
 5. Next step: "Run `/02-fix-issue docs/fix/diagnosis-<name>.md` to implement the fix"
+
+### Store Diagnostic Findings in Memory
+
+**If the diagnosis revealed insights not already documented**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For root cause patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "DiagnosticKnowledge":
+   - Common root causes (e.g., "Race conditions often occur when X and Y happen simultaneously")
+   - Symptom-to-cause mappings (e.g., "500 errors on /api/search usually trace to database timeouts")
+   - Investigation shortcuts (e.g., "When auth fails, check token expiry first")
+   ```
+
+2. **For codebase-specific gotchas:**
+   ```
+   Use create_entities or add_observations to store in "CodebasePatterns":
+   - Quirks discovered during investigation (e.g., "The cache invalidation is delayed by 5 seconds")
+   - Non-obvious dependencies (e.g., "UserService depends on NotificationService being initialized first")
+   ```
+
+**Only store NEW findings** — insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "Null pointer exceptions in OrderService usually mean the user's cart was cleared mid-checkout"
+- "The retry logic in ApiClient masks original errors — check logs for the root cause"
+- "WebSocket disconnects are often caused by nginx timeout settings, not the app"

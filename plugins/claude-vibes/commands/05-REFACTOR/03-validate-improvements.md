@@ -276,3 +276,31 @@ When validation is complete:
 3. How to fix each one
 4. Offer to adjust the refactoring
 5. "Re-run `/03-validate-improvements` after fixes"
+
+### Store Validation Insights in Memory
+
+**If validation revealed useful patterns or insights not already documented**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For validation patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "ValidationPatterns":
+   - Testing strategies that worked well (e.g., "For refactorings, compare before/after output for 10 representative inputs")
+   - Subtle behavior areas (e.g., "String formatting in reports is sensitive — always diff the output")
+   - What to watch for (e.g., "Refactoring async code often introduces subtle timing differences")
+   ```
+
+2. **For refactoring patterns:**
+   ```
+   Use create_entities or add_observations to store in "RefactoringPatterns":
+   - Successful patterns (e.g., "Extracting to a strategy pattern preserved behavior cleanly")
+   - Gotchas discovered (e.g., "The old code handled null differently than it appeared — preserve that quirk")
+   ```
+
+**Only store NEW findings** — insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "Error message format matters to the frontend — don't change it during refactoring"
+- "The order of keys in JSON responses is tested — sorting alphabetically breaks tests"
+- "Performance tests should run before and after major refactorings to catch regressions"

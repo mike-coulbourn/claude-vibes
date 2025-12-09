@@ -151,3 +151,30 @@ When fix is complete:
 3. Explanation of why this fix works
 4. Any notes or caveats
 5. Next step: "Run `/03-verify-fix` to confirm the fix works and check for regressions"
+
+### Store Fix Patterns in Memory
+
+**If the fix revealed useful patterns or approaches not already documented**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For fix patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "FixPatterns":
+   - Effective fix approaches (e.g., "For race conditions in this codebase, use the mutex in utils/lock.ts")
+   - Common fix recipes (e.g., "Input validation issues are best fixed at the API boundary, not deep in services")
+   ```
+
+2. **For codebase patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "CodebasePatterns":
+   - Patterns you followed (e.g., "Error responses in this codebase always include {code, message, details}")
+   - Conventions discovered (e.g., "All database operations use the transaction wrapper in db/utils.ts")
+   ```
+
+**Only store NEW findings** — approaches that will help fix similar issues faster. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "Fixing auth issues requires updating both the middleware AND the session store"
+- "The codebase uses soft deletes — never use hard DELETE, use the archive() method instead"
+- "API validation errors should return 422, not 400, per project convention"

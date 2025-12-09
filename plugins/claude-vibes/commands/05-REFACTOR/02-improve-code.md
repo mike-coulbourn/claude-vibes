@@ -162,3 +162,31 @@ When refactoring is complete:
 2. List of files modified with descriptions
 3. Improvement metrics (lines saved, complexity reduced, etc.)
 4. Next step: "Run `/03-validate-improvements` to verify behavior and document"
+
+### Store Refactoring Lessons in Memory
+
+**If the refactoring revealed useful patterns or approaches not already documented**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For refactoring patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "RefactoringPatterns":
+   - Effective refactoring approaches (e.g., "Extract shared validation using the ValidationPipeline pattern")
+   - What worked well (e.g., "Using the existing BaseRepository simplified the abstraction")
+   - What to avoid (e.g., "Don't extract helpers that are only used once — adds indirection without benefit")
+   ```
+
+2. **For codebase patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "CodebasePatterns":
+   - Patterns you established (e.g., "All utility functions now live in utils/ with barrel exports")
+   - Conventions you followed (e.g., "Services use constructor injection, not method injection")
+   ```
+
+**Only store NEW findings** — approaches that will help future refactorings. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "The codebase uses a specific module structure — utils/, services/, models/ — always follow this"
+- "Extracting common logic into hooks works better than HOCs in this React codebase"
+- "When consolidating duplicate code, the version in services/ is usually the canonical one"

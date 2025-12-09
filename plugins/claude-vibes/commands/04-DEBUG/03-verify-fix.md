@@ -266,3 +266,31 @@ When verification is complete:
 2. How to fix each one
 3. Offer to fix them
 4. "Re-run `/03-verify-fix` after fixes"
+
+### Store Verification Insights in Memory
+
+**If verification revealed useful patterns or insights not already documented**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For verification patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "VerificationPatterns":
+   - Testing strategies that worked well (e.g., "Always test the exact user input that caused the original bug")
+   - Common regression areas (e.g., "Changes to UserService often regress email notifications")
+   - Edge cases worth testing (e.g., "Always test with unicode characters after string handling fixes")
+   ```
+
+2. **For diagnostic knowledge:**
+   ```
+   Use create_entities or add_observations to store in "DiagnosticKnowledge":
+   - Prevention insights (e.g., "Add input length limits to prevent this class of bug")
+   - Root cause patterns (e.g., "This symptom always traces back to cache staleness")
+   ```
+
+**Only store NEW findings** — insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "After fixing auth bugs, always verify both login AND logout flows"
+- "The test suite doesn't cover async error paths — add manual checks for those"
+- "Changes to the Order model often break the reporting dashboard"

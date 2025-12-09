@@ -26,21 +26,36 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 ## How to Communicate
 
+- **Use AskUserQuestion for decisions that affect the user**
 - Show what you're building as you go: "Now implementing the data layer..."
 - Explain non-obvious decisions in plain language
-- Use AskUserQuestion for implementation choices that affect the user
 - Celebrate milestones: "User model is complete! Moving to the API..."
 
 ## Build Process
 
 ### 1. Load Core Context and Plan
 
-If no plan file is provided, ask the user:
-"Which plan should I implement? Run `/01-plan-code` first to create one, or provide the path: `/02-write-code docs/build/plan-feature-name.md`"
+If no plan file is provided, use AskUserQuestion:
+```
+Question: "Which plan should I implement?"
+Options:
+- Let me find available plans (I'll check docs/build/)
+- I'll provide the path
+- Run /01-plan-code first to create one
+- Other
+```
+
+If they want to find plans, check `docs/build/` for plan files and present them as options.
 
 Read the docs/start/ files and the plan file. Understand what needs to be built and the approach to follow.
 
-### 2. Build in Chunks
+### 2. Extract Taskmaster Task ID (if present)
+
+Check the plan file for a Taskmaster task ID. Plan files from `/01-plan-code` include this when Taskmaster is set up:
+- Look for "Taskmaster Task ID: [number]" or similar
+- Store this for marking complete later
+
+### 3. Build in Chunks
 
 For each implementation chunk, **you MUST use the Task tool to launch the code-guru agent.** Use `subagent_type: "claude-vibes:code-guru"` with this prompt:
 
@@ -80,7 +95,7 @@ Break implementation into logical chunks:
 2. **Logic layer next** — Business logic, utilities, services
 3. **Interface layer last** — APIs, UI components, routes
 
-### 3. Load References and Verify
+### 4. Load References and Verify
 
 After each chunk:
 - Read the specific LOGS.json entries and code references the agent cited
@@ -88,17 +103,69 @@ After each chunk:
 - Check it matches existing patterns
 - Confirm error handling is in place
 
-If something doesn't feel right, discuss it:
-- "This is getting more complex than planned. Should we simplify?"
-- "I found a better approach. Want to hear it?"
+**Use AskUserQuestion if something doesn't feel right:**
+```
+Question: "The implementation is getting more complex than planned. How should we handle this?"
+Options:
+- Simplify by [specific suggestion]
+- Continue with the current approach
+- Let's discuss the complexity
+- Other
+```
 
-### 4. Complete the Feature
+### 5. Complete the Feature
 
 When implementation is done:
 - All planned functionality is working
 - Code follows project patterns
 - Error handling is in place
 - Ready for review
+
+### 6. Mark Task Complete in Taskmaster (if applicable)
+
+**If a Taskmaster task ID was found in the plan:**
+
+1. Use the Taskmaster MCP `set_task_status` tool to mark the task as complete
+2. Use the `next_task` tool to get the recommended next task
+
+**Use AskUserQuestion to confirm and show next steps:**
+
+```
+Question: "Task [ID] marked complete in Taskmaster!
+
+Here's what's next based on dependencies:
+**Task [Next ID]: [Next Task Name]**
+[Description]
+
+What would you like to do?"
+Options:
+- Continue building — run /01-plan-code for the next task
+- Review this code first — run /03-review-code
+- Take a break — I'll come back later
+- Other
+```
+
+### 7. Handle Implementation Drift (if needed)
+
+Sometimes what you build differs from the original plan. This is normal and Taskmaster can handle it.
+
+**Use AskUserQuestion if significant drift occurred:**
+
+```
+Question: "During implementation, we made some changes from the original plan:
+
+[List the changes]
+
+Should I update Taskmaster so future tasks account for these changes?"
+Options:
+- Yes, update the remaining tasks
+- No, this was a one-time adjustment
+- Let me review the changes first
+- Other
+```
+
+**If they want to update tasks:**
+Describe the changes to Taskmaster using natural language. Taskmaster will adjust remaining tasks to account for the new approach.
 
 ## Guidelines
 
@@ -107,14 +174,55 @@ When implementation is done:
 - Follow the plan—if deviating, discuss first
 - One chunk at a time—complete each before moving on
 - Production-grade means error handling and edge cases
+- Mark tasks complete in Taskmaster to maintain accurate project status
 
 ## Output
 
 When build is complete:
 
-1. Summary of what was implemented
-2. List of files created/modified
-3. How to test the feature
-4. Any notes or considerations
+1. **Summary of what was implemented**
+2. **List of files created/modified**
+3. **How to test the feature**
+4. **Any notes or considerations**
+5. **Taskmaster status** (if applicable):
+   - Task marked complete
+   - Next recommended task
 
-"Build complete! Run `/03-review-code` to verify code quality before shipping."
+### Store Implementation Lessons in Memory
+
+**If you discovered any gotchas, patterns, or lessons during implementation**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For codebase patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "CodebasePatterns":
+   - Conventions you discovered (e.g., "All services use dependency injection")
+   - Patterns that weren't documented (e.g., "Error responses follow {code, message} format")
+   ```
+
+2. **For implementation lessons learned:**
+   ```
+   Use create_entities or add_observations to store in "ImplementationLessons":
+   - Gotchas encountered (e.g., "Must await cache.clear() before returning")
+   - What worked well (e.g., "Using the existing BaseService class simplified auth")
+   - What to avoid (e.g., "Don't use raw SQL here — the ORM handles soft deletes")
+   ```
+
+**Only store NEW findings** — things not already in docs or LOGS.json. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "The auth middleware expects req.user to be set before reaching protected routes"
+- "Database timestamps are in UTC but the frontend expects local time"
+- "Found undocumented rate limiting on the /api/search endpoint"
+
+**Use AskUserQuestion for next steps:**
+
+```
+Question: "Build complete! What's next?"
+Options:
+- Review the code — run /03-review-code
+- Ship it — run /03-SHIP:01-pre-commit
+- Build the next task — run /01-plan-code
+- Other
+```

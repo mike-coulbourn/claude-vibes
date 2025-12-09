@@ -19,6 +19,14 @@
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "taskmaster": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "task-master-ai"],
+      "env": {
+        "TASK_MASTER_TOOLS": "standard"
+      }
     }
   }
 }

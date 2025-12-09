@@ -5,7 +5,7 @@ argument-hint: Optional constraints like timeline or priorities
 
 # Planning Phase
 
-You are helping a vibe coder create a clear implementation roadmap. This phase takes everything from discovery, scope, and architecture and turns it into actionable build phases.
+You are helping a vibe coder create a clear implementation roadmap. This phase takes everything from discovery, scope, and architecture and turns it into actionable build phases—AND sets up Taskmaster for intelligent task management.
 
 ## Full Project Context
 
@@ -34,7 +34,7 @@ You do the heavy lifting on planning. Create a roadmap the user can follow step-
 
 ## How to Communicate
 
-- Use AskUserQuestion to validate priorities and phasing
+- **Use AskUserQuestion for EVERY decision** — always provide 2-4 clear options
 - Lead with recommendations: "I'd suggest building X first because [reason]. Then Y. Does that make sense?"
 - Explain build order in terms of what the USER will see working, not technical dependencies
 - Keep phases small and achievable—big phases feel overwhelming
@@ -75,9 +75,15 @@ Typical structure:
 - **Phase 4: Polish** — Making it feel complete and handling edge cases
 - **Phase 5: Launch Prep** — Final testing and going live
 
-Use AskUserQuestion to adjust:
-- "Does this order make sense for what matters most to you?"
-- "Is there something you'd want to see working sooner?"
+**Use AskUserQuestion to validate phasing:**
+```
+Question: "Here's the build order I'd recommend. Does this work for you?"
+Options:
+- Yes, this order makes sense
+- I'd like to adjust the priority of some phases
+- I have questions about specific phases
+- Other
+```
 
 ### 4. Detail Each Phase
 
@@ -98,6 +104,13 @@ Surface things that might cause problems:
 **You MUST use the Task tool to launch the plan-reviewer agent.** Use `subagent_type: "claude-vibes:plan-reviewer"` with this prompt:
 
 > Ultrathink about this implementation plan. Read all docs/start/ files for context. Review for gaps, risks, sequencing problems, and anything that might cause issues during building. Flag concerns in plain language and suggest how to address them.
+>
+> **Use the sequential-thinking MCP tool** to systematically analyze:
+> 1. Each phase's dependencies and prerequisites — are they correctly ordered?
+> 2. Technical risks and unknowns — what could go wrong?
+> 3. Scope creep potential — where might requirements expand?
+> 4. Integration points between phases — are handoffs clear?
+> 5. Resource and timeline realism — is this achievable?
 >
 > **Use AskUserQuestion when reviewing:**
 > - If you find gaps that could be filled multiple ways, ask which approach fits their goals
@@ -124,6 +137,8 @@ Create clear checkpoints:
 
 When planning feels complete:
 
+### Step 1: Save Human-Readable Roadmap
+
 1. Ensure `docs/start/` directory exists
 2. Save the implementation plan to `docs/start/04-plan-roadmap.md` with:
    - Project summary (what we're building and why—plain language)
@@ -132,9 +147,244 @@ When planning feels complete:
    - Risks and unknowns to watch for
    - Recommended first steps
 
-3. Congratulate the user—they've completed planning and are ready to build!
+### Step 2: Ask About Taskmaster Setup
 
-4. Suggest next steps:
-   - Review the complete plan in `docs/start/`
-   - When ready to build, use the `/02-BUILD` plugin commands
-   - Start with `/02-BUILD:01-plan-code` to plan your first feature
+**Use AskUserQuestion to confirm Taskmaster setup:**
+
+```
+Question: "I can set up Taskmaster to track your tasks and dependencies automatically. This will help you know exactly what to build next. Want me to set it up?"
+Options:
+- Yes, set up Taskmaster (recommended)
+- No, I'll manage tasks manually
+- What's Taskmaster? Tell me more first
+```
+
+**If they want more info:**
+Explain briefly: "Taskmaster is a task management system that:
+- Breaks your roadmap into trackable tasks
+- Knows what to build next based on dependencies
+- Tracks your progress across the whole project
+- Handles changes when plans evolve mid-build
+
+The `/02-BUILD` commands will use it automatically—you don't need to learn any new commands."
+
+Then ask again if they want to set it up.
+
+**If they decline:** Skip to Step 5 (congratulate without Taskmaster).
+
+**If they accept:** Continue to Step 3.
+
+### Step 3: Generate Taskmaster PRD
+
+Create a PRD (Product Requirements Document) by synthesizing all `docs/start/` files into Taskmaster format.
+
+**Save to `.taskmaster/docs/prd.txt`:**
+
+```
+# [Project Name]
+
+## Project Overview
+[From 01-discover.md: Problem statement, target users, value proposition]
+
+## Target Users
+[From 01-discover.md: User personas and their needs]
+
+## Core Features
+
+### Feature 1: [Name]
+[From 02-scope.md: MVP features with user stories]
+- User Story: As a [user], I want to [action] so that [benefit]
+- Acceptance Criteria:
+  - [ ] [Specific, testable criteria]
+  - [ ] [More criteria]
+
+### Feature 2: [Name]
+[Continue for each MVP feature]
+
+## Technical Requirements
+[From 03-architect.md: Data model, auth approach, integrations, key decisions]
+
+## Implementation Phases
+[From the roadmap you just created: phases with dependencies]
+
+### Phase 1: [Name]
+- Dependencies: None
+- Tasks:
+  - [Specific task 1]
+  - [Specific task 2]
+
+### Phase 2: [Name]
+- Dependencies: Phase 1
+- Tasks:
+  - [Specific task 1]
+  - [Specific task 2]
+
+[Continue for each phase]
+
+## Success Criteria
+[From 01-discover.md: How we know this is working]
+
+## Out of Scope
+[From 02-scope.md: Explicitly excluded items]
+```
+
+### Step 4: Initialize Taskmaster
+
+**Use the Taskmaster MCP tools to set up task management:**
+
+1. **Initialize Taskmaster** (if not already initialized):
+   - Check if `.taskmaster/` directory exists
+   - If not, use the `initialize_project` Taskmaster tool
+
+2. **Parse the PRD into tasks:**
+   - Use the `parse_prd` Taskmaster tool with the PRD file path
+   - This creates `.taskmaster/tasks/tasks.json` with structured tasks and dependencies
+
+3. **Show task overview and confirm:**
+   - Use the `get_tasks` Taskmaster tool to retrieve all tasks
+   - Present a summary of what was created
+
+**Use AskUserQuestion to review the tasks:**
+
+```
+Question: "Taskmaster created [X] tasks from your roadmap. Here's a quick overview:
+
+[Show first 3-5 tasks with their dependencies]
+
+Does this breakdown look right?"
+Options:
+- Yes, looks good
+- I'd like to see all the tasks first
+- Some tasks need adjustment
+- Other
+```
+
+**If they want to see all tasks:** Display the full task list, then ask again.
+
+**If tasks need adjustment:** Use AskUserQuestion to understand what to change, then use Taskmaster tools to update.
+
+### Step 5: Analyze Task Complexity
+
+After tasks are created, run complexity analysis to identify which tasks may need breakdown.
+
+1. **Run complexity analysis:**
+   - Use Taskmaster's `analyze_project_complexity` tool
+   - This evaluates each task and provides:
+     - Complexity score (1-10)
+     - Recommended number of subtasks
+     - Reasoning for complex tasks
+
+2. **Show complexity overview:**
+
+**Use AskUserQuestion:**
+```
+Question: "I've analyzed the complexity of your tasks:
+
+**Simple tasks (can implement directly):**
+- Task 1: [name] — complexity 3/10
+- Task 4: [name] — complexity 2/10
+
+**Complex tasks (recommend breaking into subtasks):**
+- Task 2: [name] — complexity 7/10, recommends 3 subtasks
+- Task 5: [name] — complexity 8/10, recommends 4 subtasks
+
+You can expand complex tasks now, or wait until you plan each one (recommended).
+
+What would you like to do?"
+Options:
+- Expand later during planning (recommended)
+- Expand all complex tasks now
+- Show me the complexity details
+- Other
+```
+
+**If they choose "Expand later" (recommended):**
+Proceed to Step 6. The `/01-plan-code` command will handle expansion when you're about to work on each task — this gives better results because it can use codebase context.
+
+**If they choose "Expand all now":**
+
+Use Taskmaster's `expand_task` tool for each complex task (those with recommended subtasks > 0).
+
+**Use AskUserQuestion after expansion:**
+```
+Question: "Expanded [X] complex tasks into subtasks:
+
+- Task 2 → 3 subtasks created
+- Task 5 → 4 subtasks created
+
+Total tasks: [original count] → [new count with subtasks]
+
+Does this look right?"
+Options:
+- Yes, looks good
+- Show me the subtasks
+- Some need adjustment
+- Other
+```
+
+**If they want complexity details:** Show the full complexity report with reasoning for each task, then ask again.
+
+3. **Show the recommended first task:**
+
+**Use AskUserQuestion:**
+```
+Question: "Based on dependencies, here's the recommended first task:
+
+**[Task Name]**
+[Task description]
+Complexity: [X]/10
+
+Ready to start building?"
+Options:
+- Yes, let's do it! (I'll run /02-BUILD:01-plan-code)
+- I want to review the full plan first
+- I have questions before starting
+- Other
+```
+
+### Step 6: Congratulate and Guide Next Steps
+
+**With Taskmaster:**
+
+"Planning complete! Here's what we created:
+
+**Human Documentation** (in `docs/start/`):
+- Discovery summary
+- Scope and MVP features
+- Architecture decisions
+- Implementation roadmap
+
+**Task Management** (in `.taskmaster/`):
+- PRD document
+- [X] structured tasks with dependencies
+- First task ready: [task name]
+
+**Next steps:**
+Run `/02-BUILD:01-plan-code` — Taskmaster will recommend what to build based on dependencies!"
+
+**Without Taskmaster:**
+
+"Planning complete! Here's what we created:
+
+**Human Documentation** (in `docs/start/`):
+- Discovery summary
+- Scope and MVP features
+- Architecture decisions
+- Implementation roadmap
+
+**Next steps:**
+1. Review the complete plan in `docs/start/`
+2. When ready to build, run `/02-BUILD:01-plan-code [feature name]`"
+
+## Taskmaster Integration Notes
+
+**Why Taskmaster?**
+- Tracks task dependencies automatically
+- Knows what to build next based on what's complete
+- Handles implementation drift (when plans change mid-build)
+- Maintains project-wide progress visibility
+
+**The user doesn't need to learn Taskmaster commands.** The `/02-BUILD` commands interact with it automatically. But if they want to check status manually, they can say:
+- "Show tasks" — see all tasks and status
+- "What's next?" — get the next recommended task
+- "Show task 5" — see details of a specific task

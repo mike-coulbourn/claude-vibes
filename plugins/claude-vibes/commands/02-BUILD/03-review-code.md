@@ -263,3 +263,30 @@ When review is complete:
 2. How to fix each one
 3. Offer to fix them
 4. "Re-run `/03-review-code` after fixes"
+
+### Store Review Findings in Memory
+
+**If the review revealed patterns or insights not already documented**, store them for future sessions.
+
+**Use the memory MCP tools:**
+
+1. **For codebase patterns discovered:**
+   ```
+   Use create_entities or add_observations to store in "CodebasePatterns":
+   - Conventions identified during review (e.g., "All API endpoints return {data, error} format")
+   - Anti-patterns to avoid (e.g., "Don't use synchronous file operations in request handlers")
+   ```
+
+2. **For review patterns:**
+   ```
+   Use create_entities or add_observations to store in "ReviewFindings":
+   - Common issues found (e.g., "Missing null checks on user input is a recurring issue")
+   - Quality patterns to follow (e.g., "Error boundaries in React components prevent cascading failures")
+   ```
+
+**Only store NEW patterns** — things that will help future reviews. If nothing notable was discovered, skip this step.
+
+**Example observations to store:**
+- "The codebase uses a custom Result type for error handling — all services should return Result<T>"
+- "Found that async validation must complete before form submission — add to checklist"
+- "Dependency injection is done via constructor, not decorators"

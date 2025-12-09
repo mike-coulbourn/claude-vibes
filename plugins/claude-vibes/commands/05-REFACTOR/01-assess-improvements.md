@@ -50,7 +50,31 @@ If input is vague, use AskUserQuestion to clarify:
 
 Read docs/start/ files to understand project patterns and conventions.
 
-### 3. Launch Assessor (REQUIRED)
+### 3. Retrieve Knowledge from Memory
+
+**Use the memory MCP tools** to retrieve learnings from past sessions that might inform this assessment.
+
+1. **Search for relevant knowledge:**
+   ```
+   Use search_nodes to find:
+   - "RefactoringPatterns" — patterns from past refactorings
+   - "CodebasePatterns" — how things work in this codebase
+   - "ImplementationLessons" — gotchas and lessons learned
+   ```
+
+2. **Load relevant entities:**
+   ```
+   Use open_nodes to read observations from matching entities
+   ```
+
+3. **Apply this knowledge:**
+   - Past refactoring patterns inform what approaches work well
+   - Codebase patterns help identify what's inconsistent
+   - Lessons learned warn about complexity that might be intentional
+
+**If no memory entities exist yet**, that's fine — they'll be created as you refactor. Proceed to the next step.
+
+### 4. Launch Assessor (REQUIRED)
 
 **You MUST use the Task tool to launch the assessor agent.** Use `subagent_type: "claude-vibes:assessor"` with this prompt:
 
@@ -90,7 +114,7 @@ Read docs/start/ files to understand project patterns and conventions.
 > This allows the main session to read those specific references without parsing all of LOGS.json.
 > Explain findings so a non-coder can understand.
 
-### 4. Load Specific References
+### 5. Load Specific References
 
 After the assessor returns:
 
@@ -100,13 +124,13 @@ After the assessor returns:
 
 This gives you relevant refactoring history without reading the entire LOGS.json.
 
-### 5. Present Preliminary Findings
+### 6. Present Preliminary Findings
 
 Present findings as **preliminary observations that require validation**—not conclusions.
 
 Do NOT assume any behavior is "wrong" or "needs improvement." Code that looks inconsistent or inefficient might be intentional for reasons you don't yet understand.
 
-### 6. MANDATORY: Validate Each Finding with User
+### 7. MANDATORY: Validate Each Finding with User
 
 **Do NOT save any assessment doc until you complete this step.**
 
@@ -122,7 +146,7 @@ For EACH potential finding, use AskUserQuestion to validate your assumptions:
 
 Update your assessment based on user responses. Remove any findings the user confirms are intentional.
 
-### 7. Save Validated Assessment
+### 8. Save Validated Assessment
 
 **Only after the user has validated your findings**, save the assessment.
 
@@ -158,7 +182,7 @@ Save the assessment to `docs/refactor/assessment-<topic>.md`:
 [Things to watch out for]
 ```
 
-### 8. Guide Next Steps
+### 9. Guide Next Steps
 
 After the user has validated findings:
 - Use AskUserQuestion if prioritization isn't clear
