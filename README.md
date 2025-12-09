@@ -63,6 +63,18 @@ Then start a fresh session:
 claude
 ```
 
+### 7. Enable Taskmaster (Per Project)
+
+Taskmaster needs to know to use Claude Code as its AI provider. Run this in your project folder:
+
+```bash
+mkdir -p .taskmaster && echo '{"models":{"main":{"provider":"claude-code","modelId":"sonnet"}}}' > .taskmaster/config.json
+```
+
+This creates a config file that tells Taskmaster to use Claude Code (no API key needed).
+
+> **Tip:** Add `.taskmaster/` to your `.gitignore` if you don't want to commit this config.
+
 ### Verify
 
 Run `/help` to see your new commands.
@@ -220,7 +232,7 @@ These servers start automatically when the plugin is enabled:
 - Add `use context7` to prompts for current library documentation
 - Memory persists entities, relations, and observations across sessions
 - Sequential Thinking excels at complex multi-step problems
-- Taskmaster uses Claude Code's built-in authentication (no API key needed)
+- Taskmaster requires per-project setup (see [Installation Step 7](#7-enable-taskmaster-per-project))
 
 ### ⚙️ Optional Servers (Require Setup)
 
