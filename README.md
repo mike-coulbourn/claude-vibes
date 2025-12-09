@@ -172,7 +172,7 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 |---------|-------------|
 | `/claude-vibes:04-DEBUG/01-diagnose-issue` | Investigate and identify root cause |
 | `/claude-vibes:04-DEBUG/02-fix-issue` | Apply the fix with minimal changes |
-| `/claude-vibes:04-DEBUG/03-verify-fix` | Verify fix works and document in LOGS.json |
+| `/claude-vibes:04-DEBUG/03-verify-fix` | Verify fix works correctly |
 
 **Agents:**
 - `diagnostician` - Deep investigation and root cause analysis
@@ -191,7 +191,7 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 |---------|-------------|
 | `/claude-vibes:05-REFACTOR/01-assess-improvements` | Identify improvement opportunities |
 | `/claude-vibes:05-REFACTOR/02-improve-code` | Apply improvements with behavior preservation |
-| `/claude-vibes:05-REFACTOR/03-validate-improvements` | Verify behavior unchanged, document in LOGS.json |
+| `/claude-vibes:05-REFACTOR/03-validate-improvements` | Verify behavior unchanged |
 
 **Agents:**
 - `assessor` - Code archaeology and improvement analysis
@@ -214,28 +214,13 @@ These servers start automatically when the plugin is enabled:
 | **Context7** | Up-to-date documentation in prompts | [github.com/upstash/context7](https://github.com/upstash/context7) |
 | **Memory** | Persistent knowledge graph across sessions | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) |
 | **Sequential Thinking** | Structured problem-solving | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking) |
+| **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
 
 **Usage Tips:**
 - Add `use context7` to prompts for current library documentation
 - Memory persists entities, relations, and observations across sessions
 - Sequential Thinking excels at complex multi-step problems
-
-### ⚠️ Bundled (Requires API Key)
-
-**Taskmaster** is bundled with the plugin but requires at least one AI API key to function.
-
-| Server | Purpose | Official Source |
-|--------|---------|-----------------|
-| **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
-
-To enable Taskmaster, add API keys to your environment. Create or edit `~/.zshrc` (or `~/.bashrc`):
-
-```bash
-export ANTHROPIC_API_KEY="your-key-here"
-# Or any of: OPENAI_API_KEY, GOOGLE_API_KEY, PERPLEXITY_API_KEY
-```
-
-Then restart your terminal and Claude Code. Without an API key, Taskmaster will fail to start (this is expected).
+- Taskmaster uses Claude Code's built-in authentication (no API key needed)
 
 ### ⚙️ Optional Servers (Require Setup)
 
@@ -272,35 +257,6 @@ Add these based on your workflow. Each requires authentication or additional set
 ### 💡 Best Practice
 
 > Start with the auto-installed essentials. Add specialized servers only when you need them. Too many MCP servers can slow down Claude Code startup.
-
----
-
-## 📋 LOGS.json
-
-All plugins share a unified `LOGS.json` file at the project root for compounding learning. Each phase writes entries with relevant metadata:
-
-```json
-{
-  "entries": [
-    {
-      "id": "entry-1733500800000",
-      "timestamp": "2025-12-06T12:00:00Z",
-      "phase": "build",
-      "type": "feature",
-      "area": "auth",
-      "summary": "Added OAuth2 login flow",
-      "patterns": ["oauth-provider-pattern"],
-      "files": ["src/auth/oauth.ts"],
-      "tags": ["auth", "oauth", "login"]
-    }
-  ],
-  "patterns": {
-    "oauth-provider-pattern": "Use provider abstraction for OAuth flows"
-  }
-}
-```
-
-The `phase` field enables filtering while the unified file enables cross-phase learning.
 
 ---
 
