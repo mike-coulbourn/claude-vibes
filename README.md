@@ -220,6 +220,23 @@ These servers start automatically when the plugin is enabled:
 - Memory persists entities, relations, and observations across sessions
 - Sequential Thinking excels at complex multi-step problems
 
+### ⚠️ Bundled (Requires API Key)
+
+**Taskmaster** is bundled with the plugin but requires at least one AI API key to function.
+
+| Server | Purpose | Official Source |
+|--------|---------|-----------------|
+| **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
+
+To enable Taskmaster, add API keys to your environment. Create or edit `~/.zshrc` (or `~/.bashrc`):
+
+```bash
+export ANTHROPIC_API_KEY="your-key-here"
+# Or any of: OPENAI_API_KEY, GOOGLE_API_KEY, PERPLEXITY_API_KEY
+```
+
+Then restart your terminal and Claude Code. Without an API key, Taskmaster will fail to start (this is expected).
+
 ### ⚙️ Optional Servers (Require Setup)
 
 Add these based on your workflow. Each requires authentication or additional setup.
@@ -295,7 +312,7 @@ claude-vibes/
 │   └── marketplace.json         # Plugin marketplace manifest
 ├── README.md                    # This file
 └── plugins/
-    └── claude-vibes/            # Bundled plugin
+    └── vibes/                   # Bundled plugin
         ├── .claude-plugin/
         │   └── plugin.json      # Plugin manifest with MCP servers
         ├── commands/
