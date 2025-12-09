@@ -14,3 +14,6 @@
 
 # Generated research files
 research/
+
+# Local copy folder
+copy/
