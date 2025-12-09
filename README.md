@@ -36,8 +36,6 @@ brew install --cask claude-code
 mkdir -p .taskmaster && echo '{"models":{"main":{"provider":"claude-code","modelId":"opus"}}}' > .taskmaster/config.json && echo '.taskmaster/' >> .gitignore && claude "/plugin marketplace add mike-coulbourn/claude-vibes"
 ```
 
-Approve the permission when asked.
-
 ### 5. Start Using Claude Vibes
 
 Type `/exit`, then run `claude` again to load the plugin. Run `/help` to see your new commands.
