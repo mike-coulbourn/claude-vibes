@@ -8,7 +8,7 @@ Vibe coding is describing WHAT you want while Claude handles HOW to build it. Th
 
 ## 📦 Installation
 
-Open **Terminal** (press `Cmd + Space`, type "Terminal", hit Enter).
+Open your project in your IDE of choice (VS Code, Cursor, etc.) and open the integrated terminal.
 
 ### 1. Install Homebrew
 
@@ -32,20 +32,11 @@ brew install --cask claude-code
 
 ### 4. Install Claude Vibes
 
-Navigate to your project folder and start Claude Code:
-```
-claude
-```
-
-Paste this prompt:
-```
-Install Claude Vibes: 1) Add to ~/.claude/settings.json: {"plugins":{"marketplaces":["mike-coulbourn/claude-vibes"],"installed":["claude-vibes@claude-vibes"]}} 2) Create .taskmaster/config.json with {"models":{"main":{"provider":"claude-code","modelId":"opus"}}} 3) Add .taskmaster/ to .gitignore
+```bash
+claude "Install Claude Vibes: 1) Add to ~/.claude/settings.json: {\"plugins\":{\"marketplaces\":[\"mike-coulbourn/claude-vibes\"],\"installed\":[\"claude-vibes@claude-vibes\"]}} 2) Create .taskmaster/config.json with {\"models\":{\"main\":{\"provider\":\"claude-code\",\"modelId\":\"opus\"}}} 3) Add .taskmaster/ to .gitignore"
 ```
 
-Approve the permission when asked, then restart:
-```
-/exit
-```
+Approve the permission when asked, then restart with `/exit`.
 
 ### 5. Start Using Claude Vibes
 
