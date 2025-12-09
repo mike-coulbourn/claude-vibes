@@ -59,9 +59,16 @@ Add to your repository's `.claude/settings.json` for automatic team setup:
 
 ```json
 {
-  "plugins": {
-    "marketplaces": ["mike-coulbourn/claude-vibes"],
-    "installed": ["claude-vibes@claude-vibes"]
+  "extraKnownMarketplaces": {
+    "claude-vibes": {
+      "source": {
+        "source": "github",
+        "repo": "mike-coulbourn/claude-vibes"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "claude-vibes@claude-vibes": true
   }
 }
 ```
