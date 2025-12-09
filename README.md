@@ -33,7 +33,7 @@ brew install --cask claude-code
 ### 4. Install Claude Vibes
 
 ```bash
-claude "Install Claude Vibes: 1) Add to ~/.claude/settings.json: {\"plugins\":{\"marketplaces\":[\"mike-coulbourn/claude-vibes\"],\"installed\":[\"claude-vibes@claude-vibes\"]}} 2) Create .taskmaster/config.json with {\"models\":{\"main\":{\"provider\":\"claude-code\",\"modelId\":\"opus\"}}} 3) Add .taskmaster/ to .gitignore"
+claude "Install Claude Vibes: 1) Add to ~/.claude/settings.json extraKnownMarketplaces: {\"claude-vibes\":{\"source\":{\"source\":\"github\",\"repo\":\"mike-coulbourn/claude-vibes\"}}} and enabledPlugins: {\"claude-vibes@claude-vibes\":true} 2) Create .taskmaster/config.json with {\"models\":{\"main\":{\"provider\":\"claude-code\",\"modelId\":\"opus\"}}} 3) Add .taskmaster/ to .gitignore"
 ```
 
 Approve the permission when asked.
@@ -195,7 +195,7 @@ These servers start automatically when the plugin is enabled:
 - Add `use context7` to prompts for current library documentation
 - Memory persists entities, relations, and observations across sessions
 - Sequential Thinking excels at complex multi-step problems
-- Taskmaster requires per-project setup (see [Installation Step 7](#7-enable-taskmaster-per-project))
+- Taskmaster config is created automatically during installation (step 4)
 
 ### ⚙️ Optional Servers (Require Setup)
 

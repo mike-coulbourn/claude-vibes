@@ -17,3 +17,6 @@ research/
 
 # Local copy folder
 copy/
+
+# Taskmaster local files
+.taskmaster/
