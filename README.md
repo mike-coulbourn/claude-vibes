@@ -36,7 +36,7 @@ brew install --cask claude-code
 claude "Install Claude Vibes: 1) Add to ~/.claude/settings.json: {\"plugins\":{\"marketplaces\":[\"mike-coulbourn/claude-vibes\"],\"installed\":[\"claude-vibes@claude-vibes\"]}} 2) Create .taskmaster/config.json with {\"models\":{\"main\":{\"provider\":\"claude-code\",\"modelId\":\"opus\"}}} 3) Add .taskmaster/ to .gitignore"
 ```
 
-Approve the permission when asked, then restart with `/exit`.
+Approve the permission when asked. When done, type `/exit` then run `claude` again to load the plugin.
 
 ### 5. Start Using Claude Vibes
 
