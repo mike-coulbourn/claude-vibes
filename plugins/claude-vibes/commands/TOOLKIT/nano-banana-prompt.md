@@ -67,6 +67,9 @@ Options:
 - Infographic or diagram (data visualization, explanatory)
 - UI mockup or screenshot (app/web design)
 - Product shot (e-commerce, advertising)
+- Viral thumbnail (bold graphics + text + subject)
+- Storyboard or sequential art (multi-panel narrative, sprite sheet)
+- 2D to 3D conversion (floor plan to render, sketch to 3D)
 - Other
 ```
 
@@ -118,6 +121,64 @@ Options:
 - Specific text that must appear in the image
 - None — default settings are fine
 ```
+
+---
+
+**ROUND 3b: Specialized Follow-ups** (based on image type selected)
+
+**If Viral Thumbnail:**
+```
+Question 1: "What's the main subject/person doing?"
+Options:
+- Pointing at something (classic thumbnail pose)
+- Reacting with surprise/excitement
+- Holding or showcasing a product
+- Other pose
+
+Question 2: "What text should appear on the thumbnail?"
+[Free text — keep it short and punchy]
+```
+
+**If Storyboard or Sequential Art:**
+```
+Question 1: "How many panels/images do you need?"
+Options:
+- 3-4 panels (short sequence)
+- 6-9 panels (full storyboard)
+- Sprite sheet (3x3 grid for animation)
+- Other
+
+Question 2: "What's the narrative arc?"
+[Free text — describe the story beats or action sequence]
+```
+
+**If 2D to 3D Conversion:**
+```
+Question 1: "What's your 2D source?"
+Options:
+- Floor plan or architectural drawing
+- Hand-drawn sketch or concept art
+- Meme or 2D illustration
+- Technical diagram
+- Other
+
+Question 2: "What style for the 3D output?"
+Options:
+- Photorealistic render
+- Stylized 3D (cartoon, low-poly)
+- Technical/architectural visualization
+- Other
+```
+
+**If content might need current/real-time data:**
+```
+Question: "Does this need current or real-time information?"
+Options:
+- Yes — needs current data (sports scores, news, trends, events)
+- No — timeless content is fine
+```
+
+If yes, note that Google Search grounding should be enabled in AI Studio/API settings.
 
 ---
 
@@ -216,7 +277,7 @@ Your prompt to the agent should include ALL context gathered:
 Craft an optimized Nano Banana Pro prompt based on this brief:
 
 ## What the User Wants
-- Image type: [TYPE]
+- Image type: [TYPE — photo, illustration, infographic, UI mockup, product shot, viral thumbnail, storyboard, 2D to 3D, etc.]
 - Subject: [DETAILED SUBJECT DESCRIPTION]
 - Purpose/context: [WHAT IT'S FOR]
 
@@ -230,13 +291,35 @@ Craft an optimized Nano Banana Pro prompt based on this brief:
 - Aspect ratio: [IF SPECIFIED]
 - Text to include: [IF ANY]
 
+## Specialized Requirements (if applicable)
+
+**For Viral Thumbnails:**
+- Subject pose: [POINTING, REACTING, HOLDING, etc.]
+- Text overlay: [THE TEXT TO DISPLAY]
+- Graphics needed: [ARROWS, EMOJIS, BORDERS, etc.]
+
+**For Storyboards/Sequential Art:**
+- Panel count: [NUMBER]
+- Format: [ASPECT RATIO, GRID LAYOUT]
+- Narrative arc: [STORY BEATS]
+- Character consistency requirements: [DETAILS]
+
+**For 2D to 3D Conversion:**
+- Source type: [FLOOR PLAN, SKETCH, MEME, etc.]
+- Output style: [PHOTOREALISTIC, STYLIZED, ARCHITECTURAL]
+- Specific views needed: [IF APPLICABLE]
+
+**For Real-Time Data:**
+- Needs Google Search grounding: [YES/NO]
+- Data type: [CURRENT EVENTS, TRENDS, SCORES, etc.]
+
 ## Reference Images
 - Images provided: [YES/NO]
 - If yes, describe each reference:
-  - Image 1: [TYPE — character, brand asset, sketch, existing image to edit, style ref]
+  - Image 1: [TYPE — character, brand asset, sketch, 2D source, existing image to edit, style ref]
   - Image 2: [TYPE]
   - (etc.)
-- How to use them: [IDENTITY LOCKING, STRUCTURAL CONTROL, BRAND INTEGRATION, EDITING, STYLE TRANSFER]
+- How to use them: [IDENTITY LOCKING, STRUCTURAL CONTROL, BRAND INTEGRATION, EDITING, STYLE TRANSFER, 2D SOURCE]
 - User's intent for references: [WHAT THEY CONFIRMED IN ROUND 4]
 
 ## Negatives
@@ -252,19 +335,30 @@ Based on this brief:
 1. Craft a complete, copy-paste ready prompt following Nano Banana Pro best practices
 2. Use natural language (Creative Director style, not tag soup)
 3. Include appropriate negatives
-4. **If reference images are provided:**
+
+4. **For specialized image types, use the appropriate techniques:**
+   - **Viral thumbnails**: Combine subject + bold graphics + text; specify pose, arrow directions, text placement, "high saturation and contrast"
+   - **Storyboards**: Include panel count, "identity and attire must stay consistent", "generate images one at a time", specify format
+   - **Sprite sheets**: "3x3 grid, frame by frame animation, square aspect ratio"
+   - **2D to 3D**: Reference the 2D source as Image 1; describe output style and views needed
+   - **Real-time data**: Note that Google Search grounding must be enabled; model will reason about search results
+
+5. **If reference images are provided:**
    - For character refs: Include Identity Locking language ("Keep facial features exactly the same as Image 1")
    - For brand assets: Include integration instructions ("Put this logo on...", "Use the color palette from...")
    - For sketches/wireframes: Include structural control instructions ("Follow the layout in the reference...")
+   - For 2D sources: Reference as base for dimensional translation
    - For editing: Include semantic editing instructions ("In this image, change X to Y while keeping Z")
    - For style refs: Include style transfer language ("Match the aesthetic/style of the reference image")
    - Reference images by number (Image 1, Image 2, etc.) in the order they were provided
-5. Add any model-specific tips (e.g., "no date stamp" if relevant)
-6. If the request is complex, consider whether JSON structure would help
+
+6. Add any model-specific tips (e.g., "no date stamp" if relevant)
+7. If the request is complex, consider whether JSON structure would help
 
 Provide:
 - The main prompt (ready to paste into AI Studio or Gemini)
 - Clear indication of where to attach reference images (e.g., "[Attach character reference as Image 1]")
+- Note if Google Search grounding needs to be enabled
 - A brief explanation of why you structured it this way
 - Any tips for iteration if the first result isn't perfect
 ```
@@ -401,10 +495,30 @@ Confirm: "Saved to `prompts/images/[filename].md`"
 - Describe pose, expression, clothing in detail
 - For sequences: emphasize consistency requirements
 
+**Viral thumbnails:**
+- Combine subject + bold graphics + text in single prompt
+- Classic poses: pointing, surprised reaction, holding product
+- High saturation, bold colors, thick text outlines
+- Specify arrow directions, text placement
+
+**Storyboards & sequential art:**
+- Specify panel count and format (e.g., "9-part story, 16:9 landscape")
+- Describe narrative arc with emotional beats
+- Emphasize "identity and attire must stay consistent"
+- Request "generate images one at a time" for coherence
+- For sprite sheets: "3x3 grid, frame by frame animation"
+
+**2D to 3D conversion:**
+- Specify source type: floor plan, sketch, meme
+- Describe output style: photorealistic, stylized, architectural
+- For floor plans: request presentation boards with multiple views
+- Reference the 2D source as Image 1
+
 **Infographics:**
 - Specify style: editorial, whiteboard, technical diagram
 - Provide data or ask model to summarize
 - Request specific text in quotes
+- Can "compress" PDFs into visual aids
 
 **UI mockups:**
 - Use wireframe as reference if available
@@ -415,6 +529,11 @@ Confirm: "Saved to `prompts/images/[filename].md`"
 - Describe what to keep vs change
 - Use semantic instructions (no masking needed)
 - Be specific about desired changes
+
+**Real-time data (Google Search grounding):**
+- For current events, trends, scores, news
+- Note: Must enable Search tool in AI Studio/API
+- Model will "think" about search results before generating
 
 ## Image Request
 
