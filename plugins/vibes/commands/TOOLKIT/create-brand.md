@@ -28,7 +28,8 @@ docs/brand/
 ├── 00-discovery/
 │   ├── founder-brief.md
 │   ├── audience-research.md
-│   └── competitive-audit.md
+│   ├── competitive-audit.md
+│   └── brand-name.md (if naming was needed)
 ├── 01-strategy/
 │   ├── purpose-mission-vision.md
 │   ├── core-values.md
@@ -85,6 +86,13 @@ Batch 4 - Practical Constraints:
 - Do you have existing brand elements (name, logo, colors)?
 - Any must-have or must-avoid elements?
 
+Batch 5 - Brand Name:
+- Do you already have a brand name you're committed to?
+- If not, would you like help developing one?
+- If you have a name, what do you like/dislike about it?
+
+**Note:** If the founder does NOT have a brand name, flag this for Step 1.4 (Brand Naming). The name should be developed before moving to Phase 2 (Strategy), as the name influences all subsequent brand decisions.
+
 **Save the responses to:** `docs/brand/00-discovery/founder-brief.md`
 
 ### Step 1.2: Audience Research (Agent)
@@ -92,7 +100,7 @@ Batch 4 - Practical Constraints:
 **Use Task tool** to launch `brand-audience-researcher`:
 
 ```
-Research the target audience for this startup.
+Research the target audience for this startup. ultrathink
 
 FOUNDER CONTEXT:
 [Include key details from founder brief]
@@ -105,6 +113,11 @@ RESEARCH FOCUS:
 - Language and terminology they use
 - What brands do they currently trust and why?
 
+TOOLS TO USE:
+- Use sequential thinking MCP for structured audience analysis
+- Use WebSearch extensively to research real community discussions, forums, and social platforms
+- Use AskUserQuestion to validate findings with the founder ("Does this match your ideal customer?")
+
 Deliver a detailed audience profile that will inform brand positioning and voice.
 ```
 
@@ -115,7 +128,7 @@ Deliver a detailed audience profile that will inform brand positioning and voice
 **Use Task tool** to launch `brand-competitive-auditor`:
 
 ```
-Conduct a brand audit of competitors in this space.
+Conduct a brand audit of competitors in this space. ultrathink
 
 STARTUP CONTEXT:
 [From founder brief]
@@ -131,10 +144,67 @@ AUDIT FOCUS:
 - Positioning white space — opportunities to differentiate
 - Competitor weaknesses — what are customers complaining about?
 
+TOOLS TO USE:
+- Use sequential thinking MCP to systematically analyze each competitor
+- Use WebSearch extensively to research competitor brands, user reviews, and visual identities
+- Use AskUserQuestion to confirm competitor list with founder ("Anyone I'm missing?")
+
 Deliver a competitive brand map with clear differentiation opportunities.
 ```
 
 **Save to:** `docs/brand/00-discovery/competitive-audit.md`
+
+### Step 1.4: Brand Naming (If Needed)
+
+**Only if the founder does NOT have a name yet.** If they have a name they're committed to, skip this step.
+
+Use AskUserQuestion to confirm:
+"You mentioned you don't have a brand name yet. Would you like to develop one now before we build the rest of your brand identity? The name will influence your positioning, messaging, and visual identity — so it's best to settle it first."
+
+- Yes, let's develop a name now (Recommended)
+- I want to continue without a name for now and come back to it
+- I have a working name I'd like to use: [input]
+
+**If developing a name:**
+
+**Use Task tool** to launch `brand-naming-specialist`:
+
+```
+Develop brand name options for this startup. ultrathink
+
+FOUNDER CONTEXT:
+[Include key details from founder brief — what they do, who they serve, their vision]
+
+AUDIENCE INSIGHTS:
+[Key insights from audience research — who needs to resonate with this name]
+
+COMPETITIVE LANDSCAPE:
+[Key insights from competitive audit — names to differentiate from]
+
+NAMING APPROACH:
+Guide the founder through an interactive naming process:
+1. Understand naming preferences and constraints
+2. Develop names across multiple approaches (descriptive, suggestive, abstract, etc.)
+3. Check availability (domain, trademark conflicts)
+4. Present 5-7 vetted options with strategic rationale
+5. Refine based on founder feedback
+6. Select final name
+
+TOOLS TO USE:
+- Use sequential thinking MCP to systematically develop and evaluate name options
+- Use WebSearch to check domain availability, trademark conflicts, and competitive usage
+- Use AskUserQuestion throughout: preferences, presenting options, refinement, final selection
+```
+
+**After name selection, use AskUserQuestion:**
+"You've chosen **[Name]** for your brand. Before we continue, please confirm:"
+- Yes, I'm committed to this name — let's build the brand identity around it
+- I'd like to explore more options first
+- I want to proceed but keep the name tentative for now
+
+**Save to:** `docs/brand/00-discovery/brand-name.md`
+
+**Important:** Update the `[Brand Name]` placeholder in all subsequent files with the selected name.
 
 ---
 
@@ -145,7 +215,7 @@ Deliver a competitive brand map with clear differentiation opportunities.
 **Use Task tool** to launch `brand-purpose-architect`:
 
 ```
-Define the brand purpose, mission, and vision for this startup.
+Define the brand purpose, mission, and vision for this startup. ultrathink
 
 DISCOVERY CONTEXT:
 [Key insights from founder brief]
@@ -167,6 +237,11 @@ Deliver:
 3. Vision statement (the future state you're working toward)
 
 Make these specific and ownable, not generic corporate-speak.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to excavate the founder's true WHY through multiple lenses
+- Use AskUserQuestion to dig deeper into founder motivation and validate purpose resonates
+- Use WebSearch to find inspiring purpose examples from admired brands
 ```
 
 **Save to:** `docs/brand/01-strategy/purpose-mission-vision.md`
@@ -176,7 +251,7 @@ Make these specific and ownable, not generic corporate-speak.
 **Use Task tool** to launch `brand-values-curator`:
 
 ```
-Define 3-4 core values for this brand.
+Define 3-4 core values for this brand. ultrathink
 
 CONTEXT:
 - Purpose: [From previous step]
@@ -196,6 +271,11 @@ For each value, provide:
 4. How it connects to the brand purpose
 
 Deliver 3-4 core values that form the ethical backbone of this brand.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to filter generic values and test each for specificity/authenticity
+- Use AskUserQuestion to uncover non-negotiables and validate values feel true to founder
+- Use WebSearch to check competitor values and ensure differentiation
 ```
 
 **Save to:** `docs/brand/01-strategy/core-values.md`
@@ -205,7 +285,7 @@ Deliver 3-4 core values that form the ethical backbone of this brand.
 **Use Task tool** to launch `brand-positioning-strategist`:
 
 ```
-Develop the brand positioning strategy.
+Develop the brand positioning strategy. ultrathink
 
 CONTEXT:
 - Purpose: [From purpose step]
@@ -231,6 +311,11 @@ Using Ries & Trout positioning methodology, develop:
    - Clear differentiation angle
 
 Deliver a positioning strategy that claims defensible territory in the customer's mind.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to rigorously map competitive positions and find white space
+- Use AskUserQuestion to validate positioning dimensions and confirm territory feels right
+- Use WebSearch to research how competitors position and find positioning examples
 ```
 
 **Save to:** `docs/brand/01-strategy/positioning.md`
@@ -240,7 +325,7 @@ Deliver a positioning strategy that claims defensible territory in the customer'
 **Use Task tool** to launch `brand-archetype-selector`:
 
 ```
-Select the brand archetype(s) for this startup.
+Select the brand archetype(s) for this startup. ultrathink
 
 CONTEXT:
 - Purpose: [From purpose]
@@ -266,6 +351,11 @@ For the selected archetype(s), provide:
 - What to avoid (the shadow side of the archetype)
 
 Deliver an archetype profile that grounds the brand's emotional expression.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to systematically map brand inputs to archetype qualities
+- Use AskUserQuestion to validate archetype resonates with founder's vision
+- Use WebSearch to find archetype examples and competitive archetype landscape
 ```
 
 **Save to:** `docs/brand/01-strategy/archetype.md`
@@ -275,7 +365,7 @@ Deliver an archetype profile that grounds the brand's emotional expression.
 **Use Task tool** to launch `brand-voice-architect`:
 
 ```
-Define the brand personality and voice.
+Define the brand personality and voice. ultrathink
 
 CONTEXT:
 - Purpose: [From purpose]
@@ -309,6 +399,11 @@ Develop:
    - Industry jargon: use or explain?
 
 Deliver a complete voice guide that anyone can use to write "in the brand."
+
+TOOLS TO USE:
+- Use sequential thinking MCP to translate archetype and personality into specific voice qualities
+- Use AskUserQuestion to understand founder's communication style preferences
+- Use WebSearch to find voice examples from admired brands
 ```
 
 **Save to:** `docs/brand/01-strategy/brand-personality-voice.md`
@@ -322,7 +417,7 @@ Deliver a complete voice guide that anyone can use to write "in the brand."
 **Use Task tool** to launch `brand-messaging-architect`:
 
 ```
-Create the brand messaging framework.
+Create the brand messaging framework. ultrathink
 
 CONTEXT:
 - Purpose: [Purpose statement]
@@ -356,6 +451,11 @@ Develop:
    - How messages flow from pillar to headline to body
 
 Deliver a messaging framework that ensures consistency across all communication.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to build messaging hierarchy from value prop through pillars to key messages
+- Use AskUserQuestion to validate key messages resonate and identify priority pillars
+- Use WebSearch to research competitor messaging for differentiation
 ```
 
 **Save to:** `docs/brand/02-messaging/messaging-framework.md`
@@ -365,7 +465,7 @@ Deliver a messaging framework that ensures consistency across all communication.
 **Use Task tool** to launch `brand-tagline-creator`:
 
 ```
-Create brand tagline options.
+Create brand tagline options. ultrathink
 
 CONTEXT:
 - Purpose: [Purpose statement]
@@ -393,6 +493,11 @@ Deliver:
 2. For each: strategic rationale, how it connects to brand strategy
 3. Top recommendation with explanation
 4. Usage guidance (when to use tagline vs. when to use full name)
+
+TOOLS TO USE:
+- Use sequential thinking MCP to systematically explore each tagline angle and filter for best options
+- Use AskUserQuestion to understand tagline preferences before generating and to refine after
+- Use WebSearch to check tagline uniqueness and find inspiring examples
 ```
 
 **Save to:** `docs/brand/02-messaging/tagline.md`
@@ -413,7 +518,7 @@ Update the tagline file with the selected option.
 **Use Task tool** to launch `brand-elevator-pitch-writer`:
 
 ```
-Create the brand elevator pitch.
+Create the brand elevator pitch. ultrathink
 
 CONTEXT:
 - Purpose: [Purpose statement]
@@ -446,6 +551,10 @@ For each, provide:
 - Common follow-up questions to prepare for
 
 Deliver pitches that feel natural when spoken, not like marketing copy read aloud.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to structure pitch flow and ensure natural speech rhythm
+- Use AskUserQuestion to understand pitch contexts and validate pitches feel natural to say
 ```
 
 **Save to:** `docs/brand/02-messaging/elevator-pitch.md`
@@ -461,7 +570,7 @@ Deliver pitches that feel natural when spoken, not like marketing copy read alou
 **Use Task tool** to launch `brand-visual-director`:
 
 ```
-Create the visual identity direction for this brand.
+Create the visual identity direction for this brand. ultrathink
 
 BRAND CONTEXT:
 - Purpose: [Purpose statement]
@@ -499,6 +608,11 @@ Develop:
    - Application priorities (website, social, print)
 
 Deliver a comprehensive creative direction brief for a designer.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to translate brand strategy into visual language systematically
+- Use AskUserQuestion to understand visual preferences, logo style preferences, and validate direction
+- Use WebSearch to research competitor visuals and find inspiring brand examples
 ```
 
 **Save to:** `docs/brand/03-visual/visual-direction.md`
@@ -508,7 +622,7 @@ Deliver a comprehensive creative direction brief for a designer.
 **Use Task tool** to launch `brand-color-strategist`:
 
 ```
-Develop the brand color palette.
+Develop the brand color palette. ultrathink
 
 BRAND CONTEXT:
 - Purpose: [Purpose]
@@ -554,6 +668,11 @@ Develop:
    - Environmental applications
 
 Deliver a complete color system with exact specifications.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to build color palette from brand psychology through to specific values
+- Use AskUserQuestion to understand color preferences/constraints and validate primary color direction
+- Use WebSearch to research competitor colors and color psychology for differentiation
 ```
 
 **Save to:** `docs/brand/03-visual/color-palette.md`
@@ -563,7 +682,7 @@ Deliver a complete color system with exact specifications.
 **Use Task tool** to launch `brand-typography-curator`:
 
 ```
-Develop the brand typography system.
+Develop the brand typography system. ultrathink
 
 BRAND CONTEXT:
 - Personality: [Personality traits]
@@ -609,6 +728,11 @@ Develop:
    - Scalability considerations
 
 Deliver a complete typography system with specific font recommendations.
+
+TOOLS TO USE:
+- Use sequential thinking MCP to match brand personality to typeface qualities and build hierarchy
+- Use AskUserQuestion to understand typography constraints (free fonts needed? existing fonts?)
+- Use WebSearch to research font availability, pairings, and brand typography examples
 ```
 
 **Save to:** `docs/brand/03-visual/typography.md`
@@ -743,15 +867,28 @@ Read all files from `docs/brand/` subdirectories and create a comprehensive bran
 
 2. **Go phase by phase** — Complete each phase before moving to the next
 
-3. **Checkpoint after each phase** — Use AskUserQuestion:
+3. **Handle naming early** — If user doesn't have a brand name, address this in Step 1.4 BEFORE moving to Phase 2. The name influences everything else.
+
+4. **Checkpoint after each phase** — Use AskUserQuestion:
    - "We've completed [Phase]. Here's what we have so far: [summary]"
    - "Ready to move to [Next Phase], or would you like to review/adjust anything?"
 
-4. **Build on previous outputs** — Each agent prompt includes context from previous steps
+5. **Build on previous outputs** — Each agent prompt includes context from previous steps
 
-5. **Save as you go** — Don't wait until the end; save each output to its file
+6. **Save as you go** — Don't wait until the end; save each output to its file
 
-6. **End with the complete package** — Compile everything and celebrate
+7. **End with the complete package** — Compile everything and celebrate
+
+### Using MCP Tools Throughout
+
+**Each agent prompt MUST include these tool instructions:**
+
+1. **ultrathink** — Trigger deep reasoning for complex decisions
+2. **Sequential thinking MCP** (`mcp__plugin_claude-vibes_sequential-thinking__sequentialthinking`) — For structured, multi-step analysis
+3. **AskUserQuestion tool** — For interactive, guided experience with the founder
+4. **WebSearch** — For research and validation (competitors, examples, availability)
+
+Ensure each agent is receiving the context it needs and that users are actively engaged throughout.
 
 ### If User Wants to Skip or Pause
 
@@ -764,7 +901,9 @@ Use AskUserQuestion to confirm:
 ## Guidelines
 
 - **This is interactive** — Use AskUserQuestion frequently to gather input and confirm direction
-- **Always use specialized agents** — Don't generate brand elements yourself
+- **Always use specialized agents** — Don't generate brand elements yourself; launch the appropriate agent
+- **Agents ultrathink** — Each agent prompt includes "ultrathink" and instructions to use AskUserQuestion, sequential thinking MCP, and WebSearch
+- **Name before strategy** — If no name exists, develop one in Step 1.4 before Phase 2; the name influences everything
 - **Build context cumulatively** — Each agent prompt includes relevant context from previous phases
 - **Save everything** — Create the file structure as you go
 - **Celebrate progress** — Brand building is a journey; acknowledge milestones
