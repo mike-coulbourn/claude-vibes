@@ -115,7 +115,8 @@ RESEARCH FOCUS:
 
 TOOLS TO USE:
 - Use sequential thinking MCP for structured audience analysis
-- Use WebSearch extensively to research real community discussions, forums, and social platforms
+- Use WebSearch extensively to discover community discussions, forums, Reddit threads, and social platforms
+- Use WebFetch to read the full content of promising discussions found — extract pain points, language patterns, and authentic customer voices
 - Use AskUserQuestion to validate findings with the founder ("Does this match your ideal customer?")
 
 Deliver a detailed audience profile that will inform brand positioning and voice.
@@ -146,7 +147,8 @@ AUDIT FOCUS:
 
 TOOLS TO USE:
 - Use sequential thinking MCP to systematically analyze each competitor
-- Use WebSearch extensively to research competitor brands, user reviews, and visual identities
+- Use WebSearch extensively to discover competitor brands, review sites, and visual identity examples
+- Use WebFetch to read competitor About pages, Mission pages, and review content — deeply analyze their positioning, values, and messaging
 - Use AskUserQuestion to confirm competitor list with founder ("Anyone I'm missing?")
 
 Deliver a competitive brand map with clear differentiation opportunities.
@@ -192,7 +194,8 @@ Guide the founder through an interactive naming process:
 
 TOOLS TO USE:
 - Use sequential thinking MCP to systematically develop and evaluate name options
-- Use WebSearch to check domain availability, trademark conflicts, and competitive usage
+- Use WebSearch to discover domain availability tools, trademark databases, and existing brands using similar names
+- Use WebFetch to read domain/trademark search results and existing brand pages — verify true availability and understand usage context
 - Use AskUserQuestion throughout: preferences, presenting options, refinement, final selection
 ```
 
@@ -241,7 +244,8 @@ Make these specific and ownable, not generic corporate-speak.
 TOOLS TO USE:
 - Use sequential thinking MCP to excavate the founder's true WHY through multiple lenses
 - Use AskUserQuestion to dig deeper into founder motivation and validate purpose resonates
-- Use WebSearch to find inspiring purpose examples from admired brands
+- Use WebSearch to discover inspiring purpose-driven brands and find their About/Purpose pages
+- Use WebFetch to read the full About/Purpose pages of inspiring brands — study how they articulate their WHY, mission language, and vision statements
 ```
 
 **Save to:** `docs/brand/01-strategy/purpose-mission-vision.md`
@@ -275,7 +279,8 @@ Deliver 3-4 core values that form the ethical backbone of this brand.
 TOOLS TO USE:
 - Use sequential thinking MCP to filter generic values and test each for specificity/authenticity
 - Use AskUserQuestion to uncover non-negotiables and validate values feel true to founder
-- Use WebSearch to check competitor values and ensure differentiation
+- Use WebSearch to discover competitor values pages and values-forward brand examples
+- Use WebFetch to read competitor values pages in full — analyze their exact language, framing, and identify opportunities for differentiation
 ```
 
 **Save to:** `docs/brand/01-strategy/core-values.md`
@@ -315,7 +320,8 @@ Deliver a positioning strategy that claims defensible territory in the customer'
 TOOLS TO USE:
 - Use sequential thinking MCP to rigorously map competitive positions and find white space
 - Use AskUserQuestion to validate positioning dimensions and confirm territory feels right
-- Use WebSearch to research how competitors position and find positioning examples
+- Use WebSearch to discover competitor homepages, case studies, and positioning articles
+- Use WebFetch to read competitor homepages and positioning content in full — understand their complete positioning narrative and identify white space
 ```
 
 **Save to:** `docs/brand/01-strategy/positioning.md`
@@ -355,7 +361,8 @@ Deliver an archetype profile that grounds the brand's emotional expression.
 TOOLS TO USE:
 - Use sequential thinking MCP to systematically map brand inputs to archetype qualities
 - Use AskUserQuestion to validate archetype resonates with founder's vision
-- Use WebSearch to find archetype examples and competitive archetype landscape
+- Use WebSearch to discover archetype case studies, brand analysis articles, and competitive archetype examples
+- Use WebFetch to read archetype case studies and brand analysis articles — understand how successful brands embody specific archetypes
 ```
 
 **Save to:** `docs/brand/01-strategy/archetype.md`
@@ -403,7 +410,8 @@ Deliver a complete voice guide that anyone can use to write "in the brand."
 TOOLS TO USE:
 - Use sequential thinking MCP to translate archetype and personality into specific voice qualities
 - Use AskUserQuestion to understand founder's communication style preferences
-- Use WebSearch to find voice examples from admired brands
+- Use WebSearch to discover public style guides and voice-forward brand examples (Mailchimp, Slack, 18F, etc.)
+- Use WebFetch to read actual style guides and voice documentation — study how leading brands document their voice, structure guidelines, and provide examples
 ```
 
 **Save to:** `docs/brand/01-strategy/brand-personality-voice.md`
@@ -455,7 +463,8 @@ Deliver a messaging framework that ensures consistency across all communication.
 TOOLS TO USE:
 - Use sequential thinking MCP to build messaging hierarchy from value prop through pillars to key messages
 - Use AskUserQuestion to validate key messages resonate and identify priority pillars
-- Use WebSearch to research competitor messaging for differentiation
+- Use WebSearch to discover competitor landing pages, product pages, and messaging examples
+- Use WebFetch to read competitor landing pages and product copy — analyze their full messaging hierarchy, value propositions, and proof points
 ```
 
 **Save to:** `docs/brand/02-messaging/messaging-framework.md`
@@ -497,7 +506,8 @@ Deliver:
 TOOLS TO USE:
 - Use sequential thinking MCP to systematically explore each tagline angle and filter for best options
 - Use AskUserQuestion to understand tagline preferences before generating and to refine after
-- Use WebSearch to check tagline uniqueness and find inspiring examples
+- Use WebSearch to discover tagline databases, famous tagline case studies, and competitive taglines
+- Use WebFetch to read tagline articles and case studies — understand the context, history, and effectiveness of inspiring taglines
 ```
 
 **Save to:** `docs/brand/02-messaging/tagline.md`
@@ -612,7 +622,8 @@ Deliver a comprehensive creative direction brief for a designer.
 TOOLS TO USE:
 - Use sequential thinking MCP to translate brand strategy into visual language systematically
 - Use AskUserQuestion to understand visual preferences, logo style preferences, and validate direction
-- Use WebSearch to research competitor visuals and find inspiring brand examples
+- Use WebSearch to discover competitor websites, design agency portfolios, and brand case studies
+- Use WebFetch to read brand case study pages and design portfolio writeups — understand the strategic rationale behind visual identity decisions
 ```
 
 **Save to:** `docs/brand/03-visual/visual-direction.md`
@@ -672,7 +683,8 @@ Deliver a complete color system with exact specifications.
 TOOLS TO USE:
 - Use sequential thinking MCP to build color palette from brand psychology through to specific values
 - Use AskUserQuestion to understand color preferences/constraints and validate primary color direction
-- Use WebSearch to research competitor colors and color psychology for differentiation
+- Use WebSearch to discover competitor brand colors, color psychology resources, and brand color case studies
+- Use WebFetch to read color psychology articles and brand color case studies — understand the research behind color associations and how brands justify their palettes
 ```
 
 **Save to:** `docs/brand/03-visual/color-palette.md`
@@ -732,7 +744,8 @@ Deliver a complete typography system with specific font recommendations.
 TOOLS TO USE:
 - Use sequential thinking MCP to match brand personality to typeface qualities and build hierarchy
 - Use AskUserQuestion to understand typography constraints (free fonts needed? existing fonts?)
-- Use WebSearch to research font availability, pairings, and brand typography examples
+- Use WebSearch to discover font pairing guides, typography resources (Google Fonts, Adobe Fonts), and brand typography examples
+- Use WebFetch to read typography guides, font pairing articles, and foundry pages — understand pairing rationale and access font specimen details
 ```
 
 **Save to:** `docs/brand/03-visual/typography.md`
@@ -886,7 +899,13 @@ Read all files from `docs/brand/` subdirectories and create a comprehensive bran
 1. **ultrathink** — Trigger deep reasoning for complex decisions
 2. **Sequential thinking MCP** (`mcp__plugin_claude-vibes_sequential-thinking__sequentialthinking`) — For structured, multi-step analysis
 3. **AskUserQuestion tool** — For interactive, guided experience with the founder
-4. **WebSearch** — For research and validation (competitors, examples, availability)
+4. **WebSearch** — For discovering sources (competitors, examples, availability tools, resources)
+5. **WebFetch** — For reading discovered pages in full (competitor About pages, style guides, case studies, research articles)
+
+**The WebSearch → WebFetch workflow:**
+- WebSearch DISCOVERS relevant URLs and gives snippets
+- WebFetch READS the full content of promising pages
+- Example: WebSearch finds a competitor's website → WebFetch reads their About page to analyze positioning
 
 Ensure each agent is receiving the context it needs and that users are actively engaged throughout.
 
@@ -902,7 +921,8 @@ Use AskUserQuestion to confirm:
 
 - **This is interactive** — Use AskUserQuestion frequently to gather input and confirm direction
 - **Always use specialized agents** — Don't generate brand elements yourself; launch the appropriate agent
-- **Agents ultrathink** — Each agent prompt includes "ultrathink" and instructions to use AskUserQuestion, sequential thinking MCP, and WebSearch
+- **Agents ultrathink** — Each agent prompt includes "ultrathink" and instructions to use AskUserQuestion, sequential thinking MCP, WebSearch, and WebFetch
+- **WebSearch → WebFetch workflow** — WebSearch discovers sources; WebFetch reads them deeply for analysis
 - **Name before strategy** — If no name exists, develop one in Step 1.4 before Phase 2; the name influences everything
 - **Build context cumulatively** — Each agent prompt includes relevant context from previous phases
 - **Save everything** — Create the file structure as you go
