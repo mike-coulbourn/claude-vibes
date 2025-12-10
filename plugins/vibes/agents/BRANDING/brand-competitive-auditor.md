@@ -405,6 +405,8 @@ Aim for **10+ competitors** for accurate landscape mapping; prioritize **top 5-1
 - `"[competitor] communication" OR "[competitor] tone"`
 - `"I love [competitor]" OR "I hate [competitor]"`
 
+**Use WebFetch** to read discovered competitor pages — analyze their About pages, Mission statements, Homepage copy, and Brand guidelines for positioning, voice, and visual identity details that go beyond search snippets.
+
 ### Phase 3: Build Audit Matrices
 
 **Color Audit Matrix**:

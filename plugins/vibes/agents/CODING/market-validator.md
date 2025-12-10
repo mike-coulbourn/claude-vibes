@@ -91,7 +91,8 @@ Ultrathink about the market landscape. Don't make assumptions—find evidence.
 - Note the sources you found
 - Extract direct quotes that illustrate pain points
 - Capture specific data points (pricing, features, complaints)
-- Follow up with WebFetch if you need deeper content from a specific URL
+
+**Use WebFetch** to read discovered sources — get full content of community discussions, Reddit threads, review pages, and pain point conversations for direct quotes and authentic voice beyond search snippets.
 
 ## AskUserQuestion Usage
 

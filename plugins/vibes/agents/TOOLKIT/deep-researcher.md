@@ -34,6 +34,8 @@ WebSearch is your primary instrument for gathering expert knowledge. Use it stra
 - Look for criticisms and limitations, not just praise
 - Check for recent developments and current thinking
 
+**Use WebFetch** to read discovered expert content — study full articles, methodologies, framework documentation, case studies, and authoritative sources rather than relying on snippets. Deep expertise requires reading complete works, not summaries.
+
 ## Research Philosophy: Expert Stalking
 
 Your primary job is to **find the experts and extract their knowledge**.

@@ -190,6 +190,8 @@ From the context provided, identify:
 - `"why [audience type] trust [brand category]"`
 - `"brands like [competitor] but [differentiator]"`
 
+**Use WebFetch** to read discovered discussions and articles — extract full forum threads, Reddit conversations, review content, and blog posts to deeply understand audience language, pain points, and emotional drivers beyond search snippets.
+
 ### Phase 3: Apply Interview Thinking
 
 Even without conducting live interviews, apply the **Switch Interview** mindset to your research. For any case studies, reviews, or testimonials you find, analyze through the lens of:
