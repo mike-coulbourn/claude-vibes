@@ -27,6 +27,11 @@
       "env": {
         "TASK_MASTER_TOOLS": "standard"
       }
+    },
+    "whois": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@mcp-server/whois-mcp@latest"]
     }
   }
 }
