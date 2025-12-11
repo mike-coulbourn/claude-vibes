@@ -26,24 +26,24 @@ All brand identity work should be saved to: `docs/brand/`
 ```
 docs/brand/
 ├── 00-discovery/
-│   ├── founder-brief.md
-│   ├── audience-research.md
-│   ├── competitive-audit.md
-│   └── brand-name.md (if naming was needed)
+│   ├── 01-founder-brief.md
+│   ├── 02-audience-research.md
+│   ├── 03-competitive-audit.md
+│   └── 04-brand-name.md (if naming was needed)
 ├── 01-strategy/
-│   ├── purpose-mission-vision.md
-│   ├── core-values.md
-│   ├── positioning.md
-│   ├── archetype.md
-│   └── brand-personality-voice.md
+│   ├── 01-purpose-mission-vision.md
+│   ├── 02-core-values.md
+│   ├── 03-positioning.md
+│   ├── 04-archetype.md
+│   └── 05-brand-personality-voice.md
 ├── 02-messaging/
-│   ├── messaging-framework.md
-│   ├── tagline.md
-│   └── elevator-pitch.md
+│   ├── 01-messaging-framework.md
+│   ├── 02-tagline.md
+│   └── 03-elevator-pitch.md
 ├── 03-visual/
-│   ├── visual-direction.md
-│   ├── color-palette.md
-│   └── typography.md
+│   ├── 01-visual-direction.md
+│   ├── 02-color-palette.md
+│   └── 03-typography.md
 └── brand-guidelines.md (final compilation)
 ```
 
@@ -93,7 +93,7 @@ Batch 5 - Brand Name:
 
 **Note:** If the founder does NOT have a brand name, flag this for Step 1.4 (Brand Naming). The name should be developed before moving to Phase 2 (Strategy), as the name influences all subsequent brand decisions.
 
-**Save the responses to:** `docs/brand/00-discovery/founder-brief.md`
+**Save to:** `docs/brand/00-discovery/01-founder-brief.md` → **Review with ai-writing-detector**
 
 ### Step 1.2: Audience Research (Agent)
 
@@ -122,7 +122,7 @@ TOOLS TO USE:
 Deliver a detailed audience profile that will inform brand positioning and voice.
 ```
 
-**Save to:** `docs/brand/00-discovery/audience-research.md`
+**Save to:** `docs/brand/00-discovery/02-audience-research.md` → **Review with ai-writing-detector**
 
 ### Step 1.3: Competitive Brand Audit (Agent)
 
@@ -154,7 +154,7 @@ TOOLS TO USE:
 Deliver a competitive brand map with clear differentiation opportunities.
 ```
 
-**Save to:** `docs/brand/00-discovery/competitive-audit.md`
+**Save to:** `docs/brand/00-discovery/03-competitive-audit.md` → **Review with ai-writing-detector**
 
 ### Step 1.4: Brand Naming (If Needed)
 
@@ -205,7 +205,7 @@ TOOLS TO USE:
 - I'd like to explore more options first
 - I want to proceed but keep the name tentative for now
 
-**Save to:** `docs/brand/00-discovery/brand-name.md`
+**Save to:** `docs/brand/00-discovery/04-brand-name.md` → **Review with ai-writing-detector**
 
 **Important:** Update the `[Brand Name]` placeholder in all subsequent files with the selected name.
 
@@ -248,7 +248,7 @@ TOOLS TO USE:
 - Use WebFetch to read the full About/Purpose pages of inspiring brands — study how they articulate their WHY, mission language, and vision statements
 ```
 
-**Save to:** `docs/brand/01-strategy/purpose-mission-vision.md`
+**Save to:** `docs/brand/01-strategy/01-purpose-mission-vision.md` → **Review with ai-writing-detector**
 
 ### Step 2.2: Core Values (Agent)
 
@@ -283,7 +283,7 @@ TOOLS TO USE:
 - Use WebFetch to read competitor values pages in full — analyze their exact language, framing, and identify opportunities for differentiation
 ```
 
-**Save to:** `docs/brand/01-strategy/core-values.md`
+**Save to:** `docs/brand/01-strategy/02-core-values.md` → **Review with ai-writing-detector**
 
 ### Step 2.3: Positioning (Agent)
 
@@ -324,7 +324,7 @@ TOOLS TO USE:
 - Use WebFetch to read competitor homepages and positioning content in full — understand their complete positioning narrative and identify white space
 ```
 
-**Save to:** `docs/brand/01-strategy/positioning.md`
+**Save to:** `docs/brand/01-strategy/03-positioning.md` → **Review with ai-writing-detector**
 
 ### Step 2.4: Brand Archetype (Agent)
 
@@ -365,7 +365,7 @@ TOOLS TO USE:
 - Use WebFetch to read archetype case studies and brand analysis articles — understand how successful brands embody specific archetypes
 ```
 
-**Save to:** `docs/brand/01-strategy/archetype.md`
+**Save to:** `docs/brand/01-strategy/04-archetype.md` → **Review with ai-writing-detector**
 
 ### Step 2.5: Brand Personality and Voice (Agent)
 
@@ -414,7 +414,7 @@ TOOLS TO USE:
 - Use WebFetch to read actual style guides and voice documentation — study how leading brands document their voice, structure guidelines, and provide examples
 ```
 
-**Save to:** `docs/brand/01-strategy/brand-personality-voice.md`
+**Save to:** `docs/brand/01-strategy/05-brand-personality-voice.md` → **Review with ai-writing-detector**
 
 ---
 
@@ -467,7 +467,7 @@ TOOLS TO USE:
 - Use WebFetch to read competitor landing pages and product copy — analyze their full messaging hierarchy, value propositions, and proof points
 ```
 
-**Save to:** `docs/brand/02-messaging/messaging-framework.md`
+**Save to:** `docs/brand/02-messaging/01-messaging-framework.md` → **Review with ai-writing-detector**
 
 ### Step 3.2: Tagline (Agent)
 
@@ -510,7 +510,7 @@ TOOLS TO USE:
 - Use WebFetch to read tagline articles and case studies — understand the context, history, and effectiveness of inspiring taglines
 ```
 
-**Save to:** `docs/brand/02-messaging/tagline.md`
+**Save to:** `docs/brand/02-messaging/02-tagline.md` → **Review with ai-writing-detector**
 
 **After agent returns, use AskUserQuestion:**
 "Here are the tagline options. Which resonates most with you?"
@@ -567,7 +567,7 @@ TOOLS TO USE:
 - Use AskUserQuestion to understand pitch contexts and validate pitches feel natural to say
 ```
 
-**Save to:** `docs/brand/02-messaging/elevator-pitch.md`
+**Save to:** `docs/brand/02-messaging/03-elevator-pitch.md` → **Review with ai-writing-detector**
 
 ---
 
@@ -626,7 +626,7 @@ TOOLS TO USE:
 - Use WebFetch to read brand case study pages and design portfolio writeups — understand the strategic rationale behind visual identity decisions
 ```
 
-**Save to:** `docs/brand/03-visual/visual-direction.md`
+**Save to:** `docs/brand/03-visual/01-visual-direction.md` → **Review with ai-writing-detector**
 
 ### Step 4.2: Color Palette (Agent)
 
@@ -687,7 +687,7 @@ TOOLS TO USE:
 - Use WebFetch to read color psychology articles and brand color case studies — understand the research behind color associations and how brands justify their palettes
 ```
 
-**Save to:** `docs/brand/03-visual/color-palette.md`
+**Save to:** `docs/brand/03-visual/02-color-palette.md` → **Review with ai-writing-detector**
 
 ### Step 4.3: Typography (Agent)
 
@@ -748,7 +748,7 @@ TOOLS TO USE:
 - Use WebFetch to read typography guides, font pairing articles, and foundry pages — understand pairing rationale and access font specimen details
 ```
 
-**Save to:** `docs/brand/03-visual/typography.md`
+**Save to:** `docs/brand/03-visual/03-typography.md` → **Review with ai-writing-detector**
 
 ---
 
@@ -864,10 +864,10 @@ Read all files from `docs/brand/` subdirectories and create a comprehensive bran
 
 ## Resources
 
-- Full visual direction brief: `03-visual/visual-direction.md`
-- Complete messaging framework: `02-messaging/messaging-framework.md`
-- Audience research: `00-discovery/audience-research.md`
-- Competitive audit: `00-discovery/competitive-audit.md`
+- Full visual direction brief: `03-visual/01-visual-direction.md`
+- Complete messaging framework: `02-messaging/01-messaging-framework.md`
+- Audience research: `00-discovery/02-audience-research.md`
+- Competitive audit: `00-discovery/03-competitive-audit.md`
 ```
 
 ---
@@ -901,11 +901,43 @@ Read all files from `docs/brand/` subdirectories and create a comprehensive bran
 3. **AskUserQuestion tool** — For interactive, guided experience with the founder
 4. **WebSearch** — For discovering sources (competitors, examples, availability tools, resources)
 5. **WebFetch** — For reading discovered pages in full (competitor About pages, style guides, case studies, research articles)
+6. **ai-writing-detector agent** — After saving each document, review for AI writing patterns and refine
 
 **The WebSearch → WebFetch workflow:**
 - WebSearch DISCOVERS relevant URLs and gives snippets
 - WebFetch READS the full content of promising pages
 - Example: WebSearch finds a competitor's website → WebFetch reads their About page to analyze positioning
+
+**AI Writing Review workflow (REQUIRED after every document save):**
+
+After saving ANY brand document to `docs/brand/`, you MUST review it for AI writing patterns and refine as needed. This ensures all brand content sounds authentic and human.
+
+**Use Task tool** to launch `ai-writing-detector`:
+
+```
+Review this brand document for AI writing patterns and refine as needed. ultrathink
+
+FILE TO REVIEW: [path to saved document, e.g., docs/brand/00-discovery/01-founder-brief.md]
+
+Use sequential thinking MCP to systematically:
+1. Read the document thoroughly
+2. Identify specific passages that exhibit AI writing patterns:
+   - Generic corporate-speak
+   - Overly formal or robotic language
+   - Repetitive sentence structures
+   - Hedging language ("It's important to note that...")
+   - Lists of obvious statements
+   - Lack of specific, authentic voice
+3. If AI patterns are detected:
+   - Rewrite affected passages to sound more authentic and human
+   - Preserve the strategic content and meaning
+   - Make the voice match the brand personality being developed
+   - Use more specific, concrete language
+   - Save the refined version to the same file path
+4. If the content passes review, confirm it's ready and move on
+```
+
+This review step ensures every brand deliverable sounds like it was written by a human brand strategist, not generated by AI.
 
 Ensure each agent is receiving the context it needs and that users are actively engaged throughout.
 
@@ -923,6 +955,7 @@ Use AskUserQuestion to confirm:
 - **Always use specialized agents** — Don't generate brand elements yourself; launch the appropriate agent
 - **Agents ultrathink** — Each agent prompt includes "ultrathink" and instructions to use AskUserQuestion, sequential thinking MCP, WebSearch, and WebFetch
 - **WebSearch → WebFetch workflow** — WebSearch discovers sources; WebFetch reads them deeply for analysis
+- **Review all outputs for AI writing** — After saving each document, ALWAYS use ai-writing-detector agent to identify and refine any passages that sound generic or robotic; brand content must sound authentically human
 - **Name before strategy** — If no name exists, develop one in Step 1.4 before Phase 2; the name influences everything
 - **Build context cumulatively** — Each agent prompt includes relevant context from previous phases
 - **Save everything** — Create the file structure as you go
