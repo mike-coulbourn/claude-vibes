@@ -11,6 +11,8 @@
 
 # Claude Code local files (if any sensitive local configs)
 *.local.md
+.claude/agents/
+.claude/skills/
 
 # Generated research files
 research/

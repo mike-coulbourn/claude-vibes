@@ -1,6 +1,6 @@
 ---
 name: skill-builder
-description: Create new Skills for Claude Code including YAML frontmatter, descriptions, instructions, and structure. Use when creating, building, or designing Skills, or when asked about Skill creation, structure, best practices, or debugging Skills that don't activate properly.
+description: Create new Skills for Claude Code including YAML frontmatter, descriptions, instructions, and structure. Use when creating, building, or designing skills, or when asked about skill creation, structure, best practices, or debugging skills that don't activate properly.
 ---
 
 # Skill Builder
