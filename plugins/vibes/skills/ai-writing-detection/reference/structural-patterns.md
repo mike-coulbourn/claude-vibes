@@ -1,0 +1,305 @@
+# Structural Patterns in AI-Generated Text
+
+Comprehensive reference for sentence, paragraph, and document-level structural patterns that indicate AI authorship.
+
+## Sentence-Level Patterns
+
+### Uniformity (Low Burstiness)
+
+**What it means**: AI produces sentences of similar length and complexity throughout.
+
+**Human pattern**: Mix of short punchy sentences with long complex ones. Varying rhythm.
+
+**AI pattern**: Consistent 12-18 word sentences. Uniform complexity. Predictable rhythm.
+
+**How to measure**:
+1. Calculate word count for each sentence
+2. Compute standard deviation
+3. Low SD = AI signal; High SD = human signal
+
+**Example - AI (low burstiness)**:
+```
+The research methodology was carefully designed to ensure accurate results.
+Data collection involved multiple sources to provide comprehensive coverage.
+Analysis procedures followed established protocols from previous studies.
+Results were validated through rigorous statistical testing methods.
+```
+(All sentences: 10-12 words, similar structure)
+
+**Example - Human (high burstiness)**:
+```
+We tried everything. The methodology section took three rewrites before
+anyone was happy with it - and even then, Dr. Chen had reservations about
+the sampling approach. But what could we do? The deadline was Thursday.
+```
+(Sentences: 3, 22, 4, 5 words - varied)
+
+### Tricolon Structures
+
+**What it is**: Three-part parallel phrases, often with escalating significance.
+
+**AI pattern**: Frequent use of tricolons, especially in lists.
+
+```
+"research, collaboration, and problem-solving"
+"engaging, informative, and thought-provoking"
+"planning, execution, and evaluation"
+"clear, concise, and compelling"
+```
+
+**Why it's a signal**: AI defaults to three items for rhetorical balance. Humans vary between 2, 3, 4+ items naturally.
+
+### Correlative Constructions
+
+**What they are**: Paired conjunctions creating balanced structures.
+
+**AI overuses**:
+- "Not only...but also..."
+- "Whether...or..."
+- "Both...and..."
+- "Either...or..."
+- "Neither...nor..."
+
+**Example**:
+```
+"Not only does this approach improve efficiency, but it also reduces costs."
+```
+
+Humans use these too, but AI uses them disproportionately.
+
+### Em Dash Overuse
+
+**Pattern**: AI uses em dashes more frequently than typical human writing.
+
+**AI example**:
+```
+"The solution—which many experts have praised—offers several advantages."
+"This approach—unlike traditional methods—provides better results."
+```
+
+**Human tendency**: Em dashes used sparingly or replaced with commas/parentheses.
+
+### Semicolon Patterns
+
+**AI pattern**: Semicolons connecting simple statements that could be separate sentences.
+
+```
+"The results were promising; the team decided to continue."
+"Users appreciate simplicity; complexity creates confusion."
+```
+
+**Why it's a signal**: AI sees semicolons as sophisticated; humans use them more sparingly and for more complex clause connections.
+
+## Paragraph-Level Patterns
+
+### Structural Uniformity
+
+**AI pattern**: All paragraphs approximately the same length.
+
+**Human pattern**: Varied paragraph lengths based on content needs.
+
+**How to measure**:
+1. Count sentences per paragraph
+2. Calculate standard deviation
+3. Low SD across paragraphs = AI signal
+
+### Topic Sentence Templates
+
+**AI pattern**: Each paragraph begins with an explicit thesis statement.
+
+```
+Paragraph 1: "The first important consideration is..."
+Paragraph 2: "Another key factor involves..."
+Paragraph 3: "A third significant aspect relates to..."
+```
+
+**Human pattern**: Topic sentences vary in explicitness. Some paragraphs start with context, examples, or transitions.
+
+### New Idea = New Paragraph
+
+**AI pattern**: Strict separation of ideas into discrete paragraphs.
+
+**Human pattern**: Ideas flow across paragraph breaks; paragraphs sometimes contain multiple related points.
+
+### List-Like Organization
+
+**AI pattern**: Content naturally falls into enumerable points, even in prose.
+
+```
+"There are several key benefits. First, it improves efficiency.
+Second, it reduces costs. Third, it enhances user experience."
+```
+
+**Human pattern**: More organic argumentation that doesn't enumerate explicitly.
+
+## Document-Level Patterns
+
+### Introduction Patterns
+
+**AI templates**:
+- "Have you ever wondered..."
+- "In today's fast-paced world..."
+- "When it comes to [topic], many people..."
+- "[Topic] has become increasingly important in..."
+
+**Human variation**: Personal anecdotes, provocative claims, in medias res openings.
+
+### Conclusion Patterns
+
+**AI templates**:
+- "In conclusion..."
+- "To summarize..."
+- "In summary..."
+- "All in all..."
+- [Restatement of thesis in slightly different words]
+
+**Human variation**: Calls to action, future implications, personal reflections, open questions.
+
+### Problem-Solution Structure
+
+**AI pattern**: Explicit problem statement → solution presentation → benefits enumeration
+
+**Why it's a signal**: AI defaults to this structure; humans use it but also use narrative, comparison, chronological, and other structures.
+
+### Section Organization
+
+**AI pattern**: Over-organized with explicit headings and subheadings even when unnecessary.
+
+**Human pattern**: Headings used when genuinely helpful; prose flows without constant sectioning.
+
+## Discourse Patterns
+
+### Rhetorical Structure Theory (RST) Findings
+
+**AI patterns**:
+- Elaboration and Temporal motifs increase as generation length grows
+- More explicit discourse markers
+- Linear, predictable discourse flow
+
+**Human patterns**:
+- Joint relation motifs (evenly branching structures)
+- Implicit discourse relations
+- Non-linear argumentation
+
+### Syntactic Template Repetition
+
+**Research finding**: 76% of AI syntactic templates also appear in training data vs 35% for human text.
+
+**AI pattern**: Repeated dual-adjective patterns
+- "unique and intense"
+- "magical and thought-provoking"
+- "simple yet effective"
+- "complex but manageable"
+
+### Metadiscourse Differences
+
+**AI pattern**: Lower frequency of interactional metadiscourse
+- Fewer hedges in argumentation
+- Fewer boosters (emphasis markers)
+- Fewer attitude markers
+
+**Human pattern**: Higher rhetorical engagement with reader
+
+## Coherence Patterns
+
+### Local vs Global Coherence
+
+**AI pattern**: Sentences make sense individually; may not build a coherent argument.
+
+**How to detect**:
+- Read each paragraph in isolation - makes sense
+- Read entire document - lacks clear throughline or builds circular argument
+
+### Repetitive Concepts
+
+**AI pattern**: Same idea restated with different words across paragraphs.
+
+**Example**:
+```
+Paragraph 1: "Communication is essential for team success."
+Paragraph 3: "Effective teams rely on strong communication."
+Paragraph 5: "Success depends on how well team members communicate."
+```
+
+### Non-Sequitur Transitions
+
+**AI pattern**: Smooth-sounding transitions that don't actually connect ideas logically.
+
+```
+"Furthermore, the study examined user preferences."
+"Moreover, implementation costs were considered."
+```
+
+The transitions sound connected but ideas may be unrelated.
+
+### Entity Reference Distance
+
+**Research finding**:
+- Human text: Refers back to introduced entities across long distances
+- AI text: Clusters same-entity mentions closer together
+
+**How to check**: Note when entities are introduced, see how far apart subsequent references appear.
+
+## Formatting Patterns
+
+### Bullet Points in Essays
+
+**AI pattern**: Bullet points appear in contexts where prose would be more natural.
+
+**Human pattern**: Bullet points reserved for genuinely list-like content.
+
+### Excessive Parallelism
+
+**AI pattern**: Every element in a list follows identical grammatical structure.
+
+```
+- Improving efficiency
+- Reducing costs
+- Enhancing quality
+- Increasing satisfaction
+```
+
+**Human pattern**: Some parallel structure but with natural variation.
+
+### Over-Use of Bold/Headers
+
+**AI pattern**: Frequent bolding of key terms; many section headers.
+
+**Human pattern**: Formatting used purposefully; prose allowed to flow.
+
+## Detection Implementation
+
+### Sentence Analysis
+```
+For each text:
+1. Calculate sentence length variance
+2. Count tricolon structures
+3. Count correlative constructions
+4. Count em dashes per 100 words
+5. Assess uniformity score
+```
+
+### Paragraph Analysis
+```
+For each text:
+1. Calculate paragraph length variance
+2. Check for template topic sentences
+3. Look for enumerated structure in prose
+4. Assess introduction/conclusion templates
+```
+
+### Document Analysis
+```
+For each text:
+1. Map discourse structure
+2. Check for circular reasoning
+3. Identify repeated concepts
+4. Assess global coherence
+```
+
+## Caveats
+
+- Technical and academic writing is naturally more structured
+- Some humans write in organized, parallel patterns
+- Format expectations vary by genre (reports vs essays vs blog posts)
+- Always combine structural analysis with vocabulary and statistical signals
