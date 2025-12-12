@@ -185,17 +185,71 @@ COMPETITIVE LANDSCAPE:
 
 NAMING APPROACH:
 Guide the founder through an interactive naming process:
+
 1. Understand naming preferences and constraints
-2. Develop names across multiple approaches (descriptive, suggestive, abstract, etc.)
-3. Check availability (domain, trademark conflicts)
-4. Present 5-7 vetted options with strategic rationale
-5. Refine based on founder feedback
-6. Select final name
+   - Style preferences (modern, classic, playful, serious)
+   - Length preferences
+   - Any must-avoid sounds, letters, or associations
+   - Budget for premium domains if needed
+
+2. Generate 10-15 candidate names across approaches:
+   - Descriptive (says what you do)
+   - Suggestive (hints at benefits)
+   - Abstract (invented words)
+   - Compound (two words combined)
+   - Founder/Origin-based
+
+3. VERIFY DOMAIN AVAILABILITY (REQUIRED - DO NOT SKIP):
+   For EACH candidate name, check domain availability using whois MCP:
+
+   a. Check .com first:
+      Call `mcp__plugin_claude-vibes_whois__whois_domain` with "[name].com"
+
+   b. If .com is taken, check alternatives:
+      - [name].io
+      - [name].co
+      - [name]app.com
+      - get[name].com
+
+   c. Record availability for each name:
+      - 🟢 .com available → TOP PRIORITY - present first
+      - 🟡 .com taken but .io/.co available → Present as alternative option
+      - 🔴 All common TLDs taken → DO NOT PRESENT (unless truly exceptional)
+
+4. FILTER ruthlessly:
+   - Only present names with VERIFIED available domains
+   - Prioritize .com availability over everything else
+   - A mediocre name with available .com beats a great name without one
+
+5. Present 5-7 DOMAIN-VERIFIED options:
+   Format as a table:
+   | Name | Domain | Status | Strategic Rationale |
+   |------|--------|--------|---------------------|
+   | Acme | acme.com | 🟢 Available | Strong, memorable... |
+   | Bolt | bolt.io | 🟡 .com taken | Action-oriented... |
+
+   For each name include:
+   - The name and recommended domain
+   - Availability status with verification
+   - Strategic rationale (why this name fits the brand)
+   - Pronunciation and spelling considerations
+
+6. Refine based on founder feedback
+   - If founder likes a direction, generate more options in that style
+   - Re-verify domains for any new candidates
+
+7. Confirm final selection
+   - Verify domain is STILL available (can change quickly)
+   - Recommend founder purchase domain immediately
+   - Check trademark conflicts via WebSearch
+
+CRITICAL RULE: Never present a name to the founder without first verifying domain availability. Founders fall in love with names - don't let them fall for one they can't own.
 
 TOOLS TO USE:
+- Use whois MCP server (`mcp__plugin_claude-vibes_whois__whois_domain`) to verify domain availability - THIS IS REQUIRED for every name before presenting
 - Use sequential thinking MCP to systematically develop and evaluate name options
-- Use WebSearch to discover domain availability tools, trademark databases, and existing brands using similar names
-- Use WebFetch to read domain/trademark search results and existing brand pages — verify true availability and understand usage context
+- Use WebSearch to check trademark databases and existing brands using similar names
+- Use WebFetch to read trademark search results and existing brand pages — understand usage context
 - Use AskUserQuestion throughout: preferences, presenting options, refinement, final selection
 ```
 
