@@ -13,9 +13,9 @@ You are helping a vibe coder design the technical foundation for their project. 
 **Optional focus areas:** $ARGUMENTS
 
 **Auto-loaded context (if files exist):**
-@docs/start/01-discover.md
-@docs/start/02-scope.md
-@docs/start/03-architect.md
+@docs/01-START/01-discover.md
+@docs/01-START/02-scope.md
+@docs/01-START/03-architect.md
 
 **Check what loaded above:** If discovery and scope content appear, build on them. If nothing loaded, ask the user to describe their project or suggest running earlier START commands first.
 
@@ -70,7 +70,7 @@ Then proceed with architecture design based on the user's answers.
 ```
 Task tool:
   subagent_type: "claude-vibes:CODING:data-modeler"
-  prompt: "Ultrathink about the complete data model for this project. Read docs/start/01-discover.md and docs/start/02-scope.md for full context.
+  prompt: "Ultrathink about the complete data model for this project. Read docs/01-START/01-discover.md and docs/01-START/02-scope.md for full context.
 
   Design all entities (the 'things' the app tracks), their attributes, and relationships. Explain everything in plain language a non-technical person can understand.
 
@@ -118,7 +118,7 @@ Options:
 Task tool:
   subagent_type: "claude-vibes:CODING:tech-advisor"
   run_in_background: true
-  prompt: "Ultrathink about technical decisions for this project. Read all docs/start/ files for context.
+  prompt: "Ultrathink about technical decisions for this project. Read all docs/01-START/ files for context.
 
   Research and recommend solutions for:
   1. Authentication approach (what makes sense for this user base)
@@ -228,7 +228,7 @@ This becomes the blueprint for the build phase.
 ```
 Task tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
-  prompt: "Ultrathink about this architecture design. Read all docs/start/ files for context.
+  prompt: "Ultrathink about this architecture design. Read all docs/01-START/ files for context.
 
   Review for:
   1. Missing entities or relationships in the data model
@@ -270,9 +270,9 @@ Use these frameworks when making user-centric technical decisions.
 
 When architecture feels complete:
 
-1. Ensure `docs/start/` directory exists
+1. Ensure `docs/01-START/` directory exists
 
-2. Save architecture summary to `docs/start/03-architect.md` with:
+2. Save architecture summary to `docs/01-START/03-architect.md` with:
 
    **Technical Summary** (2-3 sentences in plain language)
 

@@ -13,8 +13,8 @@ You are helping a vibe coder define the scope of their project. This phase trans
 **Optional additional context:** $ARGUMENTS
 
 **Auto-loaded context (if files exist):**
-@docs/start/01-discover.md
-@docs/start/02-scope.md
+@docs/01-START/01-discover.md
+@docs/01-START/02-scope.md
 
 **Check what loaded above:** If discovery content appears, build on it. If nothing loaded, ask the user to describe their project or suggest running `/01-discover` first.
 
@@ -91,7 +91,7 @@ These answers inform how we'll prioritize the brainstormed features.
 Task tool:
   subagent_type: "claude-vibes:CODING:feature-brainstormer"
   run_in_background: true
-  prompt: "Ultrathink about all possible features for this project. Read docs/start/01-discover.md for full context on the problem, users, and value proposition.
+  prompt: "Ultrathink about all possible features for this project. Read docs/01-START/01-discover.md for full context on the problem, users, and value proposition.
 
   Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered.
 
@@ -208,9 +208,9 @@ Use these frameworks when prioritizing features and writing user stories.
 
 When scoping feels complete:
 
-1. Create the `docs/start/` directory if it doesn't exist
+1. Create the `docs/01-START/` directory if it doesn't exist
 
-2. Save scope summary to `docs/start/02-scope.md` with:
+2. Save scope summary to `docs/01-START/02-scope.md` with:
    - Scope priorities (from step 2)
    - Complete feature list (categorized: Core, Important, Nice-to-have, Out of scope)
    - For each Core feature: why it's core (the job it serves)

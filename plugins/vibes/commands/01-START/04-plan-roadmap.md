@@ -13,10 +13,10 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 **Optional constraints:** $ARGUMENTS
 
 **Auto-loaded context (if files exist):**
-@docs/start/01-discover.md
-@docs/start/02-scope.md
-@docs/start/03-architect.md
-@docs/start/04-plan-roadmap.md
+@docs/01-START/01-discover.md
+@docs/01-START/02-scope.md
+@docs/01-START/03-architect.md
+@docs/01-START/04-plan-roadmap.md
 
 **Check what loaded above:** If discovery, scope, and architecture content appear, synthesize them into a roadmap. If some docs are missing, ask the user to describe the missing context or suggest running earlier START commands first.
 
@@ -125,7 +125,7 @@ Create clear checkpoints:
 ```
 Task tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
-  prompt: "Ultrathink about this implementation roadmap. Read all docs/start/ files for complete context.
+  prompt: "Ultrathink about this implementation roadmap. Read all docs/01-START/ files for complete context.
 
   **Use the sequential-thinking MCP tool** to systematically analyze:
   1. Phase sequencing — are dependencies correctly ordered?
@@ -177,9 +177,9 @@ When planning feels complete:
 
 ### Step 1: Save Human-Readable Roadmap
 
-1. Ensure `docs/start/` directory exists
+1. Ensure `docs/01-START/` directory exists
 
-2. Save the implementation plan to `docs/start/04-plan-roadmap.md` with:
+2. Save the implementation plan to `docs/01-START/04-plan-roadmap.md` with:
    - Project summary (what we're building and why—plain language)
    - Implementation phases with details for each
    - Key milestones and how to know they're achieved
@@ -192,7 +192,7 @@ When planning feels complete:
 Task tool:
   subagent_type: "claude-vibes:TOOLKIT:ai-writing-detector"
   run_in_background: true
-  prompt: "Review docs/start/04-plan-roadmap.md for AI writing patterns. Focus on:
+  prompt: "Review docs/01-START/04-plan-roadmap.md for AI writing patterns. Focus on:
   - Overly formal or stiff language
   - Generic phrases that could apply to any project
   - Lack of specific, concrete details
@@ -239,7 +239,7 @@ Then ask again if they want to set it up.
 
 ### Step 3: Generate Taskmaster PRD
 
-Create a PRD (Product Requirements Document) by synthesizing all `docs/start/` files into Taskmaster format.
+Create a PRD (Product Requirements Document) by synthesizing all `docs/01-START/` files into Taskmaster format.
 
 **Save to `.taskmaster/docs/prd.txt`:**
 
@@ -410,13 +410,13 @@ TaskOutput:
   block: false
 ```
 
-If the agent found issues, mention them briefly: "The document review suggested some refinements to make the language more natural. I can apply those now or you can review docs/start/04-plan-roadmap.md later."
+If the agent found issues, mention them briefly: "The document review suggested some refinements to make the language more natural. I can apply those now or you can review docs/01-START/04-plan-roadmap.md later."
 
 **With Taskmaster:**
 
 "Planning complete! Here's what we created:
 
-**Human Documentation** (in `docs/start/`):
+**Human Documentation** (in `docs/01-START/`):
 - Discovery summary
 - Scope and MVP features
 - Architecture decisions
@@ -434,14 +434,14 @@ Run `/02-BUILD:01-plan-code` — Taskmaster will recommend what to build based o
 
 "Planning complete! Here's what we created:
 
-**Human Documentation** (in `docs/start/`):
+**Human Documentation** (in `docs/01-START/`):
 - Discovery summary
 - Scope and MVP features
 - Architecture decisions
 - Implementation roadmap
 
 **Next steps:**
-1. Review the complete plan in `docs/start/`
+1. Review the complete plan in `docs/01-START/`
 2. When ready to build, run `/02-BUILD:01-plan-code [feature name]`
 
 You can run `/04-plan-roadmap` again later if you want to set up Taskmaster."

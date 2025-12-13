@@ -14,7 +14,7 @@ You are helping a vibe coder discover and clarify their project idea. This is th
 
 **Auto-loaded context (if files exist):**
 @CLAUDE.md
-@docs/start/01-discover.md
+@docs/01-START/01-discover.md
 
 **Check what loaded above:** If CLAUDE.md or previous discovery content appears above, this is an existing project—build on that context. If nothing loaded, this is a fresh project—start from scratch.
 
@@ -179,9 +179,9 @@ Use these frameworks when synthesizing insights.
 
 When discovery feels complete:
 
-1. Create the `docs/start/` directory if it doesn't exist
+1. Create the `docs/01-START/` directory if it doesn't exist
 
-2. Save a discovery summary to `docs/start/01-discover.md` with:
+2. Save a discovery summary to `docs/01-START/01-discover.md` with:
    - Problem statement (1-2 sentences)
    - Target users (with brief personas)
    - Core value proposition
