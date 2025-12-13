@@ -1,6 +1,6 @@
 ---
 description: Implement the planned feature following project patterns
-argument-hint: Path to the plan file (e.g., docs/build/plan-user-auth.md)
+argument-hint: Path to the plan file (e.g., docs/02-BUILD/plan-user-auth.md)
 ---
 
 # Build Phase
@@ -18,10 +18,10 @@ You orchestrate the implementation and manage the conversation. The code-guru ag
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project understanding
+- `docs/01-START/` files — Project understanding
 - The plan file specified above
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 ## How to Communicate
@@ -39,15 +39,15 @@ If no plan file is provided, use AskUserQuestion:
 ```
 Question: "Which plan should I implement?"
 Options:
-- Let me find available plans (I'll check docs/build/)
+- Let me find available plans (I'll check docs/02-BUILD/)
 - I'll provide the path
 - Run /01-plan-code first to create one
 - Other
 ```
 
-If they want to find plans, check `docs/build/` for plan files and present them as options.
+If they want to find plans, check `docs/02-BUILD/` for plan files and present them as options.
 
-Read the docs/start/ files and the plan file. Understand what needs to be built and the approach to follow.
+Read the docs/01-START/ files and the plan file. Understand what needs to be built and the approach to follow.
 
 ### 2. Extract Taskmaster Task ID (if present)
 

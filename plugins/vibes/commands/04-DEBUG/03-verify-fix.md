@@ -18,12 +18,12 @@ You orchestrate the verification and manage the conversation. The verifier agent
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
-- `docs/fix/diagnosis-*.md` — The diagnosis for this fix
+- `docs/01-START/` files — Project requirements and architecture
+- `docs/04-DEBUG/diagnosis-*.md` — The diagnosis for this fix
 
 These are stable documentation—always load them. The verifier agent will parse LOGS.json and report back specific relevant entries.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no diagnosis file exists:**
@@ -40,7 +40,7 @@ If no diagnosis file exists, use `git diff` and `git log` to understand what was
 
 ### 1. Load Core Context
 
-Read docs/start/ files and the most recent diagnosis file to understand what was fixed.
+Read docs/01-START/ files and the most recent diagnosis file to understand what was fixed.
 
 ### 2. Identify What to Verify
 
@@ -48,7 +48,7 @@ If `$ARGUMENTS` specifies files/areas, focus there.
 
 Otherwise, find the recent fix:
 - Check `git diff` for uncommitted changes
-- Read the most recent `docs/fix/diagnosis-*.md`
+- Read the most recent `docs/04-DEBUG/diagnosis-*.md`
 - Look at recently modified files
 
 ### 3. Launch Agents in Parallel (REQUIRED)

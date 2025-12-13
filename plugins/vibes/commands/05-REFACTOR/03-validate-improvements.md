@@ -18,12 +18,12 @@ You orchestrate the validation and manage the conversation. The validator agent 
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
-- `docs/refactor/assessment-*.md` — The assessment for this refactoring
+- `docs/01-START/` files — Project requirements and architecture
+- `docs/05-REFACTOR/assessment-*.md` — The assessment for this refactoring
 
 These are stable documentation—always load them. The validator agent will parse LOGS.json and report back specific relevant entries.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no assessment file exists:**
@@ -40,7 +40,7 @@ If no assessment file exists, use `git diff` and `git log` to understand what wa
 
 ### 1. Load Context
 
-Read docs/start/ files and the most recent assessment file to understand what was refactored and why.
+Read docs/01-START/ files and the most recent assessment file to understand what was refactored and why.
 
 ### 2. Identify What to Validate
 
@@ -48,7 +48,7 @@ If `$ARGUMENTS` specifies files/areas, focus there.
 
 Otherwise, find the recent refactoring:
 - Check `git diff` for uncommitted changes
-- Read the most recent `docs/refactor/assessment-*.md`
+- Read the most recent `docs/05-REFACTOR/assessment-*.md`
 - Look at recently modified files
 
 ### 3. Launch Agents in Parallel (REQUIRED)

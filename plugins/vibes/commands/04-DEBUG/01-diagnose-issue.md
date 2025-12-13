@@ -18,12 +18,12 @@ You orchestrate the investigation and manage the conversation. The diagnostician
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
+- `docs/01-START/` files — Project requirements and architecture
 - Any error logs or stack traces the user provides
 
 These are stable project documentation—always load them.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and how components interact.
 
 ## How to Communicate
@@ -37,7 +37,7 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 ### 1. Load Core Context
 
-Read docs/start/ files for project understanding.
+Read docs/01-START/ files for project understanding.
 
 ### 2. Retrieve Knowledge from Memory
 
@@ -144,7 +144,7 @@ Use AskUserQuestion to validate your understanding:
 
 **Only after the user has validated your diagnosis**, save it.
 
-Save the diagnosis to `docs/fix/diagnosis-<issue-name>.md`:
+Save the diagnosis to `docs/04-DEBUG/diagnosis-<issue-name>.md`:
 
 ```markdown
 # Diagnosis: [Brief Issue Title]
@@ -188,8 +188,8 @@ When diagnosis is complete:
 1. Present preliminary findings to user
 2. **Validate diagnosis with AskUserQuestion** before proceeding
 3. Confirm root cause and fix approach with user
-4. Save validated diagnosis to docs/fix/
-5. Next step: "Run `/02-fix-issue docs/fix/diagnosis-<name>.md` to implement the fix"
+4. Save validated diagnosis to docs/04-DEBUG/
+5. Next step: "Run `/02-fix-issue docs/04-DEBUG/diagnosis-<name>.md` to implement the fix"
 
 ### Store Diagnostic Findings in Memory
 

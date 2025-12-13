@@ -18,11 +18,11 @@ You orchestrate the assessment and manage the conversation. The assessor agent h
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
+- `docs/01-START/` files — Project requirements and architecture
 
 These are stable project documentation—always load them. The assessor agent will parse LOGS.json and report back specific relevant entries.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and coding conventions.
 
 ## How to Communicate
@@ -48,7 +48,7 @@ If input is vague, use AskUserQuestion to clarify:
 
 ### 2. Load Core Context
 
-Read docs/start/ files to understand project patterns and conventions.
+Read docs/01-START/ files to understand project patterns and conventions.
 
 ### 3. Retrieve Knowledge from Memory
 
@@ -150,7 +150,7 @@ Update your assessment based on user responses. Remove any findings the user con
 
 **Only after the user has validated your findings**, save the assessment.
 
-Save the assessment to `docs/refactor/assessment-<topic>.md`:
+Save the assessment to `docs/05-REFACTOR/assessment-<topic>.md`:
 
 ```markdown
 # Refactoring Assessment: [Topic]
@@ -187,7 +187,7 @@ Save the assessment to `docs/refactor/assessment-<topic>.md`:
 After the user has validated findings:
 - Use AskUserQuestion if prioritization isn't clear
 - Offer to proceed with specific refactorings
-- "Ready to improve? Run `/02-improve-code docs/refactor/assessment-<topic>.md` or describe what to tackle first"
+- "Ready to improve? Run `/02-improve-code docs/05-REFACTOR/assessment-<topic>.md` or describe what to tackle first"
 
 ## Guidelines
 
@@ -207,5 +207,5 @@ When assessment is complete:
 1. Present preliminary findings to user
 2. **Validate EACH finding with AskUserQuestion** before proceeding
 3. Update findings based on user confirmation
-4. Save validated assessment to docs/refactor/
+4. Save validated assessment to docs/05-REFACTOR/
 5. Next step: "Run `/02-improve-code` to start improving the code"

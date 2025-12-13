@@ -1,6 +1,6 @@
 ---
 description: Apply refactoring changes safely
-argument-hint: Path to assessment file (e.g., docs/refactor/assessment-api.md) or direct refactoring description
+argument-hint: Path to assessment file (e.g., docs/05-REFACTOR/assessment-api.md) or direct refactoring description
 ---
 
 # Refactor Phase
@@ -29,12 +29,12 @@ Refactoring improves structure without changing behavior. Validation happens in 
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
+- `docs/01-START/` files — Project requirements and architecture
 - The assessment file (if provided)
 
 These are stable documentation—always load them. The refactorer agent will parse LOGS.json and report back specific relevant entries.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no assessment file exists:**

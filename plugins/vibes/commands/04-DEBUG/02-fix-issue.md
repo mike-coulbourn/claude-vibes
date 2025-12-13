@@ -1,6 +1,6 @@
 ---
 description: Implement a fix for a diagnosed issue
-argument-hint: Path to diagnosis file (e.g., docs/fix/diagnosis-search-error.md) or direct issue description
+argument-hint: Path to diagnosis file (e.g., docs/04-DEBUG/diagnosis-search-error.md) or direct issue description
 ---
 
 # Fix Phase
@@ -18,12 +18,12 @@ You orchestrate the fix implementation and manage the conversation. The fixer ag
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
+- `docs/01-START/` files — Project requirements and architecture
 - The diagnosis file (if provided)
 
 These are stable project documentation—always load them.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no diagnosis file exists:**

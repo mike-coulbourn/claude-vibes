@@ -18,14 +18,14 @@ You orchestrate the planning process and manage the conversation. The code-archi
 ## Project Context
 
 **Always read the docs/ files for core context:**
-- `docs/start/01-discover.md` — The problem, users, and value
-- `docs/start/02-scope.md` — MVP scope boundaries
-- `docs/start/03-architect.md` — Technical decisions and data model
-- `docs/start/04-plan-roadmap.md` — Implementation roadmap
+- `docs/01-START/01-discover.md` — The problem, users, and value
+- `docs/01-START/02-scope.md` — MVP scope boundaries
+- `docs/01-START/03-architect.md` — Technical decisions and data model
+- `docs/01-START/04-plan-roadmap.md` — Implementation roadmap
 
 These are stable project documentation—always load them.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's purpose, users, and architecture before proceeding.
 
 ## How to Communicate
@@ -40,7 +40,7 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 ### 1. Load Core Context
 
-Read all available docs/start/ files for project understanding.
+Read all available docs/01-START/ files for project understanding.
 
 ### 2. Retrieve Knowledge from Memory
 
@@ -105,7 +105,7 @@ Check if `$ARGUMENTS` was provided.
 ```
 Question: "What would you like to build next?"
 Options:
-- [Suggest based on docs/start/ if available]
+- [Suggest based on docs/01-START/ if available]
 - [Another suggestion]
 - Let me describe what I want to build
 - Other
@@ -229,7 +229,7 @@ Once you have a task or subtask to plan:
 
 **Use AskUserQuestion to clarify until you fully understand:**
 - What should this feature DO? (specific behavior, not just name)
-- Who is it for? (which user type from docs/start/)
+- Who is it for? (which user type from docs/01-START/)
 - What's the expected outcome when it's working?
 - Any specific behaviors or edge cases you're already aware of?
 - What's most important about this feature—speed, simplicity, flexibility?
@@ -368,8 +368,8 @@ Once the user approves, document the plan:
 When planning is complete:
 
 1. **Determine plan filename:**
-   - If Taskmaster task: `docs/build/plan-task-[id]-[name].md`
-   - If manual: `docs/build/plan-[feature-name].md`
+   - If Taskmaster task: `docs/02-BUILD/plan-task-[id]-[name].md`
+   - If manual: `docs/02-BUILD/plan-[feature-name].md`
 
 2. **Save the plan** with:
    - Taskmaster task ID (if applicable)

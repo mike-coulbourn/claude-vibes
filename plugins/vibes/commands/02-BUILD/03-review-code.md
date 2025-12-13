@@ -18,12 +18,12 @@ You orchestrate the review and manage the conversation. The code-reviewer agent 
 ## Project Context
 
 **Always read these files for core context:**
-- `docs/start/` files — Project requirements and architecture
-- `docs/build/plan-*.md` — The plan this implements
+- `docs/01-START/` files — Project requirements and architecture
+- `docs/02-BUILD/plan-*.md` — The plan this implements
 
 These are stable documentation—always load them. The code-reviewer agent will parse LOGS.json and report back specific relevant entries.
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no plan file exists:**
@@ -40,7 +40,7 @@ If no plan file exists, review all uncommitted changes or recent commits. Use As
 
 ### 1. Load Core Context
 
-Read docs/start/ files and the implementation plan to understand what was supposed to be built.
+Read docs/01-START/ files and the implementation plan to understand what was supposed to be built.
 
 ### 2. Identify What to Review
 
@@ -49,7 +49,7 @@ If `$ARGUMENTS` specifies files/areas, focus there.
 Otherwise, find recent work:
 - Check `git diff` for uncommitted changes
 - Check `git log` for recent commits
-- Look at the current plan in `docs/build/`
+- Look at the current plan in `docs/02-BUILD/`
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
