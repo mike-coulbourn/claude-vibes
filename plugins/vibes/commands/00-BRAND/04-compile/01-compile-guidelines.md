@@ -15,27 +15,27 @@ You are helping a startup founder compile their complete brand identity work int
 Load all brand documents for compilation:
 
 **Discovery:**
-@docs/brand/00-discovery/01-founder-brief.md
-@docs/brand/00-discovery/02-audience-research.md
-@docs/brand/00-discovery/03-competitive-audit.md
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Strategy:**
-@docs/brand/01-strategy/01-purpose-mission-vision.md
-@docs/brand/01-strategy/02-core-values.md
-@docs/brand/01-strategy/03-positioning.md
-@docs/brand/01-strategy/04-archetype.md
-@docs/brand/01-strategy/05-brand-personality-voice.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/02-core-values.md
+@docs/00-BRAND/01-STRATEGY/03-positioning.md
+@docs/00-BRAND/01-STRATEGY/04-archetype.md
+@docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md
 
 **Messaging:**
-@docs/brand/02-messaging/01-messaging-framework.md
-@docs/brand/02-messaging/02-tagline.md
-@docs/brand/02-messaging/03-elevator-pitch.md
+@docs/00-BRAND/02-MESSAGING/01-messaging-framework.md
+@docs/00-BRAND/02-MESSAGING/02-tagline.md
+@docs/00-BRAND/02-MESSAGING/03-elevator-pitch.md
 
 **Visual:**
-@docs/brand/03-visual/01-visual-direction.md
-@docs/brand/03-visual/02-color-palette.md
-@docs/brand/03-visual/03-typography.md
+@docs/00-BRAND/03-VISUAL/01-visual-direction.md
+@docs/00-BRAND/03-VISUAL/02-color-palette.md
+@docs/00-BRAND/03-VISUAL/03-typography.md
 
 **Check what loaded above:**
 - REQUIRED: Brand name, purpose/mission/vision, positioning, brand personality/voice
@@ -70,7 +70,7 @@ Your job is to:
 
 ## Guidelines Document Structure
 
-Create `docs/brand/brand-guidelines.md` using this structure:
+Create `docs/00-BRAND/brand-guidelines.md` using this structure:
 
 ```markdown
 # [Brand Name] Brand Guidelines
@@ -276,12 +276,12 @@ For deeper context, refer to the complete brand documents:
 
 | Document | Location | Contains |
 |----------|----------|----------|
-| Founder Brief | `00-discovery/01-founder-brief.md` | Origin story, initial vision |
-| Audience Research | `00-discovery/02-audience-research.md` | Full audience profiles |
-| Competitive Audit | `00-discovery/03-competitive-audit.md` | Competitor analysis |
-| Visual Direction Brief | `03-visual/01-visual-direction.md` | Complete visual guidelines |
-| Messaging Framework | `02-messaging/01-messaging-framework.md` | Full messaging hierarchy |
-| Brand Voice Guide | `01-strategy/05-brand-personality-voice.md` | Detailed voice guidelines |
+| Founder Brief | `00-DISCOVERY/01-founder-brief.md` | Origin story, initial vision |
+| Audience Research | `00-DISCOVERY/02-audience-research.md` | Full audience profiles |
+| Competitive Audit | `00-DISCOVERY/03-competitive-audit.md` | Competitor analysis |
+| Visual Direction Brief | `03-VISUAL/01-visual-direction.md` | Complete visual guidelines |
+| Messaging Framework | `02-MESSAGING/01-messaging-framework.md` | Full messaging hierarchy |
+| Brand Voice Guide | `01-STRATEGY/05-brand-personality-voice.md` | Detailed voice guidelines |
 
 ### Quick Reference Card
 
@@ -319,7 +319,7 @@ Questions about brand usage: [Contact information]
    - I want to adjust specific sections first
    - Let me discuss with my team before finalizing
 
-2. **After approval:** Save to `docs/brand/brand-guidelines.md`
+2. **After approval:** Save to `docs/00-BRAND/brand-guidelines.md`
 
 3. **Quality check:** Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 
@@ -334,7 +334,7 @@ Questions about brand usage: [Contact information]
    - Visual identity direction with colors and typography
    - A comprehensive Brand Guidelines document
 
-   **Your brand guidelines are saved to:** `docs/brand/brand-guidelines.md`
+   **Your brand guidelines are saved to:** `docs/00-BRAND/brand-guidelines.md`
 
    **Next steps:**
    1. Share the guidelines with your team

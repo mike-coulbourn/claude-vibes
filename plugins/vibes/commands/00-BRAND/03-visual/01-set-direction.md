@@ -13,39 +13,39 @@ You are helping a startup founder establish the visual direction for their brand
 ## Context Loading
 
 **Founder Brief** (optional):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (optional):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Competitive Audit** (required):
-@docs/brand/00-discovery/03-competitive-audit.md
+@docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md
 
 **Brand Name** (required):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Purpose/Mission/Vision** (optional):
-@docs/brand/01-strategy/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
 
 **Core Values** (optional):
-@docs/brand/01-strategy/02-core-values.md
+@docs/00-BRAND/01-STRATEGY/02-core-values.md
 
 **Positioning** (optional):
-@docs/brand/01-strategy/03-positioning.md
+@docs/00-BRAND/01-STRATEGY/03-positioning.md
 
 **Archetype** (required):
-@docs/brand/01-strategy/04-archetype.md
+@docs/00-BRAND/01-STRATEGY/04-archetype.md
 
 **Brand Personality/Voice** (required):
-@docs/brand/01-strategy/05-brand-personality-voice.md
+@docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md
 
 **Check above:** If brand name, competitive audit, archetype, or brand personality content is missing, **STOP** and tell the user to complete prerequisites first.
 
 **Messaging Framework** (auto-loaded if exists):
-@docs/brand/02-messaging/01-messaging-framework.md
+@docs/00-BRAND/02-MESSAGING/01-messaging-framework.md
 
 **Tagline** (auto-loaded if exists):
-@docs/brand/02-messaging/02-tagline.md
+@docs/00-BRAND/02-MESSAGING/02-tagline.md
 
 Optional visual preferences: $ARGUMENTS
 
@@ -194,8 +194,8 @@ Use AskUserQuestion to help founder review and select:
 
 After the founder approves the direction:
 
-1. Ensure `docs/brand/03-visual/` directory exists
-2. Save to `docs/brand/03-visual/01-visual-direction.md` with:
+1. Ensure `docs/00-BRAND/03-VISUAL/` directory exists
+2. Save to `docs/00-BRAND/03-VISUAL/01-visual-direction.md` with:
    - Executive summary
    - Strategic foundation
    - Mood board direction

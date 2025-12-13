@@ -11,10 +11,10 @@ You are helping a startup founder understand the competitive brand landscape. Th
 ## Context Loading
 
 **Founder Brief** (required):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (optional):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
 
@@ -128,8 +128,8 @@ Use the templates in the `competitive-visual-audit` skill for matrix formatting.
 
 After the agent returns:
 
-1. Ensure `docs/brand/00-discovery/` directory exists
-2. Save the competitive audit to `docs/brand/00-discovery/03-competitive-audit.md`
+1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
+2. Save the competitive audit to `docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md`
 
 3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 

@@ -11,7 +11,7 @@ You are helping a startup founder deeply understand their target audience. This 
 ## Context Loading
 
 **Founder Brief** (required):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
 
@@ -123,8 +123,8 @@ Deliver findings that are SPECIFIC to this audience — avoid generic insights t
 
 After the agent returns:
 
-1. Ensure `docs/brand/00-discovery/` directory exists
-2. Save the audience research to `docs/brand/00-discovery/02-audience-research.md`
+1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
+2. Save the audience research to `docs/00-BRAND/00-DISCOVERY/02-audience-research.md`
 
 3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 

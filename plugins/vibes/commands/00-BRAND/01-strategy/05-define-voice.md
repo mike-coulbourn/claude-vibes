@@ -11,28 +11,28 @@ You are helping a startup founder define their brand personality and voice. This
 ## Context Loading
 
 **Founder Brief** (optional):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (required):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Competitive Audit** (optional):
-@docs/brand/00-discovery/03-competitive-audit.md
+@docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md
 
 **Brand Name** (optional):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Purpose/Mission/Vision** (optional):
-@docs/brand/01-strategy/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
 
 **Core Values** (optional):
-@docs/brand/01-strategy/02-core-values.md
+@docs/00-BRAND/01-STRATEGY/02-core-values.md
 
 **Positioning** (optional):
-@docs/brand/01-strategy/03-positioning.md
+@docs/00-BRAND/01-STRATEGY/03-positioning.md
 
 **Archetype** (required):
-@docs/brand/01-strategy/04-archetype.md
+@docs/00-BRAND/01-STRATEGY/04-archetype.md
 
 **Check above:** If audience research or archetype content is missing, **STOP** and tell the user to complete prerequisites first.
 
@@ -157,8 +157,8 @@ Deliver the complete voice documentation using the Voice Guidelines Document Tem
 
 After the agent returns:
 
-1. Ensure `docs/brand/01-strategy/` directory exists
-2. Save to `docs/brand/01-strategy/05-brand-personality-voice.md`
+1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
+2. Save to `docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md`
 
 3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 

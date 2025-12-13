@@ -11,25 +11,25 @@ You are helping a startup founder create a memorable brand tagline. The tagline 
 ## Context Loading
 
 **Brand Name** (required):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Purpose/Mission/Vision** (required):
-@docs/brand/01-strategy/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
 
 **Core Values** (optional):
-@docs/brand/01-strategy/02-core-values.md
+@docs/00-BRAND/01-STRATEGY/02-core-values.md
 
 **Positioning** (required):
-@docs/brand/01-strategy/03-positioning.md
+@docs/00-BRAND/01-STRATEGY/03-positioning.md
 
 **Archetype** (optional):
-@docs/brand/01-strategy/04-archetype.md
+@docs/00-BRAND/01-STRATEGY/04-archetype.md
 
 **Brand Voice** (required):
-@docs/brand/01-strategy/05-brand-personality-voice.md
+@docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md
 
 **Messaging Framework** (required):
-@docs/brand/02-messaging/01-messaging-framework.md
+@docs/00-BRAND/02-MESSAGING/01-messaging-framework.md
 
 **Check above:** If brand name, purpose/mission/vision, positioning, brand voice, or messaging framework content is missing, **STOP** and tell the user to complete prerequisites first.
 
@@ -168,8 +168,8 @@ Use AskUserQuestion to help founder select:
 
 After the founder selects their tagline:
 
-1. Ensure `docs/brand/02-messaging/` directory exists
-2. Save to `docs/brand/02-messaging/02-tagline.md` with:
+1. Ensure `docs/00-BRAND/02-MESSAGING/` directory exists
+2. Save to `docs/00-BRAND/02-MESSAGING/02-tagline.md` with:
    - Selected tagline
    - Strategic rationale
    - Usage guidelines

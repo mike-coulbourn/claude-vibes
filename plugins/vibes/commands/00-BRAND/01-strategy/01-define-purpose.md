@@ -11,16 +11,16 @@ You are helping a startup founder articulate WHY their brand exists. Using Simon
 ## Context Loading
 
 **Founder Brief** (required):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (optional):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Competitive Audit** (optional):
-@docs/brand/00-discovery/03-competitive-audit.md
+@docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md
 
 **Brand Name** (optional):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
 
@@ -151,8 +151,8 @@ Deliver the complete purpose, mission, and vision using the Purpose/Mission/Visi
 
 After the agent returns:
 
-1. Ensure `docs/brand/01-strategy/` directory exists
-2. Save to `docs/brand/01-strategy/01-purpose-mission-vision.md`
+1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
+2. Save to `docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md`
 
 3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 

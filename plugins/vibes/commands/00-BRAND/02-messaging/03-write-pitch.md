@@ -11,33 +11,33 @@ You are helping a startup founder create elevator pitches for different situatio
 ## Context Loading
 
 **Founder Brief** (optional):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (optional):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Brand Name** (required):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Purpose/Mission/Vision** (required):
-@docs/brand/01-strategy/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
 
 **Core Values** (optional):
-@docs/brand/01-strategy/02-core-values.md
+@docs/00-BRAND/01-STRATEGY/02-core-values.md
 
 **Positioning** (required):
-@docs/brand/01-strategy/03-positioning.md
+@docs/00-BRAND/01-STRATEGY/03-positioning.md
 
 **Brand Voice** (required):
-@docs/brand/01-strategy/05-brand-personality-voice.md
+@docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md
 
 **Messaging Framework** (required):
-@docs/brand/02-messaging/01-messaging-framework.md
+@docs/00-BRAND/02-MESSAGING/01-messaging-framework.md
 
 **Check above:** If brand name, purpose/mission/vision, positioning, brand voice, or messaging framework content is missing, **STOP** and tell the user to complete prerequisites first.
 
 **Tagline** (auto-loaded if exists):
-@docs/brand/02-messaging/02-tagline.md
+@docs/00-BRAND/02-MESSAGING/02-tagline.md
 
 Optional pitch context: $ARGUMENTS
 
@@ -196,8 +196,8 @@ Use AskUserQuestion to help founder practice and select:
 
 After the founder selects their pitches:
 
-1. Ensure `docs/brand/02-messaging/` directory exists
-2. Save to `docs/brand/02-messaging/03-elevator-pitch.md` with:
+1. Ensure `docs/00-BRAND/02-MESSAGING/` directory exists
+2. Save to `docs/00-BRAND/02-MESSAGING/03-elevator-pitch.md` with:
    - All pitch variations
    - Strategic foundation
    - Delivery guidance

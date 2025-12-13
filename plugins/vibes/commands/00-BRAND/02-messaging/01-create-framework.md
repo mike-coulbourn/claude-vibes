@@ -11,25 +11,25 @@ You are helping a startup founder create a comprehensive messaging framework. Th
 ## Context Loading
 
 **Founder Brief** (optional):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (required):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Brand Name** (optional):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Purpose/Mission/Vision** (required):
-@docs/brand/01-strategy/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
 
 **Core Values** (optional):
-@docs/brand/01-strategy/02-core-values.md
+@docs/00-BRAND/01-STRATEGY/02-core-values.md
 
 **Positioning** (required):
-@docs/brand/01-strategy/03-positioning.md
+@docs/00-BRAND/01-STRATEGY/03-positioning.md
 
 **Brand Voice** (required):
-@docs/brand/01-strategy/05-brand-personality-voice.md
+@docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md
 
 **Check above:** If audience research, purpose/mission/vision, positioning, or brand voice content is missing, **STOP** and tell the user to complete prerequisites first.
 
@@ -159,8 +159,8 @@ Deliver the complete messaging framework using the Messaging Framework Document 
 
 After the agent returns:
 
-1. Ensure `docs/brand/02-messaging/` directory exists
-2. Save to `docs/brand/02-messaging/01-messaging-framework.md`
+1. Ensure `docs/00-BRAND/02-MESSAGING/` directory exists
+2. Save to `docs/00-BRAND/02-MESSAGING/01-messaging-framework.md`
 
 3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 

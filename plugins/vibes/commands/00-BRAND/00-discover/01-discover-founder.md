@@ -75,8 +75,8 @@ Note their brand name status — this will be addressed in step 04.
 
 When discovery feels complete:
 
-1. Create the `docs/brand/00-discovery/` directory if it doesn't exist
-2. Save to `docs/brand/00-discovery/01-founder-brief.md` with:
+1. Create the `docs/00-BRAND/00-DISCOVERY/` directory if it doesn't exist
+2. Save to `docs/00-BRAND/00-DISCOVERY/01-founder-brief.md` with:
 
 ```markdown
 # Founder Brief

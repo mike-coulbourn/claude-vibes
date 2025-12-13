@@ -11,19 +11,19 @@ You are helping a startup founder define 3-4 core values that will guide their b
 ## Context Loading
 
 **Founder Brief** (required):
-@docs/brand/00-discovery/01-founder-brief.md
+@docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
 **Audience Research** (optional):
-@docs/brand/00-discovery/02-audience-research.md
+@docs/00-BRAND/00-DISCOVERY/02-audience-research.md
 
 **Competitive Audit** (optional):
-@docs/brand/00-discovery/03-competitive-audit.md
+@docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md
 
 **Brand Name** (optional):
-@docs/brand/00-discovery/04-brand-name.md
+@docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
 **Purpose/Mission/Vision** (required):
-@docs/brand/01-strategy/01-purpose-mission-vision.md
+@docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md
 
 **Check above:** If founder brief or purpose/mission/vision content is missing, **STOP** and tell the user to complete prerequisites first.
 
@@ -158,8 +158,8 @@ Deliver the complete values documentation using the Values Documentation Templat
 
 After the agent returns:
 
-1. Ensure `docs/brand/01-strategy/` directory exists
-2. Save to `docs/brand/01-strategy/02-core-values.md`
+1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
+2. Save to `docs/00-BRAND/01-STRATEGY/02-core-values.md`
 
 3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 
