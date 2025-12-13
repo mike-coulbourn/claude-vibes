@@ -8,36 +8,30 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder select their brand archetype using the 12 Jungian archetypes. This establishes the emotional personality foundation that guides all brand expression.
 
-## Prerequisites Check
-
-**Founder brief status:** !`test -f docs/brand/00-discovery/01-founder-brief.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/01-discover-founder first"`
-
-**Purpose/Mission/Vision status:** !`test -f docs/brand/01-strategy/01-purpose-mission-vision.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/01-define-purpose first"`
-
-If required files are missing, **STOP** and tell the user to complete prerequisites first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded - REQUIRED):
+**Founder Brief** (required):
 @docs/brand/00-discovery/01-founder-brief.md
 
-**Audience Research** (auto-loaded if exists):
+**Audience Research** (optional):
 @docs/brand/00-discovery/02-audience-research.md
 
-**Competitive Audit** (auto-loaded if exists):
+**Competitive Audit** (optional):
 @docs/brand/00-discovery/03-competitive-audit.md
 
-**Brand Name** (auto-loaded if exists):
+**Brand Name** (optional):
 @docs/brand/00-discovery/04-brand-name.md
 
-**Purpose/Mission/Vision** (auto-loaded - REQUIRED):
+**Purpose/Mission/Vision** (required):
 @docs/brand/01-strategy/01-purpose-mission-vision.md
 
-**Core Values** (auto-loaded if exists):
+**Core Values** (optional):
 @docs/brand/01-strategy/02-core-values.md
 
-**Positioning** (auto-loaded if exists):
+**Positioning** (optional):
 @docs/brand/01-strategy/03-positioning.md
+
+**Check above:** If founder brief or purpose/mission/vision content is missing, **STOP** and tell the user to complete prerequisites first.
 
 Optional archetype direction: $ARGUMENTS
 

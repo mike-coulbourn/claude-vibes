@@ -8,35 +8,27 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder claim distinct territory in the customer's mind. Using methodologies from Al Ries, Jack Trout, and Marty Neumeier's ZAG, you'll develop positioning that makes the brand the obvious choice for its audience.
 
-## Prerequisites Check
-
-**Founder brief status:** !`test -f docs/brand/00-discovery/01-founder-brief.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/01-discover-founder first"`
-
-**Audience research status:** !`test -f docs/brand/00-discovery/02-audience-research.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/02-research-audience first"`
-
-**Competitive audit status:** !`test -f docs/brand/00-discovery/03-competitive-audit.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/03-audit-competitors first"`
-
-If required files are missing, **STOP** and tell the user to complete prerequisites first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded - REQUIRED):
+**Founder Brief** (required):
 @docs/brand/00-discovery/01-founder-brief.md
 
-**Audience Research** (auto-loaded - REQUIRED):
+**Audience Research** (required):
 @docs/brand/00-discovery/02-audience-research.md
 
-**Competitive Audit** (auto-loaded - REQUIRED):
+**Competitive Audit** (required):
 @docs/brand/00-discovery/03-competitive-audit.md
 
-**Brand Name** (auto-loaded if exists):
+**Brand Name** (optional):
 @docs/brand/00-discovery/04-brand-name.md
 
-**Purpose/Mission/Vision** (auto-loaded if exists):
+**Purpose/Mission/Vision** (optional):
 @docs/brand/01-strategy/01-purpose-mission-vision.md
 
-**Core Values** (auto-loaded if exists):
+**Core Values** (optional):
 @docs/brand/01-strategy/02-core-values.md
+
+**Check above:** If founder brief, audience research, or competitive audit content is missing, **STOP** and tell the user to complete prerequisites first.
 
 Optional positioning direction: $ARGUMENTS
 

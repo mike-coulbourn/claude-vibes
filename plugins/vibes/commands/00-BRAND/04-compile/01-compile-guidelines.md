@@ -10,40 +10,9 @@ You are helping a startup founder compile their complete brand identity work int
 
 **Note:** This is a compilation and organization task, not a creation task. You are curating and synthesizing existing work into a cohesive document.
 
-## Completeness Check
-
-Review what brand documents exist before compiling:
-
-**Discovery Phase:**
-- !`test -f docs/brand/00-discovery/01-founder-brief.md && echo "✓ Found" || echo "○ Optional"` Founder Brief
-- !`test -f docs/brand/00-discovery/02-audience-research.md && echo "✓ Found" || echo "○ Optional"` Audience Research
-- !`test -f docs/brand/00-discovery/03-competitive-audit.md && echo "✓ Found" || echo "○ Optional"` Competitive Audit
-- !`test -f docs/brand/00-discovery/04-brand-name.md && echo "✓ Found" || echo "✗ REQUIRED"` Brand Name
-
-**Strategy Phase:**
-- !`test -f docs/brand/01-strategy/01-purpose-mission-vision.md && echo "✓ Found" || echo "✗ REQUIRED"` Purpose/Mission/Vision
-- !`test -f docs/brand/01-strategy/02-core-values.md && echo "✓ Found" || echo "○ Optional"` Core Values
-- !`test -f docs/brand/01-strategy/03-positioning.md && echo "✓ Found" || echo "✗ REQUIRED"` Positioning
-- !`test -f docs/brand/01-strategy/04-archetype.md && echo "✓ Found" || echo "○ Optional"` Archetype
-- !`test -f docs/brand/01-strategy/05-brand-personality-voice.md && echo "✓ Found" || echo "✗ REQUIRED"` Brand Personality/Voice
-
-**Messaging Phase:**
-- !`test -f docs/brand/02-messaging/01-messaging-framework.md && echo "✓ Found" || echo "○ Optional"` Messaging Framework
-- !`test -f docs/brand/02-messaging/02-tagline.md && echo "✓ Found" || echo "○ Optional"` Tagline
-- !`test -f docs/brand/02-messaging/03-elevator-pitch.md && echo "✓ Found" || echo "○ Optional"` Elevator Pitch
-
-**Visual Phase:**
-- !`test -f docs/brand/03-visual/01-visual-direction.md && echo "✓ Found" || echo "○ Optional"` Visual Direction
-- !`test -f docs/brand/03-visual/02-color-palette.md && echo "✓ Found" || echo "○ Optional"` Color Palette
-- !`test -f docs/brand/03-visual/03-typography.md && echo "✓ Found" || echo "○ Optional"` Typography
-
-If any REQUIRED files are missing (marked ✗), use AskUserQuestion to ask if the founder wants to:
-1. Proceed with available documents
-2. Complete the missing steps first
-
 ## Brand Documents
 
-Load all existing brand documents for synthesis:
+Load all brand documents for compilation:
 
 **Discovery:**
 @docs/brand/00-discovery/01-founder-brief.md
@@ -67,6 +36,12 @@ Load all existing brand documents for synthesis:
 @docs/brand/03-visual/01-visual-direction.md
 @docs/brand/03-visual/02-color-palette.md
 @docs/brand/03-visual/03-typography.md
+
+**Check what loaded above:**
+- REQUIRED: Brand name, purpose/mission/vision, positioning, brand personality/voice
+- OPTIONAL: All other documents
+
+If any REQUIRED content is missing, use AskUserQuestion to ask if the founder wants to proceed with available documents or complete the missing steps first.
 
 Optional title override: $ARGUMENTS
 

@@ -10,46 +10,36 @@ You are helping a startup founder establish the visual direction for their brand
 
 **Note:** Claude provides detailed creative direction for visual identity, but not actual designs. The outputs are briefs for a designer or specifications for DIY implementation.
 
-## Prerequisites Check
-
-**Brand name status:** !`test -f docs/brand/00-discovery/04-brand-name.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/04-create-name first"`
-
-**Competitive audit status:** !`test -f docs/brand/00-discovery/03-competitive-audit.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/03-audit-competitors first"`
-
-**Archetype status:** !`test -f docs/brand/01-strategy/04-archetype.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/04-choose-archetype first"`
-
-**Brand personality status:** !`test -f docs/brand/01-strategy/05-brand-personality-voice.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/05-define-voice first"`
-
-If required files are missing, **STOP** and tell the user to complete prerequisites first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded if exists):
+**Founder Brief** (optional):
 @docs/brand/00-discovery/01-founder-brief.md
 
-**Audience Research** (auto-loaded if exists):
+**Audience Research** (optional):
 @docs/brand/00-discovery/02-audience-research.md
 
-**Competitive Audit** (auto-loaded - REQUIRED):
+**Competitive Audit** (required):
 @docs/brand/00-discovery/03-competitive-audit.md
 
-**Brand Name** (auto-loaded - REQUIRED):
+**Brand Name** (required):
 @docs/brand/00-discovery/04-brand-name.md
 
-**Purpose/Mission/Vision** (auto-loaded if exists):
+**Purpose/Mission/Vision** (optional):
 @docs/brand/01-strategy/01-purpose-mission-vision.md
 
-**Core Values** (auto-loaded if exists):
+**Core Values** (optional):
 @docs/brand/01-strategy/02-core-values.md
 
-**Positioning** (auto-loaded if exists):
+**Positioning** (optional):
 @docs/brand/01-strategy/03-positioning.md
 
-**Archetype** (auto-loaded - REQUIRED):
+**Archetype** (required):
 @docs/brand/01-strategy/04-archetype.md
 
-**Brand Personality/Voice** (auto-loaded - REQUIRED):
+**Brand Personality/Voice** (required):
 @docs/brand/01-strategy/05-brand-personality-voice.md
+
+**Check above:** If brand name, competitive audit, archetype, or brand personality content is missing, **STOP** and tell the user to complete prerequisites first.
 
 **Messaging Framework** (auto-loaded if exists):
 @docs/brand/02-messaging/01-messaging-framework.md

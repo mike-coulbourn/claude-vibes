@@ -8,45 +8,33 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder create elevator pitches for different situations. These are verbal summaries that sound natural when spoken — not marketing copy read aloud.
 
-## Prerequisites Check
-
-**Brand name status:** !`test -f docs/brand/00-discovery/04-brand-name.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/04-create-name first"`
-
-**Purpose/Mission/Vision status:** !`test -f docs/brand/01-strategy/01-purpose-mission-vision.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/01-define-purpose first"`
-
-**Positioning status:** !`test -f docs/brand/01-strategy/03-positioning.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/03-define-positioning first"`
-
-**Brand voice status:** !`test -f docs/brand/01-strategy/05-brand-personality-voice.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/05-define-voice first"`
-
-**Messaging framework status:** !`test -f docs/brand/02-messaging/01-messaging-framework.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:02-messaging/01-create-framework first"`
-
-If required files are missing, **STOP** and tell the user to complete prerequisites first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded if exists):
+**Founder Brief** (optional):
 @docs/brand/00-discovery/01-founder-brief.md
 
-**Audience Research** (auto-loaded if exists):
+**Audience Research** (optional):
 @docs/brand/00-discovery/02-audience-research.md
 
-**Brand Name** (auto-loaded - REQUIRED):
+**Brand Name** (required):
 @docs/brand/00-discovery/04-brand-name.md
 
-**Purpose/Mission/Vision** (auto-loaded - REQUIRED):
+**Purpose/Mission/Vision** (required):
 @docs/brand/01-strategy/01-purpose-mission-vision.md
 
-**Core Values** (auto-loaded if exists):
+**Core Values** (optional):
 @docs/brand/01-strategy/02-core-values.md
 
-**Positioning** (auto-loaded - REQUIRED):
+**Positioning** (required):
 @docs/brand/01-strategy/03-positioning.md
 
-**Brand Voice** (auto-loaded - REQUIRED):
+**Brand Voice** (required):
 @docs/brand/01-strategy/05-brand-personality-voice.md
 
-**Messaging Framework** (auto-loaded - REQUIRED):
+**Messaging Framework** (required):
 @docs/brand/02-messaging/01-messaging-framework.md
+
+**Check above:** If brand name, purpose/mission/vision, positioning, brand voice, or messaging framework content is missing, **STOP** and tell the user to complete prerequisites first.
 
 **Tagline** (auto-loaded if exists):
 @docs/brand/02-messaging/02-tagline.md

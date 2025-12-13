@@ -8,40 +8,30 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder create a comprehensive messaging framework. This establishes the value proposition, brand pillars, and key messages that ensure consistency across all communications.
 
-## Prerequisites Check
-
-**Audience research status:** !`test -f docs/brand/00-discovery/02-audience-research.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/02-research-audience first"`
-
-**Purpose/Mission/Vision status:** !`test -f docs/brand/01-strategy/01-purpose-mission-vision.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/01-define-purpose first"`
-
-**Positioning status:** !`test -f docs/brand/01-strategy/03-positioning.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/03-define-positioning first"`
-
-**Brand voice status:** !`test -f docs/brand/01-strategy/05-brand-personality-voice.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/05-define-voice first"`
-
-If required files are missing, **STOP** and tell the user to complete prerequisites first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded if exists):
+**Founder Brief** (optional):
 @docs/brand/00-discovery/01-founder-brief.md
 
-**Audience Research** (auto-loaded - REQUIRED):
+**Audience Research** (required):
 @docs/brand/00-discovery/02-audience-research.md
 
-**Brand Name** (auto-loaded if exists):
+**Brand Name** (optional):
 @docs/brand/00-discovery/04-brand-name.md
 
-**Purpose/Mission/Vision** (auto-loaded - REQUIRED):
+**Purpose/Mission/Vision** (required):
 @docs/brand/01-strategy/01-purpose-mission-vision.md
 
-**Core Values** (auto-loaded if exists):
+**Core Values** (optional):
 @docs/brand/01-strategy/02-core-values.md
 
-**Positioning** (auto-loaded - REQUIRED):
+**Positioning** (required):
 @docs/brand/01-strategy/03-positioning.md
 
-**Brand Voice** (auto-loaded - REQUIRED):
+**Brand Voice** (required):
 @docs/brand/01-strategy/05-brand-personality-voice.md
+
+**Check above:** If audience research, purpose/mission/vision, positioning, or brand voice content is missing, **STOP** and tell the user to complete prerequisites first.
 
 Optional messaging focus: $ARGUMENTS
 

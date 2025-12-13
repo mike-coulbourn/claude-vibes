@@ -8,25 +8,21 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder articulate WHY their brand exists. Using Simon Sinek's Golden Circle methodology, you'll help them discover their purpose (the WHY), mission (the HOW), and vision (the WHAT we're building toward).
 
-## Prerequisites Check
-
-**Founder brief status:** !`test -f docs/brand/00-discovery/01-founder-brief.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/01-discover-founder first"`
-
-If the founder brief is missing, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded):
+**Founder Brief** (required):
 @docs/brand/00-discovery/01-founder-brief.md
 
-**Audience Research** (auto-loaded if exists):
+**Audience Research** (optional):
 @docs/brand/00-discovery/02-audience-research.md
 
-**Competitive Audit** (auto-loaded if exists):
+**Competitive Audit** (optional):
 @docs/brand/00-discovery/03-competitive-audit.md
 
-**Brand Name** (auto-loaded if exists):
+**Brand Name** (optional):
 @docs/brand/00-discovery/04-brand-name.md
+
+**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
 
 Optional additional context: $ARGUMENTS
 

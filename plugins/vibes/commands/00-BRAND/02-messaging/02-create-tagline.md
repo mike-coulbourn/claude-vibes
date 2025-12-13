@@ -8,42 +8,30 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder create a memorable brand tagline. The tagline distills the brand's essence into a few powerful words that stick in customers' minds.
 
-## Prerequisites Check
-
-**Brand name status:** !`test -f docs/brand/00-discovery/04-brand-name.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/04-create-name first"`
-
-**Purpose/Mission/Vision status:** !`test -f docs/brand/01-strategy/01-purpose-mission-vision.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/01-define-purpose first"`
-
-**Positioning status:** !`test -f docs/brand/01-strategy/03-positioning.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/03-define-positioning first"`
-
-**Brand voice status:** !`test -f docs/brand/01-strategy/05-brand-personality-voice.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:01-strategy/05-define-voice first"`
-
-**Messaging framework status:** !`test -f docs/brand/02-messaging/01-messaging-framework.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:02-messaging/01-create-framework first"`
-
-If required files are missing, **STOP** and tell the user to complete prerequisites first.
-
 ## Context Loading
 
-**Brand Name** (auto-loaded - REQUIRED):
+**Brand Name** (required):
 @docs/brand/00-discovery/04-brand-name.md
 
-**Purpose/Mission/Vision** (auto-loaded - REQUIRED):
+**Purpose/Mission/Vision** (required):
 @docs/brand/01-strategy/01-purpose-mission-vision.md
 
-**Core Values** (auto-loaded if exists):
+**Core Values** (optional):
 @docs/brand/01-strategy/02-core-values.md
 
-**Positioning** (auto-loaded - REQUIRED):
+**Positioning** (required):
 @docs/brand/01-strategy/03-positioning.md
 
-**Archetype** (auto-loaded if exists):
+**Archetype** (optional):
 @docs/brand/01-strategy/04-archetype.md
 
-**Brand Voice** (auto-loaded - REQUIRED):
+**Brand Voice** (required):
 @docs/brand/01-strategy/05-brand-personality-voice.md
 
-**Messaging Framework** (auto-loaded - REQUIRED):
+**Messaging Framework** (required):
 @docs/brand/02-messaging/01-messaging-framework.md
+
+**Check above:** If brand name, purpose/mission/vision, positioning, brand voice, or messaging framework content is missing, **STOP** and tell the user to complete prerequisites first.
 
 Optional tagline direction: $ARGUMENTS
 

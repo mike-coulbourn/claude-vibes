@@ -12,20 +12,15 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 
 **Optional constraints:** $ARGUMENTS
 
-**Document status:**
-- !`test -f docs/start/01-discover.md && echo "✓ Discovery document exists" || echo "✗ No discovery — ask user to describe project or suggest running /01-discover first"`
-- !`test -f docs/start/02-scope.md && echo "✓ Scope document exists" || echo "✗ No scope — ask user to describe features or suggest running /02-scope first"`
-- !`test -f docs/start/03-architect.md && echo "✓ Architecture document exists" || echo "✗ No architecture — ask user about technical decisions or suggest running /03-architect first"`
-- !`test -f docs/start/04-plan-roadmap.md && echo "✓ Previous roadmap exists" || echo "○ No existing roadmap — fresh planning"`
-- !`test -d .taskmaster/tasks && echo "✓ Taskmaster initialized" || echo "○ Taskmaster not initialized"`
-
-Use this context to adapt your approach: if all docs exist, synthesize them; if docs are missing, gather context first; if Taskmaster is already initialized, offer to update rather than reinitialize.
-
-**Auto-load project context:**
+**Auto-loaded context (if files exist):**
 @docs/start/01-discover.md
 @docs/start/02-scope.md
 @docs/start/03-architect.md
 @docs/start/04-plan-roadmap.md
+
+**Check what loaded above:** If discovery, scope, and architecture content appear, synthesize them into a roadmap. If some docs are missing, ask the user to describe the missing context or suggest running earlier START commands first.
+
+**Taskmaster:** Use `get_tasks` MCP tool to check if Taskmaster is already initialized. If tasks exist, offer to update rather than reinitialize.
 
 ## Your Role
 

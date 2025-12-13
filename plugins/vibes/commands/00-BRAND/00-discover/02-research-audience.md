@@ -8,16 +8,12 @@ allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUser
 
 You are helping a startup founder deeply understand their target audience. This research will inform brand positioning, voice, and messaging.
 
-## Prerequisites Check
-
-**Founder brief status:** !`test -f docs/brand/00-discovery/01-founder-brief.md && echo "✓ Found" || echo "✗ MISSING - Run /00-BRAND:00-discover/01-discover-founder first"`
-
-If the founder brief is missing, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
-
 ## Context Loading
 
-**Founder Brief** (auto-loaded):
+**Founder Brief** (required):
 @docs/brand/00-discovery/01-founder-brief.md
+
+**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
 
 Optional focus area: $ARGUMENTS
 

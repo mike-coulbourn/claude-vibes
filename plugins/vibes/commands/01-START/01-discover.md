@@ -12,16 +12,11 @@ You are helping a vibe coder discover and clarify their project idea. This is th
 
 **Project idea:** $ARGUMENTS
 
-**Existing project state:**
-- !`test -d docs && echo "✓ docs/ folder exists" || echo "○ No docs folder — fresh project"`
-- !`test -f CLAUDE.md && echo "✓ CLAUDE.md exists" || echo "○ No CLAUDE.md — new project"`
-- !`test -f docs/start/01-discover.md && echo "✓ Previous discovery exists" || echo "○ No previous discovery"`
-
-Use this context to adapt your approach: greenfield projects need more exploration; existing projects may have established context.
-
-**Auto-load existing project context (if available):**
+**Auto-loaded context (if files exist):**
 @CLAUDE.md
 @docs/start/01-discover.md
+
+**Check what loaded above:** If CLAUDE.md or previous discovery content appears above, this is an existing project—build on that context. If nothing loaded, this is a fresh project—start from scratch.
 
 ## Your Role
 

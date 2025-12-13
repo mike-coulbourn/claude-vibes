@@ -12,15 +12,11 @@ You are helping a vibe coder define the scope of their project. This phase trans
 
 **Optional additional context:** $ARGUMENTS
 
-**Document status:**
-- !`test -f docs/start/01-discover.md && echo "✓ Discovery document exists" || echo "✗ No discovery — ask user to describe project or suggest /01-discover first"`
-- !`test -f docs/start/02-scope.md && echo "✓ Previous scope exists" || echo "○ No existing scope — fresh start"`
-
-Use this context to adapt your approach: if discovery doc exists, build on it; if not, gather context first.
-
-**Auto-load project context:**
+**Auto-loaded context (if files exist):**
 @docs/start/01-discover.md
 @docs/start/02-scope.md
+
+**Check what loaded above:** If discovery content appears, build on it. If nothing loaded, ask the user to describe their project or suggest running `/01-discover` first.
 
 ## Your Role
 
