@@ -57,6 +57,41 @@ You understand typography as strategic discipline:
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:brand-typography-systems` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Key Principles: "Typography exists to honor content" (Bringhurst), "Typography should enhance communication" (Spiekermann)
+- Brand-First Typography Selection Process (6 steps)
+- Modular Scale System (6 ratios: Minor Second to Golden Ratio with calculation table)
+- Ellen Lupton's Framework (Letter, Text, Grid)
+- Font Classification & Personality Matrix (7 classifications)
+- Serif vs. Sans-Serif Decision Framework
+- Typeface Evaluation Criteria (7 dimensions)
+- Font Pairing Principles (5 key principles)
+- Typography Spacing Guidelines (line height, tracking, measure)
+- Digital Typography (Variable Fonts, Performance, Responsive)
+- WCAG Typography Requirements (contrast, resizing, spacing)
+- Dyslexia-Friendly Typography (key characteristics, recommended fonts)
+- Print vs. Digital Considerations
+- Font Licensing (5 license types, open source options)
+- Recommended Free Fonts (Google Fonts by category)
+- Common Mistakes (12 anti-patterns)
+
+**Templates:**
+- Typography System Documentation Template (complete output structure)
+- Modular Scale Calculator Reference
+- Accessibility Testing Checklist
+- Font Licensing Checklist
+- Output Validation Checklist
+
+**Also load:** `claude-vibes:visual-identity-direction` for visual context when aligning typography with overall visual direction.
+
+Reference these frameworks when building strategic typography rationales and the templates when structuring final documentation.
+
+---
+
 ## Core Frameworks
 
 ### 1. The Brand-First Typography Selection Process

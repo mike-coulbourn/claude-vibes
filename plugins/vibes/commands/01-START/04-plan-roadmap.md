@@ -1,6 +1,7 @@
 ---
 description: Create the implementation roadmap with phases and milestones
 argument-hint: Optional constraints like timeline or priorities
+allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, Write, TodoWrite
 ---
 
 # Planning Phase
@@ -9,46 +10,67 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 
 ## Full Project Context
 
-**Always load ALL available documentation:**
+**Optional constraints:** $ARGUMENTS
 
-Read all planning docs to understand the complete picture:
-- `docs/start/01-discover.md` — The problem, users, and value
-- `docs/start/02-scope.md` — MVP features and user stories
-- `docs/start/03-architect.md` — Technical foundation and decisions
+**Discovery document:**
+!`cat docs/start/01-discover.md 2>/dev/null | head -80 || echo "No discovery doc found — ask user to describe project or suggest running /01-discover first"`
 
-**Fallback if these files don't exist:**
-If these files don't exist (common when using claude-vibes on an existing project), use AskUserQuestion to gather the necessary context:
-- What is the project about and who are the users?
-- What features need to be built (MVP scope)?
-- What technical decisions have already been made?
+**Scope document:**
+!`cat docs/start/02-scope.md 2>/dev/null | head -80 || echo "No scope doc found — ask user to describe features or suggest running /02-scope first"`
 
-Then proceed with roadmap planning based on the user's answers.
+**Architecture document:**
+!`cat docs/start/03-architect.md 2>/dev/null | head -80 || echo "No architecture doc found — ask user about technical decisions or suggest running /03-architect first"`
 
-Optional constraints: $ARGUMENTS
+**Existing roadmap:**
+!`cat docs/start/04-plan-roadmap.md 2>/dev/null | head -10 || echo "No existing roadmap — fresh planning"`
+
+**Taskmaster state:**
+!`ls -la .taskmaster/tasks/ 2>/dev/null | head -3 || echo "Taskmaster not initialized"`
+
+Use this context to adapt your approach: if all docs exist, synthesize them; if docs are missing, gather context first; if Taskmaster is already initialized, offer to update rather than reinitialize.
 
 ## Your Role
 
 You do the heavy lifting on planning. Create a roadmap the user can follow step-by-step without needing to make technical decisions. Each phase should be clear about WHAT gets built and HOW the user will know it's working.
 
-**CRITICAL: You MUST use the Task tool to launch the plan-reviewer agent for reviewing the plan.** Do not skip the plan review—that's what the plan-reviewer agent is for.
+**CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't validate the plan yourself—delegate to the plan-reviewer while you continue detailing phases with the user.
 
 ## How to Communicate
 
-- **Use AskUserQuestion for EVERY decision** — always provide 2-4 clear options
+- Use AskUserQuestion for every decision—present options with plain language tradeoffs
 - Lead with recommendations: "I'd suggest building X first because [reason]. Then Y. Does that make sense?"
 - Explain build order in terms of what the USER will see working, not technical dependencies
 - Keep phases small and achievable—big phases feel overwhelming
 
 ## Planning Process
 
-### 1. Review and Validate
+### 1. Context Verification (REQUIRED)
 
-Before planning, summarize back to the user:
-- What we're building (2-3 sentences, plain language)
-- The MVP feature set
-- Any constraints mentioned
+If all planning docs exist, summarize the key insights:
+- What we're building (problem and value proposition)
+- Who we're building for (target users)
+- MVP feature set
+- Key technical decisions from architecture
 
-Use AskUserQuestion if anything seems unclear or potentially conflicting.
+**Use AskUserQuestion:**
+```
+Question: "Before I create your roadmap, let me confirm I understand the complete picture:
+
+[Summarize: Problem, Users, MVP Features, Technical Foundation]
+
+Is this accurate?"
+Options:
+- Yes, that's right
+- Mostly right, but let me clarify something
+- We should revisit earlier planning first
+```
+
+If docs don't exist (common when using claude-vibes on an existing project), use AskUserQuestion to gather:
+- What is the project about and who are the users?
+- What features need to be built (MVP scope)?
+- What technical decisions have already been made?
+
+Then proceed with roadmap planning based on the user's answers.
 
 ### 2. Identify Build Order
 
@@ -75,14 +97,17 @@ Typical structure:
 - **Phase 4: Polish** — Making it feel complete and handling edge cases
 - **Phase 5: Launch Prep** — Final testing and going live
 
-**Use AskUserQuestion to validate phasing:**
+**Direction Checkpoint:**
 ```
-Question: "Here's the build order I'd recommend. Does this work for you?"
+Question: "Here's the build order I'd recommend:
+
+[Show phases with brief descriptions]
+
+Does this work for you?"
 Options:
 - Yes, this order makes sense
 - I'd like to adjust the priority of some phases
 - I have questions about specific phases
-- Other
 ```
 
 ### 4. Detail Each Phase
@@ -93,37 +118,49 @@ For each phase, specify:
 - **How You'll Know It Works**: What the user can do/see to verify
 - **What's Needed First**: Any phases that must come before this one
 
-### 5. Identify Risks and Unknowns
+### 5. Define Milestones
+
+Create clear checkpoints:
+- What does "done" look like for each phase?
+- What can the user show to others or test?
+- When should we pause and check if the plan still makes sense?
+
+### 6. Plan Review (REQUIRED)
+
+**You MUST use the Task tool to launch the plan-reviewer agent before saving:**
+
+```
+Task tool:
+  subagent_type: "claude-vibes:CODING:plan-reviewer"
+  prompt: "Ultrathink about this implementation roadmap. Read all docs/start/ files for complete context.
+
+  **Use the sequential-thinking MCP tool** to systematically analyze:
+  1. Phase sequencing — are dependencies correctly ordered?
+  2. Scope alignment — does the roadmap match the MVP scope from 02-scope.md?
+  3. Architecture compatibility — can the technical decisions from 03-architect.md support this build order?
+  4. Risk identification — what could go wrong during implementation?
+  5. Milestone clarity — are checkpoints testable and measurable?
+  6. Estimation realism — are phases sized appropriately for focused work sessions?
+
+  **Use AskUserQuestion when you find concerns:**
+  - If phases could be reordered for better risk reduction, present options
+  - If scope seems to have drifted from 02-scope.md, ask about priorities
+  - If technical decisions seem incompatible with build order, flag and discuss
+  - If milestones aren't measurable, suggest more concrete success criteria
+  - Never assume how to resolve issues—clarify with the user
+
+  Flag all concerns with severity (blocker vs. consideration) and suggest resolutions in plain language."
+```
+
+Address any concerns raised before proceeding to save.
+
+### 7. Identify Risks and Unknowns
 
 Surface things that might cause problems:
 - Technical stuff we're not 100% sure about
 - Outside services we depend on
 - Decisions that might change the plan
 - Places where scope might grow
-
-**You MUST use the Task tool to launch the plan-reviewer agent.** Use `subagent_type: "claude-vibes:plan-reviewer"` with this prompt:
-
-> Ultrathink about this implementation plan. Read all docs/start/ files for context. Review for gaps, risks, sequencing problems, and anything that might cause issues during building. Flag concerns in plain language and suggest how to address them.
->
-> **Use the sequential-thinking MCP tool** to systematically analyze:
-> 1. Each phase's dependencies and prerequisites — are they correctly ordered?
-> 2. Technical risks and unknowns — what could go wrong?
-> 3. Scope creep potential — where might requirements expand?
-> 4. Integration points between phases — are handoffs clear?
-> 5. Resource and timeline realism — is this achievable?
->
-> **Use AskUserQuestion when reviewing:**
-> - If you find gaps that could be filled multiple ways, ask which approach fits their goals
-> - If risks could be mitigated differently, present options and ask
-> - If sequencing could go multiple directions, ask about priorities
-> - Never assume how to resolve concerns—clarify with the user
-
-### 6. Define Milestones
-
-Create clear checkpoints:
-- What does "done" look like for each phase?
-- What can the user show to others or test?
-- When should we pause and check if the plan still makes sense?
 
 ## Guidelines
 
@@ -133,6 +170,14 @@ Create clear checkpoints:
 - Don't plan the later phases in too much detail—they'll likely change
 - Include wiggle room—things take longer than expected
 
+## Frameworks Reference
+
+The `jtbd-psychographic-research` skill provides frameworks that may auto-activate during this conversation:
+- Jobs-to-be-Done (prioritize features that address core jobs first)
+- Four Forces of Progress (reduce anxiety by building confidence-building features early)
+
+Use these frameworks when deciding what to build first.
+
 ## Output
 
 When planning feels complete:
@@ -140,6 +185,7 @@ When planning feels complete:
 ### Step 1: Save Human-Readable Roadmap
 
 1. Ensure `docs/start/` directory exists
+
 2. Save the implementation plan to `docs/start/04-plan-roadmap.md` with:
    - Project summary (what we're building and why—plain language)
    - Implementation phases with details for each
@@ -147,10 +193,34 @@ When planning feels complete:
    - Risks and unknowns to watch for
    - Recommended first steps
 
+3. **Launch ai-writing-detector in background** while continuing to Taskmaster setup:
+
+```
+Task tool:
+  subagent_type: "claude-vibes:TOOLKIT:ai-writing-detector"
+  run_in_background: true
+  prompt: "Review docs/start/04-plan-roadmap.md for AI writing patterns. Focus on:
+  - Overly formal or stiff language
+  - Generic phrases that could apply to any project
+  - Lack of specific, concrete details
+
+  Suggest refinements that make the document sound more natural and specific to this project."
+```
+
 ### Step 2: Ask About Taskmaster Setup
 
-**Use AskUserQuestion to confirm Taskmaster setup:**
+**Check Taskmaster state from context injection above.**
 
+**If Taskmaster is already initialized with tasks:**
+```
+Question: "Taskmaster is already set up with existing tasks. What would you like to do?"
+Options:
+- Update tasks from the new roadmap (regenerate)
+- Keep existing tasks
+- Show me the current tasks first
+```
+
+**If Taskmaster is not initialized:**
 ```
 Question: "I can set up Taskmaster to track your tasks and dependencies automatically. This will help you know exactly what to build next. Want me to set it up?"
 Options:
@@ -170,7 +240,7 @@ The `/02-BUILD` commands will use it automatically—you don't need to learn any
 
 Then ask again if they want to set it up.
 
-**If they decline:** Skip to Step 5 (congratulate without Taskmaster).
+**If they decline:** Skip to Step 6 (congratulate without Taskmaster).
 
 **If they accept:** Continue to Step 3.
 
@@ -233,14 +303,14 @@ Create a PRD (Product Requirements Document) by synthesizing all `docs/start/` f
 **Use the Taskmaster MCP tools to set up task management:**
 
 1. **Initialize Taskmaster** (if not already initialized):
-   - Check if `.taskmaster/` directory exists
+   - Check if `.taskmaster/` directory exists from context
    - If not, use the `initialize_project` Taskmaster tool
 
 2. **Parse the PRD into tasks:**
    - Use the `parse_prd` Taskmaster tool with the PRD file path
    - This creates `.taskmaster/tasks/tasks.json` with structured tasks and dependencies
 
-3. **Show task overview and confirm:**
+3. **Verify and show task overview:**
    - Use the `get_tasks` Taskmaster tool to retrieve all tasks
    - Present a summary of what was created
 
@@ -256,7 +326,6 @@ Options:
 - Yes, looks good
 - I'd like to see all the tasks first
 - Some tasks need adjustment
-- Other
 ```
 
 **If they want to see all tasks:** Display the full task list, then ask again.
@@ -295,11 +364,10 @@ Options:
 - Expand later during planning (recommended)
 - Expand all complex tasks now
 - Show me the complexity details
-- Other
 ```
 
 **If they choose "Expand later" (recommended):**
-Proceed to Step 6. The `/01-plan-code` command will handle expansion when you're about to work on each task — this gives better results because it can use codebase context.
+Proceed to Step 6. The `/02-BUILD:01-plan-code` command will handle expansion when you're about to work on each task — this gives better results because it can use codebase context.
 
 **If they choose "Expand all now":**
 
@@ -319,7 +387,6 @@ Options:
 - Yes, looks good
 - Show me the subtasks
 - Some need adjustment
-- Other
 ```
 
 **If they want complexity details:** Show the full complexity report with reasoning for each task, then ask again.
@@ -339,10 +406,18 @@ Options:
 - Yes, let's do it! (I'll run /02-BUILD:01-plan-code)
 - I want to review the full plan first
 - I have questions before starting
-- Other
 ```
 
-### Step 6: Congratulate and Guide Next Steps
+### Step 6: Retrieve Background Results and Congratulate
+
+**Retrieve ai-writing-detector results if available:**
+```
+TaskOutput:
+  task_id: [ai-writing-detector agent ID]
+  block: false
+```
+
+If the agent found issues, mention them briefly: "The document review suggested some refinements to make the language more natural. I can apply those now or you can review docs/start/04-plan-roadmap.md later."
 
 **With Taskmaster:**
 
@@ -374,7 +449,9 @@ Run `/02-BUILD:01-plan-code` — Taskmaster will recommend what to build based o
 
 **Next steps:**
 1. Review the complete plan in `docs/start/`
-2. When ready to build, run `/02-BUILD:01-plan-code [feature name]`"
+2. When ready to build, run `/02-BUILD:01-plan-code [feature name]`
+
+You can run `/04-plan-roadmap` again later if you want to set up Taskmaster."
 
 ## Taskmaster Integration Notes
 

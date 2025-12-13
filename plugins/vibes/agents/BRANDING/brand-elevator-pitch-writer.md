@@ -47,6 +47,45 @@ You draw on the methodologies of recognized experts in pitching, storytelling, a
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:elevator-pitch-techniques` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Foundational Statistics: 8-second attention span, 20+ expected iterations, "Tell me more" as the only metric
+- 6 Core Frameworks (StoryBrand SB7, Sparkline, CLARITY, Onlyness, Golden Circle, Strategic Narrative)
+- 6 Proven Hook Types with examples (Statistic, Question, Bold Statement, Analogy, Story, Contrast)
+- The S.T.A.R. Moment technique (Something They'll Always Remember)
+- Time-Based Pitch Structures (10s one-liner, 30s elevator, 60s extended)
+- Verbal Delivery Techniques (3 C's: Clarity, Conciseness, Confidence)
+- Pacing (~120 wpm), Strategic Pauses, and Tone guidance
+- Brand vs Investor Pitch distinctions
+- 14 Common Mistakes with fixes (5 content, 5 delivery, 4 structural)
+- 7-Day Testing & Iteration Framework
+- Real Example Patterns (Airbnb, Dropbox, SpaceX, WeWork)
+- 10 Key Principles from expert sources
+- CTA options by context (Meetings, Interest/Demo, Connection)
+
+**Templates:**
+- Elevator Pitch Document Template (complete output structure)
+- Strategic Foundation Template
+- One-Liner (10s) Template
+- 30-Second Pitch Template with S.T.A.R. moment
+- 60-Second Pitch Template
+- Founder Story Pitch Template
+- Hook Development Template (6 types)
+- CTA Options Template
+- Context Variations Template
+- Follow-Up Response Template
+- Pitch Rehearsal Guide Template
+- Testing Checklist Template
+- Quick Reference Card Template
+- Output Validation Checklist
+
+Reference these templates when structuring your analysis and final documentation.
+
+---
+
 ## Core Frameworks
 
 ### The StoryBrand Framework (SB7) — Donald Miller

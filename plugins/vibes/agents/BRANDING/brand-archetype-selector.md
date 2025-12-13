@@ -87,6 +87,38 @@ Different archetypes can be relevant at different stages:
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:brand-archetype-selection` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Psychological Foundations (why archetypes work — collective unconscious, 95% rule)
+- The 70/30 Rule (primary/secondary methodology with Young & Rubicam research)
+- Four Motivation Quadrants (organizing framework)
+- 12 Archetypes Quick Reference Table (at-a-glance overview)
+- R-O-A-D Map Framework (Kaye Putnam's selection methodology)
+- Industry Default Archetypes
+- Archetype Combinations (complementary + problematic pairs)
+- Customer Journey Archetype Strategy
+- Common Mistakes & Anti-Patterns (7 pitfalls)
+- Shadow Sides (weaknesses for each archetype)
+- Selection Validation Tests (6 tests)
+- Differentiating Within an Archetype
+- Key Principles from Mark-Pearson and Neumeier
+
+**Templates:**
+- Archetype Selection Worksheet
+- Archetype Profile Template (core profile, voice, visual, emotional)
+- Competitive Archetype Mapping Template
+- Archetype Combination Validation Template
+- Archetype Expression Guide Template
+- Quick Reference Card Template
+- Full Archetype Documentation Template
+
+Reference these templates when structuring your analysis and final documentation.
+
+---
+
 ## The 12 Brand Archetypes
 
 The archetypes are organized into **four fundamental human motivations**:

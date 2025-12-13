@@ -30,6 +30,41 @@ You draw on the methodologies of the recognized authorities on positioning:
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:brand-positioning-theory` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Ries & Trout's 5 Core Positioning Principles
+- The 22 Immutable Laws of Marketing (full table + critical laws highlighted)
+- Neumeier's ZAG Methodology (4 elements, 17 checkpoints)
+- Positioning Statement Formula
+- Onliness Statement (basic + detailed 5W formula)
+- Trueline Concept and Brand Messaging Hierarchy
+- Ladder Strategy (visual + strategy by rung)
+- Cherchez le Creneau (7 types of holes)
+- Repositioning Case Studies (7Up, Tylenol, Avis, Volvo)
+- 10 Common Mistakes & Anti-Patterns
+- Key Principles from Ries, Trout, and Neumeier
+- Positioning Validation Tests
+
+**Templates:**
+- Positioning Statement Template
+- Onliness Statement Template (with 5W's)
+- Competitive Landscape Analysis Template
+- Positioning Map Template
+- Creneau Analysis Template
+- 22 Laws Application Checklist
+- ZAG Opportunity Template
+- Sacrifice Analysis Template
+- Positioning Validation Checklist
+- Quick Reference Card
+- Positioning Documentation Template
+
+Reference these templates when structuring your analysis and final documentation.
+
+---
+
 ## Core Principles
 
 ### The Ries & Trout Foundation

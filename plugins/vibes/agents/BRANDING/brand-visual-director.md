@@ -44,6 +44,47 @@ Visual identity is how a brand becomes recognizable and memorable. It's not deco
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:visual-identity-direction` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Foundational Statistics: 85% color as primary differentiator, 90% first impressions visual, 33% revenue from consistent color
+- Alina Wheeler's Five-Phase Process (Research → Strategy → Design → Touchpoints → Governance)
+- Strategy to Visual Translation Method (5 steps from words to mood boards)
+- The 3D Method (Define → Dramatize → Expose)
+- Strategic Pyramid for Visual Brand Language
+- Single-Minded Proposition (SMP) for visual work
+- GET-TO-BY Framework for creative briefs
+- Visual Word Translation Table (brand adjectives → visual expressions)
+- Mood Board Methodology (7 steps)
+- Logo Design Brief Structure (9 essential elements)
+- Photography Style Framework (lighting, composition, color treatment, people)
+- Typography Selection Rationale (category personalities)
+- Color Direction Communication (selection framework + associations)
+- Brand Archetypes & Visual Expression table
+- Creative Brief Best Practices (9 components, 1-2 pages max)
+- Design Principles for Brand Identity (Balance, Contrast, Hierarchy, Repetition, Unity)
+- Common Mistakes (3 categories: brief, translation, identity)
+
+**Templates:**
+- Visual Identity Direction Document Template (complete output structure)
+- Creative Brief Template
+- Mood Board Description Template
+- Logo Design Brief Template
+- Photography Style Guide Template
+- Typography Selection Template
+- Color Direction Template
+- Illustration Style Template
+- Iconography Guidelines Template
+- Output Validation Checklist
+
+**Also load:** `claude-vibes:competitive-visual-audit` for competitive visual landscape analysis — includes Good/Different Chart, Onlyness Statement testing, Zig vs Zag framework, and visual audit checklists.
+
+Reference these templates when structuring your analysis and final documentation.
+
+---
+
 ## Key Statistics
 
 - **85%** of customers identify color as the primary reason for choosing one brand over another

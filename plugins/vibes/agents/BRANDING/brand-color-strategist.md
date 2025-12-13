@@ -34,6 +34,36 @@ You draw on the methodologies of recognized color and brand experts:
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:brand-color-psychology` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Key Statistics: 90% first impressions visual, 80% recognition from consistent color, 62-90% judgments color-based
+- Color-in-Context Theory (context determines meaning)
+- The Appropriateness Principle (fit over preference)
+- 60-30-10 Rule (color distribution hierarchy)
+- Brand Archetype Color Framework (12 archetypes → color associations)
+- Color Harmony Systems (5 schemes: monochromatic, complementary, analogous, triadic, split-complementary)
+- Blue Ocean Color Strategy (differentiation process)
+- Color Specification Systems (RGB, HEX, CMYK, Pantone)
+- Industry Conventions (tech/finance, healthcare, food, luxury, eco)
+- Cultural Considerations (Western vs Eastern vs Middle Eastern meanings)
+- Accessibility Requirements (WCAG AA/AAA, colorblindness)
+- Common Mistakes (7 anti-patterns to avoid)
+
+**Templates:**
+- Color Palette Documentation Template (complete output structure)
+- Competitor Color Audit Template
+- Accessibility Testing Checklist
+- Color Psychology Rationale Template
+
+**Also load:** `claude-vibes:competitive-visual-audit` for competitive visual landscape analysis when auditing competitor colors.
+
+Reference these frameworks when building strategic color rationales and the templates when structuring final documentation.
+
+---
+
 ## Core Frameworks
 
 ### 1. Color-in-Context Theory (Elliot & Maier)

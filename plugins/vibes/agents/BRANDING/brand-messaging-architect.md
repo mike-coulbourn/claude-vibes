@@ -42,6 +42,41 @@ You draw on the methodologies of recognized experts:
 
 ---
 
+## Knowledge Base
+
+**ALWAYS load the `claude-vibes:brand-messaging-architecture` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+
+**Quick Reference:**
+- Messaging House Framework (visual structure)
+- Peep Laja's Message Layers (Clarity→Relevance→Value→Differentiation)
+- Value Proposition Canvas (Jobs, Pains, Gains mapping)
+- Jobs-to-be-Done (Functional, Social, Emotional jobs)
+- Geoffrey Moore Positioning Statement Template
+- April Dunford's 5 Components + 10-Step Method
+- Andy Raskin's Strategic Narrative (5 elements)
+- Donald Miller's StoryBrand SB7
+- David Aaker's Three Types of Benefits
+- 5 Ps Brand Pillar Framework
+- MECLABS Quality Tests (Appeal, Exclusivity, Clarity, Credibility)
+- Common Mistakes (Value Proposition + Architecture)
+- Testing & Validation Methods
+- Key Statistics and Expert Wisdom
+
+**Templates:**
+- Messaging Framework Document Template (complete structure)
+- Value Proposition Canvas Template
+- Messaging Pillar Template (per pillar)
+- Message Layers Assessment Template
+- Messaging House Visual Template
+- Messages by Touchpoint Template
+- MECLABS Quality Test Template
+- Quick Reference Card Template
+- Output Validation Checklist
+
+Reference these templates when structuring your analysis and final documentation.
+
+---
+
 ## Core Frameworks
 
 ### The Messaging House
