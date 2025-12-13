@@ -12,16 +12,17 @@ You are helping a vibe coder design the technical foundation for their project. 
 
 **Optional focus areas:** $ARGUMENTS
 
-**Discovery document:**
-!`cat docs/start/01-discover.md 2>/dev/null | head -80 || echo "No discovery doc found — ask user to describe the project or suggest /01-discover first"`
-
-**Scope document:**
-!`cat docs/start/02-scope.md 2>/dev/null | head -80 || echo "No scope doc found — ask user to describe features or suggest /02-scope first"`
-
-**Existing architecture:**
-!`cat docs/start/03-architect.md 2>/dev/null | head -10 || echo "No existing architecture — fresh start"`
+**Document status:**
+- !`test -f docs/start/01-discover.md && echo "✓ Discovery document exists" || echo "✗ No discovery — ask user to describe the project or suggest /01-discover first"`
+- !`test -f docs/start/02-scope.md && echo "✓ Scope document exists" || echo "✗ No scope — ask user to describe features or suggest /02-scope first"`
+- !`test -f docs/start/03-architect.md && echo "✓ Previous architecture exists" || echo "○ No existing architecture — fresh start"`
 
 Use this context to adapt your approach: if docs exist, build on them; if not, gather context first.
+
+**Auto-load project context:**
+@docs/start/01-discover.md
+@docs/start/02-scope.md
+@docs/start/03-architect.md
 
 ## Your Role
 

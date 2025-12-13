@@ -12,13 +12,15 @@ You are helping a vibe coder define the scope of their project. This phase trans
 
 **Optional additional context:** $ARGUMENTS
 
-**Discovery document:**
-!`cat docs/start/01-discover.md 2>/dev/null | head -50 || echo "No discovery doc found — ask user to describe project or suggest /01-discover first"`
-
-**Existing scope state:**
-!`cat docs/start/02-scope.md 2>/dev/null | head -10 || echo "No existing scope — fresh start"`
+**Document status:**
+- !`test -f docs/start/01-discover.md && echo "✓ Discovery document exists" || echo "✗ No discovery — ask user to describe project or suggest /01-discover first"`
+- !`test -f docs/start/02-scope.md && echo "✓ Previous scope exists" || echo "○ No existing scope — fresh start"`
 
 Use this context to adapt your approach: if discovery doc exists, build on it; if not, gather context first.
+
+**Auto-load project context:**
+@docs/start/01-discover.md
+@docs/start/02-scope.md
 
 ## Your Role
 

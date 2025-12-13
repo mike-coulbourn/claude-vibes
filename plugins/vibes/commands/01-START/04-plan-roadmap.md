@@ -12,22 +12,20 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 
 **Optional constraints:** $ARGUMENTS
 
-**Discovery document:**
-!`cat docs/start/01-discover.md 2>/dev/null | head -80 || echo "No discovery doc found — ask user to describe project or suggest running /01-discover first"`
-
-**Scope document:**
-!`cat docs/start/02-scope.md 2>/dev/null | head -80 || echo "No scope doc found — ask user to describe features or suggest running /02-scope first"`
-
-**Architecture document:**
-!`cat docs/start/03-architect.md 2>/dev/null | head -80 || echo "No architecture doc found — ask user about technical decisions or suggest running /03-architect first"`
-
-**Existing roadmap:**
-!`cat docs/start/04-plan-roadmap.md 2>/dev/null | head -10 || echo "No existing roadmap — fresh planning"`
-
-**Taskmaster state:**
-!`ls -la .taskmaster/tasks/ 2>/dev/null | head -3 || echo "Taskmaster not initialized"`
+**Document status:**
+- !`test -f docs/start/01-discover.md && echo "✓ Discovery document exists" || echo "✗ No discovery — ask user to describe project or suggest running /01-discover first"`
+- !`test -f docs/start/02-scope.md && echo "✓ Scope document exists" || echo "✗ No scope — ask user to describe features or suggest running /02-scope first"`
+- !`test -f docs/start/03-architect.md && echo "✓ Architecture document exists" || echo "✗ No architecture — ask user about technical decisions or suggest running /03-architect first"`
+- !`test -f docs/start/04-plan-roadmap.md && echo "✓ Previous roadmap exists" || echo "○ No existing roadmap — fresh planning"`
+- !`test -d .taskmaster/tasks && echo "✓ Taskmaster initialized" || echo "○ Taskmaster not initialized"`
 
 Use this context to adapt your approach: if all docs exist, synthesize them; if docs are missing, gather context first; if Taskmaster is already initialized, offer to update rather than reinitialize.
+
+**Auto-load project context:**
+@docs/start/01-discover.md
+@docs/start/02-scope.md
+@docs/start/03-architect.md
+@docs/start/04-plan-roadmap.md
 
 ## Your Role
 

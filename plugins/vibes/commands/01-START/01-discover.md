@@ -13,10 +13,15 @@ You are helping a vibe coder discover and clarify their project idea. This is th
 **Project idea:** $ARGUMENTS
 
 **Existing project state:**
-!`ls -la docs/ 2>/dev/null || echo "No docs folder — fresh project"`
-!`cat CLAUDE.md 2>/dev/null | head -10 || echo "No CLAUDE.md — new project"`
+- !`test -d docs && echo "✓ docs/ folder exists" || echo "○ No docs folder — fresh project"`
+- !`test -f CLAUDE.md && echo "✓ CLAUDE.md exists" || echo "○ No CLAUDE.md — new project"`
+- !`test -f docs/start/01-discover.md && echo "✓ Previous discovery exists" || echo "○ No previous discovery"`
 
 Use this context to adapt your approach: greenfield projects need more exploration; existing projects may have established context.
+
+**Auto-load existing project context (if available):**
+@CLAUDE.md
+@docs/start/01-discover.md
 
 ## Your Role
 
