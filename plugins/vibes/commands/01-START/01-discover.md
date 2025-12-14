@@ -24,6 +24,8 @@ You do the heavy lifting. The user describes what they want in natural language;
 
 **CRITICAL: You orchestrate parallel research agents for comprehensive insights.** Don't do research yourself—delegate to specialized agents while continuing the conversation.
 
+**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, analysis, synthesis, or decision-making. This ensures systematic, thorough thinking. Ultrathink through problems before presenting conclusions.
+
 ## How to Communicate
 
 - Use AskUserQuestion for every question—always provide 2-4 clear options
@@ -73,6 +75,8 @@ Task tool:
   run_in_background: true
   prompt: "Ultrathink about validating this product idea: [insert confirmed summary from checkpoint].
 
+  **Use the sequential-thinking MCP server** for systematic market analysis, competitive evaluation, and SWOT analysis. This ensures thorough, structured reasoning.
+
   Do exhaustive market research including:
   - Reddit discussions and forum threads about this problem
   - Competitor analysis with reviews and complaints
@@ -81,7 +85,11 @@ Task tool:
 
   Use WebSearch extensively (10-15+ searches). Include sources.
 
-  Use AskUserQuestion if you find conflicting information or discover the market is very different than expected."
+  **Use AskUserQuestion throughout:**
+  - If you find conflicting information, ask the user to clarify their understanding
+  - If the market is very different than expected, present findings and ask how to proceed
+  - If multiple market segments exist, ask which to focus on
+  - Never assume market priorities—clarify with the user"
 ```
 
 **Agent 2: Audience Researcher**
@@ -89,7 +97,9 @@ Task tool:
 Task tool:
   subagent_type: "claude-vibes:BRANDING:brand-audience-researcher"
   run_in_background: true
-  prompt: "Research the target audience for this product: [insert confirmed summary from checkpoint].
+  prompt: "Ultrathink about the target audience for this product: [insert confirmed summary from checkpoint].
+
+  **Use the sequential-thinking MCP server** for systematic audience analysis, psychographic segmentation, and JTBD mapping. This ensures thorough, structured reasoning.
 
   Apply JTBD and psychographic frameworks to understand:
   - The three job dimensions (functional, emotional, social)
@@ -99,7 +109,11 @@ Task tool:
 
   Use WebSearch extensively to find real audience insights.
 
-  Use AskUserQuestion if multiple viable audience segments exist."
+  **Use AskUserQuestion throughout:**
+  - If multiple viable audience segments exist, ask which to prioritize
+  - If audience insights conflict with the user's assumptions, present findings and ask for guidance
+  - If you discover unexpected audience characteristics, ask how they should inform the product
+  - Never assume audience priorities—clarify with the user"
 ```
 
 **Immediately after launching both agents, continue to step 4 in the main conversation.**

@@ -24,6 +24,8 @@ You do the heavy lifting. Help the user think comprehensively about features whi
 
 **CRITICAL: You orchestrate the feature-brainstormer agent while having parallel conversations about priorities.** Don't brainstorm features yourself—delegate to the specialist while you gather strategic context.
 
+**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, feature prioritization, or MVP boundary decisions. This ensures systematic, thorough thinking. Ultrathink through tradeoffs before presenting conclusions.
+
 ## How to Communicate
 
 - Use AskUserQuestion for every decision—always provide clear options with plain language tradeoffs
@@ -93,6 +95,8 @@ Task tool:
   run_in_background: true
   prompt: "Ultrathink about all possible features for this project. Read docs/01-START/01-discover.md for full context on the problem, users, and value proposition.
 
+  **Use the sequential-thinking MCP server** for systematic feature categorization, JTBD mapping, and prioritization analysis. This ensures thorough, structured reasoning.
+
   Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered.
 
   For each feature, consider:
@@ -103,11 +107,12 @@ Task tool:
 
   Organize by category and explain why each feature matters.
 
-  Use AskUserQuestion if:
-  - You're unsure what level of complexity the user wants
-  - A feature could go multiple directions
-  - You see potential scope creep
-  - Priorities need clarification"
+  **Use AskUserQuestion throughout:**
+  - If you're unsure what level of complexity the user wants, ask
+  - If a feature could go multiple directions, present options and ask
+  - If you see potential scope creep, name it and ask if they want to include it
+  - If priorities need clarification, ask about what matters most
+  - Never assume feature priorities—clarify with the user"
 ```
 
 **Immediately continue to step 4 while the agent brainstorms.**

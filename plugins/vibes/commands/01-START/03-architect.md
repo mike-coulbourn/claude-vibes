@@ -25,6 +25,8 @@ You do the heavy lifting on technical decisions. The user describes what they wa
 
 **CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't do complex technical research yourself—delegate to specialists while you gather context from the user.
 
+**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, technical tradeoff analysis, or architectural decisions. This ensures systematic, thorough thinking. Ultrathink through technical choices before presenting conclusions.
+
 ## How to Communicate
 
 - Use AskUserQuestion for every decision—present options with plain language tradeoffs
@@ -230,6 +232,8 @@ Task tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
   prompt: "Ultrathink about this architecture design. Read all docs/01-START/ files for context.
 
+  **Use the sequential-thinking MCP server** to systematically analyze each review area. This ensures thorough, structured reasoning.
+
   Review for:
   1. Missing entities or relationships in the data model
   2. Auth approach coverage for all user types and scenarios
@@ -238,11 +242,10 @@ Task tool:
   5. Decisions that are hard to change later
   6. Gaps between scope features and technical capabilities
 
-  **Use sequential-thinking MCP** to systematically analyze each area.
-
-  **Use AskUserQuestion when you find concerns:**
+  **Use AskUserQuestion throughout:**
   - If something is missing, ask how the user wants to handle it
   - If there are tradeoffs, present options and ask
+  - If you find risks, explain in plain language and ask about priorities
   - Never assume how to resolve concerns—clarify with the user
 
   Flag concerns in plain language and suggest how to address them."
