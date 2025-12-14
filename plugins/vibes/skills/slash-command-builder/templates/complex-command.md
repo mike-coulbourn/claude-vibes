@@ -23,7 +23,7 @@ model: [optional-specific-model]
 ## Context Section
 
 [Bash commands to gather current state]
-!`bash commands here`
+!\`bash commands here\`
 
 ## Reference Materials
 
@@ -54,18 +54,18 @@ argument-hint: [base-branch] [pr-title]
 
 ## Current Branch Context
 
-**Branch**: !`git branch --show-current`
+**Branch**: !\`git branch --show-current\`
 **Base**: $1
-**Commits**: !`git log $1..HEAD --oneline`
+**Commits**: !\`git log $1..HEAD --oneline\`
 
 ## Changes Summary
 
-**Files Changed**: !`git diff --name-status $1...HEAD`
+**Files Changed**: !\`git diff --name-status $1...HEAD\`
 
-**Diffstat**: !`git diff --stat $1...HEAD`
+**Diffstat**: !\`git diff --stat $1...HEAD\`
 
 **Full Diff**:
-!`git diff $1...HEAD`
+!\`git diff $1...HEAD\`
 
 ## Project Conventions
 
@@ -74,7 +74,7 @@ argument-hint: [base-branch] [pr-title]
 
 ## Related Issues
 
-Check for related issues: !`gh issue list --search "is:open" | head -10`
+Check for related issues: !\`gh issue list --search "is:open" | head -10\`
 
 ## Your Task
 
@@ -119,13 +119,13 @@ argument-hint: [file-or-directory]
 ## Git Context
 
 **Recent Changes**:
-!`git log --oneline -5 -- $1`
+!\`git log --oneline -5 -- $1\`
 
 **Current Diff** (if modified):
-!`git diff HEAD -- $1`
+!\`git diff HEAD -- $1\`
 
 **File History Stats**:
-!`git log --oneline --all -- $1 | wc -l` commits
+!\`git log --oneline --all -- $1 | wc -l\` commits
 
 ## Project Standards
 
@@ -139,7 +139,7 @@ argument-hint: [file-or-directory]
 
 ## Related Tests
 
-!`find . -name "*test*" -path "*$1*" 2>/dev/null | head -5`
+!\`find . -name "*test*" -path "*$1*" 2>/dev/null | head -5\`
 
 ## Deep Review Task
 
@@ -222,13 +222,13 @@ argument-hint: [feature-name] [description]
 ## Current Codebase Structure
 
 **API Endpoints**:
-!`find src/api -name "*.js" | head -10`
+!\`find src/api -name "*.js" | head -10\`
 
 **Database Models**:
-!`find src/models -name "*.js" | head -10`
+!\`find src/models -name "*.js" | head -10\`
 
 **Frontend Components**:
-!`find src/components -name "*.jsx" | head -10`
+!\`find src/components -name "*.jsx" | head -10\`
 
 ## Project Patterns
 
@@ -312,39 +312,39 @@ Running comprehensive checks...
 
 ### 1. Git Status
 
-**Branch**: !`git branch --show-current`
-**Uncommitted Changes**: !`git status --short`
-**Unpushed Commits**: !`git log origin/main..HEAD --oneline`
+**Branch**: !\`git branch --show-current\`
+**Uncommitted Changes**: !\`git status --short\`
+**Unpushed Commits**: !\`git log origin/main..HEAD --oneline\`
 
 ### 2. Tests
 
 **Test Results**:
-!`npm test 2>&1 | tail -50` or !`pytest -v 2>&1 | tail -50`
+!\`npm test 2>&1 | tail -50\` or !\`pytest -v 2>&1 | tail -50\`
 
 ### 3. Linting
 
 **Lint Results**:
-!`npm run lint 2>&1 | tail -30`
+!\`npm run lint 2>&1 | tail -30\`
 
 ### 4. Type Checking
 
 **Type Check**:
-!`npm run type-check 2>&1 | tail -30`
+!\`npm run type-check 2>&1 | tail -30\`
 
 ### 5. Build
 
 **Build Status**:
-!`npm run build 2>&1 | tail -30`
+!\`npm run build 2>&1 | tail -30\`
 
 ### 6. Security Audit
 
 **Security Issues**:
-!`npm audit --production 2>&1 | head -50`
+!\`npm audit --production 2>&1 | head -50\`
 
 ### 7. Dependencies
 
 **Outdated Packages**:
-!`npm outdated 2>&1 | head -20`
+!\`npm outdated 2>&1 | head -20\`
 
 ### 8. Environment Config
 
@@ -354,7 +354,7 @@ Running comprehensive checks...
 ### 9. Migration Status
 
 **Pending Migrations**:
-!`npm run migrate:status 2>&1` or !`python manage.py showmigrations 2>&1`
+!\`npm run migrate:status 2>&1\` or !\`python manage.py showmigrations 2>&1\`
 
 ### 10. Deployment Configuration
 
@@ -433,18 +433,18 @@ $1
 
 ## System Context
 
-**Git Branch**: !`git branch --show-current`
-**Recent Changes**: !`git log --oneline -10`
-**Modified Files**: !`git status --short`
+**Git Branch**: !\`git branch --show-current\`
+**Recent Changes**: !\`git log --oneline -10\`
+**Modified Files**: !\`git status --short\`
 
 ## Search for Related Code
 
 **Files mentioning the error**:
-!`grep -r "$1" src/ 2>/dev/null | head -20`
+!\`grep -r "$1" src/ 2>/dev/null | head -20\`
 
 ## Recent Test Failures
 
-!`npm test 2>&1 | grep -A 5 "FAIL\|Error" | head -50`
+!\`npm test 2>&1 | grep -A 5 "FAIL\|Error" | head -50\`
 
 ## Application Logs
 
@@ -459,11 +459,11 @@ Based on error, check these files:
 
 ## Git History of Relevant Files
 
-!`git log --oneline -10 -- src/[relevant-file].js`
+!\`git log --oneline -10 -- src/[relevant-file].js\`
 
 ## Recent Changes to Related Code
 
-!`git diff HEAD~5 HEAD -- src/[relevant-file].js`
+!\`git diff HEAD~5 HEAD -- src/[relevant-file].js\`
 
 ## Project Debugging Guide
 
@@ -553,7 +553,7 @@ allowed-tools: Bash  # Too much access
 
 ```markdown
 # Bash for context
-Branch: !`git branch --show-current`
+Branch: !\`git branch --show-current\`
 
 # Files for analysis
 Code: @$1
@@ -581,7 +581,7 @@ Start with summary, drill into details:
 
 ```markdown
 Check if file exists first:
-!`[ -f "$1" ] && echo "exists" || echo "missing"`
+!\`[ -f "$1" ] && echo "exists" || echo "missing"\`
 
 Then reference:
 @$1
@@ -624,7 +624,7 @@ If your command is becoming unwieldy:
 
 3. **Use supporting scripts**
    - Bash script for complex logic
-   - Call script from command: !`./scripts/analyze.sh $1`
+   - Call script from command: !\`./scripts/analyze.sh $1\`
 
 ## Common Patterns
 

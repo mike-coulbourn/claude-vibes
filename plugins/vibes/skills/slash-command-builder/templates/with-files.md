@@ -380,11 +380,11 @@ argument-hint: [file-path]
 
 ## Recent Changes
 
-!`git log --oneline -5 -- $1`
+!\`git log --oneline -5 -- $1\`
 
 ## Diff from Last Week
 
-!`git diff HEAD~7 HEAD -- $1`
+!\`git diff HEAD~7 HEAD -- $1\`
 
 ## Analysis
 
@@ -490,7 +490,7 @@ List:
 5. **Combine with bash for context**
    ```markdown
    File: @$1
-   Recent changes: !`git log -5 --oneline -- $1`
+   Recent changes: !\`git log -5 --oneline -- $1\`
    ```
 
 ## Common Pitfalls

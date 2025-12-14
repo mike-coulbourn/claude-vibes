@@ -19,7 +19,7 @@ allowed-tools: Bash(command:*)
 
 ## Context
 
-Current state: !`command here`
+Current state: !\`command here\`
 
 ## Task
 
@@ -31,12 +31,12 @@ Current state: !`command here`
 ## How Bash Execution Works
 
 1. Bash commands execute BEFORE Claude sees the prompt
-2. Command output replaces the !`command` in the text
+2. Command output replaces the !\`command\` in the text
 3. Claude receives the prompt with actual output included
 
 **Example**:
 ```markdown
-Branch: !`git branch --show-current`
+Branch: !\`git branch --show-current\`
 ```
 
 Becomes:
@@ -78,21 +78,21 @@ allowed-tools: Bash(git:*)
 
 ## Current Git State
 
-**Branch**: !`git branch --show-current`
+**Branch**: !\`git branch --show-current\`
 
 **Status**:
-!`git status --short`
+!\`git status --short\`
 
 **Recent Commits** (for style reference):
-!`git log --oneline -10`
+!\`git log --oneline -10\`
 
 ## Changes to Commit
 
 ### Staged Changes:
-!`git diff --staged`
+!\`git diff --staged\`
 
 ### Unstaged Changes (FYI):
-!`git diff`
+!\`git diff\`
 
 ## Project Conventions
 
@@ -130,7 +130,7 @@ allowed-tools: Bash(npm:*), Bash(pytest:*)
 
 Running tests...
 
-!`npm test 2>&1` or !`pytest -v 2>&1`
+!\`npm test 2>&1\` or !\`pytest -v 2>&1\`
 
 ## Analysis Task
 
@@ -170,12 +170,12 @@ allowed-tools: Bash(npm:*), Bash(pytest:*), Read, Grep, Glob
 
 ## Current Coverage
 
-!`npm run coverage --silent` or !`pytest --cov=src --cov-report=term`
+!\`npm run coverage --silent\` or !\`pytest --cov=src --cov-report=term\`
 
 ## Uncovered Files
 
 Files with low coverage:
-!`find src -name "*.js" -o -name "*.ts" | head -20`
+!\`find src -name "*.js" -o -name "*.ts" | head -20\`
 
 ## Analysis Task
 
@@ -217,13 +217,13 @@ allowed-tools: Bash(npm:*), Bash(pip:*)
 ## Dependency Status
 
 ### Outdated Packages:
-!`npm outdated` or !`pip list --outdated`
+!\`npm outdated\` or !\`pip list --outdated\`
 
 ### Security Vulnerabilities:
-!`npm audit` or !`pip-audit`
+!\`npm audit\` or !\`pip-audit\`
 
 ### Dependency Tree (key packages):
-!`npm list --depth=1` or !`pip show --verbose key-package`
+!\`npm list --depth=1\` or !\`pip show --verbose key-package\`
 
 ## Analysis Task
 
@@ -262,22 +262,22 @@ argument-hint: [base-branch]
 
 ## Current Branch
 
-**Branch Name**: !`git branch --show-current`
+**Branch Name**: !\`git branch --show-current\`
 
 **Base Branch**: $1
 
 ## Commit History
 
 Commits to include in PR:
-!`git log $1..HEAD --oneline`
+!\`git log $1..HEAD --oneline\`
 
 ## Full Diff
 
 Changes in this PR:
-!`git diff $1...HEAD --stat`
+!\`git diff $1...HEAD --stat\`
 
 Detailed changes:
-!`git diff $1...HEAD`
+!\`git diff $1...HEAD\`
 
 ## PR Creation Task
 
@@ -317,7 +317,7 @@ argument-hint: [test-file]
 
 ## Running Test
 
-!`npm test $1` or !`pytest $1 -v`
+!\`npm test $1\` or !\`pytest $1 -v\`
 
 ## Analysis
 
@@ -338,7 +338,7 @@ argument-hint: [file-path]
 ## File History
 
 Recent changes to @$1:
-!`git log --oneline -5 -- $1`
+!\`git log --oneline -5 -- $1\`
 
 ## Current Content
 
@@ -346,7 +346,7 @@ Recent changes to @$1:
 
 ## Diff from 10 commits ago
 
-!`git diff HEAD~10 HEAD -- $1`
+!\`git diff HEAD~10 HEAD -- $1\`
 
 ## Analysis
 
@@ -357,44 +357,44 @@ Recent changes to @$1:
 
 ### Git Commands
 ```markdown
-Current branch: !`git branch --show-current`
-Status: !`git status --short`
-Recent commits: !`git log --oneline -10`
-Staged changes: !`git diff --staged`
-Unstaged changes: !`git diff`
-Changed files: !`git diff --name-only`
+Current branch: !\`git branch --show-current\`
+Status: !\`git status --short\`
+Recent commits: !\`git log --oneline -10\`
+Staged changes: !\`git diff --staged\`
+Unstaged changes: !\`git diff\`
+Changed files: !\`git diff --name-only\`
 ```
 
 ### File System
 ```markdown
-List directory: !`ls -la src/`
-Find files: !`find src -name "*.js"`
-Count files: !`find src -name "*.test.js" | wc -l`
-File size: !`du -sh src/`
+List directory: !\`ls -la src/\`
+Find files: !\`find src -name "*.js"\`
+Count files: !\`find src -name "*.test.js" | wc -l\`
+File size: !\`du -sh src/\`
 ```
 
 ### Testing
 ```markdown
-Run tests: !`npm test`
-Coverage: !`npm run coverage`
-Specific test: !`npm test -- auth.test.js`
-Verbose output: !`npm test -- --verbose`
+Run tests: !\`npm test\`
+Coverage: !\`npm run coverage\`
+Specific test: !\`npm test -- auth.test.js\`
+Verbose output: !\`npm test -- --verbose\`
 ```
 
 ### Dependencies
 ```markdown
-List deps: !`npm list --depth=0`
-Outdated: !`npm outdated`
-Audit: !`npm audit`
-Package info: !`npm info package-name`
+List deps: !\`npm list --depth=0\`
+Outdated: !\`npm outdated\`
+Audit: !\`npm audit\`
+Package info: !\`npm info package-name\`
 ```
 
 ### Build/Lint
 ```markdown
-Build: !`npm run build`
-Lint: !`npm run lint`
-Type check: !`npm run type-check`
-Format check: !`npm run format:check`
+Build: !\`npm run build\`
+Lint: !\`npm run lint\`
+Type check: !\`npm run type-check\`
+Format check: !\`npm run format:check\`
 ```
 
 ## Error Handling
@@ -402,7 +402,7 @@ Format check: !`npm run format:check`
 If a bash command fails, its error output is included:
 
 ```markdown
-Test results: !`npm test`
+Test results: !\`npm test\`
 ```
 
 If tests fail, Claude sees the failure output and can analyze it.
@@ -425,7 +425,7 @@ If tests fail, Claude sees the failure output and can analyze it.
 
 3. **Use 2>&1 to capture stderr**
    ```markdown
-   !`npm test 2>&1`
+   !\`npm test 2>&1\`
    ```
 
 4. **Test commands in terminal first**
@@ -436,37 +436,37 @@ If tests fail, Claude sees the failure output and can analyze it.
 5. **Structure output clearly**
    ```markdown
    ## Git Status
-   !`git status`
+   !\`git status\`
 
    ## Recent Commits
-   !`git log --oneline -5`
+   !\`git log --oneline -5\`
    ```
 
 6. **Combine with file references**
    ```markdown
    Code: @src/file.js
-   Tests: !`npm test src/file.test.js`
+   Tests: !\`npm test src/file.test.js\`
    ```
 
 ## Common Pitfalls
 
 ### Missing allowed-tools
 ```markdown
-❌ !`git status`
+❌ !\`git status\`
    (without allowed-tools frontmatter)
 
 ✅
 ---
 allowed-tools: Bash(git:*)
 ---
-!`git status`
+!\`git status\`
 ```
 
 ### Wrong syntax
 ```markdown
 ❌ !git status (missing backticks)
 ❌ `git status` (missing !)
-✅ !`git status` (correct)
+✅ !\`git status\` (correct)
 ```
 
 ### Too broad permissions
@@ -480,11 +480,11 @@ allowed-tools: Bash(git:*)
 
 ### Slow commands
 ```markdown
-❌ !`npm install` (takes minutes)
-❌ !`git log --all` (huge output)
+❌ !\`npm install\` (takes minutes)
+❌ !\`git log --all\` (huge output)
 
-✅ !`git status` (fast)
-✅ !`git log --oneline -10` (limited)
+✅ !\`git status\` (fast)
+✅ !\`git log --oneline -10\` (limited)
 ```
 
 ## Testing Bash Commands
@@ -499,7 +499,7 @@ allowed-tools: Bash(git:*)
    ---
    allowed-tools: Bash(git:*)
    ---
-   Status: !`git status --short`
+   Status: !\`git status --short\`
    ```
 
 3. **Run the slash command**

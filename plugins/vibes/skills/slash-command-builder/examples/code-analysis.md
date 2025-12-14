@@ -106,7 +106,7 @@ argument-hint: [file-to-analyze]
 
 ## Performance Baseline (if available)
 
-!`npm run benchmark -- $1 2>/dev/null || echo "No benchmarks"`
+!\`npm run benchmark -- $1 2>/dev/null || echo "No benchmarks"\`
 
 ## Analysis Task
 
@@ -272,14 +272,14 @@ argument-hint: [file-or-directory]
 ## Dependency Graph
 
 **Direct dependencies used**:
-!`grep -h "import\|require" $1 | sort | uniq`
+!\`grep -h "import\|require" $1 | sort | uniq\`
 
 **Package.json**:
 @package.json
 
 ## Unused Dependencies Check
 
-!`npx depcheck $1 2>/dev/null || echo "Run: npm install -g depcheck"`
+!\`npx depcheck $1 2>/dev/null || echo "Run: npm install -g depcheck"\`
 
 ## Analysis Task
 
@@ -334,7 +334,7 @@ argument-hint: [directory-or-module]
 
 ## Code Structure
 
-!`find $1 -type f -name "*.js" -o -name "*.ts" | head -50`
+!\`find $1 -type f -name "*.js" -o -name "*.ts" | head -50\`
 
 ## Key Files
 
@@ -414,11 +414,11 @@ argument-hint: [file-path]
 
 ## Existing Tests
 
-!`find tests -name "*$(basename $1 .js)*" 2>/dev/null | head -10`
+!\`find tests -name "*$(basename $1 .js)*" 2>/dev/null | head -10\`
 
 ## Current Coverage
 
-!`npm run coverage -- $1 2>/dev/null || pytest --cov=$1 --cov-report=term 2>/dev/null || echo "Coverage not available"`
+!\`npm run coverage -- $1 2>/dev/null || pytest --cov=$1 --cov-report=term 2>/dev/null || echo "Coverage not available"\`
 
 ## Test Analysis Task
 
