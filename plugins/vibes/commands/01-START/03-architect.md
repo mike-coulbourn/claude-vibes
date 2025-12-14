@@ -65,7 +65,88 @@ If docs don't exist (common when using claude-vibes on an existing project), use
 
 Then proceed with architecture design based on the user's answers.
 
-### 2. Data Model Design (REQUIRED - Synchronous)
+### 2. Project Structure Decision (REQUIRED)
+
+Before diving into technical details, determine how the codebase will be organized.
+
+**Use AskUserQuestion:**
+```
+Question: "How do you want to organize your codebase?
+
+Based on your project scope, I'd recommend [X] because [reason — consider team size, deployment needs, complexity]."
+Options:
+- Monorepo — frontend and backend together (recommended for small teams)
+- Separate repos — frontend and backend in different repositories
+- Frontend only — using a backend-as-a-service (Supabase, Firebase, Xano, etc.)
+- I'm not sure — help me decide
+```
+
+**Recommendation logic:**
+- **Monorepo**: Best for solo developers, small teams, or when frontend and backend share types/contracts. Simpler deployment, easier code sharing.
+- **Separate repos**: Better for larger teams, different deployment cycles, or when frontend/backend use very different tech stacks.
+- **Frontend only + BaaS**: Great for MVPs, reduces backend complexity, lets you focus on user experience.
+
+### 3. Frontend Approach & Design Status (REQUIRED)
+
+Understanding the frontend approach ensures architecture supports it properly.
+
+**Use AskUserQuestion:**
+```
+Question: "How are you planning to build the frontend?"
+Options:
+- Traditional coded frontend (React, Vue, Next.js, etc.)
+- Nocode/low-code platform (Lovable, v0, Webflow, Framer, etc.)
+- AI-generated UI that I'll customize
+- Hybrid — nocode prototype, then coded version
+- No frontend — this is an API/backend-only project
+```
+
+**Follow up on design status:**
+```
+Question: "What's the current status of your UI/UX design?"
+Options:
+- Complete — ready to build from (Figma, Sketch, mockups, etc.)
+- In progress — still being refined
+- Not started — will design after architecture
+- No formal design — building/designing as I go
+```
+
+**Workflow implications based on answers:**
+
+**For nocode/AI platforms (Lovable, v0, etc.):**
+- Architecture focuses on API design and data contracts
+- The platform handles frontend architecture decisions
+- Ensure backend APIs are well-documented for integration
+
+**For coded frontend with design ready:**
+- Can proceed with full frontend architecture (components, state, styling)
+- Note design tool for BUILD phase reference
+
+**For coded frontend with design in progress or not started:**
+```
+Question: "Design decisions often affect frontend architecture. I'd recommend:
+
+1. **Proceed with backend architecture now** — frontend architecture when design is ready
+2. **Pause and finalize design first** — then do full architecture together
+3. **Continue with full architecture** — accept some frontend decisions may change
+
+What works best for your timeline?"
+Options:
+- Backend now, frontend architecture later (recommended)
+- Pause for design
+- Continue with everything
+```
+
+**For API-only projects:**
+- Skip frontend architecture entirely
+- Focus on API design, documentation, and contracts
+
+**What this captures for the roadmap:**
+- Whether frontend development is in scope
+- When frontend work should be sequenced
+- What backend needs to expose for frontend integration
+
+### 4. Data Model Design (REQUIRED - Synchronous)
 
 **You MUST use the Task tool to launch the data-modeler agent.** The data model is foundational—other decisions depend on it, so this runs synchronously (NOT in background).
 
@@ -112,7 +193,7 @@ Options:
 - I have questions about relationships
 ```
 
-### 3. Technical Research (BACKGROUND) + User Discussion (PARALLEL)
+### 5. Technical Research (BACKGROUND) + User Discussion (PARALLEL)
 
 **Launch tech-advisor in background to research technical options:**
 
@@ -127,6 +208,11 @@ Task tool:
   2. Data storage patterns (based on the data model and scale expectations)
   3. External integrations identified in scope (best practices, common patterns)
   4. Real-time requirements (if any features need instant updates)
+  5. Frontend stack (if coded frontend is planned):
+     - Framework recommendation based on project needs
+     - Component library options
+     - State management approach
+     - Styling strategy
 
   For each decision:
   - Research current best practices
@@ -145,7 +231,7 @@ Task tool:
 
 **Immediately continue to gather user context while the agent researches.**
 
-### 4. User & Authentication (while agent researches)
+### 6. User & Authentication (while agent researches)
 
 Determine auth requirements using AskUserQuestion:
 - Does your app need user accounts?
@@ -168,7 +254,7 @@ Options:
 - What are the other options?
 ```
 
-### 5. External Integrations (while agent researches)
+### 7. External Integrations (while agent researches)
 
 Identify what outside services the app needs:
 - Payments (taking money from users)
@@ -180,7 +266,7 @@ Use AskUserQuestion to prioritize:
 - "Which of these are must-haves for launch?"
 - "Which can wait until you have users?"
 
-### 6. Retrieve Research Results
+### 8. Retrieve Research Results
 
 Use TaskOutput to get results from the tech-advisor:
 ```
@@ -194,7 +280,7 @@ Present the research findings to the user:
 - Synthesize with the context gathered during conversation
 - Resolve any conflicts between research and user preferences
 
-### 7. Key Technical Decisions
+### 9. Key Technical Decisions
 
 Based on combined research and conversation, finalize key decisions:
 
@@ -214,7 +300,58 @@ Based on combined research and conversation, finalize key decisions:
 - "This one matters because changing it later would require..."
 - Mark these explicitly in the output
 
-### 8. App Capabilities
+### 10. Frontend Architecture (if applicable)
+
+**Skip this section if:**
+- The user chose "No frontend" or "API-only project" in section 3
+- The user chose nocode/AI platform (Lovable, v0, etc.) — those platforms handle frontend architecture
+- Design is not ready and user chose to defer frontend architecture
+
+**For coded frontends with design ready, cover these decisions:**
+
+**Component Architecture:**
+```
+Question: "For your UI components, what approach do you prefer?"
+Options:
+- Use a component library (shadcn/ui, Radix, MUI, Chakra)
+- Build custom components from scratch
+- Start with a library, customize as needed (recommended)
+- I'm not sure — what do you recommend?
+```
+
+**State Management:**
+```
+Question: "How should your app manage shared data across screens?"
+Options:
+- Keep it simple — use built-in state (React Context, Vue reactivity)
+- Use a state library (Redux, Zustand, Pinia) for complex state
+- Server-first — fetch fresh data each time (React Query, SWR)
+- I'm not sure — what fits my app?
+```
+
+**Styling Approach:**
+```
+Question: "How do you want to style your app?"
+Options:
+- Tailwind CSS (utility classes, fast development)
+- CSS Modules (scoped styles, traditional CSS)
+- Styled-components or CSS-in-JS
+- Whatever the component library uses
+```
+
+**Rendering Strategy (for Next.js, Nuxt, etc.):**
+```
+Question: "How should pages load? (This affects speed and SEO)"
+Options:
+- Server-rendered (SSR) — fresh data, good for SEO
+- Static (SSG) — fastest, but content doesn't change often
+- Client-rendered (CSR) — simpler, but slower initial load
+- Hybrid — different pages use different approaches (recommended)
+```
+
+**Note these decisions for the roadmap.** Frontend architecture can be revisited during BUILD phase if design evolves.
+
+### 11. App Capabilities
 
 Based on the data model and features, summarize what the app can do:
 - What actions can users take?
@@ -223,7 +360,7 @@ Based on the data model and features, summarize what the app can do:
 
 This becomes the blueprint for the build phase.
 
-### 9. Architecture Review (REQUIRED)
+### 12. Architecture Review (REQUIRED)
 
 **Launch plan-reviewer to validate the architecture:**
 
@@ -241,6 +378,10 @@ Task tool:
   4. Scalability concerns for the identified use cases
   5. Decisions that are hard to change later
   6. Gaps between scope features and technical capabilities
+  7. Frontend architecture completeness (if applicable):
+     - Are frontend decisions documented or appropriately deferred?
+     - Does the API design support the planned frontend approach?
+     - Is design integration workflow clear for BUILD phase?
 
   **Use AskUserQuestion throughout:**
   - If something is missing, ask how the user wants to handle it
@@ -279,6 +420,15 @@ When architecture feels complete:
 
    **Technical Summary** (2-3 sentences in plain language)
 
+   **Project Structure:**
+   - Codebase organization (monorepo, separate repos, frontend-only)
+   - Rationale for the choice
+
+   **Frontend Approach & Design Status:**
+   - Frontend approach (coded, nocode, AI-generated, hybrid, none)
+   - Design status and tool (if applicable)
+   - When frontend architecture will be finalized (if deferred)
+
    **Data Model:**
    - Entities with plain-language descriptions
    - Relationships (how things connect)
@@ -304,6 +454,13 @@ When architecture feels complete:
    - Actions users can take
    - Information users can see
    - How features connect
+
+   **Frontend Architecture** (if applicable):
+   - Component approach (library, custom, hybrid)
+   - State management strategy
+   - Styling approach
+   - Rendering strategy (SSR, SSG, CSR, hybrid)
+   - Or note: "Deferred until design is ready" / "Handled by nocode platform"
 
    **Risks & Unknowns:**
    - Technical uncertainties
