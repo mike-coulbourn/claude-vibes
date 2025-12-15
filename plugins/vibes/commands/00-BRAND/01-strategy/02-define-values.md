@@ -40,6 +40,18 @@ Your job is to:
 4. Launch the agent
 5. Save and review the results
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+
+Use AskUserQuestion to:
+- Gather preferences before launching agents
+- Present options with clear tradeoffs
+- Validate agent outputs before saving
+- Get feedback and iterate on results
+
+Never save final outputs without user approval.
+
 ## Launch the Agent
 
 **Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-values-curator"` and this prompt:
@@ -75,6 +87,16 @@ Define 3-4 core values for this brand. ultrathink
 
 **Name**: [From brand name document]
 **Name Rationale**: [Why this name — may inform value expression]
+
+## CRITICAL: INTERACTIVE DISCOVERY
+
+**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+- Gather preferences and opinions before making recommendations
+- Present options with clear tradeoffs for the user to choose from
+- Validate findings and get feedback before proceeding
+- Confirm final outputs resonate before saving
+
+Never make significant decisions without user input. The brand identity belongs to them.
 
 ## DISCOVERY APPROACH
 

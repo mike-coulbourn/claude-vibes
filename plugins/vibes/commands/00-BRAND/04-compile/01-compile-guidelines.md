@@ -68,6 +68,18 @@ Your job is to:
 5. Have the founder review before finalizing
 6. Celebrate the completion!
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+
+Use AskUserQuestion to:
+- Confirm missing documents before proceeding
+- Validate the compiled structure before saving
+- Get feedback on specific sections
+- Ensure final approval before celebrating completion
+
+Never save final outputs without user approval.
+
 ## Guidelines Document Structure
 
 Create `docs/00-BRAND/brand-guidelines.md` using this structure:

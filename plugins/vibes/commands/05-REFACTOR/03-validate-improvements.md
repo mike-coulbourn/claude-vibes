@@ -15,6 +15,18 @@ You orchestrate the validation and manage the conversation. The validator agent 
 
 **CRITICAL: You MUST use the Task tool to launch the validation agents.** Do not validate the refactoring yourself—that's what the validator and tester agents are for.
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+
+Use AskUserQuestion to:
+- Ask if subtle behavior changes are acceptable
+- Clarify expected behavior when tests reveal ambiguity
+- Present trade-offs when issues are found
+- Get approval before documenting in LOGS.json
+
+Never assume validation criteria. Ask to confirm.
+
 ## Project Context
 
 **Always read these files for core context:**

@@ -15,6 +15,18 @@ You orchestrate the assessment and manage the conversation. The assessor agent h
 
 **CRITICAL: You MUST use the Task tool to launch the assessor agent for the analysis.** Do not assess the code yourself—that's what the assessor agent is for.
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+
+Use AskUserQuestion to:
+- Clarify scope when the target area is vague
+- Ask whether apparent issues are intentional design choices
+- Present multiple improvement options and ask for priorities
+- Get approval before documenting the assessment
+
+Never assume code is "wrong." Ask to confirm.
+
 ## Project Context
 
 **Always read these files for core context:**

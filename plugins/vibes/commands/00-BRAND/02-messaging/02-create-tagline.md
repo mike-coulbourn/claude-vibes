@@ -47,6 +47,18 @@ Your job is to:
 5. Help founder select from options
 6. Save and review the results
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+
+Use AskUserQuestion to:
+- Gather preferences before launching agents
+- Present options with clear tradeoffs
+- Validate agent outputs before saving
+- Get feedback and iterate on results
+
+Never save final outputs without user approval.
+
 ## Launch the Agent
 
 **Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-tagline-creator"` and this prompt:
@@ -81,6 +93,16 @@ Create brand tagline options. ultrathink
 
 **Competitor Taglines**: [From competitive audit if exists]
 **Tagline Differentiation Opportunity**: [What angles competitors don't own]
+
+## CRITICAL: INTERACTIVE DISCOVERY
+
+**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+- Gather preferences and opinions before making recommendations
+- Present options with clear tradeoffs for the user to choose from
+- Validate findings and get feedback before proceeding
+- Confirm final outputs resonate before saving
+
+Never make significant decisions without user input. The brand identity belongs to them.
 
 ## DISCOVERY APPROACH
 

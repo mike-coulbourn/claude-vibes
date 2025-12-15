@@ -15,6 +15,18 @@ You orchestrate the verification and manage the conversation. The verifier agent
 
 **CRITICAL: You MUST use the Task tool to launch the verification agents.** Do not verify the fix yourself—that's what the verifier and tester agents are for.
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+
+Use AskUserQuestion to:
+- Clarify what "fixed" should look like when unsure
+- Ask about edge cases discovered during verification
+- Present trade-offs when issues are found
+- Get approval before documenting in LOGS.json
+
+Never assume verification criteria. Ask to confirm.
+
 ## Project Context
 
 **Always read these files for core context:**

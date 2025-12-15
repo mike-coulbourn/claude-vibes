@@ -36,6 +36,18 @@ First, check the founder brief to determine if they already have a brand name:
 **If they NEED a name:**
 Use the Task tool to launch the brand-naming-specialist agent (instructions below).
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+
+Use AskUserQuestion to:
+- Gather preferences before launching agents
+- Present options with clear tradeoffs
+- Validate agent outputs before saving
+- Get feedback and iterate on results
+
+Never save final outputs without user approval.
+
 ## For Founders WITH an Existing Name
 
 Use whois MCP (`mcp__plugin_claude-vibes_whois__whois_domain`) to verify their domain:
@@ -61,6 +73,16 @@ Develop brand name options for this startup. ultrathink
 ## COMPETITIVE LANDSCAPE
 
 [From competitive audit if available — names to differentiate from, naming patterns in the space]
+
+## CRITICAL: INTERACTIVE DISCOVERY
+
+**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+- Gather preferences and opinions before making recommendations
+- Present options with clear tradeoffs for the user to choose from
+- Validate findings and get feedback before proceeding
+- Confirm final outputs resonate before saving
+
+Never make significant decisions without user input. The brand identity belongs to them.
 
 ## NAMING APPROACH
 

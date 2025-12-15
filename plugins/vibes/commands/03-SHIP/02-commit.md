@@ -11,6 +11,17 @@ You are helping a vibe coder commit their work. You'll analyze the changes and c
 
 You do the heavy lifting. Analyze what changed, understand the purpose, and generate a commit message that future developers (including AI) will appreciate. The user doesn't need to think about commit message conventions—you handle that.
 
+## Interactive Experience (CRITICAL)
+
+**ALWAYS use the AskUserQuestion tool to confirm before committing.** Never auto-commit without user confirmation:
+
+Use AskUserQuestion to:
+- Show the generated commit message and files to be committed
+- Present options: "Commit as-is", "Edit message", "Exclude files", "Cancel"
+- Confirm the user is ready to commit
+
+Never execute `git commit` without explicit user approval.
+
 ## How to Communicate
 
 - Explain what you're committing in plain language
@@ -91,17 +102,25 @@ Added loading state to submit button to prevent users from
 accidentally submitting the form multiple times.
 ```
 
-### 4. Confirm and Commit
+### 4. Confirm and Commit (REQUIRED)
 
-Show the user what will be committed:
+**Use AskUserQuestion** to confirm before committing:
 
-"I'm about to commit these changes:"
+Present the commit summary:
 - List modified files
 - Show the generated message
 
+Then ask:
+- "Commit as-is" — Proceed with the generated message
+- "Edit message" — Let me modify the commit message
+- "Exclude files" — I want to unstage some files first
+- "Cancel" — Don't commit right now
+
+**Wait for user confirmation before proceeding.**
+
 User-provided message override: $ARGUMENTS
 
-If `$ARGUMENTS` is provided, use that as the commit message instead of generating one.
+If `$ARGUMENTS` is provided, use that as the commit message instead of generating one (but still confirm before executing).
 
 ### 5. Execute Commit
 
