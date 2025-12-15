@@ -89,6 +89,67 @@ Each phase has dedicated commands and agents designed for that stage of developm
 
 ## 🤖 Commands & Agents
 
+### 🎨 00-BRAND (Brand Identity)
+
+Create complete brand identities for startups. A structured workflow from discovery through final guidelines.
+
+**Commands:**
+
+#### Discovery Phase
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:00-BRAND/00-discover/01-discover-founder` | Interactive founder discovery session |
+| `/claude-vibes:00-BRAND/00-discover/02-research-audience` | Research and define target audience |
+| `/claude-vibes:00-BRAND/00-discover/03-audit-competitors` | Audit competitor brands |
+| `/claude-vibes:00-BRAND/00-discover/04-name-brand` | Finalize brand name with domain verification |
+
+#### Strategy Phase
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:00-BRAND/01-strategy/01-define-purpose` | Define purpose, mission, and vision |
+| `/claude-vibes:00-BRAND/01-strategy/02-define-values` | Define differentiating core values |
+| `/claude-vibes:00-BRAND/01-strategy/03-define-positioning` | Develop positioning strategy |
+| `/claude-vibes:00-BRAND/01-strategy/04-select-archetype` | Select brand archetype |
+| `/claude-vibes:00-BRAND/01-strategy/05-define-voice` | Define brand voice and personality |
+
+#### Messaging Phase
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:00-BRAND/02-messaging/01-create-framework` | Create messaging framework |
+| `/claude-vibes:00-BRAND/02-messaging/02-create-tagline` | Create tagline options |
+| `/claude-vibes:00-BRAND/02-messaging/03-write-pitch` | Write elevator pitch variations |
+
+#### Visual Phase
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:00-BRAND/03-visual/01-set-direction` | Create visual identity direction |
+| `/claude-vibes:00-BRAND/03-visual/02-choose-colors` | Develop brand color palette |
+| `/claude-vibes:00-BRAND/03-visual/03-select-typography` | Develop typography system |
+
+#### Compile Phase
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:00-BRAND/04-compile/01-compile-guidelines` | Compile final brand guidelines |
+
+**Agents:**
+- `brand-archetype-selector` - Jungian archetype selection
+- `brand-audience-researcher` - Psychographic analysis and audience profiling
+- `brand-color-strategist` - Strategic color palette development
+- `brand-competitive-auditor` - Competitor visual identity analysis
+- `brand-elevator-pitch-writer` - Elevator pitch variations
+- `brand-messaging-architect` - Value proposition and brand pillars
+- `brand-naming-specialist` - Strategic name development
+- `brand-positioning-strategist` - Positioning and onliness statements
+- `brand-purpose-architect` - Purpose, mission, vision (Golden Circle)
+- `brand-tagline-creator` - Memorable tagline creation
+- `brand-typography-curator` - Typography system and font selection
+- `brand-values-curator` - Core values discovery and articulation
+- `brand-visual-director` - Visual identity direction and briefs
+- `brand-voice-architect` - Voice and verbal identity guidelines
+- `startup-brand-architect` - Orchestrates complete brand identity creation
+
+---
+
 ### 🧐 01-START (Discovery & Planning)
 
 Plan before you build. Discover the problem space, scope your MVP, and create an implementation roadmap.
@@ -181,6 +242,32 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 
 ---
 
+### 🧰 TOOLKIT (Specialized Tools)
+
+Utility commands and agents for tasks outside the main development workflow.
+
+**Commands:**
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:TOOLKIT/create-brand` | Create complete brand identity interactively |
+| `/claude-vibes:TOOLKIT/nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
+| `/claude-vibes:TOOLKIT/research` | Deep research on any topic |
+| `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
+| `/claude-vibes:TOOLKIT/write` | Write emails, messages, notes naturally |
+| `/claude-vibes:TOOLKIT/write-copy` | Create high-converting marketing copy |
+| `/claude-vibes:TOOLKIT/write-sponsor-script` | Write scripts for sponsored/affiliate content |
+
+**Agents:**
+- `ai-writing-detector` - Analyze text for AI writing patterns
+- `brand-researcher` - Deep brand research for content creators
+- `deep-researcher` - Comprehensive expert knowledge research
+- `elite-copywriter` - Transform text into compelling copy
+- `hook-generator` - Generate scroll-stopping hook variations
+- `nano-banana-pro-expert` - Guidance for Nano Banana Pro image generation
+- `sponsor-script-writer` - Write high-converting sponsored content scripts
+
+---
+
 ## 🔌 MCP Servers
 
 MCP (Model Context Protocol) servers extend Claude Code with additional capabilities. This plugin suite auto-installs essential servers that work out of the box.
@@ -252,12 +339,18 @@ claude-vibes/
         ├── .claude-plugin/
         │   └── plugin.json      # Plugin manifest with MCP servers
         ├── commands/
+        │   ├── 00-BRAND/        # Brand Identity
         │   ├── 01-START/        # Discovery & Planning
         │   ├── 02-BUILD/        # Implementation
         │   ├── 03-SHIP/         # Deployment
         │   ├── 04-DEBUG/        # Debugging
-        │   └── 05-REFACTOR/     # Code Evolution
-        └── agents/              # All 15 agents
+        │   ├── 05-REFACTOR/     # Code Evolution
+        │   └── TOOLKIT/         # Specialized Tools
+        ├── agents/
+        │   ├── BRANDING/        # Brand identity agents
+        │   ├── CODING/          # Development agents
+        │   └── TOOLKIT/         # Utility agents
+        └── skills/              # Agent enhancement skills
 ```
 
 ---
