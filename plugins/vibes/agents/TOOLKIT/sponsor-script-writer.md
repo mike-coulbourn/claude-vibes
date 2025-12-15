@@ -1,6 +1,6 @@
 ---
-name: script-writer
-description: Writes high-converting scripts for sponsored and affiliate content using direct response copywriting methodology. Takes brand research and creator profile to produce platform-optimized scripts. Use when writing scripts, creating sponsored content, or drafting affiliate promotions.
+name: sponsor-script-writer
+description: Writes high-converting scripts for sponsored and affiliate content using direct response copywriting methodology. Takes brand research and creator profile to produce platform-optimized scripts. Use when writing sponsor scripts, creating sponsored content, or drafting affiliate promotions.
 tools: Read, Write, Grep, Glob
 skills: scriptwriting-methodology, platform-optimization, conversion-psychology
 ---
