@@ -159,12 +159,12 @@ allowed-tools: Bash(git:*)
 ```markdown
 ❌ !git status (missing backticks)
 ❌ `git status` (missing !)
-❌ !\`git status (unclosed backtick)
+❌ !\\\`git status (unclosed backtick)
 
-✅ !\`git status\` (correct)
+✅ !\\\`git status\\` (correct)
 ```
 
-**Fix**: Use exact syntax: !\`command\`
+**Fix**: Use exact syntax: !\\\`command\\`
 
 #### 3. Command Fails When Run
 
@@ -187,7 +187,7 @@ allowed-tools: Bash(git status:*)
 
 But trying to run:
 ```markdown
-!\`git log\`  # Won't work, not in allowed-tools
+!\\\`git log\\`  # Won't work, not in allowed-tools
 ```
 
 **Fix**: Broaden tool restriction:
@@ -199,8 +199,8 @@ allowed-tools: Bash(git:*)
 
 **Commands that won't work**:
 ```markdown
-❌ !\`git rebase -i\` (interactive)
-❌ !\`npm install\` (prompts sometimes)
+❌ !\\\`git rebase -i\\` (interactive)
+❌ !\\\`npm install\\` (prompts sometimes)
 ```
 
 **Fix**: Use non-interactive commands only.
@@ -405,14 +405,14 @@ Command takes a long time to run.
 
 **Check**:
 ```markdown
-!\`npm install\`  # Takes minutes
-!\`git log --all\`  # Huge output
+!\\\`npm install\\`  # Takes minutes
+!\\\`git log --all\\`  # Huge output
 ```
 
 **Fix**: Use faster commands or limit output:
 ```markdown
-!\`git log --oneline -10\`  # Limited
-!\`npm list --depth=0\`     # Shallow
+!\\\`git log --oneline -10\\`  # Limited
+!\\\`npm list --depth=0\\`     # Shallow
 ```
 
 #### 2. Too Many File References
@@ -434,8 +434,8 @@ Command takes a long time to run.
 
 **Fix**: Limit output size:
 ```markdown
-!\`command | head -50\`
-!\`command --limit 20\`
+!\\\`command | head -50\\`
+!\\\`command --limit 20\\`
 ```
 
 ---
@@ -516,7 +516,7 @@ If this works, add features one at a time.
 You said: $ARGUMENTS
 
 # Test 2: Bash
-Branch: !\`git branch --show-current\`
+Branch: !\\\`git branch --show-current\\`
 
 # Test 3: Files
 File: @README.md
@@ -528,7 +528,7 @@ Identify which feature fails.
 
 - YAML delimiters: `---` at start and end?
 - Argument syntax: `$ARGUMENTS` or `$1` (not `$ARG`)?
-- Bash syntax: !\`command\` (with backticks)?
+- Bash syntax: !\\\`command\\` (with backticks)?
 - File syntax: `@path` (with @ prefix)?
 
 ### Step 4: Verify Paths and Permissions

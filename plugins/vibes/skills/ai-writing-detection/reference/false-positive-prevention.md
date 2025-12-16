@@ -321,6 +321,132 @@ Each tool has blind spots:
 - "This proves AI authorship" (overstatement)
 - "No human would write this" (assumption)
 
+## Ineffective Indicators
+
+These are commonly cited "tells" that are actually NOT reliable for AI detection:
+
+### Perfect Grammar
+
+**Myth**: "AI has perfect grammar, so perfect grammar means AI."
+
+**Reality**: Many skilled human writers produce grammatically flawless text. This is especially weak as an indicator.
+
+### "Bland" or "Robotic" Prose
+
+**Myth**: "AI writing is bland and robotic."
+
+**Reality**: Modern LLMs tend toward **effusive and verbose** prose, not bland prose. The pattern is formulaic but not necessarily "robotic" to those unfamiliar with AI writing.
+
+### "Fancy" or Unusual Words
+
+**Myth**: "AI uses fancy vocabulary, so unusual words indicate AI."
+
+**Reality**: **Low-frequency and unusual words are LESS likely in AI-generated text** because they are statistically less common in training data. AI regresses toward common vocabulary, not unusual words.
+
+Exception: Specific overused AI vocabulary (delve, tapestry, etc.) is different from generally "fancy" vocabulary.
+
+### Letter-Like Writing (Alone)
+
+**Myth**: "If it has salutations and valedictions, it's AI."
+
+**Reality**: Letters, emails, and formal messages have conventionally used these elements. New editors often format talk page comments formally, especially:
+- Those accustomed to formal communication
+- School assignment participants
+- Those mistaking talk pages for email
+
+AI-generated talk page messages do have other tells (vertical lists, placeholders, abrupt cutoffs).
+
+### Conjunctions Starting Sentences (Alone)
+
+**Myth**: "AI starts sentences with conjunctions like 'And' or 'But'."
+
+**Reality**: While LLMs overuse connecting words, starting sentences with coordinating conjunctions has precedent and is accepted by many style guides. This alone proves nothing.
+
+### Bizarre Wikitext
+
+**Myth**: "Broken or bizarre wikitext indicates AI."
+
+**Reality**: Bizarrely placed HTML tags like `<span>` are more often caused by:
+- Browser extensions
+- Known bugs with Wikipedia's content translation tool
+- VisualEditor artifacts
+
+Misplaced syntax like `''Catch-22 i''s` (rendering "Catch-22 is") is more indicative of VisualEditor mistakes than AI.
+
+**AI wikitext errors** look different: Markdown syntax, non-existent templates, hallucinated categories.
+
+## Obsolete Indicators (Historical)
+
+These patterns were common in older AI models but are less frequent now:
+
+### Didactic Disclaimers (2022-2024)
+
+Older LLMs (~2023) often added disclaimers like:
+
+```
+"It's important to remember..."
+"It's crucial to note..."
+"It's worth noting that..."
+```
+
+These appeared especially around safety or controversial topics. By 2025, this pattern has declined significantly.
+
+### Section Summaries and Conclusions (Older Models)
+
+When generating longer outputs, older LLMs often:
+- Added sections titled "Conclusion"
+- Ended paragraphs by summarizing and restating core ideas
+
+```
+"In summary, the educational and training trajectory..."
+"In conclusion, the research demonstrates..."
+```
+
+This pattern is less common in newer models.
+
+## Signs of Human Writing
+
+Positive indicators that suggest human authorship:
+
+### Pre-ChatGPT Date
+
+**ChatGPT launched November 30, 2022.** Text added to Wikipedia before this date is very unlikely to be AI-generated.
+
+If an edit was made before November 30, 2022, AI use can be safely ruled out for that revision.
+
+### Ability to Explain Editorial Choices
+
+If an editor can explain why they made specific edits or how errors occurred (e.g., providing the correct link after a broken one was flagged), this suggests human authorship.
+
+### Personal Anecdotes with Verifiable Details
+
+Genuine first-person experiences with specific, verifiable details:
+- "When I was working at [company] in [year]..."
+- "Back in 2019, I..."
+- Specific names, places, events known to the author
+
+### Non-Standard Formatting
+
+Creative or unusual structure that doesn't follow templates:
+- Unconventional paragraph breaks
+- Personal voice and style
+- Idiomatic language and regional expressions
+
+### Evolution of Thought
+
+Signs of human drafting process:
+- Crossed-out sections
+- Revision marks
+- Changed approaches within the same document
+
+### Minor Errors and Quirks
+
+Natural human imperfections:
+- Typos
+- Minor grammar slips
+- Word choice quirks
+- Inconsistent formatting
+
 ## Final Checklist
 
 Before making any assessment:
@@ -330,6 +456,8 @@ Before making any assessment:
 - [ ] Considered author context
 - [ ] Adjusted for domain/genre
 - [ ] Checked for mitigating factors
+- [ ] Checked for signs of human writing
+- [ ] Not relying on ineffective indicators
 - [ ] Stated appropriate confidence level
 - [ ] Acknowledged limitations
 - [ ] Used appropriate language

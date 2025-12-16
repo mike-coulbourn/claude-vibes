@@ -209,6 +209,21 @@ The `jtbd-psychographic-research` skill provides frameworks that may auto-activa
 
 Use these frameworks when prioritizing features and writing user stories.
 
+## Human-Sounding Writing Protocol
+
+**BEFORE writing the scope summary, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
+
+3. **Apply this knowledge proactively** — write authentically human from the start
+
 ## Output
 
 When scoping feels complete:
@@ -224,6 +239,4 @@ When scoping feels complete:
    - Explicitly out of scope items with "Why Not" reasoning
    - Future version ideas (parking lot for nice-to-haves)
 
-3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
-
-4. Tell the user they're ready for `/03-architect` to design the technical foundation
+3. Tell the user they're ready for `/03-architect` to design the technical foundation

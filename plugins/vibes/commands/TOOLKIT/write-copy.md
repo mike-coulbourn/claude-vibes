@@ -5,7 +5,7 @@ argument-hint: What you need written (landing page, email, headline, etc.)
 
 # Write Copy
 
-You are helping a user create compelling copy that sounds authentically human. Your goal is to gather context, research the market, generate high-quality copy, refine it until it passes AI detection, and get user approval.
+You are helping a user create compelling copy that sounds authentically human. Your goal is to gather context, research the market, prepare with AI detection knowledge, generate human-sounding copy from the start, and get user approval.
 
 ## Your Role
 
@@ -13,11 +13,10 @@ You orchestrate a comprehensive copywriting process:
 1. Understand what copy is needed and why
 2. Gather critical context about audience, goals, and voice
 3. Research the market to inform the copy (competitors, audience language, effective patterns)
-4. Launch elite-copywriter to create the initial draft with full context
-5. Launch ai-writing-detector to analyze for AI-sounding patterns
-6. Iterate between the two agents until the copy sounds human
-7. Save the copy to a file for easy access
-8. Get user approval and refine further based on feedback
+4. **Use the `claude-vibes:ai-writing-detection` skill** to prepare with AI detection knowledge
+5. Launch elite-copywriter with AI-aware instructions to write human-sounding copy from the start
+6. Save the copy to a file for easy access
+7. Get user approval and refine further based on feedback
 
 ## Output Location
 
@@ -181,7 +180,22 @@ Focus on insights that will directly inform the copy, not general market analysi
 
 **Store the research findings** — you'll include key insights in the elite-copywriter prompt.
 
-### Step 5: Generate Initial Draft (elite-copywriter)
+### Step 5: Prepare with AI Detection Knowledge (CRITICAL)
+
+**BEFORE launching elite-copywriter, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan the copywriting approach:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain", "It's worth noting"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse, template conclusions
+   - Plan human-sounding instructions to include in the elite-copywriter prompt
+
+3. **Apply this knowledge** in the elite-copywriter prompt below — include explicit instructions about AI patterns to avoid
+
+### Step 6: Generate Initial Draft (elite-copywriter)
 
 **Use the Task tool** to launch the `elite-copywriter` agent with comprehensive context.
 
@@ -248,71 +262,9 @@ Write like a skilled human copywriter would — with personality, specific detai
 Deliver polished, ready-to-use copy with multiple options for headlines where appropriate.
 ```
 
-**Important:** The combination of user context + market research produces copy that's both accurate to the business AND informed by what works in the market.
+**Important:** The combination of user context + market research + AI detection knowledge produces copy that's accurate, market-informed, AND human-sounding from the start.
 
-### Step 6: AI Detection Analysis (ai-writing-detector)
-
-**Use the Task tool** to launch the `ai-writing-detector` agent to analyze the draft.
-
-**Prompt to ai-writing-detector:**
-```
-Analyze this copy for AI-writing indicators. Use the sequential thinking MCP tool to work through your analysis methodically.
-
-Be thorough and specific about:
-
-1. Any passages that sound AI-generated (quote them exactly)
-2. Specific words or phrases that are telltale AI markers
-3. Structural patterns that feel machine-generated
-4. What specific changes would make each flagged section sound more human
-
-Here's the copy to analyze:
-
----
-[PASTE THE FULL COPY FROM STEP 5]
----
-
-Provide specific, actionable feedback. For each issue, quote the exact passage and explain what to change.
-```
-
-### Step 7: Iterate Until Human-Sounding
-
-**If ai-writing-detector flags issues:**
-
-Launch `elite-copywriter` again with revision instructions:
-
-```
-Revise this copy based on the AI-detection feedback below. Keep the same messaging, goals, and structure — but fix the specific passages that were flagged as AI-sounding.
-
-ORIGINAL BRIEF:
-[Include the full original context from Step 2]
-
-MARKET RESEARCH INSIGHTS:
-[Include the key research findings from Step 4, if applicable]
-
-CURRENT DRAFT:
-[The full copy from the previous iteration]
-
-AI-DETECTION FEEDBACK:
-[The specific issues flagged by ai-writing-detector, with quoted passages]
-
-Instructions:
-- Revise ONLY the flagged passages
-- Don't change parts that weren't flagged (they're working)
-- Make the flagged sections sound natural and human
-- Keep the same overall structure and messaging
-- Maintain the specified tone and voice
-- Continue using the audience language from research
-
-Return the complete revised copy.
-```
-
-**Then run ai-writing-detector again on the revised copy.**
-
-**Repeat this loop until:**
-- ai-writing-detector gives approval (no significant flags), OR
-- You've completed 3 revision cycles (then proceed but note any remaining concerns)
-
-### Step 8: Save to File
+### Step 7: Save to File
 
 **Before saving, check existing directories:**
 ```bash
@@ -332,7 +284,6 @@ Use an existing matching directory. Only create new if needed.
 > Audience: [target audience]
 > Goal: [desired action]
 > Tone: [tone]
-> AI-Detection: Passed / [or note any remaining concerns]
 > Research: Yes / No
 
 ---
@@ -368,13 +319,9 @@ Use an existing matching directory. Only create new if needed.
 ## Research Insights Used
 
 [If research was conducted, brief summary of key insights that informed the copy]
-
-## Revision History
-
-[Brief note on AI-detection iterations: "Passed after 2 revisions" or similar]
 ```
 
-### Step 9: Get User Approval (AskUserQuestion)
+### Step 8: Get User Approval (AskUserQuestion)
 
 After saving the file, **use the AskUserQuestion tool** to get the user's feedback:
 
@@ -388,14 +335,14 @@ Options:
 ```
 
 **If the user has feedback:**
-1. Launch `elite-copywriter` again with their specific feedback
-2. Run the revised copy through `ai-writing-detector` again
+1. Use the `claude-vibes:ai-writing-detection` skill + sequential thinking to plan revisions
+2. Launch `elite-copywriter` again with their specific feedback and AI-aware instructions
 3. Update the saved file with the new version
 4. Ask for approval again
 
 **Continue until the user approves.**
 
-### Step 10: Final Delivery
+### Step 9: Final Delivery
 
 Once the user approves:
 - Confirm the final file location
@@ -407,7 +354,7 @@ Once the user approves:
 
 The final version:
 - Was informed by market research on [competitor messaging / audience language / etc.]
-- Passed AI detection
+- Written with AI detection knowledge to sound authentically human
 - Includes 3 headline options, full body copy, and 2 CTA variations
 
 Ready to use!"
@@ -415,13 +362,12 @@ Ready to use!"
 ## Guidelines
 
 - **Research before writing** — Market context produces better copy; use deep-researcher for substantial copy
-- **The goal is human-sounding copy** — The AI detection loop is non-negotiable
-- **Context is everything** — User context + market research = copy that converts
-- **Use Sequential Thinking** to assess research needs and plan clarifying questions
+- **Skill before writing** — Always use the `claude-vibes:ai-writing-detection` skill and sequential thinking BEFORE launching elite-copywriter
+- **Human from the start** — Apply AI detection knowledge proactively; elite-copywriter writes human-sounding copy on the first pass
+- **Context is everything** — User context + market research + AI detection knowledge = copy that converts
+- **Use Sequential Thinking (ultrathink)** to assess research needs, plan clarifying questions, and prepare AI-aware instructions
 - **Adapt to the ask** — A quick headline needs less research than a full sales page
 - **Show don't tell** — When asking about differentiators, push for specifics not generalities
-- **Always use all three agents** — deep-researcher for context, elite-copywriter for writing, ai-writing-detector for analysis
-- **Max 3 AI-detection iterations** — Then proceed with notes about remaining concerns
 - **User approval is the final gate** — Keep iterating until they're happy
 - **Check existing directories** — Never create duplicate folders; use what exists
 - **Always save before asking approval** — User should be able to see the file

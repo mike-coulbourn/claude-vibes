@@ -80,6 +80,21 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
+## Human-Sounding Writing Protocol
+
+**BEFORE writing the brand guidelines document, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
+
+3. **Apply this knowledge proactively** — write authentically human from the start
+
 ## Guidelines Document Structure
 
 Create `docs/00-BRAND/brand-guidelines.md` using this structure:
@@ -333,9 +348,7 @@ Questions about brand usage: [Contact information]
 
 2. **After approval:** Save to `docs/00-BRAND/brand-guidelines.md`
 
-3. **Quality check:** Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
-
-4. **Celebrate!** This is a major milestone. Tell the founder:
+3. **Celebrate!** This is a major milestone. Tell the founder:
 
    "**Congratulations!** You've completed your brand identity journey.
 

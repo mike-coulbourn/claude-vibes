@@ -5,15 +5,15 @@ argument-hint: What you need written (e.g., "email to my boss about taking time 
 
 # Write
 
-You are helping a user write something that sounds authentically human. This could be a personal email, a professional message, a thank you note, or any general writing task. You can also help clean up or refine their existing drafts. Your goal is to gather the right context, write or refine the content, ensure it passes AI detection, and deliver it how the user wants.
+You are helping a user write something that sounds authentically human. This could be a personal email, a professional message, a thank you note, or any general writing task. You can also help clean up or refine their existing drafts. Your goal is to gather the right context, prepare yourself with AI detection knowledge, write human-sounding content from the start, and deliver it how the user wants.
 
 ## Your Role
 
 You handle general writing tasks:
 1. Understand what the user needs — writing from scratch OR refining their draft
 2. Gather context smartly — don't re-ask what they told you, but do ask about tone/voice
-3. Write or refine the content
-4. Refine with ai-writing-detector until it sounds human
+3. **Use the `claude-vibes:ai-writing-detection` skill** to prepare with AI detection knowledge
+4. Write or refine the content with human-sounding patterns from the start
 5. Present the final writing and deliver it how the user prefers
 
 ## Process
@@ -117,10 +117,25 @@ Question 2: "How close are you with Sarah?"
 - Professional relationship — polite and appreciative
 ```
 
-### Step 3: Write or Refine the Draft
+### Step 3: Prepare with AI Detection Knowledge (CRITICAL)
+
+**BEFORE writing any content, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons (three-part lists), em dash overuse, template conclusions
+   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
+
+3. **Apply this knowledge proactively** — write authentically human from the start, don't generate AI-sounding text and fix it afterward
+
+### Step 4: Write or Refine the Draft
 
 **If writing from scratch:**
-Write the draft yourself based on all context gathered.
+Write the draft yourself based on all context gathered, applying the AI detection knowledge from Step 3.
 
 **If refining their draft:**
 - If they want their style preserved: Edit for clarity, flow, and naturalness while keeping their voice
@@ -129,53 +144,12 @@ Write the draft yourself based on all context gathered.
 **Writing guidelines:**
 - Write in a natural, human voice
 - Use contractions where natural ("I'm" not "I am" for casual writing)
-- Vary sentence length and structure
+- Vary sentence length and structure — mix short punchy sentences with longer ones
 - Match formality to their stated relationship (or their existing draft's tone if preserving)
-- Avoid: "delve", "crucial", "comprehensive", "leverage", "I hope this email finds you well" and other AI clichés
+- Include natural imperfections — humans don't write perfectly parallel structures
+- Avoid the AI vocabulary and phrases identified in Step 3
 
-### Step 4: AI Detection Analysis (ai-writing-detector)
-
-**Use the Task tool** to launch the `ai-writing-detector` agent.
-
-**Prompt:**
-```
-Analyze this writing for AI-writing indicators. Use the sequential thinking MCP tool to work through your analysis methodically.
-
-Be thorough and specific about:
-
-1. Any passages that sound AI-generated (quote them exactly)
-2. Specific words or phrases that are telltale AI markers
-3. Structural patterns that feel machine-generated
-4. What specific changes would make each flagged section sound more human and natural
-
-Here's the writing to analyze:
-
----
-[THE DRAFT FROM STEP 3]
----
-
-This is [TYPE OF WRITING] to [RECIPIENT]. The tone should be [TONE]. [If preserving user's style: "The goal is to preserve the user's original voice while ensuring it sounds natural."]
-
-Provide specific, actionable feedback. For each issue, quote the exact passage and explain what to change to make it sound more authentically human.
-```
-
-### Step 5: Iterate Until Human-Sounding
-
-**If ai-writing-detector flags issues:**
-
-Revise the draft based on the specific feedback:
-- Fix only the flagged passages
-- Keep parts that weren't flagged
-- Maintain the same tone and message
-- If preserving user's style, keep their voice intact while fixing issues
-
-**Run ai-writing-detector again on the revised version.**
-
-**Repeat until:**
-- ai-writing-detector approves (no significant flags), OR
-- You've completed 3 revision cycles (then proceed with any remaining notes)
-
-### Step 6: Present the Final Writing
+### Step 5: Present the Final Writing
 
 **Display the final writing clearly to the user:**
 
@@ -191,7 +165,7 @@ Here's your [email/message/note]:
 
 Make sure the writing is easy to read and clearly separated from your other text.
 
-### Step 7: Ask Delivery Preference (AskUserQuestion)
+### Step 6: Ask Delivery Preference (AskUserQuestion)
 
 **Use the AskUserQuestion tool** to find out how they want to receive it:
 
@@ -204,7 +178,7 @@ Options:
 - Other
 ```
 
-### Step 8: Deliver Based on Preference
+### Step 7: Deliver Based on Preference
 
 **If "Copy to clipboard":**
 
@@ -256,7 +230,8 @@ Acknowledge and offer any other help: "Got it! Let me know if you need anything 
 - **Don't re-ask the obvious** — If they told you, you know it
 - **Do ask about tone/relationship** — These vary and matter; don't assume
 - **Context is king** — Better to ask one clarifying question than guess wrong
-- **AI detection is non-negotiable** — Every piece goes through the detection loop
+- **Skill before writing** — Always use the `claude-vibes:ai-writing-detection` skill and sequential thinking BEFORE you write
+- **Human from the start** — Apply AI detection knowledge proactively; don't generate AI-sounding text and fix it
 - **Keep it lightweight** — This should feel quick and helpful, not burdensome
 - **Clipboard is convenient** — Make it easy to copy and paste
 

@@ -83,12 +83,28 @@ Note their brand name status — this will be addressed in step 04.
 - If something feels important, dig deeper
 - Summarize their answers back to confirm understanding
 
+## Human-Sounding Writing Protocol
+
+**BEFORE writing the founder brief, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse, template conclusions
+   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
+
+3. **Apply this knowledge proactively** — write authentically human from the start, capturing the founder's voice
+
 ## Output
 
 When discovery feels complete:
 
 1. Create the `docs/00-BRAND/00-DISCOVERY/` directory if it doesn't exist
-2. Save to `docs/00-BRAND/00-DISCOVERY/01-founder-brief.md` with:
+2. Apply the Human-Sounding Writing Protocol above
+3. Save to `docs/00-BRAND/00-DISCOVERY/01-founder-brief.md` with:
 
 ```markdown
 # Founder Brief
@@ -121,7 +137,5 @@ When discovery feels complete:
 ## Key Insights
 [Notable observations from the conversation — emotional drivers, underlying motivations, unique perspectives]
 ```
-
-3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
 
 4. **Next step:** "Run `/00-BRAND:00-discover/02-research-audience` to research your target audience."

@@ -12,8 +12,11 @@ These words appear 50-700x more frequently in AI-generated text than human writi
 | "complex and multifaceted" | 700x | Almost exclusively AI |
 | "intricate interplay" | 100x | Strong AI signal |
 | "played a crucial role" | 70x | Very common AI phrase |
-| "delve" / "delving" | 50x+ | Most discussed AI tell |
+| "delve" / "delving" | 50x+ | Most discussed AI tell (declined in 2025 ChatGPT) |
 | "tapestry" (metaphorical) | 50x+ | "Rich tapestry of..." |
+| "stands/serves as" | 50x+ | "Stands as a testament to..." |
+| "marking a pivotal moment" | 50x+ | Historical significance puffery |
+| "underscores/highlights its importance" | 50x+ | Importance attribution |
 
 ### Strong Signal Words (10-50x more common)
 
@@ -37,6 +40,11 @@ These words appear 50-700x more frequently in AI-generated text than human writi
 - captivate, captivating
 - enrich, enriching
 - revolutionize, revolutionizing
+- garner, garnering
+- showcase, showcasing
+- highlight (as verb)
+- boast, boasting (promotional)
+- align with
 
 **Adjectives:**
 - multifaceted
@@ -55,6 +63,23 @@ These words appear 50-700x more frequently in AI-generated text than human writi
 - invaluable
 - unwavering
 - commendable
+- enduring
+- lasting
+- vibrant
+- impactful
+- crucial
+- vital
+- key (as adjective)
+
+**Promotional/Puffery Adjectives:**
+- stunning (natural beauty)
+- breathtaking
+- nestled (in/within)
+- rich (cultural heritage)
+- diverse (tapestry)
+- fascinating
+- remarkable
+- exceptional
 
 **Nouns:**
 - tapestry
@@ -72,6 +97,12 @@ These words appear 50-700x more frequently in AI-generated text than human writi
 - synergy
 - cornerstone
 - testament
+- interplay
+- legacy
+- heritage
+- hub (regional hub, dynamic hub)
+- turning point
+- milestone
 
 **Adverbs:**
 - furthermore
@@ -155,6 +186,59 @@ These phrases almost always indicate AI authorship:
 - "On the one hand...on the other hand..."
 - "Both...and..."
 
+### Importance/Symbolism Phrases
+These phrases attribute significance to mundane facts:
+
+```
+marking a pivotal moment in
+a significant shift toward
+reflects broader [trends/movements]
+symbolizing its ongoing/enduring impact
+key turning point in
+plays a vital/crucial/pivotal role in
+deeply rooted in
+profound heritage
+indelible mark on
+steadfast dedication to
+is a testament to
+serves as a reminder of
+important to social cohesion
+promotes collaboration
+reinforces [positive outcome]
+```
+
+### Vague Attribution Phrases (Weasel Words)
+AI attributes claims to unnamed authorities:
+
+```
+Industry reports [suggest/indicate]
+Observers have cited
+Experts argue
+Some critics argue
+Scholars suggest
+Research indicates
+Many believe
+It is widely recognized
+According to [vague source]
+```
+
+### Promotional/Location Phrases
+Particularly common in geographic or cultural content:
+
+```
+nestled within
+in the heart of
+boasts a [feature]
+continues to captivate
+stunning natural beauty
+breathtaking [scenery/views]
+rich cultural heritage
+vibrant [community/town]
+fascinating glimpse into
+diverse tapestry of
+dynamic hub of
+```
+
 ### Hedging Language Clusters
 
 AI overuses qualifiers. Watch for clusters of:
@@ -227,11 +311,14 @@ This pattern alone is weak but combines with other signals.
 ## Model-Specific Vocabulary
 
 ### ChatGPT/GPT-4 Favorites
-- "delve"
+- "delve" (usage dropped sharply in 2025)
 - "tapestry"
 - "nuanced"
 - "multifaceted"
 - "It's not about X; it's about Y"
+- Curly quotation marks ("..." instead of "...")
+
+**Note on "delve"**: This word was famously overused by ChatGPT until 2025, when its incidence dropped off sharply. It remains a strong signal for pre-2025 ChatGPT content.
 
 ### Claude Favorites
 - Extended analogies

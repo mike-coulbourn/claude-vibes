@@ -65,6 +65,20 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
+## Human-Sounding Writing Protocol
+
+**BEFORE launching the brand-elevator-pitch-writer agent, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+
+3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+
 ## Launch the Agent
 
 **Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-elevator-pitch-writer"` and this prompt:
@@ -226,6 +240,4 @@ After the founder selects their pitches:
    - Hook options
    - Testing framework
 
-3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
-
-4. **Next step:** "Messaging phase complete! Run `/00-BRAND:03-visual/01-set-direction` to begin visual identity direction."
+3. **Next step:** "Messaging phase complete! Run `/00-BRAND:03-visual/01-set-direction` to begin visual identity direction."

@@ -15,7 +15,7 @@ Create effective custom slash commands for Claude Code with proper structure, dy
 
 **Dynamic Features**:
 - Arguments: `$ARGUMENTS` (all) or `$1`, `$2`, `$3` (positional)
-- Bash execution: !\`command\` (requires `allowed-tools: Bash(...)`)
+- Bash execution: !\\\`command\\` (requires `allowed-tools: Bash(...)`)
 - File references: `@path/to/file`
 
 **Frontmatter**: Optional YAML with `description`, `allowed-tools`, `argument-hint`, `model`
@@ -76,7 +76,7 @@ argument-hint: Optional argument guidance
 **Decision tree**:
 1. Start with basic prompt
 2. Add arguments if needed ($ARGUMENTS or $1/$2)
-3. Add bash execution if context needed (!\`command\`)
+3. Add bash execution if context needed (!\\\`command\\`)
 4. Add file references if analyzing files (@path)
 5. Add frontmatter for description and restrictions
 
@@ -185,8 +185,8 @@ allowed-tools: Bash(git:*)
 
 ## Current State
 
-Branch: !\`git branch --show-current\`
-Status: !\`git status --short\`
+Branch: !\\\`git branch --show-current\\`
+Status: !\\\`git status --short\\`
 
 ## Task
 
@@ -265,13 +265,13 @@ Execute commands BEFORE the prompt runs:
 allowed-tools: Bash(git:*)
 ---
 
-Current branch: !\`git branch --show-current\`
-Recent commits: !\`git log --oneline -5\`
+Current branch: !\\\`git branch --show-current\\`
+Recent commits: !\\\`git log --oneline -5\\`
 ```
 
 **Requirements**:
 1. Must include `allowed-tools: Bash(...)`
-2. Use !\`command\` syntax (backticks required)
+2. Use !\\\`command\\` syntax (backticks required)
 3. Output is captured and included in prompt
 
 **Security**: Limit bash access with specific tool patterns:
@@ -384,7 +384,7 @@ disable-model-invocation: false               # Optional, prevent auto-calling
 
 **Solutions**:
 - Add frontmatter: `allowed-tools: Bash(command:*)`
-- Use correct syntax: !\`command\`
+- Use correct syntax: !\\\`command\\`
 - Test command in terminal first
 
 ### Issue: File references not working

@@ -67,6 +67,96 @@ the sampling approach. But what could we do? The deadline was Thursday.
 
 Humans use these too, but AI uses them disproportionately.
 
+### Negative Parallelisms
+
+**What they are**: Constructions involving "not", "but", or "however" that appear balanced and thoughtful.
+
+**Common patterns**:
+- "Not only ... but ..."
+- "It is not just about X, it's about Y"
+- "It's not X; it's Y"
+- "No X, no Y, just Z"
+
+**Examples**:
+```
+"It's not just about the beat riding under the vocals; it's part of the aggression and atmosphere."
+
+"He hailed from the esteemed Duse family. However, Eugenio's life took a path that intertwined both personal ambition and familial complexities."
+```
+
+**Explicit negation of primary properties**:
+```
+"Not a career, not a body of work, not sustained relevance — just an algorithmic moment."
+```
+
+### Rule of Three (Tricolon Overuse)
+
+**What it is**: AI overuses the rhetorical "rule of three" - lists of exactly three items.
+
+**Forms**:
+- "adjective, adjective, adjective"
+- "short phrase, short phrase, and short phrase"
+
+**Examples**:
+```
+"engaging, informative, and thought-provoking"
+"research, collaboration, and problem-solving"
+"keynote sessions, panel discussions, and networking opportunities"
+```
+
+**Why it's a signal**: AI defaults to three items for rhetorical balance. Humans naturally vary between 2, 3, 4+ items.
+
+### Elegant Variation (Synonym Cycling)
+
+**What it is**: AI has repetition-penalty code that discourages reusing words. This causes cycling through synonyms when referring to the same entity.
+
+**Example - Character reference variation**:
+```
+Text introduces: "the protagonist"
+Later refers to: "the key player"
+Then: "the eponymous character"
+Then: "our central figure"
+```
+
+All referring to the same person, but never repeating the same term.
+
+**Example - Concept variation**:
+```
+"Soviet artistic constraints"
+"Non-conformist artists"
+"Their creativity"
+"artistic aspirations"
+"artistic norms"
+"artistic expression"
+```
+
+**Detection**: Note when entities are introduced, then track how they're referenced. Excessive synonym variation = AI signal.
+
+**Caveat**: If a user adds multiple pieces of AI-generated content in separate edits, this pattern may not appear (each generation starts fresh).
+
+### False Ranges
+
+**What they are**: "From X to Y" constructions where X and Y don't form a coherent scale or range.
+
+**Legitimate ranges**:
+- Quantitative: "from 1990 to 2000", "from 15 to 20 ounces"
+- Qualitative: "from mild to severe", "from head to toe"
+- Merisms: "from soup to nuts" (time-based), "from cradle to grave"
+
+**False ranges (AI pattern)**:
+- Endpoints don't share a scale
+- No meaningful middle ground exists
+- Figurative usage that is actually meaningless
+
+**Example**:
+```
+"Our journey through the universe has taken us from the singularity of the Big Bang to the grand cosmic web, from the birth and death of stars that forge the elements of life, to the enigmatic dance of dark matter and dark energy..."
+```
+
+The "from...to" construction sounds impressive but the endpoints aren't actually opposite ends of a scale.
+
+**Detection**: Ask "What would be the middle of this range?" If answering requires switching scales, it's a false range.
+
 ### Em Dash Overuse
 
 **Pattern**: AI uses em dashes more frequently than typical human writing.

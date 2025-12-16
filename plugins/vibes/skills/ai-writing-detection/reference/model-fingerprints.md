@@ -59,6 +59,38 @@ Each AI model has distinctive linguistic patterns - "fingerprints" that persist 
 - Section headers even for short responses
 - Bold key terms
 - Markdown formatting in text responses
+- Curly quotation marks ("..." and '...')
+
+### Technical Artifacts (Definitive)
+
+ChatGPT may leave unique technical artifacts in output:
+
+**Reference Markers**:
+- `citeturn0search0`, `citeturn0search1`, etc.
+- `turn0image0`, `turn0image1`, etc.
+- `citeturn0news0`, `citeturn1file0`
+
+**Reference Bugs**:
+- `:contentReference[oaicite:0]{index=0}`
+- `[oai_citation:0‡website.com](url)`
+
+**Attribution JSON**:
+- `({"attribution":{"attributableIndex":"X-Y"}})`
+
+**URL Tracking**:
+- `utm_source=chatgpt.com` (pre-August 2025)
+- `utm_source=openai` (current)
+
+**Detection searches**:
+```
+insource:/turn0(search|image|news|file)[0-9]+/
+insource:"contentReference"
+insource:"oaicite"
+insource:"utm_source=chatgpt.com"
+insource:"utm_source=openai"
+```
+
+These artifacts are **definitive proof** of ChatGPT involvement.
 
 ## Claude (Anthropic) Patterns
 
@@ -107,6 +139,15 @@ Claude tends to:
 - Provide more balanced perspectives
 - Acknowledge limitations explicitly
 
+### Technical Artifacts
+
+Claude typically does NOT produce:
+- Curly quotation marks (uses straight quotes)
+- Reference markers like turn0search
+- utm_source tracking parameters
+
+This makes Claude-generated text harder to detect via technical artifacts.
+
 ## Gemini (Google) Patterns
 
 ### Vocabulary Fingerprint
@@ -138,6 +179,46 @@ Gemini tends to:
 - Use more conversational language
 - Be less rigidly structured
 - Show more tonal variation
+
+### Technical Artifacts
+
+Gemini typically does NOT produce:
+- Curly quotation marks (uses straight quotes)
+- Reference markers like ChatGPT's turn0search
+- utm_source tracking parameters
+
+## DeepSeek Patterns
+
+### Technical Artifacts
+
+- Uses curly quotation marks ("..." and '...') like ChatGPT
+- May have distinct vocabulary preferences
+- Generally similar patterns to ChatGPT
+
+## Grok (X/Twitter) Patterns
+
+### Technical Artifacts
+
+Grok may include XML-styled tags:
+
+```
+<grok_card data-id="e8ff4f" data-type="citation_card">
+```
+
+These tags are definitive Grok identifiers.
+
+## Perplexity Patterns
+
+### Technical Artifacts
+
+Perplexity may include source tags:
+
+```
+[attached_file:1]
+[web:1]
+```
+
+These appear at the end of sentences as source indicators.
 
 ## Open Source Models
 

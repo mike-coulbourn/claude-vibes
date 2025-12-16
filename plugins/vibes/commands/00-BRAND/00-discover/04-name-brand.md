@@ -48,6 +48,20 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
+## Human-Sounding Writing Protocol
+
+**BEFORE launching the brand-naming-specialist agent OR writing documentation, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+
+3. **Include AI-aware instructions** in any agent prompt so output is human-sounding from the start
+
 ## For Founders WITH an Existing Name
 
 Use whois MCP (`mcp__plugin_claude-vibes_whois__whois_domain`) to verify their domain:
@@ -219,6 +233,4 @@ After the founder confirms their selection:
 1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
 2. Save to `docs/00-BRAND/00-DISCOVERY/04-brand-name.md` using the Final Selection Documentation Template from the skill
 
-3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
-
-4. **Next step:** "Discovery phase complete! Run `/00-BRAND:01-strategy/01-define-purpose` to begin building your brand strategy."
+3. **Next step:** "Discovery phase complete! Run `/00-BRAND:01-strategy/01-define-purpose` to begin building your brand strategy."

@@ -43,6 +43,20 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
+## Human-Sounding Writing Protocol
+
+**BEFORE launching the brand-competitive-auditor agent, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+
+3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+
 ## Launch the Agent
 
 **Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-competitive-auditor"` and this prompt:
@@ -153,6 +167,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
 2. Save the competitive audit to `docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md`
 
-3. Use Task tool to launch `claude-vibes:TOOLKIT:ai-writing-detector` agent to review the document for AI patterns and refine if needed.
-
-4. **Next step:** "Run `/00-BRAND:00-discover/04-name-brand` to explore and finalize your brand name."
+3. **Next step:** "Run `/00-BRAND:00-discover/04-name-brand` to explore and finalize your brand name."

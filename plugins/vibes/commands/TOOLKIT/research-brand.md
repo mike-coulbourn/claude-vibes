@@ -24,14 +24,19 @@ Think carefully about:
 
 All research is done by the **brand-researcher agent**. When research output needs refinement, use the **elite-copywriter agent**.
 
-## The Writing Protocol
+## Human-Sounding Writing Protocol
 
-**Before saving any content to file, it must pass ai-writing-detector review.**
+**BEFORE launching any agent that produces content, you MUST:**
 
-1. Agent produces content (research report)
-2. Launch **ai-writing-detector agent** to review
-3. If issues detected → Launch **elite-copywriter agent** to refine → Re-check until approved
-4. Only save when ai-writing-detector approves
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use Sequential Thinking MCP (ultrathink)** to prepare AI-aware instructions:
+   - Vocabulary patterns to avoid (delve, tapestry, multifaceted, leverage, etc.)
+   - Phrases to avoid (It's important to note, At its core, etc.)
+   - Structural patterns to avoid (uniform sentence lengths, excessive tricolons)
+
+3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
 
 ## The Process
 
@@ -99,13 +104,7 @@ Present the research in a creator-friendly format:
 
 ### Step 5: Review & Save
 
-**Follow The Writing Protocol before saving:**
-
-1. Launch **ai-writing-detector agent** to review the complete research report
-
-2. If issues detected → Launch **elite-copywriter agent** to refine the flagged sections → Re-check until approved
-
-3. **Only save when ai-writing-detector approves**
+The brand-researcher agent, having been launched with AI-aware instructions, produces human-sounding content from the start.
 
 Save the research to: `research/[brand-name]-research.md`
 

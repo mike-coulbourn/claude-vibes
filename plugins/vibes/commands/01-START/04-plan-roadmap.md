@@ -173,6 +173,21 @@ The `jtbd-psychographic-research` skill provides frameworks that may auto-activa
 
 Use these frameworks when deciding what to build first.
 
+## Human-Sounding Writing Protocol
+
+**BEFORE writing the implementation plan, you MUST:**
+
+1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
+   - This loads expert-level knowledge of AI writing patterns to avoid
+
+2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
+   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
+   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
+
+3. **Apply this knowledge proactively** — write authentically human from the start
+
 ## Output
 
 When planning feels complete:
@@ -187,20 +202,6 @@ When planning feels complete:
    - Key milestones and how to know they're achieved
    - Risks and unknowns to watch for
    - Recommended first steps
-
-3. **Launch ai-writing-detector in background** while continuing to Taskmaster setup:
-
-```
-Task tool:
-  subagent_type: "claude-vibes:TOOLKIT:ai-writing-detector"
-  run_in_background: true
-  prompt: "Review docs/01-START/04-plan-roadmap.md for AI writing patterns. Focus on:
-  - Overly formal or stiff language
-  - Generic phrases that could apply to any project
-  - Lack of specific, concrete details
-
-  Suggest refinements that make the document sound more natural and specific to this project."
-```
 
 ### Step 2: Ask About Taskmaster Setup
 
@@ -403,16 +404,7 @@ Options:
 - I have questions before starting
 ```
 
-### Step 6: Retrieve Background Results and Congratulate
-
-**Retrieve ai-writing-detector results if available:**
-```
-TaskOutput:
-  task_id: [ai-writing-detector agent ID]
-  block: false
-```
-
-If the agent found issues, mention them briefly: "The document review suggested some refinements to make the language more natural. I can apply those now or you can review docs/01-START/04-plan-roadmap.md later."
+### Step 6: Congratulate
 
 **With Taskmaster:**
 
