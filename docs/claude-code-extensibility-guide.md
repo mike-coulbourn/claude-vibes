@@ -108,9 +108,9 @@ description: Create a git commit with context
 ---
 
 ## Context
-- Current changes: !`git diff HEAD`
-- Current branch: !`git branch --show-current`
-- Recent commits: !`git log --oneline -5`
+- Current changes: [execute: git diff HEAD]
+- Current branch: [execute: git branch --show-current]
+- Recent commits: [execute: git log --oneline -5]
 
 ## Standards
 Review @CLAUDE.md for commit message format.
@@ -127,7 +127,7 @@ Create a commit with message: $ARGUMENTS
 |---------|--------|---------|
 | Arguments (free-form) | `$ARGUMENTS` | Everything after command name |
 | Arguments (positional) | `$1`, `$2`, `$3` | Space-separated arguments |
-| Bash execution | `!`command`` | Run shell command, inject output |
+| Bash execution | `[execute: command]` | Run shell command, inject output |
 | File references | `@path/to/file` | Include file contents |
 | Tool restrictions | `allowed-tools:` frontmatter | Limit available tools |
 
@@ -500,8 +500,8 @@ allowed-tools: Read, Write, Edit, Bash, Task, Glob, Grep
 ---
 
 ## Context
-Project structure: !`find src -type f -name "*.ts" | head -20`
-Current branch: !`git branch --show-current`
+Project structure: [execute: find src -type f -name "*.ts" | head -20]
+Current branch: [execute: git branch --show-current]
 Coding standards: @CLAUDE.md
 
 ## Your Task
@@ -528,8 +528,8 @@ And here's what happens behind the scenes:
 #### 1. COMMAND Expands
 
 The `/feature` command expands into a full prompt with:
-- Project structure (via `!`find...``)
-- Current branch (via `!`git branch``)
+- Project structure (via `[execute: find...]`)
+- Current branch (via `[execute: git branch]`)
 - Coding standards (via `@CLAUDE.md`)
 - Feature description ("add user profile photo upload")
 
