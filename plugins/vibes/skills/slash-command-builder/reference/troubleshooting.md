@@ -157,14 +157,14 @@ allowed-tools: Bash(git:*)
 
 **Check command file**:
 ```markdown
-❌ !git status (missing backticks)
-❌ `git status` (missing !)
-❌ !\\\`git status (unclosed backtick)
+❌ !git status (old deprecated syntax)
+❌ `git status` (missing execute wrapper)
+❌ [execute git status] (missing colon)
 
-✅ !\\\`git status\\` (correct)
+✅ [execute: git status] (correct)
 ```
 
-**Fix**: Use exact syntax: !\\\`command\\`
+**Fix**: Use exact syntax: `[execute: command]`
 
 #### 3. Command Fails When Run
 
@@ -187,7 +187,7 @@ allowed-tools: Bash(git status:*)
 
 But trying to run:
 ```markdown
-!\\\`git log\\`  # Won't work, not in allowed-tools
+[execute: git log]  # Won't work, not in allowed-tools
 ```
 
 **Fix**: Broaden tool restriction:
@@ -199,8 +199,8 @@ allowed-tools: Bash(git:*)
 
 **Commands that won't work**:
 ```markdown
-❌ !\\\`git rebase -i\\` (interactive)
-❌ !\\\`npm install\\` (prompts sometimes)
+❌ [execute: git rebase -i] (interactive)
+❌ [execute: npm install] (prompts sometimes)
 ```
 
 **Fix**: Use non-interactive commands only.
@@ -405,14 +405,14 @@ Command takes a long time to run.
 
 **Check**:
 ```markdown
-!\\\`npm install\\`  # Takes minutes
-!\\\`git log --all\\`  # Huge output
+[execute: npm install]  # Takes minutes
+[execute: git log --all]  # Huge output
 ```
 
 **Fix**: Use faster commands or limit output:
 ```markdown
-!\\\`git log --oneline -10\\`  # Limited
-!\\\`npm list --depth=0\\`     # Shallow
+[execute: git log --oneline -10]  # Limited
+[execute: npm list --depth=0]     # Shallow
 ```
 
 #### 2. Too Many File References
@@ -434,8 +434,8 @@ Command takes a long time to run.
 
 **Fix**: Limit output size:
 ```markdown
-!\\\`command | head -50\\`
-!\\\`command --limit 20\\`
+[execute: command | head -50]
+[execute: command --limit 20]
 ```
 
 ---
@@ -516,7 +516,7 @@ If this works, add features one at a time.
 You said: $ARGUMENTS
 
 # Test 2: Bash
-Branch: !\\\`git branch --show-current\\`
+Branch: [execute: git branch --show-current]
 
 # Test 3: Files
 File: @README.md
@@ -528,7 +528,7 @@ Identify which feature fails.
 
 - YAML delimiters: `---` at start and end?
 - Argument syntax: `$ARGUMENTS` or `$1` (not `$ARG`)?
-- Bash syntax: !\\\`command\\` (with backticks)?
+- Bash syntax: `[execute: command]`?
 - File syntax: `@path` (with @ prefix)?
 
 ### Step 4: Verify Paths and Permissions

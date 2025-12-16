@@ -14,7 +14,7 @@ Analyze this code for issues.
 Analyze @$1 for issues.
 
 # Phase 3: Add bash context
-Branch: !\\\`git branch --show-current\\`
+Branch: [execute: git branch --show-current]
 Analyze @$1 for issues.
 
 # Phase 4: Add structure and constraints
@@ -153,7 +153,7 @@ allowed-tools: Bash  # Too permissive
 git branch --show-current
 
 # Then add to command
-!\\\`git branch --show-current\\`
+[execute: git branch --show-current]
 ```
 
 **Why**: Verify output format, ensure it works, check speed.
@@ -162,18 +162,18 @@ git branch --show-current
 
 ```markdown
 ✅ GOOD:
-!\\\`git status --short\\`        # Fast
-!\\\`git log --oneline -10\\`     # Limited output
+[execute: git status --short]        # Fast
+[execute: git log --oneline -10]     # Limited output
 
 ❌ BAD:
-!\\\`npm install\\`                # Takes minutes
-!\\\`git log --all\\`              # Huge output
+[execute: npm install]                # Takes minutes
+[execute: git log --all]              # Huge output
 ```
 
 ### Capture stderr When Needed
 
 ```markdown
-Test results: !\\\`npm test 2>&1\\`
+Test results: [execute: npm test 2>&1]
 ```
 
 **Why**: Errors/failures are useful context.
@@ -183,13 +183,13 @@ Test results: !\\\`npm test 2>&1\\`
 ```markdown
 ✅ GOOD:
 ## Git Status
-!\\\`git status\\`
+[execute: git status]
 
 ## Recent Commits
-!\\\`git log --oneline -5\\`
+[execute: git log --oneline -5]
 
 ❌ BAD:
-!\\\`git status\\` !\\\`git log --oneline -5\\`
+[execute: git status] [execute: git log --oneline -5]
 (runs together, hard to read)
 ```
 
@@ -269,7 +269,7 @@ Do this thing considering that other thing...
 ```markdown
 ✅ GOOD:
 ## Current State
-!\\\`git status\\`
+[execute: git status]
 
 ## Task
 Based on status above, suggest next action.
@@ -279,7 +279,7 @@ Based on status above, suggest next action.
 Suggest next action.
 
 ## Current State
-!\\\`git status\\`
+[execute: git status]
 (context comes after task)
 ```
 
@@ -325,21 +325,21 @@ allowed-tools: Bash(git:*)
 
 ```markdown
 ❌ DANGEROUS:
-!\\\`rm -rf node_modules\\`
-!\\\`git reset --hard\\`
-!\\\`npm run deploy\\`
+[execute: rm -rf node_modules]
+[execute: git reset --hard]
+[execute: npm run deploy]
 
 ✅ SAFE:
-!\\\`ls node_modules\\`
-!\\\`git status\\`
-!\\\`npm test\\`
+[execute: ls node_modules]
+[execute: git status]
+[execute: npm test]
 ```
 
 ### Validate Before Executing
 
 ```markdown
 Check file exists:
-!\\\`[ -f "$1" ] && echo "exists" || echo "missing"\\`
+[execute: [ -f "$1" ] && echo "exists" || echo "missing"]
 
 If exists, then process...
 ```
@@ -455,22 +455,22 @@ Review @$1 for security issues.
 
 ```markdown
 ✅ FAST:
-!\\\`git status\\`              # <1 second
-!\\\`grep "pattern" file.js\\`  # <1 second
+[execute: git status]              # <1 second
+[execute: grep "pattern" file.js]  # <1 second
 
 ❌ SLOW:
-!\\\`npm install\\`             # Minutes
-!\\\`npm run build\\`           # Could be slow
+[execute: npm install]             # Minutes
+[execute: npm run build]           # Could be slow
 ```
 
 ### Limit Output Size
 
 ```markdown
 ✅ GOOD:
-!\\\`git log --oneline -10\\`   # Limited
+[execute: git log --oneline -10]   # Limited
 
 ❌ BAD:
-!\\\`git log --all\\`           # Could be huge
+[execute: git log --all]           # Could be huge
 ```
 
 ### Progressive Detail

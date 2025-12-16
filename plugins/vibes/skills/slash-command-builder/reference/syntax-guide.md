@@ -83,7 +83,7 @@ Execute bash commands BEFORE the prompt runs.
 ### Syntax
 
 ```markdown
-!\\\`command here\\`
+[execute: command here]
 ```
 
 ### Requirements
@@ -93,9 +93,9 @@ Execute bash commands BEFORE the prompt runs.
 allowed-tools: Bash(git:*)
 ```
 
-2. Must use backticks with `!` prefix
+2. Must use `[execute: command]` syntax
 
-3. Command output replaces the !\\\`command\\` in the prompt
+3. Command output replaces the `[execute: command]` in the prompt
 
 ### Examples
 
@@ -104,8 +104,8 @@ allowed-tools: Bash(git:*)
 allowed-tools: Bash(git:*)
 ---
 
-Branch: !\\\`git branch --show-current\\`
-Status: !\\\`git status --short\\`
+Branch: [execute: git branch --show-current]
+Status: [execute: git status --short]
 ```
 
 Becomes:
@@ -139,7 +139,7 @@ allowed-tools: Bash
 Include stderr in output:
 
 ```markdown
-!\\\`command 2>&1\\`
+[execute: command 2>&1]
 ```
 
 ## File References
@@ -209,7 +209,7 @@ argument-hint: [file-path]
 @$1
 
 ## Recent Changes
-!\\\`git log --oneline -5 -- $1\\`
+[execute: git log --oneline -5 -- $1]
 
 ## Analysis
 Analyze @$1 considering its history above.
@@ -258,7 +258,7 @@ No escaping needed in markdown content:
 
 ```markdown
 Use $, @, and ! symbols freely here.
-Only $ARGUMENTS, $1, !\\\`cmd\\`, @file have special meaning.
+Only $ARGUMENTS, $1, [execute: cmd], @file have special meaning.
 ```
 
 ### In YAML Frontmatter
@@ -368,8 +368,8 @@ model: claude-3-5-haiku-20241022
 **Focus**: $2
 
 **Git context**:
-Branch: !\\\`git branch --show-current\\`
-Recent changes: !\\\`git log --oneline -5 -- $1\\`
+Branch: [execute: git branch --show-current]
+Recent changes: [execute: git log --oneline -5 -- $1]
 
 ## Source Code
 

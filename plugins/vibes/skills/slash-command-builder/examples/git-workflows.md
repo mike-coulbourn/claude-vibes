@@ -14,21 +14,21 @@ allowed-tools: Bash(git:*)
 
 ## Current Git State
 
-**Branch**: !\\\`git branch --show-current\\`
+**Branch**: [execute: git branch --show-current]
 
 **Status**:
-!\\\`git status --short\\`
+[execute: git status --short]
 
 **Recent Commits** (for style reference):
-!\\\`git log --oneline -10\\`
+[execute: git log --oneline -10]
 
 ## Changes to Commit
 
 ### Staged Changes:
-!\\\`git diff --staged\\`
+[execute: git diff --staged]
 
 ### Unstaged Changes (FYI):
-!\\\`git diff\\`
+[execute: git diff]
 
 ## Project Conventions
 
@@ -92,28 +92,28 @@ argument-hint: [base-branch]
 
 ## Branch Information
 
-**Current Branch**: !\\\`git branch --show-current\\`
+**Current Branch**: [execute: git branch --show-current]
 **Base Branch**: $1
 
 ## Commits in This PR
 
-!\\\`git log $1..HEAD --format="%h %s" --reverse\\`
+[execute: git log $1..HEAD --format="%h %s" --reverse]
 
 ## Files Changed
 
-!\\\`git diff --name-status $1...HEAD\\`
+[execute: git diff --name-status $1...HEAD]
 
 ## Diff Statistics
 
-!\\\`git diff --stat $1...HEAD\\`
+[execute: git diff --stat $1...HEAD]
 
 ## Full Diff
 
-!\\\`git diff $1...HEAD\\`
+[execute: git diff $1...HEAD]
 
 ## Related Open Issues
 
-!\\\`gh issue list --search "is:open" --limit 10 2>/dev/null || echo "gh CLI not available"\\`
+[execute: gh issue list --search "is:open" --limit 10 2>/dev/null || echo "gh CLI not available"]
 
 ## Project PR Template
 
@@ -187,36 +187,36 @@ allowed-tools: Bash(git:*)
 
 ## Current Branch
 
-**Name**: !\\\`git branch --show-current\\`
-**Upstream**: !\\\`git rev-parse --abbrev-ref @{upstream} 2>/dev/null || echo "No upstream"\\`
+**Name**: [execute: git branch --show-current]
+**Upstream**: [execute: git rev-parse --abbrev-ref @{upstream} 2>/dev/null || echo "No upstream"]
 
 ## Sync Status
 
-**Behind origin**: !\\\`git rev-list --count HEAD..@{upstream} 2>/dev/null || echo "0"\\`
-**Ahead of origin**: !\\\`git rev-list --count @{upstream}..HEAD 2>/dev/null || echo "0"\\`
+**Behind origin**: [execute: git rev-list --count HEAD..@{upstream} 2>/dev/null || echo "0"]
+**Ahead of origin**: [execute: git rev-list --count @{upstream}..HEAD 2>/dev/null || echo "0"]
 
 ## Recent Activity
 
 **Your recent commits**:
-!\\\`git log --oneline -10 --author="$(git config user.name)"\\`
+[execute: git log --oneline -10 --author="$(git config user.name)"]
 
 **Others' recent commits on origin**:
-!\\\`git log --oneline -10 origin/$(git branch --show-current) 2>/dev/null || echo "No origin branch"\\`
+[execute: git log --oneline -10 origin/$(git branch --show-current) 2>/dev/null || echo "No origin branch"]
 
 ## Local Changes
 
 **Modified files**:
-!\\\`git status --short\\`
+[execute: git status --short]
 
 ## Branch Age
 
-**Created**: !\\\`git log --reverse --format="%ar" | head -1\\`
-**Last commit**: !\\\`git log -1 --format="%ar"\\`
+**Created**: [execute: git log --reverse --format="%ar" | head -1]
+**Last commit**: [execute: git log -1 --format="%ar"]
 
 ## Related Branches
 
 **Other branches with similar names**:
-!\\\`git branch --list "*$(git branch --show-current | cut -d- -f1)*" | head -10\\`
+[execute: git branch --list "*$(git branch --show-current | cut -d- -f1)*" | head -10]
 
 ## Analysis Task
 
@@ -268,24 +268,24 @@ allowed-tools: Bash(git:*), Read, Grep, Glob
 
 ## Conflict Status
 
-**Current operation**: !\\\`git status | head -5\\`
+**Current operation**: [execute: git status | head -5]
 
 **Conflicted files**:
-!\\\`git diff --name-only --diff-filter=U\\`
+[execute: git diff --name-only --diff-filter=U]
 
 ## Conflict Details
 
-!\\\`git diff --check\\`
+[execute: git diff --check]
 
 ## Incoming Changes
 
 **Their commits** (what you're merging in):
-!\\\`git log --oneline HEAD..MERGE_HEAD 2>/dev/null || git log --oneline HEAD..REBASE_HEAD 2>/dev/null || echo "Not in merge/rebase"\\`
+[execute: git log --oneline HEAD..MERGE_HEAD 2>/dev/null || git log --oneline HEAD..REBASE_HEAD 2>/dev/null || echo "Not in merge/rebase"]
 
 ## Your Changes
 
 **Your commits** (what they conflict with):
-!\\\`git log --oneline MERGE_HEAD..HEAD 2>/dev/null || git log --oneline REBASE_HEAD..HEAD 2>/dev/null || echo "Not in merge/rebase"\\`
+[execute: git log --oneline MERGE_HEAD..HEAD 2>/dev/null || git log --oneline REBASE_HEAD..HEAD 2>/dev/null || echo "Not in merge/rebase"]
 
 ## Project Merge Guidelines
 
@@ -353,25 +353,25 @@ argument-hint: [base-branch-or-commit]
 
 ## Rebase Context
 
-**Current branch**: !\\\`git branch --show-current\\`
+**Current branch**: [execute: git branch --show-current]
 **Rebase onto**: $1
 
 ## Commits to Rebase
 
-!\\\`git log $1..HEAD --oneline --reverse\\`
+[execute: git log $1..HEAD --oneline --reverse]
 
 ## Detailed Commit Info
 
-!\\\`git log $1..HEAD --format="%h %s%n  Author: %an <%ae>%n  Date: %ar%n" --reverse\\`
+[execute: git log $1..HEAD --format="%h %s%n  Author: %an <%ae>%n  Date: %ar%n" --reverse]
 
 ## File Changes Per Commit
 
-!\\\`git log $1..HEAD --format="%h %s" --name-status --reverse\\`
+[execute: git log $1..HEAD --format="%h %s" --name-status --reverse]
 
 ## Current Diff
 
 **What will change overall**:
-!\\\`git diff $1...HEAD --stat\\`
+[execute: git diff $1...HEAD --stat]
 
 ## Rebase Planning Task
 
@@ -435,20 +435,20 @@ allowed-tools: Bash(git:*)
 
 ## Stash List
 
-!\\\`git stash list\\`
+[execute: git stash list]
 
 ## Stash Details
 
 ### Latest Stash (stash@{0}):
-!\\\`git stash show -p stash@{0} 2>/dev/null || echo "No stashes"\\`
+[execute: git stash show -p stash@{0} 2>/dev/null || echo "No stashes"]
 
 ### Second Latest (stash@{1}):
-!\\\`git stash show -p stash@{1} 2>/dev/null || echo "Only one stash"\\`
+[execute: git stash show -p stash@{1} 2>/dev/null || echo "Only one stash"]
 
 ## Current Branch
 
-**Branch**: !\\\`git branch --show-current\\`
-**Status**: !\\\`git status --short\\`
+**Branch**: [execute: git branch --show-current]
+**Status**: [execute: git status --short]
 
 ## Analysis Task
 
