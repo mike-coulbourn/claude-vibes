@@ -28,13 +28,21 @@ Never execute `git commit` without explicit user approval.
 - Show the generated commit message before committing
 - Confirm success with clear feedback
 
-## Context Files
+## Context Files (Conditional)
 
-**Read LOGS.json if it exists:**
-Look for `LOGS.json` in the project root or `docs/` directory. Use recent entries to understand:
+**Only check LOGS.json if it has uncommitted changes.**
+
+First, run:
+```bash
+git status --porcelain -- LOGS.json docs/LOGS.json 2>/dev/null
+```
+
+**If output is non-empty** (LOGS.json has uncommitted changes), read it and use recent entries to understand:
 - What feature or fix this work relates to
 - Decisions that inform the commit message
 - Context that makes the commit more meaningful
+
+**If output is empty**, skip reading LOGS.json—any context it contains is from a previous session and isn't relevant to the current changes.
 
 ## Commit Process
 
@@ -66,7 +74,7 @@ Understand:
 - What's the nature of the change? (new feature, bug fix, refactor, config, docs)
 - What's the user-facing impact?
 
-Check LOGS.json for context about recent work.
+Check LOGS.json for context (only if it has uncommitted changes per the check above).
 
 ### 3. Generate Commit Message
 
@@ -145,7 +153,7 @@ EOF
 - Keep commit summaries under 72 characters
 - Use present tense ("add feature" not "added feature")
 - The body explains WHY, the summary explains WHAT
-- Reference LOGS.json context when available
+- Reference LOGS.json context when it has uncommitted changes
 
 ## Edge Cases
 

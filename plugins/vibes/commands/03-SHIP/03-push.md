@@ -17,10 +17,18 @@ You do the heavy lifting. Handle the git operations, deal with any issues that a
 - Handle errors gracefully with clear explanations
 - Report success with useful information (branch, commit count)
 
-## Context Files
+## Context Files (Conditional)
 
-**Read LOGS.json if it exists:**
-Use recent entries to inform the commit message if a commit is needed.
+**Only check LOGS.json if it has uncommitted changes.**
+
+First, run:
+```bash
+git status --porcelain -- LOGS.json docs/LOGS.json 2>/dev/null
+```
+
+**If output is non-empty** (LOGS.json has uncommitted changes), read it to inform the commit message if a commit is needed.
+
+**If output is empty**, skip reading LOGS.json—any context it contains is from a previous session.
 
 ## Push Process
 
@@ -37,7 +45,7 @@ Run `git status` to understand:
 
 Generate a commit message (or use $ARGUMENTS if provided):
 1. Analyze changes with `git diff`
-2. Check LOGS.json for context
+2. Check LOGS.json for context (only if it has uncommitted changes per the check above)
 3. Create descriptive commit message
 4. Execute commit
 

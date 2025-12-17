@@ -1,6 +1,6 @@
 {
   "name": "claude-vibes",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Production-grade vibe coding suite. Structured workflows from discovery to deployment: start, build, ship, fix, refactor.",
   "author": {
     "name": "Claude Vibes"
