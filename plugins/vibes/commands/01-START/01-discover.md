@@ -201,7 +201,7 @@ Use these frameworks when synthesizing insights.
 2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
    - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
    - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
    - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
 
 3. **Apply this knowledge proactively** — write authentically human from the start

@@ -31,7 +31,7 @@ See [reference/vocabulary-patterns.md](reference/vocabulary-patterns.md) for com
 ### Structural Red Flags
 - **Uniform sentence lengths**: 12-18 words consistently (low burstiness)
 - **Tricolon structures**: "research, collaboration, and problem-solving"
-- **Em dash overuse**: AI uses em dashes more than typical human writing
+- **Em dash overuse**: AI uses em dashes in a formulaic way to mimic "punched up" sales writing, especially in parallelisms ("it's not X — it's Y"); swapping punctuation doesn't fix the underlying emphasis pattern
 - **Perfect paragraph uniformity**: All paragraphs same approximate length
 - **Template conclusions**: "In summary...", "In conclusion..."
 - **Negative parallelisms**: "It's not about X; it's about Y"

@@ -159,15 +159,47 @@ The "from...to" construction sounds impressive but the endpoints aren't actually
 
 ### Em Dash Overuse
 
-**Pattern**: AI uses em dashes more frequently than typical human writing.
+**Pattern**: AI uses em dashes more frequently than typical human writing, and uses them in places where humans would more likely use commas, parentheses, colons, or (misused) hyphens.
 
-**AI example**:
+**Why AI does this**: LLMs use em dashes in a formulaic, pat way, often mimicking "punched up" sales-like writing by over-emphasizing clauses or parallelisms. The dashes add a kind of dramatic flair that AI has learned from marketing copy and persuasive writing.
+
+**AI examples**:
 ```
 "The solution—which many experts have praised—offers several advantages."
 "This approach—unlike traditional methods—provides better results."
 ```
 
-**Human tendency**: Em dashes used sparingly or replaced with commas/parentheses.
+**Real-world examples** (from detected AI text):
+```
+"This isn't 'imagining' what policy should be — it's recognizing how community consensus has shaped its application."
+"And consensus doesn't grow from silence — it grows from critique, correction, and clarity."
+"If we disagree on that, then yes — we're speaking different languages."
+```
+
+Note the pattern: em dashes used to create dramatic pauses, set off emphatic parallelisms ("it's not X — it's Y"), and add rhetorical punch. This "punched up" quality is the tell.
+
+**Human tendency**: Em dashes used sparingly; humans typically use commas or parentheses for parenthetical asides, or restructure sentences to avoid mid-sentence insertions entirely.
+
+**Important context**: This signal is most useful when taken in combination with other indicators, not by itself. Em dashes alone don't prove AI authorship—but em dashes PLUS tricolons PLUS uniform sentence length PLUS vocabulary patterns creates a strong signal.
+
+**Why punctuation swapping doesn't help**: Simply replacing em dashes with commas or parentheses doesn't fix the underlying pattern:
+
+```
+Same "punched up" parallelism, different punctuation:
+"This isn't X — it's Y"         (em dashes)
+"This isn't X, it's Y"          (comma)
+"This isn't X; it's Y"          (semicolon)
+```
+
+All three have the same rhetorical structure. The tell isn't the punctuation mark—it's the formulaic emphasis pattern.
+
+**To write naturally**:
+- Vary your sentence structures (don't always use parallelisms)
+- Use em dashes sparingly and only when truly needed for emphasis
+- Restructure sentences to eliminate mid-sentence insertions
+- Don't mimic "punched up" sales writing rhythm
+
+**Detection**: Count em dashes per 100 words as a heuristic, but weight more heavily when combined with other structural patterns (tricolons, parallelisms, uniform sentence lengths).
 
 ### Semicolon Patterns
 

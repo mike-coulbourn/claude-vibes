@@ -192,7 +192,7 @@ Focus on insights that will directly inform the copy, not general market analysi
 2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan the copywriting approach:
    - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
    - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain", "It's worth noting"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse, template conclusions
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead), template conclusions
    - Plan human-sounding instructions to include in the elite-copywriter prompt
 
 3. **Apply this knowledge** in the elite-copywriter prompt below — include explicit instructions about AI patterns to avoid

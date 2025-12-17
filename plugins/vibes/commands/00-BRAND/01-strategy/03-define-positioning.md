@@ -67,7 +67,7 @@ Never save final outputs without user approval.
 2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
    - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
    - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse
+   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
 
 3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
 

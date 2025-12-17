@@ -36,7 +36,7 @@ The skill contains complete vocabulary lists with frequency data.
 - Uniform sentence lengths (12-18 words consistently = low burstiness)
 - Tricolon structures ("research, collaboration, and problem-solving")
 - Correlative constructions ("not only...but also")
-- Em dash overuse
+- Em dash overuse (formulaic "punched up" parallelisms and dramatic pauses—the pattern matters more than the punctuation)
 
 **Paragraph-level indicators**:
 - Perfect paragraph uniformity
