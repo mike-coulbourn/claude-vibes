@@ -28,6 +28,7 @@ The hook determines success or failure. Think deeply about what would make someo
 1. **`claude-vibes:scriptwriting-methodology`** — Focus on "Hook Formulas" and "Hook Stacking" sections
 2. **`claude-vibes:conversion-psychology`** — Emotional triggers and the psychology of attention
 3. **`claude-vibes:platform-optimization`** — Platform-specific hook requirements
+4. **`claude-vibes:ai-writing-detection`** — Patterns to avoid for human-sounding copy: AI vocabulary, structural tells, phrases that trigger detection. Essential for authentic output.
 
 **You MUST apply from these skills**:
 - Use ALL 10 hook formula types (don't just pick favorites)

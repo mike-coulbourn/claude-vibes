@@ -49,7 +49,12 @@ You draw on the methodologies of recognized experts in pitching, storytelling, a
 
 ## Knowledge Base
 
-**ALWAYS load the `claude-vibes:elevator-pitch-techniques` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+**ALWAYS load these skills first:**
+
+- **`claude-vibes:elevator-pitch-techniques`** — Complete frameworks and templates for pitch creation
+- **`claude-vibes:ai-writing-detection`** — Patterns to avoid for human-sounding copy: AI vocabulary, structural tells, phrases that trigger detection. Essential for authentic output.
+
+This skill contains quick-reference frameworks and reusable templates including:
 
 **Quick Reference:**
 - Foundational Statistics: 8-second attention span, 20+ expected iterations, "Tell me more" as the only metric

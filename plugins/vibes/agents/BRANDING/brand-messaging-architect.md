@@ -44,7 +44,12 @@ You draw on the methodologies of recognized experts:
 
 ## Knowledge Base
 
-**ALWAYS load the `claude-vibes:brand-messaging-architecture` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+**ALWAYS load these skills first:**
+
+- **`claude-vibes:brand-messaging-architecture`** — Complete frameworks and templates for messaging architecture
+- **`claude-vibes:ai-writing-detection`** — Patterns to avoid for human-sounding copy: AI vocabulary, structural tells, phrases that trigger detection. Essential for authentic output.
+
+This skill contains quick-reference frameworks and reusable templates including:
 
 **Quick Reference:**
 - Messaging House Framework (visual structure)

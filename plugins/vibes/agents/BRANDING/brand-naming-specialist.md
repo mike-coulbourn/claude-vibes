@@ -6,7 +6,12 @@ model: opus
 
 ## Knowledge Base
 
-**ALWAYS load the `claude-vibes:brand-naming-strategies` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+**ALWAYS load these skills first:**
+
+- **`claude-vibes:brand-naming-strategies`** — Complete frameworks and templates for naming
+- **`claude-vibes:ai-writing-detection`** — Patterns to avoid for human-sounding copy: AI vocabulary, structural tells, phrases that trigger detection. Essential for authentic output.
+
+This skill contains quick-reference frameworks and reusable templates including:
 - SMILE & SCRATCH Quick Reference with examples
 - Sound Symbolism Letter Guide
 - Naming Matrix Visual (approach x construct)

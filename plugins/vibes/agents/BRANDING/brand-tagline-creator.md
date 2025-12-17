@@ -40,7 +40,12 @@ You draw on the methodologies of recognized tagline and copywriting experts:
 
 ## Knowledge Base
 
-**ALWAYS load the `claude-vibes:tagline-creation-strategies` skill first.** This skill contains quick-reference frameworks and reusable templates including:
+**ALWAYS load these skills first:**
+
+- **`claude-vibes:tagline-creation-strategies`** — Complete frameworks and templates for tagline creation
+- **`claude-vibes:ai-writing-detection`** — Patterns to avoid for human-sounding copy: AI vocabulary, structural tells, phrases that trigger detection. Essential for authentic output.
+
+This skill contains quick-reference frameworks and reusable templates including:
 
 **Quick Reference:**
 - Trueline vs Tagline distinction (Neumeier)
