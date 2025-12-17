@@ -11,6 +11,8 @@ Specific area to validate: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the validation and manage the conversation. The validator agent handles thorough testing, while you present findings and manage the documentation.
 
 **CRITICAL: You MUST use the Task tool to launch the validation agents.** Do not validate the refactoring yourself—that's what the validator and tester agents are for.

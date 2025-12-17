@@ -60,6 +60,8 @@ Follow these principles when synthesizing the brand documents:
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 Your job is to:
 1. Review all existing brand documents via the auto-includes above
 2. Extract key information from each

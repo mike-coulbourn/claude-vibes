@@ -11,6 +11,8 @@ Refactoring to apply: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the refactoring and manage the conversation. You handle coordination, verification, and communication.
 
 **CRITICAL: You MUST use the Task tool to launch the refactorer agent for the actual refactoring work.** Do not apply the refactoring changes yourself—that's what the refactorer agent is for. Even if the refactoring seems simple, launch the agent.

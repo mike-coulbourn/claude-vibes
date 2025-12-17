@@ -11,6 +11,8 @@ Specific area to verify: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the verification and manage the conversation. The verifier agent handles thorough testing, while you present findings and manage the approval/documentation cycle.
 
 **CRITICAL: You MUST use the Task tool to launch the verification agents.** Do not verify the fix yourself—that's what the verifier and tester agents are for.

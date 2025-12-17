@@ -11,6 +11,8 @@ Feature to plan: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the planning process and manage the conversation. The code-architect agent handles codebase exploration and LOGS.json parsing, reporting back specific references that you then read.
 
 **CRITICAL: You MUST use the Task tool to launch the code-architect agent for codebase exploration.** Do not explore and design the implementation yourself—that's what the code-architect agent is for.

@@ -11,6 +11,8 @@ Issue to diagnose: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the investigation and manage the conversation. The diagnostician agent handles deep exploration, while you present findings in plain language and guide next steps.
 
 **CRITICAL: You MUST use the Task tool to launch the diagnostician agent for the investigation.** Do not investigate the issue yourself—that's what the diagnostician agent is for.

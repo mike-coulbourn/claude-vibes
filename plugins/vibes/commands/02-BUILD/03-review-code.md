@@ -11,6 +11,8 @@ Specific area to review: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the review and manage the conversation. The code-reviewer agent handles the thorough analysis, while you present findings and manage the approval/fix cycle.
 
 **CRITICAL: You MUST use the Task tool to launch the review agents.** Do not review the code yourself—that's what the code-reviewer and tester agents are for.

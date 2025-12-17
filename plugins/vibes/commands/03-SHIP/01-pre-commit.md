@@ -11,6 +11,8 @@ Specific checks requested: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate parallel checks on uncommitted changes and collect results. Each check runs in its own subagent for efficiency. You translate technical errors into plain language guidance.
 
 **CRITICAL: You MUST use the Task tool to launch subagents for the checks.** Do not run the checks yourself—launch them as parallel subagents for efficiency.

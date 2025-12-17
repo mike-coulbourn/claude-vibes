@@ -24,6 +24,8 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You do the heavy lifting on planning. Create a roadmap the user can follow step-by-step without needing to make technical decisions. Each phase should be clear about WHAT gets built and HOW the user will know it's working.
 
 **CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't validate the plan yourself—delegate to the plan-reviewer while you continue detailing phases with the user.

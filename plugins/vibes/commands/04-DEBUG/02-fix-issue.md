@@ -11,6 +11,8 @@ Fix to implement: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the fix implementation and manage the conversation. The fixer agent handles the actual code changes, while you coordinate and verify the approach makes sense.
 
 **CRITICAL: You MUST use the Task tool to launch the fixer agent for the actual fix.** Do not implement the fix yourself—that's what the fixer agent is for.

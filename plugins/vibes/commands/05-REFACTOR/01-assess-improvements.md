@@ -11,6 +11,8 @@ Area to assess: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the assessment and manage the conversation. The assessor agent handles deep analysis, while you present findings in plain language and guide next steps.
 
 **CRITICAL: You MUST use the Task tool to launch the assessor agent for the analysis.** Do not assess the code yourself—that's what the assessor agent is for.

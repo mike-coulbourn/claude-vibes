@@ -11,6 +11,8 @@ Plan file to implement: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 You orchestrate the implementation and manage the conversation. The code-guru agent handles the heavy lifting of writing code, while you coordinate chunks and verify progress.
 
 **CRITICAL: You MUST use the Task tool to launch the code-guru agent for writing code.** Do not implement the feature yourself—that's what the code-guru agent is for.

@@ -25,6 +25,8 @@ Optional input: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 First, check the founder brief to determine if they already have a brand name:
 
 **If they HAVE a name they're committed to:**

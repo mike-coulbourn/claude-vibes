@@ -48,6 +48,8 @@ Optional typography preferences: $ARGUMENTS
 
 ## Your Role
 
+**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+
 **CRITICAL: You MUST use the Task tool to launch the brand-typography-curator agent.** Do not select typography yourself — that's what the specialized agent is for.
 
 Your job is to:
