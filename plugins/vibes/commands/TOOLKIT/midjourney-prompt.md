@@ -55,7 +55,14 @@ Think through using ultrathink: "What questions would help me craft a prompt tha
 
 ---
 
-**ROUND 1: Purpose & Core Intent** (ALWAYS ask if not clear)
+**ROUND 1: Purpose, Platform & Core Intent** (ALWAYS ask if not clear)
+
+```
+Question: "Which Midjourney interface will you use?"
+Options:
+- Web app (Recommended) — Easier interface, drag-and-drop for style references, no /imagine prefix needed
+- Discord — Classic interface, requires /imagine prefix and URL copying for references
+```
 
 ```
 Question: "What will this image be used for?"
@@ -261,12 +268,41 @@ Using ultrathink (extended thinking), craft the prompt by applying:
 - For style references: Include `--sref [IMAGE_URL]` placeholder with usage instructions
 - For character references: Include `--cref [IMAGE_URL]` placeholder with usage instructions
 - Clearly instruct user where to add their images in the final prompt
-- Note: Upload image to Midjourney Discord first, then copy the image URL
+- **Web app**: Click the image icon, drag-and-drop reference, select "Style Reference" or "Character Reference"
+- **Discord**: Upload image first, right-click to copy URL, add to prompt with --sref or --cref
 
 ### Step 4: Present the Prompt
 
-**Display the prompt clearly with context:**
+**Display the prompt clearly with context, formatted for user's chosen platform:**
 
+**For Web App users:**
+```
+Here's your Midjourney V7 prompt:
+
+---
+
+[THE CRAFTED PROMPT] --ar [ratio] [other parameters]
+
+---
+
+**Why this works:**
+- [Explain key choices: lighting, composition, style elements]
+- [Explain parameter choices]
+- [Note V7-specific benefits for this prompt]
+
+**How to use (Web App):**
+1. Paste this prompt into the prompt bar
+2. Verify the Image Size panel matches your aspect ratio (--ar may be overridden by UI)
+3. [If references: Click the image icon, drag-and-drop your reference, select "Style Reference" or "Character Reference"]
+4. Click Generate
+
+**Tips for iteration:**
+- Use Draft Mode (toggle in the Model panel) for quick 10x faster exploration first
+- [Suggestions for what to adjust if results aren't quite right]
+- [Parameter tweaks to try]
+```
+
+**For Discord users:**
 ```
 Here's your Midjourney V7 prompt:
 
@@ -281,10 +317,10 @@ Here's your Midjourney V7 prompt:
 - [Explain parameter choices]
 - [Note V7-specific benefits for this prompt]
 
-**How to use:**
+**How to use (Discord):**
 [If no references: Ready to paste directly into Midjourney]
 [If references:
-1. Upload your reference image(s) to Midjourney Discord first
+1. Upload your reference image(s) to any Discord channel first
 2. Right-click the uploaded image and copy the image URL
 3. Replace [IMAGE_URL] in the prompt with your copied URL
 4. Paste the complete prompt]
@@ -327,13 +363,21 @@ Options:
 
 **If "Copy to clipboard":**
 
+**For Web App users:**
+```bash
+cat <<'EOF' | pbcopy
+[THE FINAL PROMPT WITHOUT /imagine]
+EOF
+```
+Confirm: "Copied to your clipboard! Paste directly into the Midjourney web app prompt bar."
+
+**For Discord users:**
 ```bash
 cat <<'EOF' | pbcopy
 /imagine [THE FINAL PROMPT]
 EOF
 ```
-
-Confirm: "Copied to your clipboard! Paste it directly into Midjourney."
+Confirm: "Copied to your clipboard! Paste directly into Midjourney Discord."
 
 **If "Save to a file":**
 
@@ -347,11 +391,16 @@ Create in `prompts/midjourney/` with structure:
 > Style: [image type]
 > Aspect Ratio: [ratio]
 > Model: V7
+> Platform: [Web App / Discord]
 
 ---
 
 ## Prompt
 
+**For Web App:**
+[THE FINAL PROMPT WITHOUT /imagine]
+
+**For Discord:**
 /imagine [THE FINAL PROMPT]
 
 ---
@@ -360,13 +409,15 @@ Create in `prompts/midjourney/` with structure:
 
 [If references are needed:]
 
-1. **Style Reference** — Upload this image and use its URL with --sref
+1. **Style Reference**
    - What it captures: [style elements]
-   - How to use: Upload to Midjourney Discord, copy URL, add to prompt
+   - **Web App**: Click image icon → drag-and-drop → select "Style Reference"
+   - **Discord**: Upload image, copy URL, add `--sref [URL]` to prompt
 
-2. **Character Reference** — Upload this image and use its URL with --cref
+2. **Character Reference**
    - What it captures: [character elements]
-   - How to use: Upload to Midjourney Discord, copy URL, add to prompt
+   - **Web App**: Click image icon → drag-and-drop → select "Character Reference"
+   - **Discord**: Upload image, copy URL, add `--cref [URL]` to prompt
 
 [If no references: "None required — prompt works standalone."]
 
@@ -381,9 +432,10 @@ Create in `prompts/midjourney/` with structure:
 ## Iteration Tips
 
 [Suggestions for refinement]
-- Try Draft Mode (--draft) for quick exploration
+- Try Draft Mode (toggle in Model panel on web, or add --draft on Discord)
 - Adjust --stylize up/down for more/less artistic interpretation
 - Add --style raw for more literal interpretation
+- **Web App note**: UI controls (Image Size, Stylization sliders) may override text parameters
 ```
 
 ## Guidelines
