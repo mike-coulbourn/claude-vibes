@@ -249,10 +249,11 @@ Utility commands and agents for tasks outside the main development workflow.
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:TOOLKIT/create-brand` | Create complete brand identity interactively |
+| `/claude-vibes:TOOLKIT/midjourney-prompt` | Craft effective Midjourney V7 prompts through guided discovery |
 | `/claude-vibes:TOOLKIT/nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
 | `/claude-vibes:TOOLKIT/research` | Deep research on any topic |
 | `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
+| `/claude-vibes:TOOLKIT/scale-business` | Strategic business growth consultation with prioritized opportunities |
 | `/claude-vibes:TOOLKIT/write` | Write emails, messages, notes naturally |
 | `/claude-vibes:TOOLKIT/write-copy` | Create high-converting marketing copy |
 | `/claude-vibes:TOOLKIT/write-sponsor-script` | Write scripts for sponsored/affiliate content |
@@ -260,6 +261,7 @@ Utility commands and agents for tasks outside the main development workflow.
 **Agents:**
 - `ai-writing-detector` - Analyze text for AI writing patterns
 - `brand-researcher` - Deep brand research for content creators
+- `business-growth-advisor` - Strategic business growth consultation
 - `deep-researcher` - Comprehensive expert knowledge research
 - `elite-copywriter` - Transform text into compelling copy
 - `hook-generator` - Generate scroll-stopping hook variations
@@ -282,6 +284,7 @@ These servers start automatically when the plugin is enabled:
 | **Memory** | Persistent knowledge graph across sessions | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) |
 | **Sequential Thinking** | Structured problem-solving | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking) |
 | **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
+| **Whois** | Domain/IP lookup | [@mcp-server/whois-mcp](https://www.npmjs.com/package/@mcp-server/whois-mcp) |
 
 **Usage Tips:**
 - Add `use context7` to prompts for current library documentation
