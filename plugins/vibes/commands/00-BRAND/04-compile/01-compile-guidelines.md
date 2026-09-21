@@ -82,20 +82,9 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE writing the brand guidelines document, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
-
-3. **Apply this knowledge proactively** — write authentically human from the start
+Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Guidelines Document Structure
 

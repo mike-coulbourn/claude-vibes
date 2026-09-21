@@ -1,0 +1,6 @@
+interface:
+  display_name: "Natural Writing"
+  short_description: "Natural, connected writing without AI slop"
+  default_prompt: "Use $natural-writing to rewrite this draft so it sounds natural, connected, and human."
+policy:
+  allow_implicit_invocation: true

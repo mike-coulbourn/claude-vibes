@@ -2,6 +2,27 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 2.0.0
+
+A slimmer plugin that leans on what Claude Code now does natively and focuses on what it does not.
+
+**Removed (breaking)**
+
+- The five builder skills (`skill-builder`, `agent-builder`, `slash-command-builder`, `hooks-builder`, `marketplace-builder`) and `docs/claude-code-extensibility-guide.md`. Anthropic maintains better versions alongside the product: install `plugin-dev` and `skill-creator` from `anthropics/claude-plugins-official`.
+- The bundled `sequential-thinking` MCP server. Commands and agents now ask Claude to reason step by step natively, and keep the `ultrathink` keyword.
+- The bundled `memory` MCP server. Coding agents use Claude Code's native agent memory (`memory: project`, stored in `.claude/agent-memory/`). Knowledge saved in the old memory server's graph is not migrated.
+- The `ai-writing-detection` skill and the `ai-writing-detector` agent, replaced by `natural-writing`.
+
+**Added**
+
+- `natural-writing`, preloaded into the 21 agents that write prose, so the pasted "Human-Sounding Writing Protocol" is gone from the commands.
+- `interview-me` and `graph-engineering` skills.
+- `/02-BUILD/03-review-code` also runs Claude Code's built-in `code-review` and `security-review`.
+
+**Changed**
+
+- README leads with the brand, planning, and creator workflows.
+
 ## 1.5.5
 
 Builder skills checked against the official docs (September 2026):

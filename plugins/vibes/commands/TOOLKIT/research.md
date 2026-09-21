@@ -43,9 +43,9 @@ All research reports should be saved to: `research/[topic-area]/`
 
 ## Process
 
-### Step 1: Analyze the Request (Sequential Thinking)
+### Step 1: Analyze the Request
 
-**Use the `sequentialthinking` MCP tool** to analyze the user's research request:
+**Think step by step** to analyze the user's research request:
 
 - What topic/question are they researching?
 - What context is missing that would affect research quality?
@@ -167,7 +167,7 @@ Based on your goal of [purpose], I'd highlight [key findings]. Want me to go dee
 ## Guidelines
 
 - **Front-load context gathering** — Better to ask questions upfront than get unfocused research
-- **Use Sequential Thinking** to plan your clarifying questions strategically
+- **Think step by step** to plan your clarifying questions strategically
 - **Tailor questions to the topic** — Technical topics may need different clarification than creative topics
 - **Respect user's time** — If they give short answers, don't over-ask; make reasonable assumptions
 - **Always launch the agent** — Don't try to do the research yourself; use the deep-researcher agent

@@ -26,7 +26,7 @@ You do the heavy lifting. Help the user think comprehensively about features whi
 
 **CRITICAL: You orchestrate the feature-brainstormer agent while having parallel conversations about priorities.** Don't brainstorm features yourself—delegate to the specialist while you gather strategic context.
 
-**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, feature prioritization, or MVP boundary decisions. This ensures systematic, thorough thinking. Ultrathink through tradeoffs before presenting conclusions.
+**Think step by step (ultrathink)** for any complex reasoning, feature prioritization, or MVP boundary decisions. This ensures systematic, thorough thinking. Ultrathink through tradeoffs before presenting conclusions.
 
 ## How to Communicate
 
@@ -97,7 +97,7 @@ Agent tool:
   run_in_background: true
   prompt: "Ultrathink about all possible features for this project. Read docs/01-START/01-discover.md for full context on the problem, users, and value proposition.
 
-  **Use the sequential-thinking MCP server** for systematic feature categorization, JTBD mapping, and prioritization analysis. This ensures thorough, structured reasoning.
+  **Think step by step (ultrathink)** for systematic feature categorization, JTBD mapping, and prioritization analysis. This ensures thorough, structured reasoning.
 
   Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered.
 
@@ -211,20 +211,9 @@ The `jtbd-psychographic-research` skill provides frameworks that may auto-activa
 
 Use these frameworks when prioritizing features and writing user stories.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE writing the scope summary, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
-
-3. **Apply this knowledge proactively** — write authentically human from the start
+Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Output
 

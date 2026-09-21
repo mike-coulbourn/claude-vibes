@@ -85,6 +85,7 @@ for path in skill_files:
     skill_names.add(path.parent.name)
 
 agent_ids = set()
+preloaded_skills = []
 for path in agent_files:
     data = frontmatter(path)
     if data is None:
@@ -95,8 +96,17 @@ for path in agent_files:
     model = data.get("model")
     if model is not None and model not in AGENT_MODELS and not str(model).startswith("claude-"):
         fail(path, f"unknown model '{model}'")
+    skills = data.get("skills") or []
+    if isinstance(skills, str):
+        skills = [name.strip() for name in skills.split(",")]
+    preloaded_skills.extend((path, name) for name in skills)
     folder = path.parent.relative_to(PLUGIN / "agents").as_posix().replace("/", ":")
     agent_ids.add(f"{PLUGIN_NAME}:{folder}:{path.stem}" if folder != "." else f"{PLUGIN_NAME}:{path.stem}")
+
+# A preloaded skill that no longer exists fails silently at launch, so check it here.
+for path, name in preloaded_skills:
+    if name.removeprefix(f"{PLUGIN_NAME}:") not in skill_names:
+        fail(path, f"preloads unknown skill '{name}'")
 
 for path in command_files:
     data = frontmatter(path)

@@ -64,29 +64,17 @@ If input is vague, use AskUserQuestion to clarify:
 
 Read docs/01-START/ files to understand project patterns and conventions.
 
-### 3. Retrieve Knowledge from Memory
+### 3. Recall Past Learnings
 
-**Use the memory MCP tools** to retrieve learnings from past sessions that might inform this assessment.
+The assessor agent you launch below keeps its own project memory and loads it automatically. When you write its prompt, tell it which topics to check its memory for:
 
-1. **Search for relevant knowledge:**
-   ```
-   Use search_nodes to find:
-   - "RefactoringPatterns" — patterns from past refactorings
-   - "CodebasePatterns" — how things work in this codebase
-   - "ImplementationLessons" — gotchas and lessons learned
-   ```
+- refactoring patterns — patterns from past refactorings
+- codebase patterns — how things work in this codebase
+- implementation lessons — gotchas and lessons learned
 
-2. **Load relevant entities:**
-   ```
-   Use open_nodes to read observations from matching entities
-   ```
+That knowledge helps in three ways: past refactoring patterns inform what approaches work well, codebase patterns help identify what's inconsistent, and lessons learned warn about complexity that might be intentional.
 
-3. **Apply this knowledge:**
-   - Past refactoring patterns inform what approaches work well
-   - Codebase patterns help identify what's inconsistent
-   - Lessons learned warn about complexity that might be intentional
-
-**If no memory entities exist yet**, that's fine — they'll be created as you refactor. Proceed to the next step.
+**If nothing exists yet**, that's fine — it'll accumulate as you refactor. Proceed to the next step.
 
 ### 4. Launch Assessor (REQUIRED)
 
@@ -96,6 +84,8 @@ Read docs/01-START/ files to understand project patterns and conventions.
 >
 > **Scope:** [from user input or clarification]
 > **Project context:** [key patterns from docs/]
+>
+> Check your project memory for related past refactorings, codebase patterns, and implementation lessons before starting, and record what you learn before finishing.
 >
 > **Parse LOGS.json for context:**
 > - Find past refactorings in this area

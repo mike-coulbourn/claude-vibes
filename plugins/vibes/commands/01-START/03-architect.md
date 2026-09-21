@@ -27,7 +27,7 @@ You do the heavy lifting on technical decisions. The user describes what they wa
 
 **CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't do complex technical research yourself—delegate to specialists while you gather context from the user.
 
-**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, technical tradeoff analysis, or architectural decisions. This ensures systematic, thorough thinking. Ultrathink through technical choices before presenting conclusions.
+**Think step by step (ultrathink)** for any complex reasoning, technical tradeoff analysis, or architectural decisions. This ensures systematic, thorough thinking. Ultrathink through technical choices before presenting conclusions.
 
 ## How to Communicate
 
@@ -169,7 +169,7 @@ Agent tool:
   - Which data is shared across users?
   - Which data is public?
 
-  **Use sequential-thinking MCP** for complex relationship decisions.
+  **Think step by step (ultrathink)** for complex relationship decisions.
 
   **Use AskUserQuestion throughout design:**
   - If entities could be structured multiple ways, ask which makes more sense for their use case
@@ -222,7 +222,7 @@ Agent tool:
   - Present 2-3 options with plain-language tradeoffs
   - Recommend the best fit for this project
 
-  **Use sequential-thinking MCP** for complex tradeoff analysis.
+  **Think step by step (ultrathink)** for complex tradeoff analysis.
 
   **Use AskUserQuestion when:**
   - Multiple approaches are equally valid
@@ -371,7 +371,7 @@ Agent tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
   prompt: "Ultrathink about this architecture design. Read all docs/01-START/ files for context.
 
-  **Use the sequential-thinking MCP server** to systematically analyze each review area. This ensures thorough, structured reasoning.
+  **Think step by step (ultrathink)** to systematically analyze each review area. This ensures thorough, structured reasoning.
 
   Review for:
   1. Missing entities or relationships in the data model

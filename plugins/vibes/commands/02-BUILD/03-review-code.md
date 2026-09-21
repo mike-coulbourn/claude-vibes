@@ -127,7 +127,16 @@ Otherwise, find recent work:
 >
 > The vibe coder should just see results—you do the work.
 
-### 4. Combine Results
+### 4. Run Claude Code's Built-In Reviews
+
+While the agents work, or right after they return, run the reviews that ship with Claude Code. They are maintained alongside the product, so they catch classes of bug the agents may not know about yet.
+
+- **Use the Skill tool** to invoke `code-review` on the current changes (correctness bugs, plus reuse and simplification findings)
+- **Use the Skill tool** to invoke `security-review` when the change touches authentication, user input, secrets, payments, or data access
+
+If either skill is unavailable in this session, skip it and say so in the summary rather than stopping. Treat their findings as a third input beside the two agents, and explain each one to the vibe coder in the same plain language.
+
+### 5. Combine Results
 
 After BOTH agents return:
 
@@ -140,7 +149,7 @@ After BOTH agents return:
 - Note any bugs found and fixed
 - Note confidence level
 
-### 5. Present Combined Findings
+### 6. Present Combined Findings
 
 Present findings from BOTH agents clearly:
 
@@ -190,7 +199,7 @@ The code works and meets quality standards!
 Use AskUserQuestion for trade-offs:
 - "I found a potential issue, but fixing it adds complexity. Should we address it now or track it for later?"
 
-### 6. Iterate if Needed
+### 7. Iterate if Needed
 
 If blocking issues exist:
 1. Explain the issues clearly
@@ -199,7 +208,7 @@ If blocking issues exist:
 
 "I found 2 issues. Want me to fix them now?"
 
-### 7. Approve and Document
+### 8. Approve and Document
 
 **Only when review passes** (no blocking issues):
 
@@ -266,29 +275,23 @@ When review is complete:
 3. Offer to fix them
 4. "Re-run `/03-review-code` after fixes"
 
-### Store Review Findings in Memory
+### Keep Review Findings
 
-**If the review revealed patterns or insights not already documented**, store them for future sessions.
+**If the review revealed patterns or insights not already documented**, make sure they outlast this session.
 
-**Use the memory MCP tools:**
+The code-reviewer and tester agents keep their own project memory. In their prompts, ask them to record before they finish:
 
-1. **For codebase patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "CodebasePatterns":
+1. **Codebase patterns discovered:**
    - Conventions identified during review (e.g., "All API endpoints return {data, error} format")
    - Anti-patterns to avoid (e.g., "Don't use synchronous file operations in request handlers")
-   ```
 
-2. **For review patterns:**
-   ```
-   Use create_entities or add_observations to store in "ReviewFindings":
+2. **Review patterns:**
    - Common issues found (e.g., "Missing null checks on user input is a recurring issue")
    - Quality patterns to follow (e.g., "Error boundaries in React components prevent cascading failures")
-   ```
 
-**Only store NEW patterns** — things that will help future reviews. If nothing notable was discovered, skip this step.
+**Only keep NEW patterns** — things that will help future reviews. If a finding is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
 
-**Example observations to store:**
+**Example findings worth keeping:**
 - "The codebase uses a custom Result type for error handling — all services should return Result<T>"
 - "Found that async validation must complete before form submission — add to checklist"
 - "Dependency injection is done via constructor, not decorators"

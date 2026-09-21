@@ -16,6 +16,8 @@ The first command checks frontmatter, agent and skill references, relative links
 
 **Agents** live in `plugins/vibes/agents/<FOLDER>/<name>.md`. The folder is part of the agent's identifier, so commands must launch them as `claude-vibes:<FOLDER>:<name>`, for example `claude-vibes:CODING:code-architect`. Start the description with "Use when". Use `model: fable` for agents that plan, review, diagnose, or do strategy, and `model: opus` for agents that implement.
 
+Agents that write prose for the user preload the writing skill with `skills: natural-writing` in frontmatter, so commands do not need to paste writing rules into agent prompts. Coding agents that should learn across sessions set `memory: project`. Ask for step-by-step reasoning in plain words (the `ultrathink` keyword is fine) instead of bundling a reasoning or memory MCP server.
+
 **Skills** live in `plugins/vibes/skills/<name>/SKILL.md`, and `name` must match the directory.
 
 - The description says when to use the skill, not what its workflow is, and stays under 1024 characters. If it contains a colon followed by a space, wrap the whole value in single quotes so it stays valid YAML.

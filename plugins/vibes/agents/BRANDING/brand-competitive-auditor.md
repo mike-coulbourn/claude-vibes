@@ -2,6 +2,7 @@
 name: brand-competitive-auditor
 description: Use this agent when you need to analyze competitor brands for brand identity work. This agent specializes in auditing competitor visual identities, positioning, brand voice, and identifying differentiation opportunities. Unlike market-validator (which focuses on market viability), this agent focuses specifically on BRAND analysis to find white space for positioning.
 model: fable
+skills: natural-writing
 ---
 
 # Brand Competitive Auditor

@@ -53,29 +53,17 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 Read docs/01-START/ files for project understanding.
 
-### 2. Retrieve Knowledge from Memory
+### 2. Recall Past Learnings
 
-**Use the memory MCP tools** to retrieve learnings from past sessions that might help diagnose this issue.
+The diagnostician agent you launch below keeps its own project memory and loads it automatically. When you write its prompt, tell it which topics to check its memory for:
 
-1. **Search for relevant knowledge:**
-   ```
-   Use search_nodes to find:
-   - "DiagnosticKnowledge" — root causes and patterns from past debugging
-   - "CodebasePatterns" — how things work in this codebase
-   - "ImplementationLessons" — gotchas that might be causing issues
-   ```
+- diagnostic knowledge — root causes and patterns from past debugging
+- codebase patterns — how things work in this codebase
+- implementation lessons — gotchas that might be causing issues
 
-2. **Load relevant entities:**
-   ```
-   Use open_nodes to read observations from matching entities
-   ```
+That knowledge helps in three ways: past root causes may hint at what's happening now, known gotchas might explain unexpected behavior, and pattern knowledge helps narrow down where issues originate.
 
-3. **Apply this knowledge:**
-   - Past root causes may hint at what's happening now
-   - Known gotchas might explain unexpected behavior
-   - Pattern knowledge helps narrow down where issues originate
-
-**If no memory entities exist yet**, that's fine — they'll be created as you debug. Proceed to the next step.
+**If nothing exists yet**, that's fine — it'll accumulate as you debug. Proceed to the next step.
 
 ### 3. Understand the Symptom
 
@@ -93,6 +81,8 @@ Get enough detail to begin investigation.
 > Ultrathink about diagnosing this issue.
 >
 > **Symptom:** [describe what's wrong based on user input]
+>
+> Check your project memory for related past diagnoses, codebase patterns, and implementation gotchas before starting, and record what you learn before finishing.
 >
 > **Parse LOGS.json for relevant history (if it exists):**
 > - Find past fixes in the same `area` or with similar `tags`
@@ -205,28 +195,22 @@ When diagnosis is complete:
 4. Save validated diagnosis to docs/04-DEBUG/
 5. Next step: "Run `/02-fix-issue docs/04-DEBUG/diagnosis-<name>.md` to implement the fix"
 
-### Store Diagnostic Findings in Memory
+### Record Diagnostic Findings
 
-**If the diagnosis revealed insights not already documented**, store them for future sessions.
+In the diagnostician's prompt, ask it to record durable learnings in its project memory before it finishes:
 
-**Use the memory MCP tools:**
-
-1. **For root cause patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "DiagnosticKnowledge":
+1. **Root cause patterns discovered:**
    - Common root causes (e.g., "Race conditions often occur when X and Y happen simultaneously")
    - Symptom-to-cause mappings (e.g., "500 errors on /api/search usually trace to database timeouts")
    - Investigation shortcuts (e.g., "When auth fails, check token expiry first")
-   ```
 
-2. **For codebase-specific gotchas:**
-   ```
-   Use create_entities or add_observations to store in "CodebasePatterns":
+2. **Codebase-specific gotchas:**
    - Quirks discovered during investigation (e.g., "The cache invalidation is delayed by 5 seconds")
    - Non-obvious dependencies (e.g., "UserService depends on NotificationService being initialized first")
-   ```
 
-**Only store NEW findings** — insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
+**Only record NEW findings** — insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
+
+If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
 - "Null pointer exceptions in OrderService usually mean the user's cart was cleared mid-checkout"

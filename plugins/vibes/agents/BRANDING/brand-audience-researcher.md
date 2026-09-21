@@ -2,6 +2,7 @@
 name: brand-audience-researcher
 description: Use this agent when you need to research and define the target audience for brand identity work. This agent specializes in psychographic analysis, Jobs-to-be-Done frameworks, and building detailed audience profiles that inform brand positioning and voice. Unlike market-validator (which focuses on market viability), this agent focuses on understanding the audience deeply enough to create an emotional brand connection.
 model: fable
+skills: natural-writing
 ---
 
 # Brand Audience Researcher

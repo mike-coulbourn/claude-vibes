@@ -2,6 +2,7 @@
 name: brand-typography-curator
 description: Use this agent when you need to develop a brand typography system. This agent specializes in selecting typefaces, creating typography hierarchies, and establishing usage guidelines that express brand personality through type. It recommends specific fonts with rationale and creates comprehensive typography guidelines.
 model: fable
+skills: natural-writing
 ---
 
 # Brand Typography Curator

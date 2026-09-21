@@ -100,6 +100,8 @@ Use AskUserQuestion if the approach isn't clear.
 > **Files:** [files to modify]
 > **Expected outcome:** [what should be different]
 >
+> Check your project memory for related past refactorings and codebase patterns before starting, and record what you learn before finishing.
+>
 > **Parse LOGS.json for relevant patterns (if it exists):**
 > - Find how similar refactorings were done before
 > - Identify project patterns to follow
@@ -177,28 +179,22 @@ When refactoring is complete:
 3. Improvement metrics (lines saved, complexity reduced, etc.)
 4. Next step: "Run `/03-validate-improvements` to verify behavior and document"
 
-### Store Refactoring Lessons in Memory
+### Record Refactoring Lessons
 
-**If the refactoring revealed useful patterns or approaches not already documented**, store them for future sessions.
+In the refactorer's prompt, ask it to record durable learnings in its project memory before it finishes:
 
-**Use the memory MCP tools:**
-
-1. **For refactoring patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "RefactoringPatterns":
+1. **Refactoring patterns discovered:**
    - Effective refactoring approaches (e.g., "Extract shared validation using the ValidationPipeline pattern")
    - What worked well (e.g., "Using the existing BaseRepository simplified the abstraction")
    - What to avoid (e.g., "Don't extract helpers that are only used once — adds indirection without benefit")
-   ```
 
-2. **For codebase patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "CodebasePatterns":
+2. **Codebase patterns discovered:**
    - Patterns you established (e.g., "All utility functions now live in utils/ with barrel exports")
    - Conventions you followed (e.g., "Services use constructor injection, not method injection")
-   ```
 
-**Only store NEW findings** — approaches that will help future refactorings. If nothing notable was discovered, skip this step.
+**Only record NEW findings** — approaches that will help future refactorings. If nothing notable was discovered, skip this step.
+
+If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
 - "The codebase uses a specific module structure — utils/, services/, models/ — always follow this"

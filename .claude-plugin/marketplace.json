@@ -1,6 +1,6 @@
 {
   "name": "claude-vibes",
-  "description": "Production-grade vibe coding suite for Claude Code. Structured workflows from discovery to deployment.",
+  "description": "Structured workflows for people who describe what they want and let Claude build it: brand identity, product planning, coding, and a creator toolkit.",
   "owner": {
     "name": "Mike Coulbourn"
   },
@@ -8,7 +8,7 @@
     {
       "name": "claude-vibes",
       "source": "./plugins/vibes",
-      "description": "Complete vibe coding suite: brand, start, build, ship, debug, refactor, plus a creator toolkit. 41 commands, 38 agents, 24 skills, 5 MCP servers."
+      "description": "Brand, plan, build, ship, debug, and refactor in plain language, plus a creator toolkit. 41 commands, 37 agents, 21 skills, 3 MCP servers."
     }
   ]
 }

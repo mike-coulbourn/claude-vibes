@@ -80,6 +80,8 @@ If anything is unclear, use AskUserQuestion to clarify.
 > **Affected files:** [list from diagnosis]
 > **Proposed approach:** [from diagnosis or user description]
 >
+> Check your project memory for related past fixes and codebase patterns before starting, and record what you learn before finishing.
+>
 > **Parse LOGS.json for relevant patterns (if it exists):**
 > - Find how similar issues were fixed before
 > - Identify project patterns to follow
@@ -166,27 +168,21 @@ When fix is complete:
 4. Any notes or caveats
 5. Next step: "Run `/03-verify-fix` to confirm the fix works and check for regressions"
 
-### Store Fix Patterns in Memory
+### Record Fix Patterns
 
-**If the fix revealed useful patterns or approaches not already documented**, store them for future sessions.
+In the fixer's prompt, ask it to record durable learnings in its project memory before it finishes:
 
-**Use the memory MCP tools:**
-
-1. **For fix patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "FixPatterns":
+1. **Fix patterns discovered:**
    - Effective fix approaches (e.g., "For race conditions in this codebase, use the mutex in utils/lock.ts")
    - Common fix recipes (e.g., "Input validation issues are best fixed at the API boundary, not deep in services")
-   ```
 
-2. **For codebase patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "CodebasePatterns":
+2. **Codebase patterns discovered:**
    - Patterns you followed (e.g., "Error responses in this codebase always include {code, message, details}")
    - Conventions discovered (e.g., "All database operations use the transaction wrapper in db/utils.ts")
-   ```
 
-**Only store NEW findings** — approaches that will help fix similar issues faster. If nothing notable was discovered, skip this step.
+**Only record NEW findings** — approaches that will help fix similar issues faster. If nothing notable was discovered, skip this step.
+
+If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
 - "Fixing auth issues requires updating both the middleware AND the session store"

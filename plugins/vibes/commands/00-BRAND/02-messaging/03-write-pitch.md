@@ -67,19 +67,9 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE launching the brand-elevator-pitch-writer agent, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-
-3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+The brand-elevator-pitch-writer agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Launch the Agent
 
@@ -185,7 +175,7 @@ Document:
 
 ## TOOLS TO USE
 
-- **Sequential Thinking MCP**: Structure pitch flow systematically, ensure natural speech rhythm, evaluate hook options
+- **Structured reasoning**: Structure pitch flow systematically, ensure natural speech rhythm, evaluate hook options
 - **AskUserQuestion**: Understand pitch contexts, validate pitches feel natural to say, get feedback on hook preferences
 - **WebSearch**: Research competitor pitch examples, find industry pitch patterns, discover memorable brand intros
 - **WebFetch**: Study competitor landing page language for pitch inspiration, analyze famous pitch breakdowns

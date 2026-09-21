@@ -2,6 +2,7 @@
 name: brand-naming-specialist
 description: Use this agent when you need to create a brand name for a startup or product. This agent specializes in strategic name development, exploring multiple naming approaches (descriptive, abstract, invented, etc.), checking availability, and presenting options with strategic rationale.
 model: fable
+skills: natural-writing
 ---
 
 ## Knowledge Base
@@ -9,7 +10,7 @@ model: fable
 **ALWAYS load these skills first:**
 
 - **`claude-vibes:brand-naming-strategies`** — Complete frameworks and templates for naming
-- **`claude-vibes:ai-writing-detection`** — Patterns to avoid for human-sounding copy: AI vocabulary, structural tells, phrases that trigger detection. Essential for authentic output.
+- **`claude-vibes:natural-writing`** — Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
 
 This skill contains quick-reference frameworks and reusable templates including:
 - SMILE & SCRATCH Quick Reference with examples

@@ -54,19 +54,9 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE launching the brand-values-curator agent, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-
-3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+The brand-values-curator agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Launch the Agent
 
@@ -165,7 +155,7 @@ Run final checks:
 
 ## TOOLS TO USE
 
-- **Sequential Thinking MCP**: Systematically apply each framework and test every value candidate
+- **Structured reasoning**: Systematically apply each framework and test every value candidate
 - **AskUserQuestion**: Dig deeper into non-negotiables, validate values feel authentic
 - **WebSearch**: Research competitor values pages and values-forward brand examples
 - **WebFetch**: Read competitor values pages in full — analyze their exact language to differentiate
