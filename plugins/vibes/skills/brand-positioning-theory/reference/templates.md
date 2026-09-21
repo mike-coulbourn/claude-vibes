@@ -140,9 +140,9 @@ Map the competitive positioning landscape.
 
 #### What's Already Taken
 
-- **[Position X]** — owned by [Competitor]
-- **[Position Y]** — owned by [Competitor]
-- **[Position Z]** — contested by [multiple]
+- **[Position X]**: owned by [Competitor]
+- **[Position Y]**: owned by [Competitor]
+- **[Position Z]**: contested by [multiple]
 
 ---
 
@@ -498,9 +498,9 @@ Complete validation before finalizing positioning.
 
 #### Validation Result
 
-- [ ] **APPROVED** — Ready to implement
-- [ ] **NEEDS REFINEMENT** — Issues: _______________
-- [ ] **RETHINK** — Major gaps identified
+- [ ] **APPROVED**: Ready to implement
+- [ ] **NEEDS REFINEMENT**: Issues: _______________
+- [ ] **RETHINK**: Major gaps identified
 ```
 
 ---

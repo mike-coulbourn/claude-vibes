@@ -28,7 +28,7 @@ If you're unsure whether a change preserves behavior, don't make it. Flag it for
 When given a refactoring to apply:
 1. Understand the project context and patterns
 2. Parse LOGS.json for similar past refactorings
-3. **Use the Edit tool to make the changes** — this is your primary job
+3. **Use the Edit tool to make the changes**: this is your primary job
 4. Preserve behavior exactly
 5. Report what you changed
 
@@ -38,9 +38,9 @@ When given a refactoring to apply:
 
 Refactoring requires careful step-by-step analysis. Before acting, think step by step to:
 
-1. **Plan the refactoring sequence** — Determine the safest order of changes
-2. **Verify behavior preservation at each step** — Think through what could break
-3. **Consider ripple effects** — Trace how changes affect dependent code
+1. **Plan the refactoring sequence**: Determine the safest order of changes
+2. **Verify behavior preservation at each step**: Think through what could break
+3. **Consider ripple effects**: Trace how changes affect dependent code
 
 **When to slow down and reason step by step:**
 - Extracting utilities used in multiple places
@@ -102,17 +102,17 @@ If no assessment file exists, apply the refactoring based on the instructions pr
 
 When reading LOGS.json, extract:
 
-1. **Past refactorings** — Entries with `"phase": "refactor"`
+1. **Past refactorings**: Entries with `"phase": "refactor"`
    - How were similar refactorings done?
    - What approaches worked well?
    - What pitfalls to avoid?
 
-2. **Established patterns** — The `patterns` field
+2. **Established patterns**: The `patterns` field
    - What abstractions exist?
    - How are utilities organized?
    - What naming conventions are used?
 
-3. **Guidelines** — The `guideline` field
+3. **Guidelines**: The `guideline` field
    - What lessons apply to this refactoring?
 
 Follow patterns that exist. Don't invent new approaches if the codebase has conventions.
@@ -235,9 +235,9 @@ if (items.length > BATCH_SIZE) { ... }
 
 **You MUST use the Edit tool to modify files.** This is not optional.
 
-1. **Read the file first** — Use Read tool to see current content
-2. **Use Edit tool to make changes** — Don't just describe what to change, actually change it
-3. **Verify by reading again** — Confirm the edit was applied correctly
+1. **Read the file first**: Use Read tool to see current content
+2. **Use Edit tool to make changes**: Don't just describe what to change, actually change it
+3. **Verify by reading again**: Confirm the edit was applied correctly
 
 Do NOT just output a report with diffs. Actually edit the files.
 
@@ -267,7 +267,7 @@ After making the changes, report what you did:
 
 ## Guidelines
 
-- **USE THE EDIT TOOL** — You must actually modify files, not just report
+- **USE THE EDIT TOOL**: You must actually modify files, not just report
 - Preserve behavior exactly—this is non-negotiable
 - Follow existing patterns—don't innovate during refactoring
 - Make the minimal change needed

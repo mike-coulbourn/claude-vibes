@@ -24,7 +24,7 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 
 ## The 6 Core Frameworks
 
-### 1. StoryBrand Framework (SB7) — Donald Miller
+### 1. StoryBrand Framework (SB7): Donald Miller
 
 **Core Principle:** "Your business is not the hero of your brand story. Your customer is."
 
@@ -45,7 +45,7 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 
 ---
 
-### 2. Sparkline Framework — Nancy Duarte
+### 2. Sparkline Framework: Nancy Duarte
 
 **Core Principle:** Great communicators create tension by contrasting "what is" with "what could be."
 
@@ -65,7 +65,7 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 
 ---
 
-### 3. CLARITY Framework — Chris Westfall
+### 3. CLARITY Framework: Chris Westfall
 
 **Core Principle:** Deliver a message that makes your listener say "Tell me more..."
 
@@ -83,7 +83,7 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 
 ---
 
-### 4. Onlyness Statement — Marty Neumeier
+### 4. Onlyness Statement: Marty Neumeier
 
 **Core Principle:** If you can't say why you're different and compelling in a few words, fix your company, not your positioning statement.
 
@@ -103,14 +103,14 @@ Second blank: Your compelling difference
 
 ---
 
-### 5. Golden Circle — Simon Sinek
+### 5. Golden Circle: Simon Sinek
 
 **Core Principle:** "People don't buy WHAT you do; they buy WHY you do it."
 
 **The Three Circles (inside out):**
-1. **WHY** — Purpose, cause, belief (core)
-2. **HOW** — Methods, values, differentiators (middle)
-3. **WHAT** — Products, services, features (outer)
+1. **WHY**: Purpose, cause, belief (core)
+2. **HOW**: Methods, values, differentiators (middle)
+3. **WHAT**: Products, services, features (outer)
 
 **Application:**
 - ❌ Wrong: "We make great computers."
@@ -120,7 +120,7 @@ Second blank: Your compelling difference
 
 ---
 
-### 6. Strategic Narrative — Andy Raskin
+### 6. Strategic Narrative: Andy Raskin
 
 **Core Principle:** The most effective pitches never start by talking about yourself. They start by naming a big shift in the world.
 
@@ -231,7 +231,7 @@ When founder background adds credibility or emotional connection.
 ### Pacing
 
 - Target: **conversational pace (~120 words/minute)**
-- Speaking too fast muddles your message — slow down
+- Speaking too fast muddles your message: slow down
 - Talking slower emphasizes important or complicated parts
 
 ### Strategic Pauses
@@ -266,11 +266,11 @@ When founder background adds credibility or emotional connection.
 
 ### Brand Pitch Must-Haves
 
-1. **Emotional Connection** — Stories make people feel; data makes them zone out
-2. **Customer as Hero** — Their transformation, not your features
-3. **Clear Value Proposition** — What makes you the "only" one?
-4. **Authenticity** — Your brand's genuine purpose and values
-5. **Memorable Hook** — Surprising fact, question, or vivid analogy
+1. **Emotional Connection**: Stories make people feel; data makes them zone out
+2. **Customer as Hero**: Their transformation, not your features
+3. **Clear Value Proposition**: What makes you the "only" one?
+4. **Authenticity**: Your brand's genuine purpose and values
+5. **Memorable Hook**: Surprising fact, question, or vivid analogy
 
 ---
 
@@ -320,11 +320,11 @@ When founder background adds credibility or emotional connection.
 
 ### How to Test
 
-1. **Read out loud** — Does it sound natural?
-2. **Time yourself** — Is it the right length?
-3. **Share with trusted people** — What do they remember most?
-4. **Test with different audiences** — How does each respond?
-5. **Use at real events** — Do they ask follow-ups?
+1. **Read out loud**: Does it sound natural?
+2. **Time yourself**: Is it the right length?
+3. **Share with trusted people**: What do they remember most?
+4. **Test with different audiences**: How does each respond?
+5. **Use at real events**: Do they ask follow-ups?
 
 ### Measuring Effectiveness
 
@@ -363,11 +363,11 @@ When founder background adds credibility or emotional connection.
 
 ### What Makes These Work
 
-1. **Start with relatable problem** — "Tired of..." or provocative question
-2. **Use simple, jargon-free language** — Anyone can understand
-3. **Include quick analogy** — "like the eBay of..."
-4. **Provide proof** — Numbers, traction, scale
-5. **Clear value proposition** — What you get is obvious
+1. **Start with relatable problem**: "Tired of..." or provocative question
+2. **Use simple, jargon-free language**: Anyone can understand
+3. **Include quick analogy**: "like the eBay of..."
+4. **Provide proof**: Numbers, traction, scale
+5. **Clear value proposition**: What you get is obvious
 
 ---
 

@@ -25,10 +25,10 @@ The hook determines success or failure. Think deeply about what would make someo
 
 **ALWAYS load these skills first and apply their frameworks:**
 
-1. **`claude-vibes:scriptwriting-methodology`** — Focus on "Hook Formulas" and "Hook Stacking" sections
-2. **`claude-vibes:conversion-psychology`** — Emotional triggers and the psychology of attention
-3. **`claude-vibes:platform-optimization`** — Platform-specific hook requirements
-4. **`claude-vibes:natural-writing`** — Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
+1. **`claude-vibes:scriptwriting-methodology`**: Focus on "Hook Formulas" and "Hook Stacking" sections
+2. **`claude-vibes:conversion-psychology`**: Emotional triggers and the psychology of attention
+3. **`claude-vibes:platform-optimization`**: Platform-specific hook requirements
+4. **`claude-vibes:natural-writing`**: Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
 
 **You MUST apply from these skills**:
 - Use ALL 10 hook formula types (don't just pick favorites)

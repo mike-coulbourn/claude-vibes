@@ -21,7 +21,7 @@ You orchestrate the review and manage the conversation. The code-reviewer agent 
 
 **Always read these files for core context:**
 - `docs/01-START/` files — Project requirements and architecture
-- `docs/02-BUILD/plan-*.md` — The plan this implements
+- `docs/02-BUILD/plan-*.md`: The plan this implements
 
 These are stable documentation—always load them. The code-reviewer agent will parse LOGS.json and report back specific relevant entries.
 
@@ -55,7 +55,7 @@ Otherwise, find recent work:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Agent tool to launch BOTH agents simultaneously** — they analyze the code from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:code-reviewer"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**You MUST use the Agent tool to launch BOTH agents simultaneously**: they analyze the code from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:code-reviewer"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Code Reviewer Agent** (quality, security, patterns):
 
@@ -289,7 +289,7 @@ The code-reviewer and tester agents keep their own project memory. In their prom
    - Common issues found (e.g., "Missing null checks on user input is a recurring issue")
    - Quality patterns to follow (e.g., "Error boundaries in React components prevent cascading failures")
 
-**Only keep NEW patterns** — things that will help future reviews. If a finding is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
+**Only keep NEW patterns**: things that will help future reviews. If a finding is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
 
 **Example findings worth keeping:**
 - "The codebase uses a custom Result type for error handling — all services should return Result<T>"

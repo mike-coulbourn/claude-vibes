@@ -46,7 +46,7 @@ Controls how much Midjourney's artistic interpretation affects the image.
 **Tips**:
 - Lower values for technical accuracy (photos, products)
 - Higher values for artistic/creative work
-- V6/V7 respond differently than V5 — experiment
+- V6/V7 respond differently than V5: experiment
 
 ---
 
@@ -359,12 +359,12 @@ flowers::-0.5    // Reduces flowers (like --no)
 
 V7 is Midjourney's most capable model:
 
-- **Superior prompt understanding** — More accurate complex prompt interpretation
-- **Better coherence** — Improved hands, bodies, object relationships
-- **Richer textures and details** — Higher quality output by default
-- **Draft Mode** — 10x faster exploration at half cost
-- **Personalization ON by default** — Applies learned preferences automatically
-- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
+- **Superior prompt understanding**: More accurate complex prompt interpretation
+- **Better coherence**: Improved hands, bodies, object relationships
+- **Richer textures and details**: Higher quality output by default
+- **Draft Mode**: 10x faster exploration at half cost
+- **Personalization ON by default**: Applies learned preferences automatically
+- **Omni Reference**: `--oref` replaces V6's `--cref` for characters and objects
 
 ---
 

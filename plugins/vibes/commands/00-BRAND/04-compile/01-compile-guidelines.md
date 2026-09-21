@@ -49,12 +49,12 @@ Optional title override: $ARGUMENTS
 
 Follow these principles when synthesizing the brand documents:
 
-1. **Extract, don't copy** — Pull the essential elements; don't paste entire documents
-2. **Maintain consistent voice** — The guidelines should read as one cohesive document
-3. **Link to source documents** — Reference detailed docs for those who need deep dives
-4. **Highlight what matters** — Lead with the most important elements in each section
-5. **Make it scannable** — Clear headers, bullet points, and visual organization
-6. **Write for the user** — This is a reference for anyone working with the brand
+1. **Extract, don't copy**: Pull the essential elements; don't paste entire documents
+2. **Maintain consistent voice**: The guidelines should read as one cohesive document
+3. **Link to source documents**: Reference detailed docs for those who need deep dives
+4. **Highlight what matters**: Lead with the most important elements in each section
+5. **Make it scannable**: Clear headers, bullet points, and visual organization
+6. **Write for the user**: This is a reference for anyone working with the brand
 
 **The goal:** Someone new to the brand should be able to understand the brand identity in 10 minutes by reading this document.
 
@@ -332,7 +332,7 @@ Questions about brand usage: [Contact information]
    How would you like to proceed?"
 
    Options:
-   - This looks complete — save it as the final guidelines
+   - This looks complete: save it as the final guidelines
    - I'd like to review the full document before saving
    - I want to adjust specific sections first
    - Let me discuss with my team before finalizing

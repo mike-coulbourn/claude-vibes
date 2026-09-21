@@ -52,7 +52,7 @@ Think through: "What questions would help me craft a prompt that gets them exact
 - Prioritize questions that most affect prompt quality
 - Batch related questions together (max 4 per round)
 - Lead with your recommendation when relevant
-- Keep it lightweight — this should feel helpful, not like an interrogation
+- Keep it lightweight: this should feel helpful, not like an interrogation
 
 ---
 
@@ -121,7 +121,7 @@ Options:
 - High resolution (4K) for print or large display
 - Specific aspect ratio (tell me which)
 - Specific text that must appear in the image
-- None — default settings are fine
+- None: default settings are fine
 ```
 
 ---
@@ -176,8 +176,8 @@ Options:
 ```
 Question: "Does this need current or real-time information?"
 Options:
-- Yes — needs current data (sports scores, news, trends, events)
-- No — timeless content is fine
+- Yes: needs current data (sports scores, news, trends, events)
+- No: timeless content is fine
 ```
 
 If yes, note that Google Search grounding should be enabled in AI Studio/API settings.
@@ -194,7 +194,7 @@ Skip the "do you have references?" question — you already have them. Instead, 
 Question: "I see you've provided [N] reference image(s). Here's how I'd use them — does this match your intent?"
 Options:
 - Yes, that's right
-- Not quite — I'll clarify
+- Not quite: I'll clarify
 - Other
 ```
 
@@ -222,8 +222,8 @@ For sketches/wireframes:
 ```
 Question: "How closely should the output follow this layout?"
 Options:
-- Exactly — treat it as a strict composition guide
-- Loosely — capture the general arrangement
+- Exactly: treat it as a strict composition guide
+- Loosely: capture the general arrangement
 - Just use it for spatial reference
 - Other
 ```
@@ -239,11 +239,11 @@ Question: "What changes do you want to make?"
 ```
 Question: "Are you working with any reference images?"
 Options:
-- Yes — I have character/person references (for consistency)
-- Yes — I have brand assets (logo, colors, style guide)
-- Yes — I have a sketch or wireframe to follow
-- Yes — I have an existing image to edit/modify
-- No — starting from scratch
+- Yes: I have character/person references (for consistency)
+- Yes: I have brand assets (logo, colors, style guide)
+- Yes: I have a sketch or wireframe to follow
+- Yes: I have an existing image to edit/modify
+- No: starting from scratch
 ```
 
 If they say yes, ask them to share the images before proceeding, OR ask:
@@ -390,8 +390,8 @@ Here's your Nano Banana Pro prompt:
 ```
 Question: "How does this prompt look?"
 Options:
-- Looks great — I'll use it as is
-- Needs some tweaks — I'll share specific feedback
+- Looks great: I'll use it as is
+- Needs some tweaks: I'll share specific feedback
 - Want to try a different angle or approach
 - Other
 ```
@@ -410,7 +410,7 @@ Question: "How would you like to receive this?"
 Options:
 - Copy to clipboard (ready to paste)
 - Save to a file
-- It's displayed above — I'll copy it myself
+- It's displayed above: I'll copy it myself
 - Other
 ```
 
@@ -428,10 +428,10 @@ Confirm: "Copied to your clipboard! Paste it into AI Studio or Gemini."
 
 1. Check if `prompts/` exists, create if not
 2. Check for existing subdirectories:
-   - `images/` — general image prompts
-   - `characters/` — character-focused prompts
-   - `products/` — product photography prompts
-   - `infographics/` — data visualization prompts
+   - `images/`: general image prompts
+   - `characters/`: character-focused prompts
+   - `products/`: product photography prompts
+   - `infographics/`: data visualization prompts
 3. Save with a descriptive filename
 
 **File structure:**
@@ -455,11 +455,11 @@ Confirm: "Copied to your clipboard! Paste it into AI Studio or Gemini."
 
 [If references are needed, describe each one and how to use it:]
 
-1. **Image 1** — [Type: character/brand/sketch/edit target/style]
+1. **Image 1**: [Type: character/brand/sketch/edit target/style]
    - What it is: [Description]
    - How to use: [Identity Locking / Brand integration / Structural control / Edit target / Style reference]
 
-2. **Image 2** — [Type]
+2. **Image 2**: [Type]
    - What it is: [Description]
    - How to use: [Instructions]
 
@@ -476,14 +476,14 @@ Confirm: "Saved to `prompts/images/[filename].md`"
 
 ## Guidelines
 
-- **Detect reference images first** — Check if images were provided before asking about them
-- **Analyze reference types** — Character, brand, sketch, edit target, or style reference each need different handling
-- **Interactive, not interrogative** — Ask smart questions, not every possible question
-- **Adapt to complexity** — Simple requests need fewer questions
-- **Always use nano-banana-pro-expert** — It knows the model's quirks and best practices
-- **Explain the "why"** — Help users understand prompt structure so they can iterate
-- **Make delivery easy** — Clipboard is usually fastest
-- **Encourage iteration** — First prompts rarely need to be perfect; the model handles edits well
+- **Detect reference images first**: Check if images were provided before asking about them
+- **Analyze reference types**: Character, brand, sketch, edit target, or style reference each need different handling
+- **Interactive, not interrogative**: Ask smart questions, not every possible question
+- **Adapt to complexity**: Simple requests need fewer questions
+- **Always use nano-banana-pro-expert**: It knows the model's quirks and best practices
+- **Explain the "why"**: Help users understand prompt structure so they can iterate
+- **Make delivery easy**: Clipboard is usually fastest
+- **Encourage iteration**: First prompts rarely need to be perfect; the model handles edits well
 
 ## Common Prompt Types
 

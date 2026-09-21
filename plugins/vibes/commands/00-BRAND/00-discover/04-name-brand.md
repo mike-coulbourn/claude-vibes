@@ -139,11 +139,11 @@ c. Record availability for each name:
 For each domain-verified candidate, evaluate using:
 
 **SMILE Test** (score each 1-5):
-- Suggestive — evokes something about the brand?
-- Memorable — makes an association with the familiar?
-- Imagery — aids memory through evocative visuals?
-- Legs — lends itself to extended wordplay and branding?
-- Emotional — moves people?
+- Suggestive: evokes something about the brand?
+- Memorable: makes an association with the familiar?
+- Imagery: aids memory through evocative visuals?
+- Legs: lends itself to extended wordplay and branding?
+- Emotional: moves people?
 
 **SCRATCH Filter** (must pass all):
 - Not Spelling Challenged (no typos)
@@ -187,18 +187,18 @@ Before finalizing:
 
 ## CRITICAL RULES
 
-1. **Never present a name without verified domain availability** — founders fall in love with names; don't let them fall for one they can't own
+1. **Never present a name without verified domain availability**: founders fall in love with names; don't let them fall for one they can't own
 2. **A good-enough name with .com is better than a perfect name without**
 3. **Two syllables is optimal** for memorability
-4. **Push past comfort** — the best names often feel uncomfortable at first (Sonos was rejected as "not entertainment enough")
+4. **Push past comfort**: the best names often feel uncomfortable at first (Sonos was rejected as "not entertainment enough")
 
 ## TOOLS TO USE
 
 - **Whois MCP** (`mcp__plugin_claude-vibes_whois__whois_domain`) — REQUIRED for every name before presenting
-- **Structured reasoning** — systematically develop and evaluate options
-- **WebSearch** — check trademark databases and existing brands
-- **WebFetch** — read trademark results and brand pages
-- **AskUserQuestion** — gather preferences, present options, get feedback
+- **Structured reasoning**: systematically develop and evaluate options
+- **WebSearch**: check trademark databases and existing brands
+- **WebFetch**: read trademark results and brand pages
+- **AskUserQuestion**: gather preferences, present options, get feedback
 ```
 
 ## After Agent Returns
@@ -212,7 +212,7 @@ Use AskUserQuestion to confirm the final choice:
 
 ## Guidelines
 
-- Domain availability is NON-NEGOTIABLE — don't let founder fall for unavailable names
+- Domain availability is NON-NEGOTIABLE: don't let founder fall for unavailable names
 - A good-enough name with .com is better than a perfect name without
 - Encourage founder to purchase domain immediately after selection
 - Check for trademark conflicts before finalizing

@@ -209,7 +209,7 @@ Deliver the complete color palette using the Color Palette Documentation Templat
 Use AskUserQuestion to help founder review and validate:
 
 "Here's your brand color palette. How would you like to proceed?"
-- This palette feels right — let's proceed
+- This palette feels right: let's proceed
 - I'd like to explore different primary color options
 - I want to refine specific colors (primary, secondary, accent)
 - I have questions about the color choices
@@ -218,14 +218,14 @@ Use AskUserQuestion to help founder review and validate:
 
 ## Guidelines
 
-- **Colors must differentiate from competitors** — Blue Ocean thinking
-- **Include accessibility considerations** — WCAG compliance is non-negotiable
-- **Provide exact values** — no "blue-ish" vagueness; HEX, RGB, CMYK, Pantone
-- **Consider how colors work across digital and print** — test CMYK conversion
-- **Account for culture** — research color meanings in target markets
-- **Appropriateness over preference** — color must "fit" the brand context
-- **Keep it simple** — 3-5 core colors maximum; simplicity scales
-- **Connect every choice to strategy** — rationale for each color
+- **Colors must differentiate from competitors**: Blue Ocean thinking
+- **Include accessibility considerations**: WCAG compliance is non-negotiable
+- **Provide exact values**: no "blue-ish" vagueness; HEX, RGB, CMYK, Pantone
+- **Consider how colors work across digital and print**: test CMYK conversion
+- **Account for culture**: research color meanings in target markets
+- **Appropriateness over preference**: color must "fit" the brand context
+- **Keep it simple**: 3-5 core colors maximum; simplicity scales
+- **Connect every choice to strategy**: rationale for each color
 
 ## Output
 

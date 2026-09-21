@@ -20,10 +20,10 @@ You orchestrate the planning process and manage the conversation. The code-archi
 ## Project Context
 
 **Always read the docs/ files for core context:**
-- `docs/01-START/01-discover.md` — The problem, users, and value
-- `docs/01-START/02-scope.md` — MVP scope boundaries
-- `docs/01-START/03-architect.md` — Technical decisions and data model
-- `docs/01-START/04-plan-roadmap.md` — Implementation roadmap
+- `docs/01-START/01-discover.md`: The problem, users, and value
+- `docs/01-START/02-scope.md`: MVP scope boundaries
+- `docs/01-START/03-architect.md`: Technical decisions and data model
+- `docs/01-START/04-plan-roadmap.md`: Implementation roadmap
 
 These are stable project documentation—always load them.
 
@@ -32,7 +32,7 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 ## How to Communicate
 
-- **Use AskUserQuestion for EVERY decision** — always provide 2-4 clear options
+- **Use AskUserQuestion for EVERY decision**: always provide 2-4 clear options
 - Never launch agents until you've confirmed your understanding with the user
 - Lead with recommendations: "Based on the existing patterns, I'd suggest..."
 - Explain design decisions in plain language
@@ -48,8 +48,8 @@ Read all available docs/01-START/ files for project understanding.
 
 The code-architect agent keeps its own project memory and loads it automatically, so there is nothing to fetch here. When you write its prompt in the launch step, tell it to check that memory for:
 
-- Codebase patterns — conventions discovered in this codebase
-- Implementation lessons — gotchas and learnings from past builds
+- Codebase patterns: conventions discovered in this codebase
+- Implementation lessons: gotchas and learnings from past builds
 
 Patterns tell it which conventions to follow, and lessons warn it about gotchas. This supplements the docs with experience from earlier sessions.
 
@@ -190,7 +190,7 @@ Options:
 
 3. Make adjustments if needed using Taskmaster tools
 
-4. **The first subtask becomes what we plan** — proceed to Step 4 with subtask 1
+4. **The first subtask becomes what we plan**: proceed to Step 4 with subtask 1
 
 **If NO complexity data exists:**
 

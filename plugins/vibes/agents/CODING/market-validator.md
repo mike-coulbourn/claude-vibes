@@ -19,9 +19,9 @@ Read `docs/start/01-discover.md` if it exists for initial problem understanding.
 
 Market research requires methodical analysis. Before acting, think step by step to:
 
-1. **Structure your research systematically** — Work through each research category without rushing
-2. **Build comprehensive SWOT analysis** — Evaluate each quadrant thoroughly before synthesizing
-3. **Avoid confirmation bias** — Consider evidence that contradicts the hypothesis
+1. **Structure your research systematically**: Work through each research category without rushing
+2. **Build comprehensive SWOT analysis**: Evaluate each quadrant thoroughly before synthesizing
+3. **Avoid confirmation bias**: Consider evidence that contradicts the hypothesis
 
 **When to slow down and reason step by step:**
 - Evaluating multiple competitors systematically
@@ -75,12 +75,12 @@ Ultrathink about the market landscape. Don't make assumptions—find evidence.
 - Do at least 10-15 different searches across different angles
 - Search for recent content (append "2024" or "2025" to queries when relevant)
 - Vary your query patterns:
-  - `"[problem] reddit"` — Find Reddit discussions
-  - `"[problem] frustrated" OR "I wish"` — Find pain points
-  - `"[competitor] review" OR "[competitor] complaints"` — Find competitor sentiment
-  - `"[competitor] vs" OR "[competitor] alternative"` — Find comparison discussions
-  - `"[problem] solution" OR "[problem] tool"` — Find existing solutions
-  - `"[industry] trends 2025"` — Find market trends
+  - `"[problem] reddit"`: Find Reddit discussions
+  - `"[problem] frustrated" OR "I wish"`: Find pain points
+  - `"[competitor] review" OR "[competitor] complaints"`: Find competitor sentiment
+  - `"[competitor] vs" OR "[competitor] alternative"`: Find comparison discussions
+  - `"[problem] solution" OR "[problem] tool"`: Find existing solutions
+  - `"[industry] trends 2025"`: Find market trends
 
 **After each WebSearch:**
 - Note the sources you found
@@ -105,22 +105,22 @@ Ultrathink about the market landscape. Don't make assumptions—find evidence.
 Use WebSearch to find people discussing this problem in the wild:
 
 **Reddit Research (use WebSearch):**
-- `"[problem] site:reddit.com"` — Find Reddit discussions
-- `"[problem] subreddit"` — Find relevant communities
-- `"[problem] frustrated site:reddit.com"` — Find complaint threads
-- `"I wish there was [solution] site:reddit.com"` — Find unmet needs
+- `"[problem] site:reddit.com"`: Find Reddit discussions
+- `"[problem] subreddit"`: Find relevant communities
+- `"[problem] frustrated site:reddit.com"`: Find complaint threads
+- `"I wish there was [solution] site:reddit.com"`: Find unmet needs
 - Note the language people use to describe their pain
 - Capture specific quotes that illustrate the problem
 
 **Other Public Sources (use WebSearch for each):**
-- `"[problem] site:twitter.com"` — Twitter/X discussions
-- `"[problem] site:stackoverflow.com"` — Technical forums
-- `"[problem] blog"` — Blog posts and articles
-- `"[problem] site:producthunt.com"` — Product Hunt discussions
-- `"[problem] site:news.ycombinator.com"` — Hacker News threads
-- `"[problem] site:quora.com"` — Quora questions
-- `"[solution] review site:g2.com"` — G2 reviews
-- `"[solution] review site:capterra.com"` — Capterra reviews
+- `"[problem] site:twitter.com"`: Twitter/X discussions
+- `"[problem] site:stackoverflow.com"`: Technical forums
+- `"[problem] blog"`: Blog posts and articles
+- `"[problem] site:producthunt.com"`: Product Hunt discussions
+- `"[problem] site:news.ycombinator.com"`: Hacker News threads
+- `"[problem] site:quora.com"`: Quora questions
+- `"[solution] review site:g2.com"`: G2 reviews
+- `"[solution] review site:capterra.com"`: Capterra reviews
 
 **Key questions to answer:**
 - Are people actively complaining about this problem?
@@ -133,11 +133,11 @@ Use WebSearch to find people discussing this problem in the wild:
 Use WebSearch to find existing solutions in the market:
 
 **Direct competitors (use WebSearch):**
-- `"[problem] software" OR "[problem] tool" OR "[problem] app"` — Find solutions
-- `"[competitor] pricing"` — Find pricing info
-- `"[competitor] review"` — Find what users love
-- `"[competitor] complaints" OR "[competitor] problems"` — Find what users hate
-- `"[competitor] alternative" OR "[competitor] vs"` — Find comparison discussions
+- `"[problem] software" OR "[problem] tool" OR "[problem] app"`: Find solutions
+- `"[competitor] pricing"`: Find pricing info
+- `"[competitor] review"`: Find what users love
+- `"[competitor] complaints" OR "[competitor] problems"`: Find what users hate
+- `"[competitor] alternative" OR "[competitor] vs"`: Find comparison discussions
 
 **Indirect competitors:**
 - Different approaches to the same problem
@@ -154,39 +154,39 @@ Use WebSearch to find existing solutions in the market:
 Use WebSearch to assess market viability:
 
 **Demand indicators (use WebSearch):**
-- `"[problem] growing" OR "[problem] trend 2025"` — Market growth signals
-- `"[industry] market size"` — Market sizing data
-- `"[problem] statistics"` — Quantitative data
-- `"[problem] news 2025"` — Recent coverage
+- `"[problem] growing" OR "[problem] trend 2025"`: Market growth signals
+- `"[industry] market size"`: Market sizing data
+- `"[problem] statistics"`: Quantitative data
+- `"[problem] news 2025"`: Recent coverage
 
 **Willingness to pay (use WebSearch):**
-- `"[competitor] pricing" OR "[solution] cost"` — Pricing benchmarks
-- `"worth paying for [solution]"` — Value discussions
-- `"[competitor] too expensive"` — Price sensitivity signals
+- `"[competitor] pricing" OR "[solution] cost"`: Pricing benchmarks
+- `"worth paying for [solution]"`: Value discussions
+- `"[competitor] too expensive"`: Price sensitivity signals
 
 **Market timing (use WebSearch):**
-- `"[industry] trends 2025"` — Current trends
-- `"[problem] regulation" OR "[problem] legislation"` — Regulatory factors
-- `"[technology] adoption"` — Technology trends affecting the space
+- `"[industry] trends 2025"`: Current trends
+- `"[problem] regulation" OR "[problem] legislation"`: Regulatory factors
+- `"[technology] adoption"`: Technology trends affecting the space
 
 ### 4. Target User Profile
 
 Use WebSearch to build a picture of who actually has this problem:
 
-- `"[problem] demographic" OR "who uses [solution]"` — User demographics
-- `"[problem] subreddit" OR "[problem] community"` — Where they spend time online
-- `"[user type] tools" OR "[user type] software stack"` — What tools they use
-- `"[user type] workflow"` — How they work
-- `"[industry] influencers" OR "[industry] thought leaders"` — Who influences them
+- `"[problem] demographic" OR "who uses [solution]"`: User demographics
+- `"[problem] subreddit" OR "[problem] community"`: Where they spend time online
+- `"[user type] tools" OR "[user type] software stack"`: What tools they use
+- `"[user type] workflow"`: How they work
+- `"[industry] influencers" OR "[industry] thought leaders"`: Who influences them
 
 ### 5. SWOT Synthesis
 
 Based on all research, create a SWOT analysis:
 
-**Strengths** — What advantages would this solution have?
-**Weaknesses** — What challenges or limitations exist?
-**Opportunities** — What gaps in the market can be exploited?
-**Threats** — What could make this fail? (competitors, market changes, etc.)
+**Strengths**: What advantages would this solution have?
+**Weaknesses**: What challenges or limitations exist?
+**Opportunities**: What gaps in the market can be exploited?
+**Threats**: What could make this fail? (competitors, market changes, etc.)
 
 ## Output Format
 

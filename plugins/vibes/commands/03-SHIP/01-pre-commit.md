@@ -92,11 +92,11 @@ Use AskUserQuestion if needed:
 ## Specific Checks
 
 If specific checks are requested:
-- `lint` — Only run linting on changed files
-- `types` — Only run type checking
-- `tests` — Only run related tests
-- `security` — Run security scan on changed files
-- `all` — Run everything (default)
+- `lint`: Only run linting on changed files
+- `types`: Only run type checking
+- `tests`: Only run related tests
+- `security`: Run security scan on changed files
+- `all`: Run everything (default)
 
 ## Guidelines
 
@@ -112,6 +112,6 @@ After all checks complete:
 1. Summary of files checked (uncommitted changes only)
 2. Issues found (if any) with plain language explanations
 3. Next steps:
-   - `/02-commit` — Just commit locally
-   - `/03-push` — Commit and push to remote
-   - `/04-pr` — Commit, push, and create PR
+   - `/02-commit`: Just commit locally
+   - `/03-push`: Commit and push to remote
+   - `/04-pr`: Commit, push, and create PR

@@ -44,20 +44,20 @@ You draw on the methodologies of recognized brand strategy experts:
 
 ### Individual Thought Leaders
 
-- **Marty Neumeier** — Author of "The Brand Gap" and "ZAG"; Creator of the Only-ness Statement and Good/Different Chart; "When others zig, zag"
-- **David Aaker** — "Father of Modern Branding"; Professor Emeritus at UC Berkeley Haas; Creator of Brand Equity Model and the 5Bs Framework
-- **Michael Johnson** — Founder of johnson banks; Author of "Branding: In Five and a Half Steps"; "Zag when a sector zigs—especially in regards to color"
-- **Paula Scher** — Partner at Pentagram; "Master conjurer of the instantly familiar"; Created identities for The Public Theater, Citibank, Tiffany & Co.
-- **Sagi Haviv** — Partner at Chermayeff & Geismar & Haviv; Designer of 60+ identity programs; "Simplicity and consistent application are even more valuable"
-- **Stephen Houraghan** — CEO of Brand Master Academy; Systematized brand-building processes
-- **Jacob Cass** — Founder of JUST Creative; "The logo is just the tip of the iceberg"
+- **Marty Neumeier**: Author of "The Brand Gap" and "ZAG"; Creator of the Only-ness Statement and Good/Different Chart; "When others zig, zag"
+- **David Aaker**: "Father of Modern Branding"; Professor Emeritus at UC Berkeley Haas; Creator of Brand Equity Model and the 5Bs Framework
+- **Michael Johnson**: Founder of johnson banks; Author of "Branding: In Five and a Half Steps"; "Zag when a sector zigs—especially in regards to color"
+- **Paula Scher**: Partner at Pentagram; "Master conjurer of the instantly familiar"; Created identities for The Public Theater, Citibank, Tiffany & Co.
+- **Sagi Haviv**: Partner at Chermayeff & Geismar & Haviv; Designer of 60+ identity programs; "Simplicity and consistent application are even more valuable"
+- **Stephen Houraghan**: CEO of Brand Master Academy; Systematized brand-building processes
+- **Jacob Cass**: Founder of JUST Creative; "The logo is just the tip of the iceberg"
 
 ### Leading Agencies
 
-- **Pentagram** — World's largest independent design consultancy; "Purposeful brands that are reliable and surprising, never uniform but always consistent"
-- **Landor** — Pioneered modern branding research; Created FedEx logo; Brand represents ~33% of business value
-- **Chermayeff & Geismar & Haviv** — Created Chase, NBC, National Geographic, PBS logos; "Powerful simplicity"
-- **SmashBrand** — "Path To Performance" methodology; 200+ brands, $20 billion in incremental sales
+- **Pentagram**: World's largest independent design consultancy; "Purposeful brands that are reliable and surprising, never uniform but always consistent"
+- **Landor**: Pioneered modern branding research; Created FedEx logo; Brand represents ~33% of business value
+- **Chermayeff & Geismar & Haviv**: Created Chase, NBC, National Geographic, PBS logos; "Powerful simplicity"
+- **SmashBrand**: "Path To Performance" methodology; 200+ brands, $20 billion in incremental sales
 
 ---
 
@@ -92,11 +92,11 @@ You draw on the methodologies of recognized brand strategy experts:
 ```
 
 **Five Disciplines of Branding**:
-1. **Differentiate** — Find your "zag"
-2. **Collaborate** — Work across disciplines
-3. **Innovate** — Keep evolving
-4. **Validate** — Test with customers
-5. **Cultivate** — Nurture over time
+1. **Differentiate**: Find your "zag"
+2. **Collaborate**: Work across disciplines
+3. **Innovate**: Keep evolving
+4. **Validate**: Test with customers
+5. **Cultivate**: Nurture over time
 
 **When to Use ZAG**: When the category is saturated with clichés, or when there's a genuine strategic/philosophical difference worth highlighting.
 
@@ -116,22 +116,22 @@ You draw on the methodologies of recognized brand strategy experts:
 | **Brand as Symbol** | Visual/audio imagery, metaphorical symbols, brand heritage |
 
 **The 5Bs Framework (2025)**:
-1. **Brand Equity** — Owned brand assets enabling strategies
-2. **Brand Relevance** — Staying meaningful to audiences
-3. **Brand Image** — How you're perceived
-4. **Brand Loyalty** — Customer retention and advocacy
-5. **Brand Portfolio** — How brands work together
+1. **Brand Equity**: Owned brand assets enabling strategies
+2. **Brand Relevance**: Staying meaningful to audiences
+3. **Brand Image**: How you're perceived
+4. **Brand Loyalty**: Customer retention and advocacy
+5. **Brand Portfolio**: How brands work together
 
 ---
 
 ### Framework 3: Michael Johnson's Five-and-a-Half Steps
 
-1. **Investigation** — Look hard at the market. Find gaps or understand how to extend gaps.
-2. **Strategy & Narrative** — Define your brand with six questions and one statement.
-3. **Step 2.5 (The Half Step)** — Don't lock down narrative before design. Design discoveries can affect narrative.
-4. **Design** — Logos and social graphics are just a small part of the whole.
-5. **Implementation** — A good brand manual should inspire, not bore. "Consistency doesn't mean doing everything the same way."
-6. **Engage or Revive** — Reinvention, making old ideas fresh, producing new ideas.
+1. **Investigation**: Look hard at the market. Find gaps or understand how to extend gaps.
+2. **Strategy & Narrative**: Define your brand with six questions and one statement.
+3. **Step 2.5 (The Half Step)**: Don't lock down narrative before design. Design discoveries can affect narrative.
+4. **Design**: Logos and social graphics are just a small part of the whole.
+5. **Implementation**: A good brand manual should inspire, not bore. "Consistency doesn't mean doing everything the same way."
+6. **Engage or Revive**: Reinvention, making old ideas fresh, producing new ideas.
 
 **Key Insight**: "Zag when faced with a sector that zigs—especially in regards to color."
 
@@ -150,18 +150,18 @@ A visual representation showing how consumers perceive brands relative to compet
    - Traditional vs. Innovative
    - For Experts vs. For Everyone
 
-2. **Define Competitors** — Aim for 10+ competitors for accurate visualization
+2. **Define Competitors**: Aim for 10+ competitors for accurate visualization
 
-3. **Collect Data** — Use customer insights, feedback, reviews, competitor research
+3. **Collect Data**: Use customer insights, feedback, reviews, competitor research
 
-4. **Plot and Analyze** — Create larger shapes for competitors with bigger market share
+4. **Plot and Analyze**: Create larger shapes for competitors with bigger market share
 
-5. **Identify White Space** — Look for quadrants with lower competition
+5. **Identify White Space**: Look for quadrants with lower competition
 
 **Attribute Selection Guidance**:
 - Focus on variables that shape consumer perception and drive purchase decisions
 - Each attribute should have an opposite (exciting/boring, fast/slow)
-- Over 400 possible attributes exist — choose what matters to YOUR customers
+- Over 400 possible attributes exist: choose what matters to YOUR customers
 
 ---
 
@@ -213,9 +213,9 @@ A visual representation showing how consumers perceive brands relative to compet
 ### Framework 6: Fame, Fluency & Feeling
 
 Three levers of brand growth:
-- **Fame** — Recognition and impact
-- **Fluency** — Relevance and consistency
-- **Feeling** — Emotional connection and experience
+- **Fame**: Recognition and impact
+- **Fluency**: Relevance and consistency
+- **Feeling**: Emotional connection and experience
 
 ---
 

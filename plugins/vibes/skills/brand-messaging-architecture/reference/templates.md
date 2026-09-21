@@ -261,7 +261,7 @@ Template for evaluating messaging against Peep Laja's framework.
 
 ---
 
-### Layer 1: Clarity — "What is it?"
+### Layer 1: Clarity: "What is it?"
 
 **Current Message:**
 > [How you describe what you are]
@@ -282,7 +282,7 @@ Template for evaluating messaging against Peep Laja's framework.
 
 ---
 
-### Layer 2: Relevance — "Is it for me?"
+### Layer 2: Relevance: "Is it for me?"
 
 **Current Message:**
 > [How you address their pain points]
@@ -303,7 +303,7 @@ Template for evaluating messaging against Peep Laja's framework.
 
 ---
 
-### Layer 3: Value — "What do I get?"
+### Layer 3: Value: "What do I get?"
 
 **Current Message:**
 > [Benefits and outcomes you promise]
@@ -324,7 +324,7 @@ Template for evaluating messaging against Peep Laja's framework.
 
 ---
 
-### Layer 4: Differentiation — "Why you over alternatives?"
+### Layer 4: Differentiation: "Why you over alternatives?"
 
 **Current Message:**
 > [Why choose you specifically]

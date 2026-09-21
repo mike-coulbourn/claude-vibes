@@ -104,7 +104,7 @@ The most widely used framework for developing value propositions:
 ```
 
 **How to use it:**
-1. Start with Customer Profile — deeply understand jobs, pains, gains
+1. Start with Customer Profile: deeply understand jobs, pains, gains
 2. Map your offering to show how you address each
 3. Identify where pain relievers and gain creators align most strongly
 4. This intersection IS your value proposition
@@ -174,11 +174,11 @@ The most widely used positioning template (from *Crossing the Chasm*):
 *This is empathy, and prospects trust empathy.*
 
 **The 5 Elements:**
-1. **Name a Big, Relevant Change** — Something prospects sense but haven't articulated
-2. **Show There Will Be Winners and Losers** — Urgency to act
-3. **Tease the Promised Land** — What success looks like for those who adapt
-4. **Introduce Features as "Magic Gifts"** — Capabilities that help reach promised land
-5. **Name the Enemy** — An old mindset that has become a road to ruin
+1. **Name a Big, Relevant Change**: Something prospects sense but haven't articulated
+2. **Show There Will Be Winners and Losers**: Urgency to act
+3. **Tease the Promised Land**: What success looks like for those who adapt
+4. **Introduce Features as "Magic Gifts"**: Capabilities that help reach promised land
+5. **Name the Enemy**: An old mindset that has become a road to ruin
 
 ---
 
@@ -284,12 +284,12 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ## Common Messaging Architecture Mistakes
 
-1. **Skipping the Clarity layer** — Differentiation means nothing if they don't understand what you are
-2. **Too many pillars** — More than 5 dilutes focus
-3. **Inconsistency across touchpoints** — Erodes trust over time
-4. **Making the brand the hero** — Customers are the heroes; you're the guide
-5. **Not testing with real customers** — Internal love doesn't mean external resonance
-6. **Static messaging** — Never updating as market and customers evolve
+1. **Skipping the Clarity layer**: Differentiation means nothing if they don't understand what you are
+2. **Too many pillars**: More than 5 dilutes focus
+3. **Inconsistency across touchpoints**: Erodes trust over time
+4. **Making the brand the hero**: Customers are the heroes; you're the guide
+5. **Not testing with real customers**: Internal love doesn't mean external resonance
+6. **Static messaging**: Never updating as market and customers evolve
 
 ---
 
@@ -333,13 +333,13 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ## Universal Principles
 
-1. **Customer-first** — Great messaging starts with deep customer understanding
-2. **Clarity before cleverness** — Being understood is more important than being creative
-3. **Consistency compounds** — Every touchpoint reinforcing the same message builds trust
-4. **Differentiation is essential** — If competitors can say the same thing, it's not positioning
-5. **Prove your claims** — Unsubstantiated claims erode trust; evidence builds it
-6. **Simplify ruthlessly** — Complex messaging gets ignored; simple messaging gets remembered
-7. **Test and iterate** — Messaging is a hypothesis until validated with real customers
+1. **Customer-first**: Great messaging starts with deep customer understanding
+2. **Clarity before cleverness**: Being understood is more important than being creative
+3. **Consistency compounds**: Every touchpoint reinforcing the same message builds trust
+4. **Differentiation is essential**: If competitors can say the same thing, it's not positioning
+5. **Prove your claims**: Unsubstantiated claims erode trust; evidence builds it
+6. **Simplify ruthlessly**: Complex messaging gets ignored; simple messaging gets remembered
+7. **Test and iterate**: Messaging is a hypothesis until validated with real customers
 
 ---
 

@@ -24,8 +24,8 @@ This research must be thorough. Surface-level findings won't help create great c
 
 **ALWAYS load these skills first and apply their frameworks:**
 
-1. **`claude-vibes:conversion-psychology`** — Emotional triggers, social proof, scarcity, persuasion principles
-2. **`claude-vibes:platform-optimization`** — Platform-specific content requirements and audience behaviors
+1. **`claude-vibes:conversion-psychology`**: Emotional triggers, social proof, scarcity, persuasion principles
+2. **`claude-vibes:platform-optimization`**: Platform-specific content requirements and audience behaviors
 
 **You MUST apply from these skills**:
 - Look for emotional language in reviews (joy, frustration, fear, relief)
@@ -154,8 +154,8 @@ Your research should be:
 
 - Don't just copy marketing copy from the brand's website
 - Don't make up statistics or quotes
-- Don't skip competitor research — it's crucial for differentiation
-- Don't give generic findings — be specific to THIS brand
+- Don't skip competitor research: it's crucial for differentiation
+- Don't give generic findings: be specific to THIS brand
 
 ## Deliver Your Research
 

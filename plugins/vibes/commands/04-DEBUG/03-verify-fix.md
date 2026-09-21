@@ -33,7 +33,7 @@ Never assume verification criteria. Ask to confirm.
 
 **Always read these files for core context:**
 - `docs/01-START/` files — Project requirements and architecture
-- `docs/04-DEBUG/diagnosis-*.md` — The diagnosis for this fix
+- `docs/04-DEBUG/diagnosis-*.md`: The diagnosis for this fix
 
 These are stable documentation—always load them. The verifier agent will parse LOGS.json and report back specific relevant entries.
 
@@ -67,7 +67,7 @@ Otherwise, find the recent fix:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Agent tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**You MUST use the Agent tool to launch BOTH agents simultaneously**: they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Verifier Agent** (confirm fix works, check regressions):
 
@@ -272,10 +272,10 @@ When verification is complete:
 3. Any accepted trade-offs
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-SHIP/01-pre-commit` — Run pre-commit checks
-   - `/03-SHIP/02-commit` — Just commit locally
-   - `/03-SHIP/03-push` — Commit and push
-   - `/03-SHIP/04-pr` — Commit, push, and create PR
+   - `/03-SHIP/01-pre-commit`: Run pre-commit checks
+   - `/03-SHIP/02-commit`: Just commit locally
+   - `/03-SHIP/03-push`: Commit and push
+   - `/03-SHIP/04-pr`: Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
@@ -296,7 +296,7 @@ In the verifier's prompt, ask it to record durable learnings in its project memo
    - Prevention insights (e.g., "Add input length limits to prevent this class of bug")
    - Root cause patterns (e.g., "This symptom always traces back to cache staleness")
 
-**Only record NEW findings** — insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
+**Only record NEW findings**: insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 

@@ -150,9 +150,9 @@ Refactoring complete!
 [Plain language description of the improvement]
 
 **Changes made:**
-- `src/utils/validate.ts` — NEW: Shared validation utility
-- `src/api/users.ts:45-52` — Now uses shared validator
-- `src/api/orders.ts:38-45` — Now uses shared validator
+- `src/utils/validate.ts`: NEW: Shared validation utility
+- `src/api/users.ts:45-52`: Now uses shared validator
+- `src/api/orders.ts:38-45`: Now uses shared validator
 
 **Improvement achieved:**
 - Reduced duplication: 80 lines → 25 lines
@@ -192,7 +192,7 @@ In the refactorer's prompt, ask it to record durable learnings in its project me
    - Patterns you established (e.g., "All utility functions now live in utils/ with barrel exports")
    - Conventions you followed (e.g., "Services use constructor injection, not method injection")
 
-**Only record NEW findings** — approaches that will help future refactorings. If nothing notable was discovered, skip this step.
+**Only record NEW findings**: approaches that will help future refactorings. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 

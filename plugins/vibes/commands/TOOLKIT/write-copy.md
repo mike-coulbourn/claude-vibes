@@ -31,13 +31,13 @@ All generated copy should be saved to: `copy/[type]/`
 4. Only create a new subdirectory if no appropriate one exists
 
 **Standard subdirectory names** (use these for consistency):
-- `landing-pages/` — landing page copy
-- `emails/` — email sequences, newsletters, transactional emails
-- `ads/` — ad copy for any platform
-- `headlines/` — standalone headline collections
-- `sales-pages/` — long-form sales copy
-- `social/` — social media posts
-- `other/` — anything that doesn't fit above
+- `landing-pages/`: landing page copy
+- `emails/`: email sequences, newsletters, transactional emails
+- `ads/`: ad copy for any platform
+- `headlines/`: standalone headline collections
+- `sales-pages/`: long-form sales copy
+- `social/`: social media posts
+- `other/`: anything that doesn't fit above
 
 **File naming convention:**
 - `[descriptive-name].md`
@@ -116,7 +116,7 @@ Question 2: "What's the main problem you solve for customers?"
 - Anything to avoid mentioning?
 
 **Principles:**
-- Don't ask everything — prioritize what matters most for THIS type of copy
+- Don't ask everything: prioritize what matters most for THIS type of copy
 - Headlines need less context than full landing pages
 - B2B copy needs different context than B2C
 - If they have existing copy, ask if you can see it for voice matching
@@ -180,7 +180,7 @@ Deliver actionable insights specifically for copywriting:
 Focus on insights that will directly inform the copy, not general market analysis.
 ```
 
-**Store the research findings** — you'll include key insights in the elite-copywriter prompt.
+**Store the research findings**: you'll include key insights in the elite-copywriter prompt.
 
 ### Step 5: Load the Natural Writing Skill (CRITICAL)
 
@@ -311,8 +311,8 @@ After saving the file, **use the AskUserQuestion tool** to get the user's feedba
 ```
 Question: "How does this copy look?"
 Options:
-- Looks good — I'm happy with it
-- Needs some tweaks — I'll share specific feedback
+- Looks good: I'm happy with it
+- Needs some tweaks: I'll share specific feedback
 - Want a completely different angle
 - Other
 ```
@@ -344,16 +344,16 @@ Ready to use!"
 
 ## Guidelines
 
-- **Research before writing** — Market context produces better copy; use deep-researcher for substantial copy
-- **Skill before writing** — Always use the `claude-vibes:natural-writing` skill and careful step-by-step planning BEFORE launching elite-copywriter
-- **Natural from the start** — elite-copywriter has the natural-writing skill preloaded and writes natural copy on the first pass
-- **Context is everything** — User context + market research + the natural-writing method = copy that converts
+- **Research before writing**: Market context produces better copy; use deep-researcher for substantial copy
+- **Skill before writing**: Always use the `claude-vibes:natural-writing` skill and careful step-by-step planning BEFORE launching elite-copywriter
+- **Natural from the start**: elite-copywriter has the natural-writing skill preloaded and writes natural copy on the first pass
+- **Context is everything**: User context + market research + the natural-writing method = copy that converts
 - **Think step by step (ultrathink)** to assess research needs and plan clarifying questions
-- **Adapt to the ask** — A quick headline needs less research than a full sales page
-- **Show don't tell** — When asking about differentiators, push for specifics not generalities
-- **User approval is the final gate** — Keep iterating until they're happy
-- **Check existing directories** — Never create duplicate folders; use what exists
-- **Always save before asking approval** — User should be able to see the file
+- **Adapt to the ask**: A quick headline needs less research than a full sales page
+- **Show don't tell**: When asking about differentiators, push for specifics not generalities
+- **User approval is the final gate**: Keep iterating until they're happy
+- **Check existing directories**: Never create duplicate folders; use what exists
+- **Always save before asking approval**: User should be able to see the file
 
 ## Copy Request
 

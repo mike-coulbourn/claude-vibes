@@ -110,10 +110,10 @@ Use **AskUserQuestion** to offer next steps:
 ## Output Quality
 
 The research should be:
-- **Specific** — Real quotes, specific numbers, concrete examples
-- **Actionable** — Every finding should suggest a content angle
-- **Authentic** — Based on real customer feedback, not just marketing copy
-- **Creator-focused** — Framed for how a creator would use this info
+- **Specific**: Real quotes, specific numbers, concrete examples
+- **Actionable**: Every finding should suggest a content angle
+- **Authentic**: Based on real customer feedback, not just marketing copy
+- **Creator-focused**: Framed for how a creator would use this info
 
 ## Start Now
 

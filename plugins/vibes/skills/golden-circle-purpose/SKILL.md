@@ -74,7 +74,7 @@ Quick reference for purpose-driven brand building using Simon Sinek's Golden Cir
 - Ask "what" questions (not "why" — it feels accusatory)
 - "What did that mean to you?"
 - "What were you feeling at that moment?"
-- Don't fill silences — wait
+- Don't fill silences: wait
 
 ### Step 4: Identify Themes
 - Look for ideas appearing in 2+ stories
@@ -155,7 +155,7 @@ Quick reference for purpose-driven brand building using Simon Sinek's Golden Cir
 
 - Use "To _____ so that _____" format
 - Keep it under 15 words
-- Make it timeless — avoid time-sensitive references
+- Make it timeless: avoid time-sensitive references
 - Test: Can a 15-year-old explain it back?
 - Ensure it guides trade-offs
 - Ground it in authentic experience
@@ -210,9 +210,9 @@ These could apply to anyone and therefore inspire no one:
 - **Limbic brain** controls emotions, behavior, and decision-making (no language capacity)
 - **Neocortex** controls rational thought and language
 - **30%** of employees have confidence their company follows through on branding commitments
-- **17% more productive** — engaged employees vs non-engaged
-- **20% higher sales** — purpose-aligned teams
-- **41% less absenteeism** — employees who believe in the purpose
+- **17% more productive**: engaged employees vs non-engaged
+- **20% higher sales**: purpose-aligned teams
+- **41% less absenteeism**: employees who believe in the purpose
 
 ---
 

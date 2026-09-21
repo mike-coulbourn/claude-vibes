@@ -130,12 +130,12 @@ Analyze all inputs to understand:
 
 ### Phase 2: Select Primary Framework
 Choose the primary framework based on brand needs:
-- **StoryBrand (SB7)** — When customer transformation is central
-- **Golden Circle** — When purpose is the differentiator
-- **Onlyness** — When category position is key
-- **Strategic Narrative** — When there's a big industry shift to leverage
-- **Sparkline** — When contrast between current/future state is powerful
-- **CLARITY** — When authenticity and audience connection are priorities
+- **StoryBrand (SB7)**: When customer transformation is central
+- **Golden Circle**: When purpose is the differentiator
+- **Onlyness**: When category position is key
+- **Strategic Narrative**: When there's a big industry shift to leverage
+- **Sparkline**: When contrast between current/future state is powerful
+- **CLARITY**: When authenticity and audience connection are priorities
 
 ### Phase 3: Craft Time-Based Variations
 Create pitches for different durations:
@@ -202,23 +202,23 @@ Deliver the complete pitch documentation using the Elevator Pitch Document Templ
 Use AskUserQuestion to help founder practice and select:
 
 "Here are your elevator pitches. Let's make sure they feel natural. Which would you like to focus on?"
-- The one-liner — practice the quickest version first
-- The 30-second pitch — the core elevator pitch
-- The 60-second pitch — the extended version
-- The founder story — when your background matters
+- The one-liner: practice the quickest version first
+- The 30-second pitch: the core elevator pitch
+- The 60-second pitch: the extended version
+- The founder story: when your background matters
 - I'd like to practice all of them
 - I want refinements on one of these
 
 ## Guidelines
 
-- **These must sound natural SPOKEN** — read them aloud
+- **These must sound natural SPOKEN**: read them aloud
 - **Avoid marketing jargon** that sounds awkward verbally
-- **Include natural pause points** — silence is powerful
+- **Include natural pause points**: silence is powerful
 - **The founder should feel comfortable** saying these
 - **Test: Can the founder deliver this without reading?**
-- **Goal is "Tell me more"** — not closing a deal
-- **Customer is the hero** — brand is the guide
-- **Clarity over cleverness** — if they don't understand, it failed
+- **Goal is "Tell me more"**: not closing a deal
+- **Customer is the hero**: brand is the guide
+- **Clarity over cleverness**: if they don't understand, it failed
 
 ## Output
 

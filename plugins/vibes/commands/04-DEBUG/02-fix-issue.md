@@ -142,8 +142,8 @@ Here's what I fixed:
 [What was changed and why]
 
 **Files modified:**
-- `src/api/search.ts:45` — Added input validation
-- `src/utils/sanitize.ts` — New helper function
+- `src/api/search.ts:45`: Added input validation
+- `src/utils/sanitize.ts`: New helper function
 
 **Why this works:**
 [Brief explanation of how the fix addresses the root cause]
@@ -180,7 +180,7 @@ In the fixer's prompt, ask it to record durable learnings in its project memory 
    - Patterns you followed (e.g., "Error responses in this codebase always include {code, message, details}")
    - Conventions discovered (e.g., "All database operations use the transaction wrapper in db/utils.ts")
 
-**Only record NEW findings** — approaches that will help fix similar issues faster. If nothing notable was discovered, skip this step.
+**Only record NEW findings**: approaches that will help fix similar issues faster. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 

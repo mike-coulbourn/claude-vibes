@@ -123,7 +123,7 @@ When analyzing competitors, capture for each:
 
 2. **Plot 10+ competitors** on the map
 
-3. **Identify White Space** — quadrants with low competition
+3. **Identify White Space**: quadrants with low competition
 
 ---
 
@@ -189,11 +189,11 @@ Read [reference/templates.md](reference/templates.md) when producing a deliverab
 
 ## Key Principles
 
-1. **Map before you create** — Understand the landscape before making visual decisions
-2. **White space is opportunity** — What no one does is what you could own
-3. **Color is fastest differentiator** — Start there for visual differentiation
-4. **Distinctiveness requires consistency** — Different only works if you maintain it
-5. **Be the Only, not the Best** — Neumeier's core principle
+1. **Map before you create**: Understand the landscape before making visual decisions
+2. **White space is opportunity**: What no one does is what you could own
+3. **Color is fastest differentiator**: Start there for visual differentiation
+4. **Distinctiveness requires consistency**: Different only works if you maintain it
+5. **Be the Only, not the Best**: Neumeier's core principle
 
 ---
 

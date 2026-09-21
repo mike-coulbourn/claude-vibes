@@ -29,12 +29,12 @@ All research reports should be saved to: `research/[topic-area]/`
 4. Only create a new subdirectory if no appropriate one exists
 
 **Subdirectory examples** (create as needed, check first):
-- `branding/` — brand identity, positioning, strategy
-- `marketing/` — marketing strategies, channels, tactics
-- `tech/` — technologies, frameworks, architectures
-- `business/` — business models, pricing, operations
-- `design/` — design principles, UX, visual design
-- `industry/` — industry-specific research
+- `branding/`: brand identity, positioning, strategy
+- `marketing/`: marketing strategies, channels, tactics
+- `tech/`: technologies, frameworks, architectures
+- `business/`: business models, pricing, operations
+- `design/`: design principles, UX, visual design
+- `industry/`: industry-specific research
 
 **File naming convention:**
 - `[descriptive-topic].md`
@@ -60,25 +60,25 @@ Think through: "What do I need to know to make this research maximally useful?"
 
 **Essential questions to consider:**
 
-**Purpose** — Why do they need this research?
+**Purpose**: Why do they need this research?
 - Learning/understanding a new topic
 - Making a specific decision
 - Implementing something (need actionable guidance)
 - Validating an existing approach
 
-**Depth** — How comprehensive should it be?
+**Depth**: How comprehensive should it be?
 - Quick overview (key concepts, major experts)
 - Moderate depth (methodologies, best practices)
 - Exhaustive (everything top experts know and do)
 
-**Application** — What will they DO with this research?
+**Application**: What will they DO with this research?
 - Understanding this helps the agent tailor the output format and focus
 
-**Specific angles** — Any particular aspects to focus on?
+**Specific angles**: Any particular aspects to focus on?
 - Certain methodologies, specific experts, particular use cases
 
 **Smart clarification principles:**
-- Don't overwhelm with questions — ask the 2-3 most critical ones
+- Don't overwhelm with questions: ask the 2-3 most critical ones
 - If the request is clear and specific, fewer questions needed
 - If vague or broad, more clarification helps
 - Always explain WHY you're asking (helps user give better answers)
@@ -95,9 +95,9 @@ Question 1: "What will you use this research for?"
 - Other
 
 Question 2: "How deep should I go?"
-- Quick overview — key concepts and top experts
-- Moderate — methodologies and best practices included
-- Exhaustive — comprehensive expert knowledge extraction
+- Quick overview: key concepts and top experts
+- Moderate: methodologies and best practices included
+- Exhaustive: comprehensive expert knowledge extraction
 ```
 
 ### Step 3: Launch the Deep Researcher Agent
@@ -166,13 +166,13 @@ Based on your goal of [purpose], I'd highlight [key findings]. Want me to go dee
 
 ## Guidelines
 
-- **Front-load context gathering** — Better to ask questions upfront than get unfocused research
+- **Front-load context gathering**: Better to ask questions upfront than get unfocused research
 - **Think step by step** to plan your clarifying questions strategically
-- **Tailor questions to the topic** — Technical topics may need different clarification than creative topics
-- **Respect user's time** — If they give short answers, don't over-ask; make reasonable assumptions
-- **Always launch the agent** — Don't try to do the research yourself; use the deep-researcher agent
-- **Check existing directories** — Never create duplicate folders; use what exists
-- **Always save to file** — Research should persist in the appropriate `research/` subdirectory
+- **Tailor questions to the topic**: Technical topics may need different clarification than creative topics
+- **Respect user's time**: If they give short answers, don't over-ask; make reasonable assumptions
+- **Always launch the agent**: Don't try to do the research yourself; use the deep-researcher agent
+- **Check existing directories**: Never create duplicate folders; use what exists
+- **Always save to file**: Research should persist in the appropriate `research/` subdirectory
 
 ## Research Topic
 

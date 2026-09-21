@@ -37,9 +37,9 @@ description: Use when writing or adapting short-form or sponsored video content 
 ## Instagram Reels (2025)
 
 ### Key Ranking Factors
-1. **Watch time** — Primary factor
-2. **Likes per reach** — Engagement quality
-3. **Shares per reach** — Especially DM shares from non-followers
+1. **Watch time**: Primary factor
+2. **Likes per reach**: Engagement quality
+3. **Shares per reach**: Especially DM shares from non-followers
 
 ### What Gets Pushed
 - High saves, shares, comments

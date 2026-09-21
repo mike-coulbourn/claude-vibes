@@ -133,10 +133,10 @@ A comprehensive verbal identity includes 8 components:
 
 ### Slack's 5 Copy Principles
 
-1. **Be clear and simple** — Aim for comprehension
-2. **Anticipate (and answer!) the readers' questions** — Be relevant
-3. **Be intentionally playful and bold** — Delight without distracting
-4. **Build appropriate emotional connection** — Be generous with warmth
+1. **Be clear and simple**: Aim for comprehension
+2. **Anticipate (and answer!) the readers' questions**: Be relevant
+3. **Be intentionally playful and bold**: Delight without distracting
+4. **Build appropriate emotional connection**: Be generous with warmth
 5. **Help people envision the possibilities of a better future**
 
 The best copy demonstrates at least 3 of these 5 principles.

@@ -77,10 +77,10 @@ Question: "How do you want to organize your codebase?
 
 Based on your project scope, I'd recommend [X] because [reason — consider team size, deployment needs, complexity]."
 Options:
-- Monorepo — frontend and backend together (recommended for small teams)
-- Separate repos — frontend and backend in different repositories
-- Frontend only — using a backend-as-a-service (Supabase, Firebase, Xano, etc.)
-- I'm not sure — help me decide
+- Monorepo: frontend and backend together (recommended for small teams)
+- Separate repos: frontend and backend in different repositories
+- Frontend only: using a backend-as-a-service (Supabase, Firebase, Xano, etc.)
+- I'm not sure: help me decide
 ```
 
 **Recommendation logic:**
@@ -99,18 +99,18 @@ Options:
 - Traditional coded frontend (React, Vue, Next.js, etc.)
 - Nocode/low-code platform (Lovable, v0, Webflow, Framer, etc.)
 - AI-generated UI that I'll customize
-- Hybrid — nocode prototype, then coded version
-- No frontend — this is an API/backend-only project
+- Hybrid: nocode prototype, then coded version
+- No frontend: this is an API/backend-only project
 ```
 
 **Follow up on design status:**
 ```
 Question: "What's the current status of your UI/UX design?"
 Options:
-- Complete — ready to build from (Figma, Sketch, mockups, etc.)
-- In progress — still being refined
-- Not started — will design after architecture
-- No formal design — building/designing as I go
+- Complete: ready to build from (Figma, Sketch, mockups, etc.)
+- In progress: still being refined
+- Not started: will design after architecture
+- No formal design: building/designing as I go
 ```
 
 **Workflow implications based on answers:**
@@ -128,9 +128,9 @@ Options:
 ```
 Question: "Design decisions often affect frontend architecture. I'd recommend:
 
-1. **Proceed with backend architecture now** — frontend architecture when design is ready
-2. **Pause and finalize design first** — then do full architecture together
-3. **Continue with full architecture** — accept some frontend decisions may change
+1. **Proceed with backend architecture now**: frontend architecture when design is ready
+2. **Pause and finalize design first**: then do full architecture together
+3. **Continue with full architecture**: accept some frontend decisions may change
 
 What works best for your timeline?"
 Options:
@@ -318,17 +318,17 @@ Options:
 - Use a component library (shadcn/ui, Radix, MUI, Chakra)
 - Build custom components from scratch
 - Start with a library, customize as needed (recommended)
-- I'm not sure — what do you recommend?
+- I'm not sure: what do you recommend?
 ```
 
 **State Management:**
 ```
 Question: "How should your app manage shared data across screens?"
 Options:
-- Keep it simple — use built-in state (React Context, Vue reactivity)
+- Keep it simple: use built-in state (React Context, Vue reactivity)
 - Use a state library (Redux, Zustand, Pinia) for complex state
-- Server-first — fetch fresh data each time (React Query, SWR)
-- I'm not sure — what fits my app?
+- Server-first: fetch fresh data each time (React Query, SWR)
+- I'm not sure: what fits my app?
 ```
 
 **Styling Approach:**
@@ -348,7 +348,7 @@ Options:
 - Server-rendered (SSR) — fresh data, good for SEO
 - Static (SSG) — fastest, but content doesn't change often
 - Client-rendered (CSR) — simpler, but slower initial load
-- Hybrid — different pages use different approaches (recommended)
+- Hybrid: different pages use different approaches (recommended)
 ```
 
 **Note these decisions for the roadmap.** Frontend architecture can be revisited during BUILD phase if design evolves.

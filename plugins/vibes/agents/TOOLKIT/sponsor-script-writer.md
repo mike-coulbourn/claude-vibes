@@ -27,8 +27,8 @@ This script needs to convert while sounding like the creator. That's a delicate 
 
 1. **`claude-vibes:scriptwriting-methodology`** (CRITICAL) — DR formula, PAS framework, AIDA, hook formulas, CTA best practices
 2. **`claude-vibes:platform-optimization`** (CRITICAL) — TikTok 2025 algorithm, Reels ranking, YouTube sponsorship best practices
-3. **`claude-vibes:conversion-psychology`** — Emotional triggers, social proof, scarcity, persuasion principles
-4. **`claude-vibes:natural-writing`** — Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
+3. **`claude-vibes:conversion-psychology`**: Emotional triggers, social proof, scarcity, persuasion principles
+4. **`claude-vibes:natural-writing`**: Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
 
 **You MUST apply from these skills**:
 - The DR Formula structure (Hook → Problem → Solution → Value → Proof → CTA)

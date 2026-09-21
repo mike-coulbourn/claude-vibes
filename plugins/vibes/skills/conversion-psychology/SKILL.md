@@ -11,7 +11,7 @@ description: Use when optimizing sponsored or affiliate video scripts to convert
 
 This means:
 - Emotional reactions to marketing are **3x more powerful** than the message itself
-- Emotional videos stick — viewers are **6x more likely to remember them**
+- Emotional videos stick: viewers are **6x more likely to remember them**
 - When people feel a bond with your brand, they're **70% more likely to purchase**
 
 **Implication for scripts**: Lead with emotion, support with logic. Never the reverse.
@@ -28,7 +28,7 @@ This means:
 ### 2. Fear / FOMO
 - Can override a person's entire thought process
 - "Fear of Missing Out" drives immediate action
-- Use ethically — don't manufacture fake fear
+- Use ethically: don't manufacture fake fear
 
 ### 3. Nostalgia
 - Creates emotional bridge between brand and audience
@@ -85,11 +85,11 @@ This works because:
 
 ### Techniques for Authentic Feel
 
-1. **Work with products you actually use** — audiences detect inauthenticity
-2. **Avoid being too obvious** — meaningful content shouldn't feel like a sales ask
-3. **Match platform style and tone** — study what native content looks like
-4. **Focus on value over sales** — position as helpful, not promotional
-5. **Include honest cons** — perfect reviews feel fake
+1. **Work with products you actually use**: audiences detect inauthenticity
+2. **Avoid being too obvious**: meaningful content shouldn't feel like a sales ask
+3. **Match platform style and tone**: study what native content looks like
+4. **Focus on value over sales**: position as helpful, not promotional
+5. **Include honest cons**: perfect reviews feel fake
 
 ### The 80/20 Rule
 Maintain **80% value content, 20% promotional** to preserve trust.
@@ -128,12 +128,12 @@ Their "Hungry Life" YouTube series uses incredible storytelling without ever men
 
 ### Script Mistakes That Tank Conversions
 
-1. **Weak hook** — Nothing else matters if they scroll
-2. **Pushing sales too early** — Most viewers aren't ready
-3. **Looking like a sales pitch** — Only pros, superlatives, no authenticity
-4. **Feature dumping** — List one benefit, not five features
-5. **Promoting products you don't believe in** — Audiences can tell
-6. **Generic claims** — "Best ever" means nothing; specifics convert
+1. **Weak hook**: Nothing else matters if they scroll
+2. **Pushing sales too early**: Most viewers aren't ready
+3. **Looking like a sales pitch**: Only pros, superlatives, no authenticity
+4. **Feature dumping**: List one benefit, not five features
+5. **Promoting products you don't believe in**: Audiences can tell
+6. **Generic claims**: "Best ever" means nothing; specifics convert
 
 ### Industry Benchmarks
 - Average affiliate conversion rate: **1-3%**

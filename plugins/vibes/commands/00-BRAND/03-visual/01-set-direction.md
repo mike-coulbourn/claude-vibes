@@ -201,7 +201,7 @@ Deliver the complete visual identity direction using the Visual Identity Directi
 Use AskUserQuestion to help founder review and select:
 
 "Here's your visual identity direction. How would you like to proceed?"
-- This direction feels right — let's proceed
+- This direction feels right: let's proceed
 - I'd like to explore a different aesthetic direction
 - I want to refine specific sections (logo, photography, etc.)
 - I have questions about the recommendations
@@ -209,14 +209,14 @@ Use AskUserQuestion to help founder review and select:
 
 ## Guidelines
 
-- **Visual direction must connect back to brand strategy** — every choice has rationale
-- **Be specific enough that a designer could work from this** — not vague descriptions
-- **Consider the founder's budget and constraints** — practical recommendations
-- **Balance aspiration with practicality** — aspirational but achievable
-- **Strategy drives design** — commit to words first, then visuals
-- **Mood boards before detail** — align on direction before detailed design
-- **Think in systems** — coherent visual language, not one-off designs
-- **Differentiate visually** — use competitive audit to find white space
+- **Visual direction must connect back to brand strategy**: every choice has rationale
+- **Be specific enough that a designer could work from this**: not vague descriptions
+- **Consider the founder's budget and constraints**: practical recommendations
+- **Balance aspiration with practicality**: aspirational but achievable
+- **Strategy drives design**: commit to words first, then visuals
+- **Mood boards before detail**: align on direction before detailed design
+- **Think in systems**: coherent visual language, not one-off designs
+- **Differentiate visually**: use competitive audit to find white space
 
 ## Output
 

@@ -84,7 +84,7 @@ If others can make the same claim, it's not distinctive.
 **Examples of Hard Choices**:
 - Patagonia's "Don't Buy This Jacket" ad — environmental values over sales
 - Southwest's "employees first" — turning down customers who abuse staff
-- Netflix's Keeper Test — letting go of adequate performers
+- Netflix's Keeper Test: letting go of adequate performers
 
 ---
 
@@ -112,9 +112,9 @@ At Zappos: "You can be fired for core value violations even if job performance i
 
 ### Uncovering Authentic Values
 
-1. **"What motivated you to start this business?"** — Identifies core beliefs
+1. **"What motivated you to start this business?"**: Identifies core beliefs
 
-2. **"What would be missing if we didn't exist?"** — Reveals true purpose
+2. **"What would be missing if we didn't exist?"**: Reveals true purpose
 
 3. **The Five Whys** (Denise Lee Yohn):
    - Start with a product/service
@@ -122,11 +122,11 @@ At Zappos: "You can be fired for core value violations even if job performance i
    - Ask "why does that matter?"
    - Repeat five times to uncover real purpose
 
-4. **"What would you never compromise on, even if it cost you business?"** — Reveals non-negotiables
+4. **"What would you never compromise on, even if it cost you business?"**: Reveals non-negotiables
 
-5. **"What decisions have you made that reveal your values?"** — Past behavior predicts actual values
+5. **"What decisions have you made that reveal your values?"**: Past behavior predicts actual values
 
-6. **"What do you respect in other companies? What do you despise?"** — Reveals values through contrast
+6. **"What do you respect in other companies? What do you despise?"**: Reveals values through contrast
 
 ### "Always" and "Never" Statements
 

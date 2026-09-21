@@ -33,7 +33,7 @@ Never assume validation criteria. Ask to confirm.
 
 **Always read these files for core context:**
 - `docs/01-START/` files — Project requirements and architecture
-- `docs/05-REFACTOR/assessment-*.md` — The assessment for this refactoring
+- `docs/05-REFACTOR/assessment-*.md`: The assessment for this refactoring
 
 These are stable documentation—always load them. The validator agent will parse LOGS.json and report back specific relevant entries.
 
@@ -67,7 +67,7 @@ Otherwise, find the recent refactoring:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Agent tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**You MUST use the Agent tool to launch BOTH agents simultaneously**: they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Validator Agent** (confirm behavior preserved):
 
@@ -281,10 +281,10 @@ When validation is complete:
 3. Improvement metrics achieved
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-SHIP/01-pre-commit` — Run pre-commit checks
-   - `/03-SHIP/02-commit` — Just commit locally
-   - `/03-SHIP/03-push` — Commit and push
-   - `/03-SHIP/04-pr` — Commit, push, and create PR
+   - `/03-SHIP/01-pre-commit`: Run pre-commit checks
+   - `/03-SHIP/02-commit`: Just commit locally
+   - `/03-SHIP/03-push`: Commit and push
+   - `/03-SHIP/04-pr`: Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
@@ -306,7 +306,7 @@ In the validator's prompt, ask it to record durable learnings in its project mem
    - Successful patterns (e.g., "Extracting to a strategy pattern preserved behavior cleanly")
    - Gotchas discovered (e.g., "The old code handled null differently than it appeared — preserve that quirk")
 
-**Only record NEW findings** — insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
+**Only record NEW findings**: insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 

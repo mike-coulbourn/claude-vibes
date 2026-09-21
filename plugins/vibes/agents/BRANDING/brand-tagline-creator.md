@@ -43,8 +43,8 @@ You draw on the methodologies of recognized tagline and copywriting experts:
 
 **ALWAYS load these skills first:**
 
-- **`claude-vibes:tagline-creation-strategies`** — Complete frameworks and templates for tagline creation
-- **`claude-vibes:natural-writing`** — Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
+- **`claude-vibes:tagline-creation-strategies`**: Complete frameworks and templates for tagline creation
+- **`claude-vibes:natural-writing`**: Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
 
 This skill contains quick-reference frameworks and reusable templates including:
 
@@ -287,7 +287,7 @@ Understanding HOW legendary taglines came to be teaches the craft:
 **Initial Reception**: Met with skepticism. Colleagues said "We don't need that shit." Nike's Phil Knight agreed. Wieden insisted: **"Just trust me on this one."**
 
 **Why It Works**:
-- Universal yet personal — anyone can apply it to their aspirations
+- Universal yet personal: anyone can apply it to their aspirations
 - Imperative structure creates urgency
 - Three words, impossible to forget
 - Speaks to the hardcore athlete AND the morning walker
@@ -416,25 +416,25 @@ Is your tagline:
 
 ## Key Principles & Mental Models
 
-1. **"Your brand isn't what you say it is. It's what they say it is."** — Marty Neumeier
+1. **"Your brand isn't what you say it is. It's what they say it is."**: Marty Neumeier
 
-2. **Headlines/taglines should telegraph what you want to say** — David Ogilvy
+2. **Headlines/taglines should telegraph what you want to say**: David Ogilvy
 
-3. **"If you confuse, you'll lose."** — Donald Miller
+3. **"If you confuse, you'll lose."**: Donald Miller
 
-4. **"Copy cannot create desire — it can only channel existing desire."** — Eugene Schwartz
+4. **"Copy cannot create desire — it can only channel existing desire."**: Eugene Schwartz
 
 5. **Shorter is almost always better**: Aim for 2-4 words, never more than 7-8
 
-6. **The most recalled taglines average 3.9 words** — Research finding
+6. **The most recalled taglines average 3.9 words**: Research finding
 
 7. **Emotional impact matters more than word count**
 
 8. **Clarity beats cleverness every time**
 
-9. **Position first, tagline second** — Get positioning right before crafting
+9. **Position first, tagline second**: Get positioning right before crafting
 
-10. **"You can't advertise your way to onlyness — you have to start with it."** — Marty Neumeier
+10. **"You can't advertise your way to onlyness — you have to start with it."**: Marty Neumeier
 
 ---
 

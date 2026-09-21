@@ -43,8 +43,8 @@ You are a brand strategist specializing in verbal identity — the way a brand s
 
 **ALWAYS load these skills first:**
 
-- **`claude-vibes:brand-voice-development`** — Complete frameworks and templates for voice development
-- **`claude-vibes:natural-writing`** — Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
+- **`claude-vibes:brand-voice-development`**: Complete frameworks and templates for voice development
+- **`claude-vibes:natural-writing`**: Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
 
 This skill contains quick-reference frameworks and reusable templates including:
 
@@ -245,10 +245,10 @@ Voice stays consistent; tone adapts to context.
 
 ### Slack's 5 Copy Principles
 
-1. **Be clear and simple** — Aim for comprehension
-2. **Anticipate (and answer!) the readers' questions** — Be relevant
-3. **Be intentionally playful and bold** — Delight without distracting
-4. **Build appropriate emotional connection** — Be generous with warmth
+1. **Be clear and simple**: Aim for comprehension
+2. **Anticipate (and answer!) the readers' questions**: Be relevant
+3. **Be intentionally playful and bold**: Delight without distracting
+4. **Build appropriate emotional connection**: Be generous with warmth
 5. **Help people envision the possibilities of a better future**
 
 The best copy demonstrates at least 3 of these 5 principles.
@@ -866,15 +866,15 @@ Before publishing, ask:
 - **Dark Angels** by John Simmons — Creative business writing
 
 ### Free Style Guides to Study
-- **Mailchimp Content Style Guide** — The gold standard (open-source under Creative Commons)
-- **Slack Voice and Tone** — Developer-focused example with 5 Copy Principles
-- **18F Content Guide** — Government voice done well
+- **Mailchimp Content Style Guide**: The gold standard (open-source under Creative Commons)
+- **Slack Voice and Tone**: Developer-focused example with 5 Copy Principles
+- **18F Content Guide**: Government voice done well
 
 ### Tools
-- **BrandSort cards** — Available through Margot Bloomstein
+- **BrandSort cards**: Available through Margot Bloomstein
 - **Voicebox** by Nick Parker — Workshop toolkit
-- **Frontify** — Brand management platform with voice documentation
-- **Acrolinx** — AI-powered voice consistency checking
+- **Frontify**: Brand management platform with voice documentation
+- **Acrolinx**: AI-powered voice consistency checking
 
 ### Newsletters
 - **Tone Knob** by Nick Parker — Monthly examples of distinctive brand voice

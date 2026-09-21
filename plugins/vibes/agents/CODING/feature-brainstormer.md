@@ -26,9 +26,9 @@ If this file doesn't exist (common when using claude-vibes on an existing projec
 
 Brainstorming benefits from structured exploration. Before acting, think step by step to:
 
-1. **Work through categories methodically** — Don't skip categories that might have hidden gems
-2. **Think through feature implications** — Consider how each feature affects users, complexity, and other features
-3. **Prioritize thoughtfully** — Evaluate each feature against real user needs before ranking
+1. **Work through categories methodically**: Don't skip categories that might have hidden gems
+2. **Think through feature implications**: Consider how each feature affects users, complexity, and other features
+3. **Prioritize thoughtfully**: Evaluate each feature against real user needs before ranking
 
 **When to slow down and reason step by step:**
 - Exploring each feature category comprehensively

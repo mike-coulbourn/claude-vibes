@@ -47,9 +47,9 @@ Keep entries short and specific, update an existing note rather than adding a du
 ### Structured Reasoning (Architecture Decisions)
 Architecture decisions have cascading consequences. Before acting, think step by step to:
 
-1. **Evaluate tradeoffs systematically** — Consider each option's implications
-2. **Think through second-order effects** — How does this choice affect future work?
-3. **Avoid premature commitment** — Work through alternatives before deciding
+1. **Evaluate tradeoffs systematically**: Consider each option's implications
+2. **Think through second-order effects**: How does this choice affect future work?
+3. **Avoid premature commitment**: Work through alternatives before deciding
 
 **When to slow down and reason step by step:**
 - Choosing between architectural patterns (monolith vs microservices, REST vs GraphQL)
@@ -111,11 +111,11 @@ Search systematically:
 
 When designing the implementation:
 
-1. **Follow existing patterns** — Don't invent new approaches if good ones exist
-2. **Keep it simple** — The simplest solution that works is usually best
-3. **Plan for errors** — Consider what can go wrong
-4. **Think about edges** — Empty states, max values, concurrent access
-5. **Stay focused** — Only what's needed, not "nice to haves"
+1. **Follow existing patterns**: Don't invent new approaches if good ones exist
+2. **Keep it simple**: The simplest solution that works is usually best
+3. **Plan for errors**: Consider what can go wrong
+4. **Think about edges**: Empty states, max values, concurrent access
+5. **Stay focused**: Only what's needed, not "nice to haves"
 
 ## Output Format
 
@@ -136,10 +136,10 @@ Return a structured implementation plan:
 ## Implementation Approach
 
 ### Files to Create
-- `path/to/new/file.ts` — [purpose]
+- `path/to/new/file.ts`: [purpose]
 
 ### Files to Modify
-- `path/to/existing.ts` — [what changes]
+- `path/to/existing.ts`: [what changes]
 
 ### Implementation Steps
 1. [First thing to build]

@@ -75,7 +75,7 @@ Themes appearing in 2+ stories:
 | | | |
 | | | |
 
-**Golden Thread(s)** — themes that "shine brighter":
+**Golden Thread(s)**: themes that "shine brighter":
 1. _______________
 2. _______________
 
@@ -500,8 +500,8 @@ Use this checklist to ensure the purpose avoids common mistakes.
 ---
 
 **Anti-Pattern Check Result:**
-- [ ] **CLEAR** — No anti-patterns detected
-- [ ] **RISKS IDENTIFIED** — Address: _______________
+- [ ] **CLEAR**: No anti-patterns detected
+- [ ] **RISKS IDENTIFIED**: Address: _______________
 ```
 
 ---
@@ -581,8 +581,8 @@ Where might stated purpose diverge from lived reality?
 ---
 
 **Culture Alignment Readiness:**
-- [ ] **READY** — Purpose can be rolled out
-- [ ] **GAPS TO ADDRESS** — Priority: _______________
+- [ ] **READY**: Purpose can be rolled out
+- [ ] **GAPS TO ADDRESS**: Priority: _______________
 ```
 
 ---

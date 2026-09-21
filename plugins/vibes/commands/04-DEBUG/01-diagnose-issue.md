@@ -162,7 +162,7 @@ Save the diagnosis to `docs/04-DEBUG/diagnosis-<issue-name>.md`:
 
 ## Affected Files
 
-- `path/to/file.ts:line` — [what's wrong here]
+- `path/to/file.ts:line`: [what's wrong here]
 
 ## Proposed Fix
 
@@ -208,7 +208,7 @@ In the diagnostician's prompt, ask it to record durable learnings in its project
    - Quirks discovered during investigation (e.g., "The cache invalidation is delayed by 5 seconds")
    - Non-obvious dependencies (e.g., "UserService depends on NotificationService being initialized first")
 
-**Only record NEW findings** — insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
+**Only record NEW findings**: insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 

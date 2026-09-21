@@ -169,15 +169,15 @@ The SMP is:
 
 ### 9 Essential Components
 
-1. **Business Information** — What they do, problems they solve, why they exist
-2. **Company Name Specifics** — Single line vs. multiple, tagline inclusion
-3. **Target Audience** — Demographics, hobbies, interests, values
-4. **Competitor Analysis** — Industry context and differentiation needs
-5. **Design Style Preferences** — Modern/classic, formal/playful, minimal/ornate
-6. **Visual References / Mood Board** — Examples of liked styles
-7. **Deliverables & Usage** — Where logo will appear (business cards, signage, digital)
-8. **Timeline & Budget** — Project constraints
-9. **What to Avoid** — Styles, colors, or approaches to skip
+1. **Business Information**: What they do, problems they solve, why they exist
+2. **Company Name Specifics**: Single line vs. multiple, tagline inclusion
+3. **Target Audience**: Demographics, hobbies, interests, values
+4. **Competitor Analysis**: Industry context and differentiation needs
+5. **Design Style Preferences**: Modern/classic, formal/playful, minimal/ornate
+6. **Visual References / Mood Board**: Examples of liked styles
+7. **Deliverables & Usage**: Where logo will appear (business cards, signage, digital)
+8. **Timeline & Budget**: Project constraints
+9. **What to Avoid**: Styles, colors, or approaches to skip
 
 ### Presentation Best Practices
 
@@ -256,10 +256,10 @@ The SMP is:
 
 ### Selection Framework
 
-1. **Align with Brand Personality** — Colors evoke specific emotions
-2. **Know Your Audience** — Demographics respond differently to colors
-3. **Differentiate from Competitors** — Conduct color audit of competitive landscape
-4. **Build Strategic Palette** — 1 primary + 1-3 secondary + neutral
+1. **Align with Brand Personality**: Colors evoke specific emotions
+2. **Know Your Audience**: Demographics respond differently to colors
+3. **Differentiate from Competitors**: Conduct color audit of competitive landscape
+4. **Build Strategic Palette**: 1 primary + 1-3 secondary + neutral
 
 ### Color Associations
 
@@ -296,15 +296,15 @@ For action-oriented creative briefs:
 
 ### 9 Essential Components
 
-1. **Project Background & Objectives** — The "why" behind the project
-2. **Target Audience** — Detailed buyer personas and demographics
-3. **Key Message / Single-Minded Proposition** — The ONE compelling reason
-4. **Tone & Voice** — Adjectives describing brand personality
-5. **Deliverables** — Specific outputs expected
-6. **Timeline & Budget** — Realistic constraints
-7. **Visual References / Mood Boards** — Inspiration and direction
-8. **Competitor Analysis** — What to differentiate from
-9. **What to Avoid** — Clear guardrails
+1. **Project Background & Objectives**: The "why" behind the project
+2. **Target Audience**: Detailed buyer personas and demographics
+3. **Key Message / Single-Minded Proposition**: The ONE compelling reason
+4. **Tone & Voice**: Adjectives describing brand personality
+5. **Deliverables**: Specific outputs expected
+6. **Timeline & Budget**: Realistic constraints
+7. **Visual References / Mood Boards**: Inspiration and direction
+8. **Competitor Analysis**: What to differentiate from
+9. **What to Avoid**: Clear guardrails
 
 ### Brief Length
 
@@ -444,11 +444,11 @@ Read [reference/templates.md](reference/templates.md) when producing a deliverab
 
 ## Key Principles
 
-1. **Strategy drives design** — Every visual choice should have strategic rationale
-2. **Commit to words first** — Define adjectives before exploring visuals
-3. **Mood boards before detail** — Align on direction before detailed design work
-4. **Consistency creates recognition** — Visual systems, not one-off designs
-5. **Be specific** — "Modern and clean" means nothing; describe exactly what you mean
-6. **Show contrast** — Define what the brand IS and ISN'T visually
-7. **Think in systems** — Not one-off designs, but coherent visual language
-8. **Include the why** — Connect every visual choice back to strategy
+1. **Strategy drives design**: Every visual choice should have strategic rationale
+2. **Commit to words first**: Define adjectives before exploring visuals
+3. **Mood boards before detail**: Align on direction before detailed design work
+4. **Consistency creates recognition**: Visual systems, not one-off designs
+5. **Be specific**: "Modern and clean" means nothing; describe exactly what you mean
+6. **Show contrast**: Define what the brand IS and ISN'T visually
+7. **Think in systems**: Not one-off designs, but coherent visual language
+8. **Include the why**: Connect every visual choice back to strategy

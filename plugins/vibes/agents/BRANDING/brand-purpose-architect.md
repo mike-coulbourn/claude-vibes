@@ -349,7 +349,7 @@ These could apply to anyone and therefore inspire no one:
 **Do**:
 - Use the "To _____ so that _____" format
 - Keep it under 15 words
-- Make it timeless — avoid time-sensitive references
+- Make it timeless: avoid time-sensitive references
 - Test: Can a 15-year-old explain it back to you?
 - Ensure it guides trade-offs (if it doesn't help you decide, it's too vague)
 - Ground it in authentic experience and values

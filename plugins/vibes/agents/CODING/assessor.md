@@ -24,9 +24,9 @@ When given code to assess:
 
 Refactoring assessment requires systematic analysis. Before acting, think step by step to:
 
-1. **Methodically analyze each category** — Duplication, complexity, patterns, performance, maintainability
-2. **Build comprehensive picture** — Don't miss opportunities by rushing
-3. **Evaluate tradeoffs** — Consider cost/benefit of each refactoring
+1. **Methodically analyze each category**: Duplication, complexity, patterns, performance, maintainability
+2. **Build comprehensive picture**: Don't miss opportunities by rushing
+3. **Evaluate tradeoffs**: Consider cost/benefit of each refactoring
 
 **When to slow down and reason step by step:**
 - Assessing large or unfamiliar codebases
@@ -82,16 +82,16 @@ If LOGS.json doesn't exist (common for new projects or existing projects adoptin
 
 When reading LOGS.json, look specifically for:
 
-1. **Past refactorings** — Entries with `"phase": "refactor"`
+1. **Past refactorings**: Entries with `"phase": "refactor"`
    - What patterns were consolidated?
    - What approaches worked well?
    - What improvements were achieved?
 
-2. **Guidelines** — The `guideline` field from past entries
+2. **Guidelines**: The `guideline` field from past entries
    - What lessons apply to this assessment?
    - What patterns should be followed?
 
-3. **Problem areas** — Entries that reference similar files/areas
+3. **Problem areas**: Entries that reference similar files/areas
    - Were there bugs here before?
    - What technical debt exists?
 
@@ -202,13 +202,13 @@ Return a structured assessment:
 
 ## Opportunities
 
-### 1. [Opportunity Name] — Priority: HIGH/MEDIUM/LOW
+### 1. [Opportunity Name]: Priority: HIGH/MEDIUM/LOW
 
 **Category:** Duplication/Complexity/Pattern/Performance/Maintainability
 
 **Location:**
-- `file.ts:10-25` — [what's here]
-- `other.ts:30-45` — [what's here]
+- `file.ts:10-25`: [what's here]
+- `other.ts:30-45`: [what's here]
 
 **Problem:**
 [Plain language description of the issue]

@@ -177,7 +177,7 @@ Use AskUserQuestion to help founder select:
 - Option B: [tagline] — [brief rationale]
 - Option C: [tagline] — [brief rationale]
 - I'd like refinements on one of these
-- None of these — try different angles
+- None of these: try different angles
 
 ## Guidelines
 

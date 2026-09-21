@@ -311,10 +311,10 @@ clean studio lighting, white seamless background, soft shadows
 
 V7 significantly improves photorealistic generation:
 
-- **Better skin textures** — Natural, detailed skin without uncanny valley
-- **Improved eyes** — More realistic, properly lit eyes
-- **Accurate anatomy** — Better hands, body proportions, poses
-- **Lighting coherence** — More physically accurate light behavior
-- **Film stock simulation** — More accurate emulation of film characteristics
+- **Better skin textures**: Natural, detailed skin without uncanny valley
+- **Improved eyes**: More realistic, properly lit eyes
+- **Accurate anatomy**: Better hands, body proportions, poses
+- **Lighting coherence**: More physically accurate light behavior
+- **Film stock simulation**: More accurate emulation of film characteristics
 
 **Tip**: Use `--draft` for quick iterations, then remove for final quality output.

@@ -29,9 +29,9 @@ Research and recommend solutions for the specific technical challenge presented.
 
 Technology decisions have cascading consequences. Before acting, think step by step to:
 
-1. **Structure your comparison** — Evaluate each option against consistent criteria
-2. **Think through implications** — Consider second-order effects of each choice
-3. **Avoid bias** — Work through all options before recommending
+1. **Structure your comparison**: Evaluate each option against consistent criteria
+2. **Think through implications**: Consider second-order effects of each choice
+3. **Avoid bias**: Work through all options before recommending
 
 **When to slow down and reason step by step:**
 - Comparing multiple technology options (databases, auth providers, hosting)

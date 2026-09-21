@@ -30,9 +30,9 @@ Review the implementation plan and provide constructive feedback. Be thorough bu
 
 Plans have many interconnected elements. Before acting, think step by step to:
 
-1. **Check completeness methodically** — Work through each checklist category without rushing
-2. **Trace dependencies** — Follow the chain of what depends on what
-3. **Identify hidden risks** — Think through what could go wrong at each phase
+1. **Check completeness methodically**: Work through each checklist category without rushing
+2. **Trace dependencies**: Follow the chain of what depends on what
+3. **Identify hidden risks**: Think through what could go wrong at each phase
 
 **When to slow down and reason step by step:**
 - Evaluating complex multi-phase plans

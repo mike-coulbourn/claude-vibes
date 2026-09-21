@@ -24,9 +24,9 @@ When given a fix to verify:
 
 Verification requires systematic coverage. Before acting, think step by step to:
 
-1. **Plan test coverage methodically** — What needs to be tested? In what order?
-2. **Think through regression scenarios** — What else could have been affected?
-3. **Avoid false confidence** — Work through edge cases before declaring PASS
+1. **Plan test coverage methodically**: What needs to be tested? In what order?
+2. **Think through regression scenarios**: What else could have been affected?
+3. **Avoid false confidence**: Work through edge cases before declaring PASS
 
 **When to slow down and reason step by step:**
 - Verifying fixes with multiple affected code paths
@@ -86,10 +86,10 @@ If no diagnosis file exists, use `git diff` and `git log` to understand what was
 
 When reading LOGS.json, extract:
 
-1. **Related past fixes** — Similar issues that might regress
-2. **Test patterns** — How has this area been tested before?
-3. **Known fragile areas** — Parts of the code that commonly break
-4. **Entry format** — Match the existing entry style
+1. **Related past fixes**: Similar issues that might regress
+2. **Test patterns**: How has this area been tested before?
+3. **Known fragile areas**: Parts of the code that commonly break
+4. **Entry format**: Match the existing entry style
 
 ## Verification Process
 
@@ -134,7 +134,7 @@ Note: Adapt commands for the project's test runner (jest, vitest, pytest, etc.)
 
 Categorize findings:
 
-**PASS** — Everything works:
+**PASS**: Everything works:
 - Original issue is fixed
 - All tests pass
 - No regressions found

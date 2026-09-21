@@ -89,13 +89,13 @@ Create a commit message following this format:
 ```
 
 **Types:**
-- `feat` — New feature or capability
-- `fix` — Bug fix
-- `refactor` — Code restructuring without behavior change
-- `docs` — Documentation changes
-- `style` — Formatting, whitespace (no code change)
-- `test` — Adding or updating tests
-- `chore` — Build, config, dependency updates
+- `feat`: New feature or capability
+- `fix`: Bug fix
+- `refactor`: Code restructuring without behavior change
+- `docs`: Documentation changes
+- `style`: Formatting, whitespace (no code change)
+- `test`: Adding or updating tests
+- `chore`: Build, config, dependency updates
 
 **Examples:**
 ```

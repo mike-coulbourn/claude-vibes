@@ -219,8 +219,8 @@ Color meanings vary dramatically across cultures:
 ### Testing Tools
 
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-- [Adobe Color](https://color.adobe.com) — has accessibility tools
-- [Coolors](https://coolors.co) — has contrast checker
+- [Adobe Color](https://color.adobe.com): has accessibility tools
+- [Coolors](https://coolors.co): has contrast checker
 
 ---
 
@@ -293,11 +293,11 @@ Read [reference/templates.md](reference/templates.md) when producing a deliverab
 
 ## Key Principles
 
-1. **Appropriateness over preference** — Color must "fit" the brand context
-2. **Context determines meaning** — Same color, different responses
-3. **Differentiation creates value** — Blue Ocean thinking for color
-4. **Consistency builds recognition** — Recognition compounds over time
-5. **Simplicity scales** — 3-5 colors maximum
-6. **Accessibility is non-negotiable** — WCAG compliance required
-7. **Culture matters** — Research target markets
-8. **Specify completely** — All four color systems
+1. **Appropriateness over preference**: Color must "fit" the brand context
+2. **Context determines meaning**: Same color, different responses
+3. **Differentiation creates value**: Blue Ocean thinking for color
+4. **Consistency builds recognition**: Recognition compounds over time
+5. **Simplicity scales**: 3-5 colors maximum
+6. **Accessibility is non-negotiable**: WCAG compliance required
+7. **Culture matters**: Research target markets
+8. **Specify completely**: All four color systems

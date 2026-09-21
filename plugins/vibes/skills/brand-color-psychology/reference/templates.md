@@ -210,9 +210,9 @@ Reusable templates for brand color strategy documentation.
 
 ### Color Proportions (60-30-10 Rule)
 
-- **60%** — [Neutral/background color] — Creates canvas and breathing room
-- **30%** — [Primary color] — Establishes brand presence
-- **10%** — [Accent/CTA color] — Drives action and attention
+- **60%**: [Neutral/background color] — Creates canvas and breathing room
+- **30%**: [Primary color] — Establishes brand presence
+- **10%**: [Accent/CTA color] — Drives action and attention
 
 ---
 

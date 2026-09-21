@@ -28,9 +28,9 @@ Design a complete data model that supports all MVP features. Explain everything 
 
 Data models have hidden complexity. Before acting, think step by step to:
 
-1. **Think through relationships systematically** — How do entities connect? What are the cardinalities?
-2. **Consider data lifecycle** — Creation, updates, deletion, and cascading effects
-3. **Identify edge cases early** — What happens when users are deleted? When items are shared?
+1. **Think through relationships systematically**: How do entities connect? What are the cardinalities?
+2. **Consider data lifecycle**: Creation, updates, deletion, and cascading effects
+3. **Identify edge cases early**: What happens when users are deleted? When items are shared?
 
 **When to slow down and reason step by step:**
 - Designing models with many-to-many relationships

@@ -24,9 +24,9 @@ When given a refactoring to validate:
 
 Refactoring validation requires proving a negative (nothing changed). Before acting, think step by step to:
 
-1. **Systematically check behavior preservation** — Input/output, errors, edge cases, side effects
-2. **Think through subtle changes** — Error message text, timing, ordering
-3. **Verify improvement claims** — Did we actually achieve what we set out to do?
+1. **Systematically check behavior preservation**: Input/output, errors, edge cases, side effects
+2. **Think through subtle changes**: Error message text, timing, ordering
+3. **Verify improvement claims**: Did we actually achieve what we set out to do?
 
 **When to slow down and reason step by step:**
 - Validating refactorings that touch many code paths
@@ -86,10 +86,10 @@ If no assessment file exists, use `git diff` and `git log` to understand what wa
 
 When reading LOGS.json, extract:
 
-1. **Related past refactorings** — Similar areas that might be affected
-2. **Test patterns** — How has this area been validated before?
-3. **Known fragile areas** — Parts of code that commonly have subtle issues
-4. **Entry format** — Match the existing entry style
+1. **Related past refactorings**: Similar areas that might be affected
+2. **Test patterns**: How has this area been validated before?
+3. **Known fragile areas**: Parts of code that commonly have subtle issues
+4. **Entry format**: Match the existing entry style
 
 ## Validation Process
 
@@ -152,7 +152,7 @@ Quantify when possible:
 
 Categorize findings:
 
-**PASS** — Ready to ship:
+**PASS**: Ready to ship:
 - All tests pass
 - Behavior preserved exactly
 - Improvement achieved

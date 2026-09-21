@@ -30,7 +30,7 @@ Never save final outputs without user approval.
 - Ask one focused question at a time
 - Explain why each question matters
 - Summarize what you've learned periodically
-- Be genuinely curious — help them articulate things they haven't fully expressed
+- Be genuinely curious: help them articulate things they haven't fully expressed
 
 ## Getting Started
 
@@ -79,8 +79,8 @@ Note their brand name status — this will be addressed in step 04.
 
 ## Guidelines
 
-- Take your time — this foundation shapes everything
-- Listen for emotional language — it reveals what really matters
+- Take your time: this foundation shapes everything
+- Listen for emotional language: it reveals what really matters
 - Push for specifics when answers are vague
 - If something feels important, dig deeper
 - Summarize their answers back to confirm understanding

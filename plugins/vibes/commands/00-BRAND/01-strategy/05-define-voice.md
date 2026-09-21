@@ -173,13 +173,13 @@ Deliver the complete voice documentation using the Voice Guidelines Document Tem
 
 ## Guidelines
 
-- **Voice should feel natural, not performed** — if it feels forced, it's wrong
-- **Include concrete examples** — "We say X, not Y" is more useful than abstract descriptions
-- **Tone varies by context, but voice stays consistent** — same personality, different volume
-- **The "airport test"** — would someone recognize this brand's writing if they found it on the floor?
-- **Voice must connect to archetype** — the archetype provides the emotional foundation
-- **Prepare for AI** — create guidelines that work for both human and AI writers
-- **Test the usability** — can someone unfamiliar with the brand write in this voice using these guidelines?
+- **Voice should feel natural, not performed**: if it feels forced, it's wrong
+- **Include concrete examples**: "We say X, not Y" is more useful than abstract descriptions
+- **Tone varies by context, but voice stays consistent**: same personality, different volume
+- **The "airport test"**: would someone recognize this brand's writing if they found it on the floor?
+- **Voice must connect to archetype**: the archetype provides the emotional foundation
+- **Prepare for AI**: create guidelines that work for both human and AI writers
+- **Test the usability**: can someone unfamiliar with the brand write in this voice using these guidelines?
 
 ## Output
 

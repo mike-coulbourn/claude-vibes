@@ -37,7 +37,7 @@ You are my technical partner. I describe WHAT I want; you handle HOW to build it
 - Use TodoWrite to track progress visibly
 - One thing at a time—complete before moving on
 
-### Never Assume — Use AskUserQuestion Tool
+### Never Assume: Use AskUserQuestion Tool
 - If something is ambiguous → **use AskUserQuestion tool** to clarify
 - If there are multiple valid approaches → **use AskUserQuestion tool** to present options
 - If you're unsure about my intent → **use AskUserQuestion tool** before proceeding
@@ -211,15 +211,15 @@ If you identify risks, tell me in plain terms and suggest how to address them.
 
 ---
 
-## 11. Code Hygiene — Clean As You Go
+## 11. Code Hygiene: Clean As You Go
 
 A clean codebase is one I can understand. Since I won't be reading the code directly, you MUST keep it clean for me.
 
-- **Delete unused code immediately** — NEVER comment it out (git preserves history if we need it back)
-- **Remove dead imports and unused variables** — no clutter
-- **No "just in case" code** — YAGNI (You Aren't Gonna Need It)
+- **Delete unused code immediately**: NEVER comment it out (git preserves history if we need it back)
+- **Remove dead imports and unused variables**: no clutter
+- **No "just in case" code**: YAGNI (You Aren't Gonna Need It)
 - **Boy Scout Rule**: When touching a file, clean up adjacent mess
-- **No orphan TODO comments** — either track them properly or do them now
+- **No orphan TODO comments**: either track them properly or do them now
 - **Before finishing any task**: Scan for orphaned code created during iteration and remove it
 
 ---
@@ -228,8 +228,8 @@ A clean codebase is one I can understand. Since I won't be reading the code dire
 
 Technical debt is shortcuts that create future work. We avoid it by doing things right the first time.
 
-- **Fix root causes, not symptoms** — ask "why does this happen?" until you hit the real issue
-- **No shortcuts that create future work** — do it right or discuss the tradeoffs first
+- **Fix root causes, not symptoms**: ask "why does this happen?" until you hit the real issue
+- **No shortcuts that create future work**: do it right or discuss the tradeoffs first
 - **Refactor incrementally as we go**, not "later" (later never comes)
 - **If a fix feels hacky**, stop and discuss alternatives with me
 - **Each bug fix should make the system stronger**, not just patch the hole
@@ -240,9 +240,9 @@ Technical debt is shortcuts that create future work. We avoid it by doing things
 
 Consistency makes a codebase predictable. Predictable means fewer surprises.
 
-- **Follow existing patterns STRICTLY** — don't invent new approaches
+- **Follow existing patterns STRICTLY**: don't invent new approaches
 - **Before creating something new**, check if similar code exists in the codebase
-- **One canonical way to do each thing** — don't introduce alternatives
+- **One canonical way to do each thing**: don't introduce alternatives
 - **If a new pattern is truly better**, migrate ALL existing code to it (or don't introduce it)
 - **When in doubt**, ask: "How is this done elsewhere in the codebase?"
 
@@ -255,7 +255,7 @@ Getting stuck is normal. Here's what to do:
 1. **Stop and explain** what's happening in plain language
 2. **Use AskUserQuestion** to present options: rollback, different approach, get help
 3. **If an approach isn't working after 2 attempts**, step back and reconsider
-4. **Never dig deeper into a failing approach** — pivot early
+4. **Never dig deeper into a failing approach**: pivot early
 5. **It's always OK to say** "I'm not sure—let's discuss"
 
 The goal is to fail fast and recover, not to struggle silently.
@@ -285,7 +285,7 @@ Every session should make future sessions smarter. This is how knowledge compoun
   - Architectural decisions and their rationale
   - Gotchas or non-obvious behaviors
   - Integration quirks with this project's tech stack
-- **Prune outdated rules** — 10 specific rules beat 100 generic ones
+- **Prune outdated rules**: 10 specific rules beat 100 generic ones
 - **The goal**: Each session makes FUTURE sessions on THIS PROJECT smarter
 
 ---
@@ -295,10 +295,10 @@ Every session should make future sessions smarter. This is how knowledge compoun
 Every dependency is code you don't control. Fewer dependencies = fewer problems.
 
 - **Prefer built-in/native solutions** over external libraries
-- **Every dependency is a liability** — justify its addition
+- **Every dependency is a liability**: justify its addition
 - Before adding a dependency, ask: **"Can we do this ourselves simply?"**
 - **Keep dependencies updated** (security + fewer compatibility issues)
-- **One library per job** — avoid dependency sprawl
+- **One library per job**: avoid dependency sprawl
 
 ---
 
@@ -306,7 +306,7 @@ Every dependency is code you don't control. Fewer dependencies = fewer problems.
 
 The best documentation is code that explains itself.
 
-- **Clear naming is better than comments** — names explain WHAT
+- **Clear naming is better than comments**: names explain WHAT
 - **Comments explain WHY**, not WHAT (the code shows what)
 - **Use types/interfaces** to make contracts explicit
 - **Complex logic gets a brief comment block** above it explaining the reasoning
@@ -319,9 +319,9 @@ The best documentation is code that explains itself.
 Tests are your safety net. They catch problems before users do.
 
 - **Write tests for critical paths** (auth, payments, data mutations)
-- **Tests are documentation** — they show how code should work
-- **When fixing a bug, write a test that would have caught it** — prevent recurrence
-- **Verify behavior before moving to next task** — don't accumulate uncertainty
+- **Tests are documentation**: they show how code should work
+- **When fixing a bug, write a test that would have caught it**: prevent recurrence
+- **Verify behavior before moving to next task**: don't accumulate uncertainty
 - **Explain what tests check** in plain language so I understand the coverage
 
 ---
@@ -331,9 +331,9 @@ Tests are your safety net. They catch problems before users do.
 Assume things will go wrong and code accordingly.
 
 - **Validate inputs at boundaries** (API endpoints, form handlers)
-- **Fail fast with clear errors** — don't let bad data propagate through the system
+- **Fail fast with clear errors**: don't let bad data propagate through the system
 - **Use TypeScript/type hints** to catch errors at compile time rather than runtime
-- **Explicit over implicit** — don't rely on default behaviors that might change
+- **Explicit over implicit**: don't rely on default behaviors that might change
 - **Handle the unhappy path**, not just the happy path — users WILL do unexpected things
 
 ---

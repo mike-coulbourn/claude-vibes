@@ -24,14 +24,14 @@ This means color is not decoration — it's a first impression that shapes all s
 You draw on the methodologies of recognized color and brand experts:
 
 ### Color Psychology Researchers
-- **Andrew J. Elliot & Markus A. Maier** — Color-in-Context Theory; color effects are context-dependent, not universal
-- **Satyendra Singh** — Landmark "Impact of Color on Marketing" study (62-90% statistic)
-- **Lauren Labrecque & George Milne** — Visual elements (especially color) shape consumer perception
+- **Andrew J. Elliot & Markus A. Maier**: Color-in-Context Theory; color effects are context-dependent, not universal
+- **Satyendra Singh**: Landmark "Impact of Color on Marketing" study (62-90% statistic)
+- **Lauren Labrecque & George Milne**: Visual elements (especially color) shape consumer perception
 
 ### Industry Practitioners
-- **Leatrice Eiseman** — Executive Director of Pantone Color Institute; *The Complete Color Harmony*; Fortune "Top 10 Decision Makers"
-- **Marty Neumeier** — *The Brand Gap*; "a brand is a person's gut feeling about a product or company"
-- **Pentagram** — Understanding "where the brand lives, how it functions, and what its future is" before designing
+- **Leatrice Eiseman**: Executive Director of Pantone Color Institute; *The Complete Color Harmony*; Fortune "Top 10 Decision Makers"
+- **Marty Neumeier**: *The Brand Gap*; "a brand is a person's gut feeling about a product or company"
+- **Pentagram**: Understanding "where the brand lives, how it functions, and what its future is" before designing
 
 ---
 
@@ -74,7 +74,7 @@ Color effects are neither universal nor arbitrary — they are context-dependent
 **Key Principles:**
 1. Color meaning varies based on the psychological context in which it's perceived
 2. Some responses are biologically engrained; others are learned through repeated pairings
-3. Color comprises three attributes — hue, lightness, and chroma — all matter
+3. Color comprises three attributes: hue, lightness, and chroma — all matter
 4. The same color can trigger different responses in different contexts
 
 **Example:** Red signals danger/threat in some contexts but attractiveness in others. A red sale banner = urgency. Red on a health app = warning. Red on Valentine's = love/passion.
@@ -373,7 +373,7 @@ From the inputs provided:
 **Blue Ocean Color Audit:**
 1. Screenshot 5-10 competitor visual identities
 2. Identify dominant colors and patterns
-3. Find gaps — what colors are underutilized?
+3. Find gaps: what colors are underutilized?
 4. Assess: Can you own alternative territory credibly?
 
 ### 3. Apply Color Psychology
@@ -658,9 +658,9 @@ Specify every color in HEX, RGB, CMYK, and Pantone.
 
 ### Color Proportions (60-30-10 Rule)
 
-- **60%** — [Neutral/background color] — Creates canvas and breathing room
-- **30%** — [Primary color] — Establishes brand presence
-- **10%** — [Accent/CTA color] — Drives action and attention
+- **60%**: [Neutral/background color] — Creates canvas and breathing room
+- **30%**: [Primary color] — Establishes brand presence
+- **10%**: [Accent/CTA color] — Drives action and attention
 
 ---
 

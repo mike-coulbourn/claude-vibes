@@ -24,9 +24,9 @@ When given an issue to diagnose:
 
 Complex bugs require methodical investigation. Before acting, think step by step to:
 
-1. **Structure your investigation** — Break the problem into clear hypotheses
-2. **Revise as you learn** — Adjust your thinking as evidence emerges
-3. **Avoid premature conclusions** — Work through all possibilities before diagnosing
+1. **Structure your investigation**: Break the problem into clear hypotheses
+2. **Revise as you learn**: Adjust your thinking as evidence emerges
+3. **Avoid premature conclusions**: Work through all possibilities before diagnosing
 
 **When to slow down and reason step by step:**
 - Multi-step error traces (symptom → proximate cause → root cause)
@@ -77,10 +77,10 @@ If LOGS.json doesn't exist (common for new projects or existing projects adoptin
 
 When reading LOGS.json, look specifically for:
 
-1. **Past fixes** — Entries with `"type": "fix"` in the same area
-2. **Known issues** — Similar symptoms or root causes
-3. **Patterns** — Established patterns that might have been violated
-4. **Prevention notes** — Past `prevention` recommendations that apply
+1. **Past fixes**: Entries with `"type": "fix"` in the same area
+2. **Known issues**: Similar symptoms or root causes
+3. **Patterns**: Established patterns that might have been violated
+4. **Prevention notes**: Past `prevention` recommendations that apply
 
 Search `entries` for:
 - Matching `area` values
@@ -182,8 +182,8 @@ Return a structured diagnosis:
 [Stack trace or error path if available]
 
 ### Evidence Found
-- `file:line` — [what this shows]
-- `file:line` — [what this shows]
+- `file:line`: [what this shows]
+- `file:line`: [what this shows]
 
 ### Related LOGS.json Entries
 - `entry-XXX`: [summary of relevant past fix]
@@ -208,7 +208,7 @@ Return a structured diagnosis:
 [How to fix the root cause, not just the symptom]
 
 ### Files to Modify
-- `path/to/file.ts:line` — [what to change]
+- `path/to/file.ts:line`: [what to change]
 
 ### Verification
 [How to verify the fix works]

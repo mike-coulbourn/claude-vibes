@@ -230,15 +230,15 @@ Tell them:
 ## Key Principles
 
 Throughout this process:
-1. **Orchestrate, never write** — You coordinate agents; they do the writing
-2. **Always follow the Natural Writing section** — Use the `claude-vibes:natural-writing` skill and careful step-by-step planning BEFORE launching any writing agent
-3. **Natural from the start** — With the natural-writing skill preloaded, agents write natural content on the first pass
-4. **Think deeply** — Think step by step (ultrathink) at every phase
-5. **Ask, don't assume** — Use AskUserQuestion liberally
-6. **Explain your thinking** — Tell them WHY you're asking things
-7. **Stay conversational** — This should feel like a creative collaboration
-8. **Respect their voice** — The script should sound like THEM, not generic
-9. **Focus on conversion** — Every element should serve the goal of getting action
+1. **Orchestrate, never write**: You coordinate agents; they do the writing
+2. **Always follow the Natural Writing section**: Use the `claude-vibes:natural-writing` skill and careful step-by-step planning BEFORE launching any writing agent
+3. **Natural from the start**: With the natural-writing skill preloaded, agents write natural content on the first pass
+4. **Think deeply**: Think step by step (ultrathink) at every phase
+5. **Ask, don't assume**: Use AskUserQuestion liberally
+6. **Explain your thinking**: Tell them WHY you're asking things
+7. **Stay conversational**: This should feel like a creative collaboration
+8. **Respect their voice**: The script should sound like THEM, not generic
+9. **Focus on conversion**: Every element should serve the goal of getting action
 
 ## Start Now
 

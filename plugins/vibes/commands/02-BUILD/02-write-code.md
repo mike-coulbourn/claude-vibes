@@ -93,9 +93,9 @@ For each implementation chunk, **you MUST use the Agent tool to launch the code-
 > Explain what you're creating in plain language.
 
 Break implementation into logical chunks:
-1. **Data layer first** — Models, schemas, database changes
-2. **Logic layer next** — Business logic, utilities, services
-3. **Interface layer last** — APIs, UI components, routes
+1. **Data layer first**: Models, schemas, database changes
+2. **Logic layer next**: Business logic, utilities, services
+3. **Interface layer last**: APIs, UI components, routes
 
 ### 4. Load References and Verify
 
@@ -141,9 +141,9 @@ Here's what's next based on dependencies:
 
 What would you like to do?"
 Options:
-- Continue building — run /01-plan-code for the next task
-- Review this code first — run /03-review-code
-- Take a break — I'll come back later
+- Continue building: run /01-plan-code for the next task
+- Review this code first: run /03-review-code
+- Take a break: I'll come back later
 - Other
 ```
 
@@ -205,7 +205,7 @@ The code-guru agent keeps its own project memory. In its prompt, ask it to recor
    - What worked well (e.g., "Using the existing BaseService class simplified auth")
    - What to avoid (e.g., "Don't use raw SQL here — the ORM handles soft deletes")
 
-**Only keep NEW findings** — things not already in docs or LOGS.json. If a lesson is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
+**Only keep NEW findings**: things not already in docs or LOGS.json. If a lesson is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
 
 **Example lessons worth keeping:**
 - "The auth middleware expects req.user to be set before reaching protected routes"
@@ -217,8 +217,8 @@ The code-guru agent keeps its own project memory. In its prompt, ask it to recor
 ```
 Question: "Build complete! What's next?"
 Options:
-- Review the code — run /03-review-code
-- Ship it — run /03-SHIP:01-pre-commit
-- Build the next task — run /01-plan-code
+- Review the code: run /03-review-code
+- Ship it: run /03-SHIP:01-pre-commit
+- Build the next task: run /01-plan-code
 - Other
 ```

@@ -88,11 +88,11 @@ Break the build into logical phases. Each phase should:
 - Build toward the next phase
 
 Typical structure:
-- **Phase 1: Foundation** — Set up the project, data storage, user accounts
-- **Phase 2: Core Feature** — The main thing the app does
-- **Phase 3: Supporting Features** — Things that make the core better
-- **Phase 4: Polish** — Making it feel complete and handling edge cases
-- **Phase 5: Launch Prep** — Final testing and going live
+- **Phase 1: Foundation**: Set up the project, data storage, user accounts
+- **Phase 2: Core Feature**: The main thing the app does
+- **Phase 3: Supporting Features**: Things that make the core better
+- **Phase 4: Polish**: Making it feel complete and handling edge cases
+- **Phase 5: Launch Prep**: Final testing and going live
 
 **Direction Checkpoint:**
 ```
@@ -132,12 +132,12 @@ Agent tool:
   prompt: "Ultrathink about this implementation roadmap. Read all docs/01-START/ files for complete context.
 
   **Think step by step (ultrathink)** to systematically analyze:
-  1. Phase sequencing — are dependencies correctly ordered?
-  2. Scope alignment — does the roadmap match the MVP scope from 02-scope.md?
-  3. Architecture compatibility — can the technical decisions from 03-architect.md support this build order?
-  4. Risk identification — what could go wrong during implementation?
-  5. Milestone clarity — are checkpoints testable and measurable?
-  6. Estimation realism — are phases sized appropriately for focused work sessions?
+  1. Phase sequencing: are dependencies correctly ordered?
+  2. Scope alignment: does the roadmap match the MVP scope from 02-scope.md?
+  3. Architecture compatibility: can the technical decisions from 03-architect.md support this build order?
+  4. Risk identification: what could go wrong during implementation?
+  5. Milestone clarity: are checkpoints testable and measurable?
+  6. Estimation realism: are phases sized appropriately for focused work sessions?
 
   **Use AskUserQuestion when you find concerns:**
   - If phases could be reordered for better risk reduction, present options

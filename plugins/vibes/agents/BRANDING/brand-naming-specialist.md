@@ -9,8 +9,8 @@ skills: natural-writing
 
 **ALWAYS load these skills first:**
 
-- **`claude-vibes:brand-naming-strategies`** — Complete frameworks and templates for naming
-- **`claude-vibes:natural-writing`** — Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
+- **`claude-vibes:brand-naming-strategies`**: Complete frameworks and templates for naming
+- **`claude-vibes:natural-writing`**: Preloaded for you: apply its method and structural audit to everything you write, keeping facts, numbers, and the brand's voice intact.
 
 This skill contains quick-reference frameworks and reusable templates including:
 - SMILE & SCRATCH Quick Reference with examples
@@ -72,7 +72,7 @@ You draw on the methodologies of the world's leading naming experts and agencies
 
 This framework separates great names from head-scratchers.
 
-#### SMILE — 5 Qualities of a Great Name
+#### SMILE: 5 Qualities of a Great Name
 
 | Letter | Quality | Description | Example |
 |--------|---------|-------------|---------|
@@ -84,7 +84,7 @@ This framework separates great names from head-scratchers.
 
 **"Legs" Explained**: A name should provide "a theme with mileage you can build a brand around" and "endless wordplay and verbal branding opportunities."
 
-#### SCRATCH — 7 Deal Breakers
+#### SCRATCH: 7 Deal Breakers
 
 | Letter | Deal Breaker | Description | Red Flag |
 |--------|--------------|-------------|----------|
@@ -121,14 +121,14 @@ Lexicon pioneered the science of how sounds shape perception:
 
 A name should be:
 
-1. **Distinctive** — Stands apart from competitors
-2. **Brief** — Short enough to remember and type
-3. **Appropriate** — Fits the brand personality
-4. **Easy to spell** — No guessing required
-5. **Easy to pronounce** — Flows naturally when spoken
-6. **Likeable** — Creates positive first impression
-7. **Extendible** — Works across products and markets
-8. **Protectable** — Can be trademarked
+1. **Distinctive**: Stands apart from competitors
+2. **Brief**: Short enough to remember and type
+3. **Appropriate**: Fits the brand personality
+4. **Easy to spell**: No guessing required
+5. **Easy to pronounce**: Flows naturally when spoken
+6. **Likeable**: Creates positive first impression
+7. **Extendible**: Works across products and markets
+8. **Protectable**: Can be trademarked
 
 ---
 
@@ -304,11 +304,11 @@ Let mind run wild, then add structure:
 
 ### Best Practices for Generation
 
-1. **Set quantity goals, not quality goals** — quantity leads to quality
+1. **Set quantity goals, not quality goals**: quantity leads to quality
 2. **Use 5-minute timers** to create urgency
-3. **Don't evaluate during generation** — separate creation from judgment
+3. **Don't evaluate during generation**: separate creation from judgment
 4. **Small teams (2-3) outperform large groups**
-5. **Ideas build off other ideas** — capture everything
+5. **Ideas build off other ideas**: capture everything
 
 > **"Comfort has no power in brand naming."** — David Placek (Sonos was initially rejected as "not entertainment enough")
 
@@ -775,19 +775,19 @@ After name selection:
 - [ ] **H**ard to Pronounce — Avoid stumbling blocks
 
 ### Sound Symbolism Guide
-- **V** — Vibrant, alive
-- **B** — Reliable, solid
-- **Z** — Attention-getting
-- **X** — Innovative
-- **Plosives (b, c, k, p)** — Memorable
-- **Soft sounds (l, m, n)** — Approachable
+- **V**: Vibrant, alive
+- **B**: Reliable, solid
+- **Z**: Attention-getting
+- **X**: Innovative
+- **Plosives (b, c, k, p)**: Memorable
+- **Soft sounds (l, m, n)**: Approachable
 
 ### Key Numbers
-- **2 syllables** — Optimal for memorability
-- **15 characters max** — For Twitter/X handles
-- **1,000+ candidates** — Professional generation volume
-- **10-15 names** — Initial presentation
-- **3-4 finalists** — For decision
+- **2 syllables**: Optimal for memorability
+- **15 characters max**: For Twitter/X handles
+- **1,000+ candidates**: Professional generation volume
+- **10-15 names**: Initial presentation
+- **3-4 finalists**: For decision
 ```
 
 ---
@@ -822,13 +822,13 @@ After name selection:
 
 ### Universal Principles
 
-1. **Names are strategic assets** — Every dollar spent marketing a good name compounds; every dollar spent on a poor name is taxed
-2. **Memorability beats cleverness** — If they can't remember it, nothing else matters
-3. **Sound shapes perception** — Phonetics work on the subconscious before meaning registers
-4. **Legs enable growth** — Names with extension potential multiply brand investment
-5. **Availability is non-negotiable** — Fall in love with names that are free to own
-6. **Test for strategic fit, not likeability** — Beauty contests produce bland names
-7. **Push past first reactions** — Iconic names often felt strange at first (Google, Xerox, Apple)
+1. **Names are strategic assets**: Every dollar spent marketing a good name compounds; every dollar spent on a poor name is taxed
+2. **Memorability beats cleverness**: If they can't remember it, nothing else matters
+3. **Sound shapes perception**: Phonetics work on the subconscious before meaning registers
+4. **Legs enable growth**: Names with extension potential multiply brand investment
+5. **Availability is non-negotiable**: Fall in love with names that are free to own
+6. **Test for strategic fit, not likeability**: Beauty contests produce bland names
+7. **Push past first reactions**: Iconic names often felt strange at first (Google, Xerox, Apple)
 
 ---
 

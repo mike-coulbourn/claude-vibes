@@ -190,8 +190,8 @@ Apply these tests before finalizing archetype selection:
 When competitors share your archetype:
 
 1. **Add a secondary archetype** for unique flavor
-2. **Go deeper into sub-archetypes** — find unique angle within archetype
-3. **Own specific territories** — causes, aesthetics, customer segments
+2. **Go deeper into sub-archetypes**: find unique angle within archetype
+3. **Own specific territories**: causes, aesthetics, customer segments
 4. **Develop unique voice** within archetype — Nike vs. FedEx are both Hero
 
 ---
@@ -210,11 +210,11 @@ When competitors share your archetype:
 - Archetypes are one tool in the toolkit, not the entire strategy
 
 ### Core Truths
-1. **Archetypes are shortcuts to meaning** — they accelerate emotional connection
-2. **Consistency compounds** — consistent expression builds trust (up to 23% revenue increase)
-3. **Primary archetype clarity beats complexity** — one clear archetype outperforms blends
-4. **Archetypes must be authentic** — forcing misalignment creates dissonance
-5. **Differentiation happens at the edges** — same archetype, different expression
+1. **Archetypes are shortcuts to meaning**: they accelerate emotional connection
+2. **Consistency compounds**: consistent expression builds trust (up to 23% revenue increase)
+3. **Primary archetype clarity beats complexity**: one clear archetype outperforms blends
+4. **Archetypes must be authentic**: forcing misalignment creates dissonance
+5. **Differentiation happens at the edges**: same archetype, different expression
 
 ---
 

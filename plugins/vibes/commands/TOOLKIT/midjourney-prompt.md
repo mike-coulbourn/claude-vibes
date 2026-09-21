@@ -51,7 +51,7 @@ Think through using ultrathink: "What questions would help me craft a prompt tha
 - Prioritize questions that most affect prompt quality
 - Batch related questions together (max 4 per round)
 - **Lead with your recommendation and reasoning** when presenting options
-- Keep it lightweight — helpful, not an interrogation
+- Keep it lightweight: helpful, not an interrogation
 
 ---
 
@@ -61,7 +61,7 @@ Think through using ultrathink: "What questions would help me craft a prompt tha
 Question: "Which Midjourney interface will you use?"
 Options:
 - Web app (Recommended) — Easier interface, drag-and-drop for style references, no /imagine prefix needed
-- Discord — Classic interface, requires /imagine prefix and URL copying for references
+- Discord: Classic interface, requires /imagine prefix and URL copying for references
 ```
 
 ```
@@ -144,8 +144,8 @@ Options:
 Question 2: "How stylized should the image be?"
 Options:
 - Low stylization (closer to prompt, more literal) — --stylize 50
-- Default balance — --stylize 100
-- Medium artistic interpretation — --stylize 250
+- Default balance: --stylize 100
+- Medium artistic interpretation: --stylize 250
 - High stylization (more artistic freedom) — --stylize 500+
 ```
 
@@ -161,7 +161,7 @@ Analyze each image and confirm your understanding:
 Question: "I see you've provided [N] reference image(s). Here's how I'd use each one — does this match your intent?"
 Options:
 - Yes, that's right
-- Not quite — I'll clarify what I want from them
+- Not quite: I'll clarify what I want from them
 - Use differently than you suggested
 ```
 
@@ -170,7 +170,7 @@ For each image, clarify:
 Question: "For this reference image, what do you want to capture from it?"
 Options:
 - The visual style (colors, texture, artistic approach) — will use as --sref
-- The character/person appearance — will use as a character reference (`--oref` in V7, attached image in V8)
+- The character/person appearance: will use as a character reference (`--oref` in V7, attached image in V8)
 - The composition and framing
 - The mood and atmosphere
 - Specific elements (I'll describe)
@@ -182,9 +182,9 @@ Options:
 ```
 Question: "Do you have any reference images to guide the style?"
 Options:
-- Yes — I have style references (for visual aesthetic)
-- Yes — I have character references (for consistent characters)
-- No — starting from scratch
+- Yes: I have style references (for visual aesthetic)
+- Yes: I have character references (for consistent characters)
+- No: starting from scratch
 - I'll describe what I'm going for instead
 ```
 
@@ -335,8 +335,8 @@ Here's your Midjourney prompt:
 ```
 Question: "How does this prompt look?"
 Options:
-- Looks great — I'll use it as is
-- Needs some tweaks — I'll share specific feedback
+- Looks great: I'll use it as is
+- Needs some tweaks: I'll share specific feedback
 - Want to try a different direction
 - Show me variations of this prompt
 ```
@@ -357,7 +357,7 @@ Question: "How would you like to receive this?"
 Options:
 - Copy to clipboard (ready to paste)
 - Save to a file
-- It's displayed above — I'll copy it myself
+- It's displayed above: I'll copy it myself
 ```
 
 **If "Copy to clipboard":**
@@ -439,15 +439,15 @@ Create in `prompts/midjourney/` with structure:
 
 ## Guidelines
 
-- **Detect reference images first** — Check if images were provided before asking
-- **ALWAYS ask about purpose** — Blog cover vs social post vs personal project changes everything
-- **Analyze reference intent** — Style reference vs character reference vs mood inspiration
-- **Interactive, not interrogative** — Ask smart questions, not every possible question
-- **Adapt to complexity** — Simple requests need fewer questions
-- **Use ultrathink for prompt crafting** — Deep thinking produces better prompts
-- **Explain the "why"** — Help users understand so they can iterate
-- **Make delivery easy** — Clipboard is fastest for most users
-- **Handle image references clearly** — Tell users exactly how to include their images in Midjourney
+- **Detect reference images first**: Check if images were provided before asking
+- **ALWAYS ask about purpose**: Blog cover vs social post vs personal project changes everything
+- **Analyze reference intent**: Style reference vs character reference vs mood inspiration
+- **Interactive, not interrogative**: Ask smart questions, not every possible question
+- **Adapt to complexity**: Simple requests need fewer questions
+- **Use ultrathink for prompt crafting**: Deep thinking produces better prompts
+- **Explain the "why"**: Help users understand so they can iterate
+- **Make delivery easy**: Clipboard is fastest for most users
+- **Handle image references clearly**: Tell users exactly how to include their images in Midjourney
 
 ## Version Differences
 

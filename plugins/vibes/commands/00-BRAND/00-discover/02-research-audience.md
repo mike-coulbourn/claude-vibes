@@ -142,7 +142,7 @@ Deliver findings that are SPECIFIC to this audience — avoid generic insights t
 
 ## Guidelines
 
-- The agent does the research — you orchestrate
+- The agent does the research: you orchestrate
 - Trust the agent's findings but validate with the founder
 - If the agent surfaces surprising insights, discuss with the founder before finalizing
 - The agent has deep methodology (500+ lines) — your job is to provide clear context and objectives

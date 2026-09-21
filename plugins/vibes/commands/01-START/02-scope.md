@@ -69,10 +69,10 @@ Before launching the feature-brainstormer, understand priorities:
 ```
 Question: "What matters most for your first version?"
 Options:
-- Speed to market — launch fast, iterate later
-- Core experience — nail the main thing, even if it takes longer
-- Competitive parity — match what competitors offer
-- Innovation — do something new, even if riskier
+- Speed to market: launch fast, iterate later
+- Core experience: nail the main thing, even if it takes longer
+- Competitive parity: match what competitors offer
+- Innovation: do something new, even if riskier
 ```
 
 Follow up with:
@@ -153,10 +153,10 @@ Present the brainstormed features to the user, grouped by category.
 
 Use AskUserQuestion to categorize each feature with the user:
 
-- **Core** — Product doesn't work without these
-- **Important** — Should have soon, significantly improves the product
-- **Nice-to-have** — Would be great eventually, not critical now
-- **Out of scope** — Explicitly NOT building (important to define!)
+- **Core**: Product doesn't work without these
+- **Important**: Should have soon, significantly improves the product
+- **Nice-to-have**: Would be great eventually, not critical now
+- **Out of scope**: Explicitly NOT building (important to define!)
 
 For each feature, explain in plain language what including or excluding it means for the user.
 

@@ -216,7 +216,7 @@ Deliver the complete typography system using the Typography System Documentation
 Use AskUserQuestion to help founder review and validate:
 
 "Here's your brand typography system. How would you like to proceed?"
-- This typography feels right — let's proceed
+- This typography feels right: let's proceed
 - I'd like to explore different typeface options
 - I want to refine specific elements (primary font, body font, hierarchy)
 - I have questions about the recommendations
@@ -225,15 +225,15 @@ Use AskUserQuestion to help founder review and validate:
 
 ## Guidelines
 
-- **Typography must express brand personality** — start with personality, select to match
-- **Be specific** — exact sizes, weights, spacing, not vague descriptions
-- **Consider budget constraints** — free fonts (Google Fonts) vs. paid
-- **Ensure fonts work well together** — contrast through classification
-- **Include web-safe fallbacks** — for when fonts don't load
-- **Think in systems** — typography that scales across all applications
-- **Prioritize readability** — beautiful but illegible type fails
-- **Test accessibility** — WCAG contrast, minimum sizes, dyslexia-friendly
-- **Document licensing** — verify all use cases are covered
+- **Typography must express brand personality**: start with personality, select to match
+- **Be specific**: exact sizes, weights, spacing, not vague descriptions
+- **Consider budget constraints**: free fonts (Google Fonts) vs. paid
+- **Ensure fonts work well together**: contrast through classification
+- **Include web-safe fallbacks**: for when fonts don't load
+- **Think in systems**: typography that scales across all applications
+- **Prioritize readability**: beautiful but illegible type fails
+- **Test accessibility**: WCAG contrast, minimum sizes, dyslexia-friendly
+- **Document licensing**: verify all use cases are covered
 
 ## Output
 

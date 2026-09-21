@@ -281,15 +281,15 @@ How all elements work together
 
 Every strong creative brief includes:
 
-1. **Project Background & Objectives** — The "why" behind the project
-2. **Target Audience** — Detailed buyer personas and demographics
-3. **Key Message / Single-Minded Proposition** — The ONE compelling reason
-4. **Tone & Voice** — Adjectives describing brand personality
-5. **Deliverables** — Specific outputs expected
-6. **Timeline & Budget** — Realistic constraints
-7. **Visual References / Mood Boards** — Inspiration and direction
-8. **Competitor Analysis** — What to differentiate from
-9. **What to Avoid** — Clear guardrails
+1. **Project Background & Objectives**: The "why" behind the project
+2. **Target Audience**: Detailed buyer personas and demographics
+3. **Key Message / Single-Minded Proposition**: The ONE compelling reason
+4. **Tone & Voice**: Adjectives describing brand personality
+5. **Deliverables**: Specific outputs expected
+6. **Timeline & Budget**: Realistic constraints
+7. **Visual References / Mood Boards**: Inspiration and direction
+8. **Competitor Analysis**: What to differentiate from
+9. **What to Avoid**: Clear guardrails
 
 ### Brief Length
 Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
@@ -404,10 +404,10 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 
 ### Selection Framework
 
-1. **Align with Brand Personality** — Colors evoke specific emotions
-2. **Know Your Audience** — Demographics respond differently to colors
-3. **Differentiate from Competitors** — Conduct color audit of competitive landscape
-4. **Build Strategic Palette** — 1 primary + 1-3 secondary + neutral
+1. **Align with Brand Personality**: Colors evoke specific emotions
+2. **Know Your Audience**: Demographics respond differently to colors
+3. **Differentiate from Competitors**: Conduct color audit of competitive landscape
+4. **Build Strategic Palette**: 1 primary + 1-3 secondary + neutral
 
 ### Color Associations
 

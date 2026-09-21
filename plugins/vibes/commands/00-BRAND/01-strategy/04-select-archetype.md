@@ -145,8 +145,8 @@ Map the competitive landscape:
 
 ### Phase 4: Apply the 70/30 Rule
 Select archetypes using the Mark-Pearson methodology:
-- **Primary archetype (70%)** — core personality, aligned with purpose
-- **Secondary archetype (30%)** — for differentiation
+- **Primary archetype (70%)**: core personality, aligned with purpose
+- **Secondary archetype (30%)**: for differentiation
 - Validate combinations are complementary, not conflicting
 
 ### Phase 5: Validate Selection

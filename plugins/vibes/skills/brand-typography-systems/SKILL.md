@@ -17,13 +17,13 @@ Quick reference for developing strategic brand typography systems grounded in pe
 
 ## Key Principles
 
-1. **Start with personality** — Typography selection flows FROM brand personality TO typeface choices. Never the reverse.
-2. **Honor content** — Beautiful type that doesn't serve content fails its purpose.
-3. **Contrast through classification** — Serif + sans-serif pairing creates natural hierarchy without conflict.
-4. **Form follows function** — Body text prioritizes legibility; display text can prioritize personality.
-5. **Consistency builds recognition** — Every touchpoint reinforces (or undermines) brand perception.
-6. **Accessibility is non-negotiable** — Design for the widest possible audience.
-7. **Systems scale** — Create hierarchies that work across all applications and contexts.
+1. **Start with personality**: Typography selection flows FROM brand personality TO typeface choices. Never the reverse.
+2. **Honor content**: Beautiful type that doesn't serve content fails its purpose.
+3. **Contrast through classification**: Serif + sans-serif pairing creates natural hierarchy without conflict.
+4. **Form follows function**: Body text prioritizes legibility; display text can prioritize personality.
+5. **Consistency builds recognition**: Every touchpoint reinforces (or undermines) brand perception.
+6. **Accessibility is non-negotiable**: Design for the widest possible audience.
+7. **Systems scale**: Create hierarchies that work across all applications and contexts.
 
 ---
 

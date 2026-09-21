@@ -22,7 +22,7 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 
 ## The SMILE & SCRATCH Framework (Alexandra Watkins)
 
-### SMILE — 5 Qualities of a Great Name
+### SMILE: 5 Qualities of a Great Name
 
 | Letter | Quality | Description | Example |
 |--------|---------|-------------|---------|
@@ -34,7 +34,7 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 
 **"Legs" Explained**: A name should provide "a theme with mileage you can build a brand around."
 
-### SCRATCH — 7 Deal Breakers
+### SCRATCH: 7 Deal Breakers
 
 | Letter | Deal Breaker | Red Flag |
 |--------|--------------|----------|
@@ -101,14 +101,14 @@ Descriptive ─────────── Suggestive ───────�
 
 A great name should be:
 
-1. **Distinctive** — Stands apart from competitors
-2. **Brief** — Short enough to remember and type
-3. **Appropriate** — Fits the brand personality
-4. **Easy to spell** — No guessing required
-5. **Easy to pronounce** — Flows naturally when spoken
-6. **Likeable** — Creates positive first impression
-7. **Extendible** — Works across products and markets
-8. **Protectable** — Can be trademarked
+1. **Distinctive**: Stands apart from competitors
+2. **Brief**: Short enough to remember and type
+3. **Appropriate**: Fits the brand personality
+4. **Easy to spell**: No guessing required
+5. **Easy to pronounce**: Flows naturally when spoken
+6. **Likeable**: Creates positive first impression
+7. **Extendible**: Works across products and markets
+8. **Protectable**: Can be trademarked
 
 ---
 
@@ -131,13 +131,13 @@ A great name should be:
 
 ## Name Generation Techniques (Quick Reference)
 
-1. **Three Words Technique** — Each person writes 3 words that should describe the brand
-2. **Syllable Recombination** — Cut words into syllables, combine randomly
-3. **Root Word Mining** — Greek/Latin roots for professional-sounding names (Xerox from "xeros")
-4. **Portmanteau Creation** — Blend two words (Pinterest = Pin + Interest)
-5. **Sound Symbolism** — Use letters that evoke desired feelings
-6. **Free Association** — Idioms, proverbs, song lyrics, foreign words
-7. **Novel Spelling** — Phonetically equivalent spellings (careful: don't fail SCRATCH)
+1. **Three Words Technique**: Each person writes 3 words that should describe the brand
+2. **Syllable Recombination**: Cut words into syllables, combine randomly
+3. **Root Word Mining**: Greek/Latin roots for professional-sounding names (Xerox from "xeros")
+4. **Portmanteau Creation**: Blend two words (Pinterest = Pin + Interest)
+5. **Sound Symbolism**: Use letters that evoke desired feelings
+6. **Free Association**: Idioms, proverbs, song lyrics, foreign words
+7. **Novel Spelling**: Phonetically equivalent spellings (careful: don't fail SCRATCH)
 
 **Key Principle**: Generate 1,000+ candidates before evaluating. Quantity leads to quality.
 
@@ -164,11 +164,11 @@ A great name should be:
 ## Domain Strategy
 
 ### Priority Order
-1. **[name].com** — Always check first, highest value
-2. **[name].io** — Strong for tech startups
-3. **[name].co** — Viable alternative
-4. **[name]app.com** — If product-focused
-5. **get[name].com** — Action-oriented alternative
+1. **[name].com**: Always check first, highest value
+2. **[name].io**: Strong for tech startups
+3. **[name].co**: Viable alternative
+4. **[name]app.com**: If product-focused
+5. **get[name].com**: Action-oriented alternative
 
 ### Social Handle Considerations
 - Keep under 15 characters for Twitter/X
@@ -179,12 +179,12 @@ A great name should be:
 
 ## Common Naming Mistakes
 
-1. **Generic/Descriptive** — "Best Tech Solutions" fails to differentiate
-2. **Ignoring Availability** — Falling in love before checking domains
-3. **Cultural Blindspots** — Names with negative meanings in other languages
-4. **Too Complex** — Long, hard-to-spell names frustrate customers
-5. **Trendy Suffixes** — "-ify", "-io", "-ly" date quickly
-6. **Beauty Contest Testing** — Testing for likeability produces bland names
+1. **Generic/Descriptive**: "Best Tech Solutions" fails to differentiate
+2. **Ignoring Availability**: Falling in love before checking domains
+3. **Cultural Blindspots**: Names with negative meanings in other languages
+4. **Too Complex**: Long, hard-to-spell names frustrate customers
+5. **Trendy Suffixes**: "-ify", "-io", "-ly" date quickly
+6. **Beauty Contest Testing**: Testing for likeability produces bland names
 
 ---
 
@@ -200,11 +200,11 @@ A great name should be:
 
 ### Universal Truths
 
-1. **Names are strategic assets** — Every marketing dollar spent on a good name compounds
-2. **Memorability beats cleverness** — If they can't remember it, nothing else matters
-3. **Sound shapes perception** — Phonetics work subconsciously before meaning registers
-4. **Legs enable growth** — Names with extension potential multiply brand investment
-5. **Availability is non-negotiable** — Fall in love with names that are free to own
+1. **Names are strategic assets**: Every marketing dollar spent on a good name compounds
+2. **Memorability beats cleverness**: If they can't remember it, nothing else matters
+3. **Sound shapes perception**: Phonetics work subconsciously before meaning registers
+4. **Legs enable growth**: Names with extension potential multiply brand investment
+5. **Availability is non-negotiable**: Fall in love with names that are free to own
 
 ---
 

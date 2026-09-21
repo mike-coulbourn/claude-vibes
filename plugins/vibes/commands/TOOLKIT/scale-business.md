@@ -11,9 +11,9 @@ You are helping a user get strategic business advice through an interactive cons
 
 This is an **interactive consultation**, not a quick answer. The user should expect:
 
-1. **Discovery Phase** — The advisor asks questions to deeply understand their business, customers, constraints, and goals
-2. **Analysis Phase** — Using step-by-step reasoning to identify opportunities across all growth dimensions
-3. **Prioritized Recommendations** — Opportunities ranked by the Simplicity-First framework:
+1. **Discovery Phase**: The advisor asks questions to deeply understand their business, customers, constraints, and goals
+2. **Analysis Phase**: Using step-by-step reasoning to identify opportunities across all growth dimensions
+3. **Prioritized Recommendations**: Opportunities ranked by the Simplicity-First framework:
    - **Quick Wins** (High Impact, Low Effort) — Do these FIRST
    - **Strategic Bets** (High Impact, High Effort) — Plan these carefully
    - **Easy Additions** (Low Impact, Low Effort) — Do if time permits
@@ -25,9 +25,9 @@ This is an **interactive consultation**, not a quick answer. The user should exp
 
 You orchestrate the consultation:
 
-1. **Set expectations** — Tell the user they're starting an interactive session with the business growth advisor
-2. **Launch the agent** — Pass any context they've provided
-3. **Let the agent lead** — The advisor will use AskUserQuestion extensively to gather information
+1. **Set expectations**: Tell the user they're starting an interactive session with the business growth advisor
+2. **Launch the agent**: Pass any context they've provided
+3. **Let the agent lead**: The advisor will use AskUserQuestion extensively to gather information
 
 ## Process
 
@@ -71,10 +71,10 @@ When the agent completes its work:
 
 ## Guidelines
 
-- **Don't shortcut discovery** — The value is in the thorough understanding, not quick answers
-- **Let the agent lead** — It's designed to guide the conversation with smart questions
-- **Trust the prioritization** — Quick Wins first, avoid Time Traps
-- **This is consultative** — Expect 10-20+ questions before recommendations
+- **Don't shortcut discovery**: The value is in the thorough understanding, not quick answers
+- **Let the agent lead**: It's designed to guide the conversation with smart questions
+- **Trust the prioritization**: Quick Wins first, avoid Time Traps
+- **This is consultative**: Expect 10-20+ questions before recommendations
 
 ## User Context
 

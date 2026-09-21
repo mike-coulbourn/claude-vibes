@@ -341,7 +341,7 @@ If your values never create tension or require you to give something up, they're
 **Examples of Hard Choices**:
 - Patagonia's "Don't Buy This Jacket" ad — environmental values over sales
 - Southwest's "employees first" — turning down customers who abuse staff
-- Netflix's Keeper Test — letting go of adequate performers
+- Netflix's Keeper Test: letting go of adequate performers
 
 ---
 
@@ -1144,9 +1144,9 @@ For easy reference:
 
 ### Tools & Frameworks
 
-- [Brene Brown's Operationalizing Values Reference List](https://brenebrown.com/resources/operationalizing-your-values-reference-list-of-behaviors/) — Bank of behaviors mapped to common values
-- [Jim Collins Vision Framework](https://www.jimcollins.com/tools/vision-framework.pdf) — Core ideology discovery process
-- [Netflix Culture Memo](https://jobs.netflix.com/culture) — Example of values as behaviors
+- [Brene Brown's Operationalizing Values Reference List](https://brenebrown.com/resources/operationalizing-your-values-reference-list-of-behaviors/): Bank of behaviors mapped to common values
+- [Jim Collins Vision Framework](https://www.jimcollins.com/tools/vision-framework.pdf): Core ideology discovery process
+- [Netflix Culture Memo](https://jobs.netflix.com/culture): Example of values as behaviors
 
 ---
 

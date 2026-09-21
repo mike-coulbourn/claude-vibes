@@ -680,9 +680,9 @@ Apply Typeface Evaluation Criteria:
 **Classification:** [Sans-serif / Serif / Slab / Display / Script / etc.]
 
 **Source:**
-- [Google Fonts](link) — Free
-- [Adobe Fonts](link) — Included with Creative Cloud
-- [Purchase from](link) — $[X] for [license]
+- [Google Fonts](link): Free
+- [Adobe Fonts](link): Included with Creative Cloud
+- [Purchase from](link): $[X] for [license]
 
 **Variable Font**: [Yes/No] — [Available axes if yes]
 

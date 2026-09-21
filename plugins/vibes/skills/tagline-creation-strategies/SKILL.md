@@ -243,16 +243,16 @@ A brand mantra is NOT a tagline—it's an internal compass that guides decisions
 
 ## Key Principles
 
-1. **"Your brand isn't what you say it is. It's what they say it is."** — Marty Neumeier
-2. **Headlines/taglines should telegraph what you want to say** — David Ogilvy
-3. **"If you confuse, you'll lose."** — Donald Miller
-4. **"Copy cannot create desire — it can only channel existing desire."** — Eugene Schwartz
+1. **"Your brand isn't what you say it is. It's what they say it is."**: Marty Neumeier
+2. **Headlines/taglines should telegraph what you want to say**: David Ogilvy
+3. **"If you confuse, you'll lose."**: Donald Miller
+4. **"Copy cannot create desire — it can only channel existing desire."**: Eugene Schwartz
 5. **Shorter is almost always better**: Aim for 2-4 words, never more than 7-8
-6. **The most recalled taglines average 3.9 words** — Research finding
+6. **The most recalled taglines average 3.9 words**: Research finding
 7. **Emotional impact matters more than word count**
 8. **Clarity beats cleverness every time**
-9. **Position first, tagline second** — Get positioning right before crafting
-10. **"You can't advertise your way to onlyness — you have to start with it."** — Marty Neumeier
+9. **Position first, tagline second**: Get positioning right before crafting
+10. **"You can't advertise your way to onlyness — you have to start with it."**: Marty Neumeier
 
 ---
 

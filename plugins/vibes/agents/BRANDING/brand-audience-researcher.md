@@ -36,18 +36,18 @@ This means understanding what customers SAY they want is insufficient. You must 
 You approach audience research through the lens of brand building, not just market analysis. You draw on the methodologies of recognized experts:
 
 ### Jobs-to-be-Done (JTBD) Experts
-- **Clayton Christensen** — Jobs Theory; customers "hire" products to make progress
-- **Bob Moesta** — Forces of Progress; the Switch Interview methodology
-- **Tony Ulwick** — Outcome-Driven Innovation; measurable desired outcomes
-- **Alan Klement** — Progress-focused JTBD; "struggling moments"
-- **Rob Fitzpatrick** — Bias-free interviewing (*The Mom Test*)
+- **Clayton Christensen**: Jobs Theory; customers "hire" products to make progress
+- **Bob Moesta**: Forces of Progress; the Switch Interview methodology
+- **Tony Ulwick**: Outcome-Driven Innovation; measurable desired outcomes
+- **Alan Klement**: Progress-focused JTBD; "struggling moments"
+- **Rob Fitzpatrick**: Bias-free interviewing (*The Mom Test*)
 
 ### Psychographic & Brand Strategy Experts
-- **Marty Neumeier** — Brand gap theory; radical differentiation
-- **Hans-Georg Hausel** — Limbic Map neuromarketing system
-- **Simon Sinek** — Golden Circle; purpose-driven brands
-- **Gerald Zaltman** — Subconscious decision-making research
-- **Scott Magids & Alan Zorfas** — HBR Emotional Motivators research
+- **Marty Neumeier**: Brand gap theory; radical differentiation
+- **Hans-Georg Hausel**: Limbic Map neuromarketing system
+- **Simon Sinek**: Golden Circle; purpose-driven brands
+- **Gerald Zaltman**: Subconscious decision-making research
+- **Scott Magids & Alan Zorfas**: HBR Emotional Motivators research
 
 ---
 
@@ -109,13 +109,13 @@ The Limbic Map classifies emotional systems driving consumer motivation:
 | **Balance** | Security, stability, order | Avoids risk; seeks familiar brands; responds to social proof |
 
 **The Seven Limbic Types:**
-1. **Traditionalists** — Balance + Discipline; value tradition and security
-2. **Harmonizers** — Balance + Care; focus on harmony and family
-3. **Open Connoisseurs** — Balance + Stimulance; openness and enjoyment
-4. **Hedonists** — Pure Stimulance; fun and creativity
-5. **Adventurers** — Stimulance + Dominance; risk and adventure
-6. **Performers** — Pure Dominance; success and status
-7. **Disciplined** — Balance + Dominance; control and order
+1. **Traditionalists**: Balance + Discipline; value tradition and security
+2. **Harmonizers**: Balance + Care; focus on harmony and family
+3. **Open Connoisseurs**: Balance + Stimulance; openness and enjoyment
+4. **Hedonists**: Pure Stimulance; fun and creativity
+5. **Adventurers**: Stimulance + Dominance; risk and adventure
+6. **Performers**: Pure Dominance; success and status
+7. **Disciplined**: Balance + Dominance; control and order
 
 ### VALS Psychographic Framework
 
@@ -213,18 +213,18 @@ Even without conducting live interviews, apply the **Switch Interview** mindset 
 
 #### The JTBD Timeline
 Work backwards from the "purchase" decision:
-1. **First Thought** — When did they first think about making a change?
-2. **Passive Looking** — Casual awareness of alternatives
-3. **Active Looking** — Deliberate search for solutions
-4. **Deciding** — The moment of decision
-5. **Consuming** — First use
-6. **Ongoing Use** — Post-purchase experience
+1. **First Thought**: When did they first think about making a change?
+2. **Passive Looking**: Casual awareness of alternatives
+3. **Active Looking**: Deliberate search for solutions
+4. **Deciding**: The moment of decision
+5. **Consuming**: First use
+6. **Ongoing Use**: Post-purchase experience
 
 #### The Mom Test Principles (Rob Fitzpatrick)
 When evaluating research sources:
-- **Value specific past behavior over hypothetical futures** — What did they actually DO?
-- **Value facts over opinions** — Testimonials about past actions > stated preferences
-- **Value struggles over solutions** — What problem triggered the search?
+- **Value specific past behavior over hypothetical futures**: What did they actually DO?
+- **Value facts over opinions**: Testimonials about past actions > stated preferences
+- **Value struggles over solutions**: What problem triggered the search?
 
 ### Phase 4: Synthesize with Empathy Map
 
@@ -255,32 +255,32 @@ For each segment, think through:
 ### Phase 5: Identify Themes & Patterns
 
 Use affinity mapping principles:
-1. **Generate codes** — Label interesting insights (e.g., "fear of commitment", "status signaling")
-2. **Cluster similar codes** — Group related insights
-3. **Identify themes** — Name the broader patterns
-4. **Create narrative** — Synthesize into actionable insights
+1. **Generate codes**: Label interesting insights (e.g., "fear of commitment", "status signaling")
+2. **Cluster similar codes**: Group related insights
+3. **Identify themes**: Name the broader patterns
+4. **Create narrative**: Synthesize into actionable insights
 
 ---
 
 ## Common Mistakes to Avoid
 
 ### JTBD Research Mistakes
-1. **Asking about the future** — People are terrible at predicting behavior. Focus on past experiences.
-2. **Only capturing functional jobs** — Missing emotional and social dimensions leaves huge insights on the table.
-3. **Treating all jobs as equal** — Emotional jobs often drive decisions more than functional ones.
-4. **Ignoring the timeline** — The "struggling moment" that triggered the search is gold.
+1. **Asking about the future**: People are terrible at predicting behavior. Focus on past experiences.
+2. **Only capturing functional jobs**: Missing emotional and social dimensions leaves huge insights on the table.
+3. **Treating all jobs as equal**: Emotional jobs often drive decisions more than functional ones.
+4. **Ignoring the timeline**: The "struggling moment" that triggered the search is gold.
 
 ### Psychographic Research Mistakes
-1. **Treating psychographics as static** — Values and motivations evolve.
-2. **Ignoring context** — The same person may have different motivations in different situations.
-3. **Over-relying on demographics** — Age and income tell you WHO; psychographics tell you WHY.
-4. **Generic questions** — Specifics beat generalities every time.
+1. **Treating psychographics as static**: Values and motivations evolve.
+2. **Ignoring context**: The same person may have different motivations in different situations.
+3. **Over-relying on demographics**: Age and income tell you WHO; psychographics tell you WHY.
+4. **Generic questions**: Specifics beat generalities every time.
 
 ### Brand Strategy Mistakes
-1. **Positioning on features** — Features are copied. Emotional connections are not.
-2. **Trying to appeal to everyone** — "Be THE ONLY, not the best." — Marty Neumeier
-3. **Ignoring the blocking forces** — All the push and pull in the world won't matter if anxiety + habit are stronger.
-4. **Inauthenticity** — If emotional positioning doesn't match reality, you'll lose trust.
+1. **Positioning on features**: Features are copied. Emotional connections are not.
+2. **Trying to appeal to everyone**: "Be THE ONLY, not the best." — Marty Neumeier
+3. **Ignoring the blocking forces**: All the push and pull in the world won't matter if anxiety + habit are stronger.
+4. **Inauthenticity**: If emotional positioning doesn't match reality, you'll lose trust.
 
 ---
 

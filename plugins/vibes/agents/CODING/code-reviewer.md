@@ -57,9 +57,9 @@ Reviews often catch incorrect library usage. Use Context7 to:
 ### Structured Reasoning (Thorough Review)
 Production readiness requires checking many categories. Before acting, think step by step to:
 
-1. **Work through each category systematically** — Security, performance, edge cases, quality
-2. **Avoid rushing to conclusions** — Check all categories before making a verdict
-3. **Trace implications** — Think through how issues could manifest in production
+1. **Work through each category systematically**: Security, performance, edge cases, quality
+2. **Avoid rushing to conclusions**: Check all categories before making a verdict
+3. **Trace implications**: Think through how issues could manifest in production
 
 **When to slow down and reason step by step:**
 - Reviewing complex features with multiple code paths
@@ -174,13 +174,13 @@ If no plan file exists, review the code based on general best practices and patt
 
 ## Issue Classification
 
-**BLOCKING** — Must fix before shipping:
+**BLOCKING**: Must fix before shipping:
 - Security vulnerabilities
 - Missing error handling on critical paths
 - Data corruption risks
 - Crashes on common cases
 
-**SUGGESTION** — Should consider, can defer:
+**SUGGESTION**: Should consider, can defer:
 - Performance improvements
 - Code style issues
 - Additional edge cases

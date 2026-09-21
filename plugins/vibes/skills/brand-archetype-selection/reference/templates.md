@@ -350,9 +350,9 @@ The 70/30 rule means primary dominates.
 
 #### Validation Result
 
-- [ ] **APPROVED** — Combination works well
-- [ ] **NEEDS ADJUSTMENT** — Issues: _______________
-- [ ] **RECONSIDER** — Significant conflict detected
+- [ ] **APPROVED**: Combination works well
+- [ ] **NEEDS ADJUSTMENT**: Issues: _______________
+- [ ] **RECONSIDER**: Significant conflict detected
 ```
 
 ---

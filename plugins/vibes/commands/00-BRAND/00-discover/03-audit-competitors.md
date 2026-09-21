@@ -145,12 +145,12 @@ Use the templates in the `competitive-visual-audit` skill for matrix formatting.
 
 ## Guidelines
 
-- The agent does the research — you orchestrate
+- The agent does the research: you orchestrate
 - Trust the agent's findings but validate with the founder
 - Focus on BRAND elements, not just product features
 - Look for patterns (everyone uses blue? opportunity for different color)
 - Pay attention to what customers complain about — that's differentiation gold
-- Note what competitors do well too — don't differentiate for differentiation's sake
+- Note what competitors do well too: don't differentiate for differentiation's sake
 
 ## Output
 

@@ -28,10 +28,10 @@ When given code to test:
 
 Comprehensive testing requires systematic coverage. Before acting, think step by step to:
 
-1. **Plan test coverage methodically** — Happy paths, edge cases, error conditions, integration points
-2. **Think through all code paths** — Ensure no blind spots in coverage
-3. **Trace dependencies** — What other code could be affected?
-4. **Evaluate test quality** — Are tests actually proving correctness?
+1. **Plan test coverage methodically**: Happy paths, edge cases, error conditions, integration points
+2. **Think through all code paths**: Ensure no blind spots in coverage
+3. **Trace dependencies**: What other code could be affected?
+4. **Evaluate test quality**: Are tests actually proving correctness?
 
 **When to slow down and reason step by step:**
 - Planning test coverage for new features
@@ -140,10 +140,10 @@ You run this loop autonomously—the vibe coder just waits for results.
 
 **Tests MUST be runnable without user intervention:**
 
-1. **Set up their own data** — Don't rely on external state
-2. **Clean up after themselves** — Don't leave test artifacts
-3. **Mock external services** — Don't require live APIs
-4. **Run in isolation** — Don't depend on test order
+1. **Set up their own data**: Don't rely on external state
+2. **Clean up after themselves**: Don't leave test artifacts
+3. **Mock external services**: Don't require live APIs
+4. **Run in isolation**: Don't depend on test order
 
 **Example of self-contained test:**
 
@@ -280,7 +280,7 @@ When tests fail, determine:
    - Missing test data?
    - Race condition?
 
-**Fix the issue yourself** — don't ask the vibe coder to debug.
+**Fix the issue yourself**: don't ask the vibe coder to debug.
 
 ## Output Format
 
@@ -322,8 +322,8 @@ In plain language, what does passing these tests prove?
 
 ## Test Files Created/Modified
 
-- `tests/feature.test.ts` — New file with 5 tests
-- `tests/integration.test.ts` — Added 2 tests
+- `tests/feature.test.ts`: New file with 5 tests
+- `tests/integration.test.ts`: Added 2 tests
 
 ## Manual Testing Required (if any)
 
@@ -347,12 +347,12 @@ Based on test coverage, I'm [HIGH/MEDIUM/LOW] confidence this code works correct
 
 ## Guidelines
 
-- **You do the work** — The vibe coder waits for results
-- **Self-contained tests** — No external dependencies required
-- **Run tests yourself** — Don't ask the user to run them
-- **Iterate until green** — Don't stop at first failure
-- **Fix what you find** — Don't just report bugs, fix them
-- **Manual testing is last resort** — Automate everything possible
-- **Clear instructions when needed** — Step-by-step, no ambiguity
-- **Store learnings in Memory** — Build expertise over time
-- **Follow existing test patterns** — Consistency matters
+- **You do the work**: The vibe coder waits for results
+- **Self-contained tests**: No external dependencies required
+- **Run tests yourself**: Don't ask the user to run them
+- **Iterate until green**: Don't stop at first failure
+- **Fix what you find**: Don't just report bugs, fix them
+- **Manual testing is last resort**: Automate everything possible
+- **Clear instructions when needed**: Step-by-step, no ambiguity
+- **Store learnings in Memory**: Build expertise over time
+- **Follow existing test patterns**: Consistency matters

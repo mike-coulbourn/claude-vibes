@@ -180,12 +180,12 @@ Deliver the complete positioning strategy using the Positioning Documentation Te
 
 ## Guidelines
 
-- **Position against the status quo, not just competitors** — the best positioning creates a new category
-- **Own one word** — if you can't fill in the blanks clearly, the positioning isn't sharp enough
-- **The "ONLY" must be literally true** — if you can't say "only," you don't have a zag
-- **Sacrifice is the point** — real positioning requires giving something up
-- **Think like the customer** — positioning exists in their mind, not yours
-- **Reference the Laws** — use the 22 Laws as a checklist
+- **Position against the status quo, not just competitors**: the best positioning creates a new category
+- **Own one word**: if you can't fill in the blanks clearly, the positioning isn't sharp enough
+- **The "ONLY" must be literally true**: if you can't say "only," you don't have a zag
+- **Sacrifice is the point**: real positioning requires giving something up
+- **Think like the customer**: positioning exists in their mind, not yours
+- **Reference the Laws**: use the 22 Laws as a checklist
 
 ## Output
 

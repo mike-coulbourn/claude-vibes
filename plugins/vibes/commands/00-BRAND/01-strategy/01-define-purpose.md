@@ -170,7 +170,7 @@ Deliver the complete purpose, mission, and vision using the Purpose/Mission/Visi
 - Purpose should feel emotional and personally meaningful
 - Mission should be actionable and specific
 - Vision should be aspirational but believable
-- Avoid generic corporate language — make it uniquely theirs
+- Avoid generic corporate language: make it uniquely theirs
 - Purpose is discovered, not invented — excavate authentic stories
 - Test rigorously against frameworks before finalizing
 - A purpose that doesn't guide decisions isn't a real purpose
