@@ -14,37 +14,43 @@ It also wraps building, shipping, debugging, and refactoring in the same plain-l
 
 ## 📦 Installation
 
-Open your project in your IDE of choice (VS Code, Cursor, etc.) and open the integrated terminal.
+### 1. Install Claude Code
 
-### 1. Install Homebrew
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-### 2. Install Node.js
-
-Node.js 18+ is required for MCP servers.
-
-```
-brew install node
-```
-
-### 3. Install Claude Code
-
-```
-brew install --cask claude-code
-```
-
-### 4. Install Claude Vibes
+macOS, Linux, or WSL:
 
 ```bash
-mkdir -p .taskmaster && printf '{\n  "models": {\n    "main": {\n      "provider": "claude-code",\n      "modelId": "opus"\n    }\n  }\n}\n' > .taskmaster/config.json && grep -qxF '.taskmaster/' .gitignore 2>/dev/null || echo '.taskmaster/' >> .gitignore && claude "/plugin marketplace add mike-coulbourn/claude-vibes"
+curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-### 5. Start Using Claude Vibes
+Windows PowerShell:
 
-Type `/exit`, then run `claude` again to load the plugin. Run `/help` to see your new commands.
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+This is Anthropic's native installer, and it keeps Claude Code updated automatically. Homebrew (`brew install --cask claude-code`) and WinGet also work, but they do not auto-update by default. Already have Claude Code? Skip this step.
+
+### 2. Install Node.js 18+
+
+Two of the bundled MCP servers (Taskmaster and Whois) start through `npx`. Install Node from [nodejs.org](https://nodejs.org), or with `brew install node` on macOS. Check with `node --version`.
+
+### 3. Install Claude Vibes
+
+```bash
+claude plugin marketplace add mike-coulbourn/claude-vibes
+```
+
+```bash
+claude plugin install claude-vibes@claude-vibes
+```
+
+### 4. Start
+
+Open a terminal in your project folder, run `claude`, and type `/` to see the new commands. If Claude Code was already running, restart it or run `/reload-plugins`.
+
+Taskmaster needs no setup. The first time you run the roadmap command, it configures Taskmaster to use your Claude Code login, so there is no separate API key.
+
+To update later, run `claude plugin update claude-vibes@claude-vibes`, then restart Claude Code.
 
 ### Local Install (Alternative)
 

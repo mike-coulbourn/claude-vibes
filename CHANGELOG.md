@@ -2,6 +2,11 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 2.0.3
+
+- Simpler install: Anthropic's native installer on any OS, then `claude plugin marketplace add` and `claude plugin install`. The old one-liner only added the marketplace without installing the plugin, and it overwrote any existing `.taskmaster/config.json`.
+- The roadmap command now sets Taskmaster to use the Claude Code login the first time it runs, without touching a provider the user already chose.
+
 ## 2.0.2
 
 Midjourney skill and command checked against docs.midjourney.com for V8.2:
