@@ -292,6 +292,8 @@ Create a PRD (Product Requirements Document) by synthesizing all `docs/01-START/
 1. **Initialize Taskmaster** (if not already initialized):
    - Check if `.taskmaster/` directory exists from context
    - If not, use the `initialize_project` Taskmaster tool
+   - Read `.taskmaster/config.json`. If the file is missing, or its main model uses a provider the user has no API key for, set `models.main` to `{ "provider": "claude-code", "modelId": "opus" }` and leave every other setting as it is. This runs Taskmaster through the user's Claude Code login, so no separate API key is needed. If the user already chose a working provider, do not change it.
+   - Add `.taskmaster/` to `.gitignore` if it is not already listed
 
 2. **Parse the PRD into tasks:**
    - Use the `parse_prd` Taskmaster tool with the PRD file path
