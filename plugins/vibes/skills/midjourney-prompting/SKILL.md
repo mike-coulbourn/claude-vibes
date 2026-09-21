@@ -1,9 +1,11 @@
 ---
 name: midjourney-prompting
-description: Craft effective Midjourney V7 prompts for any style — photography, illustration, anime, or artistic. Provides frameworks (7-Element, F.O.C.A.L.), parameter reference (--ar, --stylize, --sref, --cref), lighting/camera terminology, and V7-specific optimization. Auto-activates when writing Midjourney prompts, discussing MJ parameters, or creating AI image prompts. Triggers: Midjourney, MJ prompt, --ar, --stylize, --sref, style reference, character reference, image generation prompt.
+description: Use when writing, fixing, or refining Midjourney prompts in any style, including photography, illustration, anime, and fine art, or when choosing Midjourney parameters and reference images. Keywords - Midjourney, MJ prompt, --ar, --stylize, --chaos, --sref style reference, character and omni reference, lighting and camera terms, image generation prompt.
 ---
 
 # Midjourney V7 Prompting Guide
+
+> **Version note, last verified December 2025.** This guide was written against Midjourney V7. Prompt structure, lighting and camera vocabulary, and most parameters carry across versions, but defaults, parameter ranges, and reference features (`--sref`, `--cref`, omni reference) change between releases. If the user is on a newer version, or a parameter behaves unexpectedly, check the current Midjourney docs with WebSearch before relying on version-specific claims here.
 
 ## Quick Reference: Prompt Structure
 

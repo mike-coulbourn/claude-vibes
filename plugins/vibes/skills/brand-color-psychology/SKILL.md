@@ -1,6 +1,6 @@
 ---
 name: brand-color-psychology
-description: Provides brand color psychology and strategic palette development frameworks including Color-in-Context Theory, 60-30-10 Rule, color harmony systems, archetype color associations, Blue Ocean color differentiation, cultural considerations, and accessibility requirements. Auto-activates during brand color selection, palette development, color psychology discussions, and color strategy work. Use when discussing brand colors, color palettes, color psychology, color differentiation, color accessibility, color harmony, WCAG compliance, or color specifications.
+description: Use when selecting or evaluating brand colors, building a palette with primary, secondary, neutral, and accent roles, differentiating from competitor colors, or checking color contrast and accessibility. Keywords - color psychology, color palette, 60-30-10 rule, color harmony, archetype colors, cultural color meaning, WCAG contrast, hex and CMYK specifications.
 ---
 
 # Brand Color Psychology & Strategic Palette Development
@@ -258,7 +258,7 @@ People form product judgments within 90 seconds, and 62-90% of that assessment i
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Color Palette Documentation Template (complete output structure)
 - Competitor Color Audit Template
 - Accessibility Testing Checklist

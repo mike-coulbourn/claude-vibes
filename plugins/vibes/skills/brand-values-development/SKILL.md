@@ -1,6 +1,6 @@
 ---
 name: brand-values-development
-description: Provides brand values frameworks, differentiation tests, discovery questions, and behavior mapping templates. Auto-activates during values definition, core values curation, and values testing. Use when discussing brand values, core values, Lencioni's four categories, opposite test, antivalue, fire someone test, operationalizing values, Brene Brown values process, values discovery, or permission-to-play values.
+description: Use when discovering, writing, or pressure-testing brand or company core values, replacing generic values with differentiating ones, or turning values into observable behaviors. Keywords - core values, Lencioni four categories, permission-to-play values, opposite test, antivalue, fire someone test, Brene Brown values process, operationalizing values.
 ---
 
 # Brand Values Development Framework
@@ -282,7 +282,7 @@ These could apply to anyone and therefore inspire no one:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Values Discovery Worksheet
 - Values Category Assessment Template
 - Differentiation Test Template

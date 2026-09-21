@@ -1,6 +1,6 @@
 ---
 name: brand-messaging-architecture
-description: Provides brand messaging architecture, value proposition, and brand pillar development frameworks including Peep Laja's Message Layers, Osterwalder's Value Proposition Canvas, Geoffrey Moore positioning template, April Dunford's Five Components, StoryBrand SB7, Andy Raskin's Strategic Narrative, the Messaging House, and MECLABS quality tests. Auto-activates during messaging framework development, value proposition creation, and brand pillar definition. Use when discussing messaging architecture, value proposition, brand pillars, message layers, messaging house, messaging hierarchy, elevator pitch, Peep Laja, Geoffrey Moore, April Dunford, StoryBrand, Andy Raskin, or MECLABS.
+description: Use when building a messaging framework, writing a value proposition, defining brand pillars or key messages, or organizing a messaging hierarchy across audiences. Keywords - messaging house, message layers, value proposition canvas, positioning template, Peep Laja, Osterwalder, Geoffrey Moore, April Dunford, StoryBrand, Andy Raskin strategic narrative, MECLABS.
 ---
 
 # Brand Messaging Architecture Framework
@@ -345,7 +345,7 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Messaging Framework Document Template
 - Value Proposition Canvas Template
 - Messaging Pillar Template

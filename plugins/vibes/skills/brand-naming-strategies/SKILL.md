@@ -1,6 +1,6 @@
 ---
 name: brand-naming-strategies
-description: Provides brand naming frameworks, evaluation criteria, and templates for startup naming work. Auto-activates during brand name development, name evaluation, domain checking, and trademark research. Use when discussing brand name, company name, product name, naming strategy, SMILE SCRATCH framework, domain availability, trademark, name evaluation, sound symbolism, or naming matrix.
+description: Use when naming or renaming a company, product, or startup, generating or scoring name candidates, or checking domain and trademark availability for a name. Keywords - brand name, naming strategy, SMILE and SCRATCH test, descriptive vs invented vs abstract names, sound symbolism, naming matrix, domain availability, trademark screening.
 ---
 
 # Brand Naming Strategies
@@ -210,7 +210,7 @@ A great name should be:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Name Evaluation Scorecard (SMILE + SCRATCH)
 - Naming Brief Template (discovery questions)
 - Name Candidate Table (for presenting options)

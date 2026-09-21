@@ -1,6 +1,6 @@
 ---
 name: scriptwriting-methodology
-description: Direct response copywriting frameworks for video scripts. Includes DR formula, PAS, AIDA, hook formulas, CTA best practices, and conversion optimization. Auto-activates when writing scripts, sponsored content, affiliate content, hooks, CTAs, or copywriting for video. Use when discussing scriptwriting, DR formula, PAS framework, hooks, calls to action, or conversion copy.
+description: Use when writing or critiquing video scripts meant to sell, such as sponsored segments, affiliate content, ads, hooks, and calls to action. Keywords - direct response, DR formula, PAS, AIDA, hook formulas, CTA, script structure, conversion copy for video.
 ---
 
 # Scriptwriting Methodology for Sponsored Content

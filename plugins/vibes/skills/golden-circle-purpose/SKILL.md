@@ -1,6 +1,6 @@
 ---
 name: golden-circle-purpose
-description: Provides purpose-driven branding frameworks, WHY discovery processes, and templates for articulating brand purpose, mission, and vision. Auto-activates during purpose definition, Golden Circle methodology, mission/vision crafting, and WHY discovery. Use when discussing purpose, mission, vision, Simon Sinek, Golden Circle, WHY statement, hedgehog concept, purpose-driven branding, brand purpose, or purpose washing.
+description: Use when defining or refining a brand's purpose, mission, or vision, running WHY discovery with a founder, or checking a purpose statement for purpose washing. Keywords - Simon Sinek, Golden Circle, WHY statement, mission statement, vision statement, hedgehog concept, purpose-driven branding.
 ---
 
 # Golden Circle Purpose Framework
@@ -249,7 +249,7 @@ Your WHY, HOW, and WHAT must align across all touchpoints.
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Purpose Discovery Worksheet
 - WHY Statement Drafting Template
 - Hedgehog Assessment Template

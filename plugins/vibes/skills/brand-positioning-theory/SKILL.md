@@ -1,6 +1,6 @@
 ---
 name: brand-positioning-theory
-description: Provides brand positioning frameworks, the 22 Immutable Laws of Marketing, ZAG methodology, Onliness Statement formula, and positioning templates. Auto-activates during positioning strategy, competitive mapping, and market positioning work. Use when discussing brand positioning, onliness statement, positioning statement, 22 laws, ZAG, Ries and Trout, Neumeier, cherchez le creneau, positioning map, ladder concept, or trueline.
+description: Use when defining how a brand is positioned against competitors, writing a positioning or onliness statement, mapping a market to find an open position, or deciding which category to own. Keywords - brand positioning, onliness statement, positioning map, 22 Immutable Laws, Ries and Trout, Neumeier ZAG, ladder concept, cherchez le creneau, trueline.
 ---
 
 # Brand Positioning Theory Framework
@@ -269,7 +269,7 @@ Apply these tests to validate positioning:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Positioning Statement Template
 - Onliness Statement Template (with 5W's)
 - Competitive Landscape Analysis Template

@@ -1,10 +1,12 @@
 ---
 name: ai-writing-detection
-description: Comprehensive AI writing detection patterns and methodology. Provides vocabulary lists, structural patterns, model-specific fingerprints, and false positive prevention guidance. Use when analyzing text for AI authorship or understanding detection patterns.
+description: Use when checking whether text reads as AI-generated, reviewing or editing a draft so it sounds human, or writing copy, emails, scripts, or docs that must avoid AI tells. Covers AI vocabulary, structural and formatting patterns, markup artifacts, citation problems, model-specific fingerprints, and false positive prevention.
 allowed-tools: Read, Grep, Glob, WebFetch, WebSearch
 ---
 
 # AI Writing Detection Reference
+
+> **Time-sensitive content, last verified December 2025.** Vocabulary, structural, and formatting patterns are stable across model generations. Model-specific fingerprints and markup artifacts are not, because vendors tune them away and new models ship with new habits. Treat anything in [reference/model-fingerprints.md](reference/model-fingerprints.md) as evidence about models from that period, never as proof about current ones.
 
 Expert-level knowledge base for detecting AI-generated text, compiled from academic research, commercial detection tools, and empirical analysis.
 

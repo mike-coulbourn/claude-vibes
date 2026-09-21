@@ -1,9 +1,11 @@
 ---
 name: platform-optimization
-description: Platform-specific optimization for TikTok, Instagram Reels, and YouTube sponsored content. Includes 2025 algorithm updates, optimal lengths, and platform-native best practices. Auto-activates when discussing TikTok scripts, Reels content, YouTube sponsorships, platform optimization, or cross-platform repurposing. Use when writing platform-specific content or adapting scripts across platforms.
+description: Use when writing or adapting short-form or sponsored video content for a specific platform, such as TikTok, Instagram Reels, YouTube, or YouTube Shorts, or repurposing one script across platforms. Keywords - optimal video length, hook timing, captions, platform-native style, algorithm signals, sponsorship disclosure, cross-platform repurposing.
 ---
 
 # Platform Optimization for Sponsored Content
+
+> **Time-sensitive content, last verified December 2025.** Algorithm weights, length thresholds, and penalty figures below describe platform behavior as of that date, and platforms change these without notice. The structural advice (native style, early hook, captions, one CTA) ages well; the specific numbers do not. When a recommendation hinges on a specific number, check current official platform guidance with WebSearch first, and tell the user if it has changed.
 
 ## TikTok (2025 Algorithm Updates)
 
