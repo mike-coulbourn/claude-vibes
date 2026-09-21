@@ -1,4 +1,4 @@
-# Brand Naming Templates
+# Brand naming templates
 
 Structured templates for capturing and applying brand naming insights.
 
@@ -6,16 +6,16 @@ Structured templates for capturing and applying brand naming insights.
 
 ## Contents
 
-- [Name Evaluation Scorecard](#name-evaluation-scorecard)
-- [Naming Brief Template](#naming-brief-template)
-- [Name Candidate Table](#name-candidate-table)
-- [Comparison Matrix Template](#comparison-matrix-template)
-- [Domain Availability Tracker](#domain-availability-tracker)
-- [Final Selection Documentation Template](#final-selection-documentation-template)
-- [Output Validation Checklist](#output-validation-checklist)
-- [Quick Reference Cards](#quick-reference-cards)
+- [Name evaluation scorecard](#name-evaluation-scorecard)
+- [Naming brief template](#naming-brief-template)
+- [Name candidate table](#name-candidate-table)
+- [Comparison matrix template](#comparison-matrix-template)
+- [Domain availability tracker](#domain-availability-tracker)
+- [Final selection documentation template](#final-selection-documentation-template)
+- [Output validation checklist](#output-validation-checklist)
+- [Quick reference cards](#quick-reference-cards)
 
-## Name Evaluation Scorecard
+## Name evaluation scorecard
 
 Use this scorecard to evaluate each candidate name systematically.
 
@@ -58,7 +58,7 @@ Use this scorecard to evaluate each candidate name systematically.
 
 ---
 
-## Naming Brief Template
+## Naming brief template
 
 Use these questions during discovery to understand naming requirements.
 
@@ -75,7 +75,7 @@ Use these questions during discovery to understand naming requirements.
 5. How would you describe your ideal customer's personality?
 6. What words would resonate with them?
 
-### Competitive Landscape
+### Competitors
 7. Name your top 3-5 competitors
 8. Which competitor names do you admire? Why?
 9. What naming patterns do you see in your industry?
@@ -100,7 +100,7 @@ Use these questions during discovery to understand naming requirements.
     [ ] No preference
 
 ### Constraints
-13. What words MUST be avoided?
+13. What words must be avoided?
 14. What associations should be avoided?
 15. Any sounds or letters to avoid?
 16. International considerations? Which markets?
@@ -118,7 +118,7 @@ Use these questions during discovery to understand naming requirements.
 
 ---
 
-## Name Candidate Table
+## Name candidate table
 
 Use this format when presenting name options to founders.
 
@@ -142,7 +142,7 @@ Use this format when presenting name options to founders.
 
 ---
 
-## Comparison Matrix Template
+## Comparison matrix template
 
 Use this matrix for objective side-by-side comparison.
 
@@ -164,12 +164,12 @@ Use this matrix for objective side-by-side comparison.
 | **Domain Status** | [emoji] | [emoji] | [emoji] | [emoji] | [emoji] |
 | **TOTAL** | /45 | /45 | /45 | /45 | /45 |
 
-**Recommendation:** [Name] — [Brief rationale]
+**Recommendation:** [Name]. [Brief rationale]
 ```
 
 ---
 
-## Domain Availability Tracker
+## Domain availability tracker
 
 Track domain research systematically.
 
@@ -206,7 +206,7 @@ Track domain research systematically.
 
 ---
 
-## Final Selection Documentation Template
+## Final selection documentation template
 
 Use this format when documenting the chosen name.
 
@@ -287,7 +287,7 @@ Use this format when documenting the chosen name.
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing naming output, verify:
 
@@ -295,7 +295,7 @@ When reviewing naming output, verify:
 - [ ] Naming brief completed or key questions answered
 - [ ] Brand positioning understood
 - [ ] Target audience defined
-- [ ] Competitive landscape mapped
+- [ ] Competitors mapped
 - [ ] Preferences and constraints captured
 
 **Generation Quality**
@@ -332,9 +332,9 @@ When reviewing naming output, verify:
 
 ---
 
-## Quick Reference Cards
+## Quick reference cards
 
-### SMILE Quick Check
+### SMILE quick check
 Ask for each candidate:
 1. Does it suggest something about the brand?
 2. Will people remember it after hearing once?
@@ -342,7 +342,7 @@ Ask for each candidate:
 4. Can we build a brand world around it?
 5. Does it evoke emotion?
 
-### SCRATCH Quick Filter
+### SCRATCH quick filter
 Reject if:
 1. People will misspell it
 2. It sounds like a competitor
@@ -352,7 +352,7 @@ Reject if:
 6. Only insiders get it
 7. People will avoid saying it
 
-### Domain Priority
+### Domain priority
 1. .com (always first choice)
 2. .io (tech-friendly alternative)
 3. .co (viable for startups)

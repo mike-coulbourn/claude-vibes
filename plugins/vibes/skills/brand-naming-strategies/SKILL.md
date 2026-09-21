@@ -11,7 +11,7 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 
 ---
 
-## Key Statistics
+## Key statistics
 
 - **2.5x increase** in company value after Emode renamed to Tickle (4 months)
 - **30% traffic increase** from name change alone
@@ -20,9 +20,9 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 
 ---
 
-## The SMILE & SCRATCH Framework (Alexandra Watkins)
+## The SMILE & SCRATCH framework (Alexandra Watkins)
 
-### SMILE — 5 Qualities of a Great Name
+### SMILE: 5 qualities of a great name
 
 | Letter | Quality | Description | Example |
 |--------|---------|-------------|---------|
@@ -32,9 +32,9 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 | **L** | Legs | Lends itself to extended wordplay and branding | Nike allows "Just Do It" mythology |
 | **E** | Emotional | Moves people | Patagonia evokes adventure |
 
-**"Legs" Explained**: A name should provide "a theme with mileage you can build a brand around."
+**"Legs" explained**: A name should provide "a theme with mileage you can build a brand around."
 
-### SCRATCH — 7 Deal Breakers
+### SCRATCH: 7 deal breakers
 
 | Letter | Deal Breaker | Red Flag |
 |--------|--------------|----------|
@@ -48,7 +48,7 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 
 ---
 
-## Sound Symbolism Quick Guide (Lexicon/Placek)
+## Sound symbolism quick guide (Lexicon/Placek)
 
 | Sound | Psychological Impact | Example Names |
 |-------|---------------------|---------------|
@@ -63,7 +63,7 @@ Quick reference for strategic brand naming using expert methodologies from Lexic
 
 ## The Naming Matrix
 
-Position names on two axes — **Approach** (descriptive to abstract) and **Construct** (real-word to coined):
+Position names on two axes: **Approach** (descriptive to abstract) and **Construct** (real-word to coined):
 
 ```
                     CONSTRUCT
@@ -85,7 +85,7 @@ Descriptive│General │ TripAdvisor │  (rare)  │
 APPROACH
 ```
 
-### The Clarity vs. Creativity Spectrum
+### The clarity vs. creativity spectrum
 
 ```
 Descriptive ─────────── Suggestive ─────────── Abstract
@@ -97,22 +97,22 @@ Descriptive ─────────── Suggestive ───────�
 
 ---
 
-## Marty Neumeier's 8 Criteria
+## Marty Neumeier's 8 criteria
 
 A great name should be:
 
-1. **Distinctive** — Stands apart from competitors
-2. **Brief** — Short enough to remember and type
-3. **Appropriate** — Fits the brand personality
-4. **Easy to spell** — No guessing required
-5. **Easy to pronounce** — Flows naturally when spoken
-6. **Likeable** — Creates positive first impression
-7. **Extendible** — Works across products and markets
-8. **Protectable** — Can be trademarked
+1. **Distinctive**: Stands apart from competitors
+2. **Brief**: Short enough to remember and type
+3. **Appropriate**: Fits the brand personality
+4. **Easy to spell**: No guessing required
+5. **Easy to pronounce**: Flows naturally when spoken
+6. **Likeable**: Creates positive first impression
+7. **Extendible**: Works across products and markets
+8. **Protectable**: Can be trademarked
 
 ---
 
-## Catchword's 10 Touchstones
+## Catchword's 10 touchstones
 
 | # | Touchstone | What It Means |
 |---|------------|---------------|
@@ -129,21 +129,21 @@ A great name should be:
 
 ---
 
-## Name Generation Techniques (Quick Reference)
+## Name generation techniques (quick reference)
 
-1. **Three Words Technique** — Each person writes 3 words that should describe the brand
-2. **Syllable Recombination** — Cut words into syllables, combine randomly
-3. **Root Word Mining** — Greek/Latin roots for professional-sounding names (Xerox from "xeros")
-4. **Portmanteau Creation** — Blend two words (Pinterest = Pin + Interest)
-5. **Sound Symbolism** — Use letters that evoke desired feelings
-6. **Free Association** — Idioms, proverbs, song lyrics, foreign words
-7. **Novel Spelling** — Phonetically equivalent spellings (careful: don't fail SCRATCH)
+1. **Three Words Technique**: Each person writes 3 words that should describe the brand
+2. **Syllable Recombination**: Cut words into syllables, combine randomly
+3. **Root Word Mining**: Greek/Latin roots for professional-sounding names (Xerox from "xeros")
+4. **Portmanteau Creation**: Blend two words (Pinterest = Pin + Interest)
+5. **Sound Symbolism**: Use letters that evoke desired feelings
+6. **Free Association**: Idioms, proverbs, song lyrics, foreign words
+7. **Novel Spelling**: Phonetically equivalent spellings (careful: don't fail SCRATCH)
 
-**Key Principle**: Generate 1,000+ candidates before evaluating. Quantity leads to quality.
+**Key principle**: Generate 1,000+ candidates before evaluating. Quantity leads to quality.
 
 ---
 
-## The Naming Funnel
+## The naming funnel
 
 ```
 ┌─────────────────────────────────────┐
@@ -161,34 +161,34 @@ A great name should be:
 
 ---
 
-## Domain Strategy
+## Domain strategy
 
-### Priority Order
-1. **[name].com** — Always check first, highest value
-2. **[name].io** — Strong for tech startups
-3. **[name].co** — Viable alternative
-4. **[name]app.com** — If product-focused
-5. **get[name].com** — Action-oriented alternative
+### Priority order
+1. **[name].com**: Always check first, highest value
+2. **[name].io**: Strong for tech startups
+3. **[name].co**: Viable alternative
+4. **[name]app.com**: If product-focused
+5. **get[name].com**: Action-oriented alternative
 
-### Social Handle Considerations
+### Social handle considerations
 - Keep under 15 characters for Twitter/X
 - Check consistency across platforms
 - Tools: BrandSnag, Namechk, Knowem
 
 ---
 
-## Common Naming Mistakes
+## Common naming mistakes
 
-1. **Generic/Descriptive** — "Best Tech Solutions" fails to differentiate
-2. **Ignoring Availability** — Falling in love before checking domains
-3. **Cultural Blindspots** — Names with negative meanings in other languages
-4. **Too Complex** — Long, hard-to-spell names frustrate customers
-5. **Trendy Suffixes** — "-ify", "-io", "-ly" date quickly
-6. **Beauty Contest Testing** — Testing for likeability produces bland names
+1. **Generic/Descriptive**: "Best Tech Solutions" fails to differentiate
+2. **Ignoring Availability**: Falling in love before checking domains
+3. **Cultural Blindspots**: Names with negative meanings in other languages
+4. **Too Complex**: Long, hard-to-spell names frustrate customers
+5. **Trendy Suffixes**: "-ify", "-io", "-ly" date quickly
+6. **Beauty Contest Testing**: Testing for likeability produces bland names
 
 ---
 
-## Key Principles
+## Key principles
 
 > **"You need 1,000 to 1,500 names before you'll find gems."** — David Placek (Lexicon)
 
@@ -198,53 +198,53 @@ A great name should be:
 
 > **"The hard part of naming is not coming up with a great idea. The hard part is finding an available name."** — Jeremy Miller
 
-### Universal Truths
+### Universal truths
 
-1. **Names are strategic assets** — Every marketing dollar spent on a good name compounds
-2. **Memorability beats cleverness** — If they can't remember it, nothing else matters
-3. **Sound shapes perception** — Phonetics work subconsciously before meaning registers
-4. **Legs enable growth** — Names with extension potential multiply brand investment
-5. **Availability is non-negotiable** — Fall in love with names that are free to own
+1. **Names are strategic assets**: Every marketing dollar spent on a good name compounds
+2. **Memorability beats cleverness**: If they can't remember it, nothing else matters
+3. **Sound shapes perception**: Phonetics work subconsciously before meaning registers
+4. **Legs enable growth**: Names with extension potential multiply brand investment
+5. **Availability is non-negotiable**: Fall in love with names that are free to own
 
 ---
 
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Name Evaluation Scorecard (SMILE + SCRATCH)
-- Naming Brief Template (discovery questions)
-- Name Candidate Table (for presenting options)
-- Comparison Matrix Template
-- Domain Availability Tracker
-- Final Selection Documentation Template
-- Output Validation Checklist
+- Name evaluation scorecard (SMILE + SCRATCH)
+- Naming brief template (discovery questions)
+- Name candidate table (for presenting options)
+- Comparison matrix template
+- Domain availability tracker
+- Final selection documentation template
+- Output validation checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Name Development
+### During name development
 - Use SMILE test to evaluate candidates
 - Apply SCRATCH filter to eliminate deal-breakers
 - Consider sound symbolism for strategic impact
 
-### During Name Evaluation
-- Reference Catchword's 10 Touchstones
-- Check Marty Neumeier's 8 Criteria
+### During name evaluation
+- Reference Catchword's 10 touchstones
+- Check Marty Neumeier's 8 criteria
 - Use comparison matrix for objective scoring
 
-### During Presentation
+### During presentation
 - Position names on the Naming Matrix
 - Explain strategic rationale for each
 - Prioritize .com availability
 
-### During Final Selection
+### During final selection
 - Verify domain still available (can change quickly)
 - Recommend immediate purchase
 - Check trademark conflicts
 
 ---
 
-## Deep Methodology
+## Deep methodology
 
-For comprehensive naming sessions, the `brand-naming-specialist` agent contains 800+ lines of expert methodology including detailed output formats, generation exercises, and full professional process.
+For full naming sessions, the `brand-naming-specialist` agent contains 800+ lines of methodology including detailed output formats, generation exercises, and the full professional process.

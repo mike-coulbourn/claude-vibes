@@ -1,4 +1,4 @@
-# Brand Archetype Templates
+# Brand archetype templates
 
 Structured templates for archetype analysis, selection, and documentation.
 
@@ -6,16 +6,16 @@ Structured templates for archetype analysis, selection, and documentation.
 
 ## Contents
 
-- [Archetype Selection Worksheet](#archetype-selection-worksheet)
-- [Archetype Profile Template](#archetype-profile-template)
-- [Competitive Archetype Mapping Template](#competitive-archetype-mapping-template)
-- [Archetype Combination Validation Template](#archetype-combination-validation-template)
-- [Archetype Expression Guide Template](#archetype-expression-guide-template)
-- [Quick Reference Card Template](#quick-reference-card-template)
-- [Full Archetype Documentation Template](#full-archetype-documentation-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Archetype selection worksheet](#archetype-selection-worksheet)
+- [Archetype profile template](#archetype-profile-template)
+- [Competitive archetype mapping template](#competitive-archetype-mapping-template)
+- [Archetype combination validation template](#archetype-combination-validation-template)
+- [Archetype expression guide template](#archetype-expression-guide-template)
+- [Quick reference card template](#quick-reference-card-template)
+- [Full archetype documentation template](#full-archetype-documentation-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Archetype Selection Worksheet
+## Archetype selection worksheet
 
 Use this to systematically evaluate archetype fit.
 
@@ -81,9 +81,9 @@ Rate each archetype (1-5) on fit:
 | Jester | _ | _ | _ | _ | _ |
 
 **Top 3 Candidates:**
-1. [Archetype] — Score: [Total]
-2. [Archetype] — Score: [Total]
-3. [Archetype] — Score: [Total]
+1. [Archetype], Score: [Total]
+2. [Archetype], Score: [Total]
+3. [Archetype], Score: [Total]
 
 ---
 
@@ -108,7 +108,7 @@ Rate each archetype (1-5) on fit:
 
 ---
 
-## Archetype Profile Template
+## Archetype profile template
 
 Complete profile for a selected archetype.
 
@@ -215,9 +215,9 @@ Complete profile for a selected archetype.
 
 ---
 
-## Competitive Archetype Mapping Template
+## Competitive archetype mapping template
 
-Visualize the competitive landscape.
+Map the competitive set.
 
 ```
 ### Competitive Archetype Landscape
@@ -263,10 +263,10 @@ Visualize the competitive landscape.
 #### Opportunity Analysis
 
 **Overcrowded Archetypes:**
-- [Archetype] — used by [Competitors]
+- [Archetype], used by [Competitors]
 
 **Underrepresented Archetypes:**
-- [Archetype] — potential opportunity
+- [Archetype], potential opportunity
 
 **White Space:**
 [Description of archetype territory no one owns]
@@ -284,7 +284,7 @@ Visualize the competitive landscape.
 
 ---
 
-## Archetype Combination Validation Template
+## Archetype combination validation template
 
 Validate that primary + secondary work together.
 
@@ -350,14 +350,14 @@ The 70/30 rule means primary dominates.
 
 #### Validation Result
 
-- [ ] **APPROVED** — Combination works well
-- [ ] **NEEDS ADJUSTMENT** — Issues: _______________
-- [ ] **RECONSIDER** — Significant conflict detected
+- [ ] **APPROVED**: Combination works well
+- [ ] **NEEDS ADJUSTMENT**: Issues: _______________
+- [ ] **RECONSIDER**: Significant conflict detected
 ```
 
 ---
 
-## Archetype Expression Guide Template
+## Archetype expression guide template
 
 Translate archetype to brand expression.
 
@@ -389,7 +389,7 @@ Translate archetype to brand expression.
 - [Voice quality 2]
 - [Voice quality 3]
 
-**The brand does NOT sound like:**
+**The brand does not sound like:**
 - [What to avoid 1]
 - [What to avoid 2]
 
@@ -406,17 +406,17 @@ Translate archetype to brand expression.
 #### Visual Identity Direction
 
 **Color Palette:**
-- Primary: [Color + hex] — [Why from archetype]
-- Secondary: [Color + hex] — [Why from archetype]
-- Accent: [Color + hex] — [Why from archetype]
+- Primary: [Color + hex], [Why from archetype]
+- Secondary: [Color + hex], [Why from archetype]
+- Accent: [Color + hex], [Why from archetype]
 
 **Typography:**
-- Headlines: [Font style] — [Why from archetype]
-- Body: [Font style] — [Why from archetype]
+- Headlines: [Font style], [Why from archetype]
+- Body: [Font style], [Why from archetype]
 
 **Imagery Style:**
-- [Image type 1] — [Why from archetype]
-- [Image type 2] — [Why from archetype]
+- [Image type 1], [Why from archetype]
+- [Image type 2], [Why from archetype]
 
 **Overall Aesthetic:**
 [Description derived from archetype]
@@ -464,7 +464,7 @@ If no, reconsider the decision.
 
 ---
 
-## Quick Reference Card Template
+## Quick reference card template
 
 Summary for daily use.
 
@@ -530,7 +530,7 @@ Before any brand decision, ask:
 
 ---
 
-## Full Archetype Documentation Template
+## Full archetype documentation template
 
 Complete documentation format.
 
@@ -692,8 +692,8 @@ The brand story follows these patterns:
 
 ## Summary
 
-**Primary Archetype:** [Name] — "[Motto]"
-**Secondary Archetype:** [Name] — "[Motto]"
+**Primary Archetype:** [Name], "[Motto]"
+**Secondary Archetype:** [Name], "[Motto]"
 **Emotional Territory:** [The feelings this brand owns]
 **Archetype Expression:** [One-sentence summary of how archetype shows up]
 
@@ -711,7 +711,7 @@ The brand story follows these patterns:
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing archetype documentation, verify:
 

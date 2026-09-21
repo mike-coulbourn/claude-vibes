@@ -3,23 +3,23 @@ description: Investigate an issue and understand what's wrong
 argument-hint: Error message, symptom, or description of what's broken
 ---
 
-# Diagnose Phase
+# Diagnose phase
 
-You are helping a vibe coder understand what's wrong with their code. This is detective work—find the root cause before attempting any fix.
+You are helping a vibe coder understand what's wrong with their code. This is detective work. Find the root cause before attempting any fix.
 
 Issue to diagnose: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the investigation and manage the conversation. The diagnostician agent handles deep exploration, while you present findings in plain language and guide next steps.
 
-**CRITICAL: You MUST use the Agent tool to launch the diagnostician agent for the investigation.** Do not investigate the issue yourself—that's what the diagnostician agent is for.
+**Use the Agent tool to launch the diagnostician agent for the investigation.** Do not investigate the issue yourself. That's what the diagnostician agent is for.
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+**Use the AskUserQuestion tool whenever you interact with the user.** This gives a guided, interactive experience:
 
 Use AskUserQuestion to:
 - Clarify symptoms or scope when information is vague
@@ -29,43 +29,43 @@ Use AskUserQuestion to:
 
 Never assume you fully understand the problem. Ask to confirm.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project requirements and architecture
+- `docs/01-START/` files: project requirements and architecture
 - Any error logs or stack traces the user provides
 
-These are stable project documentation—always load them.
+These are stable project documentation, so always load them.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and how components interact.
 
-## How to Communicate
+## How to communicate
 
 - Explain technical errors in plain language
 - Be specific about what's broken and why
 - Ask clarifying questions if the symptom is unclear
 - Use AskUserQuestion to gather more details when needed
 
-## Diagnosis Process
+## Diagnosis process
 
-### 1. Load Core Context
+### 1. Load core context
 
 Read docs/01-START/ files for project understanding.
 
-### 2. Recall Past Learnings
+### 2. Recall past learnings
 
 The diagnostician agent you launch below keeps its own project memory and loads it automatically. When you write its prompt, tell it which topics to check its memory for:
 
-- diagnostic knowledge — root causes and patterns from past debugging
-- codebase patterns — how things work in this codebase
-- implementation lessons — gotchas that might be causing issues
+- diagnostic knowledge: root causes and patterns from past debugging
+- codebase patterns: how things work in this codebase
+- implementation lessons: gotchas that might be causing issues
 
 That knowledge helps in three ways: past root causes may hint at what's happening now, known gotchas might explain unexpected behavior, and pattern knowledge helps narrow down where issues originate.
 
-**If nothing exists yet**, that's fine — it'll accumulate as you debug. Proceed to the next step.
+**If nothing exists yet**, that's fine, and it'll accumulate as you debug. Proceed to the next step.
 
-### 3. Understand the Symptom
+### 3. Understand the symptom
 
 If `$ARGUMENTS` describes an issue, start there. If not, use AskUserQuestion:
 - "What's happening that shouldn't be?"
@@ -74,9 +74,9 @@ If `$ARGUMENTS` describes an issue, start there. If not, use AskUserQuestion:
 
 Get enough detail to begin investigation.
 
-### 4. Launch Diagnostician (REQUIRED)
+### 4. Launch diagnostician (required)
 
-**You MUST use the Agent tool to launch the diagnostician agent.** Use `subagent_type: "claude-vibes:CODING:diagnostician"` with this prompt:
+**Use the Agent tool to launch the diagnostician agent.** Use `subagent_type: "claude-vibes:CODING:diagnostician"` with this prompt:
 
 > Ultrathink about diagnosing this issue.
 >
@@ -101,7 +101,7 @@ Get enough detail to begin investigation.
 > - If the symptom could have multiple causes, ask questions to narrow it down
 > - If you find something unexpected that needs context, ask the user about it
 > - If you're unsure whether something is a bug or expected behavior, ask
-> - Never assume you understand the issue—clarify with the user
+> - Never assume you understand the issue. Clarify with the user
 >
 > **Report back with:**
 > - Specific LOGS.json entries that are relevant (cite entry IDs)
@@ -111,7 +111,7 @@ Get enough detail to begin investigation.
 >
 > Explain findings in plain language a non-coder can understand.
 
-### 5. Load Specific References
+### 5. Load specific references
 
 After the diagnostician returns:
 
@@ -121,17 +121,17 @@ After the diagnostician returns:
 
 This gives you relevant context without parsing everything.
 
-### 6. Present Preliminary Findings
+### 6. Present preliminary findings
 
-Present findings as **preliminary observations that require validation**—not conclusions.
+Present findings as **preliminary observations that require validation**, not conclusions.
 
-Do NOT assume any behavior is a "bug." What looks wrong might be intentional for reasons you don't understand yet.
+Do not assume any behavior is a "bug." What looks wrong might be intentional for reasons you don't understand yet.
 
 If the root cause is unclear, be honest and ask for more information.
 
-### 7. MANDATORY: Validate Diagnosis with User
+### 7. Mandatory: validate diagnosis with user
 
-**Do NOT save any diagnosis doc until you complete this step.**
+**Do not save any diagnosis doc until you complete this step.**
 
 Use AskUserQuestion to validate your understanding:
 - Ask if the behavior you identified as "wrong" is actually unintended
@@ -144,7 +144,7 @@ Use AskUserQuestion to validate your understanding:
 - Your root cause analysis is accurate
 - The proposed fix approach makes sense
 
-### 8. Save Validated Diagnosis
+### 8. Save validated diagnosis
 
 **Only after the user has validated your diagnosis**, save it.
 
@@ -156,19 +156,19 @@ Save the diagnosis to `docs/04-DEBUG/diagnosis-<issue-name>.md`:
 **Date:** [ISO timestamp]
 **Symptom:** [What the user observed]
 
-## Root Cause
+## Root cause
 
 [Detailed explanation of why this is happening]
 
-## Affected Files
+## Affected files
 
-- `path/to/file.ts:line` — [what's wrong here]
+- `path/to/file.ts:line`: [what's wrong here]
 
-## Proposed Fix
+## Proposed fix
 
 [Step-by-step fix approach]
 
-## Related History
+## Related history
 
 [Any relevant LOGS.json entries or past fixes]
 ```
@@ -179,9 +179,9 @@ Use a descriptive name derived from the issue (e.g., `diagnosis-search-500-error
 
 - Always read docs/ for core context
 - Let the diagnostician explore LOGS.json; read only what it references
-- **NEVER assume behavior is a bug**—always validate with the user first
-- **NEVER save a diagnosis doc without user validation**
-- Don't guess at the fix—understand the problem first
+- **Never assume behavior is a bug.** Always validate with the user first
+- **Never save a diagnosis doc without user validation**
+- Don't guess at the fix. Understand the problem first
 - If unsure, ask more questions
 - Save diagnosis for handoff to `/02-fix-issue` only after validation
 
@@ -195,7 +195,7 @@ When diagnosis is complete:
 4. Save validated diagnosis to docs/04-DEBUG/
 5. Next step: "Run `/02-fix-issue docs/04-DEBUG/diagnosis-<name>.md` to implement the fix"
 
-### Record Diagnostic Findings
+### Record diagnostic findings
 
 In the diagnostician's prompt, ask it to record durable learnings in its project memory before it finishes:
 
@@ -208,11 +208,11 @@ In the diagnostician's prompt, ask it to record durable learnings in its project
    - Quirks discovered during investigation (e.g., "The cache invalidation is delayed by 5 seconds")
    - Non-obvious dependencies (e.g., "UserService depends on NotificationService being initialized first")
 
-**Only record NEW findings** — insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
+**Only record new findings**: insights that will help diagnose future issues faster. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
 - "Null pointer exceptions in OrderService usually mean the user's cart was cleared mid-checkout"
-- "The retry logic in ApiClient masks original errors — check logs for the root cause"
+- "The retry logic in ApiClient masks original errors, so check logs for the root cause"
 - "WebSocket disconnects are often caused by nginx timeout settings, not the app"

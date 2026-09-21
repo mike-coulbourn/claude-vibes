@@ -3,23 +3,23 @@ description: Analyze code for refactoring opportunities
 argument-hint: File, directory, or area to assess (e.g., src/api/, "the search functionality")
 ---
 
-# Assess Phase
+# Assess phase
 
-You are helping a vibe coder identify opportunities to improve their code. This is reconnaissance—understand what could be better before making any changes.
+You are helping a vibe coder identify opportunities to improve their code. This is reconnaissance. Understand what could be better before making any changes.
 
 Area to assess: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the assessment and manage the conversation. The assessor agent handles deep analysis, while you present findings in plain language and guide next steps.
 
-**CRITICAL: You MUST use the Agent tool to launch the assessor agent for the analysis.** Do not assess the code yourself—that's what the assessor agent is for.
+**Use the Agent tool to launch the assessor agent for the analysis.** Do not assess the code yourself. That's what the assessor agent is for.
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+**Use the AskUserQuestion tool whenever you interact with the user.** This gives a guided, interactive experience:
 
 Use AskUserQuestion to:
 - Clarify scope when the target area is vague
@@ -29,27 +29,27 @@ Use AskUserQuestion to:
 
 Never assume code is "wrong." Ask to confirm.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project requirements and architecture
+- `docs/01-START/` files: project requirements and architecture
 
-These are stable project documentation—always load them. The assessor agent will parse LOGS.json and report back specific relevant entries.
+These are stable project documentation, so always load them. The assessor agent will parse LOGS.json and report back specific relevant entries.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and coding conventions.
 
-## How to Communicate
+## How to communicate
 
 - Explain findings in plain language (no jargon without definition)
-- Focus on WHY something should be refactored, not just WHAT
+- Focus on why something should be refactored, not just what
 - Quantify when possible (duplicated in 5 places, O(n²) complexity)
 - Prioritize by impact (high/medium/low)
 - Use AskUserQuestion for scope and priority decisions
 
-## Assess Process
+## Assess process
 
-### 1. Clarify Scope
+### 1. Clarify scope
 
 If no input is provided:
 "What would you like me to assess for refactoring opportunities? Examples:
@@ -60,25 +60,25 @@ If no input is provided:
 If input is vague, use AskUserQuestion to clarify:
 - "You mentioned 'the API'. Should I assess all API endpoints, or focus on a specific area?"
 
-### 2. Load Core Context
+### 2. Load core context
 
 Read docs/01-START/ files to understand project patterns and conventions.
 
-### 3. Recall Past Learnings
+### 3. Recall past learnings
 
 The assessor agent you launch below keeps its own project memory and loads it automatically. When you write its prompt, tell it which topics to check its memory for:
 
-- refactoring patterns — patterns from past refactorings
-- codebase patterns — how things work in this codebase
-- implementation lessons — gotchas and lessons learned
+- refactoring patterns: patterns from past refactorings
+- codebase patterns: how things work in this codebase
+- implementation lessons: gotchas and lessons learned
 
 That knowledge helps in three ways: past refactoring patterns inform what approaches work well, codebase patterns help identify what's inconsistent, and lessons learned warn about complexity that might be intentional.
 
-**If nothing exists yet**, that's fine — it'll accumulate as you refactor. Proceed to the next step.
+**If nothing exists yet**, that's fine, and it'll accumulate as you refactor. Proceed to the next step.
 
-### 4. Launch Assessor (REQUIRED)
+### 4. Launch assessor (required)
 
-**You MUST use the Agent tool to launch the assessor agent.** Use `subagent_type: "claude-vibes:CODING:assessor"` with this prompt:
+**Use the Agent tool to launch the assessor agent.** Use `subagent_type: "claude-vibes:CODING:assessor"` with this prompt:
 
 > Ultrathink about assessing this code for refactoring opportunities.
 >
@@ -104,7 +104,7 @@ That knowledge helps in three ways: past refactoring patterns inform what approa
 > - If multiple improvement strategies exist, ask which direction the user prefers
 > - If you need more context about why code is structured a certain way, ask
 > - If priorities between opportunities are unclear, ask the user what matters most
-> - Never assume code is "bad"—clarify intent before suggesting changes
+> - Never assume code is "bad". Clarify intent before suggesting changes
 >
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
@@ -118,7 +118,7 @@ That knowledge helps in three ways: past refactoring patterns inform what approa
 > This allows the main session to read those specific references without parsing all of LOGS.json.
 > Explain findings so a non-coder can understand.
 
-### 5. Load Specific References
+### 5. Load specific references
 
 After the assessor returns:
 
@@ -128,17 +128,17 @@ After the assessor returns:
 
 This gives you relevant refactoring history without reading the entire LOGS.json.
 
-### 6. Present Preliminary Findings
+### 6. Present preliminary findings
 
-Present findings as **preliminary observations that require validation**—not conclusions.
+Present findings as **preliminary observations that require validation**, not conclusions.
 
-Do NOT assume any behavior is "wrong" or "needs improvement." Code that looks inconsistent or inefficient might be intentional for reasons you don't yet understand.
+Do not assume any behavior is "wrong" or "needs improvement." Code that looks inconsistent or inefficient might be intentional for reasons you don't yet understand.
 
-### 7. MANDATORY: Validate Each Finding with User
+### 7. Mandatory: validate each finding with user
 
-**Do NOT save any assessment doc until you complete this step.**
+**Do not save any assessment doc until you complete this step.**
 
-For EACH potential finding, use AskUserQuestion to validate your assumptions:
+For each potential finding, use AskUserQuestion to validate your assumptions:
 - Ask if the observed behavior is intentional or a problem
 - Ask if apparent inconsistencies serve a purpose you're not aware of
 - Ask if what looks like duplication is separate for a reason
@@ -146,11 +146,11 @@ For EACH potential finding, use AskUserQuestion to validate your assumptions:
 
 **You must get explicit confirmation from the user** about which findings are:
 - Actual opportunities for improvement
-- Intentional design choices that should NOT be changed
+- Intentional design choices that should not be changed
 
 Update your assessment based on user responses. Remove any findings the user confirms are intentional.
 
-### 8. Save Validated Assessment
+### 8. Save validated assessment
 
 **Only after the user has validated your findings**, save the assessment.
 
@@ -186,7 +186,7 @@ Save the assessment to `docs/05-REFACTOR/assessment-<topic>.md`:
 [Things to watch out for]
 ```
 
-### 9. Guide Next Steps
+### 9. Guide next steps
 
 After the user has validated findings:
 - Use AskUserQuestion if prioritization isn't clear
@@ -197,8 +197,8 @@ After the user has validated findings:
 
 - Always read docs/ for core context
 - Let the assessor explore LOGS.json; read only what it references
-- **NEVER assume code is wrong**—always validate with the user first
-- **NEVER save an assessment doc without user validation**
+- **Never assume code is wrong.** Always validate with the user first
+- **Never save an assessment doc without user validation**
 - Focus on impact over elegance (what actually matters)
 - Don't suggest refactoring working code just to refactor it
 - Consider the cost/benefit tradeoff for each opportunity
@@ -209,7 +209,7 @@ After the user has validated findings:
 When assessment is complete:
 
 1. Present preliminary findings to user
-2. **Validate EACH finding with AskUserQuestion** before proceeding
+2. **Validate each finding with AskUserQuestion** before proceeding
 3. Update findings based on user confirmation
 4. Save validated assessment to docs/05-REFACTOR/
 5. Next step: "Run `/02-improve-code` to start improving the code"

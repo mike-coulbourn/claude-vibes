@@ -1,21 +1,21 @@
-# Complete Midjourney Parameter Reference
+# Complete Midjourney parameter reference
 
 Written against V7 and checked against the V8.2 parameter list in September 2026. Version-specific parameters are marked. Legacy parameters such as `--cref` and `--cw` are V6 only.
 
 ## Contents
 
-- [Core Parameters](#core-parameters)
-- [Style Parameters](#style-parameters)
-- [Reference Parameters](#reference-parameters)
+- [Core parameters](#core-parameters)
+- [Style parameters](#style-parameters)
+- [Reference parameters](#reference-parameters)
 - [Personalization (--p)](#personalization---p)
-- [Multi-Prompts & Weights](#multi-prompts--weights)
-- [V7 Advantages](#v7-advantages)
-- [Useful Commands](#useful-commands)
-- [Parameter Combinations](#parameter-combinations)
+- [Multi-prompts & weights](#multi-prompts--weights)
+- [V7 advantages](#v7-advantages)
+- [Useful commands](#useful-commands)
+- [Parameter combinations](#parameter-combinations)
 
-## Core Parameters
+## Core parameters
 
-### Aspect Ratio (--ar)
+### Aspect ratio (--ar)
 
 Controls image dimensions.
 
@@ -46,7 +46,7 @@ Controls how much Midjourney's artistic interpretation affects the image.
 **Tips**:
 - Lower values for technical accuracy (photos, products)
 - Higher values for artistic/creative work
-- V6/V7 respond differently than V5 — experiment
+- V6/V7 respond differently than V5: experiment
 
 ---
 
@@ -92,7 +92,7 @@ Controls generation time and detail level.
 | `--q 0.5` | Quick, reduced detail |
 | `--q 1` | Default quality |
 
-**Note**: Higher values don't mean "better" — they mean more generation time. Default is usually fine.
+**Note**: Higher values don't mean "better". They mean more generation time. Default is usually fine.
 
 ---
 
@@ -108,7 +108,7 @@ Excludes elements from the image.
 
 **Important**:
 - Words are interpreted separately: `--no red car` = no red AND no car
-- Don't use "without" or "don't" in the prompt — they don't work
+- Don't use "without" or "don't" in the prompt, because they don't work
 - Limit to essential exclusions
 
 ---
@@ -155,9 +155,9 @@ Stops generation partway through for softer, less detailed results.
 
 ---
 
-## Style Parameters
+## Style parameters
 
-### Style Raw (--raw)
+### Style raw (--raw)
 
 Reduces Midjourney's auto-beautification for more literal interpretation.
 
@@ -170,13 +170,13 @@ A still life arrangement --raw
 - When you have detailed, specific prompts
 - When you want precise control
 
-**When NOT to use**:
+**When not to use**:
 - Short, simple prompts (let MJ fill in gaps)
 - Highly stylized artistic work
 
 ---
 
-### Niji Mode (--niji)
+### Niji mode (--niji)
 
 Anime and Japanese illustration style.
 
@@ -226,9 +226,9 @@ A landscape scene --draft
 
 ---
 
-## Reference Parameters
+## Reference parameters
 
-### Style Reference (--sref)
+### Style reference (--sref)
 
 Copies visual style from an image.
 
@@ -257,7 +257,7 @@ A scene --sref URL1 URL2 URL3
 A scene --sref URL1::2 URL2::1
 ```
 
-### Style Weight (--sw)
+### Style weight (--sw)
 
 Controls strength of style reference.
 
@@ -302,7 +302,7 @@ Source: https://docs.midjourney.com (Omni Reference, Edit Model, and Version art
 
 ---
 
-### Image Weight (--iw)
+### Image weight (--iw)
 
 Controls influence of image prompts.
 
@@ -325,13 +325,13 @@ Applies your trained aesthetic preferences.
 A landscape --p
 ```
 
-**Note**: Personalization is ON by default in V7.
+**Note**: Personalization is on by default in V7.
 
 ---
 
-## Multi-Prompts & Weights
+## Multi-prompts & weights
 
-### Double Colon (::)
+### Double colon (::)
 
 Separates concepts for independent interpretation.
 
@@ -340,14 +340,14 @@ space ship     // Interpreted as "spaceship"
 space:: ship   // Interpreted as "space" and "ship" separately
 ```
 
-### Prompt Weights
+### Prompt weights
 
 ```
 forest::2 cabin::1        // Forest twice as important
 ocean::3 sunset::2 boat::1
 ```
 
-### Negative Weights
+### Negative weights
 
 ```
 flowers::-0.5    // Reduces flowers (like --no)
@@ -355,20 +355,20 @@ flowers::-0.5    // Reduces flowers (like --no)
 
 ---
 
-## V7 Advantages
+## V7 advantages
 
 V7 is Midjourney's most capable model:
 
-- **Superior prompt understanding** — More accurate complex prompt interpretation
-- **Better coherence** — Improved hands, bodies, object relationships
-- **Richer textures and details** — Higher quality output by default
-- **Draft Mode** — 10x faster exploration at half cost
-- **Personalization ON by default** — Applies learned preferences automatically
-- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
+- **Superior prompt understanding**: More accurate complex prompt interpretation
+- **Better coherence**: Improved hands, bodies, object relationships
+- **Richer textures and details**: Higher quality output by default
+- **Draft Mode**: 10x faster exploration at half cost
+- **Personalization on by default**: Applies learned preferences automatically
+- **Omni Reference**: `--oref` replaces V6's `--cref` for characters and objects
 
 ---
 
-## Useful Commands
+## Useful commands
 
 ### /describe
 
@@ -394,7 +394,7 @@ Enable Remix Mode for editing prompts during variations.
 
 ---
 
-## Parameter Combinations
+## Parameter combinations
 
 **Photorealism**:
 ```

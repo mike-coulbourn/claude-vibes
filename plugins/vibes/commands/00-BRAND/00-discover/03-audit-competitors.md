@@ -4,11 +4,11 @@ argument-hint: Optional specific competitors to analyze
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Audit Competitor Brands
+# Audit competitor brands
 
-You are helping a startup founder understand the competitive brand landscape. This audit focuses on BRAND positioning, not just product features — visual identity, messaging, voice, and positioning.
+You are helping a startup founder understand how competitors position their brands. This audit covers brand positioning rather than product features: visual identity, messaging, voice, and positioning.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (required):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -20,22 +20,22 @@ You are helping a startup founder understand the competitive brand landscape. Th
 
 Optional specific competitors: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-competitive-auditor agent.** Do not do the competitive audit yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-competitive-auditor agent.** Do not do the competitive audit yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -45,27 +45,27 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-competitive-auditor agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-competitive-auditor"` and this prompt:
 
 ```
-Conduct a comprehensive brand audit of competitors in this space. ultrathink
+Conduct a complete brand audit of competitors in this space. ultrathink
 
 ## STARTUP CONTEXT
 
-**Business**: [Extract from founder brief — what they do]
-**Problem Solved**: [Extract — the core problem]
-**Target Customer**: [From audience research — who the customers are]
-**What Customers Value**: [From audience research — key values, motivations, emotional jobs]
+**Business**: [Extract from founder brief: what they do]
+**Problem Solved**: [Extract: the core problem]
+**Target Customer**: [From audience research: who the customers are]
+**What Customers Value**: [From audience research: key values, motivations, emotional jobs]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -124,7 +124,7 @@ Prioritize differentiation by impact: **Color → Typography → Imagery → Lay
   - `"[competitor name] review" OR "[competitor name] experience"`
   - `"[competitor name] about" OR "[competitor name] mission"`
   - `"best [solution category]" OR "top [solution category]"`
-- **WebFetch**: Read competitor About pages, Mission pages, Homepage copy deeply — extract positioning, voice, and visual identity details
+- **WebFetch**: Read competitor About pages, Mission pages, and homepage copy deeply to extract positioning, voice, and visual identity details
 - **AskUserQuestion**: Confirm competitor list with founder ("Anyone I'm missing?")
 
 ## OUTPUT REQUIREMENTS
@@ -145,12 +145,12 @@ Use the templates in the `competitive-visual-audit` skill for matrix formatting.
 
 ## Guidelines
 
-- The agent does the research — you orchestrate
+- The agent does the research: you orchestrate
 - Trust the agent's findings but validate with the founder
-- Focus on BRAND elements, not just product features
+- Focus on brand elements, not only product features
 - Look for patterns (everyone uses blue? opportunity for different color)
-- Pay attention to what customers complain about — that's differentiation gold
-- Note what competitors do well too — don't differentiate for differentiation's sake
+- Pay attention to what customers complain about. That is where differentiation comes from
+- Note what competitors do well too: don't differentiate for differentiation's sake
 
 ## Output
 

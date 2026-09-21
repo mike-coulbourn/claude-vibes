@@ -1,4 +1,4 @@
-# Brand Positioning Templates
+# Brand positioning templates
 
 Structured templates for positioning analysis, development, and documentation.
 
@@ -6,20 +6,20 @@ Structured templates for positioning analysis, development, and documentation.
 
 ## Contents
 
-- [Positioning Statement Template](#positioning-statement-template)
-- [Onliness Statement Template](#onliness-statement-template)
-- [Competitive Landscape Analysis Template](#competitive-landscape-analysis-template)
-- [Positioning Map Template](#positioning-map-template)
-- [Creneau Analysis Template](#creneau-analysis-template)
-- [22 Laws Application Checklist](#22-laws-application-checklist)
-- [ZAG Opportunity Template](#zag-opportunity-template)
-- [Sacrifice Analysis Template](#sacrifice-analysis-template)
-- [Positioning Validation Checklist](#positioning-validation-checklist)
-- [Positioning Quick Reference Card](#positioning-quick-reference-card)
-- [Positioning Documentation Template](#positioning-documentation-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Positioning statement template](#positioning-statement-template)
+- [Onliness statement template](#onliness-statement-template)
+- [Competitive landscape analysis template](#competitive-landscape-analysis-template)
+- [Positioning map template](#positioning-map-template)
+- [Creneau analysis template](#creneau-analysis-template)
+- [22 Laws application checklist](#22-laws-application-checklist)
+- [ZAG opportunity template](#zag-opportunity-template)
+- [Sacrifice analysis template](#sacrifice-analysis-template)
+- [Positioning validation checklist](#positioning-validation-checklist)
+- [Positioning quick reference card](#positioning-quick-reference-card)
+- [Positioning documentation template](#positioning-documentation-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Positioning Statement Template
+## Positioning statement template
 
 Use this format for the classic positioning statement.
 
@@ -55,7 +55,7 @@ Use this format for the classic positioning statement.
 
 ---
 
-## Onliness Statement Template
+## Onliness statement template
 
 Use Neumeier's framework for the "only" test.
 
@@ -104,9 +104,9 @@ Use Neumeier's framework for the "only" test.
 
 ---
 
-## Competitive Landscape Analysis Template
+## Competitive landscape analysis template
 
-Map the competitive positioning landscape.
+Map where competitors are positioned.
 
 ```
 ### Competitive Landscape Analysis
@@ -140,9 +140,9 @@ Map the competitive positioning landscape.
 
 #### What's Already Taken
 
-- **[Position X]** — owned by [Competitor]
-- **[Position Y]** — owned by [Competitor]
-- **[Position Z]** — contested by [multiple]
+- **[Position X]**: owned by [Competitor]
+- **[Position Y]**: owned by [Competitor]
+- **[Position Z]**: contested by [multiple]
 
 ---
 
@@ -150,8 +150,8 @@ Map the competitive positioning landscape.
 
 ```
 Current category ladder:
-1. [Leader] — "The [dominant position]"
-2. [Challenger] — "The [alternative]"
+1. [Leader]: "The [dominant position]"
+2. [Challenger]: "The [alternative]"
 3. [Others fighting for relevance]
 4. [Where does this brand sit?]
 ```
@@ -170,7 +170,7 @@ Current category ladder:
 
 ---
 
-## Positioning Map Template
+## Positioning map template
 
 Visualize competitive positioning on two dimensions.
 
@@ -235,7 +235,7 @@ Visualize competitive positioning on two dimensions.
 
 ---
 
-## Creneau Analysis Template
+## Creneau analysis template
 
 Analyze all seven types of positioning holes.
 
@@ -273,7 +273,7 @@ Analyze all seven types of positioning holes.
 
 ---
 
-## 22 Laws Application Checklist
+## 22 Laws application checklist
 
 Apply the most relevant laws to positioning decisions.
 
@@ -318,7 +318,7 @@ Apply the most relevant laws to positioning decisions.
 
 ---
 
-## ZAG Opportunity Template
+## ZAG opportunity template
 
 Apply Neumeier's radical differentiation methodology.
 
@@ -375,7 +375,7 @@ Apply Neumeier's radical differentiation methodology.
 
 ---
 
-## Sacrifice Analysis Template
+## Sacrifice analysis template
 
 Apply the Law of Sacrifice rigorously.
 
@@ -390,8 +390,8 @@ Apply the Law of Sacrifice rigorously.
 
 | Keep | Sacrifice | Rationale |
 |------|-----------|-----------|
-| [What we'll offer] | [What we WON'T offer] | [Why this trade-off] |
-| [What we'll offer] | [What we WON'T offer] | [Why this trade-off] |
+| [What we'll offer] | [What we won't offer] | [Why this trade-off] |
+| [What we'll offer] | [What we won't offer] | [Why this trade-off] |
 
 ---
 
@@ -408,17 +408,17 @@ Apply the Law of Sacrifice rigorously.
 
 | Claim | Don't Claim | Rationale |
 |-------|-------------|-----------|
-| [What we'll say] | [What we WON'T say] | [Why this trade-off] |
-| [What we'll say] | [What we WON'T say] | [Why this trade-off] |
+| [What we'll say] | [What we won't say] | [Why this trade-off] |
+| [What we'll say] | [What we won't say] | [Why this trade-off] |
 
 ---
 
 #### The Anti-Positioning
 
-**What we're explicitly NOT:**
-1. [Anti-position 1] — [Why we reject this]
-2. [Anti-position 2] — [Why we reject this]
-3. [Anti-position 3] — [Why we reject this]
+**What we're explicitly not:**
+1. [Anti-position 1]: [Why we reject this]
+2. [Anti-position 2]: [Why we reject this]
+3. [Anti-position 3]: [Why we reject this]
 
 ---
 
@@ -432,7 +432,7 @@ Apply the Law of Sacrifice rigorously.
 
 ---
 
-## Positioning Validation Checklist
+## Positioning validation checklist
 
 Complete validation before finalizing positioning.
 
@@ -498,14 +498,14 @@ Complete validation before finalizing positioning.
 
 #### Validation Result
 
-- [ ] **APPROVED** — Ready to implement
-- [ ] **NEEDS REFINEMENT** — Issues: _______________
-- [ ] **RETHINK** — Major gaps identified
+- [ ] **APPROVED**: Ready to implement
+- [ ] **NEEDS REFINEMENT**: Issues: _______________
+- [ ] **RETHINK**: Major gaps identified
 ```
 
 ---
 
-## Positioning Quick Reference Card
+## Positioning quick reference card
 
 Summary format for daily use.
 
@@ -523,7 +523,7 @@ Summary format for daily use.
 | **Our Rung** | [#1, #2, or new ladder] |
 | **The Creneau We're Filling** | [Type: size/price/timing/etc.] |
 | **The ZAG** | [What we're doing that others aren't] |
-| **The Sacrifice** | [What we're NOT doing] |
+| **The Sacrifice** | [What we're not doing] |
 | **The Proof** | [Why we're credible] |
 
 ---
@@ -542,15 +542,15 @@ Summary format for daily use.
 
 #### Trueline
 
-> "[The one true thing — internal strategic truth]"
+> "[The one true thing, internal strategic truth]"
 
 ---
 
 #### What We're Saying No To
 
-- [Position we're NOT claiming]
-- [Audience we're NOT pursuing]
-- [Feature we're NOT offering]
+- [Position we're not claiming]
+- [Audience we're not pursuing]
+- [Feature we're not offering]
 
 ---
 
@@ -568,7 +568,7 @@ If no, reconsider the decision.
 
 ---
 
-## Positioning Documentation Template
+## Positioning documentation template
 
 Complete positioning document format.
 
@@ -684,7 +684,7 @@ Complete positioning document format.
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing positioning documentation, verify:
 

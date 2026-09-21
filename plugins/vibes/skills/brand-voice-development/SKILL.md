@@ -3,28 +3,28 @@ name: brand-voice-development
 description: Use when defining brand voice, tone of voice, or verbal identity, writing voice guidelines, or adapting tone across channels and situations. Keywords - brand personality traits, BrandSort, Margot Bloomstein, Nielsen Norman four dimensions of tone, Aaker brand personality, this but not that, tone matrix, vocabulary do and don't lists.
 ---
 
-# Brand Voice Development Framework
+# Brand voice development framework
 
-Quick reference for developing brand voice and verbal identity using established methodologies from leading voice strategists.
+Quick reference for developing brand voice and verbal identity using established methodologies from voice strategists.
 
 > "You have the same voice all the time, but your tone changes. You might use one tone when you're out to dinner with your closest friends, and a different tone when you're in a meeting with your boss." — Mailchimp Content Style Guide
 
 ---
 
-## Key Distinction: Voice vs. Tone
+## Key distinction: voice vs. tone
 
 | Concept | Definition | Consistency |
 |---------|------------|-------------|
 | **Voice** | Brand's personality expressed through language | Always consistent |
 | **Tone** | How voice adapts to different contexts | Varies by situation |
 
-**Analogy**: You have the same voice whether talking to your boss or your friends — but your tone changes.
+**Analogy**: you have the same voice whether talking to your boss or your friends, but your tone changes.
 
 ---
 
-## Core Methodologies
+## Core methodologies
 
-### 1. Bloomstein's Message Architecture & BrandSort
+### 1. Bloomstein's message architecture & BrandSort
 
 **Created by**: Margot Bloomstein
 
@@ -37,11 +37,11 @@ Quick reference for developing brand voice and verbal identity using established
 3. **Unpack abstract terms**: Make "innovative" or "trustworthy" concrete
 4. **Content audit**: Evaluate existing content against the architecture
 
-**Key Principle**: Balance user needs with brand identity — being exclusively user-focused leads to bland sameness.
+**Key Principle**: balance user needs with brand identity, because being exclusively user-focused leads to bland sameness.
 
 ---
 
-### 2. Nielsen Norman Group's Four Dimensions of Tone
+### 2. Nielsen Norman Group's four dimensions of tone
 
 Research-backed framework for plotting voice position:
 
@@ -54,14 +54,14 @@ Research-backed framework for plotting voice position:
 
 **Application**:
 - Plot intended position on each dimension
-- A brand CAN be serious AND casual (like a friendly financial advisor)
-- Avoid landing exactly in the middle on all dimensions — that's generic
+- A brand can be serious and casual (like a friendly financial advisor)
+- Avoid landing exactly in the middle on all dimensions, which reads as generic
 
 **Research Finding**: Casual, conversational tone increased trustworthiness by 0.3 points on a 5-point scale.
 
 ---
 
-### 3. Aaker's Brand Personality Dimensions
+### 3. Aaker's brand personality dimensions
 
 The most influential academic framework (Stanford, 1997):
 
@@ -77,7 +77,7 @@ The most influential academic framework (Stanford, 1997):
 
 ---
 
-### 4. "This But Not That" Technique
+### 4. "This but not that" technique
 
 Used by Slack to add nuance and prevent misinterpretation:
 
@@ -93,9 +93,9 @@ Used by Slack to add nuance and prevent misinterpretation:
 
 ---
 
-## Complete Verbal Identity System
+## Complete verbal identity system
 
-A comprehensive verbal identity includes 8 components:
+A complete verbal identity includes 8 components:
 
 | # | Component | Description |
 |---|-----------|-------------|
@@ -110,9 +110,9 @@ A comprehensive verbal identity includes 8 components:
 
 ---
 
-## Tone Adaptation Framework
+## Tone adaptation framework
 
-### Tone Matrix by Channel
+### Tone matrix by channel
 
 | Channel | Tone Adjustment |
 |---------|----------------|
@@ -122,7 +122,7 @@ A comprehensive verbal identity includes 8 components:
 | Legal/Compliance | More formal, precise |
 | Product UI | Concise, action-oriented |
 
-### Tone by Emotional State (Mailchimp's Approach)
+### Tone by emotional state (Mailchimp's approach)
 
 | Reader's State | Tone Response |
 |----------------|---------------|
@@ -131,12 +131,12 @@ A comprehensive verbal identity includes 8 components:
 | **Frustrated/angry** | Be empathetic first, then helpful |
 | **Anxious** | Be reassuring, concrete, specific |
 
-### Slack's 5 Copy Principles
+### Slack's 5 copy principles
 
-1. **Be clear and simple** — Aim for comprehension
-2. **Anticipate (and answer!) the readers' questions** — Be relevant
-3. **Be intentionally playful and bold** — Delight without distracting
-4. **Build appropriate emotional connection** — Be generous with warmth
+1. **Be clear and simple**: Aim for comprehension
+2. **Anticipate (and answer!) the readers' questions**: Be relevant
+3. **Be intentionally playful and bold**: Delight without distracting
+4. **Build appropriate emotional connection**: Be generous with warmth
 5. **Help people envision the possibilities of a better future**
 
 The best copy demonstrates at least 3 of these 5 principles.
@@ -154,17 +154,17 @@ These are often confused. Clear distinctions:
 | **Voice** | Personality and style in which you communicate | "How do we say it?" | Applied everywhere |
 
 **How They Work Together**:
-- Positioning determines WHAT makes you different
-- Messaging translates that into WHAT you say
-- Voice determines HOW you say everything
+- Positioning determines what makes you different
+- Messaging translates that into what you say
+- Voice determines how you say everything
 
 ---
 
-## Common Mistakes & Anti-Patterns
+## Common mistakes & anti-patterns
 
 | # | Mistake | Pattern | Fix |
 |---|---------|---------|-----|
-| 1 | **Being Generic** | "Innovative, customer-focused, passionate" | Use the "airport test" — recognizable without logo? |
+| 1 | **Being Generic** | "Innovative, customer-focused, passionate" | Use the "airport test": recognizable without logo? |
 | 2 | **Inconsistency** | Different teams, different styles | Central guidelines, train all teams, voice champions |
 | 3 | **Stripping Personality** | Product specs overwhelming message | Voice makes complexity simple |
 | 4 | **Copying Trends** | Everyone trying to sound like Oatly | Ground in authentic brand values |
@@ -175,26 +175,26 @@ These are often confused. Clear distinctions:
 
 ---
 
-## Workshop Exercises
+## Workshop exercises
 
-### Exercise 1: Adjective Card Sort (15 min)
+### Exercise 1: Adjective card sort (15 min)
 Sort attributes into "You Are," "You Are Torn," "You Are Not." The "Not" pile is as valuable as "Are."
 
-### Exercise 2: Sliding Scale Spectrums (10 min)
+### Exercise 2: Sliding scale spectrums (10 min)
 Place brand on spectrums: Conservative ←→ Extravagant, Fun ←→ Serious, Traditional ←→ Modern.
 
-### Exercise 3: Brand as a Person (15 min)
+### Exercise 3: Brand as a person (15 min)
 Questions: What would they do for work? Wear? Never say? Who would they befriend? What annoys them?
 
-### Exercise 4: Content Audit (20 min)
+### Exercise 4: Content audit (20 min)
 Review 10 recent pieces. Read aloud. What feels authentic? What makes you wince?
 
-### Exercise 5: Competitive Voice Analysis (20 min)
+### Exercise 5: Competitive voice analysis (20 min)
 Review competitors' communications. Identify patterns. Find differentiation opportunities.
 
 ---
 
-## Brand Voice in the AI Era
+## Brand voice in the AI era
 
 ### The Challenge
 AI produces content at scale, but without clear voice instructions, output sounds generic.
@@ -218,7 +218,7 @@ AI produces content at scale, but without clear voice instructions, output sound
 
 ---
 
-## Key Statistics
+## Key statistics
 
 - **Tone impacts trust**: Casual tone increased trustworthiness by 0.3 points (Nielsen Norman Group)
 - **Voice drives conversion**: Monzo achieved 500% increase in overdraft uptake through messaging
@@ -226,18 +226,18 @@ AI produces content at scale, but without clear voice instructions, output sound
 
 ---
 
-## Exemplar Brands
+## Exemplar brands
 
 | Brand | Voice Approach | What to Learn |
 |-------|----------------|---------------|
-| **Mailchimp** | Gold-standard style guide | Comprehensive documentation, open-source |
+| **Mailchimp** | Gold-standard style guide | Complete documentation, open-source |
 | **Slack** | "This but not that" + 5 Principles | Nuanced constraints, developer-friendly |
 | **Monzo** | Training across 700+ employees | Voice as business driver, metrics |
 | **Oatly** | Irreverent stream-of-consciousness | Distinctive voice creates recognition |
 
 ---
 
-## Selection Validation Tests
+## Selection validation tests
 
 | Test | Question | Pass Criteria |
 |------|----------|---------------|
@@ -252,31 +252,31 @@ AI produces content at scale, but without clear voice instructions, output sound
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Voice Attribute Card Template
-- Tone Matrix Template
-- Voice Guidelines Document Template
-- Before/After Examples Template
-- AI Voice Prompt Template
-- Voice Summary Card Template
-- Output Validation Checklist
+- Voice attribute card template
+- Tone matrix template
+- Voice guidelines document template
+- Before/after examples template
+- AI voice prompt template
+- Voice summary card template
+- Output validation checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Voice Discovery
+### During voice discovery
 - Use BrandSort methodology
 - Plot on NNGroup four dimensions
 - Apply Aaker personality dimensions
 
-### During Voice Refinement
+### During voice refinement
 - Apply "this but not that" technique
 - Create tone adaptation matrices
 - Develop vocabulary guidelines
 
-### During Voice Documentation
+### During voice documentation
 - Complete all 8 verbal identity components
-- Build comprehensive examples library
+- Build a complete examples library
 - Create AI-ready guidelines
 
 ### During Validation

@@ -3,23 +3,23 @@ description: Verify refactoring preserved behavior and document it
 argument-hint: Optional specific files or areas to validate
 ---
 
-# Validate Phase
+# Validate phase
 
-You are helping a vibe coder confirm their refactoring preserved behavior and didn't break anything. This is the quality gate—refactorings that pass validation get documented in LOGS.json.
+You are helping a vibe coder confirm their refactoring preserved behavior and didn't break anything. This is the quality gate. Refactorings that pass validation get documented in LOGS.json.
 
 Specific area to validate: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the validation and manage the conversation. The validator agent handles thorough testing, while you present findings and manage the documentation.
 
-**CRITICAL: You MUST use the Agent tool to launch the validation agents.** Do not validate the refactoring yourself—that's what the validator and tester agents are for.
+**Use the Agent tool to launch the validation agents.** Do not validate the refactoring yourself. That's what the validator and tester agents are for.
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+**Use the AskUserQuestion tool whenever you interact with the user.** This gives a guided, interactive experience:
 
 Use AskUserQuestion to:
 - Ask if subtle behavior changes are acceptable
@@ -29,13 +29,13 @@ Use AskUserQuestion to:
 
 Never assume validation criteria. Ask to confirm.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project requirements and architecture
-- `docs/05-REFACTOR/assessment-*.md` — The assessment for this refactoring
+- `docs/01-START/` files: project requirements and architecture
+- `docs/05-REFACTOR/assessment-*.md`: The assessment for this refactoring
 
-These are stable documentation—always load them. The validator agent will parse LOGS.json and report back specific relevant entries.
+These are stable documentation, so always load them. The validator agent will parse LOGS.json and report back specific relevant entries.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
@@ -43,20 +43,20 @@ If these files don't exist (common when using claude-vibes on an existing projec
 **Fallback if no assessment file exists:**
 If no assessment file exists, use `git diff` and `git log` to understand what was changed, and use AskUserQuestion to understand what the refactoring was supposed to accomplish.
 
-## How to Communicate
+## How to communicate
 
 - Be clear about what passed and what failed
 - Explain any behavior changes found (even subtle ones)
 - Celebrate when everything works
 - Use AskUserQuestion for judgment calls
 
-## Validate Process
+## Validate process
 
-### 1. Load Context
+### 1. Load context
 
 Read docs/01-START/ files and the most recent assessment file to understand what was refactored and why.
 
-### 2. Identify What to Validate
+### 2. Identify what to validate
 
 If `$ARGUMENTS` specifies files/areas, focus there.
 
@@ -65,16 +65,16 @@ Otherwise, find the recent refactoring:
 - Read the most recent `docs/05-REFACTOR/assessment-*.md`
 - Look at recently modified files
 
-### 3. Launch Agents in Parallel (REQUIRED)
+### 3. Launch agents in parallel (required)
 
-**You MUST use the Agent tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**Use the Agent tool to launch both agents simultaneously**: they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Validator Agent** (confirm behavior preserved):
 
 > Ultrathink about validating this refactoring.
 >
 > **What was refactored:** [from assessment or git diff]
-> **Expected behavior:** Same as before—no functional changes
+> **Expected behavior:** Same as before, with no functional changes
 >
 > Check your project memory for related past validations and refactoring gotchas before starting, and record what you learn before finishing.
 >
@@ -115,12 +115,12 @@ Otherwise, find the recent refactoring:
 > Ultrathink about testing this refactored code.
 >
 > **What was refactored:** [from assessment or git diff]
-> **Expected behavior:** Exactly the same as before—refactoring changes structure, not behavior
+> **Expected behavior:** Exactly the same as before, because refactoring changes structure, not behavior
 >
 > **Your mission:**
 > - Write tests that verify the refactored code behaves identically to before
 > - Focus on behavior, not implementation details
-> - Run the tests yourself—don't ask the user to run them
+> - Run the tests yourself. Don't ask the user to run them
 > - If tests fail, analyze whether it's a behavior change or just a test issue
 > - Iterate until all tests pass
 > - Only fall back to manual testing instructions if automation is impossible
@@ -144,11 +144,11 @@ Otherwise, find the recent refactoring:
 > - Manual testing instructions (only if something couldn't be automated)
 > - Confidence level that behavior is truly preserved
 >
-> The vibe coder should just see results—you do the work.
+> The vibe coder should just see results. You do the work.
 
-### 4. Combine Results
+### 4. Combine results
 
-After BOTH agents return:
+After both agents return:
 
 **From Validator:**
 - Load specific LOGS.json entries it cited
@@ -161,16 +161,16 @@ After BOTH agents return:
 - Note any behavior changes detected
 - Note confidence level
 
-### 5. Present Combined Findings
+### 5. Present combined findings
 
 **If all validations pass:**
 ```
-Validation & Testing Complete — Refactoring Verified!
+Validation & Testing Complete: Refactoring Verified
 
 VALIDATION:
 - Tests: All passing (same as baseline)
-- Behavior: Preserved—no functional changes detected
-- Improvement: Achieved—reduced from 120 lines to 45 lines
+- Behavior: Preserved, no functional changes detected
+- Improvement: Achieved, reduced from 120 lines to 45 lines
 
 TESTING:
 - Tests written: 10 (behavior preservation tests)
@@ -208,7 +208,7 @@ Use AskUserQuestion for judgment calls:
 - "The error message changed slightly but tests pass. Is this intentional?"
 - "Found a subtle timing difference. Want me to investigate further?"
 
-### 6. Iterate if Needed
+### 6. Iterate if needed
 
 If issues exist:
 1. Explain what's wrong clearly
@@ -256,7 +256,7 @@ Add to the global LOGS.json at project root.
 - Improvements should be measurable when possible
 - Only write to LOGS.json after passing validation
 
-## LOGS.json Write Rules
+## LOGS.json write rules
 
 **Only write to LOGS.json when:**
 1. All tests pass (same as baseline)
@@ -281,10 +281,10 @@ When validation is complete:
 3. Improvement metrics achieved
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-SHIP/01-pre-commit` — Run pre-commit checks
-   - `/03-SHIP/02-commit` — Just commit locally
-   - `/03-SHIP/03-push` — Commit and push
-   - `/03-SHIP/04-pr` — Commit, push, and create PR
+   - `/03-SHIP/01-pre-commit`: Run pre-commit checks
+   - `/03-SHIP/02-commit`: Just commit locally
+   - `/03-SHIP/03-push`: Commit and push
+   - `/03-SHIP/04-pr`: Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
@@ -293,24 +293,24 @@ When validation is complete:
 4. Offer to adjust the refactoring
 5. "Re-run `/03-validate-improvements` after fixes"
 
-### Record Validation Insights
+### Record validation insights
 
 In the validator's prompt, ask it to record durable learnings in its project memory before it finishes:
 
 1. **Validation patterns discovered:**
    - Testing strategies that worked well (e.g., "For refactorings, compare before/after output for 10 representative inputs")
-   - Subtle behavior areas (e.g., "String formatting in reports is sensitive — always diff the output")
+   - Subtle behavior areas (e.g., "String formatting in reports is sensitive, so always diff the output")
    - What to watch for (e.g., "Refactoring async code often introduces subtle timing differences")
 
 2. **Refactoring patterns:**
    - Successful patterns (e.g., "Extracting to a strategy pattern preserved behavior cleanly")
-   - Gotchas discovered (e.g., "The old code handled null differently than it appeared — preserve that quirk")
+   - Gotchas discovered (e.g., "The old code handled null differently than it appeared, so preserve that quirk")
 
-**Only record NEW findings** — insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
+**Only record new findings**: insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
-- "Error message format matters to the frontend — don't change it during refactoring"
-- "The order of keys in JSON responses is tested — sorting alphabetically breaks tests"
+- "Error message format matters to the frontend, so don't change it during refactoring"
+- "The order of keys in JSON responses is tested, so sorting alphabetically breaks tests"
 - "Performance tests should run before and after major refactorings to catch regressions"

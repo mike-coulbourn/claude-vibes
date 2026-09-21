@@ -1,4 +1,4 @@
-# Golden Circle Purpose Templates
+# Golden Circle purpose templates
 
 Structured templates for purpose discovery, validation, and documentation.
 
@@ -6,22 +6,22 @@ Structured templates for purpose discovery, validation, and documentation.
 
 ## Contents
 
-- [Purpose Discovery Worksheet](#purpose-discovery-worksheet)
-- [WHY Statement Drafting Template](#why-statement-drafting-template)
-- [Hedgehog Assessment Template](#hedgehog-assessment-template)
-- [Focus Lab Validation Template](#focus-lab-validation-template)
-- [Purpose/Mission/Vision Documentation Template](#purposemissionvision-documentation-template)
-- [Purpose Stress Test Template](#purpose-stress-test-template)
-- [Anti-Pattern Checklist](#anti-pattern-checklist)
-- [Internal Culture Alignment Checklist](#internal-culture-alignment-checklist)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Purpose discovery worksheet](#purpose-discovery-worksheet)
+- [WHY statement drafting template](#why-statement-drafting-template)
+- [Hedgehog assessment template](#hedgehog-assessment-template)
+- [Focus Lab validation template](#focus-lab-validation-template)
+- [Purpose/mission/vision documentation template](#purposemissionvision-documentation-template)
+- [Purpose stress test template](#purpose-stress-test-template)
+- [Anti-pattern checklist](#anti-pattern-checklist)
+- [Internal culture alignment checklist](#internal-culture-alignment-checklist)
+- [Output validation checklist](#output-validation-checklist)
 
-## Purpose Discovery Worksheet
+## Purpose discovery worksheet
 
 Use this worksheet to guide the WHY discovery conversation.
 
 ```
-### Purpose Discovery Worksheet
+### Purpose discovery worksheet
 
 **Participant**: _______________
 **Date**: _______________
@@ -75,7 +75,7 @@ Themes appearing in 2+ stories:
 | | | |
 | | | |
 
-**Golden Thread(s)** — themes that "shine brighter":
+**Golden Thread(s)**: themes that "shine brighter":
 1. _______________
 2. _______________
 
@@ -96,7 +96,7 @@ Second blank (impact): _______________
 
 ---
 
-## WHY Statement Drafting Template
+## WHY statement drafting template
 
 Use this template to iterate on the WHY statement.
 
@@ -137,7 +137,7 @@ Use this template to iterate on the WHY statement.
 
 ---
 
-## Hedgehog Assessment Template
+## Hedgehog assessment template
 
 Use this template to validate purpose against Jim Collins' three circles.
 
@@ -199,13 +199,13 @@ _______________________________________________
 
 **Does this align with the purpose statement?**
 [ ] Yes, perfectly aligned
-[ ] Partially aligned — gap: _______________
-[ ] Not aligned — reconsider purpose
+[ ] Partially aligned. Gap: _______________
+[ ] Not aligned, reconsider purpose
 ```
 
 ---
 
-## Focus Lab Validation Template
+## Focus Lab validation template
 
 Use this framework to stress-test the purpose statement.
 
@@ -250,7 +250,7 @@ _______________________________________________
 
 _______________________________________________
 
-**Why YOU can deliver this** (not just anyone):
+**Why you can deliver this** (not just anyone):
 
 _______________________________________________
 
@@ -293,14 +293,14 @@ _______________________________________________
 
 #### Validation Result
 
-[ ] **PASSED** — Purpose is validated
-[ ] **NEEDS REFINEMENT** — Issues: _______________
-[ ] **FAILED** — Rethink purpose from insights
+[ ] **PASSED**: purpose is validated
+[ ] **NEEDS REFINEMENT**. Issues: _______________
+[ ] **FAILED**: rethink purpose from insights
 ```
 
 ---
 
-## Purpose/Mission/Vision Documentation Template
+## Purpose/mission/vision documentation template
 
 Use this format when documenting the final purpose, mission, and vision.
 
@@ -381,7 +381,7 @@ Use this format when documenting the final purpose, mission, and vision.
 | **Economic Engine** | [What drives sustainable economics] |
 
 **The Sweet Spot:**
-[Where all three circles intersect — should align with purpose]
+[Where all three circles intersect, which should align with purpose]
 
 ---
 
@@ -391,7 +391,7 @@ Use this format when documenting the final purpose, mission, and vision.
 |---------|------------|
 | **Insight** | [The meaningful tension addressed] |
 | **Impact** | [The positive outcome created] |
-| **Fit** | [Why THEY can credibly deliver] |
+| **Fit** | [Why they can credibly deliver] |
 | **Proofs** | [3-5 concrete actions demonstrating commitment] |
 
 ---
@@ -427,7 +427,7 @@ Use this format when documenting the final purpose, mission, and vision.
 
 ---
 
-## Purpose Stress Test Template
+## Purpose stress test template
 
 Quick validation checklist for the final purpose statement.
 
@@ -466,7 +466,7 @@ Quick validation checklist for the final purpose statement.
 
 ---
 
-## Anti-Pattern Checklist
+## Anti-pattern checklist
 
 Use this checklist to ensure the purpose avoids common mistakes.
 
@@ -480,17 +480,17 @@ Use this checklist to ensure the purpose avoids common mistakes.
 
 | Anti-Pattern | Status | Notes |
 |--------------|--------|-------|
-| **Starting with WHAT** — describes products first, never gets to why | [ ] Clear [ ] Risk | |
-| **Confusing WHY with Profit** — "maximize value" language | [ ] Clear [ ] Risk | |
-| **Inventing vs Discovering** — crafted without authentic connection | [ ] Clear [ ] Risk | |
-| **Generic Purpose** — could apply to any company | [ ] Clear [ ] Risk | |
-| **Purpose Washing Risk** — claims that can't be proven | [ ] Clear [ ] Risk | |
-| **Losing the Customer** — so internal-focused it forgets audience | [ ] Clear [ ] Risk | |
-| **Corporate Buzzwords** — leverage, synergize, best-in-class | [ ] Clear [ ] Risk | |
+| **Starting with WHAT**: describes products first, never gets to why | [ ] Clear [ ] Risk | |
+| **Confusing WHY with Profit**: "maximize value" language | [ ] Clear [ ] Risk | |
+| **Inventing vs Discovering**: crafted without authentic connection | [ ] Clear [ ] Risk | |
+| **Generic Purpose**: could apply to any company | [ ] Clear [ ] Risk | |
+| **Purpose Washing Risk**: claims that can't be proven | [ ] Clear [ ] Risk | |
+| **Losing the Customer**: so internal-focused it forgets audience | [ ] Clear [ ] Risk | |
+| **Corporate Buzzwords**: leverage, synergize, best-in-class | [ ] Clear [ ] Risk | |
 
 ---
 
-**Red Flag Words** (should NOT appear in purpose):
+**Red Flag Words** (should not appear in purpose):
 - [ ] "Best" / "excellence" / "quality"
 - [ ] "Maximize" / "optimize" / "leverage"
 - [ ] "Stakeholders" / "shareholders"
@@ -500,13 +500,13 @@ Use this checklist to ensure the purpose avoids common mistakes.
 ---
 
 **Anti-Pattern Check Result:**
-- [ ] **CLEAR** — No anti-patterns detected
-- [ ] **RISKS IDENTIFIED** — Address: _______________
+- [ ] **CLEAR**: No anti-patterns detected
+- [ ] **RISKS IDENTIFIED**: Address: _______________
 ```
 
 ---
 
-## Internal Culture Alignment Checklist
+## Internal culture alignment checklist
 
 Use this checklist when rolling out purpose internally.
 
@@ -581,13 +581,13 @@ Where might stated purpose diverge from lived reality?
 ---
 
 **Culture Alignment Readiness:**
-- [ ] **READY** — Purpose can be rolled out
-- [ ] **GAPS TO ADDRESS** — Priority: _______________
+- [ ] **READY**: Purpose can be rolled out
+- [ ] **GAPS TO ADDRESS**: Priority: _______________
 ```
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing purpose documentation, verify:
 

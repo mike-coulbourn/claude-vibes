@@ -12,7 +12,7 @@ It also wraps building, shipping, debugging, and refactoring in the same plain-l
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Install Claude Code
 
@@ -52,7 +52,7 @@ Taskmaster needs no setup. The first time you run the roadmap command, it config
 
 To update later, run `claude plugin update claude-vibes@claude-vibes`, then restart Claude Code.
 
-### Local Install (Alternative)
+### Local install (alternative)
 
 ```
 git clone https://github.com/mike-coulbourn/claude-vibes.git
@@ -63,7 +63,7 @@ Add as a local marketplace:
 /plugin marketplace add ./claude-vibes
 ```
 
-### Team Installation
+### Team installation
 
 Add to your repository's `.claude/settings.json` for automatic team setup:
 
@@ -87,7 +87,7 @@ When team members trust the repository folder, the plugin installs automatically
 
 ---
 
-## 🔄 The Workflow
+## The workflow
 
 ```
 BRAND → START → BUILD → SHIP → FIX → REFACTOR        + TOOLKIT (any time)
@@ -95,19 +95,19 @@ BRAND → START → BUILD → SHIP → FIX → REFACTOR        + TOOLKIT (any ti
 Identity Plan   Code   Deploy  Debug   Evolve
 ```
 
-Each phase has dedicated commands and agents designed for that stage of development.
+Each phase has its own commands and agents.
 
 ---
 
-## 🤖 Commands & Agents
+## Commands and agents
 
-### 🎨 00-BRAND (Brand Identity)
+### 00-BRAND (brand identity)
 
-Create complete brand identities for startups. A structured workflow from discovery through final guidelines.
+Build a startup's brand identity step by step, from the founder interview to a finished guidelines document.
 
 **Commands:**
 
-#### Discovery Phase
+#### Discovery phase
 | Command | Description |
 |---------|-------------|
 | `/claude-vibes:00-BRAND/00-discover/01-discover-founder` | Interactive founder discovery session |
@@ -115,7 +115,7 @@ Create complete brand identities for startups. A structured workflow from discov
 | `/claude-vibes:00-BRAND/00-discover/03-audit-competitors` | Audit competitor brands |
 | `/claude-vibes:00-BRAND/00-discover/04-name-brand` | Finalize brand name with domain verification |
 
-#### Strategy Phase
+#### Strategy phase
 | Command | Description |
 |---------|-------------|
 | `/claude-vibes:00-BRAND/01-strategy/01-define-purpose` | Define purpose, mission, and vision |
@@ -124,21 +124,21 @@ Create complete brand identities for startups. A structured workflow from discov
 | `/claude-vibes:00-BRAND/01-strategy/04-select-archetype` | Select brand archetype |
 | `/claude-vibes:00-BRAND/01-strategy/05-define-voice` | Define brand voice and personality |
 
-#### Messaging Phase
+#### Messaging phase
 | Command | Description |
 |---------|-------------|
 | `/claude-vibes:00-BRAND/02-messaging/01-create-framework` | Create messaging framework |
 | `/claude-vibes:00-BRAND/02-messaging/02-create-tagline` | Create tagline options |
 | `/claude-vibes:00-BRAND/02-messaging/03-write-pitch` | Write elevator pitch variations |
 
-#### Visual Phase
+#### Visual phase
 | Command | Description |
 |---------|-------------|
 | `/claude-vibes:00-BRAND/03-visual/01-set-direction` | Create visual identity direction |
 | `/claude-vibes:00-BRAND/03-visual/02-choose-colors` | Develop brand color palette |
 | `/claude-vibes:00-BRAND/03-visual/03-select-typography` | Develop typography system |
 
-#### Compile Phase
+#### Compile phase
 | Command | Description |
 |---------|-------------|
 | `/claude-vibes:00-BRAND/04-compile/01-compile-guidelines` | Compile final brand guidelines |
@@ -162,7 +162,7 @@ Create complete brand identities for startups. A structured workflow from discov
 
 ---
 
-### 🧐 01-START (Discovery & Planning)
+### 01-START (discovery and planning)
 
 Plan before you build. Discover the problem space, scope your MVP, and create an implementation roadmap.
 
@@ -183,9 +183,9 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 
 ---
 
-### 🧰 TOOLKIT (Specialized Tools)
+### TOOLKIT (specialized tools)
 
-Utility commands and agents for tasks outside the main development workflow.
+Commands and agents for work outside the development workflow: research, copy, scripts, and image prompts.
 
 **Commands:**
 | Command | Description |
@@ -196,19 +196,19 @@ Utility commands and agents for tasks outside the main development workflow.
 | `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
 | `/claude-vibes:TOOLKIT/scale-business` | Strategic business growth consultation with prioritized opportunities |
 | `/claude-vibes:TOOLKIT/write` | Write emails, messages, notes naturally |
-| `/claude-vibes:TOOLKIT/write-copy` | Create high-converting marketing copy |
+| `/claude-vibes:TOOLKIT/write-copy` | Write marketing copy for a page, ad, or email |
 | `/claude-vibes:TOOLKIT/write-sponsor-script` | Write scripts for sponsored/affiliate content |
 
 **Agents:**
 - `brand-researcher` - Deep brand research for content creators
 - `business-growth-advisor` - Strategic business growth consultation
-- `deep-researcher` - Comprehensive expert knowledge research
-- `elite-copywriter` - Transform text into compelling copy
-- `hook-generator` - Generate scroll-stopping hook variations
+- `deep-researcher` - Research a topic in depth and report what experts actually do
+- `elite-copywriter` - Write or rewrite marketing copy
+- `hook-generator` - Write several opening hooks for a video
 - `nano-banana-pro-expert` - Guidance for Nano Banana Pro image generation
-- `sponsor-script-writer` - Write high-converting sponsored content scripts
+- `sponsor-script-writer` - Write scripts for sponsored and affiliate videos
 
-### 🏗️ 02-BUILD (Implementation)
+### 02-BUILD (implementation)
 
 Build features methodically. Plan each feature, implement with best practices, and review before shipping.
 
@@ -227,7 +227,7 @@ Build features methodically. Plan each feature, implement with best practices, a
 
 ---
 
-### 🚀 03-SHIP (Deployment)
+### 03-SHIP (deployment)
 
 Ship with confidence. Run checks, commit cleanly, and create PRs.
 
@@ -241,7 +241,7 @@ Ship with confidence. Run checks, commit cleanly, and create PRs.
 
 ---
 
-### 🔧 04-DEBUG (Debugging)
+### 04-DEBUG (debugging)
 
 Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work.
 
@@ -260,7 +260,7 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 
 ---
 
-### ✨ 05-REFACTOR (Code Evolution)
+### 05-REFACTOR (improving existing code)
 
 Improve code without changing behavior. Assess opportunities, refactor safely, and validate preservation.
 
@@ -281,7 +281,7 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 
 ---
 
-## 🧠 Skills
+## Skills
 
 Skills are knowledge packs that Claude loads on its own when a conversation calls for them. You never invoke them by name. The commands and agents above lean on them, and they also work in any ordinary conversation once the plugin is installed.
 
@@ -299,11 +299,11 @@ Skills are knowledge packs that Claude loads on its own when a conversation call
 
 ---
 
-## 🔌 MCP Servers
+## MCP servers
 
-MCP (Model Context Protocol) servers extend Claude Code with additional capabilities. This plugin suite auto-installs essential servers that work out of the box.
+MCP (Model Context Protocol) servers give Claude Code extra tools. The plugin installs three that need no setup.
 
-### ✅ Auto-Installed (No Setup Required)
+### Installed automatically
 
 These servers start automatically when the plugin is enabled:
 
@@ -318,45 +318,45 @@ These servers start automatically when the plugin is enabled:
 - Cross-session learning uses Claude Code's native agent memory (stored in `.claude/agent-memory/` in your project), so no memory server is needed
 - Taskmaster config is created automatically during installation (step 4)
 
-### ⚙️ Optional Servers (Require Setup)
+### Optional servers (setup required)
 
 Add these based on your workflow. Each requires authentication or additional setup.
 
-#### 🔀 Version Control & Issues
+#### Version control and issues
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **GitHub** | PR/issue management | `claude mcp add --transport http github https://api.githubcopilot.com/mcp` | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
 | **Linear** | Issue tracking | Connect via `/mcp` | [linear.app/changelog/2025-05-01-mcp](https://linear.app/changelog/2025-05-01-mcp) |
 
-#### 🐛 Debugging & Testing
+#### Debugging and testing
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **Sentry** | Error tracking | `claude mcp add --transport http sentry https://mcp.sentry.dev/mcp` | [docs.sentry.io/product/sentry-mcp](https://docs.sentry.io/product/sentry-mcp/) |
 | **Playwright** | Browser automation | `claude mcp add playwright -- npx @playwright/mcp@latest` | [github.com/microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) |
 
-#### 🗄️ Database & Backend
+#### Database and backend
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **Supabase** | Database management | Configure via JSON | [supabase.com/docs/guides/getting-started/mcp](https://supabase.com/docs/guides/getting-started/mcp) |
 | **PostgreSQL** | SQL queries | `claude mcp add-json "postgres" '{"command":"npx","args":["-y","@modelcontextprotocol/server-postgres"]}'` | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
 
-#### 🌐 Deployment
+#### Deployment
 
 | Server | Purpose | Install | Docs |
 |--------|---------|---------|------|
 | **Cloudflare** | Edge deployment | `claude mcp add --transport sse cloudflare https://mcp.cloudflare.com/sse` | [github.com/cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) |
 | **Vercel** | Frontend hosting | `claude mcp add-json "vercel" '{"command":"npx","args":["-y","vercel-mcp"]}'` | [vercel.com/docs/mcp/vercel-mcp](https://vercel.com/docs/mcp/vercel-mcp) |
 
-### 💡 Best Practice
+### Keep the list short
 
-> Start with the auto-installed essentials. Add specialized servers only when you need them. Too many MCP servers can slow down Claude Code startup.
+Every MCP server adds to Claude Code's startup time, so add one only when you need it.
 
 ---
 
-## 📁 Structure
+## Structure
 
 ```
 claude-vibes/
@@ -384,14 +384,14 @@ claude-vibes/
 
 ---
 
-## 📚 References
+## References
 
 ### Plugins
 - [Plugins Overview](https://code.claude.com/docs/en/plugins) - Install and create plugins
 - [Plugins Reference](https://code.claude.com/docs/en/plugins-reference) - Technical specifications
 - [Plugin Announcement](https://www.anthropic.com/news/claude-code-plugins) - Introduction to the plugin system
 
-### Plugin Components
+### Plugin components
 - [Slash Commands](https://code.claude.com/docs/en/slash-commands) - Custom command syntax
 - [Subagents](https://code.claude.com/docs/en/sub-agents) - Specialized agent configuration
 - [Hooks Reference](https://code.claude.com/docs/en/hooks) - Event-driven automation

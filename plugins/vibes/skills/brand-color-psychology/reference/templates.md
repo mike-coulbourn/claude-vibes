@@ -1,4 +1,4 @@
-# Brand Color Psychology Templates
+# Brand color psychology templates
 
 Reusable templates for brand color strategy documentation.
 
@@ -6,12 +6,12 @@ Reusable templates for brand color strategy documentation.
 
 ## Contents
 
-- [Color Palette Documentation Template](#color-palette-documentation-template)
-- [Accessibility Testing Checklist](#accessibility-testing-checklist)
-- [Color Psychology Rationale Template](#color-psychology-rationale-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Color palette documentation template](#color-palette-documentation-template)
+- [Accessibility testing checklist](#accessibility-testing-checklist)
+- [Color psychology rationale template](#color-psychology-rationale-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Color Palette Documentation Template
+## Color palette documentation template
 
 ```markdown
 # Brand Color Palette: [Brand Name]
@@ -77,7 +77,7 @@ Reusable templates for brand color strategy documentation.
 ### Primary Color 1: [Color Name]
 
 **The Color:**
-[Visual description — e.g., "A confident, deep navy blue that commands attention without aggression"]
+[Visual description, e.g., "A confident, deep navy blue that commands attention without aggression"]
 
 **Color Values:**
 | System | Value |
@@ -89,7 +89,7 @@ Reusable templates for brand color strategy documentation.
 | HSL | H: [X]° S: [X]% L: [X]% |
 
 **Strategic Rationale:**
-[Why this specific color for this brand — connect to archetype, positioning, and differentiation strategy]
+[Why this specific color for this brand. Connect to archetype, positioning, and differentiation strategy]
 
 **Color Psychology:**
 - **Communicates:** [What this color conveys]
@@ -125,7 +125,7 @@ Reusable templates for brand color strategy documentation.
 | Pantone | [PMS Number] (if applicable) |
 
 **Color Harmony Relationship:**
-[How this relates to the primary — complementary, analogous, split-complementary, etc.]
+[How this relates to the primary: complementary, analogous, split-complementary, etc.]
 
 **Role in the Palette:**
 [How this supports the primary colors]
@@ -147,7 +147,7 @@ Reusable templates for brand color strategy documentation.
 | RGB | R: [X] G: [X] B: [X] |
 
 **Usage:** Primary text, headers, key UI elements
-**Why not pure black:** [Rationale — usually softer on eyes, warmer feel]
+**Why not pure black:** [Rationale, usually softer on eyes, warmer feel]
 
 ### Medium Neutral (Secondary Text)
 
@@ -166,7 +166,7 @@ Reusable templates for brand color strategy documentation.
 | RGB | R: [X] G: [X] B: [X] |
 
 **Usage:** Page backgrounds, cards, containers
-**Why not pure white:** [Rationale — usually softer]
+**Why not pure white:** [Rationale, usually softer]
 
 ---
 
@@ -206,13 +206,13 @@ Reusable templates for brand color strategy documentation.
 
 | Combination | Why to Avoid |
 |------------|--------------|
-| [Color + Color] | [Reason — clash, accessibility, cultural] |
+| [Color + Color] | [Reason: clash, accessibility, cultural] |
 
 ### Color Proportions (60-30-10 Rule)
 
-- **60%** — [Neutral/background color] — Creates canvas and breathing room
-- **30%** — [Primary color] — Establishes brand presence
-- **10%** — [Accent/CTA color] — Drives action and attention
+- **60%**: [Neutral/background color]. Creates canvas and breathing room
+- **30%**: [Primary color]. Establishes brand presence
+- **10%**: [Accent/CTA color]. Drives action and attention
 
 ---
 
@@ -265,7 +265,7 @@ Reusable templates for brand color strategy documentation.
 
 ---
 
-## Competitor Color Audit Template
+## Competitor color audit template
 
 ```markdown
 # Competitive Color Audit: [Category/Industry]
@@ -334,7 +334,7 @@ Reusable templates for brand color strategy documentation.
 
 ---
 
-## Accessibility Testing Checklist
+## Accessibility testing checklist
 
 ```markdown
 # Color Accessibility Validation
@@ -398,7 +398,7 @@ Reusable templates for brand color strategy documentation.
 
 ---
 
-## Color Psychology Rationale Template
+## Color psychology rationale template
 
 ```markdown
 # Color Psychology Rationale: [Color Name]
@@ -423,8 +423,8 @@ Reusable templates for brand color strategy documentation.
 
 **Psychological Effects:**
 - **Emotional:** [How it makes people feel]
-- **Physical:** [Any physical responses — e.g., appetite, energy]
-- **Cognitive:** [How it affects thinking — trust, urgency, calm]
+- **Physical:** [Any physical responses, e.g., appetite, energy]
+- **Cognitive:** [How it affects thinking: trust, urgency, calm]
 
 ---
 
@@ -478,13 +478,13 @@ Reusable templates for brand color strategy documentation.
 - [Scenario 2]
 
 **Best paired with:**
-- [Color 1] — [Why]
-- [Color 2] — [Why]
+- [Color 1]: [Why]
+- [Color 2]: [Why]
 ```
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 Before finalizing any color palette documentation, verify:
 

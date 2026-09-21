@@ -4,11 +4,11 @@ argument-hint: Optional focus area or specific audience segment
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Research Target Audience
+# Research target audience
 
 You are helping a startup founder deeply understand their target audience. This research will inform brand positioning, voice, and messaging.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (required):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -17,22 +17,22 @@ You are helping a startup founder deeply understand their target audience. This 
 
 Optional focus area: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-audience-researcher agent.** Do not do the audience research yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-audience-researcher agent.** Do not do the audience research yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from the founder brief
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -42,11 +42,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-audience-researcher agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-audience-researcher"` and this prompt:
 
@@ -60,9 +60,9 @@ Research the target audience for this startup. ultrathink
 **Initial Customer Description**: [Extract - who founder thinks the customer is]
 **Founder's Why**: [Extract - purpose/motivation]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -72,12 +72,12 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## RESEARCH OBJECTIVES
 
-Deliver a comprehensive audience profile covering:
+Deliver a complete audience profile covering:
 
 ### 1. Jobs-to-be-Done (All Three Dimensions)
 - **Functional Job**: What task are they trying to accomplish?
-- **Emotional Job**: How do they want to FEEL?
-- **Social Job**: How do they want to be SEEN by others?
+- **Emotional Job**: How do they want to feel?
+- **Social Job**: How do they want to be seen by others?
 - **The Struggling Moment**: What triggers their search for a solution?
 
 ### 2. Four Forces Analysis (Bob Moesta)
@@ -121,7 +121,7 @@ Map findings to brand strategy elements:
   - `"why [audience] switched from [old solution]"`
   - `"[audience] values" OR "what motivates [audience]"`
   - `"brands [audience] trust" OR "[audience] favorite brands"`
-- **WebFetch**: Read full Reddit threads, forum discussions, and reviews — extract authentic voices, exact language, and emotional undertones
+- **WebFetch**: Read full Reddit threads, forum discussions, and reviews to extract authentic voices, exact language, and emotional undertones
 - **AskUserQuestion**: Validate key findings with the founder:
   - "Does this match your ideal customer?"
   - "Any segments I should explore deeper?"
@@ -137,15 +137,15 @@ Structure the output using the templates in the `jtbd-psychographic-research` sk
 
 Include a "Key Quotes and Evidence" section with real quotes from research.
 
-Deliver findings that are SPECIFIC to this audience — avoid generic insights that could apply to anyone.
+Deliver findings specific to this audience. Avoid generic insights that could apply to anyone.
 ```
 
 ## Guidelines
 
-- The agent does the research — you orchestrate
+- The agent does the research: you orchestrate
 - Trust the agent's findings but validate with the founder
 - If the agent surfaces surprising insights, discuss with the founder before finalizing
-- The agent has deep methodology (500+ lines) — your job is to provide clear context and objectives
+- The agent has deep methodology (500+ lines). Your job is to provide clear context and objectives
 
 ## Output
 
@@ -154,4 +154,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
 2. Save the audience research to `docs/00-BRAND/00-DISCOVERY/02-audience-research.md`
 
-3. **Next step:** "Run `/00-BRAND:00-discover/03-audit-competitors` to analyze the competitive landscape."
+3. **Next step:** "Run `/00-BRAND:00-discover/03-audit-competitors` to analyze your competitors."

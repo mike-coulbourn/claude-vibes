@@ -4,11 +4,11 @@ argument-hint: Optional constraints like timeline or priorities
 allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
-# Planning Phase
+# Planning phase
 
-You are helping a vibe coder create a clear implementation roadmap. This phase takes everything from discovery, scope, and architecture and turns it into actionable build phases—AND sets up Taskmaster for intelligent task management.
+You are helping a vibe coder create a clear implementation roadmap. This phase takes everything from discovery, scope, and architecture and turns it into actionable build phases, and sets up Taskmaster for task management.
 
-## Full Project Context
+## Full project context
 
 **Optional constraints:** $ARGUMENTS
 
@@ -22,26 +22,26 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 
 **Taskmaster:** Use `get_tasks` MCP tool to check if Taskmaster is already initialized. If tasks exist, offer to update rather than reinitialize.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
-You do the heavy lifting on planning. Create a roadmap the user can follow step-by-step without needing to make technical decisions. Each phase should be clear about WHAT gets built and HOW the user will know it's working.
+You do the heavy lifting on planning. Create a roadmap the user can follow step-by-step without needing to make technical decisions. Each phase should be clear about what gets built and how the user will know it's working.
 
-**CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't validate the plan yourself—delegate to the plan-reviewer while you continue detailing phases with the user.
+**You orchestrate specialized agents while having parallel conversations.** Don't validate the plan yourself. Delegate to the plan-reviewer while you continue detailing phases with the user.
 
 **Think step by step (ultrathink)** for any complex reasoning, phase sequencing, or dependency analysis. This ensures systematic, thorough thinking. Ultrathink through build order before presenting conclusions.
 
-## How to Communicate
+## How to communicate
 
-- Use AskUserQuestion for every decision—present options with plain language tradeoffs
+- Use AskUserQuestion for every decision, and present options with plain language tradeoffs
 - Lead with recommendations: "I'd suggest building X first because [reason]. Then Y. Does that make sense?"
-- Explain build order in terms of what the USER will see working, not technical dependencies
-- Keep phases small and achievable—big phases feel overwhelming
+- Explain build order in terms of what the user will see working, not technical dependencies
+- Keep phases small and achievable, because big phases feel overwhelming
 
-## Planning Process
+## Planning process
 
-### 1. Context Verification (REQUIRED)
+### 1. Context verification (required)
 
 If all planning docs exist, summarize the key insights:
 - What we're building (problem and value proposition)
@@ -69,7 +69,7 @@ If docs don't exist (common when using claude-vibes on an existing project), use
 
 Then proceed with roadmap planning based on the user's answers.
 
-### 2. Identify Build Order
+### 2. Identify build order
 
 Ultrathink about what needs to be built first:
 - What has to exist before other things can work?
@@ -80,7 +80,7 @@ Explain the logic in plain language:
 - "We need user accounts before we can save user-specific data"
 - "The main feature should work before we add extras"
 
-### 3. Define Implementation Phases
+### 3. Define implementation phases
 
 Break the build into logical phases. Each phase should:
 - Be completable in a focused work session
@@ -88,13 +88,13 @@ Break the build into logical phases. Each phase should:
 - Build toward the next phase
 
 Typical structure:
-- **Phase 1: Foundation** — Set up the project, data storage, user accounts
-- **Phase 2: Core Feature** — The main thing the app does
-- **Phase 3: Supporting Features** — Things that make the core better
-- **Phase 4: Polish** — Making it feel complete and handling edge cases
-- **Phase 5: Launch Prep** — Final testing and going live
+- **Phase 1: Foundation**: Set up the project, data storage, user accounts
+- **Phase 2: Core Feature**: The main thing the app does
+- **Phase 3: Supporting Features**: Things that make the core better
+- **Phase 4: Polish**: Making it feel complete and handling edge cases
+- **Phase 5: Launch Prep**: Final testing and going live
 
-**Direction Checkpoint:**
+**Direction checkpoint:**
 ```
 Question: "Here's the build order I'd recommend:
 
@@ -107,24 +107,24 @@ Options:
 - I have questions about specific phases
 ```
 
-### 4. Detail Each Phase
+### 4. Detail each phase
 
 For each phase, specify:
 - **Goal**: What this accomplishes (plain language, user-focused)
-- **What Gets Built**: Specific things that will exist after this phase
-- **How You'll Know It Works**: What the user can do/see to verify
-- **What's Needed First**: Any phases that must come before this one
+- **What gets built**: Specific things that will exist after this phase
+- **How you'll know it works**: What the user can do/see to verify
+- **What's needed first**: Any phases that must come before this one
 
-### 5. Define Milestones
+### 5. Define milestones
 
 Create clear checkpoints:
 - What does "done" look like for each phase?
 - What can the user show to others or test?
 - When should we pause and check if the plan still makes sense?
 
-### 6. Plan Review (REQUIRED)
+### 6. Plan review (required)
 
-**You MUST use the Agent tool to launch the plan-reviewer agent before saving:**
+**Use the Agent tool to launch the plan-reviewer agent before saving:**
 
 ```
 Agent tool:
@@ -132,26 +132,26 @@ Agent tool:
   prompt: "Ultrathink about this implementation roadmap. Read all docs/01-START/ files for complete context.
 
   **Think step by step (ultrathink)** to systematically analyze:
-  1. Phase sequencing — are dependencies correctly ordered?
-  2. Scope alignment — does the roadmap match the MVP scope from 02-scope.md?
-  3. Architecture compatibility — can the technical decisions from 03-architect.md support this build order?
-  4. Risk identification — what could go wrong during implementation?
-  5. Milestone clarity — are checkpoints testable and measurable?
-  6. Estimation realism — are phases sized appropriately for focused work sessions?
+  1. Phase sequencing: are dependencies correctly ordered?
+  2. Scope alignment: does the roadmap match the MVP scope from 02-scope.md?
+  3. Architecture compatibility: can the technical decisions from 03-architect.md support this build order?
+  4. Risk identification: what could go wrong during implementation?
+  5. Milestone clarity: are checkpoints testable and measurable?
+  6. Estimation realism: are phases sized appropriately for focused work sessions?
 
   **Use AskUserQuestion when you find concerns:**
   - If phases could be reordered for better risk reduction, present options
   - If scope seems to have drifted from 02-scope.md, ask about priorities
   - If technical decisions seem incompatible with build order, flag and discuss
   - If milestones aren't measurable, suggest more concrete success criteria
-  - Never assume how to resolve issues—clarify with the user
+  - Never assume how to resolve issues. Clarify with the user
 
   Flag all concerns with severity (blocker vs. consideration) and suggest resolutions in plain language."
 ```
 
 Address any concerns raised before proceeding to save.
 
-### 7. Identify Risks and Unknowns
+### 7. Identify risks and unknowns
 
 Surface things that might cause problems:
 - Technical stuff we're not 100% sure about
@@ -161,13 +161,13 @@ Surface things that might cause problems:
 
 ## Guidelines
 
-- Keep phases small—it's better to have more small wins than fewer big ones
-- Build risky/uncertain things early—better to discover problems sooner
+- Keep phases small, because it's better to have more small wins than fewer big ones
+- Build risky/uncertain things early, because it's better to discover problems sooner
 - Each phase should produce something visible and testable
-- Don't plan the later phases in too much detail—they'll likely change
-- Include wiggle room—things take longer than expected
+- Don't plan the later phases in too much detail, since they'll likely change
+- Include wiggle room, because things take longer than expected
 
-## Frameworks Reference
+## Frameworks reference
 
 The `jtbd-psychographic-research` skill provides frameworks that may auto-activate during this conversation:
 - Jobs-to-be-Done (prioritize features that address core jobs first)
@@ -175,7 +175,7 @@ The `jtbd-psychographic-research` skill provides frameworks that may auto-activa
 
 Use these frameworks when deciding what to build first.
 
-## Natural Writing
+## Natural writing
 
 Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
@@ -183,18 +183,18 @@ Before you write anything yourself in this command, such as a summary or a saved
 
 When planning feels complete:
 
-### Step 1: Save Human-Readable Roadmap
+### Step 1: Save human-readable roadmap
 
 1. Ensure `docs/01-START/` directory exists
 
 2. Save the implementation plan to `docs/01-START/04-plan-roadmap.md` with:
-   - Project summary (what we're building and why—plain language)
+   - Project summary (what we're building and why, in plain language)
    - Implementation phases with details for each
    - Key milestones and how to know they're achieved
    - Risks and unknowns to watch for
    - Recommended first steps
 
-### Step 2: Ask About Taskmaster Setup
+### Step 2: Ask about Taskmaster setup
 
 **Check Taskmaster state from context injection above.**
 
@@ -223,7 +223,7 @@ Explain briefly: "Taskmaster is a task management system that:
 - Tracks your progress across the whole project
 - Handles changes when plans evolve mid-build
 
-The `/02-BUILD` commands will use it automatically—you don't need to learn any new commands."
+The `/02-BUILD` commands will use it automatically, so you don't need to learn any new commands."
 
 Then ask again if they want to set it up.
 
@@ -231,7 +231,7 @@ Then ask again if they want to set it up.
 
 **If they accept:** Continue to Step 3.
 
-### Step 3: Generate Taskmaster PRD
+### Step 3: Generate the Taskmaster PRD
 
 Create a PRD (Product Requirements Document) by synthesizing all `docs/01-START/` files into Taskmaster format.
 
@@ -321,7 +321,7 @@ Options:
 
 **If tasks need adjustment:** Use AskUserQuestion to understand what to change, then use Taskmaster tools to update.
 
-### Step 5: Analyze Task Complexity
+### Step 5: Analyze task complexity
 
 After tasks are created, run complexity analysis to identify which tasks may need breakdown.
 
@@ -339,12 +339,12 @@ After tasks are created, run complexity analysis to identify which tasks may nee
 Question: "I've analyzed the complexity of your tasks:
 
 **Simple tasks (can implement directly):**
-- Task 1: [name] — complexity 3/10
-- Task 4: [name] — complexity 2/10
+- Task 1: [name], complexity 3/10
+- Task 4: [name], complexity 2/10
 
 **Complex tasks (recommend breaking into subtasks):**
-- Task 2: [name] — complexity 7/10, recommends 3 subtasks
-- Task 5: [name] — complexity 8/10, recommends 4 subtasks
+- Task 2: [name], complexity 7/10, recommends 3 subtasks
+- Task 5: [name], complexity 8/10, recommends 4 subtasks
 
 You can expand complex tasks now, or wait until you plan each one (recommended).
 
@@ -356,7 +356,7 @@ Options:
 ```
 
 **If they choose "Expand later" (recommended):**
-Proceed to Step 6. The `/02-BUILD:01-plan-code` command will handle expansion when you're about to work on each task — this gives better results because it can use codebase context.
+Proceed to Step 6. The `/02-BUILD:01-plan-code` command will handle expansion when you're about to work on each task, which gives better results because it can use codebase context.
 
 **If they choose "Expand all now":**
 
@@ -403,25 +403,25 @@ Options:
 
 "Planning complete! Here's what we created:
 
-**Human Documentation** (in `docs/01-START/`):
+**Human documentation** (in `docs/01-START/`):
 - Discovery summary
 - Scope and MVP features
 - Architecture decisions
 - Implementation roadmap
 
-**Task Management** (in `.taskmaster/`):
+**Task management** (in `.taskmaster/`):
 - PRD document
 - [X] structured tasks with dependencies
 - First task ready: [task name]
 
 **Next steps:**
-Run `/02-BUILD:01-plan-code` — Taskmaster will recommend what to build based on dependencies!"
+Run `/02-BUILD:01-plan-code`. Taskmaster will recommend what to build based on dependencies."
 
 **Without Taskmaster:**
 
 "Planning complete! Here's what we created:
 
-**Human Documentation** (in `docs/01-START/`):
+**Human documentation** (in `docs/01-START/`):
 - Discovery summary
 - Scope and MVP features
 - Architecture decisions
@@ -433,7 +433,7 @@ Run `/02-BUILD:01-plan-code` — Taskmaster will recommend what to build based o
 
 You can run `/04-plan-roadmap` again later if you want to set up Taskmaster."
 
-## Taskmaster Integration Notes
+## Taskmaster integration notes
 
 **Why Taskmaster?**
 - Tracks task dependencies automatically
@@ -442,6 +442,6 @@ You can run `/04-plan-roadmap` again later if you want to set up Taskmaster."
 - Maintains project-wide progress visibility
 
 **The user doesn't need to learn Taskmaster commands.** The `/02-BUILD` commands interact with it automatically. But if they want to check status manually, they can say:
-- "Show tasks" — see all tasks and status
-- "What's next?" — get the next recommended task
-- "Show task 5" — see details of a specific task
+- "Show tasks": see all tasks and status
+- "What's next?": get the next recommended task
+- "Show task 5": see details of a specific task

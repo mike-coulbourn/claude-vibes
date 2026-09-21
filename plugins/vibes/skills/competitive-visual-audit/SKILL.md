@@ -5,13 +5,13 @@ description: Use when analyzing competitor brands to find visual or positioning 
 
 # Competitive Visual Audit Frameworks
 
-Quick reference for competitive brand analysis that informs visual identity decisions. This skill auto-activates during visual phases to ensure competitive insights guide design decisions.
+Quick reference for competitive brand analysis that informs visual identity decisions. This skill auto-activates during visual phases so competitive insights guide design decisions.
 
 > "When others zig, zag. Radical differentiation is the surest path to relevance." — Marty Neumeier
 
 ---
 
-## Key Statistics
+## Key statistics
 
 - **55%** of brand first impressions are visual
 - **90%** of snap judgments are made on color alone (depending on product)
@@ -22,7 +22,7 @@ Quick reference for competitive brand analysis that informs visual identity deci
 
 ## The Good/Different Chart (Marty Neumeier)
 
-Plot brands on two axes — "Good" (customer value) and "Different" (novelty/surprise):
+Plot brands on two axes, "Good" (customer value) and "Different" (novelty/surprise):
 
 ```
                 DIFFERENT (Novel, Surprising)
@@ -54,16 +54,16 @@ Format: "Our brand is the only [category] that [differentiation] for [audience] 
 
 ---
 
-## Zig vs Zag Decision Framework
+## Zig vs zag decision framework
 
-### When to "Zig" (Follow Category Conventions)
+### When to "Zig" (follow category conventions)
 
 - Category requires trust/safety signals (healthcare, finance, legal)
 - Customers use visual conventions to identify legitimate options
 - Entering an established market needing initial credibility
 - Differentiation comes from other factors (service, pricing)
 
-### When to "Zag" (Break Category Conventions)
+### When to "Zag" (break category conventions)
 
 - Category is visually homogeneous (everyone looks the same)
 - Genuine philosophical/strategic difference to communicate
@@ -73,7 +73,7 @@ Format: "Our brand is the only [category] that [differentiation] for [audience] 
 
 ---
 
-## Visual Differentiation Priority
+## Visual differentiation priority
 
 Based on impact and feasibility:
 
@@ -88,7 +88,7 @@ Based on impact and feasibility:
 
 ---
 
-## Quick Visual Audit Checklist
+## Quick visual audit checklist
 
 When analyzing competitors, capture for each:
 
@@ -113,7 +113,7 @@ When analyzing competitors, capture for each:
 
 ---
 
-## Perceptual Mapping Quick Guide
+## Perceptual mapping quick guide
 
 1. **Choose Two Axes** that matter to customers and create contrast:
    - Price (Low → High) vs. Quality (Low → High)
@@ -123,11 +123,11 @@ When analyzing competitors, capture for each:
 
 2. **Plot 10+ competitors** on the map
 
-3. **Identify White Space** — quadrants with low competition
+3. **Identify White Space**: quadrants with low competition
 
 ---
 
-## Common Visual Patterns to Look For
+## Common visual patterns to look for
 
 **Color Clusters**
 - Where do most competitors congregate? (Many industries have a "blue problem")
@@ -143,7 +143,7 @@ When analyzing competitors, capture for each:
 
 ---
 
-## Research-to-Design Bridge
+## Research-to-design bridge
 
 | Competitive Finding | Informs |
 |--------------------|---------|
@@ -158,45 +158,45 @@ When analyzing competitors, capture for each:
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Color Audit Matrix
-- Typography Audit Matrix
-- Imagery Style Audit Matrix
-- Perceptual Map Template
-- Good/Different Chart Template
-- Output Validation Checklist
+- Color audit matrix
+- Typography audit matrix
+- Imagery style audit matrix
+- Perceptual map template
+- Good/Different Chart template
+- Output validation checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Color Selection
+### During color selection
 - Reference competitive color audit to avoid clusters
 - Identify unclaimed color territories
 
-### During Typography Selection
+### During typography selection
 - Reference typography audit to find differentiation
 - Counter-position if category is homogeneous
 
-### During Visual Direction
+### During visual direction
 - Use perceptual map to guide overall aesthetic
 - Apply Zig vs Zag decision framework
 
-### During Positioning Work
+### During positioning work
 - Reference Only-ness Statement opportunities
 - Use Good/Different Chart for strategic positioning
 
 ---
 
-## Key Principles
+## Key principles
 
-1. **Map before you create** — Understand the landscape before making visual decisions
-2. **White space is opportunity** — What no one does is what you could own
-3. **Color is fastest differentiator** — Start there for visual differentiation
-4. **Distinctiveness requires consistency** — Different only works if you maintain it
-5. **Be the Only, not the Best** — Neumeier's core principle
+1. **Map before you create**: Understand the landscape before making visual decisions
+2. **White space is opportunity**: What no one does is what you could own
+3. **Color is fastest differentiator**: Start there for visual differentiation
+4. **Distinctiveness requires consistency**: Different only works if you maintain it
+5. **Be the Only, not the Best**: Neumeier's core principle
 
 ---
 
-## Deep Methodology
+## Deep methodology
 
-For comprehensive competitive brand audits, the `brand-competitive-auditor` agent contains 750+ lines of expert methodology including detailed output formats and research processes.
+For full competitive brand audits, the `brand-competitive-auditor` agent contains 750+ lines of methodology, including output formats and research processes.

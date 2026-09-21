@@ -1,6 +1,6 @@
 {
   "name": "claude-vibes",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Brand, plan, build, ship, debug, and refactor with structured workflows for people who describe what they want and let Claude build it. Includes a creator toolkit for copy, scripts, and image prompts.",
   "author": {
     "name": "Mike Coulbourn",

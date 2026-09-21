@@ -3,9 +3,9 @@ name: scriptwriting-methodology
 description: Use when writing or critiquing video scripts meant to sell, such as sponsored segments, affiliate content, ads, hooks, and calls to action. Keywords - direct response, DR formula, PAS, AIDA, hook formulas, CTA, script structure, conversion copy for video.
 ---
 
-# Scriptwriting Methodology for Sponsored Content
+# Scriptwriting methodology for sponsored content
 
-## Core Framework: The DR Formula
+## Core framework: the DR Formula
 
 The **Direct Response (DR) Formula** is the industry standard for sponsored and affiliate video scripts:
 
@@ -18,18 +18,18 @@ The **Direct Response (DR) Formula** is the industry standard for sponsored and 
 5. **SOCIAL PROOF (15-18 seconds)**: Results and credibility
 6. **CTA (18-20 seconds)**: Clear call to action
 
-### Key Principle
+### Key principle
 Scripts should be **60 words or less for a 20-second video**. The structure should feel like storytelling, not advertising.
 
 ---
 
-## Alternative Frameworks
+## Alternative frameworks
 
 ### PAS (Problem-Agitate-Solution)
 Simpler structure for short-form content:
 
 1. **Problem (15%)**: Identify the specific problem
-2. **Agitate (25%)**: Intensify the pain — make them FEEL it
+2. **Agitate (25%)**: Intensify the pain so they feel it
 3. **Solution (60%)**: Present the product as the answer
 
 **Key insight**: Agitation is the most overlooked step. "Hammering the problem home gets under the reader's skin."
@@ -53,11 +53,11 @@ Justin Welsh's evolution of PAS:
 
 ---
 
-## Hook Formulas
+## Hook formulas
 
 The hook is **71% of the battle**. Viewers decide to stay or scroll in 1-3 seconds.
 
-### Proven Hook Types
+### Proven hook types
 
 | Type | Template | Example |
 |------|----------|---------|
@@ -69,7 +69,7 @@ The hook is **71% of the battle**. Viewers decide to stay or scroll in 1-3 secon
 | Call-Out | "If you're a [person], this is for you" | "If you're over 30 with dry skin, this is for you" |
 | Personal Mistake | "This mistake cost me [result]" | "This mistake cost me 6 months of breakouts" |
 
-### Hook Stacking
+### Hook stacking
 Combine multiple hook types for maximum impact:
 - **Visual hook**: Motion, expressions, text overlay
 - **Auditory hook**: Trending audio, snappy voiceover
@@ -78,13 +78,13 @@ Combine multiple hook types for maximum impact:
 
 ---
 
-## CTA Best Practices
+## CTA best practices
 
 ### The Data
 - Affiliates who test CTAs see **49% improvement** in conversion
 - CTA placement matters: End of video is standard, but mid-video CTAs can work
 
-### CTA Templates
+### CTA templates
 
 **Soft CTAs** (for cold audiences):
 - "Link in bio if you want to check it out"
@@ -95,10 +95,10 @@ Combine multiple hook types for maximum impact:
 - "Link in description to grab yours"
 
 **Strong CTAs** (for warm audiences):
-- "Tap the link now — this deal ends [date]"
+- "Tap the link now. This deal ends [date]"
 - "Click the product tag to see the price"
 
-### Writing Effective CTAs
+### Writing effective CTAs
 1. **Keep it short**: 1-2 sentences
 2. **Be specific**: Tell them exactly what to do
 3. **Match urgency to context**: Don't fake scarcity
@@ -106,14 +106,14 @@ Combine multiple hook types for maximum impact:
 
 ---
 
-## Soft Sell vs Hard Sell
+## Soft sell vs hard sell
 
-### Research Findings
+### Research findings
 - Soft sell emails get **31% positive response** vs hard sell
 - Hard sell has **25% unsubscribe rate** vs 10% for soft sell
 - Drip campaigns (soft sell) linked to **50% higher conversion**
 
-### When to Use Each
+### When to use each
 
 **Soft Sell** (most creator content):
 - Best for cold audiences
@@ -146,7 +146,7 @@ Value = (Dream Outcome × Perceived Likelihood) / (Time Delay × Effort Required
 
 ---
 
-## Script Quality Checklist
+## Script quality checklist
 
 Before finalizing any script:
 

@@ -3,7 +3,7 @@ name: brand-values-development
 description: Use when discovering, writing, or pressure-testing brand or company core values, replacing generic values with differentiating ones, or turning values into observable behaviors. Keywords - core values, Lencioni four categories, permission-to-play values, opposite test, antivalue, fire someone test, Brene Brown values process, operationalizing values.
 ---
 
-# Brand Values Development Framework
+# Brand values development framework
 
 Quick reference for developing distinctive, actionable brand values using methodologies from Jim Collins, Patrick Lencioni, Brene Brown, Marty Neumeier, and Simon Sinek.
 
@@ -15,7 +15,7 @@ Quick reference for developing distinctive, actionable brand values using method
 
 ---
 
-## Lencioni's Four Categories of Values
+## Lencioni's four categories of values
 
 **Created by**: Patrick Lencioni (*The Advantage*)
 
@@ -34,11 +34,11 @@ Not all values are equal. Understanding which type prevents common mistakes.
 
 ---
 
-## Six Differentiation Tests
+## Six differentiation tests
 
 Apply these tests to ensure values are genuinely distinctive:
 
-### Test 1: The Opposite Test
+### Test 1: The opposite test
 
 **Ask**: Could a reasonable company hold the opposite value?
 
@@ -50,7 +50,7 @@ Apply these tests to ensure values are genuinely distinctive:
 
 ---
 
-### Test 2: The Antivalue/Sacrifice Test
+### Test 2: The antivalue/sacrifice test
 
 **Principle**: Identify what value you're willing to give up to live your value.
 
@@ -65,7 +65,7 @@ Apply these tests to ensure values are genuinely distinctive:
 
 ---
 
-### Test 3: The Onlyness Test (Marty Neumeier)
+### Test 3: The Onlyness test (Marty Neumeier)
 
 **Complete**: "We are the only [category] that [benefit]"
 
@@ -77,18 +77,18 @@ If others can make the same claim, it's not distinctive.
 
 ---
 
-### Test 4: The Hard Choice Test
+### Test 4: The hard choice test
 
 **Ask**: Does this value help make hard decisions? Does it force trade-offs?
 
 **Examples of Hard Choices**:
-- Patagonia's "Don't Buy This Jacket" ad — environmental values over sales
-- Southwest's "employees first" — turning down customers who abuse staff
-- Netflix's Keeper Test — letting go of adequate performers
+- Patagonia's "Don't Buy This Jacket" ad put environmental values over sales
+- Southwest's "employees first" means turning down customers who abuse staff
+- Netflix's Keeper Test: letting go of adequate performers
 
 ---
 
-### Test 5: The Behavioral Specificity Test
+### Test 5: The behavioral specificity test
 
 **Ask**: Can you describe exactly what this value looks like in practice?
 
@@ -100,7 +100,7 @@ If others can make the same claim, it's not distinctive.
 
 ---
 
-### Test 6: The Fire Someone Test (Zappos)
+### Test 6: The fire someone test (Zappos)
 
 At Zappos: "You can be fired for core value violations even if job performance is fine."
 
@@ -108,13 +108,13 @@ At Zappos: "You can be fired for core value violations even if job performance i
 
 ---
 
-## Key Discovery Questions
+## Key discovery questions
 
-### Uncovering Authentic Values
+### Uncovering authentic values
 
-1. **"What motivated you to start this business?"** — Identifies core beliefs
+1. **"What motivated you to start this business?"**: Identifies core beliefs
 
-2. **"What would be missing if we didn't exist?"** — Reveals true purpose
+2. **"What would be missing if we didn't exist?"**: Reveals true purpose
 
 3. **The Five Whys** (Denise Lee Yohn):
    - Start with a product/service
@@ -122,13 +122,13 @@ At Zappos: "You can be fired for core value violations even if job performance i
    - Ask "why does that matter?"
    - Repeat five times to uncover real purpose
 
-4. **"What would you never compromise on, even if it cost you business?"** — Reveals non-negotiables
+4. **"What would you never compromise on, even if it cost you business?"**: Reveals non-negotiables
 
-5. **"What decisions have you made that reveal your values?"** — Past behavior predicts actual values
+5. **"What decisions have you made that reveal your values?"**: Past behavior predicts actual values
 
-6. **"What do you respect in other companies? What do you despise?"** — Reveals values through contrast
+6. **"What do you respect in other companies? What do you despise?"**: Reveals values through contrast
 
-### "Always" and "Never" Statements
+### "Always" and "Never" statements
 
 Ask the team to formulate:
 - "We always..."
@@ -143,7 +143,7 @@ These reveal actual behaviors that can be distilled into values.
 
 ---
 
-## Operationalizing Values (Brene Brown)
+## Operationalizing values (Brene Brown)
 
 **Problem**: Only 10% of organizations translate values into teachable, observable behaviors.
 
@@ -159,14 +159,14 @@ These reveal actual behaviors that can be distilled into values.
 
 5. **Identify "Slippery Behaviors"**: Sneaky actions that erode the value slowly
 
-### Behavior Mapping Example
+### Behavior mapping example
 
 | Value | Aligned Behaviors | Unaligned Behaviors | Slippery Behaviors |
 |-------|------------------|---------------------|-------------------|
 | Transparency | Share salary info publicly; Explain decision rationale | Hide leadership decisions; Corporate jargon | "Need to know" reasoning; Selective transparency |
 | Innovation | Share unfinished work; Celebrate failed experiments | Punish mistakes; Require polish before sharing | "More research" before trying; Innovation theater |
 
-### Writing Values with Action Language
+### Writing values with action language
 
 Values should start with a verb:
 - "Build the best product" (Patagonia)
@@ -177,9 +177,9 @@ Values should start with a verb:
 
 ---
 
-## Anti-Patterns Checklist
+## Anti-patterns checklist
 
-### Generic Values to Avoid
+### Generic values to avoid
 
 These could apply to anyone and therefore inspire no one:
 
@@ -193,7 +193,7 @@ These could apply to anyone and therefore inspire no one:
 | "Excellence in everything" | Means nothing |
 | "Integrity" (alone) | No one claims lack of it |
 
-### Common Mistakes
+### Common mistakes
 
 | Mistake | Why It Happens | Fix |
 |---------|---------------|-----|
@@ -206,9 +206,9 @@ These could apply to anyone and therefore inspire no one:
 
 ---
 
-## Real Examples Quick Reference
+## Real examples quick reference
 
-### Netflix: Values as Behaviors
+### Netflix: values as behaviors
 
 > "The actual company values are shown by who gets rewarded, promoted, or let go."
 
@@ -218,34 +218,34 @@ These could apply to anyone and therefore inspire no one:
 
 ---
 
-### Zappos: Values with Teeth
+### Zappos: values with teeth
 
-- Two interview rounds: skills AND culture fit—must pass both
+- Two interview rounds, skills and culture fit. Candidates must pass both
 - $2,000 "pay to quit" offer to new hires
 - Can be fired for value violations even with fine performance
 - Employees call each other out for not living values
 
 ---
 
-### Patagonia: Values Requiring Sacrifice
+### Patagonia: values requiring sacrifice
 
-- "Don't Buy This Jacket" campaign — environmental values over sales
-- 1% for the Planet — donate 1% of sales
+- "Don't Buy This Jacket" campaign put environmental values over sales
+- 1% for the Planet, donating 1% of sales
 - 100% Black Friday 2016 sales donated ($10 million)
-- Values require telling customers NOT to buy
+- Values require telling customers not to buy
 
 ---
 
-### Southwest Airlines: Employees First
+### Southwest Airlines: employees first
 
 - "Employees come first, customers second"
-- Screen for humor, team spirit, grit—not just skills
+- Screen for humor, team spirit, and grit, not just skills
 - "We can train you to fly. We can't train you to be nice."
 - 47 straight years of profit
 
 ---
 
-### Buffer: Radical Transparency
+### Buffer: radical transparency
 
 - Publicly share all employee salaries
 - Share revenue publicly
@@ -253,9 +253,9 @@ These could apply to anyone and therefore inspire no one:
 
 ---
 
-## Key Principles
+## Key principles
 
-1. **Values are verbs, not nouns** (Sinek): Things you DO, not have
+1. **Values are verbs, not nouns** (Sinek): things you do, not have
 
 2. **Distinctive values create enemies**: If everyone agrees, not distinctive
 
@@ -271,7 +271,7 @@ These could apply to anyone and therefore inspire no one:
 
 ---
 
-## Expert Statistics
+## Expert statistics
 
 - **Only 10%** of organizations translate values into observable behaviors (Brown)
 - **Only 23%** of employees can apply values to work daily (Gallup)
@@ -283,34 +283,34 @@ These could apply to anyone and therefore inspire no one:
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Values Discovery Worksheet
-- Values Category Assessment Template
-- Differentiation Test Template
-- Behavior Mapping Template
-- Values Documentation Template
-- Values Validation Checklist
-- Values Summary Card Template
+- Values discovery worksheet
+- Values category assessment template
+- Differentiation test template
+- Behavior mapping template
+- Values documentation template
+- Values validation checklist
+- Values summary card template
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Values Discovery
+### During values discovery
 - Use Five Whys technique
 - Apply "Always/Never" statements exercise
 - Categorize using Lencioni's four categories
 
-### During Values Testing
+### During values testing
 - Run all six Differentiation Tests
 - Identify antivalues/sacrifices
 - Check against generic values list
 
-### During Values Operationalization
+### During values operationalization
 - Map each value to 3-5 behaviors (Brene Brown)
 - Define aligned vs unaligned behaviors
 - Identify slippery behaviors
 
-### During Final Documentation
+### During final documentation
 - Include full categorization
 - Document differentiation test results
 - Provide behavior mapping
@@ -318,6 +318,6 @@ Read [reference/templates.md](reference/templates.md) when producing a deliverab
 
 ---
 
-## Deep Methodology
+## Deep methodology
 
-For comprehensive values curation sessions, the `brand-values-curator` agent contains 1100+ lines of expert methodology including the complete output format with all templates for discovery, testing, operationalization, and documentation.
+For full values curation sessions, the `brand-values-curator` agent contains 1100+ lines of methodology, including the output format with all templates for discovery, testing, operationalization, and documentation.

@@ -1,4 +1,4 @@
-# JTBD & Psychographic Templates
+# JTBD & psychographic templates
 
 Structured templates for capturing and applying audience research insights.
 
@@ -184,7 +184,7 @@ Limbic Type: ______________ → Visual/Tonal Direction: ____
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing audience research output, verify:
 

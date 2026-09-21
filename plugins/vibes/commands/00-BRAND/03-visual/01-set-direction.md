@@ -4,13 +4,13 @@ argument-hint: Optional visual style preferences
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Set Visual Direction
+# Set visual direction
 
-You are helping a startup founder establish the visual direction for their brand. This creates the creative brief for designers — mood board direction, logo brief, and overall visual system guidelines.
+You are helping a startup founder establish the visual direction for their brand. This creates the creative brief for designers: mood board direction, logo brief, and overall visual system guidelines.
 
 **Note:** Claude provides detailed creative direction for visual identity, but not actual designs. The outputs are briefs for a designer or specifications for DIY implementation.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (optional):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -49,23 +49,23 @@ You are helping a startup founder establish the visual direction for their brand
 
 Optional visual preferences: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-visual-director agent.** Do not create visual direction yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-visual-director agent.** Do not create visual direction yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Help founder review and refine
 6. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -75,11 +75,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-visual-director agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-visual-director"` and this prompt:
 
@@ -93,40 +93,40 @@ Create the visual identity direction for this brand. ultrathink
 **Mission (HOW)**: [From purpose-mission-vision.md]
 **Vision (WHERE)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
+**Positioning**: [From positioning.md: the territory we claim]
 **Onlyness Statement**: [From positioning.md]
-**Tagline**: [From tagline.md — if available]
+**Tagline**: [From tagline.md: if available]
 
 ## BRAND PERSONALITY
 
-**Archetype**: [From archetype.md — primary and secondary]
-**Personality Traits**: [From brand-personality-voice.md — the 5 traits]
+**Archetype**: [From archetype.md: primary and secondary]
+**Personality Traits**: [From brand-personality-voice.md: the 5 traits]
 **Voice Characteristics**: [From brand-personality-voice.md]
-**Brand Essence**: [From brand-personality-voice.md — 2-3 words]
+**Brand Essence**: [From brand-personality-voice.md: 2-3 words]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**Audience Demographics**: [From audience research — age, location, etc.]
-**Visual Expectations**: [From audience research — what they expect visually]
-**Aspirational Brands**: [From audience research — brands they admire]
+**Who They Serve**: [From audience research: primary customer segment]
+**Audience Demographics**: [From audience research: age, location, etc.]
+**Visual Expectations**: [From audience research: what they expect visually]
+**Aspirational Brands**: [From audience research: brands they admire]
 
 ## COMPETITIVE LANDSCAPE
 
-**Competitor Visual Styles**: [From competitive audit — how competitors look]
-**Visual Patterns to Avoid**: [From competitive audit — overused approaches]
-**Visual White Space**: [From competitive audit — opportunities to differentiate]
+**Competitor Visual Styles**: [From competitive audit: how competitors look]
+**Visual Patterns to Avoid**: [From competitive audit: overused approaches]
+**Visual White Space**: [From competitive audit: opportunities to differentiate]
 
 ## PRACTICAL CONSTRAINTS
 
-**Design Budget**: [From founder brief — budget for design]
-**Existing Elements**: [From founder brief — any existing visuals]
-**Must-Haves/Must-Avoids**: [From founder brief — visual constraints]
-**Timeline**: [From founder brief — urgency]
+**Design Budget**: [From founder brief: budget for design]
+**Existing Elements**: [From founder brief: any existing visuals]
+**Must-Haves/Must-Avoids**: [From founder brief: visual constraints]
+**Timeline**: [From founder brief: urgency]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -136,29 +136,29 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Synthesize Brand Strategy
+### Phase 1: Synthesize brand strategy
 Extract from inputs:
 - Purpose → What the brand stands for (visual soul)
 - Values → Principles that guide visual choices
 - Positioning → Territory that visuals must claim
 - Archetype → Emotional foundation of visual expression
 - Personality → Traits that translate to visual qualities
-- Competitive landscape → What to differentiate from
+- Competitors → What to differentiate from
 
-### Phase 2: Commit to Words
+### Phase 2: Commit to words
 Before any visual exploration:
 - Define 3-5 brand adjectives
 - Create Visual Word Translation for each adjective
 - Create Single-Minded Proposition for visual identity
 - Identify the "3 words" that capture the overall aesthetic
 
-### Phase 3: Translate Strategy to Visual Language
+### Phase 3: Translate strategy to visual language
 For each personality trait and archetype quality:
 - Define visual expression using archetype visual language
 - Apply Visual Word Translation table
 - Create mood board direction with strategic rationale
 
-### Phase 4: Create Comprehensive Direction
+### Phase 4: Create detailed direction
 Build detailed briefs for each visual component:
 - Mood board direction (overall aesthetic, textures, emotional qualities)
 - Logo design brief (style, conceptual directions, technical requirements)
@@ -167,7 +167,7 @@ Build detailed briefs for each visual component:
 - Color strategy (palette structure, psychological rationale)
 - Supporting elements (icons, patterns, graphic devices)
 
-### Phase 5: Establish System Governance
+### Phase 5: Establish system governance
 - Define what stays constant vs. what can vary
 - Create hierarchy of visual elements
 - List application priorities
@@ -196,12 +196,12 @@ Deliver the complete visual identity direction using the Visual Identity Directi
 10. **Designer Briefing Summary** (assignment, success criteria, questions)
 ```
 
-## After Agent Returns
+## After agent returns
 
 Use AskUserQuestion to help founder review and select:
 
 "Here's your visual identity direction. How would you like to proceed?"
-- This direction feels right — let's proceed
+- This direction feels right: let's proceed
 - I'd like to explore a different aesthetic direction
 - I want to refine specific sections (logo, photography, etc.)
 - I have questions about the recommendations
@@ -209,14 +209,14 @@ Use AskUserQuestion to help founder review and select:
 
 ## Guidelines
 
-- **Visual direction must connect back to brand strategy** — every choice has rationale
-- **Be specific enough that a designer could work from this** — not vague descriptions
-- **Consider the founder's budget and constraints** — practical recommendations
-- **Balance aspiration with practicality** — aspirational but achievable
-- **Strategy drives design** — commit to words first, then visuals
-- **Mood boards before detail** — align on direction before detailed design
-- **Think in systems** — coherent visual language, not one-off designs
-- **Differentiate visually** — use competitive audit to find white space
+- **Visual direction must connect back to brand strategy**: every choice has rationale
+- **Be specific enough that a designer could work from this**: not vague descriptions
+- **Consider the founder's budget and constraints**: practical recommendations
+- **Balance aspiration with practicality**: aspirational but achievable
+- **Strategy drives design**: commit to words first, then visuals
+- **Mood boards before detail**: align on direction before detailed design
+- **Think in systems**: coherent visual language, not one-off designs
+- **Differentiate visually**: use competitive audit to find white space
 
 ## Output
 

@@ -3,7 +3,7 @@ name: jtbd-psychographic-research
 description: Use when researching or defining a target audience for brand work, building customer profiles from motivations rather than demographics, or explaining why customers switch. Keywords - Jobs to be Done, JTBD, functional emotional and social jobs, four forces, push pull anxiety habit, psychographics, limbic types, VALS segments, customer motivations.
 ---
 
-# JTBD & Psychographic Research Frameworks
+# JTBD & psychographic research frameworks
 
 Quick reference for Jobs-to-be-Done and psychographic frameworks that inform brand strategy. This skill auto-activates during brand work to ensure audience insights inform every phase.
 
@@ -11,7 +11,7 @@ Quick reference for Jobs-to-be-Done and psychographic frameworks that inform bra
 
 ---
 
-## The Three Job Types
+## The three job types
 
 Every "job" customers hire a product for has three dimensions:
 
@@ -52,7 +52,7 @@ Why customers switch (or don't):
 
 ---
 
-## Limbic Types (Hans-Georg Hausel)
+## Limbic types (Hans-Georg Hausel)
 
 Three emotional systems drive behavior:
 
@@ -66,7 +66,7 @@ Three emotional systems drive behavior:
 
 ---
 
-## VALS Segments
+## VALS segments
 
 Segments by motivation + resources:
 
@@ -80,7 +80,7 @@ Plus: **Innovators** (any motivation, high resources) and **Survivors** (securit
 
 ---
 
-## HBR Emotional Motivators
+## HBR emotional motivators
 
 Key drivers of customer value:
 
@@ -113,22 +113,22 @@ How audience insights inform brand decisions:
 
 ---
 
-## When to Apply These Frameworks
+## When to apply these frameworks
 
-### During Positioning
+### During positioning
 - Use Four Forces to identify switching dynamics
 - Map emotional territory based on Jobs
 
-### During Voice Development
+### During voice development
 - Match tone to Limbic profile
 - Reflect audience's actual language
 
-### During Messaging
+### During messaging
 - Address Push forces in problem messaging
 - Highlight Pull forces in benefits
 - Counter Anxiety forces with proof
 
-### During Visual Direction
+### During visual direction
 - Align aesthetic with Limbic type
 - Reflect social jobs in imagery
 
@@ -144,16 +144,16 @@ Read [reference/templates.md](reference/templates.md) when producing a deliverab
 
 ---
 
-## Deep Methodology
+## Deep methodology
 
-For comprehensive JTBD interview techniques, detailed framework application, and full output structure, the `brand-audience-researcher` agent contains 500+ lines of expert methodology.
+For JTBD interview techniques, detailed framework application, and full output structure, the `brand-audience-researcher` agent contains 500+ lines of expert methodology.
 
 ---
 
-## Key Principles
+## Key principles
 
 1. **Emotional > Functional**: Emotional jobs often drive decisions more than functional ones
 2. **All Three Dimensions**: Never skip emotional and social jobs
 3. **Capture the Forces**: Understanding push/pull/anxiety/habit is essential for positioning
-4. **Use Their Language**: Capture actual words people use — gold for brand voice
+4. **Use Their Language**: Capture actual words people use. They're gold for brand voice
 5. **Be the Only**: "Be THE ONLY, not the best." — Marty Neumeier

@@ -4,11 +4,11 @@ argument-hint: Optional tagline direction or style preference
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Create Tagline
+# Create tagline
 
 You are helping a startup founder create a memorable brand tagline. The tagline distills the brand's essence into a few powerful words that stick in customers' minds.
 
-## Context Loading
+## Context loading
 
 **Brand Name** (required):
 @docs/00-BRAND/00-DISCOVERY/04-brand-name.md
@@ -35,23 +35,23 @@ You are helping a startup founder create a memorable brand tagline. The tagline 
 
 Optional tagline direction: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-tagline-creator agent.** Do not create taglines yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-tagline-creator agent.** Do not create taglines yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Help founder select from options
 6. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -61,11 +61,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-tagline-creator agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-tagline-creator"` and this prompt:
 
@@ -79,30 +79,30 @@ Create brand tagline options. ultrathink
 **Mission (HOW)**: [From purpose-mission-vision.md]
 **Vision (WHERE)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
+**Positioning**: [From positioning.md: the territory we claim]
 **Onlyness Statement**: [From positioning.md]
 **Voice Traits**: [From brand-personality-voice.md]
-**Archetype**: [From archetype.md — primary and secondary]
+**Archetype**: [From archetype.md: primary and secondary]
 
 ## VALUE PROPOSITION
 
 **Core Value Proposition**: [From messaging-framework.md]
-**Key Benefits**: [From messaging-framework.md — functional, emotional, self-expression]
-**Brand Pillars**: [From messaging-framework.md — the key themes]
+**Key Benefits**: [From messaging-framework.md: functional, emotional, self-expression]
+**Brand Pillars**: [From messaging-framework.md: the key themes]
 
 ## FOUNDER CONTEXT
 
-**Founder's Vision**: [From founder brief — what they want to achieve]
-**Brands They Admire**: [From founder brief — tagline references]
+**Founder's Vision**: [From founder brief: what they want to achieve]
+**Brands They Admire**: [From founder brief: tagline references]
 
 ## COMPETITIVE LANDSCAPE
 
 **Competitor Taglines**: [From competitive audit if exists]
 **Tagline Differentiation Opportunity**: [What angles competitors don't own]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -112,34 +112,34 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Strategic Foundation
+### Phase 1: Strategic foundation
 Build the positioning foundation before writing:
 - Complete the Brand Mantra (3 words: Emotional + Descriptive + Function)
 - Write the Trueline (internal positioning truth)
 - Identify audience Awareness Level (Schwartz's 5 levels)
 - Define what the tagline must communicate, feel, and avoid
 
-### Phase 2: Competitive Analysis
-Research the tagline landscape:
+### Phase 2: Competitive analysis
+Research the taglines in this category:
 - Analyze competitors' taglines (type, approach, gaps)
 - Identify white space and differentiation opportunities
 - Note overused patterns in this category
 
-### Phase 3: Extensive Brainstorming
+### Phase 3: Extensive brainstorming
 Generate options systematically:
 - Apply the Distillation Method (USP → cut by half 3x → add device)
 - Explore each Tagline Type (Descriptive, Emotional, Aspirational, Imperative, Superlative, Interrogative, Provocative)
 - Apply Linguistic Devices (rhyme, alliteration, parallelism, sensory, rhythm)
 - Generate 50+ candidates before filtering
 
-### Phase 4: Shortlist and Evaluate
+### Phase 4: Shortlist and evaluate
 Filter to 5-7 finalists:
 - Apply the Onlyness Test to each
 - Run Anti-Pattern Check (11 common mistakes)
 - Score on Evaluation Matrix (Memorability, Strategic Fit, Emotional Impact, Distinctiveness, Longevity)
 - Apply AIDA and ABC tests to top candidates
 
-### Phase 5: Finalize and Test
+### Phase 5: Finalize and test
 Prepare recommendation:
 - Select top choice with detailed rationale
 - Identify runner-up with "when to use instead"
@@ -168,16 +168,16 @@ Deliver the complete tagline documentation using the Tagline Document Template f
 9. **Quick Reference Card** (one-page summary)
 ```
 
-## After Agent Returns
+## After agent returns
 
 Use AskUserQuestion to help founder select:
 
 "Here are the tagline options. Which resonates most with you?"
-- Option A: [tagline] — [brief rationale]
-- Option B: [tagline] — [brief rationale]
-- Option C: [tagline] — [brief rationale]
+- Option A: [tagline], [brief rationale]
+- Option B: [tagline], [brief rationale]
+- Option C: [tagline], [brief rationale]
 - I'd like refinements on one of these
-- None of these — try different angles
+- None of these: try different angles
 
 ## Guidelines
 
@@ -188,7 +188,7 @@ Use AskUserQuestion to help founder select:
 - **Check for ownership**: Could a competitor use this? Then it's not specific enough
 - **Consider longevity**: Will this date? Will it work in 10 years?
 - Great taglines are simple but not simplistic
-- They should work with AND without the brand name
+- They should work with and without the brand name
 - Avoid clichés and industry jargon
 - The "tattoo test": Would a customer feel proud to say it?
 

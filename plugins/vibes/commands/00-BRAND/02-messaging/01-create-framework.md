@@ -4,11 +4,11 @@ argument-hint: Optional messaging focus or priority
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Create Messaging Framework
+# Create messaging framework
 
-You are helping a startup founder create a comprehensive messaging framework. This establishes the value proposition, brand pillars, and key messages that ensure consistency across all communications.
+You are helping a startup founder create a complete messaging framework. This establishes the value proposition, brand pillars, and key messages that keep all communications consistent.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (optional):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -35,22 +35,22 @@ You are helping a startup founder create a comprehensive messaging framework. Th
 
 Optional messaging focus: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-messaging-architect agent.** Do not create the messaging framework yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-messaging-architect agent.** Do not create the messaging framework yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -60,11 +60,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-messaging-architect agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-messaging-architect"` and this prompt:
 
@@ -78,30 +78,30 @@ Create the brand messaging framework. ultrathink
 **Mission (HOW)**: [From purpose-mission-vision.md]
 **Vision (WHERE)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
+**Positioning**: [From positioning.md: the territory we claim]
 **Voice Traits**: [From brand-personality-voice.md]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**Customer Jobs**: [From audience research — functional, social, emotional jobs]
-**Customer Pains**: [From audience research — frustrations and obstacles]
-**Customer Gains**: [From audience research — desired outcomes]
-**Audience Language**: [From audience research — how they talk]
+**Who They Serve**: [From audience research: primary customer segment]
+**Customer Jobs**: [From audience research: functional, social, emotional jobs]
+**Customer Pains**: [From audience research: frustrations and obstacles]
+**Customer Gains**: [From audience research: desired outcomes]
+**Audience Language**: [From audience research: how they talk]
 
 ## FOUNDER CONTEXT
 
-**Founder's Vision**: [From founder brief — what they want to achieve]
-**Key Differentiators**: [From founder brief — what makes them unique]
+**Founder's Vision**: [From founder brief: what they want to achieve]
+**Key Differentiators**: [From founder brief: what makes them unique]
 
 ## COMPETITIVE LANDSCAPE
 
-**Competitor Messaging**: [From competitive audit if exists — how competitors message]
-**Messaging Gaps**: [From competitive audit — opportunities for differentiation]
+**Competitor Messaging**: [From competitive audit if exists: how competitors message]
+**Messaging Gaps**: [From competitive audit: opportunities for differentiation]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -111,14 +111,14 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Synthesize Brand Inputs
+### Phase 1: Synthesize brand inputs
 Analyze all inputs to understand:
 - How purpose, values, and positioning should inform messaging
 - What voice traits mean for how we communicate
 - What the audience cares about most (jobs, pains, gains)
 - Where competitive white space exists
 
-### Phase 2: Develop Value Proposition
+### Phase 2: Develop value proposition
 Apply value proposition frameworks:
 - **Value Proposition Canvas**: Map customer jobs/pains/gains to our offering
 - **Jobs-to-be-Done**: Identify the functional, social, emotional jobs
@@ -126,14 +126,14 @@ Apply value proposition frameworks:
 - **Geoffrey Moore Template**: Write the positioning statement
 - **The "Only" Test**: Complete the Onlyness statement
 
-### Phase 3: Define Brand Pillars
+### Phase 3: Define brand pillars
 Create 3-5 messaging pillars:
 - Each pillar with theme, core message, supporting messages
 - Each pillar with proof points (rational, emotional, visual)
 - Map how pillars support the value proposition
 - Define usage guidance for each pillar
 
-### Phase 4: Build Messaging Architecture
+### Phase 4: Build messaging architecture
 Construct the complete messaging system:
 - **Messaging House**: Roof (value prop), Pillars, Foundation
 - **Messaging Hierarchy**: Primary → Secondary → Tertiary
@@ -141,7 +141,7 @@ Construct the complete messaging system:
 - **Messages by Audience**: Adapt for different segments
 - **Messages by Touchpoint**: Website, sales, social, email, etc.
 
-### Phase 5: Validate and Test
+### Phase 5: Validate and test
 Run quality checks:
 - **MECLABS Criteria**: Appeal, Exclusivity, Clarity, Credibility
 - **The "Only" Test**: Can only we claim this?
@@ -154,7 +154,7 @@ Run quality checks:
 - **Structured reasoning**: Systematically build from value proposition through pillars to messaging hierarchy
 - **AskUserQuestion**: Validate value proposition resonates, get input on pillar priorities, confirm messaging tone
 - **WebSearch**: Research competitor landing pages and messaging patterns, find industry messaging examples
-- **WebFetch**: Read competitor websites — analyze their value propositions, messaging pillars, and proof points for differentiation opportunities
+- **WebFetch**: Read competitor websites to analyze their value propositions, messaging pillars, and proof points for differentiation opportunities
 
 ## OUTPUT REQUIREMENTS
 

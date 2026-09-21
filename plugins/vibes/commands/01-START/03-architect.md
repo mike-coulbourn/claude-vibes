@@ -4,11 +4,11 @@ argument-hint: Optional specific areas to focus on
 allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
-# Architecture Phase
+# Architecture phase
 
 You are helping a vibe coder design the technical foundation for their project. This phase translates the scope into concrete technical decisions that will guide implementation.
 
-## Project Context
+## Project context
 
 **Optional focus areas:** $ARGUMENTS
 
@@ -19,26 +19,26 @@ You are helping a vibe coder design the technical foundation for their project. 
 
 **Check what loaded above:** If discovery and scope content appear, build on them. If nothing loaded, ask the user to describe their project or suggest running earlier START commands first.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
-You do the heavy lifting on technical decisions. The user describes what they want; you figure out HOW to build it and explain the options in plain language. Make technical decisions accessible—the user doesn't need to understand HOW things work technically, just WHAT choices mean for their product.
+You do the heavy lifting on technical decisions. The user describes what they want; you figure out how to build it and explain the options in plain language. Make technical decisions accessible. The user doesn't need to understand how things work technically, only what those choices mean for their product.
 
-**CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't do complex technical research yourself—delegate to specialists while you gather context from the user.
+**You orchestrate specialized agents while having parallel conversations.** Don't do complex technical research yourself. Delegate to specialists while you gather context from the user.
 
 **Think step by step (ultrathink)** for any complex reasoning, technical tradeoff analysis, or architectural decisions. This ensures systematic, thorough thinking. Ultrathink through technical choices before presenting conclusions.
 
-## How to Communicate
+## How to communicate
 
-- Use AskUserQuestion for every decision—present options with plain language tradeoffs
+- Use AskUserQuestion for every decision, and present options with plain language tradeoffs
 - Lead with recommendations: "I'd suggest X because [plain language reason]. Does that work?"
 - Translate all technical concepts immediately: "database" = "where your app stores information"
 - Flag decisions that are hard to change later so the user knows they matter
 
-## Architecture Process
+## Architecture process
 
-### 1. Context Verification (REQUIRED)
+### 1. Context verification (required)
 
 If the discovery and scope documents exist, summarize the key insights:
 - Problem being solved
@@ -67,7 +67,7 @@ If docs don't exist (common when using claude-vibes on an existing project), use
 
 Then proceed with architecture design based on the user's answers.
 
-### 2. Project Structure Decision (REQUIRED)
+### 2. Project structure decision (required)
 
 Before diving into technical details, determine how the codebase will be organized.
 
@@ -75,12 +75,12 @@ Before diving into technical details, determine how the codebase will be organiz
 ```
 Question: "How do you want to organize your codebase?
 
-Based on your project scope, I'd recommend [X] because [reason — consider team size, deployment needs, complexity]."
+Based on your project scope, I'd recommend [X] because [reason, considering team size, deployment needs, complexity]."
 Options:
-- Monorepo — frontend and backend together (recommended for small teams)
-- Separate repos — frontend and backend in different repositories
-- Frontend only — using a backend-as-a-service (Supabase, Firebase, Xano, etc.)
-- I'm not sure — help me decide
+- Monorepo: frontend and backend together (recommended for small teams)
+- Separate repos: frontend and backend in different repositories
+- Frontend only: using a backend-as-a-service (Supabase, Firebase, Xano, etc.)
+- I'm not sure: help me decide
 ```
 
 **Recommendation logic:**
@@ -88,7 +88,7 @@ Options:
 - **Separate repos**: Better for larger teams, different deployment cycles, or when frontend/backend use very different tech stacks.
 - **Frontend only + BaaS**: Great for MVPs, reduces backend complexity, lets you focus on user experience.
 
-### 3. Frontend Approach & Design Status (REQUIRED)
+### 3. Frontend approach and design status (required)
 
 Understanding the frontend approach ensures architecture supports it properly.
 
@@ -99,18 +99,18 @@ Options:
 - Traditional coded frontend (React, Vue, Next.js, etc.)
 - Nocode/low-code platform (Lovable, v0, Webflow, Framer, etc.)
 - AI-generated UI that I'll customize
-- Hybrid — nocode prototype, then coded version
-- No frontend — this is an API/backend-only project
+- Hybrid: nocode prototype, then coded version
+- No frontend: this is an API/backend-only project
 ```
 
 **Follow up on design status:**
 ```
 Question: "What's the current status of your UI/UX design?"
 Options:
-- Complete — ready to build from (Figma, Sketch, mockups, etc.)
-- In progress — still being refined
-- Not started — will design after architecture
-- No formal design — building/designing as I go
+- Complete: ready to build from (Figma, Sketch, mockups, etc.)
+- In progress: still being refined
+- Not started: will design after architecture
+- No formal design: building/designing as I go
 ```
 
 **Workflow implications based on answers:**
@@ -128,9 +128,9 @@ Options:
 ```
 Question: "Design decisions often affect frontend architecture. I'd recommend:
 
-1. **Proceed with backend architecture now** — frontend architecture when design is ready
-2. **Pause and finalize design first** — then do full architecture together
-3. **Continue with full architecture** — accept some frontend decisions may change
+1. **Proceed with backend architecture now**: frontend architecture when design is ready
+2. **Pause and finalize design first**: then do full architecture together
+3. **Continue with full architecture**: accept some frontend decisions may change
 
 What works best for your timeline?"
 Options:
@@ -148,9 +148,9 @@ Options:
 - When frontend work should be sequenced
 - What backend needs to expose for frontend integration
 
-### 4. Data Model Design (REQUIRED - Synchronous)
+### 4. Data model design (required - synchronous)
 
-**You MUST use the Agent tool to launch the data-modeler agent.** The data model is foundational—other decisions depend on it, so this runs synchronously (NOT in background).
+**Use the Agent tool to launch the data-modeler agent.** The data model is foundational, and other decisions depend on it, so this runs synchronously, not in the background.
 
 ```
 Agent tool:
@@ -160,9 +160,9 @@ Agent tool:
   Design all entities (the 'things' the app tracks), their attributes, and relationships. Explain everything in plain language a non-technical person can understand.
 
   **Connect to user jobs:**
-  - Which entities directly serve functional jobs (what users need to DO)?
-  - Which support emotional jobs (how users want to FEEL)?
-  - Which enable social jobs (how users want to be SEEN)?
+  - Which entities directly serve functional jobs (what users need to do)?
+  - Which support emotional jobs (how users want to feel)?
+  - Which enable social jobs (how users want to be seen)?
 
   **Consider ownership early:**
   - Which data belongs to specific users (private)?
@@ -175,14 +175,14 @@ Agent tool:
   - If entities could be structured multiple ways, ask which makes more sense for their use case
   - If you're unsure about relationships between things, ask the user to clarify
   - If you see data that could be user-specific vs. shared, ask which they intend
-  - Never assume business rules—clarify how things should relate to each other"
+  - Never assume business rules. Clarify how things should relate to each other"
 ```
 
 Walk through the data design with the user. Confirm using AskUserQuestion:
 - "Your app needs to track [entities]. Does this capture everything?"
 - "Should [entity] belong to a specific user, or be shared by everyone?"
 
-**Direction Checkpoint:**
+**Direction checkpoint:**
 ```
 Question: "The data model is the foundation everything else builds on. Before we continue:
 
@@ -195,7 +195,7 @@ Options:
 - I have questions about relationships
 ```
 
-### 5. Technical Research (BACKGROUND) + User Discussion (PARALLEL)
+### 5. Technical research (background) and user discussion (parallel)
 
 **Launch tech-advisor in background to research technical options:**
 
@@ -228,12 +228,12 @@ Agent tool:
   - Multiple approaches are equally valid
   - You need to understand performance vs. simplicity priorities
   - Integration choices have significant cost implications
-  - Never assume technical preferences—clarify what matters most"
+  - Never assume technical preferences. Clarify what matters most"
 ```
 
 **Immediately continue to gather user context while the agent researches.**
 
-### 6. User & Authentication (while agent researches)
+### 6. User and authentication (while agent researches)
 
 Determine auth requirements using AskUserQuestion:
 - Does your app need user accounts?
@@ -243,7 +243,7 @@ Determine auth requirements using AskUserQuestion:
 
 Explain each option in plain language with tradeoffs.
 
-**Auth Checkpoint:**
+**Auth checkpoint:**
 ```
 Question: "Based on what you've told me, here's my recommendation for authentication:
 
@@ -256,7 +256,7 @@ Options:
 - What are the other options?
 ```
 
-### 7. External Integrations (while agent researches)
+### 7. External integrations (while agent researches)
 
 Identify what outside services the app needs:
 - Payments (taking money from users)
@@ -268,7 +268,7 @@ Use AskUserQuestion to prioritize:
 - "Which of these are must-haves for launch?"
 - "Which can wait until you have users?"
 
-### 8. Retrieve Research Results
+### 8. Retrieve research results
 
 Use TaskOutput to get results from the tech-advisor:
 ```
@@ -282,19 +282,19 @@ Present the research findings to the user:
 - Synthesize with the context gathered during conversation
 - Resolve any conflicts between research and user preferences
 
-### 9. Key Technical Decisions
+### 9. Key technical decisions
 
 Based on combined research and conversation, finalize key decisions:
 
-**Data Ownership** (who can see/edit what)
+**Data ownership** (who can see/edit what)
 - Is data private to each user?
 - Is some data shared or public?
 
-**Real-time vs. Refresh** (how fresh the data needs to be)
+**Real-time vs. refresh** (how fresh the data needs to be)
 - Does data need to update instantly? (like chat)
 - Or is updating when you refresh fine? (most apps)
 
-**Offline Support** (if internet goes away)
+**Offline support** (if internet goes away)
 - Does it need to work without internet?
 - What happens if connection drops mid-action?
 
@@ -302,36 +302,36 @@ Based on combined research and conversation, finalize key decisions:
 - "This one matters because changing it later would require..."
 - Mark these explicitly in the output
 
-### 10. Frontend Architecture (if applicable)
+### 10. Frontend architecture (if applicable)
 
 **Skip this section if:**
 - The user chose "No frontend" or "API-only project" in section 3
-- The user chose nocode/AI platform (Lovable, v0, etc.) — those platforms handle frontend architecture
+- The user chose nocode/AI platform (Lovable, v0, etc.), because those platforms handle frontend architecture
 - Design is not ready and user chose to defer frontend architecture
 
 **For coded frontends with design ready, cover these decisions:**
 
-**Component Architecture:**
+**Component architecture:**
 ```
 Question: "For your UI components, what approach do you prefer?"
 Options:
 - Use a component library (shadcn/ui, Radix, MUI, Chakra)
 - Build custom components from scratch
 - Start with a library, customize as needed (recommended)
-- I'm not sure — what do you recommend?
+- I'm not sure: what do you recommend?
 ```
 
-**State Management:**
+**State management:**
 ```
 Question: "How should your app manage shared data across screens?"
 Options:
-- Keep it simple — use built-in state (React Context, Vue reactivity)
+- Keep it simple: use built-in state (React Context, Vue reactivity)
 - Use a state library (Redux, Zustand, Pinia) for complex state
-- Server-first — fetch fresh data each time (React Query, SWR)
-- I'm not sure — what fits my app?
+- Server-first: fetch fresh data each time (React Query, SWR)
+- I'm not sure: what fits my app?
 ```
 
-**Styling Approach:**
+**Styling approach:**
 ```
 Question: "How do you want to style your app?"
 Options:
@@ -341,19 +341,19 @@ Options:
 - Whatever the component library uses
 ```
 
-**Rendering Strategy (for Next.js, Nuxt, etc.):**
+**Rendering strategy (for Next.js, Nuxt, etc.):**
 ```
 Question: "How should pages load? (This affects speed and SEO)"
 Options:
-- Server-rendered (SSR) — fresh data, good for SEO
-- Static (SSG) — fastest, but content doesn't change often
-- Client-rendered (CSR) — simpler, but slower initial load
-- Hybrid — different pages use different approaches (recommended)
+- Server-rendered (SSR): fresh data, good for SEO
+- Static (SSG): fastest, but content doesn't change often
+- Client-rendered (CSR): simpler, but slower initial load
+- Hybrid: different pages use different approaches (recommended)
 ```
 
 **Note these decisions for the roadmap.** Frontend architecture can be revisited during BUILD phase if design evolves.
 
-### 11. App Capabilities
+### 11. App capabilities
 
 Based on the data model and features, summarize what the app can do:
 - What actions can users take?
@@ -362,7 +362,7 @@ Based on the data model and features, summarize what the app can do:
 
 This becomes the blueprint for the build phase.
 
-### 12. Architecture Review (REQUIRED)
+### 12. Architecture review (required)
 
 **Launch plan-reviewer to validate the architecture:**
 
@@ -389,7 +389,7 @@ Agent tool:
   - If something is missing, ask how the user wants to handle it
   - If there are tradeoffs, present options and ask
   - If you find risks, explain in plain language and ask about priorities
-  - Never assume how to resolve concerns—clarify with the user
+  - Never assume how to resolve concerns. Clarify with the user
 
   Flag concerns in plain language and suggest how to address them."
 ```
@@ -398,13 +398,13 @@ Address any concerns raised before finalizing.
 
 ## Guidelines
 
-- Avoid jargon—say "saves information" not "persists to the data layer"
-- When presenting options, focus on what the USER experiences, not technical details
+- Avoid jargon. Say "saves information" not "persists to the data layer"
+- When presenting options, focus on what the user experiences, not technical details
 - It's OK to recommend the simpler option for MVP
 - Flag decisions that are hard to change: "This one matters because..."
-- Don't over-engineer—start simple, add complexity only when needed
+- Don't over-engineer. Start simple, and add complexity only when needed
 
-## Frameworks Reference
+## Frameworks reference
 
 The `jtbd-psychographic-research` skill provides frameworks that may auto-activate during this conversation:
 - Jobs-to-be-Done (connect data model to functional, emotional, social jobs)
@@ -420,51 +420,51 @@ When architecture feels complete:
 
 2. Save architecture summary to `docs/01-START/03-architect.md` with:
 
-   **Technical Summary** (2-3 sentences in plain language)
+   **Technical summary** (2-3 sentences in plain language)
 
-   **Project Structure:**
+   **Project structure:**
    - Codebase organization (monorepo, separate repos, frontend-only)
    - Rationale for the choice
 
-   **Frontend Approach & Design Status:**
+   **Frontend approach and design status:**
    - Frontend approach (coded, nocode, AI-generated, hybrid, none)
    - Design status and tool (if applicable)
    - When frontend architecture will be finalized (if deferred)
 
-   **Data Model:**
+   **Data model:**
    - Entities with plain-language descriptions
    - Relationships (how things connect)
    - Data ownership (who sees what)
    - JTBD connections (why each entity matters to users)
 
-   **Authentication & Authorization:**
+   **Authentication and authorization:**
    - Auth method chosen (with rationale)
    - User types/roles
    - Access control rules (plain language)
 
-   **External Integrations:**
+   **External integrations:**
    - MVP integrations (with priorities)
    - Future integrations (parking lot)
    - Each with: purpose, complexity, alternatives considered
 
-   **Key Technical Decisions:**
+   **Key technical decisions:**
    - Choices made (with rationale)
    - Decisions marked as "hard to change"
    - Scalability considerations
 
-   **API Surface** (what the app does):
+   **API surface** (what the app does):
    - Actions users can take
    - Information users can see
    - How features connect
 
-   **Frontend Architecture** (if applicable):
+   **Frontend architecture** (if applicable):
    - Component approach (library, custom, hybrid)
    - State management strategy
    - Styling approach
    - Rendering strategy (SSR, SSG, CSR, hybrid)
    - Or note: "Deferred until design is ready" / "Handled by nocode platform"
 
-   **Risks & Unknowns:**
+   **Risks and unknowns:**
    - Technical uncertainties
    - Integration dependencies
    - Scaling concerns

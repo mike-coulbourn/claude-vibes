@@ -4,11 +4,11 @@ argument-hint: Optional positioning direction or differentiation angle
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Define Positioning
+# Define positioning
 
 You are helping a startup founder claim distinct territory in the customer's mind. Using methodologies from Al Ries, Jack Trout, and Marty Neumeier's ZAG, you'll develop positioning that makes the brand the obvious choice for its audience.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (required):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -32,22 +32,22 @@ You are helping a startup founder claim distinct territory in the customer's min
 
 Optional positioning direction: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-positioning-strategist agent.** Do not create positioning yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-positioning-strategist agent.** Do not create positioning yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -57,11 +57,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-positioning-strategist agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-positioning-strategist"` and this prompt:
 
@@ -70,23 +70,23 @@ Develop the brand positioning strategy for this startup. ultrathink
 
 ## FOUNDER CONTEXT
 
-**Business**: [Extract from founder brief — what they do]
-**Unfair Advantage**: [From founder brief — unique strengths, assets, expertise]
-**Founder Motivation**: [Why they started — what drives them]
+**Business**: [Extract from founder brief: what they do]
+**Unfair Advantage**: [From founder brief: unique strengths, assets, expertise]
+**Founder Motivation**: [Why they started: what drives them]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**What Customers Value**: [From audience research — key values, priorities]
-**Emotional Jobs**: [From audience research — how customers want to feel]
-**Functional Jobs**: [From audience research — what they need to accomplish]
+**Who They Serve**: [From audience research: primary customer segment]
+**What Customers Value**: [From audience research: key values, priorities]
+**Emotional Jobs**: [From audience research: how customers want to feel]
+**Functional Jobs**: [From audience research: what they need to accomplish]
 
 ## COMPETITIVE LANDSCAPE
 
-**Market Leader**: [From competitive audit — who dominates, what they own]
-**Key Competitors**: [From competitive audit — other players and their positions]
+**Market Leader**: [From competitive audit: who dominates, what they own]
+**Key Competitors**: [From competitive audit: other players and their positions]
 **What's Already Taken**: [Positions competitors have claimed]
-**White Space**: [From competitive audit — gaps and opportunities]
+**White Space**: [From competitive audit: gaps and opportunities]
 
 ## STRATEGIC FOUNDATION
 
@@ -96,11 +96,11 @@ Develop the brand positioning strategy for this startup. ultrathink
 ## BRAND NAME
 
 **Name**: [From brand name document]
-**Name Rationale**: [Why this name — may inform positioning expression]
+**Name Rationale**: [Why this name, and how it may inform positioning expression]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -110,22 +110,22 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Assess Current Position
+### Phase 1: Assess current position
 - What word (if any) does this brand currently own?
 - Where does it stand relative to competitors?
 - What perceptions already exist in prospects' minds?
 
-### Phase 2: Analyze the Landscape
-Map the competitive positioning battlefield:
+### Phase 2: Analyze the landscape
+Map where each competitor is positioned:
 - Who is the market leader? What position do they own?
 - What positions do other competitors claim?
 - What does the target audience care about most?
 - What territory is unclaimed?
 
-### Phase 3: Find the White Space
+### Phase 3: Find the white space
 Use multiple lenses to find positioning opportunities:
 - **Cherchez le Creneau**: Analyze all 7 creneau types (size, price, sex, timing, age, distribution, heavy-user)
-- **Positioning Map**: Plot competitors on two meaningful axes — find empty quadrants
+- **Positioning Map**: Plot competitors on two meaningful axes to find empty quadrants
 - **Ladder Analysis**: Which ladder to climb? Or should we create a new one?
 - **ZAG Opportunity**: What do all competitors do? What's the radical opposite?
 
@@ -136,13 +136,13 @@ Reference the Immutable Laws of Marketing:
 - **Law of Opposite**: If we're #2, how do we position against #1?
 - **Law of Sacrifice**: What must we give up to own our position?
 
-### Phase 5: Craft Positioning Statements
+### Phase 5: Craft positioning statements
 Develop the core positioning artifacts:
 - **Onliness Statement** (all 5 W's: WHAT, HOW, WHO, WHERE, WHY)
 - **Positioning Statement** (For [target], [Brand] is the [category] that [benefit] because [reason])
-- **Trueline** (the one true thing — bridge from strategy to creativity)
+- **Trueline** (the one true thing, the bridge from strategy to creativity)
 
-### Phase 6: Validate and Stress-Test
+### Phase 6: Validate and stress-test
 Run rigorous validation:
 - **Onliness Test**: Can we honestly use the word "only"?
 - **Simplicity Test**: Can we explain it in one sentence?
@@ -156,7 +156,7 @@ Run rigorous validation:
 - **Structured reasoning**: Rigorously map competitive positions, analyze all 7 creneau types, and systematically apply the 22 Laws
 - **AskUserQuestion**: Validate positioning dimensions feel right, confirm territory resonates, get input on trade-offs
 - **WebSearch**: Research competitor homepages, positioning statements, and case studies of successful positioning
-- **WebFetch**: Read competitor homepages and "About" pages in full — understand their complete positioning narrative and identify white space
+- **WebFetch**: Read competitor homepages and "About" pages in full to understand their complete positioning narrative and identify white space
 
 ## OUTPUT REQUIREMENTS
 
@@ -180,12 +180,12 @@ Deliver the complete positioning strategy using the Positioning Documentation Te
 
 ## Guidelines
 
-- **Position against the status quo, not just competitors** — the best positioning creates a new category
-- **Own one word** — if you can't fill in the blanks clearly, the positioning isn't sharp enough
-- **The "ONLY" must be literally true** — if you can't say "only," you don't have a zag
-- **Sacrifice is the point** — real positioning requires giving something up
-- **Think like the customer** — positioning exists in their mind, not yours
-- **Reference the Laws** — use the 22 Laws as a checklist
+- **Position against the status quo, not just competitors**: the best positioning creates a new category
+- **Own one word**: if you can't fill in the blanks clearly, the positioning isn't sharp enough
+- **The "ONLY" must be literally true**: if you can't say "only," you don't have a zag
+- **Sacrifice is the point**: real positioning requires giving something up
+- **Think like the customer**: positioning exists in their mind, not yours
+- **Reference the Laws**: use the 22 Laws as a checklist
 
 ## Output
 

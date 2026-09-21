@@ -3,38 +3,38 @@ description: Deep research on any topic using expert knowledge extraction
 argument-hint: Topic or question to research
 ---
 
-# Deep Research
+# Deep research
 
-You are helping a user conduct deep research on a topic. Your goal is to gather comprehensive expert knowledge that enables informed decision-making.
+You are helping a user conduct deep research on a topic. Your goal is to gather enough expert knowledge for the user to decide with confidence.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the research process:
 1. Understand what the user really needs
-2. Clarify context to ensure the research is targeted
+2. Clarify context so the research stays targeted
 3. Launch the deep-researcher agent with rich context
 4. Save the research to a file for reference
 5. Deliver actionable findings
 
-## Output Location
+## Output location
 
 All research reports should be saved to: `research/[topic-area]/`
 
 **Before creating any directory:**
-1. Check if `research/` exists — if not, create it
+1. Check if `research/` exists, and create it if not
 2. List existing subdirectories in `research/`
 3. Use an existing subdirectory if one matches the topic area
 4. Only create a new subdirectory if no appropriate one exists
 
 **Subdirectory examples** (create as needed, check first):
-- `branding/` — brand identity, positioning, strategy
-- `marketing/` — marketing strategies, channels, tactics
-- `tech/` — technologies, frameworks, architectures
-- `business/` — business models, pricing, operations
-- `design/` — design principles, UX, visual design
-- `industry/` — industry-specific research
+- `branding/`: brand identity, positioning, strategy
+- `marketing/`: marketing strategies, channels, tactics
+- `tech/`: technologies, frameworks, architectures
+- `business/`: business models, pricing, operations
+- `design/`: design principles, UX, visual design
+- `industry/`: industry-specific research
 
 **File naming convention:**
 - `[descriptive-topic].md`
@@ -43,45 +43,45 @@ All research reports should be saved to: `research/[topic-area]/`
 
 ## Process
 
-### Step 1: Analyze the Request
+### Step 1: Analyze the request
 
 **Think step by step** to analyze the user's research request:
 
 - What topic/question are they researching?
 - What context is missing that would affect research quality?
-- What's likely the PURPOSE behind this research?
+- What's likely the purpose behind this research?
 - What clarifying questions would most improve the output?
 
 Think through: "What do I need to know to make this research maximally useful?"
 
-### Step 2: Gather Critical Context (AskUserQuestion)
+### Step 2: Gather critical context (AskUserQuestion)
 
 **Use the AskUserQuestion tool** to clarify the most important unknowns.
 
 **Essential questions to consider:**
 
-**Purpose** — Why do they need this research?
+**Purpose**: Why do they need this research?
 - Learning/understanding a new topic
 - Making a specific decision
 - Implementing something (need actionable guidance)
 - Validating an existing approach
 
-**Depth** — How comprehensive should it be?
+**Depth**: How deep should it go?
 - Quick overview (key concepts, major experts)
 - Moderate depth (methodologies, best practices)
 - Exhaustive (everything top experts know and do)
 
-**Application** — What will they DO with this research?
+**Application**: What will they do with this research?
 - Understanding this helps the agent tailor the output format and focus
 
-**Specific angles** — Any particular aspects to focus on?
+**Specific angles**: Any particular aspects to focus on?
 - Certain methodologies, specific experts, particular use cases
 
 **Smart clarification principles:**
-- Don't overwhelm with questions — ask the 2-3 most critical ones
+- Don't overwhelm with questions: ask the 2-3 most critical ones
 - If the request is clear and specific, fewer questions needed
 - If vague or broad, more clarification helps
-- Always explain WHY you're asking (helps user give better answers)
+- Always explain why you're asking (helps user give better answers)
 
 **Example AskUserQuestion usage:**
 
@@ -95,24 +95,24 @@ Question 1: "What will you use this research for?"
 - Other
 
 Question 2: "How deep should I go?"
-- Quick overview — key concepts and top experts
-- Moderate — methodologies and best practices included
-- Exhaustive — comprehensive expert knowledge extraction
+- Quick overview: key concepts and top experts
+- Moderate: methodologies and best practices included
+- Exhaustive: full expert knowledge extraction
 ```
 
-### Step 3: Launch the Deep Researcher Agent
+### Step 3: Launch the Deep Researcher agent
 
 **Use the Agent tool** to launch the `deep-researcher` agent (`subagent_type: "claude-vibes:TOOLKIT:deep-researcher"`) with an enriched prompt.
 
 Your prompt to the agent should include:
 - The original research topic/question
-- The PURPOSE (from clarification)
-- The desired DEPTH
-- How the research will be USED
-- Any SPECIFIC ANGLES or focus areas
-- Any CONSTRAINTS (time-sensitivity, specific sources to include/exclude)
+- The purpose (from clarification)
+- The desired depth
+- How the research will be used
+- Any specific angles or focus areas
+- Any constraints (time-sensitivity, specific sources to include/exclude)
 
-**Example Task prompt:**
+**Example task prompt:**
 
 ```
 Research [TOPIC].
@@ -123,12 +123,12 @@ Context:
 - Application: This research will be used to [specific use]
 - Focus areas: [Any specific aspects to emphasize]
 
-Deliver comprehensive findings following your standard research report format. Focus especially on [key areas based on user's purpose].
+Deliver thorough findings following your standard research report format. Focus especially on [key areas based on user's purpose].
 ```
 
-**Important:** The more context you provide in the prompt, the better the research output will be. Don't launch with just the topic — include everything you learned from clarification.
+**Important:** The more context you provide in the prompt, the better the research output will be. Don't launch with just the topic, and include everything you learned from clarification.
 
-### Step 4: Save to File
+### Step 4: Save to file
 
 **Before saving, check existing directories:**
 ```bash
@@ -153,7 +153,7 @@ The file should contain the full research report as returned by the agent, with 
 [Full research report from the agent]
 ```
 
-### Step 5: Deliver Results
+### Step 5: Deliver results
 
 Once the research is saved:
 - Tell the user where the file was saved
@@ -166,15 +166,15 @@ Based on your goal of [purpose], I'd highlight [key findings]. Want me to go dee
 
 ## Guidelines
 
-- **Front-load context gathering** — Better to ask questions upfront than get unfocused research
+- **Front-load context gathering**: Better to ask questions upfront than get unfocused research
 - **Think step by step** to plan your clarifying questions strategically
-- **Tailor questions to the topic** — Technical topics may need different clarification than creative topics
-- **Respect user's time** — If they give short answers, don't over-ask; make reasonable assumptions
-- **Always launch the agent** — Don't try to do the research yourself; use the deep-researcher agent
-- **Check existing directories** — Never create duplicate folders; use what exists
-- **Always save to file** — Research should persist in the appropriate `research/` subdirectory
+- **Tailor questions to the topic**: Technical topics may need different clarification than creative topics
+- **Respect user's time**: If they give short answers, don't over-ask; make reasonable assumptions
+- **Always launch the agent**: Don't try to do the research yourself; use the deep-researcher agent
+- **Check existing directories**: Never create duplicate folders; use what exists
+- **Always save to file**: Research should persist in the appropriate `research/` subdirectory
 
-## Research Topic
+## Research topic
 
 User's research request: $ARGUMENTS
 

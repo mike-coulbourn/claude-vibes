@@ -4,13 +4,13 @@ argument-hint: Optional color preferences or constraints
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Choose Brand Colors
+# Choose brand colors
 
-You are helping a startup founder develop their brand color palette. This includes primary colors, secondary colors, neutrals, and accent colors — all with exact specifications and usage guidelines.
+You are helping a startup founder develop their brand color palette. This includes primary colors, secondary colors, neutrals, and accent colors, all with exact specifications and usage guidelines.
 
-**Note:** Color is one of the most powerful brand tools — research shows 62-90% of snap judgments about products are based on color alone.
+**Note:** Color shapes first impressions: 62-90% of snap judgments about products are based on color alone.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (optional):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -46,23 +46,23 @@ You are helping a startup founder develop their brand color palette. This includ
 
 Optional color preferences: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-color-strategist agent.** Do not create color palettes yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-color-strategist agent.** Do not create color palettes yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Help founder review and validate
 6. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -72,11 +72,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-color-strategist agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-color-strategist"` and this prompt:
 
@@ -90,44 +90,44 @@ Develop the brand color palette. ultrathink
 **Mission (HOW)**: [From purpose-mission-vision.md]
 **Vision (WHERE)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
+**Positioning**: [From positioning.md: the territory we claim]
 **Onlyness Statement**: [From positioning.md]
 
 ## BRAND PERSONALITY
 
-**Archetype**: [From archetype.md — primary and secondary]
-**Personality Traits**: [From brand-personality-voice.md — the 5 traits]
-**Brand Essence**: [From brand-personality-voice.md — 2-3 words]
+**Archetype**: [From archetype.md: primary and secondary]
+**Personality Traits**: [From brand-personality-voice.md: the 5 traits]
+**Brand Essence**: [From brand-personality-voice.md: 2-3 words]
 
 ## VISUAL DIRECTION
 
-**Visual Adjectives**: [From visual-direction.md — the 3-5 visual words]
-**Mood Board Direction**: [From visual-direction.md — overall aesthetic]
-**Visual SMP**: [From visual-direction.md — single-minded proposition]
+**Visual Adjectives**: [From visual-direction.md: the 3-5 visual words]
+**Mood Board Direction**: [From visual-direction.md: overall aesthetic]
+**Visual SMP**: [From visual-direction.md: single-minded proposition]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**Audience Demographics**: [From audience research — age, location, etc.]
-**Color Expectations**: [From audience research — what they expect visually]
-**Aspirational Brands**: [From audience research — brands they admire]
+**Who They Serve**: [From audience research: primary customer segment]
+**Audience Demographics**: [From audience research: age, location, etc.]
+**Color Expectations**: [From audience research: what they expect visually]
+**Aspirational Brands**: [From audience research: brands they admire]
 
 ## COMPETITIVE LANDSCAPE
 
-**Competitor Colors**: [From competitive audit — what colors competitors use]
-**Dominant Category Colors**: [From competitive audit — industry patterns]
-**Color White Space**: [From competitive audit — opportunities to differentiate]
+**Competitor Colors**: [From competitive audit: what colors competitors use]
+**Dominant Category Colors**: [From competitive audit: industry patterns]
+**Color White Space**: [From competitive audit: opportunities to differentiate]
 
 ## PRACTICAL CONSTRAINTS
 
-**Design Budget**: [From founder brief — budget for design]
-**Existing Elements**: [From founder brief — any existing colors/visuals]
-**Color Preferences/Avoids**: [From founder brief or $ARGUMENTS — constraints]
-**Target Markets**: [From founder brief — cultural considerations needed]
+**Design Budget**: [From founder brief: budget for design]
+**Existing Elements**: [From founder brief: any existing colors/visuals]
+**Color Preferences/Avoids**: [From founder brief or $ARGUMENTS: constraints]
+**Target Markets**: [From founder brief: cultural considerations needed]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -137,7 +137,7 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Analyze Brand Strategy
+### Phase 1: Analyze brand strategy
 Extract from inputs:
 - Archetype → What colors align with this emotional territory
 - Personality → How traits translate to color qualities
@@ -145,21 +145,21 @@ Extract from inputs:
 - Audience → Color preferences of target segment
 - Industry → Conventions to follow or intentionally break
 
-### Phase 2: Audit Competitive Color Landscape
+### Phase 2: Audit competitive color landscape
 Apply Blue Ocean Color Strategy:
 1. Identify dominant colors in category
-2. Find underutilized colors (white space)
+2. Find underused colors (white space)
 3. Identify colors to avoid (owned by competitors)
 4. Assess: Can we own alternative territory credibly?
 
-### Phase 3: Apply Color Psychology
+### Phase 3: Apply color psychology
 For each potential color:
 - Check Appropriateness Principle (fit over preference)
 - Apply Color-in-Context Theory (context determines meaning)
 - Verify cultural implications for target markets
 - Connect to archetype color framework
 
-### Phase 4: Build the Palette
+### Phase 4: Build the palette
 Using color harmony systems:
 - Select primary color based on strategy
 - Add secondaries using harmony schemes (complementary, analogous, etc.)
@@ -168,13 +168,13 @@ Using color harmony systems:
 - Apply 60-30-10 Rule for proportions
 - Keep total to 3-5 core colors
 
-### Phase 5: Validate Accessibility
+### Phase 5: Validate accessibility
 - Test WCAG contrast ratios (4.5:1 normal text, 3:1 large)
 - Simulate colorblindness (protanopia, deuteranopia, tritanopia)
 - Ensure color is never the only indicator
 - Document accessible alternatives
 
-### Phase 6: Document Completely
+### Phase 6: Document completely
 Specify every color in:
 - HEX (web)
 - RGB (digital)
@@ -204,12 +204,12 @@ Deliver the complete color palette using the Color Palette Documentation Templat
 10. **Quick Reference** (core palette table, CSS custom properties)
 ```
 
-## After Agent Returns
+## After agent returns
 
 Use AskUserQuestion to help founder review and validate:
 
 "Here's your brand color palette. How would you like to proceed?"
-- This palette feels right — let's proceed
+- This palette feels right: let's proceed
 - I'd like to explore different primary color options
 - I want to refine specific colors (primary, secondary, accent)
 - I have questions about the color choices
@@ -218,14 +218,14 @@ Use AskUserQuestion to help founder review and validate:
 
 ## Guidelines
 
-- **Colors must differentiate from competitors** — Blue Ocean thinking
-- **Include accessibility considerations** — WCAG compliance is non-negotiable
-- **Provide exact values** — no "blue-ish" vagueness; HEX, RGB, CMYK, Pantone
-- **Consider how colors work across digital and print** — test CMYK conversion
-- **Account for culture** — research color meanings in target markets
-- **Appropriateness over preference** — color must "fit" the brand context
-- **Keep it simple** — 3-5 core colors maximum; simplicity scales
-- **Connect every choice to strategy** — rationale for each color
+- **Colors must differentiate from competitors**: Blue Ocean thinking
+- **Include accessibility considerations**: WCAG compliance is non-negotiable
+- **Provide exact values**: no "blue-ish" vagueness; HEX, RGB, CMYK, Pantone
+- **Consider how colors work across digital and print**: test CMYK conversion
+- **Account for culture**: research color meanings in target markets
+- **Appropriateness over preference**: color must "fit" the brand context
+- **Keep it simple**: 3-5 core colors maximum; simplicity scales
+- **Connect every choice to strategy**: rationale for each color
 
 ## Output
 

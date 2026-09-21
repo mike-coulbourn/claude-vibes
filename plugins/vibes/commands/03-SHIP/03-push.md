@@ -3,23 +3,23 @@ description: Commit your changes and push to the remote branch
 argument-hint: Optional commit message if changes are uncommitted
 ---
 
-# Commit and Push
+# Commit and push
 
 You are helping a vibe coder commit and push their work to the remote repository. This shares the work with the team (or just backs it up remotely).
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
-You do the heavy lifting. Handle the git operations, deal with any issues that arise, and report clearly what happened. The user doesn't need to remember git commands—you execute them.
+You do the heavy lifting. Handle the git operations, deal with any issues that arise, and report clearly what happened. The user doesn't need to remember git commands, so you execute them.
 
-## How to Communicate
+## How to communicate
 
 - Explain each step in plain language
 - Handle errors gracefully with clear explanations
 - Report success with useful information (branch, commit count)
 
-## Context Files (Conditional)
+## Context files (conditional)
 
 **Only check LOGS.json if it has uncommitted changes.**
 
@@ -30,18 +30,18 @@ git status --porcelain -- LOGS.json docs/LOGS.json 2>/dev/null
 
 **If output is non-empty** (LOGS.json has uncommitted changes), read it to inform the commit message if a commit is needed.
 
-**If output is empty**, skip reading LOGS.json—any context it contains is from a previous session.
+**If output is empty**, skip reading LOGS.json, because any context it contains is from a previous session.
 
-## Push Process
+## Push process
 
-### 1. Check Current State
+### 1. Check current state
 
 Run `git status` to understand:
 - Are there uncommitted changes?
 - What branch are we on?
 - Are we ahead of the remote?
 
-### 2. Handle Uncommitted Changes
+### 2. Handle uncommitted changes
 
 **If uncommitted changes exist:**
 
@@ -55,7 +55,7 @@ Generate a commit message (or use $ARGUMENTS if provided):
 - Show the generated message
 - Execute the commit
 
-### 3. Check Remote Tracking
+### 3. Check remote tracking
 
 Verify the branch has an upstream:
 ```bash
@@ -70,7 +70,7 @@ git push -u origin <current-branch>
 
 "This branch wasn't connected to the remote yet. I've set it up to track origin/<branch>."
 
-### 4. Push to Remote
+### 4. Push to remote
 
 Execute the push:
 ```bash
@@ -85,12 +85,12 @@ git push
 - Then push again
 
 **Permission denied:**
-"Couldn't push—you might not have permission to this repository, or need to authenticate."
+"Couldn't push. You might not have permission to this repository, or you need to authenticate."
 
 **Branch protection:**
 "This branch is protected and can't be pushed to directly. Consider using `/04-pr` to create a pull request instead."
 
-### 5. Report Success
+### 5. Report success
 
 "Pushed successfully!"
 - Branch name: `feature/user-auth`
@@ -107,14 +107,14 @@ git push
 - Never force push without explicit user approval
 - Report clear, actionable errors
 
-## Commit Message (If Needed)
+## Commit message (if needed)
 
 User-provided message: $ARGUMENTS
 
 If uncommitted changes exist and $ARGUMENTS is provided, use that message.
 If no message provided, generate one following the format in `/02-commit`.
 
-## Edge Cases
+## Edge cases
 
 **Detached HEAD:**
 "You're not on a branch right now. Let me help you create one."

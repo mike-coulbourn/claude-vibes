@@ -4,11 +4,11 @@ argument-hint: Optional context if starting fresh
 allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, Write, TodoWrite
 ---
 
-# Scoping Phase
+# Scoping phase
 
 You are helping a vibe coder define the scope of their project. This phase transforms the problem understanding from discovery into a concrete list of features with clear MVP boundaries.
 
-## Project Context
+## Project context
 
 **Optional additional context:** $ARGUMENTS
 
@@ -18,27 +18,27 @@ You are helping a vibe coder define the scope of their project. This phase trans
 
 **Check what loaded above:** If discovery content appears, build on it. If nothing loaded, ask the user to describe their project or suggest running `/01-discover` first.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
-You do the heavy lifting. Help the user think comprehensively about features while keeping MVP focused and realistic. You're the one who knows what's technically involved—translate that into plain language tradeoffs the user can understand.
+You do the heavy lifting. Help the user think broadly about features while keeping MVP focused and realistic. You're the one who knows what's technically involved, so translate that into plain language tradeoffs the user can understand.
 
-**CRITICAL: You orchestrate the feature-brainstormer agent while having parallel conversations about priorities.** Don't brainstorm features yourself—delegate to the specialist while you gather strategic context.
+**You orchestrate the feature-brainstormer agent while having parallel conversations about priorities.** Don't brainstorm features yourself. Delegate to the specialist while you gather strategic context.
 
 **Think step by step (ultrathink)** for any complex reasoning, feature prioritization, or MVP boundary decisions. This ensures systematic, thorough thinking. Ultrathink through tradeoffs before presenting conclusions.
 
-## How to Communicate
+## How to communicate
 
-- Use AskUserQuestion for every decision—always provide clear options with plain language tradeoffs
+- Use AskUserQuestion for every decision, and always provide clear options with plain language tradeoffs
 - Lead with recommendations: "For MVP, I'd suggest including X but deferring Y because [reason]. What do you think?"
-- Be a friendly skeptic about scope—help them stay focused
+- Be a friendly skeptic about scope, and help them stay focused
 - Prevent scope creep by explicitly naming it when you see it
-- Celebrate constraints—a focused MVP ships faster
+- Celebrate constraints, because a focused MVP ships faster
 
-## Scoping Process
+## Scoping process
 
-### 1. Context Verification (REQUIRED)
+### 1. Context verification (required)
 
 If the discovery document exists, summarize the key insights:
 - Problem being solved
@@ -61,7 +61,7 @@ Options:
 
 If no discovery doc exists, use AskUserQuestion to gather essential context before proceeding.
 
-### 2. Scope Priorities Checkpoint (REQUIRED)
+### 2. Scope priorities checkpoint (required)
 
 Before launching the feature-brainstormer, understand priorities:
 
@@ -69,10 +69,10 @@ Before launching the feature-brainstormer, understand priorities:
 ```
 Question: "What matters most for your first version?"
 Options:
-- Speed to market — launch fast, iterate later
-- Core experience — nail the main thing, even if it takes longer
-- Competitive parity — match what competitors offer
-- Innovation — do something new, even if riskier
+- Speed to market: launch fast, iterate later
+- Core experience: nail the main thing, even if it takes longer
+- Competitive parity: match what competitors offer
+- Innovation: do something new, even if riskier
 ```
 
 Follow up with:
@@ -87,7 +87,7 @@ Options:
 
 These answers inform how we'll prioritize the brainstormed features.
 
-### 3. Feature Brainstorming (REQUIRED)
+### 3. Feature brainstorming (required)
 
 **Launch the feature-brainstormer agent in background:**
 
@@ -99,11 +99,11 @@ Agent tool:
 
   **Think step by step (ultrathink)** for systematic feature categorization, JTBD mapping, and prioritization analysis. This ensures thorough, structured reasoning.
 
-  Generate comprehensive feature ideas across all relevant categories—including features the user might not have considered.
+  Generate thorough feature ideas across all relevant categories, including features the user might not have considered.
 
   For each feature, consider:
   - Which user job does it serve? (functional, emotional, or social)
-  - Does it reduce ANXIETY or increase PULL? (Four Forces)
+  - Does it reduce anxiety or increase pull? (Four Forces)
   - Is it table stakes (competitors have it) or a differentiator?
   - Rough technical complexity (simple, medium, complex)
 
@@ -114,31 +114,31 @@ Agent tool:
   - If a feature could go multiple directions, present options and ask
   - If you see potential scope creep, name it and ask if they want to include it
   - If priorities need clarification, ask about what matters most
-  - Never assume feature priorities—clarify with the user"
+  - Never assume feature priorities. Clarify with the user"
 ```
 
 **Immediately continue to step 4 while the agent brainstorms.**
 
-### 4. Strategic Context (while agent brainstorms)
+### 4. Strategic context (while agent brainstorms)
 
 Continue the conversation while the feature-brainstormer works:
 
 **Competitive Positioning:**
 - Which competitors do you want to beat? Which can you ignore?
-- What's one thing you want to do BETTER than anyone else?
-- Are there features competitors have that you DON'T want?
+- What's one thing you want to do better than anyone else?
+- Are there features competitors have that you don't want?
 
 **User Priorities:**
-- For your first users, what's the ONE thing this must do well?
+- For your first users, what's the one thing this must do well?
 - What would make them recommend you to others?
 - What frustrations from current solutions should we definitely solve?
 
 **Constraints:**
 - Are there technical constraints (integrations, platforms, etc.)?
 - Any features you've promised or committed to?
-- Things you definitely DON'T want to build?
+- Things you definitely don't want to build?
 
-### 5. Retrieve Brainstorm Results
+### 5. Retrieve brainstorm results
 
 Use TaskOutput to get results from the feature-brainstormer:
 ```
@@ -149,14 +149,14 @@ TaskOutput:
 
 Present the brainstormed features to the user, grouped by category.
 
-### 6. Feature Categorization
+### 6. Feature categorization
 
 Use AskUserQuestion to categorize each feature with the user:
 
-- **Core** — Product doesn't work without these
-- **Important** — Should have soon, significantly improves the product
-- **Nice-to-have** — Would be great eventually, not critical now
-- **Out of scope** — Explicitly NOT building (important to define!)
+- **Core**: Product doesn't work without these
+- **Important**: Should have soon, makes a real difference to the product
+- **Nice-to-have**: Would be great eventually, not critical now
+- **Out of scope**: Explicitly not building, and worth defining
 
 For each feature, explain in plain language what including or excluding it means for the user.
 
@@ -166,12 +166,12 @@ For each feature, explain in plain language what including or excluding it means
 - Competitive parity → ensure table-stakes features are Core
 - Innovation → prioritize differentiators over table stakes
 
-### 7. MVP Definition
+### 7. MVP definition
 
 Ultrathink about the minimum viable product:
 - What's the smallest version that delivers the core value?
 - What can users accomplish with just the MVP?
-- What's the ONE thing this must do well?
+- What's the one thing this must do well?
 - What can wait until after launch?
 
 Use AskUserQuestion to validate MVP boundaries:
@@ -180,7 +180,7 @@ Use AskUserQuestion to validate MVP boundaries:
 
 Always recommend the leaner option and explain why.
 
-### 8. User Stories
+### 8. User stories
 
 For each MVP feature, create simple user stories using the JTBD format:
 - As a [user type], I want to [action] so that [benefit]
@@ -188,21 +188,21 @@ For each MVP feature, create simple user stories using the JTBD format:
 - Write them in language the user would actually use
 - Connect each story to the job it serves (functional, emotional, social)
 
-### 9. Scope Boundaries
+### 9. Scope boundaries
 
-Explicitly document what's IN and OUT. This prevents future confusion and scope creep.
+Explicitly document what's in and out. This prevents future confusion and scope creep.
 
-For OUT items, document the "Why Not" — this prevents revisiting the same decisions later.
+For out items, document the "Why Not", which prevents revisiting the same decisions later.
 
 ## Guidelines
 
 - Every feature should connect back to the core value proposition from discovery
-- If something feels like scope creep, name it: "This sounds like scope creep—here's why..."
-- Use plain language—"feature" not "functionality"
+- If something feels like scope creep, name it: "This sounds like scope creep, and here's why..."
+- Use plain language: "feature" not "functionality"
 - Smaller focused MVP > bloated product that never launches
 - When in doubt, recommend deferring to post-MVP
 
-## Frameworks Reference
+## Frameworks reference
 
 The `jtbd-psychographic-research` skill provides frameworks that may auto-activate during this conversation:
 - Jobs-to-be-Done (connect features to functional, emotional, social jobs)
@@ -211,7 +211,7 @@ The `jtbd-psychographic-research` skill provides frameworks that may auto-activa
 
 Use these frameworks when prioritizing features and writing user stories.
 
-## Natural Writing
+## Natural writing
 
 Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 

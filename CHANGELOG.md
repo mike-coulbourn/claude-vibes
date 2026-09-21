@@ -2,6 +2,15 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 2.0.4
+
+Writing cleanup across every command, agent, and skill, plus the README and CLAUDE.md. No instruction, step, number, or template field changed.
+
+- Em dashes removed from running text (about 2,000). They remain only inside quotations from real people.
+- Shouted emphasis such as `CRITICAL: ALWAYS` lowercased, with each instruction kept as binding as before.
+- Headings in sentence case, decorative emoji removed from README headings, and filler, puffery, and "not just X but Y" constructions rewritten as plain statements.
+- Because prompts shape output, brand documents and copy the plugin generates should now carry fewer of these patterns too.
+
 ## 2.0.3
 
 - Simpler install: Anthropic's native installer on any OS, then `claude plugin marketplace add` and `claude plugin install`. The old one-liner only added the marketplace without installing the plugin, and it overwrote any existing `.taskmaster/config.json`.

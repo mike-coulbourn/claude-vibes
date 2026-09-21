@@ -4,11 +4,11 @@ argument-hint: Optional voice direction (e.g., "friendly but authoritative")
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Define Brand Voice
+# Define brand voice
 
-You are helping a startup founder define their brand personality and voice. This creates the guidelines for how the brand "speaks" — ensuring consistency across all communications.
+You are helping a startup founder define their brand personality and voice. This creates the guidelines for how the brand "speaks" so it stays consistent across all communications.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (optional):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -38,22 +38,22 @@ You are helping a startup founder define their brand personality and voice. This
 
 Optional voice direction: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-voice-architect agent.** Do not create voice guidelines yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-voice-architect agent.** Do not create voice guidelines yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -63,11 +63,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-voice-architect agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-voice-architect"` and this prompt:
 
@@ -79,25 +79,25 @@ Define the brand personality and voice. ultrathink
 **Brand Name**: [From brand name document]
 **Purpose (WHY)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
-**Primary Archetype**: [From archetype.md — include motto]
-**Secondary Archetype**: [From archetype.md — include motto]
+**Positioning**: [From positioning.md: the territory we claim]
+**Primary Archetype**: [From archetype.md: include motto]
+**Secondary Archetype**: [From archetype.md: include motto]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**Audience Language**: [From audience research — how they talk]
+**Who They Serve**: [From audience research: primary customer segment]
+**Audience Language**: [From audience research: how they talk]
 **Audience Expectations**: [What they expect from brands in this space]
-**Emotional Jobs**: [From audience research — how they want to feel]
+**Emotional Jobs**: [From audience research: how they want to feel]
 
 ## FOUNDER CONTEXT
 
-**Founder Communication Style**: [From founder brief — how they naturally communicate]
-**Brands They Admire**: [From founder brief — voice references]
+**Founder Communication Style**: [From founder brief: how they naturally communicate]
+**Brands They Admire**: [From founder brief: voice references]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -107,39 +107,39 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## COMPETITIVE VOICE LANDSCAPE
 
-**Competitor Voice Patterns**: [From competitive audit — how competitors sound]
+**Competitor Voice Patterns**: [From competitive audit: how competitors sound]
 **Voice Differentiation Opportunity**: [Where we can stand out through voice]
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Synthesize Brand Inputs
+### Phase 1: Synthesize brand inputs
 Analyze how purpose, values, archetype, and positioning should influence voice:
 - What does the archetype suggest about voice?
 - How do values translate to voice qualities?
 - What positioning territory should voice claim?
 - How should audience expectations shape voice?
 
-### Phase 2: Apply Voice Discovery Methods
+### Phase 2: Apply voice discovery methods
 Use established frameworks:
 - **BrandSort methodology**: Which attributes define this voice?
 - **NNGroup Four Dimensions**: Plot position on each spectrum
 - **Aaker Personality Dimensions**: Which dimensions apply?
 - **"This But Not That" technique**: Add constraints to each trait
 
-### Phase 3: Define Personality Traits
+### Phase 3: Define personality traits
 Select 3-5 specific personality traits:
 - Clear definition for this brand
 - "This but not that" constraint
 - Concrete do/don't examples
 - Sample phrases that demonstrate each trait
 
-### Phase 4: Create Tone Adaptation Framework
+### Phase 4: Create tone adaptation framework
 Document how voice flexes:
 - By channel (social, support, marketing, product UI, formal)
 - By emotional state (happy, confused, frustrated, anxious)
 - Boundaries: how far can tone flex before breaking voice?
 
-### Phase 5: Build Comprehensive Guidelines
+### Phase 5: Build complete guidelines
 Create actionable documentation:
 - Complete verbal identity components
 - Vocabulary guidelines (words to use/avoid)
@@ -152,7 +152,7 @@ Create actionable documentation:
 - **Structured reasoning**: Systematically translate archetype and positioning into specific voice qualities, evaluate each personality trait against brand context
 - **AskUserQuestion**: Validate voice traits resonate with founder's natural style, get input on tone preferences, confirm "this but not that" constraints feel right
 - **WebSearch**: Research exemplar brand voice guides (Mailchimp, Slack, Monzo), find voice examples in this industry, study how leading brands document voice
-- **WebFetch**: Read actual style guides and voice documentation — study Mailchimp's Content Style Guide, Slack's voice principles, 18F Content Guide for structure and approach
+- **WebFetch**: Read actual style guides and voice documentation, such as Mailchimp's Content Style Guide, Slack's voice principles, and the 18F Content Guide, for structure and approach
 
 ## OUTPUT REQUIREMENTS
 
@@ -173,13 +173,13 @@ Deliver the complete voice documentation using the Voice Guidelines Document Tem
 
 ## Guidelines
 
-- **Voice should feel natural, not performed** — if it feels forced, it's wrong
-- **Include concrete examples** — "We say X, not Y" is more useful than abstract descriptions
-- **Tone varies by context, but voice stays consistent** — same personality, different volume
-- **The "airport test"** — would someone recognize this brand's writing if they found it on the floor?
-- **Voice must connect to archetype** — the archetype provides the emotional foundation
-- **Prepare for AI** — create guidelines that work for both human and AI writers
-- **Test the usability** — can someone unfamiliar with the brand write in this voice using these guidelines?
+- **Voice should feel natural, not performed**: if it feels forced, it's wrong
+- **Include concrete examples**: "We say X, not Y" is more useful than abstract descriptions
+- **Tone varies by context, but voice stays consistent**: same personality, different volume
+- **The "airport test"**: would someone recognize this brand's writing if they found it on the floor?
+- **Voice must connect to archetype**: the archetype provides the emotional foundation
+- **Prepare for AI**: create guidelines that work for both human and AI writers
+- **Test the usability**: can someone unfamiliar with the brand write in this voice using these guidelines?
 
 ## Output
 

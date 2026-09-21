@@ -3,7 +3,7 @@ name: brand-positioning-theory
 description: Use when defining how a brand is positioned against competitors, writing a positioning or onliness statement, mapping a market to find an open position, or deciding which category to own. Keywords - brand positioning, onliness statement, positioning map, 22 Immutable Laws, Ries and Trout, Neumeier ZAG, ladder concept, cherchez le creneau, trueline.
 ---
 
-# Brand Positioning Theory Framework
+# Brand positioning theory framework
 
 Quick reference for positioning a brand using methodologies from Al Ries, Jack Trout, and Marty Neumeier.
 
@@ -13,7 +13,7 @@ Quick reference for positioning a brand using methodologies from Al Ries, Jack T
 
 ---
 
-## Ries & Trout's 5 Core Principles
+## Ries & Trout's 5 core principles
 
 1. **Positioning happens in the mind**: You don't position products; you position perceptions. The only reality that counts is what's already in the prospect's mind.
 
@@ -54,7 +54,7 @@ Quick reference for positioning a brand using methodologies from Al Ries, Jack T
 | 21 | **Acceleration** | Build on trends, not fads |
 | 22 | **Resources** | Without adequate funding, ideas won't get off the ground |
 
-### Most Critical Laws for Positioning
+### Most critical laws for positioning
 
 **Law of Sacrifice**: "The essence of positioning is sacrifice. You must be willing to give up something in order to establish that unique position." Three things to sacrifice:
 - Product line (stay narrow)
@@ -67,37 +67,37 @@ Quick reference for positioning a brand using methodologies from Al Ries, Jack T
 
 ---
 
-## Neumeier's ZAG Methodology
+## Neumeier's ZAG methodology
 
-**Core Philosophy**: In an extremely cluttered marketplace, traditional differentiation is no longer enough. You need "radical differentiation."
+**Core philosophy**: In an extremely cluttered marketplace, traditional differentiation is no longer enough. You need "radical differentiation."
 
-### The Four Core Elements
+### The four core elements
 
 1. **Focus**: Narrow your offering
 2. **Differentiation**: Be radically different
 3. **Trend**: Ride a wave of change
 4. **Communication**: Surround your zag with compelling messages
 
-### The 17 Checkpoints (3 Phases)
+### The 17 checkpoints (3 phases)
 
-**Part 1: Finding Your Zag**
+**Part 1: Finding your zag**
 - What wave are you riding? (trends)
 - Who shares the brandscape? (competitors)
 - What makes you the "only"? (differentiation)
 
-**Part 2: Designing Your Zag**
+**Part 2: Designing your zag**
 - Develop your onliness statement
 - Create your trueline
 - Build compelling communication
 
-**Part 3: Renewing Your Zag**
+**Part 3: Renewing your zag**
 - How to stretch your brand without breaking it
 - Navigate the competition cycle
 - Avoid the four deadly dangers of brand portfolios
 
 ---
 
-## Positioning Statement Formula
+## Positioning statement formula
 
 > "For **[target audience]**, **[Brand]** is the **[category]** that **[key benefit]** because **[reason to believe]**."
 
@@ -110,12 +110,12 @@ Quick reference for positioning a brand using methodologies from Al Ries, Jack T
 
 ---
 
-## Onliness Statement Formula (Neumeier)
+## Onliness statement formula (Neumeier)
 
-**Basic Formula**:
+**Basic formula**:
 > "Our brand is the ONLY [category] that [unique differentiator]."
 
-**Detailed Formula (The 5W's)**:
+**Detailed formula (the 5W's)**:
 
 | Element | Question | Example (Harley-Davidson) |
 |---------|----------|---------------------------|
@@ -125,14 +125,14 @@ Quick reference for positioning a brand using methodologies from Al Ries, Jack T
 | **WHERE** | What geography? | "mostly in the United States" |
 | **WHY** | What need state? | "who want to join a gang of cowboys" |
 
-**Complete Example (Harley-Davidson)**:
+**Complete example (Harley-Davidson)**:
 > "We are the ONLY motorcycle manufacturer that makes big, loud motorcycles for macho guys (and macho wannabes) mostly in the United States who want to join a gang of cowboys."
 
-**The Test**: "If you can't keep it brief or use the word 'only,' then you don't have a zag."
+**The test**: "If you can't keep it brief or use the word 'only,' then you don't have a zag."
 
 ---
 
-## The Ladder Concept
+## The ladder concept
 
 In every category, customers have a mental "ladder" of brands:
 
@@ -148,14 +148,14 @@ In every category, customers have a mental "ladder" of brands:
     └─────────────────────┘
 ```
 
-**Strategy by Rung**:
+**Strategy by rung**:
 - **If #1**: Reinforce category ownership; block competitors from claiming your word
 - **If #2**: Position as the opposite/alternative (Law of Opposite)
 - **If lower**: Create a new ladder (new category) where you can be #1
 
 ---
 
-## Cherchez le Creneau (7 Types of Holes)
+## Cherchez le Creneau (7 types of holes)
 
 | Creneau Type | Strategy | Classic Example |
 |--------------|----------|-----------------|
@@ -169,11 +169,11 @@ In every category, customers have a mental "ladder" of brands:
 
 ---
 
-## Trueline Concept
+## Trueline concept
 
-A trueline is "a tagline before it becomes a tagline"—the one true thing you can say about your brand that's both differentiating and compelling.
+A trueline is "a tagline before it becomes a tagline," the one true thing you can say about your brand that's both differentiating and compelling.
 
-**Brand Messaging Hierarchy** (most permanent → most changeable):
+**Brand messaging hierarchy** (most permanent → most changeable):
 
 | Level | Duration | Definition |
 |-------|----------|------------|
@@ -189,11 +189,11 @@ A trueline is "a tagline before it becomes a tagline"—the one true thing you c
 
 ---
 
-## Repositioning Case Studies
+## Repositioning case studies
 
-### 7Up "Uncola" Campaign
+### 7Up "Uncola" campaign
 - **Situation**: Wanted to compete against Coca-Cola and Pepsi
-- **Strategy**: Positioned as "The Uncola"—an alternative to cola, not a competitor
+- **Strategy**: Positioned as "The Uncola," an alternative to cola rather than a competitor
 - **Result**: Linked to what was in the prospect's mind while claiming different territory
 
 ### Tylenol vs. Aspirin
@@ -203,24 +203,24 @@ A trueline is "a tagline before it becomes a tagline"—the one true thing you c
 
 ### Avis vs. Hertz
 - **Situation**: Hertz was the dominant #1 rental car company
-- **Strategy**: Acknowledged being #2 with "We Try Harder"—implying Hertz doesn't
+- **Strategy**: Acknowledged being #2 with "We Try Harder," implying Hertz doesn't
 - **Result**: Went from losing millions to making millions
 
-### Volvo: Safety Positioning
+### Volvo: safety positioning
 - **Situation**: Crowded automotive market
 - **Strategy**: Consistently owned "safety" since 1927
-- **Key Action**: Invented three-point seatbelt (1959), shared it open-source
+- **Key action**: Invented three-point seatbelt (1959), shared it open-source
 - **Result**: Global recognition as the safety leader
 
 **Pattern**: The most successful repositioning attacks the leader's strength by reframing it as a weakness or limitation.
 
 ---
 
-## 10 Common Mistakes & Anti-Patterns
+## 10 common mistakes & anti-patterns
 
 | # | Mistake | The Fix |
 |---|---------|---------|
-| 1 | **Lack of Differentiation** (same buzzwords as everyone) | Find what makes you THE ONLY |
+| 1 | **Lack of Differentiation** (same buzzwords as everyone) | Find what makes you the only |
 | 2 | **Trying to Appeal to Everyone** | Pick a specific audience and own them |
 | 3 | **Confusing Messaging with Positioning** | Strategy first, then messaging |
 | 4 | **Developing Positioning in a Silo** | Cross-functional alignment from start |
@@ -233,7 +233,7 @@ A trueline is "a tagline before it becomes a tagline"—the one true thing you c
 
 ---
 
-## Key Principles & Mental Models
+## Key principles & mental models
 
 ### From Ries & Trout
 
@@ -252,7 +252,7 @@ A trueline is "a tagline before it becomes a tagline"—the one true thing you c
 
 ---
 
-## Positioning Validation Tests
+## Positioning validation tests
 
 Apply these tests to validate positioning:
 
@@ -270,38 +270,38 @@ Apply these tests to validate positioning:
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Positioning Statement Template
-- Onliness Statement Template (with 5W's)
-- Competitive Landscape Analysis Template
-- Positioning Map Template
-- Creneau Analysis Template
-- 22 Laws Application Checklist
-- ZAG Opportunity Template
-- Sacrifice Analysis Template
-- Positioning Validation Checklist
-- Quick Reference Card
+- Positioning statement template
+- Onliness statement template (with 5W's)
+- Competitive landscape analysis template
+- Positioning map template
+- Creneau analysis template
+- 22 Laws application checklist
+- ZAG opportunity template
+- Sacrifice analysis template
+- Positioning validation checklist
+- Quick reference card
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Competitive Analysis
+### During competitive analysis
 - Map where competitors sit on mental ladders
 - Identify what words competitors own
 - Find open creneaus using the 7 types
 
-### During Positioning Development
+### During positioning development
 - Craft Onliness Statement (all 5 W's)
 - Develop Positioning Statement
 - Create candidate truelines
 - Apply the 22 Laws check
 
-### During Positioning Validation
+### During positioning validation
 - Run all 6 validation tests
 - Check against common mistakes
 - Apply Law of Sacrifice analysis
 
-### During Final Documentation
+### During final documentation
 - Include complete frameworks
 - Document differentiation test results
 - Provide positioning map visualization

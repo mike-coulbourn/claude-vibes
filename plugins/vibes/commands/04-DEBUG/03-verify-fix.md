@@ -3,23 +3,23 @@ description: Verify a fix works and document it in LOGS.json
 argument-hint: Optional specific files or areas to verify
 ---
 
-# Verify Phase
+# Verify phase
 
-You are helping a vibe coder confirm their fix works and doesn't break anything else. This is the quality gate—fixes that pass verification get documented in LOGS.json.
+You are helping a vibe coder confirm their fix works and doesn't break anything else. This is the quality gate. Fixes that pass verification get documented in LOGS.json.
 
 Specific area to verify: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the verification and manage the conversation. The verifier agent handles thorough testing, while you present findings and manage the approval/documentation cycle.
 
-**CRITICAL: You MUST use the Agent tool to launch the verification agents.** Do not verify the fix yourself—that's what the verifier and tester agents are for.
+**Use the Agent tool to launch the verification agents.** Do not verify the fix yourself. That's what the verifier and tester agents are for.
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+**Use the AskUserQuestion tool whenever you interact with the user.** This gives a guided, interactive experience:
 
 Use AskUserQuestion to:
 - Clarify what "fixed" should look like when unsure
@@ -29,13 +29,13 @@ Use AskUserQuestion to:
 
 Never assume verification criteria. Ask to confirm.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project requirements and architecture
-- `docs/04-DEBUG/diagnosis-*.md` — The diagnosis for this fix
+- `docs/01-START/` files: project requirements and architecture
+- `docs/04-DEBUG/diagnosis-*.md`: The diagnosis for this fix
 
-These are stable documentation—always load them. The verifier agent will parse LOGS.json and report back specific relevant entries.
+These are stable documentation, so always load them. The verifier agent will parse LOGS.json and report back specific relevant entries.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
@@ -43,20 +43,20 @@ If these files don't exist (common when using claude-vibes on an existing projec
 **Fallback if no diagnosis file exists:**
 If no diagnosis file exists, use `git diff` and `git log` to understand what was changed, and use AskUserQuestion to understand what the fix was supposed to accomplish.
 
-## How to Communicate
+## How to communicate
 
 - Be clear about what passed and what failed
 - Explain any regressions in plain language
 - Celebrate when everything works
 - Use AskUserQuestion for decisions about edge cases
 
-## Verify Process
+## Verify process
 
-### 1. Load Core Context
+### 1. Load core context
 
 Read docs/01-START/ files and the most recent diagnosis file to understand what was fixed.
 
-### 2. Identify What to Verify
+### 2. Identify what to verify
 
 If `$ARGUMENTS` specifies files/areas, focus there.
 
@@ -65,9 +65,9 @@ Otherwise, find the recent fix:
 - Read the most recent `docs/04-DEBUG/diagnosis-*.md`
 - Look at recently modified files
 
-### 3. Launch Agents in Parallel (REQUIRED)
+### 3. Launch agents in parallel (required)
 
-**You MUST use the Agent tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**Use the Agent tool to launch both agents simultaneously**: they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Verifier Agent** (confirm fix works, check regressions):
 
@@ -119,7 +119,7 @@ Otherwise, find the recent fix:
 > **Your mission:**
 > - Write tests that would have caught the original bug
 > - Write tests that prove the fix works
-> - Run the tests yourself—don't ask the user to run them
+> - Run the tests yourself. Don't ask the user to run them
 > - If tests fail, analyze and fix the issues
 > - Iterate until all tests pass
 > - Only fall back to manual testing instructions if automation is impossible
@@ -144,11 +144,11 @@ Otherwise, find the recent fix:
 > - Manual testing instructions (only if something couldn't be automated)
 > - Confidence level that the fix is solid
 >
-> The vibe coder should just see results—you do the work.
+> The vibe coder should just see results. You do the work.
 
-### 4. Combine Results
+### 4. Combine results
 
-After BOTH agents return:
+After both agents return:
 
 **From Verifier:**
 - Load specific LOGS.json entries it cited
@@ -160,11 +160,11 @@ After BOTH agents return:
 - Note test results (passing/failing)
 - Note confidence level
 
-### 5. Present Combined Findings
+### 5. Present combined findings
 
 **If all verifications pass:**
 ```
-Verification & Testing Complete — Fix Confirmed!
+Verification & Testing Complete: Fix Confirmed
 
 VERIFICATION:
 - Original issue: FIXED
@@ -204,7 +204,7 @@ These need to be addressed before shipping.
 Use AskUserQuestion for judgment calls:
 - "The main issue is fixed, but I found an unrelated failing test. Should we fix that too or track it separately?"
 
-### 6. Iterate if Needed
+### 6. Iterate if needed
 
 If issues exist:
 1. Explain what's wrong clearly
@@ -248,7 +248,7 @@ Create or update LOGS.json in the project root.
 - Regressions must be fixed before shipping
 - Only write to LOGS.json after passing verification
 
-## LOGS.json Write Rules
+## LOGS.json write rules
 
 **Only write to LOGS.json when:**
 1. Verification passes (no regressions)
@@ -272,10 +272,10 @@ When verification is complete:
 3. Any accepted trade-offs
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-SHIP/01-pre-commit` — Run pre-commit checks
-   - `/03-SHIP/02-commit` — Just commit locally
-   - `/03-SHIP/03-push` — Commit and push
-   - `/03-SHIP/04-pr` — Commit, push, and create PR
+   - `/03-SHIP/01-pre-commit`: Run pre-commit checks
+   - `/03-SHIP/02-commit`: Just commit locally
+   - `/03-SHIP/03-push`: Commit and push
+   - `/03-SHIP/04-pr`: Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
@@ -283,7 +283,7 @@ When verification is complete:
 3. Offer to fix them
 4. "Re-run `/03-verify-fix` after fixes"
 
-### Record Verification Insights
+### Record verification insights
 
 In the verifier's prompt, ask it to record durable learnings in its project memory before it finishes:
 
@@ -296,11 +296,11 @@ In the verifier's prompt, ask it to record durable learnings in its project memo
    - Prevention insights (e.g., "Add input length limits to prevent this class of bug")
    - Root cause patterns (e.g., "This symptom always traces back to cache staleness")
 
-**Only record NEW findings** — insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
+**Only record new findings**: insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
-- "After fixing auth bugs, always verify both login AND logout flows"
-- "The test suite doesn't cover async error paths — add manual checks for those"
+- "After fixing auth bugs, always verify both login and logout flows"
+- "The test suite doesn't cover async error paths, so add manual checks for those"
 - "Changes to the Order model often break the reporting dashboard"

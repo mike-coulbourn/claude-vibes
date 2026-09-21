@@ -1,10 +1,10 @@
-# Competitive Visual Audit Templates
+# Competitive visual audit templates
 
 Structured templates for capturing and applying competitive brand insights.
 
 ---
 
-## Color Audit Matrix
+## Color audit matrix
 
 ```
 | Competitor | Primary Color | Hex | Secondary Colors | Dominant Mood |
@@ -27,7 +27,7 @@ Structured templates for capturing and applying competitive brand insights.
 
 ---
 
-## Typography Audit Matrix
+## Typography audit matrix
 
 ```
 | Competitor | Primary Typeface | Style | Weight Usage | Personality |
@@ -55,7 +55,7 @@ Structured templates for capturing and applying competitive brand insights.
 
 ---
 
-## Imagery Style Audit
+## Imagery style audit
 
 ```
 | Competitor | Photo vs. Illust. | Subjects | Mood | Quality |
@@ -80,7 +80,7 @@ Structured templates for capturing and applying competitive brand insights.
 
 ---
 
-## Perceptual Map Template
+## Perceptual map template
 
 ```
                         [Axis 2 High Label]
@@ -122,7 +122,7 @@ POSITIONING OPPORTUNITY: _________________________________
 
 ---
 
-## Good/Different Chart Template
+## Good/Different Chart template
 
 ```
                     DIFFERENT (10)
@@ -147,10 +147,10 @@ COMPETITOR SCORES:
 | D | ___ | ___ | _________________ |
 
 QUADRANT KEY:
-- Zone of Dominance (upper right): Good AND Different — ideal position
-- Zone of Commoditization (lower right): Good but not Different — price wars
-- Zone of Irrelevance (upper left): Different but not Good — gimmicks
-- Zone of Mediocrity (lower left): Neither — struggling
+- Zone of Dominance (upper right): Good AND Different, the ideal position
+- Zone of Commoditization (lower right): Good but not Different, which leads to price wars
+- Zone of Irrelevance (upper left): Different but not Good, gimmicks
+- Zone of Mediocrity (lower left): Neither, struggling
 
 STRATEGIC IMPLICATION: _________________________________
 (What does this analysis reveal about opportunity?)
@@ -158,7 +158,7 @@ STRATEGIC IMPLICATION: _________________________________
 
 ---
 
-## Individual Competitor Profile Template
+## Individual competitor profile template
 
 ```
 ### [Competitor Name]
@@ -193,8 +193,8 @@ Can they complete: "Our brand is the only ___ that ___ for ___ who ___"?
 - [ ] No, undifferentiated
 
 **Good/Different Scores**
-- Good: [1-10] — Rationale: _______________
-- Different: [1-10] — Rationale: _______________
+- Good: [1-10]. Rationale: _______________
+- Different: [1-10]. Rationale: _______________
 - Quadrant: [Dominance/Commoditization/Irrelevance/Mediocrity]
 
 **User Perception**
@@ -204,7 +204,7 @@ Can they complete: "Our brand is the only ___ that ___ for ___ who ___"?
 
 ---
 
-## Zig vs Zag Decision Matrix
+## Zig vs zag decision matrix
 
 ```
 ZIG FACTORS (Reasons to follow conventions):
@@ -227,14 +227,14 @@ Zig factors checked: ___
 Zag factors checked: ___
 
 RECOMMENDATION:
-□ Zig (follow conventions) — because: _______________
-□ Zag (break conventions) — because: _______________
-□ Hybrid approach — zig on ___, zag on ___
+□ Zig (follow conventions) because: _______________
+□ Zag (break conventions) because: _______________
+□ Hybrid approach: zig on ___, zag on ___
 ```
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing competitive audit output, verify:
 
@@ -260,7 +260,7 @@ When reviewing competitive audit output, verify:
 - [ ] Color opportunity identified
 - [ ] Typography opportunity identified
 - [ ] Imagery opportunity identified
-- [ ] Zig vs Zag recommendation with rationale
+- [ ] Zig vs zag recommendation with rationale
 
 **Evidence Quality**
 - [ ] Specific examples from competitor sites

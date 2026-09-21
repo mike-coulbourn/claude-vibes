@@ -3,7 +3,7 @@ name: tagline-creation-strategies
 description: Use when creating, shortlisting, or testing taglines, slogans, or brand mantras, or distilling a positioning statement into a few memorable words. Keywords - tagline, slogan, catchphrase, brand motto, Neumeier trueline vs tagline, Ogilvy headline principles, Schwartz desire channeling, distillation method, tagline testing.
 ---
 
-# Tagline Creation Strategies
+# Tagline creation strategies
 
 Quick reference for creating memorable, strategic taglines using proven methodologies from expert copywriters and brand strategists.
 
@@ -11,21 +11,21 @@ Quick reference for creating memorable, strategic taglines using proven methodol
 
 ---
 
-## Key Distinction: Trueline vs Tagline
+## Key distinction: trueline vs tagline
 
 | Type | Purpose | Audience | Example (Nike) |
 |------|---------|----------|----------------|
 | **Trueline** | Internal compass that guides decisions | Internal team | "Helps you find your inner athlete" |
 | **Tagline** | Public-facing "sexy" formulation | Customers | "Just Do It" |
 
-**How They Work Together**:
+**How they work together**:
 - Start with the trueline to nail positioning
 - Craft the tagline as its public expression
 - The trueline informs; the tagline performs
 
 ---
 
-## The 7-Step Professional Process
+## The 7-step professional process
 
 1. **Internal Brand Audit**: Collect brand assets, attributes, benefits, differentiators
 2. **Competitive Analysis**: Review competitors' taglines for differentiation opportunities
@@ -51,7 +51,7 @@ The most practical technique for creating taglines:
 
 ---
 
-## Tagline Types
+## Tagline types
 
 | Type | Description | Example |
 |------|-------------|---------|
@@ -63,11 +63,11 @@ The most practical technique for creating taglines:
 | **Interrogative** | Uses a question | "Got Milk?" |
 | **Provocative** | Thought-provoking | "Think Different" (Apple) |
 
-**Expert Recommendation**: "To hit emotional triggers, prioritize differentiation taglines or results-driven taglines."
+**Recommendation**: "To hit emotional triggers, prioritize differentiation taglines or results-driven taglines."
 
 ---
 
-## Tagline Formulas
+## Tagline formulas
 
 Proven structural patterns:
 
@@ -82,9 +82,9 @@ Proven structural patterns:
 
 ---
 
-## Linguistic Devices for Memorability
+## Linguistic devices for memorability
 
-These devices have roots in oral tradition—they helped memorize stories across generations:
+These devices have roots in oral tradition, where they helped memorize stories across generations:
 
 | Device | Example | Why It Works |
 |--------|---------|--------------|
@@ -96,48 +96,48 @@ These devices have roots in oral tradition—they helped memorize stories across
 
 ---
 
-## Psychology of Memorability
+## Psychology of memorability
 
-### Key Statistics
+### Key statistics
 
 - Most **liked** slogans: **4.9 words** average
 - Most **recalled** slogans: **3.9 words** average
 - Tourism slogans: **3.64 words** average
 - Optimal tagline length: **2-7 words** (never more than 7-8)
 
-### The Likability vs. Memorability Trade-off
+### The likability vs. memorability trade-off
 
 > "Easily liked slogans are often forgettable. Memorable slogans challenge the audience with uncommon words, concrete imagery, or complexity. To remember something, we must think about it."
 
 Find the sweet spot: memorable enough to stick, likable enough to resonate.
 
-### Emotional Triggers
+### Emotional triggers
 
 | Trigger | Example | Mechanism |
 |---------|---------|-----------|
-| **Identity Alignment** | "Think Different" (Apple) | Appeals to who people ARE or aspire to be |
+| **Identity Alignment** | "Think Different" (Apple) | Appeals to who people are or aspire to be |
 | **Aspiration** | "Just Do It" (Nike) | Connects with motivation and empowerment |
 | **Self-Worth** | "Because You're Worth It" (L'Oreal) | Taps into desire for validation |
 | **Sensory Experience** | "The Ultimate Driving Machine" (BMW) | Promises physical/emotional exhilaration |
 
 ---
 
-## Famous Tagline Lessons
+## Famous tagline lessons
 
 ### Nike: "Just Do It" (1988)
 
 **Created by**: Dan Wieden (night before client presentation)
-**Initial reception**: "We don't need that shit" — Wieden insisted: "Just trust me on this one"
+**Initial reception**: "We don't need that shit", but Wieden insisted: "Just trust me on this one"
 **Lesson**: Great taglines often face initial resistance. Conviction matters.
 
 ### Apple: "Think Different" (1997)
 
-**The quirk**: "Think Different" not "Think Differently" — grammatical incorrectness creates distinctiveness
+**The quirk**: "Think Different" not "Think Differently". The grammatical incorrectness creates distinctiveness
 **Lesson**: Emotional positioning can be more powerful than feature-dense messaging.
 
 ### L'Oreal: "Because You're Worth It" (1971)
 
-**The innovation**: Among the FIRST taglines to focus on women's self-worth
+**The innovation**: Among the first taglines to focus on women's self-worth
 **Lesson**: Emotional benefits often outweigh functional ones.
 
 ### BMW: "The Ultimate Driving Machine" (1974)
@@ -147,13 +147,13 @@ Find the sweet spot: memorable enough to stick, likable enough to resonate.
 
 ---
 
-## Common Mistakes
+## Common mistakes
 
 | Mistake | Problem | Fix |
 |---------|---------|-----|
-| **Being Too Generic** | "Quality you can trust" — could be any brand | Use the Onlyness Test |
+| **Being Too Generic** | "Quality you can trust" could be any brand | Use the Onlyness Test |
 | **Using Clichés/Jargon** | Technical terms aren't common language | Use everyday words |
-| **Neglecting Customer Benefits** | Features without "so what?" | Focus on what's in it for THEM |
+| **Neglecting Customer Benefits** | Features without "so what?" | Focus on what's in it for them |
 | **Overcomplicating** | Too many words, too many ideas | Distillation Method: cut by half 3x |
 | **Being Overly Clever** | People remember the wit, forget the brand | "Rather than clever, be direct and clear" |
 | **Copying Others** | Confuses customers, risks legal trouble | Onlyness Test |
@@ -165,9 +165,9 @@ Find the sweet spot: memorable enough to stick, likable enough to resonate.
 
 ---
 
-## Testing Frameworks
+## Testing frameworks
 
-### AIDA Evaluation
+### AIDA evaluation
 
 Test whether your tagline achieves:
 - **A**ttention: Does it grab attention?
@@ -182,7 +182,7 @@ Is your tagline:
 - **B**elievable: Credible, not overpromising
 - **C**ustomer-Oriented: Focused on their benefit
 
-### Key Metrics to Evaluate
+### Key metrics to evaluate
 
 | Metric | Question |
 |--------|----------|
@@ -202,7 +202,7 @@ If a competitor's name could substitute and the statement still works, your posi
 
 ---
 
-## Expert Frameworks
+## Expert frameworks
 
 ### Eugene Schwartz's 5 Levels of Awareness
 
@@ -219,7 +219,7 @@ Tailor your tagline approach based on where your audience is:
 ### David Ogilvy's 8 Headline Principles
 
 1. Headlines should be complete advertisements
-2. Include the brand name (debated—see modern research)
+2. Include the brand name (debated, see modern research)
 3. Avoid tricky headlines (no puns or literary allusions)
 4. Be clear and direct (everyday language)
 5. Use specific numbers ("5%" beats "less than you might suppose")
@@ -237,56 +237,56 @@ A three-word internal sentence that captures brand meaning:
 - Nike: "Authentic Athletic Performance"
 - Disney: "Fun Family Entertainment"
 
-A brand mantra is NOT a tagline—it's an internal compass that guides decisions. But it can inspire tagline direction.
+A brand mantra is an internal compass that guides decisions, not a tagline. But it can inspire tagline direction.
 
 ---
 
-## Key Principles
+## Key principles
 
-1. **"Your brand isn't what you say it is. It's what they say it is."** — Marty Neumeier
-2. **Headlines/taglines should telegraph what you want to say** — David Ogilvy
-3. **"If you confuse, you'll lose."** — Donald Miller
-4. **"Copy cannot create desire — it can only channel existing desire."** — Eugene Schwartz
+1. **"Your brand isn't what you say it is. It's what they say it is."**: Marty Neumeier
+2. **Headlines/taglines should telegraph what you want to say**: David Ogilvy
+3. **"If you confuse, you'll lose."**: Donald Miller
+4. **"Copy cannot create desire — it can only channel existing desire."**: Eugene Schwartz
 5. **Shorter is almost always better**: Aim for 2-4 words, never more than 7-8
-6. **The most recalled taglines average 3.9 words** — Research finding
+6. **The most recalled taglines average 3.9 words**: Research finding
 7. **Emotional impact matters more than word count**
 8. **Clarity beats cleverness every time**
-9. **Position first, tagline second** — Get positioning right before crafting
-10. **"You can't advertise your way to onlyness — you have to start with it."** — Marty Neumeier
+9. **Position first, tagline second**: Get positioning right before crafting
+10. **"You can't advertise your way to onlyness — you have to start with it."**: Marty Neumeier
 
 ---
 
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Tagline Document Template
-- Strategic Foundation Template
-- Tagline Option Template
-- Evaluation Matrix Template
-- Anti-Pattern Check Template
-- Usage Guidelines Template
-- Testing Protocol Template
-- Quick Reference Card Template
-- Output Validation Checklist
+- Tagline document template
+- Strategic foundation template
+- Tagline option template
+- Evaluation matrix template
+- Anti-pattern check template
+- Usage guidelines template
+- Testing protocol template
+- Quick reference card template
+- Output validation checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Tagline Development
+### During tagline development
 - Complete positioning work first (April Dunford's 5 components)
 - Write the Onlyness Statement and Brand Mantra
 - Generate 100+ options using brainstorming techniques
 - Apply the Distillation Method
 - Use linguistic devices for memorability
 
-### During Evaluation
+### During evaluation
 - Apply AIDA and ABC tests
 - Check against Common Mistakes list
 - Run the Onlyness Test
 - Score candidates on evaluation matrix
 
-### During Finalization
+### During finalization
 - Test with target audience (A/B, surveys)
 - Check trademark availability
 - Test across mediums (billboard, business card, digital)
