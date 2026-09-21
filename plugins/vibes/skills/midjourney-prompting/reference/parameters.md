@@ -268,27 +268,33 @@ Controls strength of style reference.
 
 ---
 
-### Character Reference (--cref)
+### Omni Reference (--oref), V7
 
-Maintains character appearance across images.
+Puts a character, object, vehicle, or creature from one reference image into the result. Replaces V6's `--cref`, which V7 and later do not support.
 
 **Basic usage**:
 ```
-A wizard in a library --cref https://example.com/character.jpg
+A wizard in a library --oref https://example.com/character.jpg
 ```
 
-**Multiple characters** (blends features):
-```
---cref URL1 URL2
-```
+Only one image is allowed. For several characters, use a single image that contains them all and describe each in the prompt.
 
-### Character Weight (--cw)
+### Omni Reference Weight (--ow)
 
 | Value | Effect |
 |-------|--------|
-| `--cw 0` | Face only, different hair/clothes |
-| `--cw 50` | Moderate consistency |
-| `--cw 100` | Full consistency: face, hair, clothes (default) |
+| `--ow 25-50` | Loose likeness; use when changing style, and restate key traits in text |
+| `--ow 100` | Default |
+| `--ow 400` | Practical ceiling unless stylize is very high |
+| `--ow 1000` | Maximum; results may be unpredictable |
+
+Costs 2x GPU time. Not compatible with Fast Mode, Draft Mode, Conversational Mode, `--q 4`, inpainting, or outpainting.
+
+### Edit Model, V8.1 and V8.2
+
+In V8 the Edit Model replaces Omni Reference, Character Reference, and Retexture. Attach up to four reference images in the Imagine bar ("Attach to prompt") with no parameter, and write either a description or an instruction. It matches the first image's aspect ratio unless the prompt sets `--ar`. Not compatible with `--tile` or Remix.
+
+Source: https://docs.midjourney.com (Omni Reference, Edit Model, and Version articles), last verified September 2026.
 
 **Important**: Works best with Midjourney-generated characters. Real photos may distort.
 
@@ -356,7 +362,7 @@ V7 is Midjourney's most capable model:
 - **Richer textures and details** — Higher quality output by default
 - **Draft Mode** — 10x faster exploration at half cost
 - **Personalization ON by default** — Applies learned preferences automatically
-- **Omni Reference** — Enhanced reference capabilities
+- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
 
 ---
 
@@ -400,7 +406,7 @@ Enable Remix Mode for editing prompts during variations.
 
 **Consistent character series**:
 ```
---cref [URL] --cw 100 --seed [number]
+--oref [URL] --ow 100 --seed [number]    (V7; in V8 attach the image with the Edit Model)
 ```
 
 **Style exploration**:

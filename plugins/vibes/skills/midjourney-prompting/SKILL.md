@@ -5,7 +5,7 @@ description: Use when writing, fixing, or refining Midjourney prompts in any sty
 
 # Midjourney V7 Prompting Guide
 
-> **Version note, last verified December 2025.** This guide was written against Midjourney V7. Prompt structure, lighting and camera vocabulary, and most parameters carry across versions, but defaults, parameter ranges, and reference features (`--sref`, `--cref`, omni reference) change between releases. If the user is on a newer version, or a parameter behaves unexpectedly, check the current Midjourney docs with WebSearch before relying on version-specific claims here.
+> **Version note, last verified September 2026.** This guide was written against Midjourney V7, and the current default is V8.2 (released July 24, 2026). Prompt structure, lighting and camera vocabulary, and most parameters carry across versions. Reference features do not: V8.1 and V8.2 replace Omni Reference and Character Reference with the Edit Model, and other V7 features such as Draft Mode and the `--q` values may differ in V8. Ask which version the user is on, and check https://docs.midjourney.com with WebSearch before relying on a version-specific claim here.
 
 ## Quick Reference: Prompt Structure
 
@@ -60,7 +60,7 @@ rule of thirds composition --ar 3:2
 | Parameter | Purpose | Weight Control |
 |-----------|---------|----------------|
 | `--sref [URL or code]` | Copy style from image | `--sw 0-1000` (default 100) |
-| `--cref [URL]` | Copy character from image | `--cw 0-100` (default 100) |
+| `--oref [URL]` | Put a character or object from an image into the result (V7 only; V8 uses the Edit Model) | `--ow 1-1000` (default 100) |
 | `--iw` | Image prompt weight | 0-3 (default 1) |
 
 See [reference/parameters.md](reference/parameters.md) for complete details.
@@ -152,20 +152,28 @@ A scene --sref URL1::2 URL2::1
 
 ---
 
-## Character Reference (--cref)
+## Putting a Character or Object in the Image
 
-Maintain character consistency across images:
+Which feature does this depends on the Midjourney version, so check the user's version first.
+
+| Version | Feature | How |
+|---------|---------|-----|
+| V8.1, V8.2 (V8.2 is the default since July 2026) | **Edit Model** | Attach up to four reference images in the Imagine bar ("Attach to prompt"). No parameter. Prompts may be instructions, such as "make this girl into a real character" |
+| V7 | **Omni Reference** | `--oref [image_URL]`, one image only, with `--ow` for weight |
+| V6 | Character Reference | `--cref [image_URL]` with `--cw 0-100`. Not supported in V7 or later |
+
+**Omni Reference (V7)**:
 
 ```
-A knight in a forest --cref [character_image_URL]
+A knight in a forest --oref [character_image_URL] --ow 100
 ```
 
-**Character weight** (`--cw`):
-- `--cw 100` (default): Face, hair, AND clothing
-- `--cw 50`: Moderate consistency
-- `--cw 0`: Face only (different hair/clothes allowed)
+- `--ow` runs from 1 to 1000, default 100. Stay below 400 unless stylize is very high, or results get unpredictable.
+- Lower the weight to change style, and restate the physical traits to keep in the prompt text.
+- Works for characters, objects, vehicles, and creatures. For several characters, use one image that contains them all.
+- Costs 2x GPU time. Not compatible with Fast Mode, Draft Mode, Conversational Mode, `--q 4`, inpainting, or outpainting.
 
-**Best Practice**: Works best with Midjourney-generated characters. Real photos may produce distortions.
+Source: https://docs.midjourney.com (Omni Reference, Edit Model, and Version articles), last verified September 2026.
 
 ---
 
@@ -199,7 +207,7 @@ V7 is Midjourney's latest and most capable model:
 - **Richer textures and details** — Higher quality output by default
 - **Draft Mode** — 10x faster, half cost for exploration (`--draft`)
 - **Personalization ON by default** — V7 applies learned preferences automatically
-- **Omni Reference** — Enhanced reference capabilities
+- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
 
 ---
 
@@ -275,7 +283,7 @@ More specific = more control. Vague prompts let Midjourney decide; specific prom
 Adding more words doesn't always help. Use `/shorten` to identify essential terms.
 
 ### The Reference Power Law
-`--sref` and `--cref` provide more consistent control than text descriptions alone.
+`--sref` and a character or object reference (`--oref` in V7, attached images with the Edit Model in V8) provide more consistent control than text descriptions alone.
 
 ### The Iteration Mindset
 First generation = starting point. Use variations, remix, vary region to refine.
