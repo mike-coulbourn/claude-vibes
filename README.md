@@ -195,7 +195,7 @@ Plan before you build. Discover the problem, scope the MVP, design the foundatio
 4. **Work from the roadmap.** `05-track-progress` shows where things stand and moves the next task forward, whatever its type. For code, `01-plan-code` picks the next build task and `02-write-code` ticks it off once its done-when line is true.
 5. **Change course on purpose.** Ask for something that is not on the roadmap and the command stops to ask where it belongs: a phase, the "Later" list, or "Not doing". A change to the objective itself sends you back to `04-plan-roadmap` to approve a new graph.
 
-You can use the skill by itself for any multi-step piece of work, not only a software project. Run `/claude-vibes:graph-engineering` and describe the objective.
+**Graphs are not only for roadmaps.** `graph-engineering` works for any piece of work with several steps or sources, parallel paths, checks, risk, or approvals, and the skill itself tells you when a task is too simple to need one. Twelve commands offer it when the work is big enough: audience research, competitor audits, naming, and positioning in BRAND; discovery and architecture in START; planning and reviewing code in BUILD; diagnosing a bug with several possible causes; assessing a risky refactor; and the research and business-growth commands in the TOOLKIT. Once you approve a graph, `graph-running` carries it out at the pace the graph recommends, from walking you through one job at a time to running independent lanes as parallel agents. A separate agent plays skeptic so no job grades its own work, the work stops at every approval point, and results are saved to `docs/graphs/`. You can also start either skill directly with `/claude-vibes:graph-engineering` for anything else, such as a security review or a vendor decision.
 
 ---
 
@@ -307,7 +307,7 @@ Skills are knowledge packs that Claude loads on its own when a conversation call
 | **Brand expression** | `brand-naming-strategies`, `brand-voice-development`, `brand-messaging-architecture`, `tagline-creation-strategies`, `elevator-pitch-techniques` |
 | **Visual identity** | `visual-identity-direction`, `brand-color-psychology`, `brand-typography-systems` |
 | **Content & copy** | `natural-writing`, `scriptwriting-methodology`, `conversion-psychology`, `platform-optimization`, `midjourney-prompting` |
-| **Thinking tools** | `interview-me` (get interviewed until a topic is fully understood), `graph-engineering` (design a multi-step AI work graph with checks and human gates before running anything) |
+| **Thinking tools** | `interview-me` (get interviewed until a topic is fully understood), `graph-engineering` (design any multi-step piece of work as a graph of jobs with checks and approval points, before anything runs), `graph-running` (carry out an approved graph: lanes run by hand or in parallel as the graph recommends, a separate skeptic, approval gates, and a file trail) |
 
 `platform-optimization` and `midjourney-prompting` describe fast-moving targets. Each carries a last-verified date and tells Claude to check current sources before relying on specific numbers.
 
@@ -385,7 +385,7 @@ claude-vibes/
         │   ├── BRANDING/
         │   ├── CODING/
         │   └── TOOLKIT/
-        └── skills/              # 21 knowledge skills
+        └── skills/              # 22 skills
 ```
 
 ---

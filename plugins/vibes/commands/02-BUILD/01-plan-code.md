@@ -39,6 +39,10 @@ If these files don't exist (common when using claude-vibes on an existing projec
 - Explain design decisions in plain language
 - Flag anything that might be tricky or have alternatives
 
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: a feature that touches several systems, carries real risk such as payments, authentication, or data migration, or needs approval along the way. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the code-architect agent for design lanes and the code-reviewer agent as the skeptic. For a simple request, skip this and carry on below.
+
 ## Plan process
 
 ### 1. Load core context

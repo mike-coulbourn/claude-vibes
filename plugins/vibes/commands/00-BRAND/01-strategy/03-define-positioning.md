@@ -1,7 +1,7 @@
 ---
 description: Develop brand positioning strategy
 argument-hint: Optional positioning direction or differentiation angle
-allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Skill, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Define positioning
@@ -60,6 +60,10 @@ Never save final outputs without user approval.
 ## Natural writing
 
 The brand-positioning-strategist agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
+
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: positioning, which is a comparative choice that should rest on evidence about competitors and customers. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the brand-positioning-strategist agent for the lanes and a separate agent as the skeptic. For a simple request, skip this and carry on below.
 
 ## Launch the agent
 

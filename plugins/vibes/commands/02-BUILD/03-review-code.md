@@ -38,6 +38,10 @@ If no plan file exists, review all uncommitted changes or recent commits. Use As
 - Celebrate good code: "This error handling is solid!"
 - Use AskUserQuestion for decisions about trade-offs
 
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: a review of a large or risky change, where security, correctness, performance, and tests are better examined as separate lanes. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the code-reviewer and tester agents for the lanes, the `security-review` skill run in its own lane by you, not by a subagent, and a separate agent as the skeptic. For a simple request, skip this and carry on below.
+
 ## Review process
 
 ### 1. Load core context

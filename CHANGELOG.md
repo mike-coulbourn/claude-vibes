@@ -2,6 +2,14 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 3.1.0
+
+`graph-engineering` is now available throughout the workflow, not only for the roadmap.
+
+- New `graph-running` skill carries out an approved graph at the execution level the graph recommends (by hand, one job at a time, or independent lanes as parallel agents), with a skeptic that is always a separate agent, a stop at every approval gate, and results saved to `docs/graphs/`. It never crosses a gate that involves accounts, money, terms, outreach, publishing, or production data.
+- Twelve commands offer a graph when the work is big enough, and leave simple requests alone: `02-research-audience`, `03-audit-competitors`, `04-name-brand`, `03-define-positioning`, `01-discover`, `03-architect`, `01-plan-code`, `03-review-code`, `01-diagnose-issue`, `01-assess-improvements`, `research`, and `scale-business`.
+- `05-track-progress` follows `graph-running` for the project graph.
+
 ## 3.0.0
 
 Project planning and tracking now run on the `graph-engineering` skill and a roadmap file, and the Taskmaster server is gone.

@@ -29,6 +29,10 @@ You orchestrate the consultation:
 2. **Launch the agent**: Pass any context they've provided
 3. **Let the agent lead**: The advisor will use AskUserQuestion extensively to gather information
 
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: a growth strategy that compares several options against evidence and ends in a consequential recommendation. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the business-growth-advisor agent for the lanes, the deep-researcher agent for evidence, and a separate agent as the skeptic. Gather the advisor's inputs yourself before launching its lanes, because a subagent cannot ask the user questions. For a simple request, skip this and carry on below.
+
 ## Process
 
 ### Step 1: Acknowledge and set expectations

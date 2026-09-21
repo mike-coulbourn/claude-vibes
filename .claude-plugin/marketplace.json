@@ -8,7 +8,7 @@
     {
       "name": "claude-vibes",
       "source": "./plugins/vibes",
-      "description": "Brand, plan, build, ship, debug, and refactor in plain language, with a roadmap that tracks every task, plus a creator toolkit. 42 commands, 37 agents, 21 skills, 2 MCP servers."
+      "description": "Brand, plan, build, ship, debug, and refactor in plain language, with a roadmap that tracks every task, plus a creator toolkit. 42 commands, 37 agents, 22 skills, 2 MCP servers."
     }
   ]
 }

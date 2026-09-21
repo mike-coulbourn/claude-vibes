@@ -1,7 +1,7 @@
 ---
 description: See where the project stands, pick the next task of any kind, and keep the roadmap true
 argument-hint: Optional, a task ID to work on or mark done, or a change you want to make to the roadmap
-allowed-tools: Read, Glob, Grep, Skill, AskUserQuestion, Edit, Bash(date:*)
+allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, Write, Edit, Bash(date:*)
 ---
 
 # Track progress
@@ -23,6 +23,8 @@ You are helping a vibe coder keep a whole project on track. The roadmap is the p
 **Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options.
 
 The roadmap at `docs/01-START/roadmap.md` is the single source of truth. Treat it the way an accountant treats a ledger: it changes only on purpose, every change is dated in its change log, and a task is ticked only when its done-when line is true. Edit the file in place and never rewrite it whole. Run `date +%Y-%m-%d` before writing any date.
+
+This command is how the project's graph gets run. For the rules on keeping reviewers separate from the work they check, stopping at approval gates, and what to do when the work drifts from the graph, follow the `claude-vibes:graph-running` skill.
 
 ## How to communicate
 

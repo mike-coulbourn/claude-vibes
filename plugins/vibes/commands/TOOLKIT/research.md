@@ -41,6 +41,10 @@ All research reports should be saved to: `research/[topic-area]/`
 - Use kebab-case
 - Be specific: `brand-positioning-strategies.md` not `research-1.md`
 
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: research with several sources, competing claims, or a decision riding on the answer. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the deep-researcher agent for one lane per question and a separate agent as the skeptic. For a simple request, skip this and carry on below.
+
 ## Process
 
 ### Step 1: Analyze the request
