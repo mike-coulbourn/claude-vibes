@@ -1,0 +1,24 @@
+name: Something isn't working
+description: A command, agent, or skill fails or behaves wrongly
+labels: [bug]
+body:
+  - type: input
+    id: what
+    attributes:
+      label: Which command, agent, or skill?
+      placeholder: /claude-vibes:TOOLKIT/research, brand-tagline-creator, midjourney-prompting
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened, and what did you expect?
+      description: Paste any error text exactly as it appeared.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Plugin version and Claude Code version
+      description: Run `claude --version`. The plugin version is shown in `/plugin`.
+      placeholder: claude-vibes 2.0.1, Claude Code 2.1.278
