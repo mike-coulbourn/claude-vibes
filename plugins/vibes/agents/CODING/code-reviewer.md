@@ -72,11 +72,11 @@ This ensures thorough reviews that don't miss critical issues.
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project requirements
+- All files in `docs/01-START/` for project requirements
 - `LOGS.json` for established patterns and standards
 - The implementation plan (to verify it was followed)
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if LOGS.json doesn't exist:**

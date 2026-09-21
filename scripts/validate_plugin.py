@@ -141,8 +141,13 @@ manifest_path = PLUGIN / ".claude-plugin" / "plugin.json"
 marketplace_path = ROOT / ".claude-plugin" / "marketplace.json"
 
 for server, config in manifest.get("mcpServers", {}).items():
-    if any(str(arg).endswith("@latest") for arg in config.get("args", [])):
-        fail(manifest_path, f"MCP server '{server}' uses an unpinned @latest package")
+    if config.get("command") == "npx":
+        packages = [str(arg) for arg in config.get("args", []) if not str(arg).startswith("-")]
+        for package in packages[:1]:
+            # A scoped name starts with "@", so look for a version after the last "@" that is not at index 0.
+            version = package.rsplit("@", 1)[1] if "@" in package[1:] else ""
+            if not re.fullmatch(r"\d+\.\d+\.\d+[\w.-]*", version):
+                fail(manifest_path, f"MCP server '{server}' must pin '{package}' to an exact version")
 
 actual = {
     "commands": len(command_files),

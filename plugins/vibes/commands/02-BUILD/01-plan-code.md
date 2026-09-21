@@ -1,6 +1,6 @@
 ---
 description: Explore the codebase and plan a clean, production-grade implementation
-argument-hint: Feature or task to plan (optional if Taskmaster is set up)
+argument-hint: Feature or task to plan (optional if the project has a roadmap)
 ---
 
 # Plan phase
@@ -23,7 +23,8 @@ You orchestrate the planning process and manage the conversation. The code-archi
 - `docs/01-START/01-discover.md`: The problem, users, and value
 - `docs/01-START/02-scope.md`: MVP scope boundaries
 - `docs/01-START/03-architect.md`: Technical decisions and data model
-- `docs/01-START/04-plan-roadmap.md`: Implementation roadmap
+- `docs/01-START/04-plan-roadmap.md`: Why the plan is shaped the way it is
+- `docs/01-START/roadmap.md`: The approved graph as a task checklist. This file decides what gets built and in what order
 
 These are stable project documentation, so always load them.
 
@@ -55,43 +56,57 @@ Patterns tell it which conventions to follow, and lessons warn it about gotchas.
 
 **If its memory is empty**, that's fine, and it fills up as you build. Proceed to the next step.
 
-### 3. Check for Taskmaster
+### 3. Check the roadmap
 
-**Check if Taskmaster is set up** by looking for `.taskmaster/tasks/tasks.json`.
+The roadmap at `docs/01-START/roadmap.md` is the project's single source of truth. Reading it before planning is what keeps the build from drifting away from what was agreed.
 
-**If Taskmaster exists:**
+**If the roadmap exists:** read it, including its alignment contract.
 
-Use the Taskmaster MCP `next_task` tool to get the recommended next task based on dependencies.
+1. If `$ARGUMENTS` names a task, match it to a roadmap task by ID or by name and use that task. If nothing matches, go to the scope gate below.
+2. Otherwise, find the unchecked tasks whose dependencies are all ticked, in phase order. If the first ready task is not a `build` task, name it and point the user to `/05-track-progress`, which handles every task type, before offering any build task. Skipping it would put the project out of order.
+3. Recommend the first ready `build` task.
+
+If the task has a `gate` field, it needs the user's approval before work starts. Ask for it with AskUserQuestion, and do not treat approval of the roadmap as approval of this task.
 
 **Use AskUserQuestion to confirm the task:**
 
 ```
-Question: "Based on your project's dependencies, Taskmaster recommends this task next:
+Question: "The roadmap says this comes next:
 
-**Task [ID]: [Task Name]**
-[Task description]
+**Task [ID]: [Task name]**
+Done when: [its done-when line]
 
-Dependencies completed: [list completed deps]
+Dependencies finished: [list]
 
 Should we plan this task?"
 Options:
 - Yes, let's plan this task
-- Show me other available tasks first
+- Show me the other tasks that are ready
 - I want to work on something else
 - Other
 ```
 
-**If they want other tasks:** Use `get_tasks` to show available tasks with their status and dependencies. Let them pick.
+**If they want other tasks:** list the unchecked tasks that are ready, with their phase and type, and let them pick. If they pick a task that is not a `build` task (brand, content, setup, legal, launch, or something they do by hand), point them to `/05-track-progress`, which handles every task type.
 
-**If they want something else:** Ask what they want to work on, then proceed with manual planning.
+**Scope gate.** If `$ARGUMENTS` or the user's answer describes work that is not on the roadmap, stop before planning it.
 
-**If Taskmaster does not exist:**
+First check the "Not doing" list. If the work is listed there, say that it was ruled out and why, and ask whether the user wants to reverse that decision. Only continue if they do.
 
-Check if `$ARGUMENTS` was provided.
+Then ask where it belongs:
 
-**If arguments provided:** Use that as the feature to plan.
+```
+Question: "[What they asked for] isn't on the roadmap. How should I handle it?"
+Options:
+- Add it to the roadmap (tell me which phase) and plan it now
+- Park it under "Later" and carry on with the roadmap
+- Drop it and add it to "Not doing"
+- Other
+```
 
-**If no arguments:** Use AskUserQuestion:
+Then edit `docs/01-START/roadmap.md` in place to match the answer, using the line format described in that file's tasks, update "Last updated", and add a dated line to its change log saying what changed and why. Run `date +%Y-%m-%d` for the date. Build only what the roadmap contains.
+
+**If there is no roadmap:** say so, and recommend running `/04-plan-roadmap` first so the whole project is scoped. If the user wants to go ahead anyway, use `$ARGUMENTS` as the task, or ask:
+
 ```
 Question: "What would you like to build next?"
 Options:
@@ -101,117 +116,13 @@ Options:
 - Other
 ```
 
-### 4. Expand complex tasks (Taskmaster only)
+### 4. Break down a large task
 
-**Skip this step if not using Taskmaster.** For manual tasks, proceed to Step 5.
+**Skip this step if the task fits in one focused session.**
 
-After selecting a Taskmaster task, check if it needs expansion into subtasks.
+If the task touches several parts of the system, or its done-when line bundles several results, propose 2 to 5 subtasks, each with its own done-when line. Number them under the parent (`2.3a`, `2.3b`).
 
-**Step 3a: Check for existing subtasks**
-
-Use `get_task` to see the task details. If subtasks already exist:
-
-**Use AskUserQuestion:**
-```
-Question: "This task already has subtasks:
-
-1. [Subtask 1]: [status]
-2. [Subtask 2]: [status]
-3. [Subtask 3]: [status]
-
-Which subtask should we plan?"
-Options:
-- Subtask 1: [name]
-- Subtask 2: [name]
-- [etc.]
-- Other
-```
-
-Then proceed to Step 4 with the selected subtask.
-
-**Step 3b: Check complexity analysis**
-
-If no subtasks exist, check if complexity analysis has been run for this task.
-
-**If complexity data exists:**
-
-Look at two things:
-1. The complexity score (1-10)
-2. The **recommended subtask count** from the analysis
-
-**If recommended subtasks = 0 or complexity score < 4:**
-The task is simple enough, so skip expansion and proceed to Step 4.
-
-**If recommended subtasks > 0:**
-
-**Use AskUserQuestion:**
-```
-Question: "This task has been analyzed:
-
-**Task [ID]: [Name]**
-- Complexity score: [X]/10
-- Taskmaster recommends: [Y] subtasks
-
-Expanding into subtasks helps prevent context issues during implementation. Want to expand?"
-Options:
-- Yes, expand with research (recommended for unfamiliar areas)
-- Yes, expand without research (faster)
-- No, I'll handle it as one task
-- Why is this task complex? (show analysis details)
-```
-
-**If they want details:** Show the complexity analysis reasoning, then ask again.
-
-**If they decline expansion:** Note in the plan that this is a complex task being handled as one unit. Proceed to Step 4.
-
-**If they choose to expand:**
-
-1. Use Taskmaster's `expand_task` tool:
-   - Include `--research` flag if they chose that option
-   - The tool will create subtasks based on complexity recommendations
-
-2. Show the generated subtasks:
-
-**Use AskUserQuestion:**
-```
-Question: "Here are the subtasks created:
-
-1. [Subtask 1]: [description]
-2. [Subtask 2]: [description]
-3. [Subtask 3]: [description]
-
-Does this breakdown look right?"
-Options:
-- Yes, looks good, let's plan subtask 1
-- I'd like to adjust some subtasks first
-- Add a subtask for [specific area]
-- Other
-```
-
-3. Make adjustments if needed using Taskmaster tools
-
-4. **The first subtask becomes what we plan**: proceed to Step 4 with subtask 1
-
-**If no complexity data exists:**
-
-**Use AskUserQuestion:**
-```
-Question: "This task hasn't been analyzed for complexity yet.
-
-Complexity analysis identifies which tasks benefit from being broken into subtasks. Want me to analyze it?"
-Options:
-- Yes, analyze first (recommended)
-- No, proceed without analysis
-- What does complexity analysis do?
-```
-
-**If they want explanation:** "Complexity analysis uses AI to evaluate the task and recommend how many subtasks it should have. Tasks with many dependencies, unfamiliar technologies, or multiple concerns benefit from breakdown. Simple tasks get a recommendation of 0 subtasks."
-
-**If they choose to analyze:** Use Taskmaster's `analyze_task_complexity` tool, then return to the "If complexity data EXISTS" flow above.
-
-**If they skip analysis:** Proceed to Step 5 with the full task.
-
----
+**Use AskUserQuestion** to confirm the breakdown. After approval, write the subtasks into the roadmap under the parent task, update "Last updated", add a dated change-log line, and then plan the first one. The parent is ticked only when all its subtasks are.
 
 ### 5. Understand the task
 
@@ -334,7 +245,7 @@ Once the user approves, document the plan:
 **Summary:**
 - What we're building
 - Why it matters
-- Taskmaster task ID (if applicable)
+- The literal line `Roadmap task ID: <id>` (if the task came from the roadmap), which `/02-write-code` looks for
 
 **Approach:**
 - Files to create/modify
@@ -358,11 +269,11 @@ Once the user approves, document the plan:
 When planning is complete:
 
 1. **Determine plan filename:**
-   - If Taskmaster task: `docs/02-BUILD/plan-task-[id]-[name].md`
+   - If it is a roadmap task: `docs/02-BUILD/plan-task-[id]-[name].md`
    - If manual: `docs/02-BUILD/plan-[feature-name].md`
 
 2. **Save the plan** with:
-   - Taskmaster task ID (if applicable)
+   - The literal line `Roadmap task ID: <id>` (if the task came from the roadmap), which `/02-write-code` looks for
    - Summary of what's being built
    - Approach and file changes
    - Patterns to follow

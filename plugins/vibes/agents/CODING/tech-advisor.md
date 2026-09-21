@@ -12,11 +12,11 @@ You are a technical consultant helping a vibe coder make informed technology dec
 ## Context
 
 Read the previous phase documents to understand the project:
-- `docs/start/01-discover.md` - Problem and users
-- `docs/start/02-scope.md` - MVP features
-- `docs/start/03-architect.md` - Architecture decisions (if exists)
+- `docs/01-START/01-discover.md` - Problem and users
+- `docs/01-START/02-scope.md` - MVP features
+- `docs/01-START/03-architect.md` - Architecture decisions (if exists)
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), research and recommend based on information provided in the prompt. Use AskUserQuestion to gather context about the project's requirements, constraints, and preferences before making recommendations.
 
 ## Your task

@@ -5,7 +5,7 @@ A Claude Code plugin for people who describe WHAT they want and let Claude handl
 It covers three things that Claude Code does not ship on its own:
 
 - **Build a brand from nothing.** Sixteen guided commands take you from founder interview to a compiled brand guidelines document: purpose, values, positioning, archetype, voice, messaging, tagline, pitch, colors, and typography.
-- **Turn an idea into a plan.** Discovery, scoping, architecture, and a roadmap, explained in plain language for people who don't read code.
+- **Turn an idea into a plan, and stay on it.** Discovery, scoping, and architecture, then the `graph-engineering` skill designs the whole project as a graph of jobs with real dependencies, separate checks, and approval points, covering code, brand work, content, account setup, legal, and launch. The approved graph is saved as a checklist that every command reads before it works, and anything not on it has to be added on purpose. That is what stops a project from drifting.
 - **A creator toolkit.** Sponsor scripts, hooks, marketing copy, deep research, and image prompts for Midjourney and Nano Banana Pro.
 
 It also wraps building, shipping, debugging, and refactoring in the same plain-language, confirm-before-acting style, and leans on Claude Code's built-in review, reasoning, and memory wherever those exist.
@@ -30,9 +30,9 @@ irm https://claude.ai/install.ps1 | iex
 
 This is Anthropic's native installer, and it keeps Claude Code updated automatically. Homebrew (`brew install --cask claude-code`) and WinGet also work, but they do not auto-update by default. Already have Claude Code? Skip this step.
 
-### 2. Install Node.js 18+
+### 2. Install Node.js 18+ (only for brand naming)
 
-Two of the bundled MCP servers (Taskmaster and Whois) start through `npx`. Install Node from [nodejs.org](https://nodejs.org), or with `brew install node` on macOS. Check with `node --version`.
+The Whois server, which checks whether a domain is free while you name a brand, starts through `npx`. If you will use that command, install Node from [nodejs.org](https://nodejs.org), or with `brew install node` on macOS. Everything else works without Node.
 
 ### 3. Install Claude Vibes
 
@@ -47,8 +47,6 @@ claude plugin install claude-vibes@claude-vibes
 ### 4. Start
 
 Open a terminal in your project folder, run `claude`, and type `/` to see the new commands. If Claude Code was already running, restart it or run `/reload-plugins`.
-
-Taskmaster needs no setup. The first time you run the roadmap command, it configures Taskmaster to use your Claude Code login, so there is no separate API key.
 
 To update later, run `claude plugin update claude-vibes@claude-vibes`, then restart Claude Code.
 
@@ -164,7 +162,7 @@ Build a startup's brand identity step by step, from the founder interview to a f
 
 ### 01-START (discovery and planning)
 
-Plan before you build. Discover the problem space, scope your MVP, and create an implementation roadmap.
+Plan before you build. Discover the problem, scope the MVP, design the foundation, and write the roadmap that the rest of the project follows. The roadmap lives in `docs/01-START/roadmap.md` in your project, so you can read it, edit it, and keep it in git.
 
 **Commands:**
 | Command | Description |
@@ -172,7 +170,8 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 | `/claude-vibes:01-START/01-discover` | Understand the problem space and user needs |
 | `/claude-vibes:01-START/02-scope` | Define MVP boundaries and prioritize features |
 | `/claude-vibes:01-START/03-architect` | Plan technical approach and system design |
-| `/claude-vibes:01-START/04-plan-roadmap` | Create implementation roadmap with phases |
+| `/claude-vibes:01-START/04-plan-roadmap` | Scope the whole project with `graph-engineering` and save the approved graph as the roadmap |
+| `/claude-vibes:01-START/05-track-progress` | See where the project stands, move the next task forward, and change the roadmap on purpose |
 
 **Agents:**
 - `market-validator` - Research market viability and competition
@@ -180,6 +179,23 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 - `tech-advisor` - Recommend technology choices
 - `plan-reviewer` - Review and improve implementation plans
 - `data-modeler` - Design data structures and schemas
+
+#### How planning and tracking work
+
+1. **Run the first three START commands.** They produce plain-language documents on the problem, what is in and out of scope, and the technical foundation.
+2. **Run `04-plan-roadmap`.** It hands all of that to the `graph-engineering` skill, which first confirms an alignment contract with you (the objective, what done means, what to optimize for, what is out of scope, and which decisions stay yours), then designs the work as jobs. Each job has one owner and one checkable output. Reviews are separate jobs, so no job grades its own work, and an approval point sits in front of anything expensive or hard to undo. The skill only designs. Nothing runs until you approve the graph.
+3. **The approved graph becomes `docs/01-START/roadmap.md`**, a file in your project that you can read and keep in git. One line per task:
+
+   ```
+   - [ ] 2.1 Build checkout | type: build | how: 01-plan-code, then 02-write-code | depends on: 1.4 | done when: a test card payment succeeds
+   - [ ] 2.2 Review checkout | type: check | how: 03-review-code | depends on: 2.1 | done when: review passes with no blockers
+   - [ ] 2.3 Open the Stripe account | type: setup | how: you, by hand | gate: your approval before starting | done when: live keys are saved
+   ```
+
+4. **Work from the roadmap.** `05-track-progress` shows where things stand and moves the next task forward, whatever its type. For code, `01-plan-code` picks the next build task and `02-write-code` ticks it off once its done-when line is true.
+5. **Change course on purpose.** Ask for something that is not on the roadmap and the command stops to ask where it belongs: a phase, the "Later" list, or "Not doing". A change to the objective itself sends you back to `04-plan-roadmap` to approve a new graph.
+
+You can use the skill by itself for any multi-step piece of work, not only a software project. Run `/claude-vibes:graph-engineering` and describe the objective.
 
 ---
 
@@ -301,7 +317,7 @@ Skills are knowledge packs that Claude loads on its own when a conversation call
 
 ## MCP servers
 
-MCP (Model Context Protocol) servers give Claude Code extra tools. The plugin installs three that need no setup.
+MCP (Model Context Protocol) servers give Claude Code extra tools. The plugin installs two that need no setup.
 
 ### Installed automatically
 
@@ -310,12 +326,12 @@ These servers start automatically when the plugin is enabled:
 | Server | Purpose | Official Source |
 |--------|---------|-----------------|
 | **Context7** | Up-to-date documentation in prompts | [github.com/upstash/context7](https://github.com/upstash/context7) |
-| **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
 | **Whois** | Domain/IP lookup | [@mcp-server/whois-mcp](https://www.npmjs.com/package/@mcp-server/whois-mcp) |
 
 Notes:
 - Add `use context7` to a prompt to pull current library documentation. Context7 is a hosted service, so those lookups leave your machine.
-- Taskmaster and Whois run locally through `npx`. The roadmap command sets Taskmaster up the first time you run it.
+- Whois runs locally through `npx`, pinned to an exact version.
+- Project tracking needs no server. The roadmap is a file in your project that the commands keep up to date.
 - Cross-session learning uses Claude Code's native agent memory, stored in `.claude/agent-memory/` in your project, so there is no memory server. Commit that folder to share it with your team, or add it to `.gitignore` to keep it private.
 
 ### Optional servers (setup required)

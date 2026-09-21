@@ -1,12 +1,12 @@
 ---
-description: Create the implementation roadmap with phases and milestones
+description: Scope the whole project with the graph-engineering skill and save the approved graph as the roadmap every later command follows
 argument-hint: Optional constraints like timeline or priorities
-allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, Skill, AskUserQuestion, Write, Edit, Bash(date:*)
 ---
 
 # Planning phase
 
-You are helping a vibe coder create a clear implementation roadmap. This phase takes everything from discovery, scope, and architecture and turns it into actionable build phases, and sets up Taskmaster for task management.
+You are helping a vibe coder create a clear implementation roadmap. This phase takes everything from discovery, scope, and architecture and turns it into phases, then saves every task in the project as a checklist that later commands read and tick off, which is what keeps the project from drifting.
 
 ## Full project context
 
@@ -17,18 +17,17 @@ You are helping a vibe coder create a clear implementation roadmap. This phase t
 @docs/01-START/02-scope.md
 @docs/01-START/03-architect.md
 @docs/01-START/04-plan-roadmap.md
+@docs/01-START/roadmap.md
 
 **Check what loaded above:** If discovery, scope, and architecture content appear, synthesize them into a roadmap. If some docs are missing, ask the user to describe the missing context or suggest running earlier START commands first.
 
-**Taskmaster:** Use `get_tasks` MCP tool to check if Taskmaster is already initialized. If tasks exist, offer to update rather than reinitialize.
+**Existing roadmap:** If `docs/01-START/roadmap.md` loaded above, this project already has a task checklist. Update it rather than starting over, and keep every ticked task ticked.
 
 ## Your role
 
 **Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You do the heavy lifting on planning. Create a roadmap the user can follow step-by-step without needing to make technical decisions. Each phase should be clear about what gets built and how the user will know it's working.
-
-**You orchestrate specialized agents while having parallel conversations.** Don't validate the plan yourself. Delegate to the plan-reviewer while you continue detailing phases with the user.
 
 **Think step by step (ultrathink)** for any complex reasoning, phase sequencing, or dependency analysis. This ensures systematic, thorough thinking. Ultrathink through build order before presenting conclusions.
 
@@ -69,95 +68,28 @@ If docs don't exist (common when using claude-vibes on an existing project), use
 
 Then proceed with roadmap planning based on the user's answers.
 
-### 2. Identify build order
+### 2. Gather what the graph needs
 
-Ultrathink about what needs to be built first:
-- What has to exist before other things can work?
-- What has the most uncertainty? (Build that early to learn)
-- What will the user want to see working first?
+Collect, do not decide. The `graph-engineering` skill owns the build order, the checks, and the approval points, so this step only makes sure it starts with the full picture.
 
-Explain the logic in plain language:
-- "We need user accounts before we can save user-specific data"
-- "The main feature should work before we add extras"
+**A project is more than its code.** List every piece of work that has to happen for the project to succeed, and give each one a type:
 
-### 3. Define implementation phases
+- `build`: code, planned and written with the BUILD commands
+- `brand`: name, positioning, voice, visuals (the BRAND commands)
+- `content`: copy, scripts, images, documentation (the TOOLKIT commands)
+- `research`: market, competitor, or technical questions that must be answered first
+- `setup`: accounts, domains, hosting, payments, app store listings, analytics
+- `legal`: terms, privacy policy, business entity, licences
+- `launch`: announcements, outreach, pricing pages, support channels
+- `manual`: anything only the user can do, such as signing a contract or recording a video
 
-Break the build into logical phases. Each phase should:
-- Be completable in a focused work session
-- Result in something the user can see and test
-- Build toward the next phase
+Ask the user about the non-code work with AskUserQuestion, because discovery and scope documents rarely mention it. A roadmap that lists only code leaves the rest of the project untracked.
 
-Typical structure:
-- **Phase 1: Foundation**: Set up the project, data storage, user accounts
-- **Phase 2: Core Feature**: The main thing the app does
-- **Phase 3: Supporting Features**: Things that make the core better
-- **Phase 4: Polish**: Making it feel complete and handling edge cases
-- **Phase 5: Launch Prep**: Final testing and going live
-
-**Direction checkpoint:**
-```
-Question: "Here's the build order I'd recommend:
-
-[Show phases with brief descriptions]
-
-Does this work for you?"
-Options:
-- Yes, this order makes sense
-- I'd like to adjust the priority of some phases
-- I have questions about specific phases
-```
-
-### 4. Detail each phase
-
-For each phase, specify:
-- **Goal**: What this accomplishes (plain language, user-focused)
-- **What gets built**: Specific things that will exist after this phase
-- **How you'll know it works**: What the user can do/see to verify
-- **What's needed first**: Any phases that must come before this one
-
-### 5. Define milestones
-
-Create clear checkpoints:
-- What does "done" look like for each phase?
-- What can the user show to others or test?
-- When should we pause and check if the plan still makes sense?
-
-### 6. Plan review (required)
-
-**Use the Agent tool to launch the plan-reviewer agent before saving:**
-
-```
-Agent tool:
-  subagent_type: "claude-vibes:CODING:plan-reviewer"
-  prompt: "Ultrathink about this implementation roadmap. Read all docs/01-START/ files for complete context.
-
-  **Think step by step (ultrathink)** to systematically analyze:
-  1. Phase sequencing: are dependencies correctly ordered?
-  2. Scope alignment: does the roadmap match the MVP scope from 02-scope.md?
-  3. Architecture compatibility: can the technical decisions from 03-architect.md support this build order?
-  4. Risk identification: what could go wrong during implementation?
-  5. Milestone clarity: are checkpoints testable and measurable?
-  6. Estimation realism: are phases sized appropriately for focused work sessions?
-
-  **Use AskUserQuestion when you find concerns:**
-  - If phases could be reordered for better risk reduction, present options
-  - If scope seems to have drifted from 02-scope.md, ask about priorities
-  - If technical decisions seem incompatible with build order, flag and discuss
-  - If milestones aren't measurable, suggest more concrete success criteria
-  - Never assume how to resolve issues. Clarify with the user
-
-  Flag all concerns with severity (blocker vs. consideration) and suggest resolutions in plain language."
-```
-
-Address any concerns raised before proceeding to save.
-
-### 7. Identify risks and unknowns
-
-Surface things that might cause problems:
-- Technical stuff we're not 100% sure about
-- Outside services we depend on
-- Decisions that might change the plan
-- Places where scope might grow
+Also note, without resolving them:
+- Dependencies you already know about ("user accounts have to exist before anything is saved per user")
+- What the user has already ruled out or deferred in `02-scope.md`
+- Constraints on time, money, access, and permissions
+- Risks and unknowns: technical uncertainty, outside services the project depends on, decisions that might change the plan, and places where scope could grow
 
 ## Guidelines
 
@@ -183,265 +115,139 @@ Before you write anything yourself in this command, such as a summary or a saved
 
 When planning feels complete:
 
-### Step 1: Save human-readable roadmap
+### Step 1: Save the reasoning
 
 1. Ensure `docs/01-START/` directory exists
 
-2. Save the implementation plan to `docs/01-START/04-plan-roadmap.md` with:
+2. Save `docs/01-START/04-plan-roadmap.md` as the narrative behind the plan:
    - Project summary (what we're building and why, in plain language)
-   - Implementation phases with details for each
+   - Why the phases are in this order
    - Key milestones and how to know they're achieved
    - Risks and unknowns to watch for
-   - Recommended first steps
 
-### Step 2: Ask about Taskmaster setup
+Keep task lists out of this file. Task state lives only in `roadmap.md` (Step 3), and if the two ever disagree, `roadmap.md` wins.
 
-**Check Taskmaster state from context injection above.**
+### Step 2: Engineer the project graph
 
-**If Taskmaster is already initialized with tasks:**
-```
-Question: "Taskmaster is already set up with existing tasks. What would you like to do?"
-Options:
-- Update tasks from the new roadmap (regenerate)
-- Keep existing tasks
-- Show me the current tasks first
-```
+**Use the Skill tool** to invoke `claude-vibes:graph-engineering`, with the whole project as its objective. The skill aligns with the user, then designs the smallest useful graph of jobs, with real dependencies, separate checks, and human approval points, and it stops when the user approves the graph. It designs the work and never runs it.
 
-**If Taskmaster is not initialized:**
-```
-Question: "I can set up Taskmaster to track your tasks and dependencies automatically. This will help you know exactly what to build next. Want me to set it up?"
-Options:
-- Yes, set up Taskmaster (recommended)
-- No, I'll manage tasks manually
-- What's Taskmaster? Tell me more first
-```
+Give the skill everything already settled so it confirms instead of re-asking: the discovery, scope, and architecture documents, the phases and milestones from this session, and the work types from step 3. Tell it that:
+- The graph covers all the work in the project, including brand, content, research, setup, legal, launch, and things the user does by hand, as well as code.
+- Each job needs one owner: a named command (for example `01-plan-code` then `02-write-code`, or `02-create-tagline`), or "you, by hand" with the steps.
+- Each job's output must be something the user can check for themselves.
+- Reviews are separate jobs with a different owner from the work they check, for example `03-review-code` after a build job.
+- Human approval points go before anything expensive or hard to undo: spending money, publishing, legal commitments, deleting or migrating data, contacting customers.
 
-**If they want more info:**
-Explain briefly: "Taskmaster is a task management system that:
-- Breaks your roadmap into trackable tasks
-- Knows what to build next based on dependencies
-- Tracks your progress across the whole project
-- Handles changes when plans evolve mid-build
+Let the skill run its full process, including its alignment contract and its own audit of the graph. Do not shorten it, and do not start any job.
 
-The `/02-BUILD` commands will use it automatically, so you don't need to learn any new commands."
+**If the skill judges the project too simple for a graph**, which it is designed to do, say so plainly and write the phases and tasks straight into the template in Step 3, leaving out the Graph and Decisions sections.
 
-Then ask again if they want to set it up.
+### Step 3: Save the approved graph as the roadmap
 
-**If they decline:** Skip to Step 6 (congratulate without Taskmaster).
+Once the user approves the graph, save it to `docs/01-START/roadmap.md`, so that each job leaves a record later sessions can inspect. `/01-plan-code`, `/02-write-code`, and `/05-track-progress` all read this file before doing anything, and tick jobs off as they finish.
 
-**If they accept:** Continue to Step 3.
+**If `roadmap.md` already exists**, edit it in place with Edit and never replace it with Write. Keep every `- [x]` line with its date, and keep the whole change log. Add new tasks, note removed ones in the change log, and append a dated line. Use the template below only when the file does not exist.
 
-### Step 3: Generate the Taskmaster PRD
+**Dates:** run `date +%Y-%m-%d` before writing any date. Never guess it.
 
-Create a PRD (Product Requirements Document) by synthesizing all `docs/01-START/` files into Taskmaster format.
+```markdown
+# Roadmap: [Project name]
 
-**Save to `.taskmaster/docs/prd.txt`:**
+Every command reads this file before it works and ticks tasks off when they are done. Change it on purpose, and note why in the change log at the bottom.
 
-```
-# [Project Name]
+Last updated: [YYYY-MM-DD]
 
-## Project Overview
-[From 01-discover.md: Problem statement, target users, value proposition]
+## Alignment contract
 
-## Target Users
-[From 01-discover.md: User personas and their needs]
+What we agreed this project is, before anyone starts. If a new idea changes this, the plan gets redone, not patched.
 
-## Core Features
+- Objective: [what the project is for]
+- Done means: [the terminal result and how success is judged]
+- Optimize for: [what matters most, in the user's order]
+- In scope: [...]
+- Decisions that stay with you: [...]
+- Constraints: [time, money, access, permissions]
 
-### Feature 1: [Name]
-[From 02-scope.md: MVP features with user stories]
-- User Story: As a [user], I want to [action] so that [benefit]
-- Acceptance Criteria:
-  - [ ] [Specific, testable criteria]
-  - [ ] [More criteria]
+## Graph
 
-### Feature 2: [Name]
-[Continue for each MVP feature]
+Who does what, and in what order. `check` lines are someone else marking the work, and `gate` lines are decisions only you can make.
 
-## Technical Requirements
-[From 03-architect.md: Data model, auth approach, integrations, key decisions]
+[The approved mermaid diagram from graph-engineering. Label each node with its task ID and its plain role name, so the diagram and the checklist match]
 
-## Implementation Phases
-[From the roadmap you just created: phases with dependencies]
+## Decisions
 
-### Phase 1: [Name]
-- Dependencies: None
-- Tasks:
-  - [Specific task 1]
-  - [Specific task 2]
+[One line per material decision from the graph: what it decides, who owns it, what evidence settles it, and what would change it]
 
-### Phase 2: [Name]
-- Dependencies: Phase 1
-- Tasks:
-  - [Specific task 1]
-  - [Specific task 2]
+## How this runs
 
-[Continue for each phase]
+- Shared state: every command reads this file first and writes its result back here.
+- Execution level: [the level graph-engineering recommended]
 
-## Success Criteria
-[From 01-discover.md: How we know this is working]
+## Phase 1: [Name]
 
-## Out of Scope
-[From 02-scope.md: Explicitly excluded items]
+Goal: [plain-language goal]
+Done when: [what the user can see or do]
+
+- [ ] 1.1 [Task] | type: build | how: 01-plan-code, then 02-write-code | done when: [checkable output]
+- [ ] 1.2 [Review of 1.1] | type: check | how: 03-review-code | depends on: 1.1 | done when: [checkable output]
+- [ ] 1.3 [Task] | type: setup | how: you, by hand ([the steps]) | depends on: 1.1, 1.2 | gate: your approval before starting | done when: [checkable output]
+
+## Later
+
+[Good ideas that are deliberately not in this version]
+
+## Not doing
+
+[The contract's non-goals and anything else ruled out, each with its reason, so they do not creep back in]
+
+## Change log
+
+- [YYYY-MM-DD]: Roadmap created from the approved graph.
 ```
 
-### Step 4: Initialize Taskmaster
+**Line format.** The other commands parse these lines, so keep to it exactly:
+- One line per task: `- [ ] <id> <task> | type: <type> | how: <owner> | depends on: <id>, <id> | gate: <approval needed> | done when: <output>`. Leave out `depends on` and `gate` when a task has none.
+- No `|` and no line break inside a field. Use a comma instead.
+- IDs are `<phase>.<number>`. A subtask takes its parent's ID plus a letter (`2.3a`), and the parent is ticked only when all its subtasks are.
+- Types are `build`, `brand`, `content`, `research`, `setup`, `legal`, `launch`, `manual`, and `check`.
+- A finished task becomes `- [x] ... | done: <YYYY-MM-DD>`.
+- A `check` that fails is unticked again, along with the task it reviewed, and gets `| note: failed <YYYY-MM-DD>, <what failed>`.
+- Every job in the approved graph appears as exactly one task, including its skeptic and review jobs (`check`) and its human approval points (`gate`). If you cannot write a done-when line for a job, it is too vague, so take it back to the graph.
 
-**Use the Taskmaster MCP tools to set up task management:**
+**If the project has an old Taskmaster folder** (`.taskmaster/tasks/tasks.json` exists): read the file directly. Older files look like `{"tasks": [...]}` and newer ones wrap the list in a tag, such as `{"master": {"tasks": [...]}}`. Give the task list to the graph-engineering step as existing context. When saving, tick tasks whose status is `done`, put `deferred` ones under "Later" and `cancelled` ones under "Not doing", treat them as `build` unless the title says otherwise, and ask the user for a done-when line where one cannot be inferred. If the file will not parse, say so and carry on without it. Leave the `.taskmaster/` folder untouched.
 
-1. **Initialize Taskmaster** (if not already initialized):
-   - Check if `.taskmaster/` directory exists from context
-   - If not, use the `initialize_project` Taskmaster tool
-   - Read `.taskmaster/config.json`. If the file is missing, or its main model uses a provider the user has no API key for, set `models.main` to `{ "provider": "claude-code", "modelId": "opus" }` and leave every other setting as it is. This runs Taskmaster through the user's Claude Code login, so no separate API key is needed. If the user already chose a working provider, do not change it.
-   - Add `.taskmaster/` to `.gitignore` if it is not already listed
+### Step 4: Independent review of the saved roadmap
 
-2. **Parse the PRD into tasks:**
-   - Use the `parse_prd` Taskmaster tool with the PRD file path
-   - This creates `.taskmaster/tasks/tasks.json` with structured tasks and dependencies
-
-3. **Verify and show task overview:**
-   - Use the `get_tasks` Taskmaster tool to retrieve all tasks
-   - Present a summary of what was created
-
-**Use AskUserQuestion to review the tasks:**
+**Use the Agent tool to launch the plan-reviewer agent:**
 
 ```
-Question: "Taskmaster created [X] tasks from your roadmap. Here's a quick overview:
+Agent tool:
+  subagent_type: "claude-vibes:CODING:plan-reviewer"
+  prompt: "Review the saved roadmap at `docs/01-START/roadmap.md` against its alignment contract and against the other docs/01-START/ files. ultrathink
 
-[Show first 3-5 tasks with their dependencies]
+  Check:
+  1. Coverage: does every feature in 02-scope.md, and every kind of non-code work the project needs, appear as a task?
+  2. Dependencies: is anything ordered before something it needs?
+  3. Architecture: can the decisions in 03-architect.md support this order?
+  4. Done-when lines: can the user check each one for themselves?
+  5. Checks and gates: does every build task have a separate check, and does an approval gate sit before anything expensive or hard to undo?
+  6. Size: does each task fit in one focused session?
 
-Does this breakdown look right?"
-Options:
-- Yes, looks good
-- I'd like to see all the tasks first
-- Some tasks need adjustment
+  Report concerns with severity (blocker or consideration) and a suggested fix in plain language. Do not edit the roadmap."
 ```
 
-**If they want to see all tasks:** Display the full task list, then ask again.
+Take each blocker to the user with AskUserQuestion, then edit the roadmap in place and add a dated change-log line for what changed.
 
-**If tasks need adjustment:** Use AskUserQuestion to understand what to change, then use Taskmaster tools to update.
+### Step 5: Congratulate
 
-### Step 5: Analyze task complexity
+"Your project is fully planned.
 
-After tasks are created, run complexity analysis to identify which tasks may need breakdown.
+**Documentation** (in `docs/01-START/`):
+- 01-discover.md: the problem and who it is for
+- 02-scope.md: what is in and out
+- 03-architect.md: the technical foundation
+- 04-plan-roadmap.md: why the plan is shaped this way
+- roadmap.md: the approved graph as a checklist of every task, which every command keeps up to date
 
-1. **Run complexity analysis:**
-   - Use Taskmaster's `analyze_project_complexity` tool
-   - This evaluates each task and provides:
-     - Complexity score (1-10)
-     - Recommended number of subtasks
-     - Reasoning for complex tasks
-
-2. **Show complexity overview:**
-
-**Use AskUserQuestion:**
-```
-Question: "I've analyzed the complexity of your tasks:
-
-**Simple tasks (can implement directly):**
-- Task 1: [name], complexity 3/10
-- Task 4: [name], complexity 2/10
-
-**Complex tasks (recommend breaking into subtasks):**
-- Task 2: [name], complexity 7/10, recommends 3 subtasks
-- Task 5: [name], complexity 8/10, recommends 4 subtasks
-
-You can expand complex tasks now, or wait until you plan each one (recommended).
-
-What would you like to do?"
-Options:
-- Expand later during planning (recommended)
-- Expand all complex tasks now
-- Show me the complexity details
-```
-
-**If they choose "Expand later" (recommended):**
-Proceed to Step 6. The `/02-BUILD:01-plan-code` command will handle expansion when you're about to work on each task, which gives better results because it can use codebase context.
-
-**If they choose "Expand all now":**
-
-Use Taskmaster's `expand_task` tool for each complex task (those with recommended subtasks > 0).
-
-**Use AskUserQuestion after expansion:**
-```
-Question: "Expanded [X] complex tasks into subtasks:
-
-- Task 2 → 3 subtasks created
-- Task 5 → 4 subtasks created
-
-Total tasks: [original count] → [new count with subtasks]
-
-Does this look right?"
-Options:
-- Yes, looks good
-- Show me the subtasks
-- Some need adjustment
-```
-
-**If they want complexity details:** Show the full complexity report with reasoning for each task, then ask again.
-
-3. **Show the recommended first task:**
-
-**Use AskUserQuestion:**
-```
-Question: "Based on dependencies, here's the recommended first task:
-
-**[Task Name]**
-[Task description]
-Complexity: [X]/10
-
-Ready to start building?"
-Options:
-- Yes, let's do it! (I'll run /02-BUILD:01-plan-code)
-- I want to review the full plan first
-- I have questions before starting
-```
-
-### Step 6: Congratulate
-
-**With Taskmaster:**
-
-"Planning complete! Here's what we created:
-
-**Human documentation** (in `docs/01-START/`):
-- Discovery summary
-- Scope and MVP features
-- Architecture decisions
-- Implementation roadmap
-
-**Task management** (in `.taskmaster/`):
-- PRD document
-- [X] structured tasks with dependencies
-- First task ready: [task name]
-
-**Next steps:**
-Run `/02-BUILD:01-plan-code`. Taskmaster will recommend what to build based on dependencies."
-
-**Without Taskmaster:**
-
-"Planning complete! Here's what we created:
-
-**Human documentation** (in `docs/01-START/`):
-- Discovery summary
-- Scope and MVP features
-- Architecture decisions
-- Implementation roadmap
-
-**Next steps:**
-1. Review the complete plan in `docs/01-START/`
-2. When ready to build, run `/02-BUILD:01-plan-code [feature name]`
-
-You can run `/04-plan-roadmap` again later if you want to set up Taskmaster."
-
-## Taskmaster integration notes
-
-**Why Taskmaster?**
-- Tracks task dependencies automatically
-- Knows what to build next based on what's complete
-- Handles implementation drift (when plans change mid-build)
-- Maintains project-wide progress visibility
-
-**The user doesn't need to learn Taskmaster commands.** The `/02-BUILD` commands interact with it automatically. But if they want to check status manually, they can say:
-- "Show tasks": see all tasks and status
-- "What's next?": get the next recommended task
-- "Show task 5": see details of a specific task
+**What to do next:**
+Run `/05-track-progress` at any time to see where the project stands and what comes next, whatever kind of task it is. When the next task is code, run `/01-plan-code` and it will pick that task up from the roadmap."

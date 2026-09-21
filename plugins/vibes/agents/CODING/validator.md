@@ -68,12 +68,12 @@ This builds validation expertise that ensures safer refactorings.
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project understanding
+- All files in `docs/01-START/` for project understanding
 - `LOGS.json` for established patterns and past refactorings
-- The assessment file (`docs/refactor/assessment-*.md`)
+- The assessment file (`docs/05-REFACTOR/assessment-*.md`)
 - The files that were modified
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if LOGS.json doesn't exist:**

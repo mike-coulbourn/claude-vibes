@@ -63,11 +63,11 @@ This builds debugging expertise that compounds across sessions.
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project understanding
+- All files in `docs/01-START/` for project understanding
 - `LOGS.json` for past fixes and known issues
 - Any error logs, stack traces, or output the user provides
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and how components interact.
 
 **Fallback if LOGS.json doesn't exist:**

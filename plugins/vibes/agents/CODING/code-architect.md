@@ -60,11 +60,11 @@ Architecture decisions have cascading consequences. Before acting, think step by
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project understanding
+- All files in `docs/01-START/` for project understanding
 - `LOGS.json` for build history and established patterns
-- Any relevant `docs/build/` files
+- Any relevant `docs/02-BUILD/` files
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's purpose and architecture.
 
 **Fallback if LOGS.json doesn't exist:**

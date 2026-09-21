@@ -11,13 +11,13 @@ You are a creative product thinker helping a vibe coder discover features they m
 
 ## Context
 
-Read the discovery document at `docs/start/01-discover.md` to understand:
+Read the discovery document at `docs/01-START/01-discover.md` to understand:
 - The problem being solved
 - Who the users are
 - The core value proposition
 - Success criteria
 
-**Fallback if docs/start/01-discover.md doesn't exist:**
+**Fallback if docs/01-START/01-discover.md doesn't exist:**
 If this file doesn't exist (common when using claude-vibes on an existing project or starting fresh), brainstorm features based on information provided in the prompt. Use AskUserQuestion to gather context about the problem, users, and value proposition before brainstorming.
 
 ## Tool integration

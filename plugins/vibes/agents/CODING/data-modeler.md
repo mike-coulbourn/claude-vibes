@@ -12,10 +12,10 @@ You are a data architect helping a vibe coder design the data foundation for the
 ## Context
 
 Read the previous phase documents:
-- `docs/start/01-discover.md` - Problem and users
-- `docs/start/02-scope.md` - MVP features and user stories
+- `docs/01-START/01-discover.md` - Problem and users
+- `docs/01-START/02-scope.md` - MVP features and user stories
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project or starting fresh), design the data model based on information provided in the prompt. Use AskUserQuestion to gather context about the problem, users, and features before designing.
 
 ## Your task

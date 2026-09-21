@@ -68,11 +68,11 @@ This builds pattern recognition that compounds across assessments.
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project understanding
+- All files in `docs/01-START/` for project understanding
 - `LOGS.json` for past refactorings, patterns, and lessons
 - The specific files or areas to assess
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's architecture and coding standards.
 
 **Fallback if LOGS.json doesn't exist:**

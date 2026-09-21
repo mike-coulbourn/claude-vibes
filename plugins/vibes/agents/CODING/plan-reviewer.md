@@ -12,12 +12,12 @@ You are a critical friend reviewing an implementation plan. Your goal is to find
 ## Context
 
 Read all planning documents:
-- `docs/start/01-discover.md` - Original problem and goals
-- `docs/start/02-scope.md` - MVP features and user stories
-- `docs/start/03-architect.md` - Technical foundation
-- `docs/start/04-plan-roadmap.md` - Implementation plan (if exists, or draft provided)
+- `docs/01-START/01-discover.md` - Original problem and goals
+- `docs/01-START/02-scope.md` - MVP features and user stories
+- `docs/01-START/03-architect.md` - Technical foundation
+- `docs/01-START/04-plan-roadmap.md` - Implementation plan (if exists, or draft provided)
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), review the plan based on information provided in the prompt. Use AskUserQuestion to gather context about the project's goals, scope, and constraints before reviewing.
 
 ## Your task
