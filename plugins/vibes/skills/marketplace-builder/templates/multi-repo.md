@@ -131,7 +131,7 @@ security-scanner/
     {
       "name": "security-scanner",
       "source": {
-        "source": "git",
+        "source": "url",
         "url": "https://gitlab.com/company/security-scanner.git"
       },
       "description": "Security vulnerability scanner",
@@ -141,7 +141,7 @@ security-scanner/
     {
       "name": "deployment",
       "source": {
-        "source": "git",
+        "source": "url",
         "url": "git@github.com:private-org/deployment.git"
       },
       "description": "Deployment automation tools",
@@ -175,7 +175,7 @@ security-scanner/
 ```json
 {
   "source": {
-    "source": "git",
+    "source": "url",
     "url": "git@github.com:owner/private-repo.git"
   }
 }
@@ -189,7 +189,7 @@ security-scanner/
 ```json
 {
   "source": {
-    "source": "git",
+    "source": "url",
     "url": "https://gitlab.com/org/repo.git"
   }
 }

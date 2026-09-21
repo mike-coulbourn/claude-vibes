@@ -2,6 +2,18 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 1.5.5
+
+Builder skills checked against the official docs (September 2026):
+
+- `slash-command-builder`: positional arguments are 0-based (`$0` is the first), so every example shifted down by one. Added named arguments, the commands-and-skills merge, and the full frontmatter table.
+- `skill-builder` and `slash-command-builder`: `allowed-tools` pre-approves tools and does not restrict them; `disallowed-tools` restricts. Both skills taught the opposite.
+- `agent-builder`: full frontmatter table (adds `disallowedTools`, `effort`, `maxTurns`, `memory`, `isolation`, `mcpServers`, `hooks`, `background`, `omitClaudeMd`, `color`), `fable` in the model guide, the plugin subfolder addressing rule, and the correct default when `model` is omitted.
+- `hooks-builder`: about 25 additional events and the `http`, `mcp_tool`, and `agent` handler types.
+- `marketplace-builder`: a git URL plugin source is `"url"`, not `"git"`, and there is no `"directory"` plugin source. Added `git-subdir`, `npm`, and `archive`, and the plugin-source versus marketplace-source distinction.
+- The Task tool is now the Agent tool in all prompts and `allowed-tools` lists.
+- `marketplace-builder` and `hooks-builder` SKILL.md files are back under 500 lines.
+
 ## 1.5.4
 
 - Added `scripts/validate_plugin.py` and a CI workflow that check frontmatter, agent and skill references, relative links, MCP version pinning, and the counts claimed in `marketplace.json`.

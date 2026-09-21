@@ -98,15 +98,14 @@ Complete reference for marketplace.json, plugin.json, and settings.json schemas.
 
 Path relative to marketplace.json location.
 
-### Directory Source
+### Relative Path Source
+
+A plugin inside the marketplace repo is a plain string that starts with `./`. There is no object form for this in a plugin entry (`"directory"` is a marketplace source type used in settings, not a plugin source).
 
 ```json
 {
   "name": "my-plugin",
-  "source": {
-    "source": "directory",
-    "path": "./plugins/my-plugin"
-  }
+  "source": "./plugins/my-plugin"
 }
 ```
 
@@ -132,7 +131,7 @@ For public GitHub repositories. Format: `owner/repo-name`.
 {
   "name": "my-plugin",
   "source": {
-    "source": "git",
+    "source": "url",
     "url": "https://gitlab.com/org/repo.git"
   }
 }
@@ -149,9 +148,8 @@ For any git repository. Use for:
 | Type | Syntax | Use Case |
 |------|--------|----------|
 | Relative | `"./path"` | Same repo plugins |
-| Directory | `{"source": "directory", "path": "..."}` | Explicit local |
 | GitHub | `{"source": "github", "repo": "owner/repo"}` | Public GitHub |
-| Git URL | `{"source": "git", "url": "..."}` | Any git service |
+| Git URL | `{"source": "url", "url": "..."}` | Any git service |
 
 ---
 
@@ -566,7 +564,7 @@ echo "Validation complete"
     },
     {
       "name": "security-scanner",
-      "source": {"source": "git", "url": "git@git.company.com:security/scanner.git"},
+      "source": {"source": "url", "url": "git@git.company.com:security/scanner.git"},
       "description": "Security vulnerability scanning",
       "version": "1.5.0",
       "author": {"name": "Security Team"},

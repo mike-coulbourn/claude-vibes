@@ -13,7 +13,29 @@ Build production-quality Skills for Claude Code with proper structure, discovera
 
 **Name Rules**: Lowercase letters, numbers, hyphens only; max 64 characters; no spaces
 
-**Description Rules**: Max 1024 characters; must be specific with trigger terms
+**Description Rules**: Keep it under 1024 characters (the Agent Skills spec limit, which keeps the skill portable). Claude Code truncates the combined `description` and `when_to_use` at 1,536 characters in its listing, so put the key use case first. Say when to use the skill and include the words users actually type. Do not summarize the skill's workflow, because Claude may follow the summary and skip the body.
+
+**Frontmatter fields** (all optional in Claude Code; `name` defaults to the directory name):
+
+| Field | Purpose |
+|-------|---------|
+| `description`, `when_to_use` | Discovery text. `when_to_use` is appended to `description` |
+| `argument-hint`, `arguments` | Autocomplete hint, and named arguments for `$name` substitution |
+| `disable-model-invocation` | `true` means only the user can run it as `/name`. Use for anything with side effects, such as deploy or commit |
+| `user-invocable` | `false` hides it from the `/` menu so only Claude invokes it. Use for background knowledge |
+| `allowed-tools` | Tools Claude may use **without a permission prompt** while the skill runs. It pre-approves; it does not restrict |
+| `disallowed-tools` | Tools removed from Claude's pool while the skill is active. This is the field that restricts |
+| `model`, `effort` | Model and effort override for the current turn |
+| `context`, `agent`, `background` | `context: fork` runs the skill in a subagent, and `agent` picks the subagent type |
+| `paths` | Glob patterns; the skill auto-loads only when Claude works with matching files |
+| `hooks`, `shell` | Hooks registered on invocation, and the shell used for bash injection |
+| `license`, `compatibility`, `metadata` | Agent Skills spec fields. Claude Code accepts them and does not act on them |
+
+**Substitutions in the body**: `$ARGUMENTS`, `$0` and `$1` (0-based, so `$0` is the first argument), `$name` for declared arguments, `${CLAUDE_SKILL_DIR}` for bundled scripts, `${CLAUDE_PROJECT_DIR}`, `${CLAUDE_SESSION_ID}`, and in plugin skills `${CLAUDE_PLUGIN_ROOT}` and `${CLAUDE_PLUGIN_DATA}`.
+
+**Skills are also commands.** Every skill can be run as `/skill-name`, or `/plugin-name:skill-name` from a plugin, and `.claude/commands/*.md` files are the older form of the same thing.
+
+Source: https://code.claude.com/docs/en/skills#frontmatter-reference (last verified September 2026).
 
 ## The Skill Creation Workflow
 
@@ -38,9 +60,15 @@ Use AskUserQuestion to understand what they need:
    - Single file (simple instructions/examples)
    - Multi-file (scripts, templates, extensive docs)
 
-5. **Tool restrictions**
-   - Full access (default)
-   - Restricted (allowed-tools field for read-only or limited scope)
+5. **Tool permissions**
+   - Default (Claude asks permission as usual)
+   - Pre-approve the tools the skill needs with `allowed-tools`, so it runs without prompts
+   - Remove tools the skill must never use with `disallowed-tools`
+
+6. **Who invokes it**
+   - Claude and the user (default)
+   - User only (`disable-model-invocation: true`), for workflows with side effects
+   - Claude only (`user-invocable: false`), for background knowledge
 
 ### Phase 2: Description Crafting
 
@@ -125,7 +153,7 @@ Template structure:
 ---
 name: skill-name
 description: [Use the formula from Phase 2]
-allowed-tools: Read, Grep, Glob  # Optional: only if restricting tools
+allowed-tools: Read, Grep, Glob  # Optional: pre-approves these tools, no permission prompt
 ---
 
 # Skill Name
@@ -190,7 +218,7 @@ Before finalizing, check:
 - [ ] Instructions are clear and actionable
 - [ ] Examples are concrete and tested
 - [ ] Dependencies are documented
-- [ ] Tool restrictions (if any) are appropriate
+- [ ] `allowed-tools` pre-approves only what the skill needs, and `disallowed-tools` covers anything it must never use
 
 See [reference/validation-checklist.md](reference/validation-checklist.md) for complete checklist.
 
@@ -283,7 +311,7 @@ When creating Skills, remember:
 
 **Why multi-file structure works**: Progressive loading. Claude reads SKILL.md first, supporting files only when needed. Keeps context focused.
 
-**Why tool restrictions are powerful**: Creates safe, focused Skills. Read-only analysis Skills can't accidentally modify files.
+**Why tool fields need care**: `allowed-tools` grants permission, it does not take any away. A skill listing `Read, Grep, Glob` can still edit files; Claude just has to ask first. To guarantee a read-only skill, list the write tools in `disallowed-tools`.
 
 **Why trigger terms are crucial**: Users don't know your Skill exists. They ask questions naturally. Trigger terms bridge their words to your Skill.
 
@@ -305,7 +333,7 @@ Description examples: [examples/descriptions.md](examples/descriptions.md)
 6. **Provide concrete examples** - show don't tell
 7. **Make instructions actionable** - specific steps, not vague guidance
 8. **Consider scope carefully** - personal for experimentation, project for team
-9. **Use tool restrictions wisely** - read-only Skills for analysis/review
+9. **Use tool fields deliberately** - `allowed-tools` to cut permission prompts, `disallowed-tools` to make analysis and review skills truly read-only
 10. **Iterate based on usage** - refine trigger terms from real activation patterns
 
 ## Next Steps

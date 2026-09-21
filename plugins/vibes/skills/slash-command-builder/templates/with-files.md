@@ -69,7 +69,7 @@ description: Review a specific file for code quality
 argument-hint: [file-path]
 ---
 
-Review @$1 for:
+Review @$0 for:
 
 1. **Security**
    - Input validation
@@ -115,11 +115,11 @@ argument-hint: [file1] [file2]
 
 ## File 1
 
-@$1
+@$0
 
 ## File 2
 
-@$2
+@$1
 
 ## Analysis Task
 
@@ -165,7 +165,7 @@ allowed-tools: Read, Grep, Glob, Write
 
 ## Source Code to Test
 
-@$1
+@$0
 
 ## Existing Test Patterns
 
@@ -178,7 +178,7 @@ Look at how we structure tests:
 
 ## Your Task
 
-Generate comprehensive tests for @$1 that:
+Generate comprehensive tests for @$0 that:
 
 1. **Follow Our Patterns**
    - Same structure as existing tests
@@ -217,7 +217,7 @@ argument-hint: [file-path]
 
 ## Source Code
 
-@$1
+@$0
 
 ## Existing Documentation Examples
 
@@ -226,7 +226,7 @@ See how we document similar code:
 
 ## Task
 
-Generate comprehensive documentation for @$1 including:
+Generate comprehensive documentation for @$0 including:
 
 1. **Overview**
    - Purpose of this module
@@ -269,7 +269,7 @@ argument-hint: [file-path]
 
 ## Current Implementation
 
-@$1
+@$0
 
 ## Project Patterns
 
@@ -283,7 +283,7 @@ Check our architectural patterns:
 
 ## Analysis Task
 
-Analyze @$1 and suggest refactoring:
+Analyze @$0 and suggest refactoring:
 
 1. **Current Issues**
    - Code smells
@@ -325,7 +325,7 @@ description: Analyze directory structure
 argument-hint: [directory-path]
 ---
 
-Structure of @$1:
+Structure of @$0:
 
 [Directory listing is included]
 
@@ -376,10 +376,10 @@ argument-hint: [file1] [file2]
 ---
 
 ## First File
-@$1
+@$0
 
 ## Second File
-@$2
+@$1
 
 [Comparison task...]
 ```
@@ -395,19 +395,19 @@ argument-hint: [file-path]
 
 ## Current File
 
-@$1
+@$0
 
 ## Recent Changes
 
-[execute: git log --oneline -5 -- $1]
+[execute: git log --oneline -5 -- $0]
 
 ## Diff from Last Week
 
-[execute: git diff HEAD~7 HEAD -- $1]
+[execute: git diff HEAD~7 HEAD -- $0]
 
 ## Analysis
 
-How has @$1 evolved? What patterns emerge?
+How has @$0 evolved? What patterns emerge?
 ```
 
 ## Automatic CLAUDE.md Inclusion
@@ -442,7 +442,7 @@ argument-hint: [endpoint-name]
 
 ## Your Task
 
-Create a new API endpoint named $1 that:
+Create a new API endpoint named $0 that:
 - Follows the patterns above
 - Includes same error handling
 - Uses same validation approach
@@ -461,7 +461,7 @@ argument-hint: [file-path]
 
 ## File to Check
 
-@$1
+@$0
 
 ## Project Conventions
 
@@ -474,7 +474,7 @@ argument-hint: [file-path]
 
 ## Task
 
-Compare @$1 against our conventions and examples.
+Compare @$0 against our conventions and examples.
 
 List:
 1. What it does well
@@ -488,7 +488,7 @@ List:
 1. **Use with arguments for flexibility**
    ```markdown
    argument-hint: [file-path]
-   Review @$1 for code quality
+   Review @$0 for code quality
    ```
 
 2. **Reference examples**
@@ -508,8 +508,8 @@ List:
 
 5. **Combine with bash for context**
    ```markdown
-   File: @$1
-   Recent changes: [execute: git log -5 --oneline -- $1]
+   File: @$0
+   Recent changes: [execute: git log -5 --oneline -- $0]
    ```
 
 ## Common Pitfalls

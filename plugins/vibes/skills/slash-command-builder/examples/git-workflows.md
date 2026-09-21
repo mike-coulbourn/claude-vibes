@@ -100,23 +100,23 @@ argument-hint: [base-branch]
 ## Branch Information
 
 **Current Branch**: [execute: git branch --show-current]
-**Base Branch**: $1
+**Base Branch**: $0
 
 ## Commits in This PR
 
-[execute: git log $1..HEAD --format="%h %s" --reverse]
+[execute: git log $0..HEAD --format="%h %s" --reverse]
 
 ## Files Changed
 
-[execute: git diff --name-status $1...HEAD]
+[execute: git diff --name-status $0...HEAD]
 
 ## Diff Statistics
 
-[execute: git diff --stat $1...HEAD]
+[execute: git diff --stat $0...HEAD]
 
 ## Full Diff
 
-[execute: git diff $1...HEAD]
+[execute: git diff $0...HEAD]
 
 ## Related Open Issues
 
@@ -132,7 +132,7 @@ argument-hint: [base-branch]
 
 ## Your Task
 
-Create a pull request from current branch to $1:
+Create a pull request from current branch to $0:
 
 ### 1. PR Title
 Suggest a clear, descriptive title following our convention.
@@ -169,7 +169,7 @@ Generate a complete PR description including:
 
 Provide the complete command to create the PR:
 ```bash
-gh pr create --base $1 --title "..." --body "..."
+gh pr create --base $0 --title "..." --body "..."
 ```
 
 Or provide the description to paste in GitHub web UI.
@@ -361,24 +361,24 @@ argument-hint: [base-branch-or-commit]
 ## Rebase Context
 
 **Current branch**: [execute: git branch --show-current]
-**Rebase onto**: $1
+**Rebase onto**: $0
 
 ## Commits to Rebase
 
-[execute: git log $1..HEAD --oneline --reverse]
+[execute: git log $0..HEAD --oneline --reverse]
 
 ## Detailed Commit Info
 
-[execute: git log $1..HEAD --format="%h %s%n  Author: %an <%ae>%n  Date: %ar%n" --reverse]
+[execute: git log $0..HEAD --format="%h %s%n  Author: %an <%ae>%n  Date: %ar%n" --reverse]
 
 ## File Changes Per Commit
 
-[execute: git log $1..HEAD --format="%h %s" --name-status --reverse]
+[execute: git log $0..HEAD --format="%h %s" --name-status --reverse]
 
 ## Current Diff
 
 **What will change overall**:
-[execute: git diff $1...HEAD --stat]
+[execute: git diff $0...HEAD --stat]
 
 ## Rebase Planning Task
 
@@ -406,7 +406,7 @@ Based on the commits above, suggest an interactive rebase plan:
 
 Provide the rebase command to start:
 ```bash
-git rebase -i $1
+git rebase -i $0
 ```
 
 Then show the suggested rebase plan in this format:

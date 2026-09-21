@@ -24,7 +24,7 @@ argument-hint: [file-or-directory]
 
 ## Code to Audit
 
-@$1
+@$0
 
 ## Project Security Guidelines
 
@@ -33,7 +33,7 @@ argument-hint: [file-or-directory]
 
 ## Security Audit Task
 
-Perform comprehensive security analysis of @$1:
+Perform comprehensive security analysis of @$0:
 
 ### 1. Authentication & Authorization
 - [ ] Authentication checks present?
@@ -111,15 +111,15 @@ argument-hint: [file-to-analyze]
 
 ## Code to Analyze
 
-@$1
+@$0
 
 ## Performance Baseline (if available)
 
-[execute: npm run benchmark -- $1 2>/dev/null || echo "No benchmarks"]
+[execute: npm run benchmark -- $0 2>/dev/null || echo "No benchmarks"]
 
 ## Analysis Task
 
-Analyze @$1 for performance issues:
+Analyze @$0 for performance issues:
 
 ### 1. Algorithm Efficiency
 - Time complexity of key operations
@@ -186,7 +186,7 @@ argument-hint: [file-path]
 
 ## Code to Review
 
-@$1
+@$0
 
 ## Project Conventions
 
@@ -196,7 +196,7 @@ argument-hint: [file-path]
 
 ## Quality Review Task
 
-Comprehensive quality review of @$1:
+Comprehensive quality review of @$0:
 
 ### 1. Readability
 - Clear variable/function names?
@@ -276,19 +276,19 @@ argument-hint: [file-or-directory]
 
 ## Code to Analyze
 
-@$1
+@$0
 
 ## Dependency Graph
 
 **Direct dependencies used**:
-[execute: grep -h "import|require" $1 | sort | uniq]
+[execute: grep -h "import|require" $0 | sort | uniq]
 
 **Package.json**:
 @package.json
 
 ## Unused Dependencies Check
 
-[execute: npx depcheck $1 2>/dev/null || echo "Run: npm install -g depcheck"]
+[execute: npx depcheck $0 2>/dev/null || echo "Run: npm install -g depcheck"]
 
 ## Analysis Task
 
@@ -343,11 +343,11 @@ argument-hint: [directory-or-module]
 
 ## Code Structure
 
-[execute: find $1 -type f -name "*.js" -o -name "*.ts" | head -50]
+[execute: find $0 -type f -name "*.js" -o -name "*.ts" | head -50]
 
 ## Key Files
 
-@$1
+@$0
 
 ## Project Architecture Guide
 
@@ -419,15 +419,15 @@ argument-hint: [file-path]
 
 ## Source Code
 
-@$1
+@$0
 
 ## Existing Tests
 
-[execute: find tests -name "*$(basename $1 .js)*" 2>/dev/null | head -10]
+[execute: find tests -name "*$(basename $0 .js)*" 2>/dev/null | head -10]
 
 ## Current Coverage
 
-[execute: npm run coverage -- $1 2>/dev/null || pytest --cov=$1 --cov-report=term 2>/dev/null || echo "Coverage not available"]
+[execute: npm run coverage -- $0 2>/dev/null || pytest --cov=$0 --cov-report=term 2>/dev/null || echo "Coverage not available"]
 
 ## Test Analysis Task
 

@@ -169,14 +169,14 @@ Which Claude model to use.
 | Value | Description |
 |-------|-------------|
 | `haiku` | Fastest, cheapest, good for simple tasks |
-| `sonnet` | Balanced (default if omitted) |
+| `sonnet` | Balanced. When `model` is omitted the agent inherits the main conversation model |
 | `opus` | Most capable, best for complex tasks |
 | `inherit` | Use main conversation's model |
 
 **Syntax**:
 ```yaml
 model: haiku    # Fast, simple tasks
-model: sonnet   # Balanced (default)
+model: sonnet   # Balanced
 model: opus     # Complex analysis
 model: inherit  # Match user's model
 ```

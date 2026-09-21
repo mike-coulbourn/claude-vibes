@@ -42,7 +42,7 @@ model: [optional-specific-model]
 
 ## Task Section
 
-[Clear instructions using $ARGUMENTS or $1/$2/$3]
+[Clear instructions using $ARGUMENTS or $0/$1/$2]
 
 ## Constraints
 
@@ -65,17 +65,17 @@ argument-hint: [base-branch] [pr-title]
 ## Current Branch Context
 
 **Branch**: [execute: git branch --show-current]
-**Base**: $1
-**Commits**: [execute: git log $1..HEAD --oneline]
+**Base**: $0
+**Commits**: [execute: git log $0..HEAD --oneline]
 
 ## Changes Summary
 
-**Files Changed**: [execute: git diff --name-status $1...HEAD]
+**Files Changed**: [execute: git diff --name-status $0...HEAD]
 
-**Diffstat**: [execute: git diff --stat $1...HEAD]
+**Diffstat**: [execute: git diff --stat $0...HEAD]
 
 **Full Diff**:
-[execute: git diff $1...HEAD]
+[execute: git diff $0...HEAD]
 
 ## Project Conventions
 
@@ -88,9 +88,9 @@ Check for related issues: [execute: gh issue list --search "is:open" | head -10]
 
 ## Your Task
 
-Create a pull request for merging current branch into $1:
+Create a pull request for merging current branch into $0:
 
-**PR Title**: $2 (or suggest one if not provided)
+**PR Title**: $1 (or suggest one if not provided)
 
 **PR Description** should include:
 1. **Summary**: What changed and why
@@ -124,18 +124,18 @@ argument-hint: [file-or-directory]
 
 ## Code to Review
 
-@$1
+@$0
 
 ## Git Context
 
 **Recent Changes**:
-[execute: git log --oneline -5 -- $1]
+[execute: git log --oneline -5 -- $0]
 
 **Current Diff** (if modified):
-[execute: git diff HEAD -- $1]
+[execute: git diff HEAD -- $0]
 
 **File History Stats**:
-[execute: git log --oneline --all -- $1 | wc -l] commits
+[execute: git log --oneline --all -- $0 | wc -l] commits
 
 ## Project Standards
 
@@ -149,11 +149,11 @@ argument-hint: [file-or-directory]
 
 ## Related Tests
 
-[execute: find . -name "*test*" -path "*$1*" 2>/dev/null | head -5]
+[execute: find . -name "*test*" -path "*$0*" 2>/dev/null | head -5]
 
 ## Deep Review Task
 
-Perform comprehensive review of @$1:
+Perform comprehensive review of @$0:
 
 ### 1. Security Analysis
 - Input validation and sanitization
@@ -226,8 +226,8 @@ argument-hint: [feature-name] [description]
 
 ## Feature Requirements
 
-**Name**: $1
-**Description**: $2
+**Name**: $0
+**Description**: $1
 
 ## Current Codebase Structure
 
@@ -254,7 +254,7 @@ argument-hint: [feature-name] [description]
 
 ## Feature Generation Task
 
-Create complete feature: $1 ($2)
+Create complete feature: $0 ($1)
 
 Generate the following layers following our patterns:
 
@@ -439,7 +439,7 @@ argument-hint: [error-description-or-file]
 
 ## Bug Description
 
-$1
+$0
 
 ## System Context
 
@@ -450,7 +450,7 @@ $1
 ## Search for Related Code
 
 **Files mentioning the error**:
-[execute: grep -r "$1" src/ 2>/dev/null | head -20]
+[execute: grep -r "$0" src/ 2>/dev/null | head -20]
 
 ## Recent Test Failures
 
@@ -566,10 +566,10 @@ allowed-tools: Bash  # Too much access
 Branch: [execute: git branch --show-current]
 
 # Files for analysis
-Code: @$1
+Code: @$0
 
 # Arguments for flexibility
-Review $1 focusing on $2
+Review $0 focusing on $1
 ```
 
 ### 4. Progressive Information
@@ -591,10 +591,10 @@ Start with summary, drill into details:
 
 ```markdown
 Check if file exists first:
-[execute: [ -f "$1" ] && echo "exists" || echo "missing"]
+[execute: [ -f "$0" ] && echo "exists" || echo "missing"]
 
 Then reference:
-@$1
+@$0
 ```
 
 ## Testing Complex Commands
@@ -634,7 +634,7 @@ If your command is becoming unwieldy:
 
 3. **Use supporting scripts**
    - Bash script for complex logic
-   - Call script from command: [execute: ./scripts/analyze.sh $1]
+   - Call script from command: [execute: ./scripts/analyze.sh $0]
 
 ## Common Patterns
 

@@ -280,20 +280,20 @@ argument-hint: [base-branch]
 
 **Branch Name**: [execute: git branch --show-current]
 
-**Base Branch**: $1
+**Base Branch**: $0
 
 ## Commit History
 
 Commits to include in PR:
-[execute: git log $1..HEAD --oneline]
+[execute: git log $0..HEAD --oneline]
 
 ## Full Diff
 
 Changes in this PR:
-[execute: git diff $1...HEAD --stat]
+[execute: git diff $0...HEAD --stat]
 
 Detailed changes:
-[execute: git diff $1...HEAD]
+[execute: git diff $0...HEAD]
 
 ## PR Creation Task
 
@@ -333,7 +333,7 @@ argument-hint: [test-file]
 
 ## Running Test
 
-[execute: npm test $1] or [execute: pytest $1 -v]
+[execute: npm test $0] or [execute: pytest $0 -v]
 
 ## Analysis
 
@@ -353,16 +353,16 @@ argument-hint: [file-path]
 
 ## File History
 
-Recent changes to @$1:
-[execute: git log --oneline -5 -- $1]
+Recent changes to @$0:
+[execute: git log --oneline -5 -- $0]
 
 ## Current Content
 
-@$1
+@$0
 
 ## Diff from 10 commits ago
 
-[execute: git diff HEAD~10 HEAD -- $1]
+[execute: git diff HEAD~10 HEAD -- $0]
 
 ## Analysis
 

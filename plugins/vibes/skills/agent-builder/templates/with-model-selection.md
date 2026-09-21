@@ -76,7 +76,7 @@ You are [role with expertise].
 - Simple pattern matching
 - Quick summaries
 
-### `sonnet` — Balanced (Default)
+### `sonnet` — Balanced
 
 **Characteristics**:
 - Good balance of speed and capability
@@ -143,7 +143,7 @@ Is this a quick, simple task?
          │
          └── No → Should agent match main conversation?
                   ├── Yes → inherit
-                  └── No → sonnet (balanced default)
+                  └── No → sonnet (balanced)
 ```
 
 ---
@@ -311,7 +311,7 @@ Note: Using `inherit` model means I'll use whatever model you're using in the ma
 model: haiku
 ```
 
-**Standard Development**: Use `sonnet` (or omit for default)
+**Standard Development**: Use `sonnet`, or omit `model` to inherit the main conversation model
 ```yaml
 # Code review, debugging, testing
 model: sonnet

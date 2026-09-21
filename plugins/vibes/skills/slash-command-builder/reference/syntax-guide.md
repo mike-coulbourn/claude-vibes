@@ -47,13 +47,21 @@ disable-model-invocation: false
 
 ### Field Descriptions
 
-| Field | Type | Description | Default |
-|-------|------|-------------|---------|
-| `description` | string | Shown in `/help`, required for SlashCommand tool | First line of content |
-| `allowed-tools` | list | Restricts which tools can be used | All tools |
-| `argument-hint` | string | Shows expected arguments to user | None |
-| `model` | string | Specific model for this command | Inherits from conversation |
-| `disable-model-invocation` | boolean | Prevents SlashCommand tool from calling this | `false` |
+| Field | Description | Default |
+|-------|-------------|---------|
+| `description` | What the command does and when to use it. Shown in the `/` menu and used by Claude to decide when to invoke it | First non-empty line of content |
+| `argument-hint` | Autocomplete hint for expected arguments, such as `[issue-number]` | None |
+| `arguments` | Named positional arguments for `$name` substitution. Space-separated string or YAML list; names map to positions in order | None |
+| `allowed-tools` | Tools Claude may use **without asking permission** during the turn that invokes the command. This pre-approves tools; it does not restrict the others. The grant clears on the user's next message | No pre-approval |
+| `disallowed-tools` | Tools removed from Claude's pool while the command is active. This is the field that restricts | None |
+| `model` | Model for the rest of the current turn: `fable`, `opus`, `sonnet`, `haiku`, or a full model ID | Session model |
+| `effort` | Effort level while active: `low`, `medium`, `high`, `xhigh`, `max` | Session effort |
+| `disable-model-invocation` | `true` means only the user can run it with `/name`; Claude never loads it on its own. Use for anything with side effects, such as deploy or commit | `false` |
+| `user-invocable` | `false` hides it from the `/` menu so only Claude invokes it | `true` |
+| `context` | `fork` runs the command in a forked subagent; pair with `agent` to choose the subagent type | Runs inline |
+| `shell` | Shell for bash injection: `bash` or `powershell` | `bash` |
+
+Command files accept every skill frontmatter field except `name` and `paths`. Source: https://code.claude.com/docs/en/skills#frontmatter-reference (last verified September 2026).
 
 ## Arguments
 
@@ -70,19 +78,19 @@ Explain $ARGUMENTS in detail.
 # $ARGUMENTS = "async/await in JavaScript"
 ```
 
-### Positional Arguments: `$1`, `$2`, `$3`...
+### Positional Arguments: `$0`, `$1`, `$2`...
 
 Captures specific argument positions (space-separated).
 
 ```markdown
-Review PR #$1 with priority $2 assigned to $3.
+Review PR #$0 with priority $1 assigned to $2.
 ```
 
 ```bash
 /review-pr 456 high alice
-# $1 = "456"
-# $2 = "high"
-# $3 = "alice"
+# $0 = "456"
+# $1 = "high"
+# $2 = "alice"
 ```
 
 ### Quoting Arguments
@@ -91,8 +99,8 @@ Use quotes for arguments with spaces:
 
 ```bash
 /command "argument with spaces" second-arg
-# $1 = "argument with spaces"
-# $2 = "second-arg"
+# $0 = "argument with spaces"
+# $1 = "second-arg"
 ```
 
 ## Bash Execution
@@ -188,7 +196,7 @@ Review @src/auth.js
 Compare @src/old.js with @src/new.js
 
 # With arguments
-Analyze @$1 for security issues
+Analyze @$0 for security issues
 
 # Directory (shows listing, not contents)
 Structure: @src/components/
@@ -225,13 +233,13 @@ argument-hint: [file-path]
 ---
 
 ## File
-@$1
+@$0
 
 ## Recent Changes
-[execute: git log --oneline -5 -- $1]
+[execute: git log --oneline -5 -- $0]
 
 ## Analysis
-Analyze @$1 considering its history above.
+Analyze @$0 considering its history above.
 ```
 
 ## Command Invocation
@@ -277,7 +285,7 @@ No escaping needed in markdown content:
 
 ```markdown
 Use $, @, and ! symbols freely here.
-Only $ARGUMENTS, $1, [execute: cmd], @file have special meaning.
+Only $ARGUMENTS, $0, [execute: cmd], @file have special meaning.
 ```
 
 ### In YAML Frontmatter
@@ -383,20 +391,20 @@ model: claude-3-5-haiku-20241022
 
 ## Context
 
-**File to analyze**: $1
-**Focus**: $2
+**File to analyze**: $0
+**Focus**: $1
 
 **Git context**:
 Branch: [execute: git branch --show-current]
-Recent changes: [execute: git log --oneline -5 -- $1]
+Recent changes: [execute: git log --oneline -5 -- $0]
 
 ## Source Code
 
-@$1
+@$0
 
 ## Related Files
 
-@tests/$1.test.js
+@tests/$0.test.js
 
 ## Project Conventions
 
@@ -404,7 +412,7 @@ Recent changes: [execute: git log --oneline -5 -- $1]
 
 ## Task
 
-Analyze @$1 focusing on $2:
+Analyze @$0 focusing on $1:
 1. Current implementation
 2. Issues found
 3. Recommended improvements

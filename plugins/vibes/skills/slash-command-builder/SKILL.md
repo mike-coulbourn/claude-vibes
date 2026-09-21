@@ -9,18 +9,23 @@ Create effective custom slash commands for Claude Code with proper structure, dy
 
 ## Quick Reference
 
+**Commands and skills are now one system.** A file at `.claude/commands/deploy.md` and a skill at `.claude/skills/deploy/SKILL.md` both create `/deploy` and accept the same frontmatter (command files cannot set `name` or `paths`). Command files keep working and are the lightest way to save a prompt. Recommend a skill instead when the user needs supporting files, wants Claude to invoke it automatically, or wants to block automatic invocation with `disable-model-invocation: true`; use the skill-builder skill for that.
+
 **Command File Location**:
 - Project (shared): `.claude/commands/name.md`
 - Personal (individual): `~/.claude/commands/name.md`
+- A subdirectory becomes a prefix: `.claude/commands/frontend/component.md` creates `/frontend:component`
 
 **Dynamic Features**:
-- Arguments: `$ARGUMENTS` (all) or `$1`, `$2`, `$3` (positional)
+- Arguments: `$ARGUMENTS` (everything typed) or `$0`, `$1`, `$2` (positional). Indexing is 0-based, so `$0` is the first argument. `$ARGUMENTS[0]` is the long form of `$0`.
+- Named arguments: declare `arguments: [issue, branch]` in frontmatter, then write `$issue` and `$branch`. Prefer these over indexes in anything with two or more arguments, because they document themselves and avoid off-by-one mistakes.
+- A missing indexed argument leaves its placeholder in the text unchanged; a missing named argument becomes an empty string. Multi-word values need quotes: `/cmd "hello world" second`.
 - Bash execution: [execute: command] (requires `allowed-tools: Bash(...)`)
 - File references: `@path/to/file`
 
 **Placeholder notice — read before writing any command file**: `[execute: command]` is NOT real syntax. It is a stand-in used throughout this skill and its reference files, because Claude Code runs the real bash-injection syntax when a skill file loads, so writing it here literally would execute every example. The real syntax is an exclamation mark immediately followed by the command wrapped in single backticks, placed at the start of a line or after whitespace. When generating a command file for the user, always convert each `[execute: command]` to that real form; a command file containing the literal text `[execute: ...]` does nothing.
 
-**Frontmatter**: Optional YAML with `description`, `allowed-tools`, `argument-hint`, `model`
+**Frontmatter**: Optional YAML. Most used: `description`, `argument-hint`, `arguments`, `allowed-tools`, `model`, `disable-model-invocation`. See [reference/syntax-guide.md](reference/syntax-guide.md) for the full list.
 
 ## The Slash Command Creation Workflow
 
@@ -45,7 +50,7 @@ Use AskUserQuestion to understand what they need:
 4. **What tools should it access?**
    - Read-only analysis (Read, Grep, Glob)
    - Git operations (Bash(git:*))
-   - Full access (default, no restrictions)
+   - Nothing pre-approved (default; Claude asks permission as usual)
 
 ### Phase 2: Choose Scope
 
@@ -68,7 +73,7 @@ Basic command structure:
 ```markdown
 ---
 description: Brief description for /help
-allowed-tools: Optional tool restrictions
+allowed-tools: Optional tools to pre-approve
 argument-hint: Optional argument guidance
 ---
 
@@ -77,10 +82,10 @@ argument-hint: Optional argument guidance
 
 **Decision tree**:
 1. Start with basic prompt
-2. Add arguments if needed ($ARGUMENTS or $1/$2)
+2. Add arguments if needed ($ARGUMENTS or $0/$1)
 3. Add bash execution if context needed ([execute: command])
 4. Add file references if analyzing files (@path)
-5. Add frontmatter for description and restrictions
+5. Add frontmatter for description and tool pre-approval
 
 ### Phase 4: Implementation
 
@@ -110,7 +115,7 @@ Use templates from [templates/](templates/) directory:
 ```yaml
 ---
 description: What this command does (appears in /help)
-allowed-tools: Read, Grep, Glob  # Optional restrictions
+allowed-tools: Read, Grep, Glob  # Pre-approved, no permission prompt
 argument-hint: [arg1] [arg2]     # Optional user guidance
 ---
 ```
@@ -169,7 +174,7 @@ allowed-tools: Read, Grep, Glob
 argument-hint: [file-or-directory]
 ---
 
-Analyze @$1 for:
+Analyze @$0 for:
 1. [Criterion 1]
 2. [Criterion 2]
 3. [Criterion 3]
@@ -237,14 +242,14 @@ See [examples/](examples/) for complete working examples:
 
 ## Advanced Features
 
-### Arguments: $ARGUMENTS vs $1/$2
+### Arguments: $ARGUMENTS vs $0/$1
 
 **Use `$ARGUMENTS`** when:
 - You want all input as a single block
 - Free-form text (messages, descriptions)
 - Don't need to reference parts separately
 
-**Use `$1`, `$2`, `$3`** when:
+**Use `$0`, `$1`, `$2`** when:
 - You need structured parameters
 - Different parts used in different places
 - Want to provide defaults for missing args
@@ -255,7 +260,7 @@ Example:
 Explain $ARGUMENTS in detail.
 
 # Positional approach
-Review PR #$1 with priority $2 assigned to $3.
+Review PR #$0 with priority $1 assigned to $2.
 ```
 
 ### Bash Execution
@@ -302,7 +307,7 @@ Complete frontmatter options:
 ```yaml
 ---
 description: Brief description (required for /help and SlashCommand tool)
-allowed-tools: Read, Grep, Glob, Bash(git:*)  # Optional restrictions
+allowed-tools: Read, Grep, Glob, Bash(git:*)  # Pre-approved, no permission prompt
 argument-hint: [file] [priority]              # Optional guidance
 model: claude-3-5-haiku-20241022              # Optional model override
 disable-model-invocation: false               # Optional, prevent auto-calling
@@ -373,7 +378,7 @@ disable-model-invocation: false               # Optional, prevent auto-calling
 - Wrong syntax
 
 **Solutions**:
-- Double-check spelling: `$ARGUMENTS`, `$1`, `$2`
+- Double-check spelling: `$ARGUMENTS`, `$0`, `$1`
 - Test with: `/command arg1 arg2`
 - Verify placeholder exists in template
 
@@ -432,7 +437,7 @@ For troubleshooting help, see [reference/troubleshooting.md](reference/troublesh
 2. **Add complexity only when needed** (YAGNI principle)
 3. **Test with real scenarios** before sharing
 4. **Include clear descriptions** in frontmatter
-5. **Use tool restrictions** for safety
+5. **Pre-approve only the tools the command needs** with `allowed-tools`, and use `disallowed-tools` when a tool must never run
 6. **Reference project conventions** with file refs
 7. **Gather context** with bash execution
 8. **Structure prompts** with clear sections

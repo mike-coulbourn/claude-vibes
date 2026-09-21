@@ -159,7 +159,7 @@ Some changes require restarting Claude Code.
 
 ### Symptoms
 - Agent exists but never gets called
-- Task tool doesn't list the agent
+- Agent tool doesn't list the agent
 - Agent triggers don't work
 
 ### Causes & Solutions

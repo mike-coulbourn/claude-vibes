@@ -53,7 +53,7 @@ Explain $ARGUMENTS in detail, including what it is, how it works, when to use it
 
 Usage: `/explain async/await in JavaScript`
 
-### Style 2: Positional Arguments ($1, $2, $3...)
+### Style 2: Positional Arguments ($0, $1, $2...)
 
 Captures specific argument positions separately (like shell scripts).
 
@@ -63,7 +63,7 @@ description: [Brief description]
 argument-hint: [arg1] [arg2] [arg3]
 ---
 
-[Your prompt with $1, $2, $3 placeholders]
+[Your prompt with $0, $1, $2 placeholders]
 ```
 
 **Use when**:
@@ -79,7 +79,7 @@ description: Review pull request
 argument-hint: [pr-number] [priority] [reviewer]
 ---
 
-Review PR #$1 with priority level $2 and assign to $3.
+Review PR #$0 with priority level $1 and assign to $2.
 
 Focus on:
 - Code quality and style
@@ -131,9 +131,9 @@ argument-hint: [table] [operation] [conditions]
 ---
 
 Generate a SQL query for:
-- Table: $1
-- Operation: $2 (SELECT, INSERT, UPDATE, DELETE)
-- Conditions: $3
+- Table: $0
+- Operation: $1 (SELECT, INSERT, UPDATE, DELETE)
+- Conditions: $2
 
 Include:
 - Proper indexing considerations
@@ -159,7 +159,7 @@ description: Generate tests for a function
 argument-hint: [file] [function-name] [test-type]
 ---
 
-Generate $3 tests for function `$2` in @$1
+Generate $2 tests for function `$1` in @$0
 
 Test categories:
 - Happy path scenarios
@@ -188,7 +188,7 @@ description: Plan refactoring approach
 argument-hint: [file-or-directory] [goal]
 ---
 
-Plan a refactoring approach for @$1 with goal: $2
+Plan a refactoring approach for @$0 with goal: $1
 
 Analysis:
 1. Current structure and issues
@@ -215,12 +215,12 @@ description: Create feature with context
 argument-hint: [feature-name] [additional-context]
 ---
 
-Create a new feature: $1
+Create a new feature: $0
 
 Additional context: $ARGUMENTS
 
 Plan:
-1. Design approach for $1
+1. Design approach for $0
 2. Identify affected files
 3. List implementation steps
 4. Note testing requirements
@@ -229,7 +229,7 @@ Consider: $ARGUMENTS
 ```
 
 Usage: `/create-feature user-auth need to support OAuth and JWT`
-- $1 = "user-auth"
+- $0 = "user-auth"
 - $ARGUMENTS = "user-auth need to support OAuth and JWT"
 
 ## Handling Missing Arguments
@@ -237,13 +237,13 @@ Usage: `/create-feature user-auth need to support OAuth and JWT`
 If user doesn't provide all arguments, Claude receives empty strings:
 
 ```markdown
-Review PR #$1 (priority: ${2:-medium}) assigned to ${3:-unassigned}
+Review PR #$0 (priority: ${1:-medium}) assigned to ${2:-unassigned}
 ```
 
-**Note**: Default syntax `${2:-medium}` is not directly supported. Instead, handle in your prompt:
+**Note**: Default syntax `${1:-medium}` is not directly supported. Instead, handle in your prompt:
 
 ```markdown
-Review PR #$1 with priority $2 and assignee $3.
+Review PR #$0 with priority $1 and assignee $2.
 
 If priority is not specified, assume medium.
 If assignee is not specified, suggest reviewer based on PR content.
@@ -268,12 +268,12 @@ If assignee is not specified, suggest reviewer based on PR content.
 3. **Document in prompt**
    ```markdown
    Generate tests for:
-   - File: $1 (path to source file)
-   - Type: $2 (unit, integration, or e2e)
+   - File: $0 (path to source file)
+   - Type: $1 (unit, integration, or e2e)
    ```
 
 4. **Choose the right style**
-   - Structured data → Positional ($1, $2)
+   - Structured data → Positional ($0, $1)
    - Free-form text → $ARGUMENTS
 
 5. **Test with various inputs**
@@ -287,16 +287,16 @@ If assignee is not specified, suggest reviewer based on PR content.
 ### Typo in placeholder
 ```markdown
 ❌ $ARGUMENT (missing S)
-❌ $ARG1 (should be $1)
+❌ $ARG1 (should be $0)
 ✅ $ARGUMENTS
-✅ $1, $2, $3
+✅ $0, $1, $2
 ```
 
 ### Wrong syntax
 ```markdown
-❌ ${1} (bash style, doesn't work)
+❌ ${0} (bash style, doesn't work)
 ❌ $arg1 (not recognized)
-✅ $1 (correct)
+✅ $0 (correct)
 ```
 
 ### Not providing arguments
@@ -327,4 +327,4 @@ See [complex-command.md](complex-command.md) for template with all features.
 
 ---
 
-**Remember**: Arguments make commands flexible and reusable. Choose the right style ($ARGUMENTS vs $1/$2) based on how you'll use the inputs.
+**Remember**: Arguments make commands flexible and reusable. Choose the right style ($ARGUMENTS vs $0/$1) based on how you'll use the inputs.

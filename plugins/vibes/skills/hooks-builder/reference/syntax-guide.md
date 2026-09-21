@@ -9,6 +9,7 @@ Complete reference for Claude Code hooks configuration syntax.
 - [Configuration File Locations](#configuration-file-locations)
 - [settings.json Schema](#settingsjson-schema)
 - [Event Reference](#event-reference)
+- [Additional Events](#additional-events)
 - [Matcher Patterns](#matcher-patterns)
 - [Exit Code Semantics](#exit-code-semantics)
 - [Environment Variables](#environment-variables)
@@ -350,6 +351,32 @@ Complete reference for Claude Code hooks configuration syntax.
 ```
 
 ---
+
+## Additional Events
+
+Events beyond the ten in SKILL.md, with the trigger as the official docs describe it (last verified September 2026). Input and output schemas differ per event, so read the event's section at https://code.claude.com/docs/en/hooks before writing a handler.
+
+| Event | Fires |
+|-------|-------|
+| `Setup` | On `--init-only`, or `--init` / `--maintenance` in `-p` mode. One-time preparation in CI or scripts |
+| `UserPromptExpansion` | When a typed command expands into a prompt, before it reaches Claude. Can block |
+| `PermissionDenied` | When auto mode denies a tool call |
+| `PostToolUseFailure` | After a tool call fails |
+| `PostToolBatch` | After a full batch of parallel tool calls resolves, before the next model call |
+| `MessageDisplay` | While assistant message text is displayed |
+| `SubagentStart` | When a subagent is spawned. Matcher is the agent type |
+| `TaskCreated` / `TaskCompleted` | When a task is created or marked completed |
+| `StopFailure` | When the turn ends because of an API error. Matcher is the error type, such as `rate_limit` |
+| `TeammateIdle` | When an agent-team teammate is about to go idle |
+| `InstructionsLoaded` | When a CLAUDE.md or `.claude/rules/*.md` file is loaded into context |
+| `ConfigChange` | When a configuration file changes during a session. Matcher is the source, such as `user_settings` |
+| `CwdChanged` | When the working directory changes. No matcher support |
+| `DirectoryAdded` | When a working directory is added mid-session |
+| `FileChanged` | When a watched file changes on disk. The matcher lists literal filenames, such as `.envrc\|.env` |
+| `WorktreeCreate` / `WorktreeRemove` | When a worktree is created or removed. `WorktreeCreate` replaces the default git behavior |
+| `PostCompact` | After context compaction completes |
+| `PreModelSwitch` / `PostModelSwitch` | Around a model switch. `PreModelSwitch` can block. Matcher is the model name |
+| `Elicitation` / `ElicitationResult` | When an MCP server requests user input, and after the user responds |
 
 ## Matcher Patterns
 

@@ -8,7 +8,7 @@ The simplest agent structure — just `name` and `description` in YAML, with a f
 
 - Simple, focused tasks
 - Agent doesn't need tool restrictions (inherits all)
-- Default model is fine (sonnet)
+- Inheriting the main conversation model is fine (omit `model`)
 - Quick prototyping
 
 ---

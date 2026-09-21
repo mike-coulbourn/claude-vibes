@@ -57,7 +57,7 @@ skill-name/
 ---
 name: skill-name
 description: [What it does] + [When to use it] + [Trigger terms]. Include any required packages here too.
-allowed-tools: Read, Grep, Glob  # Optional: only if restricting tools
+allowed-tools: Read, Grep, Glob  # Optional: pre-approves these tools, no permission prompt
 ---
 
 # Skill Name

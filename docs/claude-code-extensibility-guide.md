@@ -1,5 +1,7 @@
 # Claude Code Extensibility Guide
 
+> **Last verified against the official docs in September 2026.** Two things to know when reading older material: custom commands have been merged into skills (a file in `.claude/commands/` and a skill directory both create a `/name` command, and skills are the recommended form for new work), and `[execute: command]` in this guide is a placeholder for the real bash-injection syntax, which is an exclamation mark immediately followed by the command in single backticks. The placeholder is used because the real syntax runs when a skill or command file loads. Current reference: https://code.claude.com/docs/en/skills
+
 Claude Code has four ways to extend its behavior: **Commands**, **Skills**, **Agents**, and **Hooks**. Each solves a different problem, and knowing when to reach for which one will save you a lot of trial and error.
 
 ---
@@ -42,7 +44,7 @@ Claude Code has four extensibility mechanisms, each serving a distinct purpose:
 
 | Aspect | Commands | Skills | Agents | Hooks |
 |--------|----------|--------|--------|-------|
-| **Who triggers?** | You (`/name`) | Claude (auto) | Claude (Task tool) | Events (auto) |
+| **Who triggers?** | You (`/name`) | Claude (auto) | Claude (Agent tool) | Events (auto) |
 | **Same memory?** | Yes | Yes | No (fresh start) | External script |
 | **Can block actions?** | No | No | No | **YES** |
 | **Best for** | Manual shortcuts | Auto-loaded knowledge | Complex isolated tasks | Enforcement & control |
@@ -89,7 +91,7 @@ argument-hint: [issue-number]
 description: Fix a GitHub issue by number
 ---
 
-Fix issue #$1. Follow these steps:
+Fix issue #$0. Follow these steps:
 1. Understand the issue
 2. Locate relevant code
 3. Implement solution
@@ -126,10 +128,11 @@ Create a commit with message: $ARGUMENTS
 | Feature | Syntax | Purpose |
 |---------|--------|---------|
 | Arguments (free-form) | `$ARGUMENTS` | Everything after command name |
-| Arguments (positional) | `$1`, `$2`, `$3` | Space-separated arguments |
-| Bash execution | `[execute: command]` | Run shell command, inject output |
+| Arguments (positional) | `$0`, `$1`, `$2` | Space-separated, 0-based: `$0` is the first argument |
+| Arguments (named) | `arguments: [issue, branch]` then `$issue` | Declared in frontmatter; clearer than indexes |
+| Bash execution | `[execute: command]` (placeholder, see note below) | Run shell command, inject output |
 | File references | `@path/to/file` | Include file contents |
-| Tool restrictions | `allowed-tools:` frontmatter | Limit available tools |
+| Tool pre-approval | `allowed-tools:` frontmatter | Tools Claude may use without a permission prompt. It does not restrict; `disallowed-tools:` does |
 
 ---
 
@@ -277,16 +280,16 @@ I mentioned this above but it's worth a table to really drive it home:
 |-------|----------|---------|
 | `name` | Yes | Identifier for the agent |
 | `description` | Yes | When to use (enables discovery) |
-| `tools` | No | Restrict available tools |
-| `model` | No | `haiku`, `sonnet`, `opus`, or `inherit` |
+| `tools` | No | Tools the agent can use (inherits all if omitted). `disallowedTools` removes tools |
+| `model` | No | `fable`, `opus`, `sonnet`, `haiku`, a full model ID, or `inherit` |
 | `allowedTools` | No | Alternative to `tools` |
 
 ### Launching Agents
 
-Claude launches agents via the **Task tool**:
+Claude launches agents via the **Agent tool** (named Task before Claude Code v2.1.63; `Task(...)` still works as an alias):
 
 ```
-Task tool invocation:
+Agent tool invocation:
   subagent_type: "security-reviewer"
   prompt: "Review the authentication code in src/auth/"
 ```
@@ -496,7 +499,7 @@ Let's make this concrete. Here's a `/feature` command that orchestrates all four
 ```markdown
 ---
 description: Implement a feature end-to-end with reviews and shipping
-allowed-tools: Read, Write, Edit, Bash, Task, Glob, Grep
+allowed-tools: Read, Write, Edit, Bash, Agent, Glob, Grep
 ---
 
 ## Context

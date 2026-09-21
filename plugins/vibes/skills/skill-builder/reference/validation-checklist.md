@@ -33,7 +33,7 @@ Use this comprehensive checklist before finalizing any Skill to ensure it's prod
 
 - [ ] **Structure decided**: Single-file vs multi-file determined
 - [ ] **Dependencies identified**: Know what packages/tools are required
-- [ ] **Tool restrictions considered**: Decided if allowed-tools is needed
+- [ ] **Tool fields considered**: `allowed-tools` pre-approves tools, `disallowed-tools` removes them
 - [ ] **Examples planned**: Have 2-3 concrete examples in mind
 
 ---

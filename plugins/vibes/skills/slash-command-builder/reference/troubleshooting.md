@@ -83,7 +83,7 @@ Commands are loaded at startup. After creating new commands, restart your Claude
 ## Arguments Not Replacing
 
 ### Symptom
-Placeholders like `$ARGUMENTS` or `$1` appear literally in Claude's response instead of being replaced with values.
+Placeholders like `$ARGUMENTS` or `$0` appear literally in Claude's response instead of being replaced with values.
 
 ### Possible Causes and Solutions
 
@@ -93,13 +93,13 @@ Placeholders like `$ARGUMENTS` or `$1` appear literally in Claude's response ins
 ```markdown
 ❌ $ARGUMENT (missing S)
 ❌ $ARG1 (not recognized)
-❌ ${1} (bash syntax, wrong)
+❌ ${0} (bash syntax, wrong)
 
 ✅ $ARGUMENTS
-✅ $1, $2, $3
+✅ $0, $1, $2
 ```
 
-**Fix**: Use exact syntax: `$ARGUMENTS` or `$1`, `$2`, etc.
+**Fix**: Use exact syntax: `$ARGUMENTS` or `$0`, `$1`, etc.
 
 #### 2. Not Passing Arguments When Invoking
 
@@ -118,7 +118,7 @@ Placeholders like `$ARGUMENTS` or `$1` appear literally in Claude's response ins
 
 **Check command file**:
 ```markdown
-# If you reference $1, make sure you added argument-hint
+# If you reference $0, make sure you added argument-hint
 ---
 argument-hint: [expected-arg]
 ---
@@ -131,8 +131,8 @@ description: Test arguments
 ---
 
 You provided: $ARGUMENTS
-First: $1
-Second: $2
+First: $0
+Second: $1
 ```
 
 Invoke: `/test-args hello world`
@@ -204,7 +204,7 @@ But trying to run:
 [execute: git log]  # Won't work, not in allowed-tools
 ```
 
-**Fix**: Broaden tool restriction:
+**Fix**: Pre-approve the command in `allowed-tools`:
 ```yaml
 allowed-tools: Bash(git:*)
 ```
@@ -541,7 +541,7 @@ Identify which feature fails.
 ### Step 3: Check Syntax
 
 - YAML delimiters: `---` at start and end?
-- Argument syntax: `$ARGUMENTS` or `$1` (not `$ARG`)?
+- Argument syntax: `$ARGUMENTS` or `$0` (not `$ARG`)?
 - Bash syntax: `[execute: command]`?
 - File syntax: `@path` (with @ prefix)?
 

@@ -1,6 +1,6 @@
 ---
 name: agent-builder
-description: Create custom agents for Claude Code including YAML frontmatter, system prompts, tool restrictions, and discovery optimization. Use when creating, building, or designing agents, or when asked about agent creation, subagent configuration, Task tool delegation, or agent best practices.
+description: Create custom agents for Claude Code including YAML frontmatter, system prompts, tool restrictions, and discovery optimization. Use when creating, building, or designing agents, or when asked about agent creation, subagent configuration, Agent tool delegation, or agent best practices.
 ---
 
 # Agent Builder
@@ -15,12 +15,26 @@ A comprehensive guide for creating custom agents in Claude Code. Agents are spec
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `name` | Yes | Unique identifier (lowercase-with-hyphens) |
-| `description` | Yes | When to invoke — **critical for discovery** |
-| `tools` | No | Allowed tools (inherits all if omitted) |
-| `model` | No | `haiku`, `sonnet`, `opus`, or `inherit` |
-| `permissionMode` | No | `default`, `acceptEdits`, `bypassPermissions`, `plan` |
-| `skills` | No | Auto-load Skills when agent starts |
+| `name` | Yes | Unique identifier (lowercase-with-hyphens). Identity comes from this field, not the filename |
+| `description` | Yes | When Claude should delegate to this agent — **critical for discovery** |
+| `tools` | No | Tools the agent can use (inherits all if omitted) |
+| `disallowedTools` | No | Tools to remove from the inherited or listed set. `Bash(git push *)` still removes all of Bash |
+| `model` | No | `fable`, `opus`, `sonnet`, `haiku`, a full model ID, or `inherit` |
+| `effort` | No | `low`, `medium`, `high`, `xhigh`, `max`. Overrides the session effort level |
+| `permissionMode` | No | `default`, `acceptEdits`, `auto`, `dontAsk`, `bypassPermissions`, `plan` |
+| `maxTurns` | No | Turn cap. At the limit the agent returns its output marked as partial |
+| `skills` | No | Skills preloaded in full at startup (not only their descriptions) |
+| `mcpServers` | No | MCP servers available to this agent, by name or inline definition |
+| `hooks` | No | Lifecycle hooks scoped to this agent |
+| `memory` | No | `user`, `project`, or `local`. Gives the agent a persistent memory directory for cross-session learning |
+| `isolation` | No | `worktree` runs the agent in a temporary git worktree, so parallel agents cannot collide on files |
+| `background` | No | `true` keeps the agent in the background even when Claude asks for foreground |
+| `omitClaudeMd` | No | `true` launches without the user, project, and local CLAUDE.md files |
+| `color` | No | `red`, `blue`, `green`, `yellow`, `purple`, `orange`, `pink`, or `cyan` |
+
+**Plugin agents** ignore `hooks`, `mcpServers`, and `permissionMode` for security. A plugin agent in a subfolder is addressed with the folder in its ID: `agents/review/security.md` in plugin `my-plugin` is `my-plugin:review:security`. Project and personal agents are addressed by `name` alone, whatever folder they sit in.
+
+Source: https://code.claude.com/docs/en/sub-agents#supported-frontmatter-fields (last verified September 2026).
 
 ### File Locations
 
@@ -52,10 +66,13 @@ tools: Bash
 
 | Model | Best For | Tradeoff |
 |-------|----------|----------|
-| `haiku` | Quick checks, simple tasks | Fast, cheap, less capable |
-| `sonnet` | Balanced work (default) | Good balance |
-| `opus` | Complex analysis, critical tasks | Most capable, slower, expensive |
-| `inherit` | Consistency with main conversation | Adapts to user's model |
+| `fable` | Planning, review, diagnosis, strategy, and long autonomous work | Most capable, highest cost |
+| `opus` | Implementation and complex reasoning | Very capable, expensive |
+| `sonnet` | Everyday balanced work | Good balance |
+| `haiku` | Quick checks, simple lookups | Fast, cheap, less capable |
+| `inherit` | Consistency with the main conversation | Adapts to the user's model |
+
+A useful split: put the agents that decide and check on the strongest model, and the agents that carry out an agreed plan one tier down. When `model` is omitted, the agent uses the main conversation's model. If an organization's allowlist blocks the requested model, Claude Code substitutes another and shows a warning.
 
 ---
 
@@ -434,7 +451,7 @@ Present as markdown checklist:
 
 - **Templates**: See `templates/` for progressive examples
 - **Examples**: See `examples/` for 18 complete working agents
-- **Reference**: See `reference/` for syntax guide, best practices, troubleshooting
+- **Reference**: read [reference/syntax-guide.md](reference/syntax-guide.md) for field-level detail, [reference/best-practices.md](reference/best-practices.md) when reviewing an agent design, and [reference/troubleshooting.md](reference/troubleshooting.md) when an agent is not being invoked or misbehaves
 
 ---
 

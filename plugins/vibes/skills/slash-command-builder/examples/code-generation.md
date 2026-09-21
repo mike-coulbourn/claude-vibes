@@ -15,7 +15,7 @@ argument-hint: [file-to-test]
 
 ## Source Code
 
-@$1
+@$0
 
 ## Existing Test Patterns
 
@@ -27,7 +27,7 @@ argument-hint: [file-to-test]
 
 ## Test Generation Task
 
-Generate comprehensive tests for @$1:
+Generate comprehensive tests for @$0:
 
 ### Structure
 
@@ -131,21 +131,21 @@ argument-hint: [endpoint-name] [http-method]
 
 ## Generation Task
 
-Create complete API endpoint: $1 (method: $2)
+Create complete API endpoint: $0 (method: $1)
 
 ### 1. Route Handler
 
 ```javascript
-// src/api/$1.js
+// src/api/$0.js
 
 const express = require('express');
 const router = express.Router();
 
 /**
- * $2 $1
+ * $1 $0
  * Description: [What this endpoint does]
  */
-router.$2('/$1', async (req, res) => {
+router.$1('/$0', async (req, res) => {
   try {
     // Validate input
     // Process request
@@ -174,7 +174,7 @@ const validateInput = [
 
 Separate logic from route:
 ```javascript
-// src/services/$1.service.js
+// src/services/$0.service.js
 async function handleRequest(data) {
   // Implementation
 }
@@ -183,8 +183,8 @@ async function handleRequest(data) {
 ### 4. Tests
 
 ```javascript
-// tests/api/$1.test.js
-describe('$2 $1', () => {
+// tests/api/$0.test.js
+describe('$1 $0', () => {
   it('should return 200 with valid input', async () => {});
   it('should return 400 with invalid input', async () => {});
   it('should return 401 without auth', async () => {});
@@ -194,10 +194,10 @@ describe('$2 $1', () => {
 ### 5. Documentation
 
 ```markdown
-## $2 $1
+## $1 $0
 
-**URL**: `$1`
-**Method**: `$2`
+**URL**: `$0`
+**Method**: `$1`
 **Auth required**: Yes/No
 
 **Request**:
@@ -249,17 +249,17 @@ argument-hint: [component-name]
 
 ## Generation Task
 
-Create React component: $1
+Create React component: $0
 
 ### 1. Component File
 
 ```jsx
-// src/components/$1.jsx
+// src/components/$0.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './$1.module.css';
+import styles from './$0.module.css';
 
-export const $1 = ({ prop1, prop2, ...props }) => {
+export const $0 = ({ prop1, prop2, ...props }) => {
   return (
     <div className={styles.container} {...props}>
       {/* Component JSX */}
@@ -267,12 +267,12 @@ export const $1 = ({ prop1, prop2, ...props }) => {
   );
 };
 
-$1.propTypes = {
+$0.propTypes = {
   prop1: PropTypes.string.isRequired,
   prop2: PropTypes.func,
 };
 
-$1.defaultProps = {
+$0.defaultProps = {
   prop2: () => {},
 };
 ```
@@ -280,7 +280,7 @@ $1.defaultProps = {
 ### 2. Styles
 
 ```css
-/* src/components/$1.module.css */
+/* src/components/$0.module.css */
 .container {
   /* Styles */
 }
@@ -289,17 +289,17 @@ $1.defaultProps = {
 ### 3. Tests
 
 ```jsx
-// src/components/$1.test.jsx
+// src/components/$0.test.jsx
 import { render, screen } from '@testing-library/react';
-import { $1 } from './$1';
+import { $0 } from './$0';
 
-describe('$1', () => {
+describe('$0', () => {
   it('renders without crashing', () => {
-    render(<$1 prop1="test" />);
+    render(<$0 prop1="test" />);
   });
 
   it('displays correct content', () => {
-    render(<$1 prop1="test" />);
+    render(<$0 prop1="test" />);
     expect(screen.getByText(/test/i)).toBeInTheDocument();
   });
 });
@@ -308,12 +308,12 @@ describe('$1', () => {
 ### 4. Storybook Story (if using Storybook)
 
 ```jsx
-// src/components/$1.stories.jsx
-import { $1 } from './$1';
+// src/components/$0.stories.jsx
+import { $0 } from './$0';
 
 export default {
-  title: 'Components/$1',
-  component: $1,
+  title: 'Components/$0',
+  component: $0,
 };
 
 export const Default = {
@@ -327,7 +327,7 @@ export const Default = {
 
 Add to component README:
 ```markdown
-## $1
+## $0
 
 Description of component.
 
@@ -337,7 +337,7 @@ Description of component.
 
 **Example**:
 \```jsx
-<$1 prop1="value" />
+<$0 prop1="value" />
 \```
 ```
 
@@ -374,16 +374,16 @@ argument-hint: [model-name]
 
 ## Generation Task
 
-Create database model: $1
+Create database model: $0
 
 ### 1. Model Definition
 
 ```javascript
-// src/models/$1.js
+// src/models/$0.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-const $1 = sequelize.define('$1', {
+const $0 = sequelize.define('$0', {
   id: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,
@@ -401,17 +401,17 @@ const $1 = sequelize.define('$1', {
 });
 
 // Associations
-$1.associate = (models) => {
+$0.associate = (models) => {
   // Define associations
 };
 
-module.exports = $1;
+module.exports = $0;
 ```
 
 ### 2. Migration
 
 ```javascript
-// migrations/YYYYMMDDHHMMSS-create-$1.js
+// migrations/YYYYMMDDHHMMSS-create-$0.js
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('$1s', {
@@ -445,11 +445,11 @@ module.exports = {
 
 ```javascript
 // Add to model
-$1.beforeCreate(async (instance) => {
+$0.beforeCreate(async (instance) => {
   // Pre-create logic
 });
 
-$1.prototype.toJSON = function () {
+$0.prototype.toJSON = function () {
   const values = Object.assign({}, this.get());
   // Hide sensitive fields
   delete values.password;
@@ -460,8 +460,8 @@ $1.prototype.toJSON = function () {
 ### 4. Tests
 
 ```javascript
-// tests/models/$1.test.js
-describe('$1 Model', () => {
+// tests/models/$0.test.js
+describe('$0 Model', () => {
   it('creates instance with valid data', async () => {});
   it('validates required fields', async () => {});
   it('enforces constraints', async () => {});
@@ -491,7 +491,7 @@ argument-hint: [file-or-directory]
 
 ## Code to Document
 
-@$1
+@$0
 
 ## Existing Documentation Style
 
@@ -499,7 +499,7 @@ argument-hint: [file-or-directory]
 
 ## Documentation Task
 
-Generate comprehensive documentation for @$1:
+Generate comprehensive documentation for @$0:
 
 ### 1. Overview
 
@@ -601,7 +601,7 @@ argument-hint: [pattern-type] [name]
 
 ## Generation Task
 
-Generate $1 boilerplate named $2:
+Generate $0 boilerplate named $1:
 
 ### Available Patterns
 

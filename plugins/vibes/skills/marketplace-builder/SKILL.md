@@ -75,9 +75,17 @@ A comprehensive guide to creating Claude Code marketplaces and plugins for distr
 | Type | Syntax | Best For |
 |------|--------|----------|
 | **GitHub** | `{"source": "github", "repo": "owner/repo"}` | Public plugins |
-| **Git URL** | `{"source": "git", "url": "https://..."}` | Private/GitLab |
-| **Directory** | `{"source": "directory", "path": "./path"}` | Monorepo |
-| **Relative** | `"./path"` | Shorthand for directory |
+| **Git URL** | `{"source": "url", "url": "https://..."}` | Private/GitLab, any git host |
+| **Git subdirectory** | `{"source": "git-subdir", "url": "...", "path": "plugins/x"}` | One plugin inside a monorepo (sparse clone) |
+| **npm** | `{"source": "npm", "package": "@org/plugin", "version": "1.2.0"}` | Published packages |
+| **Archive** | `{"source": "archive", "url": "https://.../plugin.zip", "sha256": "..."}` | Users without git or npm |
+| **Relative** | `"./plugins/x"` | Plugin inside the marketplace repo. Must start with `./` |
+
+Git-based types (`github`, `url`, `git-subdir`) accept `ref` and `sha` to pin a version.
+
+**Plugin sources and marketplace sources are different things.** The table above is for plugin entries inside `marketplace.json`. Where a user's settings point at the marketplace itself (`extraKnownMarketplaces`), the types are `github`, `git` (any git URL), `url` (a direct link to a `marketplace.json`), `file`, `directory` (development only), and `settings`. The easy mistake is the git URL: it is `"url"` for a plugin and `"git"` for a marketplace.
+
+Sources: https://code.claude.com/docs/en/plugin-marketplaces#plugin-sources and https://code.claude.com/docs/en/settings-reference#marketplace-source-types (last verified September 2026).
 
 ---
 
@@ -201,7 +209,7 @@ tool-b/
 ```json
 {
   "plugins": [
-    {"name": "internal-tool", "source": {"source": "git", "url": "https://git.corp/..."}},
+    {"name": "internal-tool", "source": {"source": "url", "url": "https://git.corp/..."}},
     {"name": "community-tool", "source": {"source": "github", "repo": "public/tool"}}
   ]
 }
@@ -434,156 +442,11 @@ python3 -c "import json; json.load(open('.claude-plugin/plugin.json'))"
 
 ## Architecture Patterns
 
-### Monorepo Pattern
-
-**Structure**:
-```
-company-plugins/
-├── .claude-plugin/
-│   └── marketplace.json
-├── plugins/
-│   ├── plugin-a/
-│   ├── plugin-b/
-│   └── plugin-c/
-└── README.md
-```
-
-**Pros**:
-- Single repo to manage
-- Unified versioning
-- Easy cross-plugin changes
-- Simpler CI/CD
-
-**Cons**:
-- All plugins share access control
-- Larger repo size
-- All-or-nothing updates
-
-**Best for**: Team tools, related plugins, unified ownership
-
----
-
-### Multi-Repo Pattern
-
-**Structure**:
-```
-# Marketplace repo
-tools-marketplace/
-└── .claude-plugin/marketplace.json
-
-# Separate plugin repos
-plugin-a/   # github.com/org/plugin-a
-plugin-b/   # github.com/org/plugin-b
-plugin-c/   # github.com/org/plugin-c
-```
-
-**Pros**:
-- Independent versioning
-- Separate access control
-- Distributed ownership
-- Smaller repos
-
-**Cons**:
-- More repos to manage
-- Version coordination needed
-- More complex CI/CD
-
-**Best for**: Community collections, mixed ownership, independent plugins
-
----
-
-### Hybrid Pattern
-
-**Structure**:
-```json
-{
-  "plugins": [
-    {"name": "core", "source": "./plugins/core"},
-    {"name": "community", "source": {"source": "github", "repo": "community/tool"}},
-    {"name": "internal", "source": {"source": "git", "url": "https://git.corp/..."}}
-  ]
-}
-```
-
-**Pros**:
-- Flexibility to mix sources
-- Can include community plugins
-- Supports private + public
-
-**Cons**:
-- More complex to maintain
-- Mixed trust levels
-- Varied update cycles
-
-**Best for**: Enterprise, mature ecosystems, gradual migration
-
----
+Monorepo, multi-repo, hybrid, and enterprise layouts each have a worked example. Read [reference/architecture-patterns.md](reference/architecture-patterns.md) when the user has more than one plugin or more than one repository; a single plugin in one repo needs none of it.
 
 ## Common Pitfalls
 
-### 1. Confusing Marketplace with Plugin
-
-**Wrong**: Thinking marketplace.json IS the plugin
-**Right**: marketplace.json POINTS TO plugins
-
-marketplace.json is a catalog. The actual plugin code lives in separate directories or repos.
-
-### 2. Wrong Source Type
-
-**Wrong**: Using GitHub shorthand for private repos
-```json
-{"source": "github", "repo": "private-org/private-repo"}  // May fail
-```
-
-**Right**: Use git URL for private repos
-```json
-{"source": "git", "url": "git@github.com:private-org/private-repo.git"}
-```
-
-### 3. Missing Required Fields
-
-**marketplace.json required**:
-- `name`
-- `owner.name`
-- `plugins` array
-
-**plugin.json required**:
-- `name`
-- `description`
-- `version`
-
-### 4. Path Errors
-
-**Wrong**: Relative paths from wrong directory
-```json
-{"source": "../plugins/tool"}  // Relative to what?
-```
-
-**Right**: Paths relative to marketplace.json location
-```json
-{"source": "./plugins/tool"}  // Relative to .claude-plugin/
-```
-
-### 5. Version Mismatch
-
-Keep versions in sync:
-- `plugin.json` version
-- `marketplace.json` plugin entry version
-
-When you update a plugin, update both files.
-
-### 6. Forgetting Validation
-
-Always run before publishing:
-```bash
-claude plugin validate .
-```
-
-### 7. Trust Model Misunderstanding
-
-Users MUST explicitly trust marketplaces. You cannot force-install plugins on team members. The settings.json only PRE-CONFIGURES - users still approve.
-
----
+Read [reference/common-pitfalls.md](reference/common-pitfalls.md) before finalizing a marketplace and whenever an install or update fails. The most frequent mistake is confusing plugin sources with marketplace sources (see Quick Reference).
 
 ## When to Use This Skill
 

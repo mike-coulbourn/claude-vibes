@@ -28,11 +28,11 @@ Patterns and principles for creating effective commands.
 Analyze this code for issues.
 
 # Phase 2: Add arguments
-Analyze @$1 for issues.
+Analyze @$0 for issues.
 
 # Phase 3: Add bash context
 Branch: [execute: git branch --show-current]
-Analyze @$1 for issues.
+Analyze @$0 for issues.
 
 # Phase 4: Add structure and constraints
 [Full structured command with all features]
@@ -124,13 +124,13 @@ Explain $ARGUMENTS in detail.
 Usage: /explain "async/await in JavaScript"
 ```
 
-**Use $1, $2, $3 when**:
+**Use $0, $1, $2 when**:
 - Structured parameters
 - Different parts used separately
 - Want to validate each part
 
 ```markdown
-Review PR #$1 with priority $2 assigned to $3.
+Review PR #$0 with priority $1 assigned to $2.
 Usage: /review-pr 456 high alice
 ```
 
@@ -140,15 +140,15 @@ Usage: /review-pr 456 high alice
 ✅ GOOD:
 ## Arguments
 
-- $1: File path to analyze
-- $2: Focus area (security, performance, quality)
+- $0: File path to analyze
+- $1: Focus area (security, performance, quality)
 
 ## Task
-Analyze @$1 focusing on $2...
+Analyze @$0 focusing on $1...
 
 ❌ BAD:
-Analyze @$1 focusing on $2...
-(no explanation of what $1 and $2 are)
+Analyze @$0 focusing on $1...
+(no explanation of what $0 and $1 are)
 ```
 
 ## Bash Execution Best Practices
@@ -217,7 +217,7 @@ Test results: [execute: npm test 2>&1]
 ```markdown
 ✅ GOOD:
 argument-hint: [file-to-review]
-Review @$1 for quality issues.
+Review @$0 for quality issues.
 
 Usage: /review src/any-file.js
 ```
@@ -356,7 +356,7 @@ allowed-tools: Bash(git:*)
 
 ```markdown
 Check file exists:
-[execute: [ -f "$1" ] && echo "exists" || echo "missing"]
+[execute: [ -f "$0" ] && echo "exists" || echo "missing"]
 
 If exists, then process...
 ```
@@ -445,7 +445,7 @@ git add src/file.js
 Review this code.
 
 # Version 2: After feedback
-Review @$1 for security issues.
+Review @$0 for security issues.
 
 # Version 3: After more usage
 [Full structured command with learnings]
