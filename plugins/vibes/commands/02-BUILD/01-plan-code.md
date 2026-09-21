@@ -257,7 +257,7 @@ Only proceed to code exploration after the user confirms your understanding.
 
 ### 6. Launch Code Architect (REQUIRED)
 
-**You MUST use the Task tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:code-architect"` with this prompt:
+**You MUST use the Task tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:CODING:code-architect"` with this prompt:
 
 > Ultrathink about implementing [feature/task].
 >

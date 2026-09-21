@@ -90,7 +90,7 @@ Read docs/01-START/ files to understand project patterns and conventions.
 
 ### 4. Launch Assessor (REQUIRED)
 
-**You MUST use the Task tool to launch the assessor agent.** Use `subagent_type: "claude-vibes:assessor"` with this prompt:
+**You MUST use the Task tool to launch the assessor agent.** Use `subagent_type: "claude-vibes:CODING:assessor"` with this prompt:
 
 > Ultrathink about assessing this code for refactoring opportunities.
 >

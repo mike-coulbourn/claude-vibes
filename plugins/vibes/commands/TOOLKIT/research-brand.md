@@ -64,7 +64,7 @@ Use **sequential thinking** to plan what you need to find:
 
 ### Step 3: Execute Research
 
-Launch the **brand-researcher agent** (via Task tool) with all the context gathered. The agent will:
+Launch the **brand-researcher agent** (via Task tool, `subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with all the context gathered. The agent will:
 - Research the brand's website, social media, and marketing
 - Find customer reviews and testimonials
 - Identify competitors and how they differ

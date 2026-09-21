@@ -67,7 +67,7 @@ Otherwise, find the recent refactoring:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Task tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:validator"` and `subagent_type: "claude-vibes:tester"`.
+**You MUST use the Task tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Validator Agent** (confirm behavior preserved):
 
