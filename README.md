@@ -270,6 +270,22 @@ Utility commands and agents for tasks outside the main development workflow.
 
 ---
 
+## 🧠 Skills
+
+Skills are knowledge packs that Claude loads on its own when a conversation calls for them. You never invoke them by name. The commands and agents above lean on them, and they also work in any ordinary conversation once the plugin is installed.
+
+| Area | Skills |
+|------|--------|
+| **Brand strategy** | `golden-circle-purpose`, `brand-values-development`, `brand-positioning-theory`, `brand-archetype-selection`, `jtbd-psychographic-research`, `competitive-visual-audit` |
+| **Brand expression** | `brand-naming-strategies`, `brand-voice-development`, `brand-messaging-architecture`, `tagline-creation-strategies`, `elevator-pitch-techniques` |
+| **Visual identity** | `visual-identity-direction`, `brand-color-psychology`, `brand-typography-systems` |
+| **Content & copy** | `ai-writing-detection`, `scriptwriting-methodology`, `conversion-psychology`, `platform-optimization`, `midjourney-prompting` |
+| **Extending Claude Code** | `skill-builder`, `agent-builder`, `slash-command-builder`, `hooks-builder`, `marketplace-builder` |
+
+`platform-optimization`, `midjourney-prompting`, and the model fingerprints in `ai-writing-detection` describe fast-moving targets. Each carries a last-verified date and tells Claude to check current sources before relying on specific numbers.
+
+---
+
 ## 🔌 MCP Servers
 
 MCP (Model Context Protocol) servers extend Claude Code with additional capabilities. This plugin suite auto-installs essential servers that work out of the box.
