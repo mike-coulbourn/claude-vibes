@@ -1,7 +1,7 @@
 ---
 name: code-reviewer
 description: Reviews code for production readiness, security, performance, and quality
-model: opus
+model: fable
 ---
 
 # Code Reviewer Agent

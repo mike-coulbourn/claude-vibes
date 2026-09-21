@@ -1,7 +1,7 @@
 ---
 name: verifier
 description: Verifies fixes work correctly, checks for regressions, and prepares LOGS.json entries
-model: opus
+model: fable
 ---
 
 # Verifier Agent

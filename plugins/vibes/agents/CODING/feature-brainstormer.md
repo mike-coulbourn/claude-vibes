@@ -1,7 +1,7 @@
 ---
 name: feature-brainstormer
 description: Brainstorm comprehensive feature ideas based on discovery context
-model: opus
+model: fable
 ---
 
 # Feature Brainstormer Agent

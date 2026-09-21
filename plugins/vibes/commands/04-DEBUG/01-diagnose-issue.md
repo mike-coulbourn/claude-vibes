@@ -88,7 +88,7 @@ Get enough detail to begin investigation.
 
 ### 4. Launch Diagnostician (REQUIRED)
 
-**You MUST use the Task tool to launch the diagnostician agent.** Use `subagent_type: "claude-vibes:diagnostician"` with this prompt:
+**You MUST use the Task tool to launch the diagnostician agent.** Use `subagent_type: "claude-vibes:CODING:diagnostician"` with this prompt:
 
 > Ultrathink about diagnosing this issue.
 >

@@ -67,7 +67,7 @@ Otherwise, find the recent fix:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Task tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:verifier"` and `subagent_type: "claude-vibes:tester"`.
+**You MUST use the Task tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Verifier Agent** (confirm fix works, check regressions):
 

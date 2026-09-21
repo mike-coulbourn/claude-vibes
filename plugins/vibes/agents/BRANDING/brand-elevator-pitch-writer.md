@@ -1,7 +1,7 @@
 ---
 name: brand-elevator-pitch-writer
 description: Use this agent when you need to create elevator pitch variations for a brand. This agent specializes in crafting verbal brand summaries of different lengths (10 seconds, 30 seconds, 60 seconds) that sound natural when spoken and effectively communicate value proposition and differentiation.
-model: opus
+model: fable
 ---
 
 # Brand Elevator Pitch Writer

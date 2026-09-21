@@ -1,7 +1,7 @@
 ---
 name: tech-advisor
 description: Research and recommend solutions for specific technical challenges
-model: opus
+model: fable
 ---
 
 # Tech Advisor Agent

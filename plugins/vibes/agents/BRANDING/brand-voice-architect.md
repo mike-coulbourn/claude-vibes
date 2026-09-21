@@ -1,7 +1,7 @@
 ---
 name: brand-voice-architect
 description: Use this agent when you need to define brand voice and personality for a brand identity. This agent specializes in creating comprehensive voice guidelines that include personality traits, voice characteristics, tone variations, and vocabulary guidelines that ensure consistent brand expression across all communications.
-model: opus
+model: fable
 ---
 
 # Brand Voice Architect

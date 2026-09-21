@@ -1,7 +1,7 @@
 ---
 name: brand-archetype-selector
 description: Use this agent when you need to select brand archetypes for a brand identity. This agent specializes in the 12 Jungian brand archetypes and helps brands identify their primary and secondary archetypes to establish emotional positioning and personality foundation.
-model: opus
+model: fable
 ---
 
 # Brand Archetype Selector

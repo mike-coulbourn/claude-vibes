@@ -92,7 +92,7 @@ Use AskUserQuestion if the approach isn't clear.
 
 ### 3. Launch Refactorer (REQUIRED)
 
-**You MUST use the Task tool to launch the refactorer agent** for each step. Use `subagent_type: "claude-vibes:refactorer"` with this prompt:
+**You MUST use the Task tool to launch the refactorer agent** for each step. Use `subagent_type: "claude-vibes:CODING:refactorer"` with this prompt:
 
 > Ultrathink about applying this refactoring.
 >

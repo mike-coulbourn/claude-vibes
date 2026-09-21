@@ -102,7 +102,7 @@ Question 2: "How deep should I go?"
 
 ### Step 3: Launch the Deep Researcher Agent
 
-**Use the Task tool** to launch the `deep-researcher` agent with an enriched prompt.
+**Use the Task tool** to launch the `deep-researcher` agent (`subagent_type: "claude-vibes:TOOLKIT:deep-researcher"`) with an enriched prompt.
 
 Your prompt to the agent should include:
 - The original research topic/question

@@ -129,7 +129,7 @@ Use **AskUserQuestion** to understand their content style:
 
 Tell the user: "Let me research [brand] to understand their positioning, competitors, and what makes them unique. This will help us write a script that's authentic to you AND effective for the brand."
 
-Use the Task tool to launch the **brand-researcher agent** with:
+Use the Task tool to launch the **brand-researcher agent** (`subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with:
 - Brand name and product
 - Product URL (if provided)
 - The creator's audience info
@@ -220,7 +220,7 @@ Once the script is approved, generate alternative hooks.
 
 1. **Prepare AI-aware instructions** using the `claude-vibes:ai-writing-detection` skill and sequential thinking (ultrathink)
 
-2. **Launch the hook-generator agent** with:
+2. **Launch the hook-generator agent** (`subagent_type: "claude-vibes:TOOLKIT:hook-generator"`) with:
    - The approved script
    - The creator's style and tone
    - The product's key benefit

@@ -1,7 +1,7 @@
 ---
 name: brand-values-curator
 description: Use this agent when you need to define core values for a brand. This agent specializes in values discovery and articulation, ensuring values are specific, differentiating, and actionable rather than generic corporate platitudes. Values inform culture, decisions, and brand expression.
-model: opus
+model: fable
 ---
 
 ## Knowledge Base

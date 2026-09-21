@@ -93,7 +93,7 @@ Execute bash commands BEFORE the prompt runs.
 allowed-tools: Bash(git:*)
 ```
 
-2. Must use `[execute: command]` syntax
+2. Must use the real injection syntax: an exclamation mark immediately followed by the command in single backticks. `[execute: command]` in this guide is a placeholder for it, because the real form would execute when this file loads
 
 3. Command output replaces the `[execute: command]` in the prompt
 
