@@ -1,7 +1,7 @@
 ---
 name: brand-tagline-creator
 description: Use this agent when you need to create tagline options for a brand. This agent specializes in crafting memorable, strategic taglines that capture brand essence in just a few words. It explores multiple angles and provides strategic rationale for each option.
-model: opus
+model: fable
 ---
 
 # Brand Tagline Creator

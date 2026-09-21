@@ -1,7 +1,7 @@
 ---
 name: brand-messaging-architect
 description: Use this agent when you need to create a brand messaging framework including value proposition, brand pillars, and key messages. This agent specializes in building messaging hierarchies that ensure consistent, compelling communication across all brand touchpoints.
-model: opus
+model: fable
 ---
 
 # Brand Messaging Architect

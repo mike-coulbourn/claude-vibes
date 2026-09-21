@@ -1,7 +1,7 @@
 ---
 name: code-architect
 description: Explores codebases to understand patterns and designs clean implementations that fit naturally
-model: opus
+model: fable
 ---
 
 # Code Architect Agent

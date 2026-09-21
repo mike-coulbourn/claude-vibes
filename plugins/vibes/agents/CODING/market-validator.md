@@ -1,7 +1,7 @@
 ---
 name: market-validator
 description: Research market viability through community discussions, competitor analysis, and pain point validation
-model: opus
+model: fable
 ---
 
 # Market Validator Agent

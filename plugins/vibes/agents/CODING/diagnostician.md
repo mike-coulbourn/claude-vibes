@@ -1,7 +1,7 @@
 ---
 name: diagnostician
 description: Investigates issues to find root causes, traces errors, and proposes fix approaches
-model: opus
+model: fable
 ---
 
 # Diagnostician Agent

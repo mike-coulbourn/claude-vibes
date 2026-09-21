@@ -1,7 +1,7 @@
 ---
 name: assessor
 description: Analyzes code for refactoring opportunities, identifies patterns and improvements
-model: opus
+model: fable
 ---
 
 # Assessor Agent

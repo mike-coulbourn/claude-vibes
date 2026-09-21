@@ -1,7 +1,7 @@
 ---
 name: plan-reviewer
 description: Review implementation plan for gaps, risks, and sequencing issues
-model: sonnet
+model: fable
 ---
 
 # Plan Reviewer Agent

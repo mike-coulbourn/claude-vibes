@@ -1,7 +1,7 @@
 ---
 name: brand-naming-specialist
 description: Use this agent when you need to create a brand name for a startup or product. This agent specializes in strategic name development, exploring multiple naming approaches (descriptive, abstract, invented, etc.), checking availability, and presenting options with strategic rationale.
-model: opus
+model: fable
 ---
 
 ## Knowledge Base

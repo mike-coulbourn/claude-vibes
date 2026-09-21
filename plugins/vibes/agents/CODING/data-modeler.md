@@ -1,7 +1,7 @@
 ---
 name: data-modeler
 description: Design complete data model based on MVP features and user stories
-model: opus
+model: fable
 ---
 
 # Data Modeler Agent
