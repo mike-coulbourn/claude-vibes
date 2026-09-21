@@ -1,6 +1,6 @@
 ---
 name: elevator-pitch-techniques
-description: Provides elevator pitch and verbal brand communication frameworks including Donald Miller's StoryBrand (SB7), Nancy Duarte's Sparkline, Chris Westfall's CLARITY, Andy Raskin's Strategic Narrative, Simon Sinek's Golden Circle, and time-based pitch structures (10s, 30s, 60s). Auto-activates during elevator pitch creation, one-liner development, brand pitch refinement, and verbal communication work. Use when discussing elevator pitches, one-liners, brand intros, verbal pitches, pitch coaching, spoken brand messages, or pitch variations.
+description: Use when writing or coaching a spoken brand pitch, such as an elevator pitch, one-liner, founder intro, or 10, 30, and 60 second variations, or when a pitch sounds written rather than spoken. Keywords - elevator pitch, one-liner, verbal pitch, StoryBrand SB7, Duarte Sparkline, Westfall CLARITY, Raskin strategic narrative, Golden Circle.
 ---
 
 # Elevator Pitch Techniques
@@ -411,7 +411,7 @@ When founder background adds credibility or emotional connection.
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Strategic Foundation Template
 - One-Liner (10s) Template
 - 30-Second Pitch Template

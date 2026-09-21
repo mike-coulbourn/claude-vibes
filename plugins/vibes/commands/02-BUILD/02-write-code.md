@@ -15,7 +15,7 @@ Plan file to implement: $ARGUMENTS
 
 You orchestrate the implementation and manage the conversation. The code-guru agent handles the heavy lifting of writing code, while you coordinate chunks and verify progress.
 
-**CRITICAL: You MUST use the Task tool to launch the code-guru agent for writing code.** Do not implement the feature yourself—that's what the code-guru agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the code-guru agent for writing code.** Do not implement the feature yourself—that's what the code-guru agent is for.
 
 ## Project Context
 
@@ -59,7 +59,7 @@ Check the plan file for a Taskmaster task ID. Plan files from `/01-plan-code` in
 
 ### 3. Build in Chunks
 
-For each implementation chunk, **you MUST use the Task tool to launch the code-guru agent.** Use `subagent_type: "claude-vibes:CODING:code-guru"` with this prompt:
+For each implementation chunk, **you MUST use the Agent tool to launch the code-guru agent.** Use `subagent_type: "claude-vibes:CODING:code-guru"` with this prompt:
 
 > Ultrathink about implementing [specific chunk].
 >
@@ -190,30 +190,24 @@ When build is complete:
    - Task marked complete
    - Next recommended task
 
-### Store Implementation Lessons in Memory
+### Keep Implementation Lessons
 
-**If you discovered any gotchas, patterns, or lessons during implementation**, store them for future sessions.
+**If implementation surfaced gotchas, patterns, or lessons**, make sure they outlast this session.
 
-**Use the memory MCP tools:**
+The code-guru agent keeps its own project memory. In its prompt, ask it to record before it finishes:
 
-1. **For codebase patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "CodebasePatterns":
-   - Conventions you discovered (e.g., "All services use dependency injection")
+1. **Codebase patterns discovered:**
+   - Conventions it found (e.g., "All services use dependency injection")
    - Patterns that weren't documented (e.g., "Error responses follow {code, message} format")
-   ```
 
-2. **For implementation lessons learned:**
-   ```
-   Use create_entities or add_observations to store in "ImplementationLessons":
+2. **Implementation lessons learned:**
    - Gotchas encountered (e.g., "Must await cache.clear() before returning")
    - What worked well (e.g., "Using the existing BaseService class simplified auth")
    - What to avoid (e.g., "Don't use raw SQL here — the ORM handles soft deletes")
-   ```
 
-**Only store NEW findings** — things not already in docs or LOGS.json. If nothing notable was discovered, skip this step.
+**Only keep NEW findings** — things not already in docs or LOGS.json. If a lesson is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
 
-**Example observations to store:**
+**Example lessons worth keeping:**
 - "The auth middleware expects req.user to be set before reaching protected routes"
 - "Database timestamps are in UTC but the frontend expects local time"
 - "Found undocumented rate limiting on the /api/search endpoint"

@@ -4,6 +4,18 @@ Structured templates for purpose discovery, validation, and documentation.
 
 ---
 
+## Contents
+
+- [Purpose Discovery Worksheet](#purpose-discovery-worksheet)
+- [WHY Statement Drafting Template](#why-statement-drafting-template)
+- [Hedgehog Assessment Template](#hedgehog-assessment-template)
+- [Focus Lab Validation Template](#focus-lab-validation-template)
+- [Purpose/Mission/Vision Documentation Template](#purposemissionvision-documentation-template)
+- [Purpose Stress Test Template](#purpose-stress-test-template)
+- [Anti-Pattern Checklist](#anti-pattern-checklist)
+- [Internal Culture Alignment Checklist](#internal-culture-alignment-checklist)
+- [Output Validation Checklist](#output-validation-checklist)
+
 ## Purpose Discovery Worksheet
 
 Use this worksheet to guide the WHY discovery conversation.

@@ -1,6 +1,6 @@
 ---
 name: jtbd-psychographic-research
-description: Provides Jobs-to-be-Done and psychographic research frameworks for brand identity work. Auto-activates during brand positioning, voice development, messaging, and strategy phases. Use when discussing target audience, customer research, JTBD, jobs to be done, four forces, push pull anxiety habit, emotional jobs, social jobs, functional jobs, limbic types, VALS segments, psychographics, or customer motivations.
+description: Use when researching or defining a target audience for brand work, building customer profiles from motivations rather than demographics, or explaining why customers switch. Keywords - Jobs to be Done, JTBD, functional emotional and social jobs, four forces, push pull anxiety habit, psychographics, limbic types, VALS segments, customer motivations.
 ---
 
 # JTBD & Psychographic Research Frameworks
@@ -136,7 +136,7 @@ How audience insights inform brand decisions:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Forces of Progress Canvas
 - Job Story Template
 - Psychographic Profile Summary

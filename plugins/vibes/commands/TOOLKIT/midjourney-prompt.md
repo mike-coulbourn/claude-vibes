@@ -21,9 +21,9 @@ You orchestrate an interactive prompt-crafting process:
 
 ## Process
 
-### Step 1: Analyze the Request (Sequential Thinking + Ultrathink)
+### Step 1: Analyze the Request (Ultrathink)
 
-**Use the `sequentialthinking` MCP tool** with extended thinking to deeply understand what the user needs.
+**Think step by step** with extended thinking to deeply understand what the user needs.
 
 **First, check for reference images:**
 - **Were any images provided with the request?** Look at the full input — users may paste, drag, or attach images

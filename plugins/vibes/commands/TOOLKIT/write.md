@@ -5,7 +5,7 @@ argument-hint: What you need written (e.g., "email to my boss about taking time 
 
 # Write
 
-You are helping a user write something that sounds authentically human. This could be a personal email, a professional message, a thank you note, or any general writing task. You can also help clean up or refine their existing drafts. Your goal is to gather the right context, prepare yourself with AI detection knowledge, write human-sounding content from the start, and deliver it how the user wants.
+You are helping a user write something that reads like a thoughtful person wrote it. This could be a personal email, a professional message, a thank you note, or any general writing task. You can also help clean up or refine their existing drafts. Your goal is to gather the right context, load the natural-writing skill, write natural content from the start, and deliver it how the user wants.
 
 ## Your Role
 
@@ -14,15 +14,15 @@ You are helping a user write something that sounds authentically human. This cou
 You handle general writing tasks:
 1. Understand what the user needs — writing from scratch OR refining their draft
 2. Gather context smartly — don't re-ask what they told you, but do ask about tone/voice
-3. **Use the `claude-vibes:ai-writing-detection` skill** to prepare with AI detection knowledge
-4. Write or refine the content with human-sounding patterns from the start
+3. **Use the `claude-vibes:natural-writing` skill** to prepare with its method
+4. Write or refine the content naturally from the start
 5. Present the final writing and deliver it how the user prefers
 
 ## Process
 
-### Step 1: Analyze the Request (Sequential Thinking)
+### Step 1: Analyze the Request
 
-**Use the `sequentialthinking` MCP tool** to understand what the user needs:
+**Think step by step** to understand what the user needs:
 
 **First, determine the request type:**
 
@@ -119,25 +119,14 @@ Question 2: "How close are you with Sarah?"
 - Professional relationship — polite and appreciative
 ```
 
-### Step 3: Prepare with AI Detection Knowledge (CRITICAL)
+### Step 3: Load the Natural Writing Skill (CRITICAL)
 
-**BEFORE writing any content, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons (three-part lists), em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead), template conclusions
-   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
-
-3. **Apply this knowledge proactively** — write authentically human from the start, don't generate AI-sounding text and fix it afterward
+Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ### Step 4: Write or Refine the Draft
 
 **If writing from scratch:**
-Write the draft yourself based on all context gathered, applying the AI detection knowledge from Step 3.
+Write the draft yourself based on all context gathered, applying the natural-writing method from Step 3.
 
 **If refining their draft:**
 - If they want their style preserved: Edit for clarity, flow, and naturalness while keeping their voice
@@ -149,7 +138,7 @@ Write the draft yourself based on all context gathered, applying the AI detectio
 - Vary sentence length and structure — mix short punchy sentences with longer ones
 - Match formality to their stated relationship (or their existing draft's tone if preserving)
 - Include natural imperfections — humans don't write perfectly parallel structures
-- Avoid the AI vocabulary and phrases identified in Step 3
+- Apply the natural-writing method from Step 3
 
 ### Step 5: Present the Final Writing
 
@@ -232,8 +221,8 @@ Acknowledge and offer any other help: "Got it! Let me know if you need anything 
 - **Don't re-ask the obvious** — If they told you, you know it
 - **Do ask about tone/relationship** — These vary and matter; don't assume
 - **Context is king** — Better to ask one clarifying question than guess wrong
-- **Skill before writing** — Always use the `claude-vibes:ai-writing-detection` skill and sequential thinking BEFORE you write
-- **Human from the start** — Apply AI detection knowledge proactively; don't generate AI-sounding text and fix it
+- **Skill before writing** — Always use the `claude-vibes:natural-writing` skill and careful step-by-step planning BEFORE you write
+- **Natural from the start** — Apply the natural-writing method as you draft, not as a cleanup pass afterward
 - **Keep it lightweight** — This should feel quick and helpful, not burdensome
 - **Clipboard is convenient** — Make it easy to copy and paste
 

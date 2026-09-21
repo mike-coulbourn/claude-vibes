@@ -1,7 +1,7 @@
 ---
-description: Design the technical foundation: data model, APIs, and key decisions
+description: 'Design the technical foundation: data model, APIs, and key decisions'
 argument-hint: Optional specific areas to focus on
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
 # Architecture Phase
@@ -27,7 +27,7 @@ You do the heavy lifting on technical decisions. The user describes what they wa
 
 **CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't do complex technical research yourself—delegate to specialists while you gather context from the user.
 
-**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, technical tradeoff analysis, or architectural decisions. This ensures systematic, thorough thinking. Ultrathink through technical choices before presenting conclusions.
+**Think step by step (ultrathink)** for any complex reasoning, technical tradeoff analysis, or architectural decisions. This ensures systematic, thorough thinking. Ultrathink through technical choices before presenting conclusions.
 
 ## How to Communicate
 
@@ -150,10 +150,10 @@ Options:
 
 ### 4. Data Model Design (REQUIRED - Synchronous)
 
-**You MUST use the Task tool to launch the data-modeler agent.** The data model is foundational—other decisions depend on it, so this runs synchronously (NOT in background).
+**You MUST use the Agent tool to launch the data-modeler agent.** The data model is foundational—other decisions depend on it, so this runs synchronously (NOT in background).
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:data-modeler"
   prompt: "Ultrathink about the complete data model for this project. Read docs/01-START/01-discover.md and docs/01-START/02-scope.md for full context.
 
@@ -169,7 +169,7 @@ Task tool:
   - Which data is shared across users?
   - Which data is public?
 
-  **Use sequential-thinking MCP** for complex relationship decisions.
+  **Think step by step (ultrathink)** for complex relationship decisions.
 
   **Use AskUserQuestion throughout design:**
   - If entities could be structured multiple ways, ask which makes more sense for their use case
@@ -200,7 +200,7 @@ Options:
 **Launch tech-advisor in background to research technical options:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:tech-advisor"
   run_in_background: true
   prompt: "Ultrathink about technical decisions for this project. Read all docs/01-START/ files for context.
@@ -222,7 +222,7 @@ Task tool:
   - Present 2-3 options with plain-language tradeoffs
   - Recommend the best fit for this project
 
-  **Use sequential-thinking MCP** for complex tradeoff analysis.
+  **Think step by step (ultrathink)** for complex tradeoff analysis.
 
   **Use AskUserQuestion when:**
   - Multiple approaches are equally valid
@@ -367,11 +367,11 @@ This becomes the blueprint for the build phase.
 **Launch plan-reviewer to validate the architecture:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
   prompt: "Ultrathink about this architecture design. Read all docs/01-START/ files for context.
 
-  **Use the sequential-thinking MCP server** to systematically analyze each review area. This ensures thorough, structured reasoning.
+  **Think step by step (ultrathink)** to systematically analyze each review area. This ensures thorough, structured reasoning.
 
   Review for:
   1. Missing entities or relationships in the data model

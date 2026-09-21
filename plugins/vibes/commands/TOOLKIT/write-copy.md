@@ -5,7 +5,7 @@ argument-hint: What you need written (landing page, email, headline, etc.)
 
 # Write Copy
 
-You are helping a user create compelling copy that sounds authentically human. Your goal is to gather context, research the market, prepare with AI detection knowledge, generate human-sounding copy from the start, and get user approval.
+You are helping a user create compelling copy that reads like a thoughtful person wrote it. Your goal is to gather context, research the market, load the natural-writing skill, generate natural copy from the start, and get user approval.
 
 ## Your Role
 
@@ -15,8 +15,8 @@ You orchestrate a comprehensive copywriting process:
 1. Understand what copy is needed and why
 2. Gather critical context about audience, goals, and voice
 3. Research the market to inform the copy (competitors, audience language, effective patterns)
-4. **Use the `claude-vibes:ai-writing-detection` skill** to prepare with AI detection knowledge
-5. Launch elite-copywriter with AI-aware instructions to write human-sounding copy from the start
+4. **Use the `claude-vibes:natural-writing` skill** to prepare with its method
+5. Launch elite-copywriter, which has the natural-writing skill preloaded, to write natural copy from the start
 6. Save the copy to a file for easy access
 7. Get user approval and refine further based on feedback
 
@@ -46,9 +46,9 @@ All generated copy should be saved to: `copy/[type]/`
 
 ## Process
 
-### Step 1: Analyze the Request (Sequential Thinking)
+### Step 1: Analyze the Request
 
-**Use the `sequentialthinking` MCP tool** to analyze what the user needs:
+**Think step by step** to analyze what the user needs:
 
 - What TYPE of copy do they need? (landing page, email, ad, headline, etc.)
 - What CONTEXT is missing that would affect copy quality?
@@ -121,9 +121,9 @@ Question 2: "What's the main problem you solve for customers?"
 - B2B copy needs different context than B2C
 - If they have existing copy, ask if you can see it for voice matching
 
-### Step 3: Assess Research Needs (Sequential Thinking)
+### Step 3: Assess Research Needs
 
-**Use the `sequentialthinking` MCP tool** to determine if market research would improve the copy:
+**Think step by step** to determine if market research would improve the copy:
 
 Consider:
 - **Copy complexity**: Is this substantial copy (landing page, sales page, email sequence) or something quick (social post, headline tweak)?
@@ -147,7 +147,7 @@ Consider:
 
 ### Step 4: Conduct Market Research (deep-researcher)
 
-**Use the Task tool** to launch the `deep-researcher` agent (`subagent_type: "claude-vibes:TOOLKIT:deep-researcher"`) to gather market context.
+**Use the Agent tool** to launch the `deep-researcher` agent (`subagent_type: "claude-vibes:TOOLKIT:deep-researcher"`) to gather market context.
 
 **Tailor the research prompt to the copy type and context:**
 
@@ -182,24 +182,13 @@ Focus on insights that will directly inform the copy, not general market analysi
 
 **Store the research findings** — you'll include key insights in the elite-copywriter prompt.
 
-### Step 5: Prepare with AI Detection Knowledge (CRITICAL)
+### Step 5: Load the Natural Writing Skill (CRITICAL)
 
-**BEFORE launching elite-copywriter, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan the copywriting approach:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain", "It's worth noting"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead), template conclusions
-   - Plan human-sounding instructions to include in the elite-copywriter prompt
-
-3. **Apply this knowledge** in the elite-copywriter prompt below — include explicit instructions about AI patterns to avoid
+The elite-copywriter agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ### Step 6: Generate Initial Draft (elite-copywriter)
 
-**Use the Task tool** to launch the `elite-copywriter` agent (`subagent_type: "claude-vibes:TOOLKIT:elite-copywriter"`) with comprehensive context.
+**Use the Agent tool** to launch the `elite-copywriter` agent (`subagent_type: "claude-vibes:TOOLKIT:elite-copywriter"`) with comprehensive context.
 
 Your prompt to the agent should include:
 - The TYPE of copy needed
@@ -251,20 +240,12 @@ Use the market research to write copy that:
 
 Write for accessibility — avoid unexplained jargon and acronyms. If industry terms are necessary, explain them on first use.
 
-Write in a natural, human voice. Avoid these AI-writing patterns:
-- Overused AI words like "delve", "crucial", "comprehensive", "leverage", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal", "multifaceted"
-- Excessive hedging ("It's important to note", "It's worth mentioning", "It should be noted")
-- Overly perfect parallel structure in every sentence
-- Generic, could-apply-to-anyone statements
-- Flat, personality-free prose without voice
-- Too many adjectives clustered together ("truly remarkable and exceptionally innovative")
-
-Write like a skilled human copywriter would — with personality, specific details, natural rhythm, and occasional imperfection.
+Write plainly and connect related ideas, the way a skilled copywriter would — with personality, specific details, natural rhythm, and every fact and number intact.
 
 Deliver polished, ready-to-use copy with multiple options for headlines where appropriate.
 ```
 
-**Important:** The combination of user context + market research + AI detection knowledge produces copy that's accurate, market-informed, AND human-sounding from the start.
+**Important:** The combination of user context + market research + the natural-writing method produces copy that's accurate, market-informed, AND natural from the start.
 
 ### Step 7: Save to File
 
@@ -337,8 +318,8 @@ Options:
 ```
 
 **If the user has feedback:**
-1. Use the `claude-vibes:ai-writing-detection` skill + sequential thinking to plan revisions
-2. Launch `elite-copywriter` again with their specific feedback and AI-aware instructions
+1. Use the `claude-vibes:natural-writing` skill + careful step-by-step planning to plan revisions
+2. Launch `elite-copywriter` again with their specific feedback
 3. Update the saved file with the new version
 4. Ask for approval again
 
@@ -356,7 +337,7 @@ Once the user approves:
 
 The final version:
 - Was informed by market research on [competitor messaging / audience language / etc.]
-- Written with AI detection knowledge to sound authentically human
+- Written with the natural-writing method so it reads naturally
 - Includes 3 headline options, full body copy, and 2 CTA variations
 
 Ready to use!"
@@ -364,10 +345,10 @@ Ready to use!"
 ## Guidelines
 
 - **Research before writing** — Market context produces better copy; use deep-researcher for substantial copy
-- **Skill before writing** — Always use the `claude-vibes:ai-writing-detection` skill and sequential thinking BEFORE launching elite-copywriter
-- **Human from the start** — Apply AI detection knowledge proactively; elite-copywriter writes human-sounding copy on the first pass
-- **Context is everything** — User context + market research + AI detection knowledge = copy that converts
-- **Use Sequential Thinking (ultrathink)** to assess research needs, plan clarifying questions, and prepare AI-aware instructions
+- **Skill before writing** — Always use the `claude-vibes:natural-writing` skill and careful step-by-step planning BEFORE launching elite-copywriter
+- **Natural from the start** — elite-copywriter has the natural-writing skill preloaded and writes natural copy on the first pass
+- **Context is everything** — User context + market research + the natural-writing method = copy that converts
+- **Think step by step (ultrathink)** to assess research needs and plan clarifying questions
 - **Adapt to the ask** — A quick headline needs less research than a full sales page
 - **Show don't tell** — When asking about differentiators, push for specifics not generalities
 - **User approval is the final gate** — Keep iterating until they're happy

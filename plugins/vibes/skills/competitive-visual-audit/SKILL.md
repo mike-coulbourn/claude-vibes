@@ -1,6 +1,6 @@
 ---
 name: competitive-visual-audit
-description: Provides competitive visual audit frameworks and templates for brand identity work. Auto-activates during visual direction, color selection, typography selection, and positioning work. Use when discussing competitors, competitive audit, differentiation, white space, perceptual mapping, visual landscape, zig zag strategy, brand audit, color audit, typography audit, visual identity analysis, or positioning maps.
+description: Use when analyzing competitor brands to find visual or positioning white space before making identity decisions, such as auditing competitor colors, typography, logos, imagery, and voice, or building a perceptual map. Keywords - competitive audit, competitor analysis, visual landscape, differentiation, white space, perceptual mapping, zig when others zag.
 ---
 
 # Competitive Visual Audit Frameworks
@@ -157,7 +157,7 @@ When analyzing competitors, capture for each:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Color Audit Matrix
 - Typography Audit Matrix
 - Imagery Style Audit Matrix

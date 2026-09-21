@@ -4,6 +4,15 @@ Reusable templates for documenting elevator pitch development and variations.
 
 ---
 
+## Contents
+
+- [Elevator Pitch Document Template](#elevator-pitch-document-template)
+- [Strategic Foundation Template](#strategic-foundation-template)
+- [Hook Development Template](#hook-development-template)
+- [Follow-Up Response Template](#follow-up-response-template)
+- [Pitch Rehearsal Guide Template](#pitch-rehearsal-guide-template)
+- [Output Validation Checklist](#output-validation-checklist)
+
 ## Elevator Pitch Document Template
 
 Use this complete structure for final pitch documentation:

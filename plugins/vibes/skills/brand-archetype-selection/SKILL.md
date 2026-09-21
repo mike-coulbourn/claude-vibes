@@ -1,6 +1,6 @@
 ---
 name: brand-archetype-selection
-description: Provides Jungian brand archetype frameworks, the 12 archetypes with profiles, the 70/30 primary/secondary rule, archetype combinations, and selection templates. Auto-activates during brand archetype selection, emotional positioning, and brand personality work. Use when discussing brand archetypes, Jungian archetypes, 12 archetypes, Hero, Outlaw, Magician, Creator, Lover, Jester, Everyman, Caregiver, Ruler, Sage, Explorer, Innocent, 70/30 rule, Mark-Pearson, or archetype combinations.
+description: Use when choosing or evaluating a brand archetype, defining brand personality or emotional positioning, or combining a primary and secondary archetype. Keywords - Jungian archetypes, 12 archetypes, Hero, Outlaw, Magician, Creator, Lover, Jester, Everyman, Caregiver, Ruler, Sage, Explorer, Innocent, 70/30 rule, Mark and Pearson.
 ---
 
 # Brand Archetype Selection Framework
@@ -220,7 +220,7 @@ When competitors share your archetype:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Archetype Selection Worksheet
 - Archetype Profile Template
 - Competitive Archetype Mapping Template

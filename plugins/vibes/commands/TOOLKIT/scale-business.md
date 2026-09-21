@@ -12,7 +12,7 @@ You are helping a user get strategic business advice through an interactive cons
 This is an **interactive consultation**, not a quick answer. The user should expect:
 
 1. **Discovery Phase** — The advisor asks questions to deeply understand their business, customers, constraints, and goals
-2. **Analysis Phase** — Using sequential thinking to identify opportunities across all growth dimensions
+2. **Analysis Phase** — Using step-by-step reasoning to identify opportunities across all growth dimensions
 3. **Prioritized Recommendations** — Opportunities ranked by the Simplicity-First framework:
    - **Quick Wins** (High Impact, Low Effort) — Do these FIRST
    - **Strategic Bets** (High Impact, High Effort) — Plan these carefully
@@ -39,10 +39,10 @@ Let the user know what's about to happen:
 
 ### Step 2: Launch the Business Growth Advisor Agent
 
-**Use the Task tool** to launch the `business-growth-advisor` agent:
+**Use the Agent tool** to launch the `business-growth-advisor` agent:
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:TOOLKIT:business-growth-advisor"
   prompt: "Conduct a comprehensive business growth consultation.
 
@@ -57,7 +57,7 @@ Task tool:
 
   Use AskUserQuestion extensively throughout discovery. Never give advice until you thoroughly understand the business.
 
-  When analysis is needed, ALWAYS use the sequential-thinking MCP server with 'ultrathink' for maximum reasoning depth.
+  When analysis is needed, reason step by step with ultrathink for maximum reasoning depth.
 
   Deliver recommendations using the Simplicity-First framework — prioritize by Impact/Effort ratio. Make every recommendation specific, sequenced, measurable, realistic, and time-bound."
 ```

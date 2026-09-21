@@ -15,7 +15,7 @@ Specific area to verify: $ARGUMENTS
 
 You orchestrate the verification and manage the conversation. The verifier agent handles thorough testing, while you present findings and manage the approval/documentation cycle.
 
-**CRITICAL: You MUST use the Task tool to launch the verification agents.** Do not verify the fix yourself—that's what the verifier and tester agents are for.
+**CRITICAL: You MUST use the Agent tool to launch the verification agents.** Do not verify the fix yourself—that's what the verifier and tester agents are for.
 
 ## Interactive Experience (CRITICAL)
 
@@ -67,7 +67,7 @@ Otherwise, find the recent fix:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Task tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**You MUST use the Agent tool to launch BOTH agents simultaneously** — they verify the fix from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:verifier"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Verifier Agent** (confirm fix works, check regressions):
 
@@ -75,6 +75,8 @@ Otherwise, find the recent fix:
 >
 > **What was fixed:** [from diagnosis file]
 > **Files changed:** [from git diff or diagnosis]
+>
+> Check your project memory for related past verifications and regression areas before starting, and record what you learn before finishing.
 >
 > **Parse LOGS.json for context (if it exists):**
 > - Find related past fixes to inform testing
@@ -281,28 +283,22 @@ When verification is complete:
 3. Offer to fix them
 4. "Re-run `/03-verify-fix` after fixes"
 
-### Store Verification Insights in Memory
+### Record Verification Insights
 
-**If verification revealed useful patterns or insights not already documented**, store them for future sessions.
+In the verifier's prompt, ask it to record durable learnings in its project memory before it finishes:
 
-**Use the memory MCP tools:**
-
-1. **For verification patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "VerificationPatterns":
+1. **Verification patterns discovered:**
    - Testing strategies that worked well (e.g., "Always test the exact user input that caused the original bug")
    - Common regression areas (e.g., "Changes to UserService often regress email notifications")
    - Edge cases worth testing (e.g., "Always test with unicode characters after string handling fixes")
-   ```
 
-2. **For diagnostic knowledge:**
-   ```
-   Use create_entities or add_observations to store in "DiagnosticKnowledge":
+2. **Diagnostic knowledge:**
    - Prevention insights (e.g., "Add input length limits to prevent this class of bug")
    - Root cause patterns (e.g., "This symptom always traces back to cache staleness")
-   ```
 
-**Only store NEW findings** — insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
+**Only record NEW findings** — insights that will help verify similar fixes faster. If nothing notable was discovered, skip this step.
+
+If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
 - "After fixing auth bugs, always verify both login AND logout flows"

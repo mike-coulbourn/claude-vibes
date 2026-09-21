@@ -4,6 +4,13 @@ Reusable templates for brand color strategy documentation.
 
 ---
 
+## Contents
+
+- [Color Palette Documentation Template](#color-palette-documentation-template)
+- [Accessibility Testing Checklist](#accessibility-testing-checklist)
+- [Color Psychology Rationale Template](#color-psychology-rationale-template)
+- [Output Validation Checklist](#output-validation-checklist)
+
 ## Color Palette Documentation Template
 
 ```markdown

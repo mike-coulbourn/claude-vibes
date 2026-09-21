@@ -1,8 +1,14 @@
 # 😎 Claude Vibes
 
-A plugin for **vibe coding** production-grade apps with Claude Code.
+A Claude Code plugin for people who describe WHAT they want and let Claude handle HOW.
 
-Vibe coding is describing WHAT you want while Claude handles HOW to build it. This plugin provides structured workflows, specialized agents, and intelligent tools that transform ideas into production-ready code.
+It covers three things that Claude Code does not ship on its own:
+
+- **Build a brand from nothing.** Sixteen guided commands take you from founder interview to a compiled brand guidelines document: purpose, values, positioning, archetype, voice, messaging, tagline, pitch, colors, and typography.
+- **Turn an idea into a plan.** Discovery, scoping, architecture, and a roadmap, explained in plain language for people who don't read code.
+- **A creator toolkit.** Sponsor scripts, hooks, marketing copy, deep research, and image prompts for Midjourney and Nano Banana Pro.
+
+It also wraps building, shipping, debugging, and refactoring in the same plain-language, confirm-before-acting style, and leans on Claude Code's built-in review, reasoning, and memory wherever those exist.
 
 ---
 
@@ -78,9 +84,9 @@ When team members trust the repository folder, the plugin installs automatically
 ## 🔄 The Workflow
 
 ```
-START → BUILD → SHIP → FIX → REFACTOR
-  ↓       ↓       ↓      ↓        ↓
- Plan   Code   Deploy  Debug   Evolve
+BRAND → START → BUILD → SHIP → FIX → REFACTOR        + TOOLKIT (any time)
+  ↓       ↓       ↓       ↓      ↓        ↓
+Identity Plan   Code   Deploy  Debug   Evolve
 ```
 
 Each phase has dedicated commands and agents designed for that stage of development.
@@ -171,6 +177,31 @@ Plan before you build. Discover the problem space, scope your MVP, and create an
 
 ---
 
+### 🧰 TOOLKIT (Specialized Tools)
+
+Utility commands and agents for tasks outside the main development workflow.
+
+**Commands:**
+| Command | Description |
+|---------|-------------|
+| `/claude-vibes:TOOLKIT/midjourney-prompt` | Craft effective Midjourney V7 prompts through guided discovery |
+| `/claude-vibes:TOOLKIT/nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
+| `/claude-vibes:TOOLKIT/research` | Deep research on any topic |
+| `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
+| `/claude-vibes:TOOLKIT/scale-business` | Strategic business growth consultation with prioritized opportunities |
+| `/claude-vibes:TOOLKIT/write` | Write emails, messages, notes naturally |
+| `/claude-vibes:TOOLKIT/write-copy` | Create high-converting marketing copy |
+| `/claude-vibes:TOOLKIT/write-sponsor-script` | Write scripts for sponsored/affiliate content |
+
+**Agents:**
+- `brand-researcher` - Deep brand research for content creators
+- `business-growth-advisor` - Strategic business growth consultation
+- `deep-researcher` - Comprehensive expert knowledge research
+- `elite-copywriter` - Transform text into compelling copy
+- `hook-generator` - Generate scroll-stopping hook variations
+- `nano-banana-pro-expert` - Guidance for Nano Banana Pro image generation
+- `sponsor-script-writer` - Write high-converting sponsored content scripts
+
 ### 🏗️ 02-BUILD (Implementation)
 
 Build features methodically. Plan each feature, implement with best practices, and review before shipping.
@@ -242,31 +273,23 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 
 ---
 
-### 🧰 TOOLKIT (Specialized Tools)
+---
 
-Utility commands and agents for tasks outside the main development workflow.
+## 🧠 Skills
 
-**Commands:**
-| Command | Description |
-|---------|-------------|
-| `/claude-vibes:TOOLKIT/midjourney-prompt` | Craft effective Midjourney V7 prompts through guided discovery |
-| `/claude-vibes:TOOLKIT/nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
-| `/claude-vibes:TOOLKIT/research` | Deep research on any topic |
-| `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
-| `/claude-vibes:TOOLKIT/scale-business` | Strategic business growth consultation with prioritized opportunities |
-| `/claude-vibes:TOOLKIT/write` | Write emails, messages, notes naturally |
-| `/claude-vibes:TOOLKIT/write-copy` | Create high-converting marketing copy |
-| `/claude-vibes:TOOLKIT/write-sponsor-script` | Write scripts for sponsored/affiliate content |
+Skills are knowledge packs that Claude loads on its own when a conversation calls for them. You never invoke them by name. The commands and agents above lean on them, and they also work in any ordinary conversation once the plugin is installed.
 
-**Agents:**
-- `ai-writing-detector` - Analyze text for AI writing patterns
-- `brand-researcher` - Deep brand research for content creators
-- `business-growth-advisor` - Strategic business growth consultation
-- `deep-researcher` - Comprehensive expert knowledge research
-- `elite-copywriter` - Transform text into compelling copy
-- `hook-generator` - Generate scroll-stopping hook variations
-- `nano-banana-pro-expert` - Guidance for Nano Banana Pro image generation
-- `sponsor-script-writer` - Write high-converting sponsored content scripts
+| Area | Skills |
+|------|--------|
+| **Brand strategy** | `golden-circle-purpose`, `brand-values-development`, `brand-positioning-theory`, `brand-archetype-selection`, `jtbd-psychographic-research`, `competitive-visual-audit` |
+| **Brand expression** | `brand-naming-strategies`, `brand-voice-development`, `brand-messaging-architecture`, `tagline-creation-strategies`, `elevator-pitch-techniques` |
+| **Visual identity** | `visual-identity-direction`, `brand-color-psychology`, `brand-typography-systems` |
+| **Content & copy** | `natural-writing`, `scriptwriting-methodology`, `conversion-psychology`, `platform-optimization`, `midjourney-prompting` |
+| **Thinking tools** | `interview-me` (get interviewed until a topic is fully understood), `graph-engineering` (design a multi-step AI work graph with checks and human gates before running anything) |
+
+`platform-optimization` and `midjourney-prompting` describe fast-moving targets. Each carries a last-verified date and tells Claude to check current sources before relying on specific numbers.
+
+**Building your own skills, agents, hooks, or plugins?** Version 1 shipped builder skills for that. Anthropic now maintains better ones alongside the product, so install `plugin-dev` and `skill-creator` from the official marketplace (`/plugin marketplace add anthropics/claude-plugins-official`).
 
 ---
 
@@ -281,15 +304,12 @@ These servers start automatically when the plugin is enabled:
 | Server | Purpose | Official Source |
 |--------|---------|-----------------|
 | **Context7** | Up-to-date documentation in prompts | [github.com/upstash/context7](https://github.com/upstash/context7) |
-| **Memory** | Persistent knowledge graph across sessions | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) |
-| **Sequential Thinking** | Structured problem-solving | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking) |
 | **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
 | **Whois** | Domain/IP lookup | [@mcp-server/whois-mcp](https://www.npmjs.com/package/@mcp-server/whois-mcp) |
 
 **Usage Tips:**
 - Add `use context7` to prompts for current library documentation
-- Memory persists entities, relations, and observations across sessions
-- Sequential Thinking excels at complex multi-step problems
+- Cross-session learning uses Claude Code's native agent memory (stored in `.claude/agent-memory/` in your project), so no memory server is needed
 - Taskmaster config is created automatically during installation (step 4)
 
 ### ⚙️ Optional Servers (Require Setup)

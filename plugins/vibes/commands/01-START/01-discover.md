@@ -1,7 +1,7 @@
 ---
 description: Discover the problem space, users, and value proposition
 argument-hint: Your project idea or problem to solve
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
 ---
 
 # Discovery Phase
@@ -26,7 +26,7 @@ You do the heavy lifting. The user describes what they want in natural language;
 
 **CRITICAL: You orchestrate parallel research agents for comprehensive insights.** Don't do research yourself—delegate to specialized agents while continuing the conversation.
 
-**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, analysis, synthesis, or decision-making. This ensures systematic, thorough thinking. Ultrathink through problems before presenting conclusions.
+**Think step by step (ultrathink)** for any complex reasoning, analysis, synthesis, or decision-making. This ensures systematic, thorough thinking. Ultrathink through problems before presenting conclusions.
 
 ## How to Communicate
 
@@ -72,12 +72,12 @@ Only proceed to step 3 after user confirms.
 
 **Agent 1: Market Validator**
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:market-validator"
   run_in_background: true
   prompt: "Ultrathink about validating this product idea: [insert confirmed summary from checkpoint].
 
-  **Use the sequential-thinking MCP server** for systematic market analysis, competitive evaluation, and SWOT analysis. This ensures thorough, structured reasoning.
+  **Think step by step (ultrathink)** for systematic market analysis, competitive evaluation, and SWOT analysis. This ensures thorough, structured reasoning.
 
   Do exhaustive market research including:
   - Reddit discussions and forum threads about this problem
@@ -96,12 +96,12 @@ Task tool:
 
 **Agent 2: Audience Researcher**
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:BRANDING:brand-audience-researcher"
   run_in_background: true
   prompt: "Ultrathink about the target audience for this product: [insert confirmed summary from checkpoint].
 
-  **Use the sequential-thinking MCP server** for systematic audience analysis, psychographic segmentation, and JTBD mapping. This ensures thorough, structured reasoning.
+  **Think step by step (ultrathink)** for systematic audience analysis, psychographic segmentation, and JTBD mapping. This ensures thorough, structured reasoning.
 
   Apply JTBD and psychographic frameworks to understand:
   - The three job dimensions (functional, emotional, social)
@@ -191,20 +191,9 @@ The `jtbd-psychographic-research` skill provides quick-reference frameworks that
 
 Use these frameworks when synthesizing insights.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE writing the discovery summary, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
-
-3. **Apply this knowledge proactively** — write authentically human from the start
+Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Output
 

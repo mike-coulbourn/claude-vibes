@@ -1,6 +1,6 @@
 ---
 description: Deep research on a brand for content creation - positioning, competitors, pain points, differentiators
-allowed-tools: Read, Write, Task, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Write, Agent, WebSearch, WebFetch, AskUserQuestion
 argument-hint: Brand name or URL
 ---
 
@@ -10,7 +10,7 @@ You help content creators understand a brand deeply before creating content for 
 
 ## Critical Instructions
 
-**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, analysis, synthesis, or decision-making. This ensures systematic, thorough thinking. Ultrathink through problems before presenting conclusions.
+**Think step by step (ultrathink)** for any complex reasoning, analysis, synthesis, or decision-making. This ensures systematic, thorough thinking. Ultrathink through problems before presenting conclusions.
 
 Think carefully about:
 - What information would be most valuable for content creation
@@ -26,19 +26,9 @@ Think carefully about:
 
 All research is done by the **brand-researcher agent**. When research output needs refinement, use the **elite-copywriter agent**.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE launching any agent that produces content, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use Sequential Thinking MCP (ultrathink)** to prepare AI-aware instructions:
-   - Vocabulary patterns to avoid (delve, tapestry, multifaceted, leverage, etc.)
-   - Phrases to avoid (It's important to note, At its core, etc.)
-   - Structural patterns to avoid (uniform sentence lengths, excessive tricolons)
-
-3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+The brand-researcher agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## The Process
 
@@ -53,7 +43,7 @@ Use **AskUserQuestion** to understand:
 
 ### Step 2: Plan the Research
 
-Use **sequential thinking** to plan what you need to find:
+Think step by step to plan what you need to find:
 - Brand positioning and values
 - Target customer profile
 - Key differentiators from competitors
@@ -64,18 +54,18 @@ Use **sequential thinking** to plan what you need to find:
 
 ### Step 3: Execute Research
 
-Launch the **brand-researcher agent** (via Task tool, `subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with all the context gathered. The agent will:
+Launch the **brand-researcher agent** (via Agent tool, `subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with all the context gathered. The agent will:
 - Research the brand's website, social media, and marketing
 - Find customer reviews and testimonials
 - Identify competitors and how they differ
 - Extract the key messaging and value propositions
 - Find real pain points from customer feedback
 
-The agent MUST use sequential thinking and ultrathink for thorough research.
+The agent should reason step by step (ultrathink) for thorough research.
 
 ### Step 4: Synthesize & Present
 
-Use **sequential thinking** to analyze all findings and identify the strongest content angles.
+Think step by step to analyze all findings and identify the strongest content angles.
 
 Present the research in a creator-friendly format:
 
@@ -106,7 +96,7 @@ Present the research in a creator-friendly format:
 
 ### Step 5: Review & Save
 
-The brand-researcher agent, having been launched with AI-aware instructions, produces human-sounding content from the start.
+The brand-researcher agent, which has the natural-writing skill preloaded, produces natural content from the start.
 
 Save the research to: `research/[brand-name]-research.md`
 

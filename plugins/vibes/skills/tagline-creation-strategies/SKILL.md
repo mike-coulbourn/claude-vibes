@@ -1,6 +1,6 @@
 ---
 name: tagline-creation-strategies
-description: Provides tagline and slogan creation frameworks including Marty Neumeier's Truelines vs Taglines, David Ogilvy's headline principles, Eugene Schwartz's desire channeling, the Distillation Method, and AIDA testing framework. Auto-activates during tagline creation, slogan development, and brand catchphrase work. Use when discussing taglines, slogans, catchphrases, brand mottos, truelines, memorable phrases, tagline testing, or brand mantra.
+description: Use when creating, shortlisting, or testing taglines, slogans, or brand mantras, or distilling a positioning statement into a few memorable words. Keywords - tagline, slogan, catchphrase, brand motto, Neumeier trueline vs tagline, Ogilvy headline principles, Schwartz desire channeling, distillation method, tagline testing.
 ---
 
 # Tagline Creation Strategies
@@ -258,7 +258,7 @@ A brand mantra is NOT a tagline—it's an internal compass that guides decisions
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Tagline Document Template
 - Strategic Foundation Template
 - Tagline Option Template

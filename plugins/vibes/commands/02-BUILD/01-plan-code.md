@@ -15,7 +15,7 @@ Feature to plan: $ARGUMENTS
 
 You orchestrate the planning process and manage the conversation. The code-architect agent handles codebase exploration and LOGS.json parsing, reporting back specific references that you then read.
 
-**CRITICAL: You MUST use the Task tool to launch the code-architect agent for codebase exploration.** Do not explore and design the implementation yourself—that's what the code-architect agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the code-architect agent for codebase exploration.** Do not explore and design the implementation yourself—that's what the code-architect agent is for.
 
 ## Project Context
 
@@ -44,28 +44,16 @@ If these files don't exist (common when using claude-vibes on an existing projec
 
 Read all available docs/01-START/ files for project understanding.
 
-### 2. Retrieve Knowledge from Memory
+### 2. Recall Past Learnings
 
-**Use the memory MCP tools** to retrieve learnings from past sessions that aren't in docs.
+The code-architect agent keeps its own project memory and loads it automatically, so there is nothing to fetch here. When you write its prompt in the launch step, tell it to check that memory for:
 
-1. **Search for relevant knowledge:**
-   ```
-   Use search_nodes to find:
-   - "CodebasePatterns" — patterns discovered in this codebase
-   - "ImplementationLessons" — gotchas and learnings from past builds
-   ```
+- Codebase patterns — conventions discovered in this codebase
+- Implementation lessons — gotchas and learnings from past builds
 
-2. **Load relevant entities:**
-   ```
-   Use open_nodes to read observations from matching entities
-   ```
+Patterns tell it which conventions to follow, and lessons warn it about gotchas. This supplements the docs with experience from earlier sessions.
 
-3. **Apply this knowledge:**
-   - Patterns inform what conventions to follow
-   - Lessons warn about gotchas to avoid
-   - This supplements the docs with experiential knowledge
-
-**If no memory entities exist yet**, that's fine — they'll be created as you build. Proceed to the next step.
+**If its memory is empty**, that's fine — it fills up as you build. Proceed to the next step.
 
 ### 3. Check for Taskmaster
 
@@ -257,11 +245,11 @@ Only proceed to code exploration after the user confirms your understanding.
 
 ### 6. Launch Code Architect (REQUIRED)
 
-**You MUST use the Task tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:CODING:code-architect"` with this prompt:
+**You MUST use the Agent tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:CODING:code-architect"` with this prompt:
 
 > Ultrathink about implementing [feature/task].
 >
-> **Use the sequential-thinking MCP tool** to work through your design process methodically:
+> Work through your design process step by step:
 > 1. Understand what needs to be built
 > 2. Explore existing patterns in the codebase
 > 3. Identify constraints and dependencies

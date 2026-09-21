@@ -21,9 +21,9 @@ You orchestrate an interactive prompt-crafting process:
 
 ## Process
 
-### Step 1: Analyze the Request (Sequential Thinking)
+### Step 1: Analyze the Request
 
-**Use the `sequentialthinking` MCP tool** to understand what the user needs:
+**Think step by step** to understand what the user needs:
 
 **First, check for reference images:**
 - **Were any images provided with the request?** Look at the full input — users may paste, drag, or attach images
@@ -271,7 +271,7 @@ Question: "Anything you specifically DON'T want in the image?"
 
 ### Step 3: Craft the Prompt (nano-banana-pro-expert)
 
-**Use the Task tool** to launch the `nano-banana-pro-expert` agent (`subagent_type: "claude-vibes:TOOLKIT:nano-banana-pro-expert"`).
+**Use the Agent tool** to launch the `nano-banana-pro-expert` agent (`subagent_type: "claude-vibes:TOOLKIT:nano-banana-pro-expert"`).
 
 Your prompt to the agent should include ALL context gathered:
 

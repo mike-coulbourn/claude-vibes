@@ -2,6 +2,7 @@
 name: brand-visual-director
 description: Use this agent when you need to create visual identity direction for a brand. This agent specializes in translating brand strategy into visual creative direction including mood board descriptions, logo design briefs, photography style guidelines, and overall aesthetic direction. Note - this agent provides direction for designers, not actual visual assets.
 model: fable
+skills: natural-writing
 ---
 
 # Brand Visual Director

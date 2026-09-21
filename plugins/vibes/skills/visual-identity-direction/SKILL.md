@@ -1,6 +1,6 @@
 ---
 name: visual-identity-direction
-description: Provides visual identity direction and creative briefing frameworks including Alina Wheeler's five-phase process, strategy-to-visual translation method, mood board methodology, logo brief structure, photography style frameworks, and typography/color direction. Auto-activates during visual direction, creative briefing, mood board creation, logo brief writing, and visual identity system work. Use when discussing visual direction, creative briefs, mood boards, logo briefs, photography style, visual identity, visual strategy, visual translation, visual expression, design direction, or visual language.
+description: Use when translating brand strategy into visual creative direction, such as writing a creative or logo brief, describing mood boards, or setting photography, illustration, color, and type direction for a designer. Keywords - visual identity, visual direction, creative brief, mood board, logo brief, photography style, Alina Wheeler, visual language, design direction.
 ---
 
 # Visual Identity Direction Frameworks
@@ -401,7 +401,7 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Visual Identity Direction Document Template (complete output structure)
 - Creative Brief Template
 - Mood Board Description Template

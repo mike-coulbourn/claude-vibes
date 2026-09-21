@@ -1,7 +1,7 @@
 ---
 description: Create the implementation roadmap with phases and milestones
 argument-hint: Optional constraints like timeline or priorities
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
 # Planning Phase
@@ -30,7 +30,7 @@ You do the heavy lifting on planning. Create a roadmap the user can follow step-
 
 **CRITICAL: You orchestrate specialized agents while having parallel conversations.** Don't validate the plan yourself—delegate to the plan-reviewer while you continue detailing phases with the user.
 
-**CRITICAL: Use the sequential-thinking MCP server** for any complex reasoning, phase sequencing, or dependency analysis. This ensures systematic, thorough thinking. Ultrathink through build order before presenting conclusions.
+**Think step by step (ultrathink)** for any complex reasoning, phase sequencing, or dependency analysis. This ensures systematic, thorough thinking. Ultrathink through build order before presenting conclusions.
 
 ## How to Communicate
 
@@ -124,14 +124,14 @@ Create clear checkpoints:
 
 ### 6. Plan Review (REQUIRED)
 
-**You MUST use the Task tool to launch the plan-reviewer agent before saving:**
+**You MUST use the Agent tool to launch the plan-reviewer agent before saving:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
   prompt: "Ultrathink about this implementation roadmap. Read all docs/01-START/ files for complete context.
 
-  **Use the sequential-thinking MCP tool** to systematically analyze:
+  **Think step by step (ultrathink)** to systematically analyze:
   1. Phase sequencing — are dependencies correctly ordered?
   2. Scope alignment — does the roadmap match the MVP scope from 02-scope.md?
   3. Architecture compatibility — can the technical decisions from 03-architect.md support this build order?
@@ -175,20 +175,9 @@ The `jtbd-psychographic-research` skill provides frameworks that may auto-activa
 
 Use these frameworks when deciding what to build first.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE writing the implementation plan, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to plan your writing approach:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-   - Plan human-sounding alternatives: contractions, varied sentence rhythm, natural imperfections, personal voice
-
-3. **Apply this knowledge proactively** — write authentically human from the start
+Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Output
 

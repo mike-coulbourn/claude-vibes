@@ -1,6 +1,6 @@
 ---
 name: brand-voice-development
-description: Provides brand voice and verbal identity frameworks including Bloomstein's BrandSort, Nielsen Norman Group's Four Dimensions of Tone, Aaker's Brand Personality, the "this but not that" technique, tone adaptation matrices, and voice documentation templates. Auto-activates during brand voice development, verbal identity work, and tone guidelines creation. Use when discussing brand voice, verbal identity, tone of voice, voice guidelines, brand personality traits, BrandSort, message architecture, Margot Bloomstein, Nick Parker, four dimensions of tone, this but not that, or tone matrix.
+description: Use when defining brand voice, tone of voice, or verbal identity, writing voice guidelines, or adapting tone across channels and situations. Keywords - brand personality traits, BrandSort, Margot Bloomstein, Nielsen Norman four dimensions of tone, Aaker brand personality, this but not that, tone matrix, vocabulary do and don't lists.
 ---
 
 # Brand Voice Development Framework
@@ -251,7 +251,7 @@ AI produces content at scale, but without clear voice instructions, output sound
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Voice Attribute Card Template
 - Tone Matrix Template
 - Voice Guidelines Document Template

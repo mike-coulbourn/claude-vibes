@@ -15,7 +15,7 @@ Specific area to validate: $ARGUMENTS
 
 You orchestrate the validation and manage the conversation. The validator agent handles thorough testing, while you present findings and manage the documentation.
 
-**CRITICAL: You MUST use the Task tool to launch the validation agents.** Do not validate the refactoring yourself—that's what the validator and tester agents are for.
+**CRITICAL: You MUST use the Agent tool to launch the validation agents.** Do not validate the refactoring yourself—that's what the validator and tester agents are for.
 
 ## Interactive Experience (CRITICAL)
 
@@ -67,7 +67,7 @@ Otherwise, find the recent refactoring:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Task tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**You MUST use the Agent tool to launch BOTH agents simultaneously** — they validate the refactoring from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:validator"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Validator Agent** (confirm behavior preserved):
 
@@ -75,6 +75,8 @@ Otherwise, find the recent refactoring:
 >
 > **What was refactored:** [from assessment or git diff]
 > **Expected behavior:** Same as before—no functional changes
+>
+> Check your project memory for related past validations and refactoring gotchas before starting, and record what you learn before finishing.
 >
 > **Parse LOGS.json for context (if it exists):**
 > - Find related past refactorings
@@ -291,28 +293,22 @@ When validation is complete:
 4. Offer to adjust the refactoring
 5. "Re-run `/03-validate-improvements` after fixes"
 
-### Store Validation Insights in Memory
+### Record Validation Insights
 
-**If validation revealed useful patterns or insights not already documented**, store them for future sessions.
+In the validator's prompt, ask it to record durable learnings in its project memory before it finishes:
 
-**Use the memory MCP tools:**
-
-1. **For validation patterns discovered:**
-   ```
-   Use create_entities or add_observations to store in "ValidationPatterns":
+1. **Validation patterns discovered:**
    - Testing strategies that worked well (e.g., "For refactorings, compare before/after output for 10 representative inputs")
    - Subtle behavior areas (e.g., "String formatting in reports is sensitive — always diff the output")
    - What to watch for (e.g., "Refactoring async code often introduces subtle timing differences")
-   ```
 
-2. **For refactoring patterns:**
-   ```
-   Use create_entities or add_observations to store in "RefactoringPatterns":
+2. **Refactoring patterns:**
    - Successful patterns (e.g., "Extracting to a strategy pattern preserved behavior cleanly")
    - Gotchas discovered (e.g., "The old code handled null differently than it appeared — preserve that quirk")
-   ```
 
-**Only store NEW findings** — insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
+**Only record NEW findings** — insights that will help validate future refactorings. If nothing notable was discovered, skip this step.
+
+If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
 - "Error message format matters to the frontend — don't change it during refactoring"

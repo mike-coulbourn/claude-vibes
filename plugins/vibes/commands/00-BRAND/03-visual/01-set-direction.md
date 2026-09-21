@@ -1,7 +1,7 @@
 ---
 description: Create visual identity direction and logo brief
 argument-hint: Optional visual style preferences
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Set Visual Direction
@@ -53,7 +53,7 @@ Optional visual preferences: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-visual-director agent.** Do not create visual direction yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-visual-director agent.** Do not create visual direction yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -75,23 +75,13 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE launching the brand-visual-director agent, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-
-3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+The brand-visual-director agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-visual-director"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-visual-director"` and this prompt:
 
 ```
 Create the visual identity direction for this brand. ultrathink
@@ -185,7 +175,7 @@ Build detailed briefs for each visual component:
 
 ## TOOLS TO USE
 
-- **Sequential Thinking MCP**: Apply Strategy to Visual Translation Method step-by-step, systematically translate brand adjectives to visual expressions
+- **Structured reasoning**: Apply Strategy to Visual Translation Method step-by-step, systematically translate brand adjectives to visual expressions
 - **AskUserQuestion**: Understand visual preferences, validate aesthetic directions, get feedback on mood board concepts
 - **WebSearch**: Research competitor websites visually, find brand case studies, discover design agency portfolios, find photography style references
 - **WebFetch**: Read brand case study pages, study design portfolio writeups, analyze famous brand identity projects for strategic rationale

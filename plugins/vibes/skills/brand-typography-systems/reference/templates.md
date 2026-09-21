@@ -4,6 +4,19 @@ Reusable templates for brand typography system documentation.
 
 ---
 
+## Contents
+
+- [Typography System Documentation Template](#typography-system-documentation-template)
+- [Font Pairing Rationale](#font-pairing-rationale)
+- [Web-Safe Fallbacks](#web-safe-fallbacks)
+- [Font Licensing Summary](#font-licensing-summary)
+- [Usage Guidelines](#usage-guidelines)
+- [Accessibility Verification](#accessibility-verification)
+- [Implementation](#implementation)
+- [Quick Reference Card](#quick-reference-card)
+- [Font Licensing Checklist](#font-licensing-checklist)
+- [Output Validation Checklist](#output-validation-checklist)
+
 ## Typography System Documentation Template
 
 ```markdown

@@ -1,7 +1,7 @@
 ---
 description: Create memorable brand tagline options
 argument-hint: Optional tagline direction or style preference
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Create Tagline
@@ -39,7 +39,7 @@ Optional tagline direction: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-tagline-creator agent.** Do not create taglines yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-tagline-creator agent.** Do not create taglines yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -61,23 +61,13 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Human-Sounding Writing Protocol
+## Natural Writing
 
-**BEFORE launching the brand-tagline-creator agent, you MUST:**
-
-1. **Use the Skill tool** to invoke `claude-vibes:ai-writing-detection`
-   - This loads expert-level knowledge of AI writing patterns to avoid
-
-2. **Use the Sequential Thinking MCP tool (ultrathink)** to prepare AI-aware instructions:
-   - Review vocabulary patterns to avoid: "delve", "tapestry", "multifaceted", "leverage", "crucial", "comprehensive", "foster", "harness", "navigate", "landscape", "realm", "beacon", "pivotal"
-   - Review phrases to avoid: "It's important to note", "In today's fast-paced world", "At its core", "Let me explain"
-   - Review structural patterns to avoid: uniform sentence lengths, excessive tricolons, em dash overuse (LLMs use em dashes formulaically to create "punched up" sales rhythms—swapping to commas doesn't help; vary your structures instead)
-
-3. **Include AI-aware instructions** in the agent prompt so output is human-sounding from the start
+The brand-tagline-creator agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-tagline-creator"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-tagline-creator"` and this prompt:
 
 ```
 Create brand tagline options. ultrathink
@@ -158,7 +148,7 @@ Prepare recommendation:
 
 ## TOOLS TO USE
 
-- **Sequential Thinking MCP**: Apply the Distillation Method step-by-step, systematically evaluate each option against criteria
+- **Structured reasoning**: Apply the Distillation Method step-by-step, systematically evaluate each option against criteria
 - **AskUserQuestion**: Get tagline preferences (type, tone, length), understand emotional direction, validate finalist options
 - **WebSearch**: Research competitor taglines and positioning, find famous tagline case studies, discover tagline databases
 - **WebFetch**: Read competitor websites to understand their tagline positioning, study famous tagline creation stories for inspiration

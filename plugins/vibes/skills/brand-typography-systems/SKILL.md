@@ -1,6 +1,6 @@
 ---
 name: brand-typography-systems
-description: Provides brand typography selection and hierarchy development frameworks including the Brand-First Typography Selection Process, Modular Scale System, Font Classification Matrix, Serif vs. Sans-Serif Decision Framework, Typeface Evaluation Criteria, Font Pairing Principles, WCAG accessibility requirements, and typography design tokens. Auto-activates during brand typography development, font selection, type hierarchy creation, and typography system work. Use when discussing brand typography, font selection, font pairing, type hierarchy, modular scale, typography accessibility, WCAG typography, or typography guidelines.
+description: Use when choosing brand typefaces, pairing fonts, building a type hierarchy or modular scale, or writing typography guidelines and design tokens. Keywords - brand typography, font selection, font pairing, serif vs sans-serif, type scale, typeface licensing, web font performance, WCAG typography and readability.
 ---
 
 # Brand Typography Systems & Strategic Type Selection
@@ -414,7 +414,7 @@ Must accommodate user overrides for:
 
 ## Templates
 
-See [reference/templates.md](reference/templates.md) for:
+Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
 - Typography System Documentation Template (complete output structure)
 - Modular Scale Calculator Reference
 - Accessibility Testing Checklist
