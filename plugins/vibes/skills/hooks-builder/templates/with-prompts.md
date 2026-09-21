@@ -2,6 +2,25 @@
 
 Use LLM intelligence for context-aware decisions that simple scripts can't make.
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [How Prompt Hooks Work](#how-prompt-hooks-work)
+- [Supported Events](#supported-events)
+- [Template Structure](#template-structure)
+- [Example 1: Task Completion Verifier](#example-1-task-completion-verifier)
+- [Example 2: Subagent Quality Gate](#example-2-subagent-quality-gate)
+- [Example 3: Intelligent Prompt Validator](#example-3-intelligent-prompt-validator)
+- [Example 4: Context-Aware File Permission](#example-4-context-aware-file-permission)
+- [Example 5: Code Review Gate](#example-5-code-review-gate)
+- [Combining Prompt and Command Hooks](#combining-prompt-and-command-hooks)
+- [Writing Effective Prompts](#writing-effective-prompts)
+- [Timeout Considerations](#timeout-considerations)
+- [Prompt Hook Limitations](#prompt-hook-limitations)
+- [Testing Prompt Hooks](#testing-prompt-hooks)
+- [Complete Example: Multi-Layer Validation](#complete-example-multi-layer-validation)
+- [Next Steps](#next-steps)
+
 ## When to Use
 
 - Intelligent task completion checking

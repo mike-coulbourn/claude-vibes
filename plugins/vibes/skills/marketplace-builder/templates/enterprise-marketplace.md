@@ -4,6 +4,18 @@ Complete enterprise marketplace setup with team configuration, private repos, an
 
 ---
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Enterprise Architecture](#enterprise-architecture)
+- [Complete Enterprise Setup](#complete-enterprise-setup)
+- [Internal Plugin Examples](#internal-plugin-examples)
+- [Output](#output)
+- [Governance Workflow](#governance-workflow)
+- [Access Control](#access-control)
+- [Onboarding Automation](#onboarding-automation)
+- [Monitoring and Compliance](#monitoring-and-compliance)
+
 ## When to Use
 
 - Company-wide plugin distribution

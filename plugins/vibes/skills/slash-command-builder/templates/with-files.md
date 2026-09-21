@@ -2,6 +2,25 @@
 
 Include file contents in your commands using the `@` prefix.
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Basic Syntax](#basic-syntax)
+- [How File References Work](#how-file-references-work)
+- [Complete Examples](#complete-examples)
+- [Directory References](#directory-references)
+- [Multiple File References](#multiple-file-references)
+- [Combining with Arguments](#combining-with-arguments)
+- [Combining with Bash](#combining-with-bash)
+- [Automatic CLAUDE.md Inclusion](#automatic-claudemd-inclusion)
+- [Pattern: Following Existing Examples](#pattern-following-existing-examples)
+- [Pattern: Project Consistency](#pattern-project-consistency)
+- [Best Practices](#best-practices)
+- [Common Pitfalls](#common-pitfalls)
+- [Path Resolution](#path-resolution)
+- [Testing File References](#testing-file-references)
+- [When to Move to Complex Template](#when-to-move-to-complex-template)
+
 ## When to Use This Template
 
 - Analyzing specific files

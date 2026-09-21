@@ -4,6 +4,17 @@ Six complete hooks for session management, context injection, notifications, and
 
 ---
 
+## Contents
+
+- [1. Session Setup](#1-session-setup)
+- [2. Context Injector](#2-context-injector)
+- [3. Completion Checker](#3-completion-checker)
+- [4. Notification Forwarder](#4-notification-forwarder)
+- [5. Time Tracker](#5-time-tracker)
+- [6. Backup Creator](#6-backup-creator)
+- [Combined Workflow Configuration](#combined-workflow-configuration)
+- [Workflow Dashboard](#workflow-dashboard)
+
 ## 1. Session Setup
 
 Configure environment and load context when sessions start.

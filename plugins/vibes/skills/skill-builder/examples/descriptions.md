@@ -2,6 +2,20 @@
 
 Great descriptions determine whether your Skill gets used. This guide shows proven patterns with real before/after examples.
 
+## Contents
+
+- [The Description Formula](#the-description-formula)
+- [Component 1: Specific Operations](#component-1-specific-operations)
+- [Component 2: When to Use It](#component-2-when-to-use-it)
+- [Component 3: Trigger Terms](#component-3-trigger-terms)
+- [Real-World Examples: Before and After](#real-world-examples-before-and-after)
+- [Industry-Specific Examples](#industry-specific-examples)
+- [Pattern Library](#pattern-library)
+- [Testing Your Description](#testing-your-description)
+- [Common Mistakes and Fixes](#common-mistakes-and-fixes)
+- [Length Management](#length-management)
+- [Master Template](#master-template)
+
 ## The Description Formula
 
 ```

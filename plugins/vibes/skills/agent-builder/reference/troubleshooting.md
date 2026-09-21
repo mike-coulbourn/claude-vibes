@@ -4,6 +4,22 @@ Diagnosing and fixing common agent issues.
 
 ---
 
+## Contents
+
+- [Quick Diagnosis](#quick-diagnosis)
+- [Issue 1: Agent Not Discovered](#issue-1-agent-not-discovered)
+- [Issue 2: Wrong Agent Invoked](#issue-2-wrong-agent-invoked)
+- [Issue 3: Agent Can't Perform Task](#issue-3-agent-cant-perform-task)
+- [Issue 4: Agent Errors During Execution](#issue-4-agent-errors-during-execution)
+- [Issue 5: Inconsistent Output](#issue-5-inconsistent-output)
+- [Issue 6: Agent Too Slow](#issue-6-agent-too-slow)
+- [Issue 7: Permission Denied Errors](#issue-7-permission-denied-errors)
+- [Issue 8: Agent Does Too Much/Too Little](#issue-8-agent-does-too-muchtoo-little)
+- [Issue 9: YAML Parsing Errors](#issue-9-yaml-parsing-errors)
+- [5-Step Debugging Workflow](#5-step-debugging-workflow)
+- [Diagnostic Commands](#diagnostic-commands)
+- [Getting Help](#getting-help)
+
 ## Quick Diagnosis
 
 ### Symptom → Likely Cause → Solution

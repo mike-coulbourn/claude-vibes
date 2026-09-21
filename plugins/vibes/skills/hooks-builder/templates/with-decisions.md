@@ -2,6 +2,21 @@
 
 Take full control of Claude's actions: allow, deny, ask for permission, or modify inputs before execution.
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [The Decision Flow](#the-decision-flow)
+- [hookSpecificOutput Structure](#hookspecificoutput-structure)
+- [Decision Options](#decision-options)
+- [Example 1: Smart File Protector](#example-1-smart-file-protector)
+- [Example 2: Command Validator](#example-2-command-validator)
+- [Example 3: Input Modifier](#example-3-input-modifier)
+- [Example 4: Path Normalizer](#example-4-path-normalizer)
+- [Example 5: Context Injector](#example-5-context-injector)
+- [Decision Matrix](#decision-matrix)
+- [Testing Decision Hooks](#testing-decision-hooks)
+- [Next Steps](#next-steps)
+
 ## When to Use
 
 - Block dangerous operations conditionally

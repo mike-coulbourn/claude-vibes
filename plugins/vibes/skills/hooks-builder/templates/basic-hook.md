@@ -2,6 +2,24 @@
 
 The simplest hook pattern: single event, inline command, no external scripts.
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Template Structure](#template-structure)
+- [Field Reference](#field-reference)
+- [Example 1: Audit Logger](#example-1-audit-logger)
+- [Example 2: Write Notification](#example-2-write-notification)
+- [Example 3: Session Start Message](#example-3-session-start-message)
+- [Example 4: Git Branch Logger](#example-4-git-branch-logger)
+- [Example 5: Tool Counter](#example-5-tool-counter)
+- [Matcher Patterns](#matcher-patterns)
+- [Environment Variables](#environment-variables)
+- [Inline Command Tips](#inline-command-tips)
+- [Limitations of Basic Hooks](#limitations-of-basic-hooks)
+- [Complete Working Example](#complete-working-example)
+- [Troubleshooting](#troubleshooting)
+- [Next Steps](#next-steps)
+
 ## When to Use
 
 - Quick logging or auditing

@@ -4,6 +4,17 @@ Six complete, production-ready agents for code quality workflows.
 
 ---
 
+## Contents
+
+- [1. Code Reviewer](#1-code-reviewer)
+- [2. Security Auditor](#2-security-auditor)
+- [3. Performance Analyzer](#3-performance-analyzer)
+- [4. Architecture Reviewer](#4-architecture-reviewer)
+- [5. Documentation Checker](#5-documentation-checker)
+- [6. Style Enforcer](#6-style-enforcer)
+- [Output Format](#output-format)
+- [Constraints](#constraints)
+
 ## 1. Code Reviewer
 
 Systematic code review for quality, style, and best practices.

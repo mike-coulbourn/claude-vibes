@@ -4,6 +4,17 @@ Six complete, production-ready security hooks for protecting your system and enf
 
 ---
 
+## Contents
+
+- [1. File Protector](#1-file-protector)
+- [2. Command Validator](#2-command-validator)
+- [3. Path Sanitizer](#3-path-sanitizer)
+- [4. Secret Scanner](#4-secret-scanner)
+- [5. Permission Enforcer](#5-permission-enforcer)
+- [6. Audit Logger](#6-audit-logger)
+- [Combined Security Configuration](#combined-security-configuration)
+- [Setup Script](#setup-script)
+
 ## 1. File Protector
 
 Block writes to sensitive files like `.env`, credentials, and SSH keys.

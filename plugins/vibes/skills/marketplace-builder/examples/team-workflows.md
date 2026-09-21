@@ -4,6 +4,17 @@ Six complete plugin examples for team collaboration and workflows.
 
 ---
 
+## Contents
+
+- [Example 1: PR Reviewer Plugin](#example-1-pr-reviewer-plugin)
+- [Example 2: Deployment Plugin](#example-2-deployment-plugin)
+- [Example 3: Standup Plugin](#example-3-standup-plugin)
+- [Example 4: Onboarding Plugin](#example-4-onboarding-plugin)
+- [Output](#output)
+- [Example 5: Incident Response Plugin](#example-5-incident-response-plugin)
+- [Example 6: Release Management Plugin](#example-6-release-management-plugin)
+- [Complete Marketplace Configuration](#complete-marketplace-configuration)
+
 ## Example 1: PR Reviewer Plugin
 
 Automated pull request review assistance.

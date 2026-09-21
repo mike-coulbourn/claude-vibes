@@ -4,6 +4,19 @@ Agents with explicit tool restrictions for security and scope control.
 
 ---
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Template Structure](#template-structure)
+- [Tool Reference](#tool-reference)
+- [Bash Granular Patterns](#bash-granular-patterns)
+- [Complete Example: Security Analyzer (Read-Only)](#complete-example-security-analyzer-read-only)
+- [Complete Example: Git Status Checker](#complete-example-git-status-checker)
+- [Output Format](#output-format)
+- [Output Format](#output-format-1)
+- [Testing Tool Restrictions](#testing-tool-restrictions)
+- [Quick Checklist](#quick-checklist)
+
 ## When to Use This Template
 
 - Agent should only read (not modify) code

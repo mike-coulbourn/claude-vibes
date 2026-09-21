@@ -2,6 +2,20 @@
 
 Solutions to common issues when creating and using slash commands.
 
+## Contents
+
+- [Command Not Appearing in /help](#command-not-appearing-in-help)
+- [Arguments Not Replacing](#arguments-not-replacing)
+- [Bash Commands Not Executing](#bash-commands-not-executing)
+- [File References Not Working](#file-references-not-working)
+- [YAML Frontmatter Errors](#yaml-frontmatter-errors)
+- [Command Conflicts](#command-conflicts)
+- [Extended Thinking Not Triggering](#extended-thinking-not-triggering)
+- [Command Too Slow](#command-too-slow)
+- [Command Not Being Auto-Invoked by Claude](#command-not-being-auto-invoked-by-claude)
+- [Debugging Workflow](#debugging-workflow)
+- [Getting Help](#getting-help)
+
 ## Command Not Appearing in /help
 
 ### Symptom

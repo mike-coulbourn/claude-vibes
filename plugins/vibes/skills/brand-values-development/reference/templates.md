@@ -4,6 +4,17 @@ Structured templates for values discovery, testing, and documentation.
 
 ---
 
+## Contents
+
+- [Values Discovery Worksheet](#values-discovery-worksheet)
+- [Values Category Assessment Template](#values-category-assessment-template)
+- [Differentiation Test Template](#differentiation-test-template)
+- [Behavior Mapping Template](#behavior-mapping-template)
+- [Values Documentation Template](#values-documentation-template)
+- [Values Validation Checklist](#values-validation-checklist)
+- [Values Summary Card Template](#values-summary-card-template)
+- [Output Validation Checklist](#output-validation-checklist)
+
 ## Values Discovery Worksheet
 
 Use this worksheet to guide the values discovery conversation.

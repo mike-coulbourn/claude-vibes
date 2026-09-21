@@ -4,6 +4,15 @@ Six complete plugin examples for domain-specific workflows.
 
 ---
 
+## Contents
+
+- [Example 1: API Design Plugin](#example-1-api-design-plugin)
+- [Output Format](#output-format)
+- [Example 3: Frontend Tools Plugin](#example-3-frontend-tools-plugin)
+- [Example 4: DevOps Tools Plugin](#example-4-devops-tools-plugin)
+- [Example 6: Analytics Tools Plugin](#example-6-analytics-tools-plugin)
+- [Complete Marketplace Configuration](#complete-marketplace-configuration)
+
 ## Example 1: API Design Plugin
 
 API design and documentation tools.

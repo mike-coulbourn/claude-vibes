@@ -4,6 +4,18 @@ Complete reference for marketplace.json, plugin.json, and settings.json schemas.
 
 ---
 
+## Contents
+
+- [marketplace.json Schema](#marketplacejson-schema)
+- [Source Types](#source-types)
+- [plugin.json Schema](#pluginjson-schema)
+- [settings.json Schema](#settingsjson-schema)
+- [Component Paths](#component-paths)
+- [Version Format](#version-format)
+- [Naming Conventions](#naming-conventions)
+- [Validation](#validation)
+- [Complete Examples](#complete-examples)
+
 ## marketplace.json Schema
 
 ### Complete Schema

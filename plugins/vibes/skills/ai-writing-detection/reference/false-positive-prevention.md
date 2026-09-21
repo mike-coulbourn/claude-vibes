@@ -2,6 +2,22 @@
 
 Critical guidance for avoiding false accusations of AI authorship. False positives cause real harm - academic penalties, professional damage, and eroded trust.
 
+## Contents
+
+- [The False Positive Problem](#the-false-positive-problem)
+- [High-Risk Groups](#high-risk-groups)
+- [Minimum Requirements](#minimum-requirements)
+- [Detection Thresholds](#detection-thresholds)
+- [Mitigating Factors](#mitigating-factors)
+- [What NOT To Do](#what-not-to-do)
+- [Domain-Specific Guidance](#domain-specific-guidance)
+- [Ensemble Approach](#ensemble-approach)
+- [Responsible Reporting](#responsible-reporting)
+- [Ineffective Indicators](#ineffective-indicators)
+- [Obsolete Indicators (Historical)](#obsolete-indicators-historical)
+- [Signs of Human Writing](#signs-of-human-writing)
+- [Final Checklist](#final-checklist)
+
 ## The False Positive Problem
 
 ### Documented Rates

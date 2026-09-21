@@ -4,6 +4,22 @@ Use this comprehensive checklist before finalizing any Skill to ensure it's prod
 
 ---
 
+## Contents
+
+- [Pre-Creation Validation](#pre-creation-validation)
+- [YAML Frontmatter Validation](#yaml-frontmatter-validation)
+- [Content Validation](#content-validation)
+- [Multi-File Validation (if applicable)](#multi-file-validation-if-applicable)
+- [Discovery Testing](#discovery-testing)
+- [Technical Validation](#technical-validation)
+- [Activation Testing](#activation-testing)
+- [Quality Validation](#quality-validation)
+- [Documentation Validation](#documentation-validation)
+- [Team Readiness (for project Skills)](#team-readiness-for-project-skills)
+- [Final Checklist](#final-checklist)
+- [Quick Validation Command](#quick-validation-command)
+- [Remember](#remember)
+
 ## Pre-Creation Validation
 
 ### Requirements Clarity

@@ -2,6 +2,16 @@
 
 Combine all features: arguments, bash execution, file references, and tool restrictions.
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Complete Template Structure](#complete-template-structure)
+- [Complete Real-World Examples](#complete-real-world-examples)
+- [Template Best Practices](#template-best-practices)
+- [Testing Complex Commands](#testing-complex-commands)
+- [When You Have Too Much Complexity](#when-you-have-too-much-complexity)
+- [Common Patterns](#common-patterns)
+
 ## When to Use This Template
 
 - Command needs multiple dynamic features

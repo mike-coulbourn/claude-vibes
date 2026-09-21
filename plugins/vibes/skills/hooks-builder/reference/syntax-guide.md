@@ -4,6 +4,20 @@ Complete reference for Claude Code hooks configuration syntax.
 
 ---
 
+## Contents
+
+- [Configuration File Locations](#configuration-file-locations)
+- [settings.json Schema](#settingsjson-schema)
+- [Event Reference](#event-reference)
+- [Matcher Patterns](#matcher-patterns)
+- [Exit Code Semantics](#exit-code-semantics)
+- [Environment Variables](#environment-variables)
+- [Hook Types](#hook-types)
+- [Tool Input Fields](#tool-input-fields)
+- [Script Best Practices](#script-best-practices)
+- [JSON Output Examples](#json-output-examples)
+- [Validation](#validation)
+
 ## Configuration File Locations
 
 ### Precedence (highest to lowest)

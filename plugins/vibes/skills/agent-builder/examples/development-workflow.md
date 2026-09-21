@@ -4,6 +4,27 @@ Six complete, production-ready agents for development workflow automation.
 
 ---
 
+## Contents
+
+- [1. Debugger](#1-debugger)
+- [Constraints](#constraints)
+- [Failure Analysis](#failure-analysis)
+- [Fixing Tests](#fixing-tests)
+- [Output Format](#output-format)
+- [Constraints](#constraints-1)
+- [Refactoring Process](#refactoring-process)
+- [Output Format](#output-format-1)
+- [Constraints](#constraints-2)
+- [Review Severity Levels](#review-severity-levels)
+- [Output Format](#output-format-2)
+- [Constraints](#constraints-3)
+- [Assessment Areas](#assessment-areas)
+- [Risk Levels](#risk-levels)
+- [Output Format](#output-format-3)
+- [Constraints](#constraints-4)
+- [Usage Tips](#usage-tips)
+- [Combining Agents](#combining-agents)
+
 ## 1. Debugger
 
 Root cause analysis for errors and failures.

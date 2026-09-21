@@ -4,6 +4,15 @@ Multiple plugins in a single repository, managed together.
 
 ---
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Directory Structure](#directory-structure)
+- [Step-by-Step Setup](#step-by-step-setup)
+- [Managing Monorepo Plugins](#managing-monorepo-plugins)
+- [Team Configuration](#team-configuration)
+- [CI/CD for Monorepo Marketplace](#cicd-for-monorepo-marketplace)
+
 ## When to Use
 
 - Multiple related plugins under unified ownership

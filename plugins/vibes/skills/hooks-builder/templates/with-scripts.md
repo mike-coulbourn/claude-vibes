@@ -2,6 +2,22 @@
 
 Move beyond inline commands to external scripts for complex logic, input parsing, and reusability.
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Template Structure](#template-structure)
+- [Input JSON Structure](#input-json-structure)
+- [Bash Script Template](#bash-script-template)
+- [Python Script Template](#python-script-template)
+- [Example 1: File Protector](#example-1-file-protector)
+- [Example 2: Path Logger with Details](#example-2-path-logger-with-details)
+- [Example 3: Content Size Validator](#example-3-content-size-validator)
+- [Script Organization](#script-organization)
+- [Making Scripts Executable](#making-scripts-executable)
+- [Error Handling Patterns](#error-handling-patterns)
+- [Testing Scripts](#testing-scripts)
+- [Next Steps](#next-steps)
+
 ## When to Use
 
 - Need to read tool_input fields (file paths, content)

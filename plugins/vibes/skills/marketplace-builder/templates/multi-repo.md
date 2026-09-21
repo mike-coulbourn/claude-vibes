@@ -4,6 +4,20 @@ Marketplace catalog pointing to plugins in separate repositories.
 
 ---
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Architecture Overview](#architecture-overview)
+- [Directory Structure](#directory-structure)
+- [Marketplace JSON with Multiple Source Types](#marketplace-json-with-multiple-source-types)
+- [Source Type Reference](#source-type-reference)
+- [Complete Working Example](#complete-working-example)
+- [Available Plugins](#available-plugins)
+- [Contributing](#contributing)
+- [Plugin Requirements](#plugin-requirements)
+- [Hybrid Pattern: Local + Remote](#hybrid-pattern-local--remote)
+- [Automation for Multi-Repo](#automation-for-multi-repo)
+
 ## When to Use
 
 - Plugins developed by different teams or individuals

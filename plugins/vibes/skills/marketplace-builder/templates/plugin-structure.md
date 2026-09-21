@@ -4,6 +4,14 @@ Complete guide to creating a well-structured Claude Code plugin.
 
 ---
 
+## Contents
+
+- [Plugin Anatomy](#plugin-anatomy)
+- [plugin.json Schema](#pluginjson-schema)
+- [Component Types](#component-types)
+- [Complete Plugin Example](#complete-plugin-example)
+- [Plugin Development Best Practices](#plugin-development-best-practices)
+
 ## Plugin Anatomy
 
 A plugin is a packaged collection of Claude Code components:

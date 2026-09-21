@@ -4,6 +4,17 @@ Structured templates for archetype analysis, selection, and documentation.
 
 ---
 
+## Contents
+
+- [Archetype Selection Worksheet](#archetype-selection-worksheet)
+- [Archetype Profile Template](#archetype-profile-template)
+- [Competitive Archetype Mapping Template](#competitive-archetype-mapping-template)
+- [Archetype Combination Validation Template](#archetype-combination-validation-template)
+- [Archetype Expression Guide Template](#archetype-expression-guide-template)
+- [Quick Reference Card Template](#quick-reference-card-template)
+- [Full Archetype Documentation Template](#full-archetype-documentation-template)
+- [Output Validation Checklist](#output-validation-checklist)
+
 ## Archetype Selection Worksheet
 
 Use this to systematically evaluate archetype fit.

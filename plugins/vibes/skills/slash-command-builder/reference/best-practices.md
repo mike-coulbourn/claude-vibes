@@ -2,6 +2,23 @@
 
 Patterns and principles for creating effective commands.
 
+## Contents
+
+- [General Principles](#general-principles)
+- [Naming Conventions](#naming-conventions)
+- [Arguments Best Practices](#arguments-best-practices)
+- [Bash Execution Best Practices](#bash-execution-best-practices)
+- [File Reference Best Practices](#file-reference-best-practices)
+- [Command Structure Best Practices](#command-structure-best-practices)
+- [Security and Safety](#security-and-safety)
+- [Command Organization](#command-organization)
+- [Testing and Iteration](#testing-and-iteration)
+- [Team Collaboration](#team-collaboration)
+- [Performance Considerations](#performance-considerations)
+- [Common Patterns](#common-patterns)
+- [When to Use vs. Skills](#when-to-use-vs-skills)
+- [Maintenance](#maintenance)
+
 ## General Principles
 
 ### 1. Start Simple, Add Complexity Incrementally

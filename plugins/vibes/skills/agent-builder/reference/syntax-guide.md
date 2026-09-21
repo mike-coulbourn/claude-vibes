@@ -4,6 +4,17 @@ Complete reference for agent configuration syntax.
 
 ---
 
+## Contents
+
+- [File Structure](#file-structure)
+- [File Locations](#file-locations)
+- [YAML Frontmatter Fields](#yaml-frontmatter-fields)
+- [System Prompt (Body)](#system-prompt-body)
+- [Complete Examples](#complete-examples)
+- [YAML Syntax Rules](#yaml-syntax-rules)
+- [Validation](#validation)
+- [Quick Reference Table](#quick-reference-table)
+
 ## File Structure
 
 Agents are Markdown files with YAML frontmatter:

@@ -4,6 +4,22 @@ Common issues, debugging steps, and solutions for marketplace and plugin problem
 
 ---
 
+## Contents
+
+- [Issue 1: Marketplace Not Found](#issue-1-marketplace-not-found)
+- [Issue 2: Plugin Installation Fails](#issue-2-plugin-installation-fails)
+- [Issue 3: Commands Not Appearing](#issue-3-commands-not-appearing)
+- [Issue 4: Agents Not Invoking](#issue-4-agents-not-invoking)
+- [Issue 5: Hooks Not Firing](#issue-5-hooks-not-firing)
+- [Issue 6: MCP Servers Not Connecting](#issue-6-mcp-servers-not-connecting)
+- [Issue 7: JSON Syntax Errors](#issue-7-json-syntax-errors)
+- [Issue 8: Team Settings Not Applied](#issue-8-team-settings-not-applied)
+- [Issue 9: Version Conflicts](#issue-9-version-conflicts)
+- [5-Step Debug Workflow](#5-step-debug-workflow)
+- [Diagnostic Commands](#diagnostic-commands)
+- [Quick Validation Script](#quick-validation-script)
+- [Getting Help](#getting-help)
+
 ## Issue 1: Marketplace Not Found
 
 ### Symptoms

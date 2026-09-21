@@ -4,6 +4,25 @@ Complete agents with all features: tool restrictions, model selection, permissio
 
 ---
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Full Template Structure](#full-template-structure)
+- [Complete Example: Production Code Reviewer](#complete-example-production-code-reviewer)
+- [Decision Points](#decision-points)
+- [Output Format](#output-format)
+- [Constraints](#constraints)
+- [Constraints](#constraints-1)
+- [Error Handling](#error-handling)
+- [Decision Points](#decision-points-1)
+- [Output Format](#output-format-1)
+- [Constraints](#constraints-2)
+- [Output Format](#output-format-2)
+- [Constraints](#constraints-3)
+- [Checklist](#checklist)
+- [Output Format](#output-format-3)
+- [Constraints](#constraints-4)
+
 ## When to Use This Template
 
 - Production-ready agents for real workflows

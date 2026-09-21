@@ -4,6 +4,20 @@ Agents with explicit model selection for optimizing cost, speed, and capability.
 
 ---
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Template Structure](#template-structure)
+- [Model Options](#model-options)
+- [Model Selection Decision Tree](#model-selection-decision-tree)
+- [Complete Example: Quick Syntax Checker (haiku)](#complete-example-quick-syntax-checker-haiku)
+- [Complete Example: Deep Security Auditor (opus)](#complete-example-deep-security-auditor-opus)
+- [Complete Example: Consistent Helper (inherit)](#complete-example-consistent-helper-inherit)
+- [Cost/Performance Tradeoffs](#costperformance-tradeoffs)
+- [Combining Model with Tools](#combining-model-with-tools)
+- [Common Mistakes](#common-mistakes)
+- [Quick Checklist](#quick-checklist)
+
 ## When to Use This Template
 
 - Quick tasks that don't need full capability (use `haiku`)

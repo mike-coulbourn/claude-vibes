@@ -4,6 +4,15 @@ Diagnose and fix common hook issues with systematic debugging.
 
 ---
 
+## Contents
+
+- [Quick Diagnosis Commands](#quick-diagnosis-commands)
+- [Common Issues](#common-issues)
+- [5-Step Debug Workflow](#5-step-debug-workflow)
+- [Diagnostic Script](#diagnostic-script)
+- [Mock Input Templates](#mock-input-templates)
+- [Getting Help](#getting-help)
+
 ## Quick Diagnosis Commands
 
 ```bash

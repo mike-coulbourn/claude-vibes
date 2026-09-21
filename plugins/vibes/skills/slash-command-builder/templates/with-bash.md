@@ -2,6 +2,22 @@
 
 Execute bash commands to gather system context before your prompt runs.
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Basic Syntax](#basic-syntax)
+- [How Bash Execution Works](#how-bash-execution-works)
+- [Security: Tool Restrictions](#security-tool-restrictions)
+- [Complete Examples](#complete-examples)
+- [Combining with Arguments](#combining-with-arguments)
+- [Combining with File References](#combining-with-file-references)
+- [Common Bash Patterns](#common-bash-patterns)
+- [Error Handling](#error-handling)
+- [Best Practices](#best-practices)
+- [Common Pitfalls](#common-pitfalls)
+- [Testing Bash Commands](#testing-bash-commands)
+- [When to Move to Complex Template](#when-to-move-to-complex-template)
+
 ## When to Use This Template
 
 - Need current system state (git status, test results, file lists)

@@ -1,5 +1,16 @@
 # Complete Midjourney V7 Parameter Reference
 
+## Contents
+
+- [Core Parameters](#core-parameters)
+- [Style Parameters](#style-parameters)
+- [Reference Parameters](#reference-parameters)
+- [Personalization (--p)](#personalization---p)
+- [Multi-Prompts & Weights](#multi-prompts--weights)
+- [V7 Advantages](#v7-advantages)
+- [Useful Commands](#useful-commands)
+- [Parameter Combinations](#parameter-combinations)
+
 ## Core Parameters
 
 ### Aspect Ratio (--ar)

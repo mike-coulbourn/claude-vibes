@@ -2,6 +2,15 @@
 
 Real-world commands for analyzing, reviewing, and improving code.
 
+## Contents
+
+- [Example 1: Security Audit Command](#example-1-security-audit-command)
+- [Example 2: Performance Analyzer](#example-2-performance-analyzer)
+- [Example 3: Code Quality Reviewer](#example-3-code-quality-reviewer)
+- [Example 4: Dependency Analyzer](#example-4-dependency-analyzer)
+- [Example 5: Architecture Reviewer](#example-5-architecture-reviewer)
+- [Example 6: Test Coverage Analyzer](#example-6-test-coverage-analyzer)
+
 ## Example 1: Security Audit Command
 
 **File**: `.claude/commands/security-audit.md`

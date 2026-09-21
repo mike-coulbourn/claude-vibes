@@ -4,6 +4,18 @@ Design principles and guidelines for creating effective marketplaces and plugins
 
 ---
 
+## Contents
+
+- [Marketplace Design Principles](#marketplace-design-principles)
+- [Plugin Design Principles](#plugin-design-principles)
+- [Architecture Patterns](#architecture-patterns)
+- [Distribution Strategies](#distribution-strategies)
+- [Available Plugins](#available-plugins)
+- [Documentation Best Practices](#documentation-best-practices)
+- [Testing Best Practices](#testing-best-practices)
+- [Maintenance Best Practices](#maintenance-best-practices)
+- [Common Anti-Patterns](#common-anti-patterns)
+
 ## Marketplace Design Principles
 
 ### 1. Clear Purpose

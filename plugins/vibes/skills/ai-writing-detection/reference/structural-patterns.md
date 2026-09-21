@@ -2,6 +2,17 @@
 
 Comprehensive reference for sentence, paragraph, and document-level structural patterns that indicate AI authorship.
 
+## Contents
+
+- [Sentence-Level Patterns](#sentence-level-patterns)
+- [Paragraph-Level Patterns](#paragraph-level-patterns)
+- [Document-Level Patterns](#document-level-patterns)
+- [Discourse Patterns](#discourse-patterns)
+- [Coherence Patterns](#coherence-patterns)
+- [Formatting Patterns](#formatting-patterns)
+- [Detection Implementation](#detection-implementation)
+- [Caveats](#caveats)
+
 ## Sentence-Level Patterns
 
 ### Uniformity (Low Burstiness)

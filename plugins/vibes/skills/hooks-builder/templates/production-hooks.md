@@ -2,6 +2,16 @@
 
 Build complete, production-ready hook systems with multi-event orchestration, security hardening, and team deployment.
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Production Hook Architecture](#production-hook-architecture)
+- [Complete Example: Code Quality Guardian](#complete-example-code-quality-guardian)
+- [Team Deployment](#team-deployment)
+- [Error Handling](#error-handling)
+- [Monitoring & Maintenance](#monitoring--maintenance)
+- [Security Checklist](#security-checklist)
+
 ## When to Use
 
 - Deploying hooks for team/organization use

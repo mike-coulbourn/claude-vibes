@@ -4,6 +4,18 @@ Principles and patterns for creating effective agents.
 
 ---
 
+## Contents
+
+- [Core Principles](#core-principles)
+- [Description Writing](#description-writing)
+- [Tool Configuration](#tool-configuration)
+- [System Prompt Design](#system-prompt-design)
+- [Model Selection](#model-selection)
+- [Permission Modes](#permission-modes)
+- [Team Collaboration](#team-collaboration)
+- [Common Mistakes](#common-mistakes)
+- [Maintenance](#maintenance)
+
 ## Core Principles
 
 ### 1. Single Responsibility

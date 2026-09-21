@@ -2,6 +2,15 @@
 
 Comprehensive reference of words, phrases, and vocabulary patterns that indicate AI authorship.
 
+## Contents
+
+- [High-Signal Words](#high-signal-words)
+- [Overused Phrases](#overused-phrases)
+- [Vocabulary Frequency Analysis](#vocabulary-frequency-analysis)
+- [Latinate vs Germanic Vocabulary](#latinate-vs-germanic-vocabulary)
+- [Model-Specific Vocabulary](#model-specific-vocabulary)
+- [Detection Implementation](#detection-implementation)
+
 ## High-Signal Words
 
 These words appear 50-700x more frequently in AI-generated text than human writing:

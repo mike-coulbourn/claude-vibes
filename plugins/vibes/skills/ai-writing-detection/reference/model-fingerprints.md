@@ -2,6 +2,21 @@
 
 Each AI model has distinctive linguistic patterns - "fingerprints" that persist even when prompted to write differently.
 
+## Contents
+
+- [Why Fingerprints Exist](#why-fingerprints-exist)
+- [ChatGPT / GPT-4 Patterns](#chatgpt--gpt-4-patterns)
+- [Claude (Anthropic) Patterns](#claude-anthropic-patterns)
+- [Gemini (Google) Patterns](#gemini-google-patterns)
+- [DeepSeek Patterns](#deepseek-patterns)
+- [Grok (X/Twitter) Patterns](#grok-xtwitter-patterns)
+- [Perplexity Patterns](#perplexity-patterns)
+- [Open Source Models](#open-source-models)
+- [Cross-Model Detection](#cross-model-detection)
+- [Detection Implications](#detection-implications)
+- [Fingerprint Persistence](#fingerprint-persistence)
+- [Practical Application](#practical-application)
+
 ## Why Fingerprints Exist
 
 **Root cause**: Deterministic training and fine-tuning processes create consistent patterns.

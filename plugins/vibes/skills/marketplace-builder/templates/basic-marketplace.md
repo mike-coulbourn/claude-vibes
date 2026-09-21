@@ -4,6 +4,15 @@ The simplest marketplace pattern: a single plugin in the same repository.
 
 ---
 
+## Contents
+
+- [When to Use](#when-to-use)
+- [Directory Structure](#directory-structure)
+- [Step-by-Step Setup](#step-by-step-setup)
+- [Complete Example: Personal Tools](#complete-example-personal-tools)
+- [Tips for Basic Marketplaces](#tips-for-basic-marketplaces)
+- [Upgrading to Multi-Plugin](#upgrading-to-multi-plugin)
+
 ## When to Use
 
 - You have one plugin to share

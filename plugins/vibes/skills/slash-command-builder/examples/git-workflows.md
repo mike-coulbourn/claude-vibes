@@ -2,6 +2,13 @@
 
 Real-world slash commands for common git operations.
 
+## Contents
+
+- [Example 1: Commit Message Generator](#example-1-commit-message-generator)
+- [Example 2: PR Context Gatherer](#example-2-pr-context-gatherer)
+- [Resolution Steps](#resolution-steps)
+- [Conflict Prevention](#conflict-prevention)
+
 ## Example 1: Commit Message Generator
 
 **File**: `.claude/commands/commit.md`

@@ -4,6 +4,16 @@ Six complete plugin examples for common development workflows.
 
 ---
 
+## Contents
+
+- [Example 1: Git Workflow Plugin](#example-1-git-workflow-plugin)
+- [Example 2: Code Formatter Plugin](#example-2-code-formatter-plugin)
+- [Example 3: Test Runner Plugin](#example-3-test-runner-plugin)
+- [Example 4: Dependency Manager Plugin](#example-4-dependency-manager-plugin)
+- [Example 5: Documentation Generator Plugin](#example-5-documentation-generator-plugin)
+- [Example 6: Code Quality Plugin](#example-6-code-quality-plugin)
+- [Complete Marketplace Configuration](#complete-marketplace-configuration)
+
 ## Example 1: Git Workflow Plugin
 
 A comprehensive git workflow automation plugin.

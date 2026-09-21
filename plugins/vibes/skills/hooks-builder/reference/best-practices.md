@@ -4,6 +4,18 @@ Design, security, and deployment guidance for production-quality hooks.
 
 ---
 
+## Contents
+
+- [Design Principles](#design-principles)
+- [Security Best Practices](#security-best-practices)
+- [Security Checklist](#security-checklist)
+- [Performance Optimization](#performance-optimization)
+- [Team Deployment](#team-deployment)
+- [Requirements](#requirements)
+- [Anti-Patterns to Avoid](#anti-patterns-to-avoid)
+- [Testing Hooks](#testing-hooks)
+- [Maintenance](#maintenance)
+
 ## Design Principles
 
 ### 1. Single Responsibility

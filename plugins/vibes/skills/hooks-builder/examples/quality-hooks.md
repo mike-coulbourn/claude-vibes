@@ -4,6 +4,17 @@ Six complete hooks for automated code formatting, linting, testing, and quality 
 
 ---
 
+## Contents
+
+- [1. Auto Formatter](#1-auto-formatter)
+- [2. Linter Runner](#2-linter-runner)
+- [3. Type Checker](#3-type-checker)
+- [4. Test Runner](#4-test-runner)
+- [5. Import Organizer](#5-import-organizer)
+- [6. Commit Validator](#6-commit-validator)
+- [Combined Quality Configuration](#combined-quality-configuration)
+- [Viewing Quality Results](#viewing-quality-results)
+
 ## 1. Auto Formatter
 
 Automatically format code after Write/Edit operations.

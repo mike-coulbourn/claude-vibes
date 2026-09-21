@@ -4,6 +4,21 @@ Agents with explicit permission mode configuration for controlling approval beha
 
 ---
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Template Structure](#template-structure)
+- [Permission Modes](#permission-modes)
+- [Permission Mode Decision Tree](#permission-mode-decision-tree)
+- [Complete Example: Auto-Formatter (acceptEdits)](#complete-example-auto-formatter-acceptedits)
+- [Output Format](#output-format)
+- [Complete Example: Architecture Planner (plan)](#complete-example-architecture-planner-plan)
+- [Complete Example: Trusted Fixer (acceptEdits)](#complete-example-trusted-fixer-acceptedits)
+- [Security Implications](#security-implications)
+- [Combining with Tool Restrictions](#combining-with-tool-restrictions)
+- [Common Mistakes](#common-mistakes)
+- [Quick Checklist](#quick-checklist)
+
 ## When to Use This Template
 
 - Agent should auto-approve file edits (trusted automation)

@@ -2,6 +2,27 @@
 
 Use this template for complex Skills that need scripts, extensive documentation, templates, or utility files.
 
+## Contents
+
+- [When to use this template](#when-to-use-this-template)
+- [Directory Structure](#directory-structure)
+- [File 1: SKILL.md (Main entry point)](#file-1-skillmd-main-entry-point)
+- [Core Operations](#core-operations)
+- [Advanced Usage](#advanced-usage)
+- [Utility Scripts](#utility-scripts)
+- [Templates](#templates)
+- [Requirements](#requirements)
+- [Configuration](#configuration)
+- [Troubleshooting](#troubleshooting)
+- [Example 2: [Another Scenario]](#example-2-another-scenario)
+- [Example 3: [Complex Scenario]](#example-3-complex-scenario)
+- [Common Patterns](#common-patterns)
+- [File 5: scripts/validate.py (Validation script)](#file-5-scriptsvalidatepy-validation-script)
+- [File 6: templates/config.json (Configuration template)](#file-6-templatesconfigjson-configuration-template)
+- [File 7: templates/boilerplate.txt (Code template)](#file-7-templatesboilerplatetxt-code-template)
+- [Real Example: PDF Processing Skill](#real-example-pdf-processing-skill)
+- [Tips for Multi-File Skills](#tips-for-multi-file-skills)
+
 ## When to use this template
 
 - Instructions too extensive for one file

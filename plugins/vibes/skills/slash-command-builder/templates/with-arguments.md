@@ -2,6 +2,18 @@
 
 Add dynamic inputs to your commands using arguments.
 
+## Contents
+
+- [When to Use This Template](#when-to-use-this-template)
+- [Two Argument Styles](#two-argument-styles)
+- [Complete Examples](#complete-examples)
+- [Combining Both Styles](#combining-both-styles)
+- [Handling Missing Arguments](#handling-missing-arguments)
+- [Best Practices for Arguments](#best-practices-for-arguments)
+- [Common Pitfalls](#common-pitfalls)
+- [Testing Your Command with Arguments](#testing-your-command-with-arguments)
+- [When to Move to Complex Template](#when-to-move-to-complex-template)
+
 ## When to Use This Template
 
 - Command needs user-provided values

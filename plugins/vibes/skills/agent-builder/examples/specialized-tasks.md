@@ -4,6 +4,27 @@ Six complete, production-ready agents for specialized development tasks.
 
 ---
 
+## Contents
+
+- [1. API Designer](#1-api-designer)
+- [Output Format](#output-format)
+- [Constraints](#constraints)
+- [Execution Plan Analysis](#execution-plan-analysis)
+- [Output Format](#output-format-1)
+- [Constraints](#constraints-1)
+- [Common Patterns](#common-patterns)
+- [Output Format](#output-format-2)
+- [Constraints](#constraints-2)
+- [Common Issues](#common-issues)
+- [Output Format](#output-format-3)
+- [Constraints](#constraints-3)
+- [Verification Areas](#verification-areas)
+- [Output Format](#output-format-4)
+- [Constraints](#constraints-4)
+- [Common Causes](#common-causes)
+- [Output Format](#output-format-5)
+- [Constraints](#constraints-5)
+
 ## 1. API Designer
 
 Design REST and GraphQL APIs.

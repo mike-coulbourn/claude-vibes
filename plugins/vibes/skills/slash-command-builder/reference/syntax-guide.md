@@ -2,6 +2,25 @@
 
 Complete reference for all slash command features and syntax.
 
+## Contents
+
+- [File Structure](#file-structure)
+- [YAML Frontmatter Reference](#yaml-frontmatter-reference)
+- [Arguments](#arguments)
+- [Bash Execution](#bash-execution)
+- [File References](#file-references)
+- [Path Resolution](#path-resolution)
+- [Combining Features](#combining-features)
+- [Command Invocation](#command-invocation)
+- [Command Precedence](#command-precedence)
+- [Special Characters and Escaping](#special-characters-and-escaping)
+- [Extended Thinking](#extended-thinking)
+- [File Naming](#file-naming)
+- [Subdirectory Organization](#subdirectory-organization)
+- [Command Scope](#command-scope)
+- [SlashCommand Tool Integration](#slashcommand-tool-integration)
+- [Complete Syntax Example](#complete-syntax-example)
+
 ## File Structure
 
 ```markdown
