@@ -1,7 +1,7 @@
 ---
 description: Discover the problem space, users, and value proposition
 argument-hint: Your project idea or problem to solve
-allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
 ---
 
 # Discovery phase
@@ -35,6 +35,10 @@ You do the heavy lifting. The user describes what they want in natural language;
 - When the user is unsure, offer concrete suggestions they can react to
 - Summarize what you've learned periodically to confirm understanding
 - Translate any technical concepts immediately into plain language
+
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: discovery that needs market validation from several sources before the idea is worth building. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the market-validator and brand-audience-researcher agents for the research lanes and a separate agent as the skeptic. For a simple request, skip this and carry on below.
 
 ## Discovery process
 

@@ -1,7 +1,7 @@
 ---
 description: 'Design the technical foundation: data model, APIs, and key decisions'
 argument-hint: Optional specific areas to focus on
-allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
 # Architecture phase
@@ -35,6 +35,10 @@ You do the heavy lifting on technical decisions. The user describes what they wa
 - Lead with recommendations: "I'd suggest X because [plain language reason]. Does that work?"
 - Translate all technical concepts immediately: "database" = "where your app stores information"
 - Flag decisions that are hard to change later so the user knows they matter
+
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: an architecture decision with real alternatives, where each option needs evidence for and against. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the tech-advisor and data-modeler agents for the lanes and the plan-reviewer agent as the skeptic. For a simple request, skip this and carry on below.
 
 ## Architecture process
 

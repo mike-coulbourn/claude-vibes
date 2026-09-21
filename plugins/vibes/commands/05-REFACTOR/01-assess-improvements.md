@@ -47,6 +47,10 @@ If these files don't exist (common when using claude-vibes on an existing projec
 - Prioritize by impact (high/medium/low)
 - Use AskUserQuestion for scope and priority decisions
 
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: a refactoring that spans many files or carries a real risk of changing behavior. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the assessor agent for the lanes and the validator agent as the skeptic. For a simple request, skip this and carry on below.
+
 ## Assess process
 
 ### 1. Clarify scope

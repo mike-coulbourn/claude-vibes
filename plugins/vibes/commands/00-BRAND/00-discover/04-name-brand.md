@@ -1,7 +1,7 @@
 ---
 description: Finalize brand name with domain verification
 argument-hint: Your brand name if you have one, or naming preferences
-allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Skill, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Finalize brand name
@@ -53,6 +53,10 @@ Never save final outputs without user approval.
 ## Natural writing
 
 The brand-naming-specialist agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
+
+## When the work deserves a graph
+
+Some requests here are bigger than one pass: naming, which combines option generation, comparison against criteria, and trademark and domain checks before the founder decides. When the work involves several steps or sources, paths that can run in parallel, checks, real risk, or approvals, use AskUserQuestion to offer designing it first with the `claude-vibes:graph-engineering` skill. The skill decides whether a graph is warranted, and it stops at the user's approval. To carry out an approved graph, follow the `claude-vibes:graph-running` skill, using the brand-naming-specialist agent for generation and comparison, the Whois tool for domain checks, and a gate for the founder's final choice. For a simple request, skip this and carry on below.
 
 ## For founders with an existing name
 
