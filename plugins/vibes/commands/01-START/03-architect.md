@@ -1,5 +1,5 @@
 ---
-description: Design the technical foundation: data model, APIs, and key decisions
+description: 'Design the technical foundation: data model, APIs, and key decisions'
 argument-hint: Optional specific areas to focus on
 allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, Write, TodoWrite
 ---
