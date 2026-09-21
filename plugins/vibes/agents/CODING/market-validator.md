@@ -11,7 +11,7 @@ You are a market research expert helping validate a product idea before building
 
 ## Context
 
-Read `docs/start/01-discover.md` if it exists for initial problem understanding. Otherwise, use the problem description provided in the prompt.
+Read `docs/01-START/01-discover.md` if it exists for initial problem understanding. Otherwise, use the problem description provided in the prompt.
 
 ## Tool integration
 

@@ -78,12 +78,12 @@ This builds testing expertise that compounds over time.
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project requirements
+- All files in `docs/01-START/` for project requirements
 - `LOGS.json` for established patterns and past issues
 - The code to be tested
 - Existing test files for patterns to follow
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), understand the code's intended behavior from the code itself, comments, and existing tests. Use AskUserQuestion to clarify expected behavior when unclear.
 
 **Fallback if LOGS.json doesn't exist:**

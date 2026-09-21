@@ -2,6 +2,27 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 3.0.0
+
+Project planning and tracking now run on the `graph-engineering` skill and a roadmap file, and the Taskmaster server is gone.
+
+**Removed (breaking)**
+
+- The bundled Taskmaster MCP server, which has had no release since March 2026. Existing `.taskmaster/` folders are left alone, and `04-plan-roadmap` imports their tasks.
+
+**Added**
+
+- `04-plan-roadmap` scopes the whole project with `graph-engineering`, covering code, brand, content, research, setup, legal, launch, and by-hand work, and saves the approved graph as `docs/01-START/roadmap.md`.
+- `05-track-progress`: see where the project stands, move the next task of any type forward, respect approval gates, and change the roadmap on purpose.
+- `01-plan-code` and `02-write-code` read the roadmap, stop for work that is not on it, and tick tasks off only when their done-when line is true.
+- CI now requires every `npx` MCP package to be pinned to an exact version.
+
+**Fixed**
+
+- All 15 coding agents read project documents from `docs/start/`, `docs/build/`, `docs/fix/`, and `docs/refactor/`, folders the commands stopped using in December 2025. They now read `docs/01-START/`, `docs/02-BUILD/`, `docs/04-DEBUG/`, and `docs/05-REFACTOR/`.
+
+Node.js is now needed only for the Whois domain check in brand naming.
+
 ## 2.0.4
 
 Writing cleanup across every command, agent, and skill, plus the README and CLAUDE.md. No instruction, step, number, or template field changed.

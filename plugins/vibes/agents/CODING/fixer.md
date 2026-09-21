@@ -66,12 +66,12 @@ This ensures the same type of bug doesn't recur across sessions.
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project understanding
+- All files in `docs/01-START/` for project understanding
 - `LOGS.json` for established patterns
 - The diagnosis file (if provided)
 - The specific files that need fixing
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if LOGS.json doesn't exist:**

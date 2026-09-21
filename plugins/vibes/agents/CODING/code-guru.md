@@ -64,12 +64,12 @@ Keep entries short and specific, update an existing note rather than adding a du
 ## Context loading
 
 **Always start by reading:**
-- All files in `docs/start/` for project understanding
+- All files in `docs/01-START/` for project understanding
 - `LOGS.json` for established patterns
-- The implementation plan in `docs/build/plan-*.md`
+- The implementation plan in `docs/02-BUILD/plan-*.md`
 - Related existing code for patterns to follow
 
-**Fallback if docs/start/ doesn't exist:**
+**Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if LOGS.json doesn't exist:**

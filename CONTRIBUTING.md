@@ -29,7 +29,7 @@ Agents that write prose for the user preload the writing skill with `skills: nat
 
 **Writing style.** These files are prompts, and their style carries into what the plugin writes for users. Use plain words and sentence-case headings. Keep em dashes out of running text (they are fine inside a real person's quotation). State an instruction once, without capitals such as CRITICAL or ALWAYS, and give the reason when it is not obvious. Leave sample copy, "words to avoid" lists, and deliberately bad examples as they are.
 
-**MCP servers** in `plugin.json` start for every user on every session. Pin versions, never use `@latest`, and only add a server that a command actually calls.
+**MCP servers** in `plugin.json` start for every user on every session. Pin every `npx` package to an exact version (CI enforces this), and only add a server that a command actually calls. Prefer a file in the user's project or a native Claude Code feature over a new server.
 
 ## Versioning
 

@@ -51,11 +51,12 @@ If they want to find plans, check `docs/02-BUILD/` for plan files and present th
 
 Read the docs/01-START/ files and the plan file. Understand what needs to be built and the approach to follow.
 
-### 2. Extract Taskmaster task ID (if present)
+### 2. Find the roadmap task (if present)
 
-Check the plan file for a Taskmaster task ID. Plan files from `/01-plan-code` include this when Taskmaster is set up:
-- Look for "Taskmaster Task ID: [number]" or similar
-- Store this for marking complete later
+Check the plan file for a roadmap task ID. Plan files from `/01-plan-code` include one when the project has a roadmap at `docs/01-START/roadmap.md`:
+- Look for "Roadmap task ID: [id]" or similar
+- Read that task's done-when line in the roadmap, because that is the finish line for this build
+- Keep the ID so you can tick the task off later
 
 ### 3. Build in chunks
 
@@ -123,33 +124,39 @@ When implementation is done:
 - Error handling is in place
 - Ready for review
 
-### 6. Mark task complete in Taskmaster (if applicable)
+### 6. Tick the task off the roadmap (if applicable)
 
-**If a Taskmaster task ID was found in the plan:**
+**If the plan had a roadmap task ID**, check the task's done-when line against what was built.
 
-1. Use the Taskmaster MCP `set_task_status` tool to mark the task as complete
-2. Use the `next_task` tool to get the recommended next task
+**If the done-when line is true:**
 
-**Use AskUserQuestion to confirm and show next steps:**
+1. Run `date +%Y-%m-%d`, then in `docs/01-START/roadmap.md` change the task's `- [ ]` to `- [x]`, add `| done: <date>` at the end of its line, and update "Last updated". Edit the file in place. Tick a parent task only when all its subtasks are ticked.
+2. Find the next unchecked task whose dependencies are all ticked.
+3. Use AskUserQuestion to show next steps:
 
 ```
-Question: "Task [ID] marked complete in Taskmaster!
+Question: "Task [ID] is ticked off the roadmap.
 
-Here's what's next based on dependencies:
-**Task [Next ID]: [Next Task Name]**
-[Description]
+Next up:
+**Task [Next ID]: [Next task name]** ([type])
+[Done-when line]
 
 What would you like to do?"
 Options:
 - Continue building: run /01-plan-code for the next task
 - Review this code first: run /03-review-code
+- See the whole roadmap: run /05-track-progress
 - Take a break: I'll come back later
 - Other
 ```
 
+If the next task is not a `build` task, say so and point to `/05-track-progress`, which handles checks, brand, content, setup, legal, launch, and by-hand tasks. If the roadmap has a `check` task that depends on this one, recommend running it next, because a task someone else has not checked is not yet proven.
+
+**If the done-when line is only partly true:** leave the box unticked, tell the user exactly what is still missing, and use AskUserQuestion to offer finishing it now or splitting the remainder into a new subtask in the roadmap (with a dated change-log line).
+
 ### 7. Handle implementation drift (if needed)
 
-Sometimes what you build differs from the original plan. This is normal and Taskmaster can handle it.
+Sometimes what you build differs from the plan. That is normal, as long as the roadmap is updated to match so later tasks do not rest on a plan that is no longer true.
 
 **Use AskUserQuestion if significant drift occurred:**
 
@@ -158,7 +165,7 @@ Question: "During implementation, we made some changes from the original plan:
 
 [List the changes]
 
-Should I update Taskmaster so future tasks account for these changes?"
+Should I update the roadmap so the remaining tasks account for them?"
 Options:
 - Yes, update the remaining tasks
 - No, this was a one-time adjustment
@@ -166,8 +173,7 @@ Options:
 - Other
 ```
 
-**If they want to update tasks:**
-Describe the changes to Taskmaster using natural language. Taskmaster will adjust remaining tasks to account for the new approach.
+**If they want to update tasks:** edit the affected tasks in `docs/01-START/roadmap.md` in place, show the user the before and after, update "Last updated", and add a dated line to the roadmap's change log saying what changed and why. If the change touches the alignment contract's objective or definition of done, say so and recommend re-running `/04-plan-roadmap` so the graph is approved again.
 
 ## Guidelines
 
@@ -176,7 +182,7 @@ Describe the changes to Taskmaster using natural language. Taskmaster will adjus
 - Follow the plan, and if deviating, discuss first
 - One chunk at a time, and complete each before moving on
 - Production-grade means error handling and edge cases
-- Mark tasks complete in Taskmaster to maintain accurate project status
+- Tick finished tasks off the roadmap so it always shows the true state of the project
 
 ## Output
 
@@ -186,9 +192,9 @@ When build is complete:
 2. **List of files created/modified**
 3. **How to test the feature**
 4. **Any notes or considerations**
-5. **Taskmaster status** (if applicable):
-   - Task marked complete
-   - Next recommended task
+5. **Roadmap status** (if applicable):
+   - Task ticked off
+   - Next task that is ready
 
 ### Keep implementation lessons
 
@@ -218,7 +224,7 @@ The code-guru agent keeps its own project memory. In its prompt, ask it to recor
 Question: "Build complete! What's next?"
 Options:
 - Review the code: run /03-review-code
-- Ship it: run /03-SHIP:01-pre-commit
+- Ship it: run /01-pre-commit
 - Build the next task: run /01-plan-code
 - Other
 ```
