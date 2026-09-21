@@ -10,7 +10,7 @@ python3 scripts/validate_plugin.py
 claude plugin validate ./plugins/vibes
 ```
 
-The first command checks frontmatter, agent and skill references, relative links, and the counts claimed in `marketplace.json`. CI runs it on every PR.
+The first command checks frontmatter, agent and skill references, skills that agents preload, relative links, MCP version pinning, and the counts claimed in `marketplace.json`. CI runs it on every PR. The second is Claude Code's own manifest check.
 
 ## Conventions
 
@@ -25,13 +25,17 @@ Agents that write prose for the user preload the writing skill with `skills: nat
 - Teach what Claude does not already know: decision rules, templates, and hard-won specifics. Skip textbook summaries.
 - Mark facts that go stale (platform numbers, tool versions) with a last-verified date.
 
-**Commands** live in `plugins/vibes/commands/`. Ask the user questions with the AskUserQuestion tool rather than plain text.
+**Commands** live in `plugins/vibes/commands/`. Ask the user questions with the AskUserQuestion tool rather than plain text. When you add, remove, or rename a command or agent, update its row in `README.md` and the counts in `.claude-plugin/marketplace.json`.
+
+**Writing style.** These files are prompts, and their style carries into what the plugin writes for users. Use plain words and sentence-case headings. Keep em dashes out of running text (they are fine inside a real person's quotation). State an instruction once, without capitals such as CRITICAL or ALWAYS, and give the reason when it is not obvious. Leave sample copy, "words to avoid" lists, and deliberately bad examples as they are.
 
 **MCP servers** in `plugin.json` start for every user on every session. Pin versions, never use `@latest`, and only add a server that a command actually calls.
 
 ## Versioning
 
-Bump `version` in `plugins/vibes/.claude-plugin/plugin.json` with every change under `plugins/vibes/`: patch for fixes and edits, minor for new commands, agents, or skills, major for removals or renames. Add a line to `CHANGELOG.md`.
+Bump `version` in `plugins/vibes/.claude-plugin/plugin.json` with every change under `plugins/vibes/`: patch for fixes and edits, minor for new commands, agents, or skills, major for removals or renames. Add a line to `CHANGELOG.md`. Changes that touch only repo files such as the README, CI, or templates need no version bump.
+
+After a PR that bumps the version merges, the maintainer tags it (`v2.0.4`) and publishes a GitHub release with the changelog entry.
 
 ## Commits
 
