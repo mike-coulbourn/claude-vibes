@@ -271,7 +271,7 @@ Question: "Anything you specifically DON'T want in the image?"
 
 ### Step 3: Craft the Prompt (nano-banana-pro-expert)
 
-**Use the Task tool** to launch the `nano-banana-pro-expert` agent (`subagent_type: "claude-vibes:TOOLKIT:nano-banana-pro-expert"`).
+**Use the Agent tool** to launch the `nano-banana-pro-expert` agent (`subagent_type: "claude-vibes:TOOLKIT:nano-banana-pro-expert"`).
 
 Your prompt to the agent should include ALL context gathered:
 

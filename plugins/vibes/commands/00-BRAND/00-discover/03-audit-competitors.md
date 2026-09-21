@@ -1,7 +1,7 @@
 ---
 description: Audit competitor brands to find differentiation opportunities
 argument-hint: Optional specific competitors to analyze
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Audit Competitor Brands
@@ -24,7 +24,7 @@ Optional specific competitors: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-competitive-auditor agent.** Do not do the competitive audit yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-competitive-auditor agent.** Do not do the competitive audit yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -61,7 +61,7 @@ Never save final outputs without user approval.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-competitive-auditor"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-competitive-auditor"` and this prompt:
 
 ```
 Conduct a comprehensive brand audit of competitors in this space. ultrathink

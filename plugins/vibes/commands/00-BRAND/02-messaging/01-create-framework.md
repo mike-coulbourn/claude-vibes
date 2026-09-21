@@ -1,7 +1,7 @@
 ---
 description: Create brand messaging framework with value proposition and pillars
 argument-hint: Optional messaging focus or priority
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Create Messaging Framework
@@ -39,7 +39,7 @@ Optional messaging focus: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-messaging-architect agent.** Do not create the messaging framework yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-messaging-architect agent.** Do not create the messaging framework yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -76,7 +76,7 @@ Never save final outputs without user approval.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-messaging-architect"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-messaging-architect"` and this prompt:
 
 ```
 Create the brand messaging framework. ultrathink

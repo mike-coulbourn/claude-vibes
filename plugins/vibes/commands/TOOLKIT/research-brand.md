@@ -1,6 +1,6 @@
 ---
 description: Deep research on a brand for content creation - positioning, competitors, pain points, differentiators
-allowed-tools: Read, Write, Task, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Write, Agent, WebSearch, WebFetch, AskUserQuestion
 argument-hint: Brand name or URL
 ---
 
@@ -64,7 +64,7 @@ Use **sequential thinking** to plan what you need to find:
 
 ### Step 3: Execute Research
 
-Launch the **brand-researcher agent** (via Task tool, `subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with all the context gathered. The agent will:
+Launch the **brand-researcher agent** (via Agent tool, `subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with all the context gathered. The agent will:
 - Research the brand's website, social media, and marketing
 - Find customer reviews and testimonials
 - Identify competitors and how they differ

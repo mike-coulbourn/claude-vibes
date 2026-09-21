@@ -1,7 +1,7 @@
 ---
 description: Create the implementation roadmap with phases and milestones
 argument-hint: Optional constraints like timeline or priorities
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
 # Planning Phase
@@ -124,10 +124,10 @@ Create clear checkpoints:
 
 ### 6. Plan Review (REQUIRED)
 
-**You MUST use the Task tool to launch the plan-reviewer agent before saving:**
+**You MUST use the Agent tool to launch the plan-reviewer agent before saving:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
   prompt: "Ultrathink about this implementation roadmap. Read all docs/01-START/ files for complete context.
 

@@ -15,7 +15,7 @@ Specific area to review: $ARGUMENTS
 
 You orchestrate the review and manage the conversation. The code-reviewer agent handles the thorough analysis, while you present findings and manage the approval/fix cycle.
 
-**CRITICAL: You MUST use the Task tool to launch the review agents.** Do not review the code yourself—that's what the code-reviewer and tester agents are for.
+**CRITICAL: You MUST use the Agent tool to launch the review agents.** Do not review the code yourself—that's what the code-reviewer and tester agents are for.
 
 ## Project Context
 
@@ -55,7 +55,7 @@ Otherwise, find recent work:
 
 ### 3. Launch Agents in Parallel (REQUIRED)
 
-**You MUST use the Task tool to launch BOTH agents simultaneously** — they analyze the code from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:code-reviewer"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**You MUST use the Agent tool to launch BOTH agents simultaneously** — they analyze the code from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:code-reviewer"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Code Reviewer Agent** (quality, security, patterns):
 

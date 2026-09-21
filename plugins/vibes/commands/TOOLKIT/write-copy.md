@@ -147,7 +147,7 @@ Consider:
 
 ### Step 4: Conduct Market Research (deep-researcher)
 
-**Use the Task tool** to launch the `deep-researcher` agent (`subagent_type: "claude-vibes:TOOLKIT:deep-researcher"`) to gather market context.
+**Use the Agent tool** to launch the `deep-researcher` agent (`subagent_type: "claude-vibes:TOOLKIT:deep-researcher"`) to gather market context.
 
 **Tailor the research prompt to the copy type and context:**
 
@@ -199,7 +199,7 @@ Focus on insights that will directly inform the copy, not general market analysi
 
 ### Step 6: Generate Initial Draft (elite-copywriter)
 
-**Use the Task tool** to launch the `elite-copywriter` agent (`subagent_type: "claude-vibes:TOOLKIT:elite-copywriter"`) with comprehensive context.
+**Use the Agent tool** to launch the `elite-copywriter` agent (`subagent_type: "claude-vibes:TOOLKIT:elite-copywriter"`) with comprehensive context.
 
 Your prompt to the agent should include:
 - The TYPE of copy needed

@@ -1,7 +1,7 @@
 ---
 description: Discover the problem space, users, and value proposition
 argument-hint: Your project idea or problem to solve
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
 ---
 
 # Discovery Phase
@@ -72,7 +72,7 @@ Only proceed to step 3 after user confirms.
 
 **Agent 1: Market Validator**
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:market-validator"
   run_in_background: true
   prompt: "Ultrathink about validating this product idea: [insert confirmed summary from checkpoint].
@@ -96,7 +96,7 @@ Task tool:
 
 **Agent 2: Audience Researcher**
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:BRANDING:brand-audience-researcher"
   run_in_background: true
   prompt: "Ultrathink about the target audience for this product: [insert confirmed summary from checkpoint].

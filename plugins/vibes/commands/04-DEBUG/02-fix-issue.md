@@ -15,7 +15,7 @@ Fix to implement: $ARGUMENTS
 
 You orchestrate the fix implementation and manage the conversation. The fixer agent handles the actual code changes, while you coordinate and verify the approach makes sense.
 
-**CRITICAL: You MUST use the Task tool to launch the fixer agent for the actual fix.** Do not implement the fix yourself—that's what the fixer agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the fixer agent for the actual fix.** Do not implement the fix yourself—that's what the fixer agent is for.
 
 ## Interactive Experience (CRITICAL)
 
@@ -72,7 +72,7 @@ If anything is unclear, use AskUserQuestion to clarify.
 
 ### 3. Launch Fixer (REQUIRED)
 
-**You MUST use the Task tool to launch the fixer agent.** Use `subagent_type: "claude-vibes:CODING:fixer"` with this prompt:
+**You MUST use the Agent tool to launch the fixer agent.** Use `subagent_type: "claude-vibes:CODING:fixer"` with this prompt:
 
 > Ultrathink about implementing this fix.
 >

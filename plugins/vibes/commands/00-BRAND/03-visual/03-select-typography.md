@@ -1,7 +1,7 @@
 ---
 description: Develop brand typography system with font recommendations
 argument-hint: Optional typography preferences or constraints (e.g., "free fonts only")
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Select Brand Typography
@@ -50,7 +50,7 @@ Optional typography preferences: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-typography-curator agent.** Do not select typography yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-typography-curator agent.** Do not select typography yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -88,7 +88,7 @@ Never save final outputs without user approval.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-typography-curator"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-typography-curator"` and this prompt:
 
 ```
 Develop the brand typography system. ultrathink

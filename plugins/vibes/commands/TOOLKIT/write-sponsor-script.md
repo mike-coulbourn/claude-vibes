@@ -1,6 +1,6 @@
 ---
 description: Write a converting script for sponsored/affiliate content with guided research and methodology
-allowed-tools: Read, Write, Grep, Glob, Task, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Write, Grep, Glob, Agent, WebSearch, WebFetch, AskUserQuestion
 argument-hint: Brand name or product URL
 ---
 
@@ -129,7 +129,7 @@ Use **AskUserQuestion** to understand their content style:
 
 Tell the user: "Let me research [brand] to understand their positioning, competitors, and what makes them unique. This will help us write a script that's authentic to you AND effective for the brand."
 
-Use the Task tool to launch the **brand-researcher agent** (`subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with:
+Use the Agent tool to launch the **brand-researcher agent** (`subagent_type: "claude-vibes:TOOLKIT:brand-researcher"`) with:
 - Brand name and product
 - Product URL (if provided)
 - The creator's audience info

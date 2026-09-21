@@ -1,7 +1,7 @@
 ---
 description: Compile all brand work into final brand guidelines document
 argument-hint: Optional title override for the guidelines
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, AskUserQuestion
 ---
 
 # Compile Brand Guidelines

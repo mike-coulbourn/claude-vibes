@@ -1,7 +1,7 @@
 ---
 description: Create visual identity direction and logo brief
 argument-hint: Optional visual style preferences
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Set Visual Direction
@@ -53,7 +53,7 @@ Optional visual preferences: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-visual-director agent.** Do not create visual direction yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-visual-director agent.** Do not create visual direction yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -91,7 +91,7 @@ Never save final outputs without user approval.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-visual-director"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-visual-director"` and this prompt:
 
 ```
 Create the visual identity direction for this brand. ultrathink

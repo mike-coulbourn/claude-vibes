@@ -1,7 +1,7 @@
 ---
 description: 'Design the technical foundation: data model, APIs, and key decisions'
 argument-hint: Optional specific areas to focus on
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, Write, TodoWrite
 ---
 
 # Architecture Phase
@@ -150,10 +150,10 @@ Options:
 
 ### 4. Data Model Design (REQUIRED - Synchronous)
 
-**You MUST use the Task tool to launch the data-modeler agent.** The data model is foundational—other decisions depend on it, so this runs synchronously (NOT in background).
+**You MUST use the Agent tool to launch the data-modeler agent.** The data model is foundational—other decisions depend on it, so this runs synchronously (NOT in background).
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:data-modeler"
   prompt: "Ultrathink about the complete data model for this project. Read docs/01-START/01-discover.md and docs/01-START/02-scope.md for full context.
 
@@ -200,7 +200,7 @@ Options:
 **Launch tech-advisor in background to research technical options:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:tech-advisor"
   run_in_background: true
   prompt: "Ultrathink about technical decisions for this project. Read all docs/01-START/ files for context.
@@ -367,7 +367,7 @@ This becomes the blueprint for the build phase.
 **Launch plan-reviewer to validate the architecture:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:plan-reviewer"
   prompt: "Ultrathink about this architecture design. Read all docs/01-START/ files for context.
 

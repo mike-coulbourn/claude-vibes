@@ -1,7 +1,7 @@
 ---
 description: Define features, prioritize MVP, and create user stories
 argument-hint: Optional context if starting fresh
-allowed-tools: Read, Glob, Grep, Task, AskUserQuestion, WebSearch, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, Write, TodoWrite
 ---
 
 # Scoping Phase
@@ -92,7 +92,7 @@ These answers inform how we'll prioritize the brainstormed features.
 **Launch the feature-brainstormer agent in background:**
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:CODING:feature-brainstormer"
   run_in_background: true
   prompt: "Ultrathink about all possible features for this project. Read docs/01-START/01-discover.md for full context on the problem, users, and value proposition.

@@ -68,7 +68,7 @@ Use **WebSearch** and **WebFetch** to gather:
 - What this brand does differently
 - Pricing comparison
 
-**Optionally use the deep-researcher agent** (via Task tool) for complex research requiring multiple search rounds.
+**Optionally use the deep-researcher agent** (via Agent tool) for complex research requiring multiple search rounds.
 
 ### Step 3: Analyze & Synthesize
 

@@ -1,7 +1,7 @@
 ---
 description: Finalize brand name with domain verification
 argument-hint: Your brand name if you have one, or naming preferences
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Finalize Brand Name
@@ -36,7 +36,7 @@ First, check the founder brief to determine if they already have a brand name:
 4. Skip the naming agent unless they want alternatives
 
 **If they NEED a name:**
-Use the Task tool to launch the brand-naming-specialist agent (instructions below).
+Use the Agent tool to launch the brand-naming-specialist agent (instructions below).
 
 ## Interactive Experience (CRITICAL)
 
@@ -74,7 +74,7 @@ Use whois MCP (`mcp__plugin_claude-vibes_whois__whois_domain`) to verify their d
 
 ## For Founders WHO NEED a Name
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-naming-specialist"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-naming-specialist"` and this prompt:
 
 ```
 Develop brand name options for this startup. ultrathink

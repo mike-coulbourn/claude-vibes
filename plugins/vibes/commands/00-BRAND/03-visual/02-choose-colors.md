@@ -1,7 +1,7 @@
 ---
 description: Develop brand color palette with exact specifications
 argument-hint: Optional color preferences or constraints
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Choose Brand Colors
@@ -50,7 +50,7 @@ Optional color preferences: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-color-strategist agent.** Do not create color palettes yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-color-strategist agent.** Do not create color palettes yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -88,7 +88,7 @@ Never save final outputs without user approval.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-color-strategist"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-color-strategist"` and this prompt:
 
 ```
 Develop the brand color palette. ultrathink

@@ -1,7 +1,7 @@
 ---
 description: Define your brand's purpose, mission, and vision
 argument-hint: Optional context about your purpose or motivation
-allowed-tools: Read, Glob, Grep, Task, Write, Edit, WebSearch, WebFetch, AskUserQuestion
+allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
 # Define Purpose, Mission & Vision
@@ -30,7 +30,7 @@ Optional additional context: $ARGUMENTS
 
 **CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Task tool to launch the brand-purpose-architect agent.** Do not create purpose statements yourself — that's what the specialized agent is for.
+**CRITICAL: You MUST use the Agent tool to launch the brand-purpose-architect agent.** Do not create purpose statements yourself — that's what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
@@ -67,7 +67,7 @@ Never save final outputs without user approval.
 
 ## Launch the Agent
 
-**Use Task tool** with `subagent_type: "claude-vibes:BRANDING:brand-purpose-architect"` and this prompt:
+**Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-purpose-architect"` and this prompt:
 
 ```
 Define the brand purpose, mission, and vision for this startup. ultrathink

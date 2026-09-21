@@ -39,10 +39,10 @@ Let the user know what's about to happen:
 
 ### Step 2: Launch the Business Growth Advisor Agent
 
-**Use the Task tool** to launch the `business-growth-advisor` agent:
+**Use the Agent tool** to launch the `business-growth-advisor` agent:
 
 ```
-Task tool:
+Agent tool:
   subagent_type: "claude-vibes:TOOLKIT:business-growth-advisor"
   prompt: "Conduct a comprehensive business growth consultation.
 
