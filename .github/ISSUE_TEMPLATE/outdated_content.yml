@@ -1,0 +1,22 @@
+name: Outdated or wrong content
+description: A skill teaches something that is no longer true (tool versions, platform numbers, parameters)
+labels: [content]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill or file?
+      placeholder: midjourney-prompting
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What does it say, and what is correct now?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link to official docs or an announcement helps us verify and fix it quickly.
