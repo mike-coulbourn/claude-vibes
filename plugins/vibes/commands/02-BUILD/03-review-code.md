@@ -3,27 +3,27 @@ description: Review code for production quality before shipping
 argument-hint: Optional specific files or areas to review
 ---
 
-# Review Phase
+# Review phase
 
-You are helping a vibe coder review their work before shipping. This is the quality gate—code that passes review is production-ready and gets documented in LOGS.json.
+You are helping a vibe coder review their work before shipping. This is the quality gate. Code that passes review is production-ready and gets documented in LOGS.json.
 
 Specific area to review: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the review and manage the conversation. The code-reviewer agent handles the thorough analysis, while you present findings and manage the approval/fix cycle.
 
-**CRITICAL: You MUST use the Agent tool to launch the review agents.** Do not review the code yourself—that's what the code-reviewer and tester agents are for.
+**Use the Agent tool to launch the review agents.** Do not review the code yourself. That's what the code-reviewer and tester agents are for.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project requirements and architecture
+- `docs/01-START/` files: project requirements and architecture
 - `docs/02-BUILD/plan-*.md`: The plan this implements
 
-These are stable documentation—always load them. The code-reviewer agent will parse LOGS.json and report back specific relevant entries.
+These are stable documentation, so always load them. The code-reviewer agent will parse LOGS.json and report back specific relevant entries.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
@@ -31,20 +31,20 @@ If these files don't exist (common when using claude-vibes on an existing projec
 **Fallback if no plan file exists:**
 If no plan file exists, review all uncommitted changes or recent commits. Use AskUserQuestion to understand what was supposed to be built.
 
-## How to Communicate
+## How to communicate
 
 - Be specific about issues: file, line, what's wrong, how to fix
 - Prioritize: blocking issues first, then improvements
 - Celebrate good code: "This error handling is solid!"
 - Use AskUserQuestion for decisions about trade-offs
 
-## Review Process
+## Review process
 
-### 1. Load Core Context
+### 1. Load core context
 
 Read docs/01-START/ files and the implementation plan to understand what was supposed to be built.
 
-### 2. Identify What to Review
+### 2. Identify what to review
 
 If `$ARGUMENTS` specifies files/areas, focus there.
 
@@ -53,9 +53,9 @@ Otherwise, find recent work:
 - Check `git log` for recent commits
 - Look at the current plan in `docs/02-BUILD/`
 
-### 3. Launch Agents in Parallel (REQUIRED)
+### 3. Launch agents in parallel (required)
 
-**You MUST use the Agent tool to launch BOTH agents simultaneously**: they analyze the code from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:code-reviewer"` and `subagent_type: "claude-vibes:CODING:tester"`.
+**Use the Agent tool to launch both agents simultaneously**: they analyze the code from different angles and don't depend on each other. Use `subagent_type: "claude-vibes:CODING:code-reviewer"` and `subagent_type: "claude-vibes:CODING:tester"`.
 
 **Code Reviewer Agent** (quality, security, patterns):
 
@@ -100,8 +100,8 @@ Otherwise, find recent work:
 > **What it should do:** [from plan and docs]
 >
 > **Your mission:**
-> - Write comprehensive tests that prove the implementation is correct
-> - Run the tests yourself—don't ask the user to run them
+> - Write thorough tests that prove the implementation is correct
+> - Run the tests yourself. Don't ask the user to run them
 > - If tests fail, analyze and fix the issues
 > - Iterate until all tests pass
 > - Only fall back to manual testing instructions if automation is impossible
@@ -125,9 +125,9 @@ Otherwise, find recent work:
 > - Manual testing instructions (only if something couldn't be automated)
 > - Confidence level in the code's correctness
 >
-> The vibe coder should just see results—you do the work.
+> The vibe coder should just see results. You do the work.
 
-### 4. Run Claude Code's Built-In Reviews
+### 4. Run Claude Code's built-in reviews
 
 While the agents work, or right after they return, run the reviews that ship with Claude Code. They are maintained alongside the product, so they catch classes of bug the agents may not know about yet.
 
@@ -136,9 +136,9 @@ While the agents work, or right after they return, run the reviews that ship wit
 
 If either skill is unavailable in this session, skip it and say so in the summary rather than stopping. Treat their findings as a third input beside the two agents, and explain each one to the vibe coder in the same plain language.
 
-### 5. Combine Results
+### 5. Combine results
 
-After BOTH agents return:
+After both agents return:
 
 **From Code Reviewer:**
 - Load specific LOGS.json entries it cited
@@ -149,9 +149,9 @@ After BOTH agents return:
 - Note any bugs found and fixed
 - Note confidence level
 
-### 6. Present Combined Findings
+### 6. Present combined findings
 
-Present findings from BOTH agents clearly:
+Present findings from both agents clearly:
 
 **If issues found:**
 ```
@@ -179,7 +179,7 @@ Overall: Fix the security issue before shipping.
 
 **If no issues:**
 ```
-Review & Testing Complete — Ready to Ship!
+Review & Testing Complete: Ready to Ship!
 
 CODE REVIEW:
 - Clean error handling
@@ -199,7 +199,7 @@ The code works and meets quality standards!
 Use AskUserQuestion for trade-offs:
 - "I found a potential issue, but fixing it adds complexity. Should we address it now or track it for later?"
 
-### 7. Iterate if Needed
+### 7. Iterate if needed
 
 If blocking issues exist:
 1. Explain the issues clearly
@@ -208,7 +208,7 @@ If blocking issues exist:
 
 "I found 2 issues. Want me to fix them now?"
 
-### 8. Approve and Document
+### 8. Approve and document
 
 **Only when review passes** (no blocking issues):
 
@@ -243,7 +243,7 @@ Create or update LOGS.json in the project root.
 - Suggestions can be deferred if not critical
 - Only write to LOGS.json after passing review
 
-## LOGS.json Write Rules
+## LOGS.json write rules
 
 **Only write to LOGS.json when:**
 1. Review passes (no blocking issues)
@@ -275,7 +275,7 @@ When review is complete:
 3. Offer to fix them
 4. "Re-run `/03-review-code` after fixes"
 
-### Keep Review Findings
+### Keep review findings
 
 **If the review revealed patterns or insights not already documented**, make sure they outlast this session.
 
@@ -289,9 +289,9 @@ The code-reviewer and tester agents keep their own project memory. In their prom
    - Common issues found (e.g., "Missing null checks on user input is a recurring issue")
    - Quality patterns to follow (e.g., "Error boundaries in React components prevent cascading failures")
 
-**Only keep NEW patterns**: things that will help future reviews. If a finding is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
+**Only keep new patterns**: things that will help future reviews. If a finding is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
 
 **Example findings worth keeping:**
-- "The codebase uses a custom Result type for error handling — all services should return Result<T>"
-- "Found that async validation must complete before form submission — add to checklist"
+- "The codebase uses a custom Result type for error handling, so all services should return Result<T>"
+- "Found that async validation must complete before form submission, so add it to the checklist"
 - "Dependency injection is done via constructor, not decorators"

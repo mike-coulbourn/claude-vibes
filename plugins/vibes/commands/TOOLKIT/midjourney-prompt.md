@@ -1,15 +1,15 @@
 ---
 description: Craft effective Midjourney prompts through guided interactive discovery
-argument-hint: What you want to create — can include reference images (e.g., "[image] make this in oil painting style")
+argument-hint: What you want to create, optionally with reference images (e.g., "[image] make this in oil painting style")
 ---
 
-# Midjourney Prompt Crafter
+# Midjourney prompt crafter
 
 You are helping a user craft an effective Midjourney prompt. Assume the current default version (V8.2 as of September 2026) unless the user says otherwise, and ask which version they use whenever reference images, Draft Mode, or HD resolution come up, because those differ between V7 and V8 (the `midjourney-prompting` skill has the version table). Your goal is to interactively discover what they want, then deliver a polished, copy-paste ready prompt optimized for Midjourney's latest model.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate an interactive prompt-crafting process:
 1. Understand what the user wants to create
@@ -21,12 +21,12 @@ You orchestrate an interactive prompt-crafting process:
 
 ## Process
 
-### Step 1: Analyze the Request (Ultrathink)
+### Step 1: Analyze the request (ultrathink)
 
 **Think step by step** with extended thinking to deeply understand what the user needs.
 
 **First, check for reference images:**
-- **Were any images provided with the request?** Look at the full input — users may paste, drag, or attach images
+- **Were any images provided with the request?** Look at the full input, since users may paste, drag, or attach images
 - **If images are present, analyze each one:**
   - Is this a style reference? (for --sref usage)
   - Is this a character or object reference? (`--oref` in V7, an attached Edit Model image in V8)
@@ -42,7 +42,7 @@ You orchestrate an interactive prompt-crafting process:
 
 Think through using ultrathink: "What questions would help me craft a prompt that gets them exactly what they want on the first try?"
 
-### Step 2: Gather Context (AskUserQuestion)
+### Step 2: Gather context (AskUserQuestion)
 
 **Use the AskUserQuestion tool** to clarify the most important unknowns.
 
@@ -55,12 +55,12 @@ Think through using ultrathink: "What questions would help me craft a prompt tha
 
 ---
 
-**ROUND 1: Purpose, Platform & Core Intent** (ALWAYS ask if not clear)
+**Round 1: purpose, platform, and core intent** (always ask if not clear)
 
 ```
 Question: "Which Midjourney interface will you use?"
 Options:
-- Web app (Recommended) — Easier interface, drag-and-drop for style references, no /imagine prefix needed
+- Web app (recommended): easier interface, drag-and-drop for style references, no /imagine prefix needed
 - Discord: Classic interface, requires /imagine prefix and URL copying for references
 ```
 
@@ -90,11 +90,11 @@ Options:
 
 ---
 
-**ROUND 2: Subject & Scene** (ask what's missing from their description)
+**Round 2: subject and scene** (ask what's missing from their description)
 
 ```
 Question: "Can you describe the main subject in more detail?"
-[Free text — push for specifics: who/what, what they're doing, expression, clothing, distinctive features]
+[Free text, push for specifics: who/what, what they're doing, expression, clothing, distinctive features]
 ```
 
 ```
@@ -109,7 +109,7 @@ Options:
 
 ---
 
-**ROUND 3: Style & Mood**
+**Round 3: style and mood**
 
 ```
 Question 1: "What mood or feeling should this image evoke?"
@@ -124,12 +124,12 @@ Options:
 - Other
 
 Question 2: "Any specific artistic style or artist influence?"
-[Free text — examples: "Studio Ghibli aesthetic", "Monet impressionism", "cyberpunk", "vintage film look", "Rembrandt lighting"]
+[Free text, examples: "Studio Ghibli aesthetic", "Monet impressionism", "cyberpunk", "vintage film look", "Rembrandt lighting"]
 ```
 
 ---
 
-**ROUND 4: Technical Details**
+**Round 4: technical details**
 
 ```
 Question 1: "What aspect ratio do you need?"
@@ -143,22 +143,22 @@ Options:
 
 Question 2: "How stylized should the image be?"
 Options:
-- Low stylization (closer to prompt, more literal) — --stylize 50
+- Low stylization (closer to prompt, more literal): --stylize 50
 - Default balance: --stylize 100
 - Medium artistic interpretation: --stylize 250
-- High stylization (more artistic freedom) — --stylize 500+
+- High stylization (more artistic freedom): --stylize 500+
 ```
 
 ---
 
-**ROUND 5: Reference Images** (if provided or if user might have them)
+**Round 5: reference images** (if provided or if user might have them)
 
-**IF IMAGES WERE PROVIDED with the request:**
+**If images were provided with the request:**
 
 Analyze each image and confirm your understanding:
 
 ```
-Question: "I see you've provided [N] reference image(s). Here's how I'd use each one — does this match your intent?"
+Question: "I see you've provided [N] reference image(s). Here's how I'd use each one. Does this match your intent?"
 Options:
 - Yes, that's right
 - Not quite: I'll clarify what I want from them
@@ -169,7 +169,7 @@ For each image, clarify:
 ```
 Question: "For this reference image, what do you want to capture from it?"
 Options:
-- The visual style (colors, texture, artistic approach) — will use as --sref
+- The visual style (colors, texture, artistic approach): will use as --sref
 - The character/person appearance: will use as a character reference (`--oref` in V7, attached image in V8)
 - The composition and framing
 - The mood and atmosphere
@@ -177,7 +177,7 @@ Options:
 - All of the above
 ```
 
-**IF NO IMAGES WERE PROVIDED:**
+**If no images were provided:**
 
 ```
 Question: "Do you have any reference images to guide the style?"
@@ -192,7 +192,7 @@ If they have references, ask them to share or describe them.
 
 ---
 
-**ROUND 6: Photography Details** (for photorealistic images only)
+**Round 6: photography details** (for photorealistic images only)
 
 ```
 Question 1: "What type of lighting?"
@@ -205,20 +205,20 @@ Options:
 
 Question 2: "Any camera/lens preferences?"
 Options:
-- Wide angle (24-35mm) — environmental, context
-- Standard (50mm) — natural perspective
-- Portrait lens (85mm) — subject isolation, beautiful bokeh
-- Telephoto (135mm+) — compression, drama
+- Wide angle (24-35mm): environmental, context
+- Standard (50mm): natural perspective
+- Portrait lens (85mm): subject isolation, beautiful bokeh
+- Telephoto (135mm+): compression, drama
 - No specific preference
 ```
 
 ---
 
-**ROUND 7: Negatives** (for complex scenes or if they've had issues)
+**Round 7: negatives** (for complex scenes or if they've had issues)
 
 ```
-Question: "Anything you specifically DON'T want in the image?"
-[Free text — common: text, watermarks, certain objects, specific colors, overly busy backgrounds]
+Question: "Anything you specifically don't want in the image?"
+[Free text, common: text, watermarks, certain objects, specific colors, overly busy backgrounds]
 ```
 
 ---
@@ -229,7 +229,7 @@ Question: "Anything you specifically DON'T want in the image?"
 - For photorealistic images: Include photography round
 - Always stop when you have enough to craft a strong prompt
 
-### Step 3: Craft the Prompt (Ultrathink + Skill)
+### Step 3: Craft the prompt (ultrathink and skill)
 
 **Invoke the midjourney-prompting skill** by thinking through all the frameworks:
 
@@ -244,17 +244,17 @@ Using ultrathink (extended thinking), craft the prompt by applying:
 - Mood: [Emotional feeling]
 - Composition: [How it's framed]
 
-**2. Best Practices:**
+**2. Best practices:**
 - Place important elements early
 - Be specific with visual details
 - Use natural language clearly
-- AVOID junk words: 4k, 8k, HDR, ultra, award-winning, photorealistic (current models produce high quality by default)
+- Avoid junk words: 4k, 8k, HDR, ultra, award-winning, photorealistic (current models produce high quality by default)
 - Use `--raw` for photorealism and precise control
-- Personalization may be on by default for the user — mention `--p` if results look unlike the prompt
+- Personalization may be on by default for the user, so mention `--p` if results look unlike the prompt
 - V7 only: Draft Mode (`--draft`) for cheap exploration
 - V8.1 and later: `--hd` for 2048px renders
 
-**3. Parameter Selection:**
+**3. Parameter selection:**
 - --ar [aspect ratio based on use case]
 - --stylize [based on their preference, 0-1000]
 - --raw (if photorealistic or detailed prompts)
@@ -270,7 +270,7 @@ Using ultrathink (extended thinking), craft the prompt by applying:
 - **Web app**: Click the image icon, drag-and-drop reference, select "Style Reference" or "Character Reference"
 - **Discord**: Upload image first, right-click to copy URL, add to prompt with --sref or --oref (V7)
 
-### Step 4: Present the Prompt
+### Step 4: Present the prompt
 
 **Display the prompt clearly with context, formatted for user's chosen platform:**
 
@@ -330,7 +330,7 @@ Here's your Midjourney prompt:
 - [Parameter tweaks to try]
 ```
 
-### Step 5: Ask for Feedback (AskUserQuestion)
+### Step 5: Ask for feedback (AskUserQuestion)
 
 ```
 Question: "How does this prompt look?"
@@ -383,7 +383,7 @@ Confirm: "Copied to your clipboard! Paste directly into Midjourney Discord."
 Create in `prompts/midjourney/` with structure:
 
 ```markdown
-# Midjourney Prompt: [Brief Description]
+# Midjourney prompt: [Brief Description]
 
 > Created: [date]
 > Purpose: [what it's for]
@@ -404,7 +404,7 @@ Create in `prompts/midjourney/` with structure:
 
 ---
 
-## Reference Images
+## Reference images
 
 [If references are needed:]
 
@@ -418,17 +418,17 @@ Create in `prompts/midjourney/` with structure:
    - **Web App**: Click image icon → drag-and-drop → select "Character Reference"
    - **Discord**: Upload image, copy URL, add `--oref [URL]` to prompt (V7)
 
-[If no references: "None required — prompt works standalone."]
+[If no references: "None required, the prompt works standalone."]
 
 ---
 
-## Why This Prompt Works
+## Why this prompt works
 
 [Explanation of key elements and choices]
 
 ---
 
-## Iteration Tips
+## Iteration tips
 
 [Suggestions for refinement]
 - Try Draft Mode (toggle in Model panel on web, or add --draft on Discord)
@@ -440,7 +440,7 @@ Create in `prompts/midjourney/` with structure:
 ## Guidelines
 
 - **Detect reference images first**: Check if images were provided before asking
-- **ALWAYS ask about purpose**: Blog cover vs social post vs personal project changes everything
+- **Always ask about purpose**: Blog cover vs social post vs personal project changes everything
 - **Analyze reference intent**: Style reference vs character reference vs mood inspiration
 - **Interactive, not interrogative**: Ask smart questions, not every possible question
 - **Adapt to complexity**: Simple requests need fewer questions
@@ -449,11 +449,11 @@ Create in `prompts/midjourney/` with structure:
 - **Make delivery easy**: Clipboard is fastest for most users
 - **Handle image references clearly**: Tell users exactly how to include their images in Midjourney
 
-## Version Differences
+## Version differences
 
 The `midjourney-prompting` skill holds the full table. In short: V8.2 is the default and uses the Edit Model for reference images (attach on the web, `--edit [URL]` in Discord); V8.1 added `--hd`; V7 has Draft Mode and Omni Reference (`--oref`, `--ow`); `--cref` is V6 only; `--niji 7` is the current anime model.
 
-## Common Prompt Patterns
+## Common prompt patterns
 
 **Photorealistic portrait:**
 - Include camera, lens, aperture, lighting
@@ -484,7 +484,7 @@ The `midjourney-prompting` skill holds the full table. In short: V8.2 is the def
 - Include art style reference
 - Describe distinguishing features explicitly; references keep them consistent across images
 
-## User's Request
+## User's request
 
 $ARGUMENTS
 

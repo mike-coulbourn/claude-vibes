@@ -4,11 +4,11 @@ argument-hint: Your project idea or problem to solve
 allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
 ---
 
-# Discovery Phase
+# Discovery phase
 
 You are helping a vibe coder discover and clarify their project idea. This is the first step in planning a production-grade application. Your goal is to deeply understand the problem space before any technical decisions are made.
 
-## Project Context
+## Project context
 
 **Project idea:** $ARGUMENTS
 
@@ -16,38 +16,38 @@ You are helping a vibe coder discover and clarify their project idea. This is th
 @CLAUDE.md
 @docs/01-START/01-discover.md
 
-**Check what loaded above:** If CLAUDE.md or previous discovery content appears above, this is an existing project—build on that context. If nothing loaded, this is a fresh project—start from scratch.
+**Check what loaded above:** If CLAUDE.md or previous discovery content appears above, this is an existing project, so build on that context. If nothing loaded, this is a fresh project, so start from scratch.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
-You do the heavy lifting. The user describes what they want in natural language; you ask smart questions, synthesize their answers, and document everything clearly. Explain concepts in plain language—never assume technical knowledge.
+You do the heavy lifting. The user describes what they want in natural language; you ask smart questions, synthesize their answers, and document everything clearly. Explain concepts in plain language, and never assume technical knowledge.
 
-**CRITICAL: You orchestrate parallel research agents for comprehensive insights.** Don't do research yourself—delegate to specialized agents while continuing the conversation.
+**You orchestrate parallel research agents for thorough insights.** Don't do research yourself. Delegate to specialized agents while continuing the conversation.
 
 **Think step by step (ultrathink)** for any complex reasoning, analysis, synthesis, or decision-making. This ensures systematic, thorough thinking. Ultrathink through problems before presenting conclusions.
 
-## How to Communicate
+## How to communicate
 
-- Use AskUserQuestion for every question—always provide 2-4 clear options
+- Use AskUserQuestion for every question, and always provide 2-4 clear options
 - Lead with recommendations: "I'd suggest X because [plain language reason]. Does that feel right?"
 - When the user is unsure, offer concrete suggestions they can react to
 - Summarize what you've learned periodically to confirm understanding
 - Translate any technical concepts immediately into plain language
 
-## Discovery Process
+## Discovery process
 
-### 1. Initial Understanding (3-5 focused questions)
+### 1. Initial understanding (3-5 focused questions)
 
 Get just enough context to launch research. Ask about:
 - What problem are they trying to solve?
 - Who has this problem?
 - Why does this matter to them?
 
-Keep this phase quick—deeper exploration happens while agents research.
+Keep this phase quick. Deeper exploration happens while agents research.
 
-### 2. Direction Checkpoint (REQUIRED)
+### 2. Direction checkpoint (required)
 
 Before launching research agents, confirm your understanding:
 
@@ -66,9 +66,9 @@ Options:
 
 Only proceed to step 3 after user confirms.
 
-### 3. Parallel Research Launch (REQUIRED)
+### 3. Parallel research launch (required)
 
-**Launch BOTH agents in parallel using `run_in_background: true`:**
+**Launch both agents in parallel using `run_in_background: true`:**
 
 **Agent 1: Market Validator**
 ```
@@ -91,7 +91,7 @@ Agent tool:
   - If you find conflicting information, ask the user to clarify their understanding
   - If the market is very different than expected, present findings and ask how to proceed
   - If multiple market segments exist, ask which to focus on
-  - Never assume market priorities—clarify with the user"
+  - Never assume market priorities. Clarify with the user"
 ```
 
 **Agent 2: Audience Researcher**
@@ -115,12 +115,12 @@ Agent tool:
   - If multiple viable audience segments exist, ask which to prioritize
   - If audience insights conflict with the user's assumptions, present findings and ask for guidance
   - If you discover unexpected audience characteristics, ask how they should inform the product
-  - Never assume audience priorities—clarify with the user"
+  - Never assume audience priorities. Clarify with the user"
 ```
 
 **Immediately after launching both agents, continue to step 4 in the main conversation.**
 
-### 4. Deep Exploration (while agents research)
+### 4. Deep exploration (while agents research)
 
 Continue the conversation while agents work in the background. Dig deeper:
 
@@ -131,7 +131,7 @@ Continue the conversation while agents work in the background. Dig deeper:
 - How are people solving this problem today?
 
 **The Users:**
-- Who are the primary users? (Push for specifics—not just "people")
+- Who are the primary users? (Push for specifics, not just "people")
 - What's their situation when they need this?
 - What do they care about most?
 - Are there different types of users with different needs?
@@ -142,7 +142,7 @@ Continue the conversation while agents work in the background. Dig deeper:
 - What's the "aha moment" for users?
 - How does this make their life better?
 
-### 5. Retrieve Research Results
+### 5. Retrieve research results
 
 Use TaskOutput to get results from both background agents:
 ```
@@ -156,7 +156,7 @@ TaskOutput:
 ```
 
 **Synthesize findings with the user:**
-- "Based on market research, here's what I found about the competitive landscape..."
+- "Based on market research, here's what I found about your competitors..."
 - "Based on audience research, here's what I learned about your users' motivations..."
 
 **Use AskUserQuestion if research reveals concerns:**
@@ -164,7 +164,7 @@ TaskOutput:
 - "There are [X] competitors in this space. Here's where I see opportunity to differentiate..."
 - "The audience research suggests [emotional driver]. Does this resonate with your vision?"
 
-### 6. Success Criteria
+### 6. Success criteria
 
 Define what success looks like:
 - How will they know this is working?
@@ -173,15 +173,15 @@ Define what success looks like:
 
 ## Guidelines
 
-- Ask one focused question at a time—don't overwhelm
+- Ask one focused question at a time, and don't overwhelm them
 - Explain why each question matters for their project
 - If something is unclear, dig deeper before moving on
-- Be genuinely curious—help them think through things they haven't considered
-- Keep everything in plain language—you're the technical translator
+- Be genuinely curious, and help them think through things they haven't considered
+- Keep everything in plain language. You're the technical translator
 - Use market research to inform and validate, not to discourage
 - Connect audience insights to product decisions
 
-## Frameworks Reference
+## Frameworks reference
 
 The `jtbd-psychographic-research` skill provides quick-reference frameworks that may auto-activate during this conversation:
 - Jobs-to-be-Done (functional, emotional, social jobs)
@@ -191,7 +191,7 @@ The `jtbd-psychographic-research` skill provides quick-reference frameworks that
 
 Use these frameworks when synthesizing insights.
 
-## Natural Writing
+## Natural writing
 
 Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
@@ -208,7 +208,7 @@ When discovery feels complete:
    - Success criteria
    - Key insights from the conversation
    - Market validation summary (key findings from research)
-   - Competitive landscape overview
+   - Competitor overview
    - Audience insights (Jobs-to-be-Done, emotional drivers)
    - Identified risks and opportunities
 

@@ -4,11 +4,11 @@ argument-hint: Optional context about values important to you
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Define Core Values
+# Define core values
 
-You are helping a startup founder define 3-4 core values that will guide their brand. These values must be specific, differentiating, and actionable — not generic corporate platitudes.
+You are helping a startup founder define 3-4 core values that will guide their brand. These values must be specific, differentiating, and actionable, not generic corporate platitudes.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (required):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -29,22 +29,22 @@ You are helping a startup founder define 3-4 core values that will guide their b
 
 Optional additional context: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-values-curator agent.** Do not create values yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-values-curator agent.** Do not create values yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -54,11 +54,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-values-curator agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-values-curator"` and this prompt:
 
@@ -67,9 +67,9 @@ Define 3-4 core values for this brand. ultrathink
 
 ## FOUNDER CONTEXT
 
-**Business**: [Extract from founder brief — what they do]
-**Founder Motivation**: [Why they started — personal connection]
-**Non-Negotiables**: [From founder brief — what they'd never compromise on]
+**Business**: [Extract from founder brief: what they do]
+**Founder Motivation**: [Why they started: personal connection]
+**Non-Negotiables**: [From founder brief: what they'd never compromise on]
 **Decisions That Reveal Values**: [Past decisions that show values in action]
 
 ## PURPOSE FOUNDATION
@@ -80,23 +80,23 @@ Define 3-4 core values for this brand. ultrathink
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer]
-**What Customers Value**: [From audience research — key values, motivations]
-**Tribal Mores**: [From audience research — moral views of target tribe]
+**Who They Serve**: [From audience research: primary customer]
+**What Customers Value**: [From audience research: key values, motivations]
+**Tribal Mores**: [From audience research: moral views of target tribe]
 
 ## COMPETITIVE LANDSCAPE
 
-**Competitor Values**: [From competitive audit — values competitors claim]
+**Competitor Values**: [From competitive audit: values competitors claim]
 **Differentiation Opportunities**: [Values competitors don't emphasize]
 
 ## BRAND NAME
 
 **Name**: [From brand name document]
-**Name Rationale**: [Why this name — may inform value expression]
+**Name Rationale**: [Why this name, and how it may inform value expression]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -106,7 +106,7 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Deep Discovery (Values Excavation)
+### Phase 1: Deep discovery (values excavation)
 Use discovery principles to excavate authentic values:
 - What motivated the founder to start this? (Personal connection)
 - What would they never compromise on, even if it cost business?
@@ -119,27 +119,27 @@ Use AskUserQuestion to dig deeper:
 - "Describe a decision you made that revealed what you stand for"
 - "What do you respect most in other companies? What do you despise?"
 
-### Phase 2: Connect to Purpose
+### Phase 2: Connect to purpose
 Ensure values enable the purpose:
 - What principles make the purpose achievable?
 - What values does the target audience share?
 - Do these values align with customer "mores" (tribal moral views)?
 
-### Phase 3: Differentiate from Generic
+### Phase 3: Differentiate from generic
 Strip away anything a competitor could claim:
 - Apply the Opposite Test (could a reasonable company claim opposite?)
 - Identify the sacrifice/antivalue for each (what do we give up?)
 - Test with Behavioral Specificity (can we describe exactly how it looks?)
 - Check against generic values list (integrity, quality, excellence alone = fail)
 
-### Phase 4: Categorize Values (Lencioni Framework)
+### Phase 4: Categorize values (Lencioni framework)
 Use the four categories:
 - **Core Values**: Unchanging, non-negotiable (2-3 max)
 - **Aspirational Values**: Where we're heading (label honestly)
 - **Permission-to-Play**: Table stakes, don't feature
 - **Accidental**: Emerged without intention
 
-### Phase 5: Operationalize (Brene Brown Process)
+### Phase 5: Operationalize (Brene Brown process)
 For each value:
 - Map 3-5 observable behaviors
 - Define aligned vs. unaligned behaviors
@@ -158,7 +158,7 @@ Run final checks:
 - **Structured reasoning**: Systematically apply each framework and test every value candidate
 - **AskUserQuestion**: Dig deeper into non-negotiables, validate values feel authentic
 - **WebSearch**: Research competitor values pages and values-forward brand examples
-- **WebFetch**: Read competitor values pages in full — analyze their exact language to differentiate
+- **WebFetch**: Read competitor values pages in full to analyze their exact language and differentiate
 
 ## OUTPUT REQUIREMENTS
 
@@ -169,13 +169,13 @@ Deliver the complete values documentation using the Values Documentation Templat
 3. **Full Core Values** (3-4 with complete detail for each)
 4. **Differentiation Test Results** (Opposite, Sacrifice, Fire Someone)
 5. **Values in Practice** (Decision framework, Hiring filter, Product principles)
-6. **What We DON'T Value** (Anti-values)
+6. **What We Don't Value** (Anti-values)
 7. **Values Summary Card** (Quick reference)
 ```
 
 ## Guidelines
 
-- **Quality over quantity**: 3-4 values maximum — more dilutes everything
+- **Quality over quantity**: 3-4 values maximum. More dilutes everything
 - **Specific over generic**: If a competitor could claim it, it's not specific enough
 - **Actions over aspirations**: Values should describe actual behavior, not wishes
 - **Trade-offs required**: Real values require giving something up

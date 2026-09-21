@@ -3,15 +3,15 @@ name: brand-messaging-architecture
 description: Use when building a messaging framework, writing a value proposition, defining brand pillars or key messages, or organizing a messaging hierarchy across audiences. Keywords - messaging house, message layers, value proposition canvas, positioning template, Peep Laja, Osterwalder, Geoffrey Moore, April Dunford, StoryBrand, Andy Raskin strategic narrative, MECLABS.
 ---
 
-# Brand Messaging Architecture Framework
+# Brand messaging architecture framework
 
-Quick reference for developing brand messaging, value propositions, and brand pillars using established methodologies from leading strategists.
+Quick reference for developing brand messaging, value propositions, and brand pillars using established methodologies.
 
 > "A brand is not what you say it is. It's what THEY say it is." — Marty Neumeier
 
 ---
 
-## Key Distinction: Positioning vs. Messaging vs. Value Proposition
+## Key distinction: positioning vs. messaging vs. value proposition
 
 | Element | Definition | Answers | Audience |
 |---------|------------|---------|----------|
@@ -19,14 +19,14 @@ Quick reference for developing brand messaging, value propositions, and brand pi
 | **Messaging** | Content and narratives communicating positioning | "What do we say?" | External |
 | **Value Proposition** | Promise of value delivered to customers | "What do I get?" | External |
 
-**How They Work Together**:
-- Positioning determines WHAT makes you different
-- Messaging translates that into WHAT you say
-- Value Proposition explains WHAT customers gain
+**How they work together**:
+- Positioning determines what makes you different
+- Messaging translates that into what you say
+- Value Proposition explains what customers gain
 
 ---
 
-## The Messaging House Framework
+## The Messaging House framework
 
 The most popular visual framework for organizing messages hierarchically:
 
@@ -62,7 +62,7 @@ The most popular visual framework for organizing messages hierarchically:
 
 ---
 
-## Peep Laja's Message Layers Framework
+## Peep Laja's Message Layers framework
 
 Based on thousands of B2B message tests. Each layer must be addressed in order:
 
@@ -73,7 +73,7 @@ Based on thousands of B2B message tests. Each layer must be addressed in order:
 | **3. Value** | "What do I get?" | Core benefits and outcomes | "Automate 80% of repetitive tasks and launch campaigns 3x faster" |
 | **4. Differentiation** | "Why you over alternatives?" | What makes you uniquely better | "The only platform built specifically for Shopify merchants" |
 
-> **Critical Insight**: You must clear each layer before the next one matters. Brilliant differentiation means nothing if prospects don't first understand what you are.
+> **Key insight**: You must clear each layer before the next one matters. Brilliant differentiation means nothing if prospects don't first understand what you are.
 
 ---
 
@@ -107,7 +107,7 @@ The most widely used framework for developing value propositions:
 1. Start with Customer Profile: deeply understand jobs, pains, gains
 2. Map your offering to show how you address each
 3. Identify where pain relievers and gain creators align most strongly
-4. This intersection IS your value proposition
+4. This intersection is your value proposition
 
 ---
 
@@ -130,7 +130,7 @@ The most widely used framework for developing value propositions:
 
 ---
 
-## Geoffrey Moore Positioning Statement
+## Geoffrey Moore positioning statement
 
 The most widely used positioning template (from *Crossing the Chasm*):
 
@@ -141,7 +141,7 @@ The most widely used positioning template (from *Crossing the Chasm*):
 
 ---
 
-## April Dunford's Five Components of Positioning
+## April Dunford's five components of positioning
 
 1. **Competitive Alternatives**: What would customers use if your solution didn't exist?
 2. **Unique Attributes**: What features/capabilities do you have that alternatives lack?
@@ -149,7 +149,7 @@ The most widely used positioning template (from *Crossing the Chasm*):
 4. **Target Customer Characteristics**: Who cares most about that value?
 5. **Market Category**: What context makes your unique value obvious?
 
-**Her 10-Step Method:**
+**Her 10-step method:**
 1. Start with your best customers (those who bought quickly)
 2. Identify what they'd use if you didn't exist
 3. List your unique attributes vs. those alternatives
@@ -165,15 +165,15 @@ The most widely used positioning template (from *Crossing the Chasm*):
 
 ## Andy Raskin's Strategic Narrative
 
-**Traditional Approach ("The Arrogant Doctor"):**
+**Traditional approach ("The Arrogant Doctor"):**
 "You have a problem. We have the solution. Let me tell you why ours is best."
 *This is bragging, and prospects are skeptical.*
 
-**Strategic Narrative Approach ("The Humble Awakener"):**
+**Strategic Narrative approach ("The Humble Awakener"):**
 "The world has changed in a way that creates both great opportunity and great risk. Let me show you how to navigate this new world."
 *This is empathy, and prospects trust empathy.*
 
-**The 5 Elements:**
+**The 5 elements:**
 1. **Name a Big, Relevant Change**: Something prospects sense but haven't articulated
 2. **Show There Will Be Winners and Losers**: Urgency to act
 3. **Tease the Promised Land**: What success looks like for those who adapt
@@ -182,11 +182,11 @@ The most widely used positioning template (from *Crossing the Chasm*):
 
 ---
 
-## Donald Miller's StoryBrand Framework (SB7)
+## Donald Miller's StoryBrand framework (SB7)
 
 > **The customer is the hero, not your brand. Your brand is the guide (like Yoda, not Luke).**
 
-**The 7-Part Framework:**
+**The 7-part framework:**
 1. **A Character** (the customer) has...
 2. **A Problem** (villain, external, internal, philosophical)...
 3. **And Meets a Guide** (your brand)...
@@ -199,19 +199,19 @@ The most widely used positioning template (from *Crossing the Chasm*):
 
 ---
 
-## David Aaker's Three Types of Benefits
+## David Aaker's three types of benefits
 
 | Benefit Type | What It Is | Example |
 |--------------|------------|---------|
-| **Functional Benefit** | What the product DOES | "Cleans clothes in 30 minutes" |
-| **Emotional Benefit** | How it makes customers FEEL | "Feel confident and put-together" |
-| **Self-Expressive Benefit** | What it SAYS about the customer | "I'm someone who values my time" |
+| **Functional Benefit** | What the product does | "Cleans clothes in 30 minutes" |
+| **Emotional Benefit** | How it makes customers feel | "Feel confident and put-together" |
+| **Self-Expressive Benefit** | What it says about the customer | "I'm someone who values my time" |
 
-**Combined Value Statement**: Merge all three for a complete value proposition.
+**Combined value statement**: Merge all three for a complete value proposition.
 
 ---
 
-## The 5 Ps Brand Pillar Framework
+## The 5 Ps brand pillar framework
 
 The most widely accepted framework uses **5 brand pillars**:
 
@@ -227,7 +227,7 @@ The most widely accepted framework uses **5 brand pillars**:
 
 ---
 
-## Pillar-to-Messaging Hierarchy
+## Pillar-to-messaging hierarchy
 
 ```
 Brand Pillars (Strategic Foundation)
@@ -244,16 +244,16 @@ Proof Points (Evidence)
 
 ---
 
-## MECLABS Value Proposition Quality Tests
+## MECLABS value proposition quality tests
 
 | Criterion | Question | How to Improve |
 |-----------|----------|----------------|
 | **Appeal** | Is the benefit desirable to your target customer? | Ground in real customer research |
-| **Exclusivity** | Can only YOU claim this, or could competitors say the same? | Find what makes you genuinely unique |
+| **Exclusivity** | Can only you claim this, or could competitors say the same? | Find what makes you genuinely unique |
 | **Clarity** | Can customers understand it quickly and easily? | Simplify language, remove jargon |
 | **Credibility** | Is there evidence to support the claim? | Add proof points, testimonials, data |
 
-### Additional Tests
+### Additional tests
 
 **The "So What?" Test:**
 After each statement, ask "so what?" If you can't explain why customers should care, revise.
@@ -268,7 +268,7 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ---
 
-## Common Value Proposition Mistakes
+## Common value proposition mistakes
 
 | Mistake | Problem | Better Approach |
 |---------|---------|-----------------|
@@ -282,7 +282,7 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ---
 
-## Common Messaging Architecture Mistakes
+## Common messaging architecture mistakes
 
 1. **Skipping the Clarity layer**: Differentiation means nothing if they don't understand what you are
 2. **Too many pillars**: More than 5 dilutes focus
@@ -293,7 +293,7 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ---
 
-## Testing & Validation Methods
+## Testing & validation methods
 
 | Method | Best For | Key Considerations |
 |--------|----------|-------------------|
@@ -304,13 +304,13 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 | **Surveys** | Quantitative validation | Complement with qualitative data |
 | **Sales Team Feedback** | Real-world objections | What questions do prospects ask? |
 
-### The Say-Do Gap Warning
+### The say-do gap warning
 
-> What people SAY they'll pay and what they ACTUALLY pay are often very different. Test willingness to pay through BEHAVIOR, not stated intent.
+> What people say they'll pay and what they actually pay are often very different. Test willingness to pay through behavior, not stated intent.
 
 ---
 
-## Key Statistics
+## Key statistics
 
 - **Consistency builds trust**: 75% of shoppers expect consistency from brands regardless of channel
 - **Revenue impact**: Consistent branding across platforms can increase revenue by up to 23%
@@ -318,7 +318,7 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ---
 
-## Expert Wisdom
+## Expert wisdom
 
 | Expert | Insight |
 |--------|---------|
@@ -331,7 +331,7 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 
 ---
 
-## Universal Principles
+## Universal principles
 
 1. **Customer-first**: Great messaging starts with deep customer understanding
 2. **Clarity before cleverness**: Being understood is more important than being creative
@@ -346,30 +346,30 @@ Can someone understand what you do within 5 seconds of reading your homepage?
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Messaging Framework Document Template
-- Value Proposition Canvas Template
-- Messaging Pillar Template
-- Message Layers Assessment Template
-- Messaging House Visual Template
-- Quick Reference Card Template
+- Messaging framework document template
+- Value proposition canvas template
+- Messaging pillar template
+- Message layers assessment template
+- Messaging house visual template
+- Quick reference card template
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Value Proposition Development
+### During value proposition development
 - Use Value Proposition Canvas to map customer jobs/pains/gains
 - Apply Jobs-to-be-Done for deeper customer understanding
 - Write Geoffrey Moore positioning statement
 - Complete the "Only" Test for differentiation
 
-### During Messaging Architecture
+### During messaging architecture
 - Build the Messaging House structure
 - Apply Peep Laja's Message Layers in order
 - Define 3-5 messaging pillars with proof points
 - Create messaging hierarchy (primary → secondary → tertiary)
 
-### During Validation
+### During validation
 - Run MECLABS quality tests
 - Apply "So What?" and Clarity tests
 - Test with real customers before committing

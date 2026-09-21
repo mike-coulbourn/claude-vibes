@@ -3,68 +3,68 @@ name: platform-optimization
 description: Use when writing or adapting short-form or sponsored video content for a specific platform, such as TikTok, Instagram Reels, YouTube, or YouTube Shorts, or repurposing one script across platforms. Keywords - optimal video length, hook timing, captions, platform-native style, algorithm signals, sponsorship disclosure, cross-platform repurposing.
 ---
 
-# Platform Optimization for Sponsored Content
+# Platform optimization for sponsored content
 
 > **Time-sensitive content, last verified December 2025.** Algorithm weights, length thresholds, and penalty figures below describe platform behavior as of that date, and platforms change these without notice. The structural advice (native style, early hook, captions, one CTA) ages well; the specific numbers do not. When a recommendation hinges on a specific number, check current official platform guidance with WebSearch first, and tell the user if it has changed.
 
-## TikTok (2025 Algorithm Updates)
+## TikTok (2025 algorithm updates)
 
-### Critical Changes
+### Key changes
 - **Watch time now weighs 5x more** than likes or comments
 - **15-20 second engagement threshold** replaced old 3-5 second hook metric
 - **Completion rates determine 74%** of For You Page placements
 - Videos **60-180 seconds** achieve highest reach (2-3 min content drives 43.2% more views)
 - Content **under 30 seconds now faces algorithmic disadvantages**
 
-### Optimal Structure
+### Optimal structure
 - Hook in first **3 seconds** (71% of viewers decide here)
 - Target **75%+ completion rate**
 - Focus on watch time, not just likes
 - Engagement velocity in first hour predicts viral potential
 
-### TikTok Shop Affiliate Scripts
+### TikTok Shop affiliate scripts
 - Hook: "I can't believe this [product] actually [result]!"
 - Problem-solution narrative viewers relate to
 - Strong CTA: "Check the link if you want to grab one!" or "Tap the product tag"
 - Optimal length: **15-30 seconds for shop, 60-90 seconds for brand deals**
 - Post 5-10 high-quality videos daily for best results
 
-### Cross-Platform Warning
+### Cross-platform warning
 **January 2025**: Cross-posted content from other platforms penalized up to **40% in reach**. Create TikTok-native content.
 
 ---
 
 ## Instagram Reels (2025)
 
-### Key Ranking Factors
+### Key ranking factors
 1. **Watch time**: Primary factor
 2. **Likes per reach**: Engagement quality
 3. **Shares per reach**: Especially DM shares from non-followers
 
-### What Gets Pushed
+### What gets pushed
 - High saves, shares, comments
-- Trending audio (doesn't need to be #1 — audio should fit the Reel's vibe)
+- Trending audio (doesn't need to be #1, but the audio should fit the Reel's vibe)
 - Strong hooks with high-quality visuals
 - Content understandable without additional context
 
-### Optimal Length
+### Optimal length
 - **30-90 seconds** for engagement
 - Reels up to 3 minutes supported, but shorter performs better
 
-### Spring 2025 Update
-**3-second retention prioritized above all else**. Your hook is more important than ever.
+### Spring 2025 update
+**3-second retention prioritized above all else**. Your hook is the most important part.
 
-### Script Adaptations for Reels
-- Visual hook even more critical than TikTok
+### Script adaptations for Reels
+- Visual hook matters even more than on TikTok
 - Slightly more polished aesthetic expected
 - Captions essential (many watch without sound)
 - Encourage DM shares for algorithmic boost
 
 ---
 
-## YouTube Sponsorships
+## YouTube sponsorships
 
-### Placement Options
+### Placement options
 
 | Placement | Best For | Tips |
 |-----------|----------|------|
@@ -73,7 +73,7 @@ description: Use when writing or adapting short-form or sponsored video content 
 | **End-roll** | Post-value CTAs | Lowest attention |
 | **Dedicated video** | Deep dives | Charge 3-10x usual CPM |
 
-### Optimal Integration
+### Optimal integration
 - **Mid-roll placement** for highest engagement and conversions
 - **30-90 second integrations** feel most natural
 - Blend brand mentions into content naturally
@@ -81,7 +81,7 @@ description: Use when writing or adapting short-form or sponsored video content 
 - **125-150 words = 1 minute** of audio
 - Keep scripts **500-800 words** for longer integrations
 
-### Paddy Galloway's Approach
+### Paddy Galloway's approach
 1. Spend more time on pre-production than filming
 2. Create "curiosity loops" throughout the video
 3. Focus on Audience Retention graphs
@@ -89,14 +89,14 @@ description: Use when writing or adapting short-form or sponsored video content 
 
 ---
 
-## Cross-Platform Repurposing
+## Cross-platform repurposing
 
-### The 2025 Approach
+### The 2025 approach
 - A single 60-minute piece can become **10-15 targeted short videos**
 - Tools: Opus Clip, Repurpose.io, Descript
-- **39% of video marketers** report short-form generates superior ROI
+- **39% of video marketers** report short-form generates better ROI
 
-### Platform Customization Required
+### Platform customization required
 
 | Platform | Optimization |
 |----------|-------------|
@@ -105,16 +105,16 @@ description: Use when writing or adapting short-form or sponsored video content 
 | YouTube Shorts | 15-30 seconds optimal, hook-driven |
 | LinkedIn | Professional development angle |
 
-### Critical Rule
+### Key rule
 **Don't post the same clip across platforms.** Each platform requires customization beyond aspect ratio changes.
 
-**85% of Facebook videos** watched without sound — always add captions.
+**85% of Facebook videos** are watched without sound, so always add captions.
 
 ---
 
-## Platform-Specific Script Templates
+## Platform-specific script templates
 
-### TikTok Script (60 seconds)
+### TikTok script (60 seconds)
 
 ```
 [HOOK - 3s]
@@ -138,7 +138,7 @@ description: Use when writing or adapting short-form or sponsored video content 
 "[Clear call to action with code if applicable]"
 ```
 
-### YouTube Integration (60-90 seconds)
+### YouTube integration (60-90 seconds)
 
 ```
 [TRANSITION - 5s]
@@ -159,7 +159,7 @@ description: Use when writing or adapting short-form or sponsored video content 
 
 ---
 
-## Length Guidelines
+## Length guidelines
 
 | Platform | Optimal Length | Notes |
 |----------|---------------|-------|
@@ -172,7 +172,7 @@ description: Use when writing or adapting short-form or sponsored video content 
 
 ---
 
-## Platform-Specific Mistakes to Avoid
+## Platform-specific mistakes to avoid
 
 ### TikTok
 - ❌ Cross-posting from other platforms (40% reach penalty)

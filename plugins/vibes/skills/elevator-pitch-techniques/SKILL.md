@@ -3,15 +3,15 @@ name: elevator-pitch-techniques
 description: Use when writing or coaching a spoken brand pitch, such as an elevator pitch, one-liner, founder intro, or 10, 30, and 60 second variations, or when a pitch sounds written rather than spoken. Keywords - elevator pitch, one-liner, verbal pitch, StoryBrand SB7, Duarte Sparkline, Westfall CLARITY, Raskin strategic narrative, Golden Circle.
 ---
 
-# Elevator Pitch Techniques
+# Elevator pitch techniques
 
-Quick reference for crafting verbal brand summaries that sound natural when spoken, using proven methodologies from pitch coaches and brand strategists.
+Quick reference for crafting verbal brand summaries that sound natural when spoken, using methodologies from pitch coaches and brand strategists.
 
 > "The goal of an elevator pitch is not to close a deal but to spark enough interest for a follow-up conversation."
 
 ---
 
-## Foundational Statistics
+## Foundational statistics
 
 | Metric | Value | Implication |
 |--------|-------|-------------|
@@ -22,7 +22,7 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 
 ---
 
-## The 6 Core Frameworks
+## The 6 core frameworks
 
 ### 1. StoryBrand Framework (SB7): Donald Miller
 
@@ -30,13 +30,13 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 
 | Step | Element | Question |
 |------|---------|----------|
-| 1 | **Character** | What does your customer WANT? |
-| 2 | **Problem** | What PROBLEM stands in their way? (External, internal, philosophical) |
-| 3 | **Guide** | How does your brand act as their GUIDE? |
-| 4 | **Plan** | What STEPS do they need to follow? |
-| 5 | **Call to Action** | What ACTION should they take? |
-| 6 | **Success** | What SUCCESS will they achieve? |
-| 7 | **Failure** | What FAILURE do you help them avoid? |
+| 1 | **Character** | What does your customer want? |
+| 2 | **Problem** | What problem stands in their way? (External, internal, philosophical) |
+| 3 | **Guide** | How does your brand act as their guide? |
+| 4 | **Plan** | What steps do they need to follow? |
+| 5 | **Call to Action** | What action should they take? |
+| 6 | **Success** | What success will they achieve? |
+| 7 | **Failure** | What failure do you help them avoid? |
 
 **Template:**
 > "For [target customer] who [has this problem], [your brand] helps you [achieve desired outcome] by [your unique approach]. Unlike [alternatives], we [key differentiator]."
@@ -50,16 +50,16 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 **Core Principle:** Great communicators create tension by contrasting "what is" with "what could be."
 
 **The Process:**
-1. Start with **"What Is"** — the current painful reality
-2. Contrast with **"What Could Be"** — the better future
+1. Start with **"What Is"**, the current painful reality
+2. Contrast with **"What Could Be"**, the better future
 3. Alternate between the two throughout your pitch
-4. End with **"New Bliss"** — the transformed state
+4. End with **"New Bliss"**, the transformed state
 
 **Application:**
 - **What Is:** "Competition is becoming more ferocious..."
 - **What Could Be:** "...but we can disrupt that competition with a new approach."
 
-**The S.T.A.R. Moment:** Create **S**omething **T**hey'll **A**lways **R**emember — a moment so memorable it sticks long after the pitch ends.
+**The S.T.A.R. Moment:** Create **S**omething **T**hey'll **A**lways **R**emember, a moment so memorable it sticks long after the pitch ends.
 
 **When to Use:** Contrast between current/future state is powerful.
 
@@ -74,7 +74,7 @@ Quick reference for crafting verbal brand summaries that sound natural when spok
 | **C** | Captivate | Hook attention immediately |
 | **L** | Language | Use clear, jargon-free words |
 | **A** | Authenticity | Be true to yourself and your listener |
-| **R** | Relevance | Make it matter to THIS audience |
+| **R** | Relevance | Make it matter to this audience |
 | **I** | Inspiration | Connect to bigger purpose |
 | **T** | Tact | Read the room and adapt |
 | **Y** | Yes! | Find agreement and next steps |
@@ -138,11 +138,11 @@ Second blank: Your compelling difference
 
 **Never Start With:** Your product, headquarters, investors, clients, or anything about yourself.
 
-**When to Use:** There's a big industry shift to leverage.
+**When to Use:** There's a big industry shift to build on.
 
 ---
 
-## The 6 Hook Types
+## The 6 hook types
 
 | Type | Description | Example |
 |------|-------------|---------|
@@ -164,11 +164,11 @@ Create **S**omething **T**hey'll **A**lways **R**emember:
 
 ---
 
-## Time-Based Pitch Structures
+## Time-based pitch structures
 
-### One-Liner (10 seconds)
+### One-liner (10 seconds)
 
-The briefest explanation — for casual encounters and "What do you do?" moments.
+The briefest explanation, for casual encounters and "What do you do?" moments.
 
 **Template (Founder Institute):**
 > "My company, [name], is developing [a defined offering] to help [a defined audience] [solve a problem] with [secret sauce]."
@@ -177,22 +177,22 @@ The briefest explanation — for casual encounters and "What do you do?" moments
 
 ---
 
-### Elevator Pitch (30 seconds)
+### Elevator pitch (30 seconds)
 
-The classic format — approximately **75-120 words**.
+The classic format, approximately **75-120 words**.
 
 **Structure:**
-1. **Hook** (5 sec) — Grab attention
-2. **Problem** (7 sec) — What your customer struggles with
-3. **Solution** (8 sec) — How you help
-4. **Differentiation** (7 sec) — What's unique
-5. **Interest Close** (3 sec) — Invite follow-up
+1. **Hook** (5 sec): grab attention
+2. **Problem** (7 sec): what your customer struggles with
+3. **Solution** (8 sec): how you help
+4. **Differentiation** (7 sec): what's unique
+5. **Interest Close** (3 sec): invite follow-up
 
 ---
 
-### Extended Pitch (60 seconds)
+### Extended pitch (60 seconds)
 
-More depth — approximately **150-200 words**.
+More depth, approximately **150-200 words**.
 
 **Adds to 30-second version:**
 - More detailed storytelling
@@ -201,7 +201,7 @@ More depth — approximately **150-200 words**.
 
 ---
 
-### Founder Story Pitch
+### Founder story pitch
 
 When founder background adds credibility or emotional connection.
 
@@ -212,9 +212,9 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-## Verbal Delivery Techniques
+## Verbal delivery techniques
 
-### The 3 C's of Delivery
+### The 3 C's of delivery
 
 | C | Element | Description |
 |---|---------|-------------|
@@ -234,25 +234,25 @@ When founder background adds credibility or emotional connection.
 - Speaking too fast muddles your message: slow down
 - Talking slower emphasizes important or complicated parts
 
-### Strategic Pauses
+### Strategic pauses
 
 - Create anticipation **before** key points
 - Allow information to **sink in**
 - Emphasize important statements by **pausing after** them
 - Don't underestimate the **power of silence**
 
-### Sounding Natural vs. Rehearsed
+### Sounding natural vs. rehearsed
 
-- Practice with **bullet points, NOT a memorized script**
+- Practice with **bullet points, not a memorized script**
 - Make **gradual** changes in tone, pitch, and pace
-- Inflection must be **"organic"** — you cannot fake it
+- Inflection must be **"organic"**, and you cannot fake it
 - Record yourself and listen for **robotic patterns**
 
 > "The best elevator pitch isn't polished or memorized, like a college final exam. It's natural and sporadic, like chatting up a good friend you haven't seen in months." — Seth Godin
 
 ---
 
-## Brand vs. Investor Pitch
+## Brand vs. investor pitch
 
 | Aspect | Investor Pitch | Brand/Marketing Pitch |
 |--------|----------------|----------------------|
@@ -264,7 +264,7 @@ When founder background adds credibility or emotional connection.
 | **Hero** | The company/founders | The customer |
 | **Proof** | Revenue, users, growth | Testimonials, transformations |
 
-### Brand Pitch Must-Haves
+### Brand pitch must-haves
 
 1. **Emotional Connection**: Stories make people feel; data makes them zone out
 2. **Customer as Hero**: Their transformation, not your features
@@ -274,19 +274,19 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-## 14 Common Mistakes
+## 14 common mistakes
 
-### Content Mistakes
+### Content mistakes
 
 | # | Mistake | Problem | Fix |
 |---|---------|---------|-----|
 | 1 | **Too Vague or Generic** | Could apply to any company | Be radically specific about your value |
-| 2 | **Focusing on Yourself** | Customers care how you help THEM | Lead with their problem |
+| 2 | **Focusing on Yourself** | Customers care how you help them | Lead with their problem |
 | 3 | **Industry Jargon** | Alienates non-experts | Use words a smart friend would understand |
 | 4 | **Overused Buzzwords** | Sounds presumptuous | Avoid: "synergies," "empowering," "revolutionary," "disruptive" |
-| 5 | **Not Explaining Value** | Features without benefits | Focus on what they GET |
+| 5 | **Not Explaining Value** | Features without benefits | Focus on what they get |
 
-### Delivery Mistakes
+### Delivery mistakes
 
 | # | Mistake | Problem | Fix |
 |---|---------|---------|-----|
@@ -296,7 +296,7 @@ When founder background adds credibility or emotional connection.
 | 9 | **Unprepared or Nervous** | Fumbling, forgetting | Practice to be confident, not robotic |
 | 10 | **Failing to Engage** | No connection | Eye contact, read reactions, adapt |
 
-### Structural Mistakes
+### Structural mistakes
 
 | # | Mistake | Problem | Fix |
 |---|---------|---------|-----|
@@ -307,7 +307,7 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-## 7-Day Testing & Iteration Framework
+## 7-day testing & iteration framework
 
 | Day | Activity | Focus |
 |-----|----------|-------|
@@ -318,7 +318,7 @@ When founder background adds credibility or emotional connection.
 | 6 | Review what worked | Iterate on CTA |
 | 7 | Finalize + document 2 backup variants | Ready to deploy |
 
-### How to Test
+### How to test
 
 1. **Read out loud**: Does it sound natural?
 2. **Time yourself**: Is it the right length?
@@ -326,7 +326,7 @@ When founder background adds credibility or emotional connection.
 4. **Test with different audiences**: How does each respond?
 5. **Use at real events**: Do they ask follow-ups?
 
-### Measuring Effectiveness
+### Measuring effectiveness
 
 - Track number of follow-up conversations
 - Count referrals or opportunities generated
@@ -335,9 +335,9 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-## Real Brand Example Patterns
+## Real brand example patterns
 
-### Airbnb Pattern
+### Airbnb pattern
 
 > "Tired of expensive hotels and lame vacation rentals? With Airbnb, you can affordably book unique homes and spaces from local hosts for your next trip. We're like the eBay of accommodations—our community already has over 2 million listings worldwide."
 
@@ -345,7 +345,7 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-### Dropbox Pattern
+### Dropbox pattern
 
 > "Tired of emailing files to yourself to access them from different computers and devices? Dropbox is a service that creates a shared folder accessible from anywhere—your desktop, laptop, phone, and the web. Any files you save to it are automatically synced and backed up in the cloud."
 
@@ -353,7 +353,7 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-### SpaceX Pattern
+### SpaceX pattern
 
 > "Do you know how crazy expensive it is to launch stuff into space? Well, SpaceX builds affordable rockets and spacecraft to make space exploration and travel possible for everyone—not just governments."
 
@@ -361,7 +361,7 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-### What Makes These Work
+### What makes these work
 
 1. **Start with relatable problem**: "Tired of..." or provocative question
 2. **Use simple, jargon-free language**: Anyone can understand
@@ -371,7 +371,7 @@ When founder background adds credibility or emotional connection.
 
 ---
 
-## CTA Options by Context
+## CTA options by context
 
 ### For Meetings/Calls
 
@@ -388,11 +388,11 @@ When founder background adds credibility or emotional connection.
 - "Could I get your card and follow up by email?"
 - "Would it be okay if I sent you some more information?"
 
-**Key Principle:** Make the ask simple with little required on their part — you just met this person.
+**Key Principle:** Make the ask simple with little required on their part, since you just met this person.
 
 ---
 
-## 10 Key Principles
+## 10 key principles
 
 | # | Principle | Insight |
 |---|-----------|---------|
@@ -412,36 +412,36 @@ When founder background adds credibility or emotional connection.
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Strategic Foundation Template
-- One-Liner (10s) Template
-- 30-Second Pitch Template
-- 60-Second Pitch Template
-- Founder Story Pitch Template
-- Hook Options Template
-- CTA Options Template
-- Context Variations Template
-- Testing Checklist Template
-- Quick Reference Card Template
-- Output Validation Checklist
+- Strategic foundation template
+- One-liner (10s) template
+- 30-second pitch template
+- 60-second pitch template
+- Founder story pitch template
+- Hook options template
+- CTA options template
+- Context variations template
+- Testing checklist template
+- Quick reference card template
+- Output validation checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Pitch Development
+### During pitch development
 - Complete positioning work first (value proposition, Onlyness)
 - Select primary framework based on brand needs
 - Craft hooks using the 6 proven types
 - Create time-based variations (10s, 30s, 60s)
 - Add delivery guidance (pauses, emphasis)
 
-### During Evaluation
+### During evaluation
 - Apply the 3 C's test (Clarity, Conciseness, Confidence)
-- Check against 14 Common Mistakes
+- Check against the 14 common mistakes
 - Read aloud for natural flow
 - Verify "tell me more" potential
 
-### During Finalization
+### During finalization
 - Test with target audience
 - Create context variations
 - Document CTA options

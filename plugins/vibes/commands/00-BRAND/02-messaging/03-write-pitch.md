@@ -4,11 +4,11 @@ argument-hint: Optional pitch context or audience focus
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Write Elevator Pitches
+# Write elevator pitches
 
-You are helping a startup founder create elevator pitches for different situations. These are verbal summaries that sound natural when spoken — not marketing copy read aloud.
+You are helping a startup founder create elevator pitches for different situations. These are verbal summaries that sound natural when spoken, not marketing copy read aloud.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (optional):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -41,23 +41,23 @@ You are helping a startup founder create elevator pitches for different situatio
 
 Optional pitch context: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-elevator-pitch-writer agent.** Do not write pitches yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-elevator-pitch-writer agent.** Do not write pitches yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Help founder practice and refine
 6. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -67,11 +67,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-elevator-pitch-writer agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-elevator-pitch-writer"` and this prompt:
 
@@ -85,33 +85,33 @@ Create the brand elevator pitch variations. ultrathink
 **Mission (HOW)**: [From purpose-mission-vision.md]
 **Vision (WHERE)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
+**Positioning**: [From positioning.md: the territory we claim]
 **Onlyness Statement**: [From positioning.md]
-**Tagline**: [From tagline.md — if available]
+**Tagline**: [From tagline.md: if available]
 **Voice Traits**: [From brand-personality-voice.md]
 
 ## VALUE PROPOSITION
 
 **Core Value Proposition**: [From messaging-framework.md]
-**Key Benefits**: [From messaging-framework.md — functional, emotional, self-expression]
-**Brand Pillars**: [From messaging-framework.md — the key themes]
+**Key Benefits**: [From messaging-framework.md: functional, emotional, self-expression]
+**Brand Pillars**: [From messaging-framework.md: the key themes]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**Customer Problem**: [From audience research — main pain point]
-**Customer Language**: [From audience research — how they talk about the problem]
-**Desired Outcome**: [From audience research — what they want]
+**Who They Serve**: [From audience research: primary customer segment]
+**Customer Problem**: [From audience research: main pain point]
+**Customer Language**: [From audience research: how they talk about the problem]
+**Desired Outcome**: [From audience research: what they want]
 
 ## FOUNDER CONTEXT
 
-**Founder Story**: [From founder brief — personal connection to the problem]
-**Origin Moment**: [From founder brief — the catalyst for starting]
-**Founder Vision**: [From founder brief — where they want to go]
+**Founder Story**: [From founder brief: personal connection to the problem]
+**Origin Moment**: [From founder brief: the catalyst for starting]
+**Founder Vision**: [From founder brief: where they want to go]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -121,23 +121,23 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Synthesize Brand Inputs
+### Phase 1: Synthesize brand inputs
 Analyze all inputs to understand:
 - How purpose, values, and positioning should inform pitch
 - What makes this brand the "only" one
 - What the audience cares about most
 - How the brand voice should sound when spoken
 
-### Phase 2: Select Primary Framework
+### Phase 2: Select primary framework
 Choose the primary framework based on brand needs:
 - **StoryBrand (SB7)**: When customer transformation is central
 - **Golden Circle**: When purpose is the differentiator
 - **Onlyness**: When category position is key
-- **Strategic Narrative**: When there's a big industry shift to leverage
+- **Strategic Narrative**: When there's a big industry shift to build on
 - **Sparkline**: When contrast between current/future state is powerful
 - **CLARITY**: When authenticity and audience connection are priorities
 
-### Phase 3: Craft Time-Based Variations
+### Phase 3: Craft time-based variations
 Create pitches for different durations:
 
 **ONE-LINER (10 seconds):**
@@ -158,7 +158,7 @@ Create pitches for different durations:
 - Weaves personal story with business
 - Use when authenticity matters most
 
-### Phase 4: Add Delivery Guidance
+### Phase 4: Add delivery guidance
 For each pitch, include:
 - Pace and emphasis guidance
 - Strategic pause moments
@@ -166,7 +166,7 @@ For each pitch, include:
 - Natural pause points
 - The 3 C's check (Clarity, Conciseness, Confidence)
 
-### Phase 5: Prepare for Success
+### Phase 5: Prepare for success
 Document:
 - 3+ Hook options using different hook types
 - CTA options by context (meetings, demo, connection)
@@ -189,7 +189,7 @@ Deliver the complete pitch documentation using the Elevator Pitch Document Templ
 3. **One-Liner** (pitch, hook type, delivery notes, alternatives)
 4. **30-Second Elevator Pitch** (pitch, What Is/Could Be, structure breakdown, S.T.A.R. moment, delivery notes, follow-up prep)
 5. **60-Second Extended Pitch** (pitch, structure, what it adds, when to use)
-6. **Founder Story Pitch** (if relevant — story elements, when stronger)
+6. **Founder Story Pitch** (if relevant: story elements, when stronger)
 7. **Hook Options** (3+ from different types with contexts)
 8. **CTA Options** (meetings, demo, connection)
 9. **Context Variations** (networking, investor, customer, press, social)
@@ -197,7 +197,7 @@ Deliver the complete pitch documentation using the Elevator Pitch Document Templ
 11. **Quick Reference Card** (one-page summary)
 ```
 
-## After Agent Returns
+## After agent returns
 
 Use AskUserQuestion to help founder practice and select:
 
@@ -211,7 +211,7 @@ Use AskUserQuestion to help founder practice and select:
 
 ## Guidelines
 
-- **These must sound natural SPOKEN**: read them aloud
+- **These must sound natural spoken**: read them aloud
 - **Avoid marketing jargon** that sounds awkward verbally
 - **Include natural pause points**: silence is powerful
 - **The founder should feel comfortable** saying these

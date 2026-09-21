@@ -11,37 +11,37 @@ Quick reference for selecting brand archetypes using the Mark-Pearson methodolog
 
 ---
 
-## Psychological Foundations
+## Psychological foundations
 
-### Why Archetypes Work
+### Why archetypes work
 
-Carl Jung proposed that beyond our personal unconscious lies a **collective unconscious**—a shared psychological inheritance containing archetypes: universal symbols, themes, and characters that appear across all human societies.
+Carl Jung proposed that beyond our personal unconscious lies a **collective unconscious**, a shared psychological inheritance containing archetypes: universal symbols, themes, and characters that appear across all human societies.
 
-**Key Insights:**
+**Key insights:**
 1. **Subconscious Pattern Recognition**: Our brains respond to archetypal stories as deeply familiar
 2. **The 95% Rule**: According to Harvard Professor Gerald Zaltman, 95% of purchasing decisions are made subconsciously
 3. **Mirror Neuron Response**: When encountering clear archetypal expression, our mirror neurons fire as if we were embodying that archetype ourselves
 4. **Archetypes bypass the intellectual mind** and produce feelings that lead to brand loyalty
 
-### The Business Case
+### The business case
 
 A six-year Young & Rubicam study found that **brands most clearly aligned with a single archetype were the most profitable**.
 
 ---
 
-## The 70/30 Rule (Core Methodology)
+## The 70/30 rule (core methodology)
 
-**Primary Archetype (70%)**: Your core personality that represents the majority of your brand. Any less and your personality will be confusing—you'll struggle to connect through familiarity.
+**Primary Archetype (70%)**: Your core personality that represents the majority of your brand. Any less and your personality will be confusing. You'll struggle to connect through familiarity.
 
 **Secondary "Influencer" Archetype (30%)**: Left to spend on differentiation. This is where you stand out from competitors who share your primary archetype.
 
-### Strategic Choice
+### Strategic choice
 - **Align with industry expectation** (safety, meets customer expectations)
 - **Go against the grain** (differentiation opportunity, but riskier)
 
 ---
 
-## The Four Motivation Quadrants
+## The four motivation quadrants
 
 The 12 archetypes are organized into four fundamental human motivations:
 
@@ -54,7 +54,7 @@ The 12 archetypes are organized into four fundamental human motivations:
 
 ---
 
-## The 12 Archetypes Quick Reference
+## The 12 archetypes quick reference
 
 | Archetype | Motto | Core Desire | Greatest Fear | Gift |
 |-----------|-------|-------------|---------------|------|
@@ -75,14 +75,14 @@ The 12 archetypes are organized into four fundamental human motivations:
 
 ## R-O-A-D Map Framework (Kaye Putnam)
 
-**R - Review** your brand values, audience, and competitive landscape
+**R - Review** your brand values, audience, and competitors
 **O - Observe** how each archetype feels when applied to your brand
 **A - Align** with your business goals and ideal client
 **D - Decide** on primary (dominant) and secondary (influencer) archetypes
 
 ---
 
-## Industry Default Archetypes
+## Industry default archetypes
 
 | Industry | Default Archetype | Notes |
 |----------|-------------------|-------|
@@ -97,9 +97,9 @@ The 12 archetypes are organized into four fundamental human motivations:
 
 ---
 
-## Archetype Combinations
+## Archetype combinations
 
-### Complementary (These Work Well)
+### Complementary (these work well)
 
 | Primary | Secondary | Effect | Example |
 |---------|-----------|--------|---------|
@@ -111,7 +111,7 @@ The 12 archetypes are organized into four fundamental human motivations:
 | Creator | Sage | Innovation with expertise | Adobe |
 | Explorer | Outlaw | Adventure with counter-culture | Patagonia |
 
-### Problematic (Use with Caution)
+### Problematic (use with caution)
 
 | Combination | Conflict |
 |-------------|----------|
@@ -123,7 +123,7 @@ The 12 archetypes are organized into four fundamental human motivations:
 
 ---
 
-## Customer Journey Archetype Strategy
+## Customer journey archetype strategy
 
 Different archetypes can be relevant at different stages:
 
@@ -137,7 +137,7 @@ Different archetypes can be relevant at different stages:
 
 ---
 
-## Common Mistakes & Anti-Patterns
+## Common mistakes & anti-patterns
 
 | # | Mistake | The Fix |
 |---|---------|---------|
@@ -151,7 +151,7 @@ Different archetypes can be relevant at different stages:
 
 ---
 
-## Shadow Sides (Weaknesses to Avoid)
+## Shadow sides (weaknesses to avoid)
 
 | Archetype | Shadow Side | What to Avoid |
 |-----------|-------------|---------------|
@@ -170,7 +170,7 @@ Different archetypes can be relevant at different stages:
 
 ---
 
-## Selection Validation Tests
+## Selection validation tests
 
 Apply these tests before finalizing archetype selection:
 
@@ -185,18 +185,18 @@ Apply these tests before finalizing archetype selection:
 
 ---
 
-## Differentiating Within an Archetype
+## Differentiating within an archetype
 
 When competitors share your archetype:
 
 1. **Add a secondary archetype** for unique flavor
 2. **Go deeper into sub-archetypes**: find unique angle within archetype
 3. **Own specific territories**: causes, aesthetics, customer segments
-4. **Develop unique voice** within archetype — Nike vs. FedEx are both Hero
+4. **Develop unique voice** within archetype. Nike vs. FedEx are both Hero
 
 ---
 
-## Key Principles
+## Key principles
 
 ### From Mark & Pearson
 - "Archetypes are the heartbeat of a brand"
@@ -209,7 +209,7 @@ When competitors share your archetype:
 - Focus on differentiation and "onliness"
 - Archetypes are one tool in the toolkit, not the entire strategy
 
-### Core Truths
+### Core truths
 1. **Archetypes are shortcuts to meaning**: they accelerate emotional connection
 2. **Consistency compounds**: consistent expression builds trust (up to 23% revenue increase)
 3. **Primary archetype clarity beats complexity**: one clear archetype outperforms blends
@@ -221,34 +221,34 @@ When competitors share your archetype:
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Archetype Selection Worksheet
-- Archetype Profile Template
-- Competitive Archetype Mapping Template
-- Archetype Combination Validation Template
-- Archetype Expression Guide Template
-- Quick Reference Card Template
-- Full Archetype Documentation Template
+- Archetype selection worksheet
+- Archetype profile template
+- Competitive archetype mapping template
+- Archetype combination validation template
+- Archetype expression guide template
+- Quick reference card template
+- Full archetype documentation template
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Competitive Analysis
+### During competitive analysis
 - Map competitors to archetypes
 - Identify archetype gaps in market
 - Find differentiation opportunities
 
-### During Archetype Selection
+### During archetype selection
 - Review all 12 archetypes against brand values
 - Apply the 70/30 rule for primary/secondary
 - Validate combinations are complementary
 
-### During Archetype Validation
+### During archetype validation
 - Run all 6 validation tests
 - Check against common mistakes
 - Assess shadow side mitigation
 
-### During Final Documentation
+### During final documentation
 - Include complete archetype profiles
 - Document expression guidelines
 - Provide quick reference card

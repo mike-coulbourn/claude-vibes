@@ -1,4 +1,4 @@
-# Visual Identity Direction Templates
+# Visual identity direction templates
 
 Reusable templates for documenting visual identity direction and creative briefing.
 
@@ -6,14 +6,14 @@ Reusable templates for documenting visual identity direction and creative briefi
 
 ## Contents
 
-- [Visual Identity Direction Document Template](#visual-identity-direction-document-template)
-- [Creative Brief Template](#creative-brief-template)
-- [Mood Board Description Template](#mood-board-description-template)
-- [Logo Design Brief Template](#logo-design-brief-template)
-- [Photography Style Guide Template](#photography-style-guide-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Visual identity direction document template](#visual-identity-direction-document-template)
+- [Creative brief template](#creative-brief-template)
+- [Mood board description template](#mood-board-description-template)
+- [Logo design brief template](#logo-design-brief-template)
+- [Photography style guide template](#photography-style-guide-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Visual Identity Direction Document Template
+## Visual identity direction document template
 
 Use this complete structure for final visual direction documentation:
 
@@ -98,7 +98,7 @@ Where this brand should sit visually:
 | [C] | [Description] | [How we'll be different] |
 
 **Visual white space opportunity:**
-[Where competitors aren't — our opportunity]
+[Where competitors aren't, our opportunity]
 
 ---
 
@@ -107,7 +107,7 @@ Where this brand should sit visually:
 ### Overall Aesthetic
 
 **Detailed Description:**
-[Rich description of the overall visual feeling — what someone should feel when they see brand materials]
+[Rich description of the overall visual feeling: what someone should feel when they see brand materials]
 
 ### Visual References to Explore
 
@@ -358,9 +358,9 @@ Should feel: [Qualities]
 ### Application Priorities
 
 **Get these right first:**
-1. [Priority 1 — e.g., website]
-2. [Priority 2 — e.g., social media]
-3. [Priority 3 — e.g., business cards]
+1. [Priority 1, e.g., website]
+2. [Priority 2, e.g., social media]
+3. [Priority 3, e.g., business cards]
 
 ### Design Principles Checklist
 
@@ -402,7 +402,7 @@ The visual identity is successful if:
 
 ---
 
-## Creative Brief Template
+## Creative brief template
 
 ```markdown
 # Creative Brief: [Project Name]
@@ -423,7 +423,7 @@ The visual identity is successful if:
 ## Target Audience
 
 **Primary Audience:**
-[Detailed description — who they are, what they value, how they think]
+[Detailed description: who they are, what they value, how they think]
 
 **What do they currently believe?**
 [Current perception or behavior]
@@ -501,7 +501,7 @@ The visual identity is successful if:
 
 ---
 
-## Mood Board Description Template
+## Mood board description template
 
 ```markdown
 ## Mood Board: [Direction Name]
@@ -527,8 +527,8 @@ The visual identity is successful if:
 
 ### Typography Feel
 
-**Headlines:** [Description of feeling — bold, refined, playful, etc.]
-**Body:** [Description of feeling — readable, modern, classic, etc.]
+**Headlines:** [Description of feeling: bold, refined, playful, etc.]
+**Body:** [Description of feeling: readable, modern, classic, etc.]
 **Reference fonts to explore:** [Font names]
 
 ---
@@ -558,7 +558,7 @@ The visual identity is successful if:
 ### Strategic Connection
 
 **Why this direction works for the brand:**
-[Explanation connecting to brand strategy — purpose, values, positioning, archetype]
+[Explanation connecting to brand strategy: purpose, values, positioning, archetype]
 
 **Brand attributes it expresses:**
 - [Attribute 1] → [How this mood board expresses it]
@@ -577,7 +577,7 @@ The visual identity is successful if:
 
 ---
 
-## Logo Design Brief Template
+## Logo design brief template
 
 ```markdown
 # Logo Design Brief: [Brand Name]
@@ -712,7 +712,7 @@ The visual identity is successful if:
 
 ---
 
-## Photography Style Guide Template
+## Photography style guide template
 
 ```markdown
 # Photography Style Guide: [Brand Name]
@@ -745,10 +745,10 @@ The visual identity is successful if:
 ## Composition
 
 **Framing:**
-- [Framing approach — tight, loose, centered, rule of thirds]
+- [Framing approach: tight, loose, centered, rule of thirds]
 
 **Perspective:**
-- [Camera angle guidance — eye level, elevated, etc.]
+- [Camera angle guidance: eye level, elevated, etc.]
 
 **Negative Space:**
 - [How much, where to use it, purpose]
@@ -763,7 +763,7 @@ The visual identity is successful if:
 - Quality: [Soft/diffused / Hard/directional]
 
 **Mood:**
-- [Description — bright and airy, moody and dramatic, etc.]
+- [Description: bright and airy, moody and dramatic, etc.]
 
 **Color temperature:**
 - [Warm / Cool / Neutral]
@@ -774,7 +774,7 @@ The visual identity is successful if:
 
 **Saturation:** [Vibrant / Muted / Natural]
 **Contrast:** [High / Medium / Low]
-**Color grading:** [Specific direction — warm shadows, cool highlights, etc.]
+**Color grading:** [Specific direction: warm shadows, cool highlights, etc.]
 
 **Colors to emphasize:**
 - [Color 1]: [When/where]
@@ -796,7 +796,7 @@ The visual identity is successful if:
 - [Emotional range]
 
 **Wardrobe:**
-- [Clothing direction — casual, professional, branded, etc.]
+- [Clothing direction: casual, professional, branded, etc.]
 
 **Poses:**
 - [Active vs. static]
@@ -842,7 +842,7 @@ The visual identity is successful if:
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 Before finalizing visual direction documentation, verify:
 

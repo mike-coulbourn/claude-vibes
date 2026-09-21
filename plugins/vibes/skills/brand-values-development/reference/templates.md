@@ -1,4 +1,4 @@
-# Brand Values Development Templates
+# Brand values development templates
 
 Structured templates for values discovery, testing, and documentation.
 
@@ -6,21 +6,21 @@ Structured templates for values discovery, testing, and documentation.
 
 ## Contents
 
-- [Values Discovery Worksheet](#values-discovery-worksheet)
-- [Values Category Assessment Template](#values-category-assessment-template)
-- [Differentiation Test Template](#differentiation-test-template)
-- [Behavior Mapping Template](#behavior-mapping-template)
-- [Values Documentation Template](#values-documentation-template)
-- [Values Validation Checklist](#values-validation-checklist)
-- [Values Summary Card Template](#values-summary-card-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Values discovery worksheet](#values-discovery-worksheet)
+- [Values category assessment template](#values-category-assessment-template)
+- [Differentiation test template](#differentiation-test-template)
+- [Behavior mapping template](#behavior-mapping-template)
+- [Values documentation template](#values-documentation-template)
+- [Values validation checklist](#values-validation-checklist)
+- [Values summary card template](#values-summary-card-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Values Discovery Worksheet
+## Values discovery worksheet
 
 Use this worksheet to guide the values discovery conversation.
 
 ```
-### Values Discovery Worksheet
+### Values discovery worksheet
 
 **Organization**: _______________
 **Date**: _______________
@@ -122,7 +122,7 @@ Based on discovery, list potential values:
 
 ---
 
-## Values Category Assessment Template
+## Values category assessment template
 
 Use Lencioni's framework to categorize proposed values.
 
@@ -190,7 +190,7 @@ Values checked as Permission-to-Play:
 1. _______________________________________________
 2. _______________________________________________
 
-**Note**: Acknowledge but don't feature these — they're expected of everyone
+**Note**: acknowledge but don't feature these, since they're expected of everyone
 
 ---
 
@@ -204,7 +204,7 @@ Values checked as Accidental:
 
 ---
 
-## Differentiation Test Template
+## Differentiation test template
 
 Apply all six tests to ensure values are distinctive.
 
@@ -222,8 +222,8 @@ Apply all six tests to ensure values are distinctive.
 The opposite of this value is: _______________________________________________
 
 Could a company legitimately claim this opposite?
-[ ] Yes — This IS a distinctive value
-[ ] No — This is NOT distinctive (table stakes)
+[ ] Yes, this is a distinctive value
+[ ] No, this is not distinctive (table stakes)
 
 **Examples of companies with opposite**: _______________________________________________
 
@@ -236,8 +236,8 @@ Could a company legitimately claim this opposite?
 To live [value], we sacrifice: _______________________________________________
 
 Could another company value what we sacrifice?
-[ ] Yes — This IS a distinctive trade-off
-[ ] No — No real sacrifice, not distinctive
+[ ] Yes, this is a distinctive trade-off
+[ ] No, no real sacrifice, not distinctive
 
 **Company that values our antivalue**: _______________________________________________
 
@@ -252,8 +252,8 @@ Could another company value what we sacrifice?
 We are the only _______________ that _______________________________________________
 
 **Can competitors make this same claim?**
-[ ] No — This IS distinctive
-[ ] Yes — Need to sharpen
+[ ] No, this is distinctive
+[ ] Yes, need to sharpen
 
 ---
 
@@ -266,8 +266,8 @@ We are the only _______________ that ___________________________________________
 _______________________________________________
 
 **Would we actually make that choice?**
-[ ] Yes, we would/have — This IS a real value
-[ ] Probably not — This is aspirational only
+[ ] Yes, we would or have, so this is a real value
+[ ] Probably not, this is aspirational only
 
 **Example of hard choice made**: _______________________________________________
 
@@ -284,8 +284,8 @@ _______________________________________________
 _______________________________________________
 
 **Is ours specific enough?**
-[ ] Yes — Concrete and observable
-[ ] No — Needs more specificity
+[ ] Yes, concrete and observable
+[ ] No, needs more specificity
 
 ---
 
@@ -293,8 +293,8 @@ _______________________________________________
 
 **Question**: Would we fire a high performer who violated this value?
 
-[ ] Yes — This IS a core value
-[ ] No — This is NOT truly core
+[ ] Yes, this is a core value
+[ ] No, this is not truly core
 
 **Evidence/Reasoning**: _______________________________________________
 
@@ -312,14 +312,14 @@ _______________________________________________
 | Fire Someone Test | Pass/Fail | |
 
 **Overall Verdict**:
-[ ] **DISTINCTIVE** — Passes 5-6 tests
-[ ] **NEEDS WORK** — Passes 3-4 tests, refine wording
-[ ] **NOT DISTINCTIVE** — Passes 0-2 tests, replace or eliminate
+[ ] **DISTINCTIVE**: passes 5-6 tests
+[ ] **NEEDS WORK**: passes 3-4 tests, refine wording
+[ ] **NOT DISTINCTIVE**: passes 0-2 tests, replace or eliminate
 ```
 
 ---
 
-## Behavior Mapping Template
+## Behavior mapping template
 
 Operationalize each value using Brene Brown's process.
 
@@ -350,7 +350,7 @@ When we're living this value, you'll see:
 
 #### Observable Unaligned Behaviors
 
-When we're NOT living this value, you'll see:
+When we're not living this value, you'll see:
 
 1. _______________________________________________
 2. _______________________________________________
@@ -382,11 +382,11 @@ The sneaky ways this value erodes over time:
 
 ---
 
-#### What This Value is NOT
+#### What this value is not
 
 Clarify to prevent misinterpretation:
 
-This value does NOT mean: _______________________________________________
+This value does not mean: _______________________________________________
 
 ---
 
@@ -403,7 +403,7 @@ Concrete example of how this value guides a real decision:
 
 ---
 
-## Values Documentation Template
+## Values documentation template
 
 Use this format when documenting final values.
 
@@ -422,10 +422,10 @@ Use this format when documenting final values.
 [The 2-3 unchanging values upon which the organization is founded]
 
 ### Aspirational Values (If Any)
-[Values being cultivated but not yet fully lived—label honestly]
+[Values being cultivated but not yet fully lived, labeled honestly]
 
 ### Permission-to-Play Values (Table Stakes)
-[Values required to participate in the market—acknowledged but not featured]
+[Values required to participate in the market, acknowledged but not featured]
 
 ---
 
@@ -434,7 +434,7 @@ Use this format when documenting final values.
 ### Value #1: [Value Name]
 
 **The Value:**
-> [2-3 word value name] — [Verb-based expression of the value]
+> [2-3 word value name]: [Verb-based expression of the value]
 
 **What It Means:**
 [Plain language explanation]
@@ -456,7 +456,7 @@ Use this format when documenting final values.
 - In **product**: [How the product reflects this value]
 - In **communication**: [How messaging reflects this value]
 
-**What It's NOT:**
+**What it's not:**
 [Clarify to prevent misinterpretation]
 
 **Slippery Behaviors to Watch:**
@@ -534,7 +534,7 @@ When making a decision, ask:
 
 ---
 
-## What We DON'T Value (Anti-Values)
+## What we don't value (anti-values)
 
 1. **We don't value [anti-value]**: [Explanation]
 2. **We don't value [anti-value]**: [Explanation]
@@ -553,12 +553,12 @@ When making a decision, ask:
 
 ---
 
-## Values Validation Checklist
+## Values validation checklist
 
 Quick validation before finalizing values.
 
 ```
-### Values Validation Checklist
+### Values validation checklist
 
 **Organization**: _______________
 **Values Being Validated**: _______________
@@ -606,7 +606,7 @@ For each value:
 #### Operationalization Quality
 
 - [ ] Each value has 3-5 observable behaviors
-- [ ] Aligned AND unaligned behaviors defined
+- [ ] Aligned and unaligned behaviors defined
 - [ ] Slippery behaviors identified
 - [ ] Context-specific examples provided
 
@@ -641,14 +641,14 @@ For each value:
 
 #### Validation Result
 
-[ ] **APPROVED** — Ready to implement
-[ ] **NEEDS REFINEMENT** — Issues: _______________
-[ ] **RETHINK** — Major gaps identified
+[ ] **APPROVED**: ready to implement
+[ ] **NEEDS REFINEMENT**. Issues: _______________
+[ ] **RETHINK**: major gaps identified
 ```
 
 ---
 
-## Values Summary Card Template
+## Values summary card template
 
 Quick reference card for daily use.
 
@@ -672,7 +672,7 @@ Quick reference card for daily use.
 
 ---
 
-**What We DON'T Value:**
+**What we don't value:**
 - [Anti-value 1]
 - [Anti-value 2]
 - [Anti-value 3]
@@ -685,7 +685,7 @@ Quick reference card for daily use.
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing values documentation, verify:
 

@@ -1,4 +1,4 @@
-# Brand Typography Templates
+# Brand typography templates
 
 Reusable templates for brand typography system documentation.
 
@@ -6,7 +6,7 @@ Reusable templates for brand typography system documentation.
 
 ## Contents
 
-- [Typography System Documentation Template](#typography-system-documentation-template)
+- [Typography system documentation template](#typography-system-documentation-template)
 - [Font Pairing Rationale](#font-pairing-rationale)
 - [Web-Safe Fallbacks](#web-safe-fallbacks)
 - [Font Licensing Summary](#font-licensing-summary)
@@ -14,10 +14,10 @@ Reusable templates for brand typography system documentation.
 - [Accessibility Verification](#accessibility-verification)
 - [Implementation](#implementation)
 - [Quick Reference Card](#quick-reference-card)
-- [Font Licensing Checklist](#font-licensing-checklist)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Font licensing checklist](#font-licensing-checklist)
+- [Output validation checklist](#output-validation-checklist)
 
-## Typography System Documentation Template
+## Typography system documentation template
 
 ```markdown
 # Brand Typography: [Brand Name]
@@ -85,10 +85,10 @@ Reusable templates for brand typography system documentation.
 - [Adobe Fonts](link): Included with Creative Cloud
 - [Purchase from](link): $[X] for [license]
 
-**Variable Font**: [Yes/No] — [Available axes if yes]
+**Variable Font**: [Yes/No]. [Available axes if yes]
 
 **Why This Typeface:**
-[Strategic rationale — how it expresses the brand personality]
+[Strategic rationale: how it expresses the brand personality]
 
 **Personality Traits:**
 - [Quality 1]
@@ -105,7 +105,7 @@ Reusable templates for brand typography system documentation.
 
 | Criterion | Score | Notes |
 |-----------|-------|-------|
-| Comprehensiveness | [Good/Needs work] | [Details] |
+| Completeness | [Good/Needs work] | [Details] |
 | Legibility | [Good/Needs work] | [Details] |
 | Versatility | [Good/Needs work] | [Details] |
 | Distinctiveness | [Good/Needs work] | [Details] |
@@ -144,10 +144,10 @@ Reusable templates for brand typography system documentation.
 **Variable Font**: [Yes/No]
 
 **Why This Typeface:**
-[Strategic rationale — why it pairs well, supports readability]
+[Strategic rationale: why it pairs well, supports readability]
 
 **Why It Pairs Well:**
-[Explanation of the pairing — contrast/complement relationship, shared characteristics]
+[Explanation of the pairing: contrast/complement relationship, shared characteristics]
 
 **Personality Traits:**
 - [Quality 1]
@@ -196,10 +196,10 @@ Reusable templates for brand typography system documentation.
 - [Source and pricing]
 
 **Why This Typeface:**
-[Strategic rationale — what special role it plays]
+[Strategic rationale: what special role it plays]
 
 **Limited Use Guidelines:**
-- Use ONLY for: [Specific applications]
+- Use only for: [Specific applications]
 - Never use for: [Applications to avoid]
 - Maximum usage: [Sparingly, specific contexts]
 
@@ -308,14 +308,14 @@ Reusable templates for brand typography system documentation.
 ### How These Fonts Work Together
 
 **Contrast Principle:**
-[Explain the contrast between primary and secondary — e.g., serif + sans-serif, geometric + humanist]
+[Explain the contrast between primary and secondary, e.g., serif + sans-serif, geometric + humanist]
 
 **What They Share:**
-[Unifying elements — similar x-height, era, feeling]
+[Unifying elements: similar x-height, era, feeling]
 
 **The Dynamic:**
-- [Primary] is [quality] — provides [function]
-- [Secondary] is [quality] — provides [function]
+- [Primary] is [quality] and provides [function]
+- [Secondary] is [quality] and provides [function]
 - Together they create [overall effect]
 
 ### Visual Pairing Example
@@ -475,9 +475,9 @@ Verify content remains functional when users override:
 
 ---
 
-## Modular Scale Calculator Reference
+## Modular scale calculator reference
 
-### Quick Calculation Table
+### Quick calculation table
 
 **Base: 16px**
 
@@ -503,7 +503,7 @@ Where:
 
 ---
 
-## Accessibility Testing Checklist
+## Accessibility testing checklist
 
 ```markdown
 # Typography Accessibility Validation
@@ -550,10 +550,10 @@ Where:
 ### WCAG 1.4.12 Compliance
 
 Test with these overrides applied:
-- [ ] Line height: 1.5x font size — content functional
-- [ ] Paragraph spacing: 2x font size — content functional
-- [ ] Letter spacing: 0.12x font size — content functional
-- [ ] Word spacing: 0.16x font size — content functional
+- [ ] Line height: 1.5x font size, content functional
+- [ ] Paragraph spacing: 2x font size, content functional
+- [ ] Letter spacing: 0.12x font size, content functional
+- [ ] Word spacing: 0.16x font size, content functional
 
 ---
 
@@ -580,7 +580,7 @@ Test with these overrides applied:
 
 ---
 
-## Font Licensing Checklist
+## Font licensing checklist
 
 ```markdown
 # Font Licensing Audit
@@ -636,7 +636,7 @@ Test with these overrides applied:
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 Before finalizing any typography system documentation, verify:
 

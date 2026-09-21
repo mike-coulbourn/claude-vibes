@@ -1,4 +1,4 @@
-# Elevator Pitch Templates
+# Elevator pitch templates
 
 Reusable templates for documenting elevator pitch development and variations.
 
@@ -6,14 +6,14 @@ Reusable templates for documenting elevator pitch development and variations.
 
 ## Contents
 
-- [Elevator Pitch Document Template](#elevator-pitch-document-template)
-- [Strategic Foundation Template](#strategic-foundation-template)
-- [Hook Development Template](#hook-development-template)
-- [Follow-Up Response Template](#follow-up-response-template)
-- [Pitch Rehearsal Guide Template](#pitch-rehearsal-guide-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Elevator pitch document template](#elevator-pitch-document-template)
+- [Strategic foundation template](#strategic-foundation-template)
+- [Hook development template](#hook-development-template)
+- [Follow-up response template](#follow-up-response-template)
+- [Pitch rehearsal guide template](#pitch-rehearsal-guide-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Elevator Pitch Document Template
+## Elevator pitch document template
 
 Use this complete structure for final pitch documentation:
 
@@ -86,10 +86,10 @@ Use this complete structure for final pitch documentation:
 
 ### Alternative One-Liners
 
-> "[Alternative 1 — different hook type]"
+> "[Alternative 1, different hook type]"
 *Best for: [Context]*
 
-> "[Alternative 2 — different hook type]"
+> "[Alternative 2, different hook type]"
 *Best for: [Context]*
 
 ---
@@ -98,7 +98,7 @@ Use this complete structure for final pitch documentation:
 
 ### The Pitch
 
-> "[Full 30-second pitch, written as spoken word — not bullet points]"
+> "[Full 30-second pitch, written as spoken word, not bullet points]"
 
 ### What Is vs. What Could Be
 
@@ -134,9 +134,9 @@ Use this complete structure for final pitch documentation:
 - Stress "[key word]" to emphasize [concept]
 
 **The 3 C's Check:**
-- [ ] Clarity — Easy to understand?
-- [ ] Conciseness — Fits in 30 seconds?
-- [ ] Confidence — Delivers with assurance?
+- [ ] Clarity: easy to understand?
+- [ ] Conciseness: fits in 30 seconds?
+- [ ] Confidence: delivers with assurance?
 
 ### Follow-Up Questions to Prepare For
 
@@ -283,7 +283,7 @@ Compared to 30-second version:
 
 ### Social Situations
 
-**Use:** [Which version — usually one-liner]
+**Use:** [Which version, usually one-liner]
 **Adjust:** [Keep it casual]
 **Goal:** [Interest without pitching]
 
@@ -371,7 +371,7 @@ Compared to 30-second version:
 
 ---
 
-## Strategic Foundation Template
+## Strategic foundation template
 
 Use this to document the brand inputs before crafting pitches:
 
@@ -433,7 +433,7 @@ Based on the above, the pitches must:
 
 ---
 
-## Hook Development Template
+## Hook development template
 
 ```markdown
 ## Hook Options for [Brand Name]
@@ -511,7 +511,7 @@ Based on the above, the pitches must:
 
 ---
 
-## Follow-Up Response Template
+## Follow-up response template
 
 ```markdown
 ## Follow-Up Responses for [Brand Name]
@@ -571,7 +571,7 @@ Based on the above, the pitches must:
 
 ---
 
-## Pitch Rehearsal Guide Template
+## Pitch rehearsal guide template
 
 ```markdown
 ## Rehearsal Guide for [Brand Name] Pitches
@@ -581,7 +581,7 @@ Based on the above, the pitches must:
 - [ ] Quiet space with no distractions
 - [ ] Timer ready (phone or watch)
 - [ ] Mirror or camera for recording
-- [ ] Notes with bullet points (NOT full script)
+- [ ] Notes with bullet points (not a full script)
 - [ ] Water nearby
 
 ### 10-Second One-Liner Practice
@@ -614,12 +614,12 @@ Based on the above, the pitches must:
 | ... | | | |
 
 **Pause points identified:**
-- After: "[Section]" — [length of pause]
-- After: "[Section]" — [length of pause]
+- After "[Section]": [length of pause]
+- After "[Section]": [length of pause]
 
 **Emphasis words identified:**
-- "[Word]" — why emphasized
-- "[Word]" — why emphasized
+- "[Word]": why emphasized
+- "[Word]": why emphasized
 
 **Final version:** "[Refined 30-second pitch]"
 
@@ -661,7 +661,7 @@ Based on the above, the pitches must:
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 Before finalizing pitch documentation, verify:
 

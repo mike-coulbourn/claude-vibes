@@ -4,13 +4,13 @@ argument-hint: Optional title override for the guidelines
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, AskUserQuestion
 ---
 
-# Compile Brand Guidelines
+# Compile brand guidelines
 
-You are helping a startup founder compile their complete brand identity work into a single, polished brand guidelines document. This is the final deliverable — everything they've built, organized and ready to use.
+You are helping a startup founder compile their complete brand identity work into a single, polished brand guidelines document. This is the final deliverable: everything they've built, organized and ready to use.
 
 **Note:** This is a compilation and organization task, not a creation task. You are curating and synthesizing existing work into a cohesive document.
 
-## Brand Documents
+## Brand documents
 
 Load all brand documents for compilation:
 
@@ -45,7 +45,7 @@ If any REQUIRED content is missing, use AskUserQuestion to ask if the founder wa
 
 Optional title override: $ARGUMENTS
 
-## Compilation Principles
+## Compilation principles
 
 Follow these principles when synthesizing the brand documents:
 
@@ -58,9 +58,9 @@ Follow these principles when synthesizing the brand documents:
 
 **The goal:** Someone new to the brand should be able to understand the brand identity in 10 minutes by reading this document.
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
 Your job is to:
 1. Review all existing brand documents via the auto-includes above
@@ -70,9 +70,9 @@ Your job is to:
 5. Have the founder review before finalizing
 6. Celebrate the completion!
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Confirm missing documents before proceeding
@@ -82,11 +82,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Guidelines Document Structure
+## Guidelines document structure
 
 Create `docs/00-BRAND/brand-guidelines.md` using this structure:
 
@@ -110,19 +110,19 @@ Create `docs/00-BRAND/brand-guidelines.md` using this structure:
 ## 1. Brand Foundation
 
 ### Our Story
-[Synthesized from founder brief — the origin story, the problem noticed, the "why now"]
+[Synthesized from founder brief: the origin story, the problem noticed, the "why now"]
 
 ### Our Purpose (WHY We Exist)
-[Purpose statement from purpose-mission-vision.md — the change we seek to make]
+[Purpose statement from purpose-mission-vision.md: the change we seek to make]
 
 ### Our Mission (HOW We Do It)
-[Mission statement — our unique approach to achieving the purpose]
+[Mission statement: our unique approach to achieving the purpose]
 
 ### Our Vision (WHERE We're Going)
-[Vision statement — the future state we're working toward]
+[Vision statement: the future state we're working toward]
 
 ### Our Core Values
-[Core values with brief descriptions from core-values.md — keep it to 4-6]
+[Core values with brief descriptions from core-values.md, keep it to 4-6]
 
 | Value | What It Means |
 |-------|---------------|
@@ -136,10 +136,10 @@ Create `docs/00-BRAND/brand-guidelines.md` using this structure:
 
 ### Our Positioning
 **Positioning Statement:**
-[From positioning.md — the territory we claim]
+[From positioning.md: the territory we claim]
 
 **Onlyness Statement:**
-[From positioning.md — what makes us the only choice]
+[From positioning.md: what makes us the only choice]
 
 ### Our Brand Archetype
 **Primary:** [Archetype from archetype.md]
@@ -174,7 +174,7 @@ Create `docs/00-BRAND/brand-guidelines.md` using this structure:
 **Variants:** [If any secondary taglines exist]
 
 ### Our Brand Pillars
-[Brand pillars from messaging-framework.md — 3-4 key themes]
+[Brand pillars from messaging-framework.md: 3-4 key themes]
 
 | Pillar | Supporting Messages |
 |--------|---------------------|
@@ -195,7 +195,7 @@ Create `docs/00-BRAND/brand-guidelines.md` using this structure:
 ### Voice and Tone
 
 **Voice Characteristics:**
-[From brand-personality-voice.md — how we sound]
+[From brand-personality-voice.md: how we sound]
 
 **Tone Variations:**
 | Context | Tone Adjustment |
@@ -316,7 +316,7 @@ For deeper context, refer to the complete brand documents:
 Questions about brand usage: [Contact information]
 ```
 
-## After Compilation
+## After compilation
 
 1. **Preview with founder:** Use AskUserQuestion to present a summary:
 
@@ -348,7 +348,7 @@ Questions about brand usage: [Contact information]
    - Strategic positioning that differentiates you from competitors
    - A messaging framework with tagline and elevator pitches
    - Visual identity direction with colors and typography
-   - A comprehensive Brand Guidelines document
+   - A complete Brand Guidelines document
 
    **Your brand guidelines are saved to:** `docs/00-BRAND/brand-guidelines.md`
 
@@ -358,4 +358,4 @@ Questions about brand usage: [Contact information]
    3. Use the messaging framework to write your website copy
    4. Reference the voice guidelines for all communications
 
-   You've built something real. Go make it happen!"
+   You've built something real."

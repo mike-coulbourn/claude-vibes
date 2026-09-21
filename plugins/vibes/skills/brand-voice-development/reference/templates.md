@@ -1,4 +1,4 @@
-# Brand Voice Templates
+# Brand voice templates
 
 Structured templates for voice development, documentation, and validation.
 
@@ -6,15 +6,15 @@ Structured templates for voice development, documentation, and validation.
 
 ## Contents
 
-- [Voice Attribute Card Template](#voice-attribute-card-template)
-- [Tone Matrix Template](#tone-matrix-template)
-- [Voice Guidelines Document Template](#voice-guidelines-document-template)
-- [Before/After Examples Template](#beforeafter-examples-template)
-- [AI Voice Prompt Template](#ai-voice-prompt-template)
-- [Voice Summary Card Template](#voice-summary-card-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Voice attribute card template](#voice-attribute-card-template)
+- [Tone matrix template](#tone-matrix-template)
+- [Voice guidelines document template](#voice-guidelines-document-template)
+- [Before/after examples template](#beforeafter-examples-template)
+- [AI voice prompt template](#ai-voice-prompt-template)
+- [Voice summary card template](#voice-summary-card-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Voice Attribute Card Template
+## Voice attribute card template
 
 Use for each personality trait in the voice system.
 
@@ -60,8 +60,8 @@ This trait creates these voice characteristics:
 **This trait means:**
 [What we do]
 
-**It does NOT mean:**
-[What we avoid — the "but not that" constraint]
+**It does not mean:**
+[What we avoid, the "but not that" constraint]
 
 **The difference:**
 [Clear explanation of the boundary]
@@ -69,7 +69,7 @@ This trait creates these voice characteristics:
 
 ---
 
-## Tone Matrix Template
+## Tone matrix template
 
 Map how voice adapts across contexts.
 
@@ -122,7 +122,7 @@ Map how voice adapts across contexts.
 
 ---
 
-## Voice Guidelines Document Template
+## Voice guidelines document template
 
 Complete voice documentation format.
 
@@ -226,7 +226,7 @@ Complete voice documentation format.
 | [Quality 2] | [What it means] | "[Example phrase]" |
 | [Quality 3] | [What it means] | "[Example phrase]" |
 
-### We DON'T Sound Like...
+### We don't sound like...
 
 | Avoid | Why | Instead |
 |-------|-----|---------|
@@ -262,7 +262,7 @@ Complete voice documentation format.
 
 ### Audience Language
 
-From audience research — words and phrases our audience uses:
+From audience research, words and phrases our audience uses:
 - **[Phrase they use]**: [When we use it]
 - **[Phrase they use]**: [When we use it]
 
@@ -351,7 +351,7 @@ From audience research — words and phrases our audience uses:
 
 ---
 
-## Before/After Examples Template
+## Before/after examples template
 
 Show voice transformation.
 
@@ -409,7 +409,7 @@ Show voice transformation.
 
 ---
 
-## AI Voice Prompt Template
+## AI voice prompt template
 
 For AI content generation consistency.
 
@@ -423,7 +423,7 @@ For AI content generation consistency.
 Use this prompt when generating content:
 
 ```
-Write as [Brand Name]: [Trait 1], [Trait 2], [Trait 3], [Trait 4] — but not [anti-trait 1], [anti-trait 2], [anti-trait 3].
+Write as [Brand Name]: [Trait 1], [Trait 2], [Trait 3], [Trait 4], but not [anti-trait 1], [anti-trait 2], [anti-trait 3].
 
 Our voice sounds like [one-sentence description].
 
@@ -469,7 +469,7 @@ Keep it [length] and [quality].
 
 Before publishing AI-generated content, verify:
 
-- [ ] Does this pass the "airport test" — recognizable as our brand?
+- [ ] Does this pass the "airport test" and read as our brand?
 - [ ] Are all "this but not that" constraints respected?
 - [ ] Is the tone appropriate for this specific context?
 - [ ] Does vocabulary align with our guidelines?
@@ -492,7 +492,7 @@ Before publishing AI-generated content, verify:
 
 ---
 
-## Voice Summary Card Template
+## Voice summary card template
 
 Quick reference for daily use.
 
@@ -509,7 +509,7 @@ Quick reference for daily use.
 2. [Trait 2] (but not [constraint])
 3. [Trait 3] (but not [constraint])
 4. [Trait 4] (but not [constraint])
-5. [Trait 5] (but not [constraint]) — if applicable
+5. [Trait 5] (but not [constraint]), if applicable
 
 ---
 
@@ -519,7 +519,7 @@ Quick reference for daily use.
 
 ---
 
-#### We DON'T Sound Like...
+#### We don't sound like...
 
 > [What to avoid]
 
@@ -560,7 +560,7 @@ Before publishing, ask:
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing voice documentation, verify:
 

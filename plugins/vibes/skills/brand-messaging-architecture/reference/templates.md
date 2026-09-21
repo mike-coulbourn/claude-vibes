@@ -1,4 +1,4 @@
-# Brand Messaging Templates
+# Brand messaging templates
 
 Structured templates for messaging framework development, value proposition design, and documentation.
 
@@ -6,19 +6,19 @@ Structured templates for messaging framework development, value proposition desi
 
 ## Contents
 
-- [Messaging Framework Document Template](#messaging-framework-document-template)
-- [Value Proposition Canvas Template](#value-proposition-canvas-template)
-- [Messaging Pillar Template](#messaging-pillar-template)
-- [Message Layers Assessment Template](#message-layers-assessment-template)
-- [Messaging House Visual Template](#messaging-house-visual-template)
-- [MECLABS Quality Test Template](#meclabs-quality-test-template)
-- [Messages by Touchpoint Template](#messages-by-touchpoint-template)
-- [Quick Reference Card Template](#quick-reference-card-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Messaging framework document template](#messaging-framework-document-template)
+- [Value proposition canvas template](#value-proposition-canvas-template)
+- [Messaging pillar template](#messaging-pillar-template)
+- [Message layers assessment template](#message-layers-assessment-template)
+- [Messaging house visual template](#messaging-house-visual-template)
+- [MECLABS quality test template](#meclabs-quality-test-template)
+- [Messages by touchpoint template](#messages-by-touchpoint-template)
+- [Quick reference card template](#quick-reference-card-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Messaging Framework Document Template
+## Messaging framework document template
 
-Complete template for comprehensive messaging documentation.
+Complete template for messaging documentation.
 
 ```markdown
 # Brand Messaging Framework: [Brand Name]
@@ -51,13 +51,13 @@ Complete template for comprehensive messaging documentation.
 
 ### The Core Value Proposition
 
-> [Clear statement of the unique value the brand provides — what, for whom, why it matters]
+> [Clear statement of the unique value the brand provides: what, for whom, why it matters]
 
 ### The Onlyness Statement
 
 > Our [offering] is the only [category] that [benefit].
 
-**Can we complete this credibly?** [Yes/Needs work] — [Notes]
+**Can we complete this credibly?** [Yes/Needs work]. [Notes]
 
 ### Geoffrey Moore Positioning Statement
 
@@ -67,9 +67,9 @@ Complete template for comprehensive messaging documentation.
 
 | Benefit Type | Description |
 |--------------|-------------|
-| **Functional Benefit** | [What the product/service DOES for the customer] |
-| **Emotional Benefit** | [How it makes the customer FEEL] |
-| **Self-Expression Benefit** | [What using this SAYS about the customer] |
+| **Functional Benefit** | [What the product/service does for the customer] |
+| **Emotional Benefit** | [How it makes the customer feel] |
+| **Self-Expression Benefit** | [What using this says about the customer] |
 
 ### Combined Value Statement
 
@@ -142,7 +142,7 @@ Complete template for comprehensive messaging documentation.
 
 ---
 
-## Value Proposition Canvas Template
+## Value proposition canvas template
 
 Template for customer-centric value proposition development.
 
@@ -207,7 +207,7 @@ Template for customer-centric value proposition development.
 
 ---
 
-## Messaging Pillar Template
+## Messaging pillar template
 
 Template for each individual messaging pillar.
 
@@ -237,7 +237,7 @@ Template for each individual messaging pillar.
 | **Visual** | [Photos, videos, demonstrations] |
 
 **Usage Guidance:**
-[When to emphasize this pillar — which audiences, channels, situations]
+[When to emphasize this pillar: which audiences, channels, situations]
 
 ---
 
@@ -252,7 +252,7 @@ Template for each individual messaging pillar.
 
 ---
 
-## Message Layers Assessment Template
+## Message layers assessment template
 
 Template for evaluating messaging against Peep Laja's framework.
 
@@ -334,7 +334,7 @@ Template for evaluating messaging against Peep Laja's framework.
 
 **Assessment:**
 - [ ] Names alternatives (not just "competitors")
-- [ ] States something ONLY we can claim
+- [ ] States something only we can claim
 - [ ] Passes the "Only" test
 - [ ] Backed by proof
 
@@ -363,7 +363,7 @@ Template for evaluating messaging against Peep Laja's framework.
 
 ---
 
-## Messaging House Visual Template
+## Messaging house visual template
 
 Template for visualizing the messaging architecture.
 
@@ -427,7 +427,7 @@ Template for visualizing the messaging architecture.
 
 ---
 
-## MECLABS Quality Test Template
+## MECLABS quality test template
 
 Template for validating value proposition quality.
 
@@ -462,7 +462,7 @@ Template for validating value proposition quality.
 
 ### Criterion 2: Exclusivity
 
-**Question:** Can ONLY you credibly claim this?
+**Question:** Can only you credibly claim this?
 
 | Factor | Assessment |
 |--------|------------|
@@ -491,7 +491,7 @@ Template for validating value proposition quality.
 | Concrete, not abstract? | [Yes/No] |
 | Simple language? | [Yes/No] |
 
-**The "Stranger Test:**
+**The "Stranger" Test:**
 Would a stranger outside your industry understand this immediately?
 
 **Grade:** [Strong / Moderate / Weak]
@@ -537,7 +537,7 @@ Would a stranger outside your industry understand this immediately?
 
 ---
 
-## Messages by Touchpoint Template
+## Messages by touchpoint template
 
 Template for adapting core messages across channels.
 
@@ -629,7 +629,7 @@ Template for adapting core messages across channels.
 
 ---
 
-## Quick Reference Card Template
+## Quick reference card template
 
 One-page summary for daily use.
 
@@ -641,7 +641,7 @@ One-page summary for daily use.
 ### The Core
 
 **Value Proposition:**
-> [Core value prop — 1-2 sentences]
+> [Core value prop, 1-2 sentences]
 
 **Onlyness Statement:**
 > Our [offering] is the only [category] that [benefit].
@@ -694,7 +694,7 @@ Before publishing, verify:
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 When reviewing messaging documentation, verify:
 

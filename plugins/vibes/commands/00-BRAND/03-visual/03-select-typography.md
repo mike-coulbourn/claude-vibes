@@ -4,13 +4,13 @@ argument-hint: Optional typography preferences or constraints (e.g., "free fonts
 allowed-tools: Read, Glob, Grep, Agent, Write, Edit, WebSearch, WebFetch, AskUserQuestion
 ---
 
-# Select Brand Typography
+# Select brand typography
 
 You are helping a startup founder develop their brand typography system. This includes selecting typefaces, creating a typography hierarchy, and establishing usage guidelines that express brand personality through type.
 
-**Note:** Typography is voice made visible. The right typefaces, used consistently, make a brand feel cohesive and intentional.
+**Note:** Typography carries brand personality. The right typefaces, used consistently, make a brand feel cohesive and intentional.
 
-## Context Loading
+## Context loading
 
 **Founder Brief** (optional):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
@@ -46,23 +46,23 @@ You are helping a startup founder develop their brand typography system. This in
 
 Optional typography preferences: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
 
-**CRITICAL: You MUST use the Agent tool to launch the brand-typography-curator agent.** Do not select typography yourself — that's what the specialized agent is for.
+**Use the Agent tool to launch the brand-typography-curator agent.** Do not select typography yourself. That is what the specialized agent is for.
 
 Your job is to:
 1. Verify prerequisites exist
 2. Extract key context from loaded documents
-3. Prepare a comprehensive, structured prompt for the agent
+3. Prepare a detailed, structured prompt for the agent
 4. Launch the agent
 5. Help founder review and validate
 6. Save and review the results
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
+**Use the AskUserQuestion tool whenever you interact with the user.** This ensures a guided, interactive experience where the founder feels engaged and consulted throughout the branding process.
 
 Use AskUserQuestion to:
 - Gather preferences before launching agents
@@ -72,11 +72,11 @@ Use AskUserQuestion to:
 
 Never save final outputs without user approval.
 
-## Natural Writing
+## Natural writing
 
 The brand-typography-curator agent has the `natural-writing` skill preloaded, so its output should read like a thoughtful person wrote it. Before you write anything yourself in this command, such as a summary or a saved document, **use the Skill tool** to invoke `claude-vibes:natural-writing`, apply its method while drafting, and run its structural audit before showing the draft. Add its "What changed" section only when you are revising text the user gave you.
 
-## Launch the Agent
+## Launch the agent
 
 **Use Agent tool** with `subagent_type: "claude-vibes:BRANDING:brand-typography-curator"` and this prompt:
 
@@ -90,45 +90,45 @@ Develop the brand typography system. ultrathink
 **Mission (HOW)**: [From purpose-mission-vision.md]
 **Vision (WHERE)**: [From purpose-mission-vision.md]
 **Core Values**: [From core-values.md]
-**Positioning**: [From positioning.md — the territory we claim]
+**Positioning**: [From positioning.md: the territory we claim]
 **Onlyness Statement**: [From positioning.md]
 
 ## BRAND PERSONALITY
 
-**Archetype**: [From archetype.md — primary and secondary]
-**Personality Traits**: [From brand-personality-voice.md — the 5 traits]
+**Archetype**: [From archetype.md: primary and secondary]
+**Personality Traits**: [From brand-personality-voice.md: the 5 traits]
 **Voice Characteristics**: [From brand-personality-voice.md]
-**Brand Essence**: [From brand-personality-voice.md — 2-3 words]
+**Brand Essence**: [From brand-personality-voice.md: 2-3 words]
 
 ## VISUAL DIRECTION
 
-**Visual Adjectives**: [From visual-direction.md — the 3-5 visual words]
-**Mood Board Direction**: [From visual-direction.md — overall aesthetic]
-**Visual SMP**: [From visual-direction.md — single-minded proposition]
+**Visual Adjectives**: [From visual-direction.md: the 3-5 visual words]
+**Mood Board Direction**: [From visual-direction.md: overall aesthetic]
+**Visual SMP**: [From visual-direction.md: single-minded proposition]
 
 ## AUDIENCE INSIGHTS
 
-**Who They Serve**: [From audience research — primary customer segment]
-**Audience Demographics**: [From audience research — age, location, etc.]
-**Typography Expectations**: [From audience research — what they expect visually]
-**Aspirational Brands**: [From audience research — brands they admire]
+**Who They Serve**: [From audience research: primary customer segment]
+**Audience Demographics**: [From audience research: age, location, etc.]
+**Typography Expectations**: [From audience research: what they expect visually]
+**Aspirational Brands**: [From audience research: brands they admire]
 
 ## COLOR PALETTE (if available)
 
-**Primary Colors**: [From color-palette.md — for text color alignment]
-**Text Colors**: [From color-palette.md — existing dark/light neutrals]
+**Primary Colors**: [From color-palette.md: for text color alignment]
+**Text Colors**: [From color-palette.md: existing dark/light neutrals]
 
 ## PRACTICAL CONSTRAINTS
 
-**Design Budget**: [From founder brief — budget for design]
-**Existing Elements**: [From founder brief — any existing fonts]
-**Typography Preferences/Avoids**: [From founder brief or $ARGUMENTS — constraints]
-**Primary Touchpoints**: [From founder brief — web, print, app]
+**Design Budget**: [From founder brief: budget for design]
+**Existing Elements**: [From founder brief: any existing fonts]
+**Typography Preferences/Avoids**: [From founder brief or $ARGUMENTS: constraints]
+**Primary Touchpoints**: [From founder brief: web, print, app]
 **Free Fonts Required?**: [From $ARGUMENTS or inferred from budget]
 
-## CRITICAL: INTERACTIVE DISCOVERY
+## Critical: interactive discovery
 
-**ALWAYS use the AskUserQuestion tool to ensure an interactive, guided experience:**
+**Use the AskUserQuestion tool throughout to keep the experience interactive and guided:**
 - Gather preferences and opinions before making recommendations
 - Present options with clear tradeoffs for the user to choose from
 - Validate findings and get feedback before proceeding
@@ -138,7 +138,7 @@ Never make significant decisions without user input. The brand identity belongs 
 
 ## DISCOVERY APPROACH
 
-### Phase 1: Analyze Brand Strategy
+### Phase 1: Analyze brand strategy
 Extract from inputs:
 - Personality → Traits that translate to type qualities
 - Voice → How type should "sound"
@@ -146,14 +146,14 @@ Extract from inputs:
 - Positioning → Type style that claims this territory
 - Visual Direction → Aesthetic alignment
 
-### Phase 2: Establish Classification Direction
+### Phase 2: Establish classification direction
 Apply Serif vs. Sans-Serif Decision Framework:
 - Assess industry expectations
 - Evaluate touchpoint distribution (digital vs. print)
 - Consider brand positioning (traditional vs. modern)
 - Make primary classification decision with rationale
 
-### Phase 3: Build Modular Scale
+### Phase 3: Build modular scale
 Using modular scale principles:
 - Define base size (16px for web)
 - Select ratio based on personality and content type
@@ -161,21 +161,21 @@ Using modular scale principles:
 - Map to hierarchy levels (H1-H6, body, captions)
 - Consider responsive adjustments
 
-### Phase 4: Research and Select Typefaces
+### Phase 4: Research and select typefaces
 Apply Typeface Evaluation Criteria:
-- Assess comprehensiveness, legibility, versatility
+- Assess completeness, legibility, versatility
 - Evaluate complementarity with brand elements
 - Check distinctiveness vs. competitors
 - Verify technical readiness (web fonts, licensing, variable font)
 
-### Phase 5: Define Pairing Strategy
+### Phase 5: Define pairing strategy
 Apply Font Pairing Principles:
 - Seek contrast through classification
 - Ensure meaningful hierarchy distinction
 - Look for shared characteristics (x-height, era)
 - Test in real content contexts
 
-### Phase 6: Build Typography System
+### Phase 6: Build typography system
 Document complete hierarchy:
 - All hierarchy levels with specifications
 - Line height, tracking, line length guidelines
@@ -189,7 +189,7 @@ Document complete hierarchy:
 - **Structured reasoning**: Match brand personality to type qualities, build modular scale systematically, evaluate typeface candidates against criteria
 - **AskUserQuestion**: Understand typography constraints (free fonts needed? existing fonts?), validate classification direction, get feedback on typeface options
 - **WebSearch**: Discover font pairing guides, typography resources (Google Fonts, Adobe Fonts), competitor typography, brand typography examples
-- **WebFetch**: Read typography guides, font pairing articles, foundry pages — understand pairing rationale and access font specimen details
+- **WebFetch**: Read typography guides, font pairing articles, and foundry pages to understand pairing rationale and access font specimen details
 
 ## OUTPUT REQUIREMENTS
 
@@ -198,9 +198,9 @@ Deliver the complete typography system using the Typography System Documentation
 1. **Executive Summary** (2-3 sentences on typefaces and personality expression)
 2. **Strategic Foundation** (brand inputs, personality match, classification decision)
 3. **Modular Scale** (base, ratio, calculated sizes, hierarchy mapping)
-4. **Primary Typeface** (headlines — with source, rationale, evaluation, weights)
-5. **Secondary Typeface** (body — with pairing rationale, readability notes)
-6. **Tertiary Typeface** (optional — accent use only)
+4. **Primary Typeface** (headlines, with source, rationale, evaluation, weights)
+5. **Secondary Typeface** (body, with pairing rationale, readability notes)
+6. **Tertiary Typeface** (optional, accent use only)
 7. **Typography Hierarchy** (complete H1-H6, body, captions with specs)
 8. **Typography Design Tokens** (CSS custom properties)
 9. **Font Pairing Rationale** (how fonts work together)
@@ -211,7 +211,7 @@ Deliver the complete typography system using the Typography System Documentation
 14. **Quick Reference Card** (essential specs)
 ```
 
-## After Agent Returns
+## After agent returns
 
 Use AskUserQuestion to help founder review and validate:
 

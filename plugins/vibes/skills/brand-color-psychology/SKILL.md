@@ -3,7 +3,7 @@ name: brand-color-psychology
 description: Use when selecting or evaluating brand colors, building a palette with primary, secondary, neutral, and accent roles, differentiating from competitor colors, or checking color contrast and accessibility. Keywords - color psychology, color palette, 60-30-10 rule, color harmony, archetype colors, cultural color meaning, WCAG contrast, hex and CMYK specifications.
 ---
 
-# Brand Color Psychology & Strategic Palette Development
+# Brand color psychology & strategic palette development
 
 Quick reference for developing strategic brand color palettes grounded in psychology, differentiation, and practical application.
 
@@ -15,32 +15,32 @@ Quick reference for developing strategic brand color palettes grounded in psycho
 
 ---
 
-## Key Statistics
+## Key statistics
 
 | Metric | Value | Implication |
 |--------|-------|-------------|
 | **First impressions based on color** | 90% | Color creates instant perception |
 | **Brand recognition from consistent color** | 80% | Consistency compounds over time |
-| **Snap judgments color-based** | 62-90% | Color is not decoration—it's first impression |
-| **Time to form judgment** | 90 seconds | The 90-Second Rule—color dominates |
+| **Snap judgments color-based** | 62-90% | Color forms the first impression |
+| **Time to form judgment** | 90 seconds | Color dominates in the 90-Second Rule |
 
 ---
 
-## Core Frameworks
+## Core frameworks
 
 ### 1. Color-in-Context Theory (Elliot & Maier)
 
-**The foundational principle:** Color effects are neither universal nor arbitrary—they are context-dependent.
+**The foundational principle:** Color effects are neither universal nor arbitrary. They are context-dependent.
 
-**Key Principles:**
+**Key principles:**
 1. Color meaning varies based on psychological context
 2. Some responses are biological; others are learned through repeated pairings
-3. Hue, lightness, and chroma all matter—not just hue
+3. Hue, lightness, and chroma all matter, not just hue
 4. Same color triggers different responses in different contexts
 
 **Example:** Red on a sale banner = urgency. Red on a health app = danger/warning. Red on Valentine's = love/passion. Context determines meaning.
 
-**When to Use:** When making strategic decisions about color meaning for your specific brand context, audience, and industry.
+**When to use:** When making strategic decisions about color meaning for your specific brand context, audience, and industry.
 
 ---
 
@@ -70,7 +70,7 @@ A color distribution framework that creates visual balance and hierarchy:
 
 **Why it works:** Creates visual hierarchy without overwhelming. Ensures the accent color draws attention precisely where needed.
 
-**When to Use:** For all brand applications—websites, packaging, marketing materials, app interfaces.
+**When to use:** For all brand applications: websites, packaging, marketing materials, app interfaces.
 
 ---
 
@@ -93,7 +93,7 @@ Each brand archetype has associated color palettes that reinforce personality:
 | **Jester** | Bright, playful, multi-color combinations | Fun, humor, spontaneity |
 | **Everyman** | Earthy, accessible colors, blues, greens | Relatability, belonging, trust |
 
-**When to Use:** After defining brand personality and archetype positioning.
+**When to use:** After defining brand personality and archetype positioning.
 
 ---
 
@@ -109,7 +109,7 @@ Based on traditional color theory (Isaac Newton's *Opticks*):
 | **Triadic** | Three colors equally spaced (120° apart) | Vibrant and balanced; one primary, others as accents |
 | **Split-Complementary** | Base + two neighbors of complement | Good contrast with less tension |
 
-**When to Use:** When constructing secondary and accent color selections after choosing primary.
+**When to use:** When constructing secondary and accent color selections after choosing primary.
 
 ---
 
@@ -117,14 +117,14 @@ Based on traditional color theory (Isaac Newton's *Opticks*):
 
 Borrowed from Kim and Mauborgne's Blue Ocean Strategy: Find uncontested visual territory.
 
-### The Process
+### The process
 
 1. **Audit the category**: What colors do all major competitors use?
 2. **Identify gaps**: What colors are absent or underutilized?
 3. **Assess fit**: Does an alternative color still fit brand personality and audience expectations?
 4. **Test the territory**: Can you own this color space credibly?
 
-### Success Examples
+### Success examples
 
 | Brand | Strategy | Result |
 |-------|----------|--------|
@@ -134,11 +134,11 @@ Borrowed from Kim and Mauborgne's Blue Ocean Strategy: Find uncontested visual t
 | **ING** | Orange in conservative blue banking | Signaled innovation and approachability |
 | **Tiffany & Co.** | PMS 1837 (trademarked) | Color alone triggers recognition without logo |
 
-**Key Insight:** While conforming to industry color norms feels safe, strategic differentiation often creates more value.
+**Key insight:** While conforming to industry color norms feels safe, strategic differentiation often creates more value.
 
 ---
 
-## Color Specification Systems
+## Color specification systems
 
 Document every brand color in all four systems:
 
@@ -149,40 +149,40 @@ Document every brand color in all four systems:
 | **CMYK** | Cyan, Magenta, Yellow, Black | Print materials | C:0 M:100 Y:100 K:0 |
 | **Pantone** | Standardized spot colors | Brand consistency, premium printing | PMS 485 C |
 
-**Important Notes:**
+**Important notes:**
 - RGB has largest gamut; some colors cannot be reproduced in print
-- CMYK gamut is smaller—some digital colors look duller in print
+- CMYK gamut is smaller, so some digital colors look duller in print
 - ~30% of Pantone colors cannot be replicated in CMYK
 - Some Pantone colors are trademarked (Tiffany Blue PMS 1837, UPS Brown, Barbie Pink)
 
 ---
 
-## Industry-Specific Conventions
+## Industry-specific conventions
 
-### Technology and Finance
+### Technology and finance
 - **Dominant:** Blue (trust, stability, competence)
 - **Notable Users:** IBM, Facebook, Chase, LinkedIn
 - **Differentiation Opportunity:** Purple (Twitch), Green (Robinhood), Magenta (T-Mobile)
 
-### Healthcare and Wellness
+### Healthcare and wellness
 - **Dominant:** Blue (trust), Green (healing, calm)
 - **Application:** Cool colors reduce patient anxiety
 
-### Food and Beverage
+### Food and beverage
 - **Dominant:** Red, Yellow, Orange
 - **Scientific Basis:** Warm colors stimulate appetite and quick decision-making
 
-### Luxury and Premium
+### Luxury and premium
 - **Dominant:** Black, Gold, Deep Navy, White
 - **Application:** Restrained palettes with metallic accents; less is more
 
-### Eco/Sustainability
+### Eco/sustainability
 - **Dominant:** Green, Earth tones (brown, tan)
 - **Notable Users:** Whole Foods, Patagonia
 
 ---
 
-## Cultural Color Considerations
+## Cultural color considerations
 
 Color meanings vary dramatically across cultures:
 
@@ -199,9 +199,9 @@ Color meanings vary dramatically across cultures:
 
 ---
 
-## Accessibility Requirements
+## Accessibility requirements
 
-### WCAG Contrast Ratios
+### WCAG contrast ratios
 
 | Standard | Ratio | Use Case |
 |----------|-------|----------|
@@ -210,13 +210,13 @@ Color meanings vary dramatically across cultures:
 | **AAA (enhanced)** | 7:1 | Normal text |
 | **AAA (enhanced)** | 4.5:1 | Large text |
 
-### Colorblindness Considerations
+### Colorblindness considerations
 
 - ~5% of population has some form of colorblindness
 - Test with Protanopia (red-blind), Deuteranopia (green-blind), Tritanopia (blue-blind)
-- **Color should never be the only indicator**—always pair with icons, text, or patterns
+- **Color should never be the only indicator**. Always pair with icons, text, or patterns
 
-### Testing Tools
+### Testing tools
 
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [Adobe Color](https://color.adobe.com): has accessibility tools
@@ -224,7 +224,7 @@ Color meanings vary dramatically across cultures:
 
 ---
 
-## Common Mistakes
+## Common mistakes
 
 | Mistake | Why It Fails | Instead |
 |---------|--------------|---------|
@@ -238,60 +238,60 @@ Color meanings vary dramatically across cultures:
 
 ---
 
-## Key Mental Models
+## Key mental models
 
-### Recognition Compounds Over Time
-Coca-Cola's red wasn't special initially—decades of consistent use made it iconic. Consistency builds recognition.
+### Recognition compounds over time
+Coca-Cola's red wasn't special initially. Decades of consistent use made it iconic. Consistency builds recognition.
 
-### Saturation and Brightness Matter
+### Saturation and brightness matter
 - Bright, saturated = energetic, youthful
 - Muted, desaturated = sophisticated, mature
 - Hue is only part of the equation
 
-### Simplicity Scales
+### Simplicity scales
 Complex palettes work in controlled environments but break in real-world application. The simpler your palette, the more consistently it will be applied.
 
 ### The 90-Second Rule
-People form product judgments within 90 seconds, and 62-90% of that assessment is color-based. Color is not decoration—it's first impression.
+People form product judgments within 90 seconds, and 62-90% of that assessment is color-based. Color is the first impression.
 
 ---
 
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Color Palette Documentation Template (complete output structure)
-- Competitor Color Audit Template
-- Accessibility Testing Checklist
-- Color Psychology Rationale Template
+- Color palette documentation template (complete output structure)
+- Competitor color audit template
+- Accessibility testing checklist
+- Color psychology rationale template
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Strategy Phase
+### During strategy phase
 - Apply Archetype Color Framework based on brand personality
 - Consider Appropriateness Principle for industry fit
 - Apply Color-in-Context Theory for specific applications
 
-### During Competitive Analysis
+### During competitive analysis
 - Use Blue Ocean Color Strategy process
 - Identify dominant colors and white space
 - Find differentiation opportunities
 
-### During Palette Development
+### During palette development
 - Apply Color Harmony Systems for secondary colors
 - Use 60-30-10 Rule for distribution
 - Specify in all four systems (HEX, RGB, CMYK, Pantone)
 
-### During Validation
+### During validation
 - Test WCAG contrast ratios
 - Simulate colorblindness
 - Check cultural implications for target markets
-- Verify against Common Mistakes checklist
+- Verify against the common mistakes checklist
 
 ---
 
-## Key Principles
+## Key principles
 
 1. **Appropriateness over preference**: Color must "fit" the brand context
 2. **Context determines meaning**: Same color, different responses

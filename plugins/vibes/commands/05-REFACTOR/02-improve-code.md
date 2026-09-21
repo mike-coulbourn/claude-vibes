@@ -3,28 +3,28 @@ description: Apply refactoring changes safely
 argument-hint: Path to assessment file (e.g., docs/05-REFACTOR/assessment-api.md) or direct refactoring description
 ---
 
-# Refactor Phase
+# Refactor phase
 
-You are helping a vibe coder improve their code structure without changing behavior. This is evolution—make the code better while keeping it working exactly the same.
+You are helping a vibe coder improve their code structure without changing behavior. This is evolution. Make the code better while keeping it working exactly the same.
 
 Refactoring to apply: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the refactoring and manage the conversation. You handle coordination, verification, and communication.
 
-**CRITICAL: You MUST use the Agent tool to launch the refactorer agent for the actual refactoring work.** Do not apply the refactoring changes yourself—that's what the refactorer agent is for. Even if the refactoring seems simple, launch the agent.
+**Use the Agent tool to launch the refactorer agent for the actual refactoring work.** Do not apply the refactoring changes yourself. That's what the refactorer agent is for. Even if the refactoring seems simple, launch the agent.
 
 Your job:
 - Load context and plan the approach
 - **Launch the refactorer agent** (via Agent tool) to apply code changes
 - Summarize results to the user
 
-## Interactive Experience (CRITICAL)
+## Interactive experience (critical)
 
-**ALWAYS use the AskUserQuestion tool when interacting with the user.** This ensures a guided, interactive experience:
+**Use the AskUserQuestion tool whenever you interact with the user.** This gives a guided, interactive experience:
 
 Use AskUserQuestion to:
 - Clarify the refactoring approach when multiple options exist
@@ -34,27 +34,27 @@ Use AskUserQuestion to:
 
 Never assume the right approach. Ask to confirm.
 
-## The Golden Rule
+## The golden rule
 
-**The code must do exactly the same thing before and after—just be structured better.**
+**The code must do exactly the same thing before and after, only structured better.**
 
 Refactoring improves structure without changing behavior. Validation happens in `/03-validate-improvements`.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project requirements and architecture
+- `docs/01-START/` files: project requirements and architecture
 - The assessment file (if provided)
 
-These are stable documentation—always load them. The refactorer agent will parse LOGS.json and report back specific relevant entries.
+These are stable documentation, so always load them. The refactorer agent will parse LOGS.json and report back specific relevant entries.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no assessment file exists:**
-If no assessment file exists, use AskUserQuestion to understand what improvements the user wants to make, or suggest running `/01-assess-improvements` first for a comprehensive analysis.
+If no assessment file exists, use AskUserQuestion to understand what improvements the user wants to make, or suggest running `/01-assess-improvements` first for a full analysis.
 
-## How to Communicate
+## How to communicate
 
 - Explain each change in plain language before making it
 - Show before/after comparisons
@@ -62,9 +62,9 @@ If no assessment file exists, use AskUserQuestion to understand what improvement
 - Use AskUserQuestion for decisions about approach
 - Celebrate incremental wins
 
-## Refactor Process
+## Refactor process
 
-### 1. Load Context
+### 1. Load context
 
 If no input is provided:
 "What would you like to improve? Run `/01-assess-improvements` first for a full analysis, or describe the improvement: `/02-improve-code extract the validation logic into a shared utility`"
@@ -72,7 +72,7 @@ If no input is provided:
 If an assessment file path is provided, read it for the full analysis.
 If a direct description is provided, treat it as a targeted refactoring.
 
-### 2. Plan the Changes
+### 2. Plan the changes
 
 From the assessment or description, confirm:
 - What's being refactored?
@@ -90,9 +90,9 @@ This refactoring has 3 steps:
 
 Use AskUserQuestion if the approach isn't clear.
 
-### 3. Launch Refactorer (REQUIRED)
+### 3. Launch refactorer (required)
 
-**You MUST use the Agent tool to launch the refactorer agent** for each step. Use `subagent_type: "claude-vibes:CODING:refactorer"` with this prompt:
+**Use the Agent tool to launch the refactorer agent** for each step. Use `subagent_type: "claude-vibes:CODING:refactorer"` with this prompt:
 
 > Ultrathink about applying this refactoring.
 >
@@ -119,7 +119,7 @@ Use AskUserQuestion if the approach isn't clear.
 > - If you find related code that should also be updated, ask if the user wants to include it
 > - If the refactoring is more complex than expected, check in before continuing
 > - If you see multiple valid approaches, ask which the user prefers
-> - Never change behavior without asking—refactoring means same behavior, better structure
+> - Never change behavior without asking. Refactoring means same behavior, better structure
 >
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
@@ -139,7 +139,7 @@ After the refactorer returns:
 
 This gives you relevant refactoring history without reading the entire LOGS.json.
 
-### 4. Summarize Changes
+### 4. Summarize changes
 
 After all steps complete:
 
@@ -164,8 +164,8 @@ Ready to validate? Run `/03-validate-improvements`
 
 ## Guidelines
 
-- Make incremental changes—one step at a time
-- Follow existing patterns—don't invent new approaches
+- Make incremental changes, one step at a time
+- Follow existing patterns, and don't invent new approaches
 - Refactoring ≠ adding features or fixing bugs
 - Let the refactorer explore LOGS.json; read only what it references
 - Validation and testing happen in `/03-validate-improvements`
@@ -179,24 +179,24 @@ When refactoring is complete:
 3. Improvement metrics (lines saved, complexity reduced, etc.)
 4. Next step: "Run `/03-validate-improvements` to verify behavior and document"
 
-### Record Refactoring Lessons
+### Record refactoring lessons
 
 In the refactorer's prompt, ask it to record durable learnings in its project memory before it finishes:
 
 1. **Refactoring patterns discovered:**
    - Effective refactoring approaches (e.g., "Extract shared validation using the ValidationPipeline pattern")
    - What worked well (e.g., "Using the existing BaseRepository simplified the abstraction")
-   - What to avoid (e.g., "Don't extract helpers that are only used once — adds indirection without benefit")
+   - What to avoid (e.g., "Don't extract helpers that are only used once, since that adds indirection without benefit")
 
 2. **Codebase patterns discovered:**
    - Patterns you established (e.g., "All utility functions now live in utils/ with barrel exports")
    - Conventions you followed (e.g., "Services use constructor injection, not method injection")
 
-**Only record NEW findings**: approaches that will help future refactorings. If nothing notable was discovered, skip this step.
+**Only record new findings**: approaches that will help future refactorings. If nothing notable was discovered, skip this step.
 
 If the user's review surfaced a lesson that every future session should know, offer to add it to the project's CLAUDE.md.
 
 **Example observations to store:**
-- "The codebase uses a specific module structure — utils/, services/, models/ — always follow this"
+- "The codebase uses a specific module structure: utils/, services/, models/. Always follow it"
 - "Extracting common logic into hooks works better than HOCs in this React codebase"
 - "When consolidating duplicate code, the version in services/ is usually the canonical one"

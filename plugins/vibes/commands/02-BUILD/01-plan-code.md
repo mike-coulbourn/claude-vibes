@@ -3,21 +3,21 @@ description: Explore the codebase and plan a clean, production-grade implementat
 argument-hint: Feature or task to plan (optional if Taskmaster is set up)
 ---
 
-# Plan Phase
+# Plan phase
 
 You are helping a vibe coder plan their next piece of work. This combines exploration (understanding what exists) and planning (designing how to add to it). Good planning prevents messy code.
 
 Feature to plan: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the planning process and manage the conversation. The code-architect agent handles codebase exploration and LOGS.json parsing, reporting back specific references that you then read.
 
-**CRITICAL: You MUST use the Agent tool to launch the code-architect agent for codebase exploration.** Do not explore and design the implementation yourself—that's what the code-architect agent is for.
+**Use the Agent tool to launch the code-architect agent for codebase exploration.** Do not explore and design the implementation yourself. That's what the code-architect agent is for.
 
-## Project Context
+## Project context
 
 **Always read the docs/ files for core context:**
 - `docs/01-START/01-discover.md`: The problem, users, and value
@@ -25,26 +25,26 @@ You orchestrate the planning process and manage the conversation. The code-archi
 - `docs/01-START/03-architect.md`: Technical decisions and data model
 - `docs/01-START/04-plan-roadmap.md`: Implementation roadmap
 
-These are stable project documentation—always load them.
+These are stable project documentation, so always load them.
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions. Use AskUserQuestion to gather context about the project's purpose, users, and architecture before proceeding.
 
-## How to Communicate
+## How to communicate
 
-- **Use AskUserQuestion for EVERY decision**: always provide 2-4 clear options
+- **Use AskUserQuestion for every decision**: always provide 2-4 clear options
 - Never launch agents until you've confirmed your understanding with the user
 - Lead with recommendations: "Based on the existing patterns, I'd suggest..."
 - Explain design decisions in plain language
 - Flag anything that might be tricky or have alternatives
 
-## Plan Process
+## Plan process
 
-### 1. Load Core Context
+### 1. Load core context
 
 Read all available docs/01-START/ files for project understanding.
 
-### 2. Recall Past Learnings
+### 2. Recall past learnings
 
 The code-architect agent keeps its own project memory and loads it automatically, so there is nothing to fetch here. When you write its prompt in the launch step, tell it to check that memory for:
 
@@ -53,13 +53,13 @@ The code-architect agent keeps its own project memory and loads it automatically
 
 Patterns tell it which conventions to follow, and lessons warn it about gotchas. This supplements the docs with experience from earlier sessions.
 
-**If its memory is empty**, that's fine — it fills up as you build. Proceed to the next step.
+**If its memory is empty**, that's fine, and it fills up as you build. Proceed to the next step.
 
 ### 3. Check for Taskmaster
 
 **Check if Taskmaster is set up** by looking for `.taskmaster/tasks/tasks.json`.
 
-**If Taskmaster EXISTS:**
+**If Taskmaster exists:**
 
 Use the Taskmaster MCP `next_task` tool to get the recommended next task based on dependencies.
 
@@ -85,7 +85,7 @@ Options:
 
 **If they want something else:** Ask what they want to work on, then proceed with manual planning.
 
-**If Taskmaster DOES NOT exist:**
+**If Taskmaster does not exist:**
 
 Check if `$ARGUMENTS` was provided.
 
@@ -101,7 +101,7 @@ Options:
 - Other
 ```
 
-### 4. Expand Complex Tasks (Taskmaster only)
+### 4. Expand complex tasks (Taskmaster only)
 
 **Skip this step if not using Taskmaster.** For manual tasks, proceed to Step 5.
 
@@ -115,9 +115,9 @@ Use `get_task` to see the task details. If subtasks already exist:
 ```
 Question: "This task already has subtasks:
 
-1. [Subtask 1] — [status]
-2. [Subtask 2] — [status]
-3. [Subtask 3] — [status]
+1. [Subtask 1]: [status]
+2. [Subtask 2]: [status]
+3. [Subtask 3]: [status]
 
 Which subtask should we plan?"
 Options:
@@ -133,14 +133,14 @@ Then proceed to Step 4 with the selected subtask.
 
 If no subtasks exist, check if complexity analysis has been run for this task.
 
-**If complexity data EXISTS:**
+**If complexity data exists:**
 
 Look at two things:
 1. The complexity score (1-10)
 2. The **recommended subtask count** from the analysis
 
-**If recommended subtasks = 0 OR complexity score < 4:**
-The task is simple enough — skip expansion and proceed to Step 4.
+**If recommended subtasks = 0 or complexity score < 4:**
+The task is simple enough, so skip expansion and proceed to Step 4.
 
 **If recommended subtasks > 0:**
 
@@ -176,13 +176,13 @@ Options:
 ```
 Question: "Here are the subtasks created:
 
-1. [Subtask 1] — [description]
-2. [Subtask 2] — [description]
-3. [Subtask 3] — [description]
+1. [Subtask 1]: [description]
+2. [Subtask 2]: [description]
+3. [Subtask 3]: [description]
 
 Does this breakdown look right?"
 Options:
-- Yes, looks good — let's plan subtask 1
+- Yes, looks good, let's plan subtask 1
 - I'd like to adjust some subtasks first
 - Add a subtask for [specific area]
 - Other
@@ -192,7 +192,7 @@ Options:
 
 4. **The first subtask becomes what we plan**: proceed to Step 4 with subtask 1
 
-**If NO complexity data exists:**
+**If no complexity data exists:**
 
 **Use AskUserQuestion:**
 ```
@@ -213,16 +213,16 @@ Options:
 
 ---
 
-### 5. Understand the Task
+### 5. Understand the task
 
 Once you have a task or subtask to plan:
 
 **Use AskUserQuestion to clarify until you fully understand:**
-- What should this feature DO? (specific behavior, not just name)
+- What should this feature do? (specific behavior, not just name)
 - Who is it for? (which user type from docs/01-START/)
 - What's the expected outcome when it's working?
 - Any specific behaviors or edge cases you're already aware of?
-- What's most important about this feature—speed, simplicity, flexibility?
+- What's most important about this feature: speed, simplicity, flexibility?
 
 **Before proceeding, summarize back:**
 "Here's what I understand: [summary]. Is that right, or should I adjust anything?"
@@ -243,9 +243,9 @@ Options:
 
 Only proceed to code exploration after the user confirms your understanding.
 
-### 6. Launch Code Architect (REQUIRED)
+### 6. Launch Code Architect (required)
 
-**You MUST use the Agent tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:CODING:code-architect"` with this prompt:
+**Use the Agent tool to launch the code-architect agent.** Use `subagent_type: "claude-vibes:CODING:code-architect"` with this prompt:
 
 > Ultrathink about implementing [feature/task].
 >
@@ -282,7 +282,7 @@ Only proceed to code exploration after the user confirms your understanding.
 > - If you find multiple valid patterns to follow, ask which the user prefers
 > - If the feature could be scoped differently, ask about boundaries
 > - If you discover complexity that wasn't anticipated, check in before designing around it
-> - If you're unsure about any requirement, ask—never assume
+> - If you're unsure about any requirement, ask, and never assume
 >
 > **Report back with specific references:**
 > - Cite specific LOGS.json entry IDs that are relevant (e.g., "entry-042")
@@ -292,7 +292,7 @@ Only proceed to code exploration after the user confirms your understanding.
 >
 > This allows the main session to read those specific references without parsing all of LOGS.json.
 
-### 7. Load Specific References
+### 7. Load specific references
 
 After the code-architect returns:
 
@@ -302,7 +302,7 @@ After the code-architect returns:
 
 This gives you relevant build history without reading the entire LOGS.json.
 
-### 8. Review the Design
+### 8. Review the design
 
 Now fully context-aware, present the design to the user:
 
@@ -327,7 +327,7 @@ Options:
 - Other
 ```
 
-### 9. Finalize the Plan
+### 9. Finalize the plan
 
 Once the user approves, document the plan:
 
@@ -350,7 +350,7 @@ Once the user approves, document the plan:
 - Always read docs/ for core context
 - Let the agent explore LOGS.json; you read only what's relevant
 - Prefer simple solutions over clever ones
-- Flag complexity early—better to discuss than surprise
+- Flag complexity early, because it's better to discuss than surprise
 - The plan should be specific enough that `/02-write-code` can execute it
 
 ## Output

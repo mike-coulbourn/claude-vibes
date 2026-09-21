@@ -1,22 +1,22 @@
-# Photography Reference for Midjourney V7
+# Photography reference for Midjourney V7
 
 ## Contents
 
-- [Camera & Lens Terminology](#camera--lens-terminology)
-- [Lighting Terminology](#lighting-terminology)
-- [Film Stock References](#film-stock-references)
-- [Composition Terms](#composition-terms)
-- [Shot Types](#shot-types)
-- [Photorealistic Portrait Template](#photorealistic-portrait-template)
-- [Product Photography Template](#product-photography-template)
-- [Landscape Photography Template](#landscape-photography-template)
-- [Quick Lighting Combinations](#quick-lighting-combinations)
-- [Common Photography Mistakes](#common-photography-mistakes)
-- [V7 Photography Advantages](#v7-photography-advantages)
+- [Camera & lens terminology](#camera--lens-terminology)
+- [Lighting terminology](#lighting-terminology)
+- [Film stock references](#film-stock-references)
+- [Composition terms](#composition-terms)
+- [Shot types](#shot-types)
+- [Photorealistic portrait template](#photorealistic-portrait-template)
+- [Product photography template](#product-photography-template)
+- [Landscape photography template](#landscape-photography-template)
+- [Quick lighting combinations](#quick-lighting-combinations)
+- [Common photography mistakes](#common-photography-mistakes)
+- [V7 photography advantages](#v7-photography-advantages)
 
-## Camera & Lens Terminology
+## Camera & lens terminology
 
-### Focal Lengths
+### Focal lengths
 
 | Focal Length | Effect | Best For |
 |--------------|--------|----------|
@@ -28,7 +28,7 @@
 | `135mm` | Strong compression, smooth background | Telephoto portraits, fashion |
 | `200mm+` | Extreme compression | Wildlife, sports, compressed landscapes |
 
-### Camera Bodies (Style Influence)
+### Camera bodies (style influence)
 
 Different cameras suggest different aesthetic qualities:
 
@@ -42,7 +42,7 @@ Different cameras suggest different aesthetic qualities:
 | `Fujifilm X-T5` | Film simulation aesthetic |
 | `Phase One` | Ultra-high resolution, commercial |
 
-### Aperture Effects
+### Aperture effects
 
 | Aperture | Effect |
 |----------|--------|
@@ -60,9 +60,9 @@ Different cameras suggest different aesthetic qualities:
 
 ---
 
-## Lighting Terminology
+## Lighting terminology
 
-### Studio Lighting
+### Studio lighting
 
 | Term | Effect |
 |------|--------|
@@ -77,7 +77,7 @@ Different cameras suggest different aesthetic qualities:
 | `clamshell lighting` | Two lights sandwiching face, beauty/fashion |
 | `loop lighting` | Small shadow under nose, flattering portraits |
 
-### Natural Lighting
+### Natural lighting
 
 | Term | Effect |
 |------|--------|
@@ -92,7 +92,7 @@ Different cameras suggest different aesthetic qualities:
 | `sunset` | Orange/red tones, dramatic |
 | `midday sun` | Harsh, overhead shadows |
 
-### Cinematic & Dramatic Lighting
+### Cinematic & dramatic lighting
 
 | Term | Effect |
 |------|--------|
@@ -106,7 +106,7 @@ Different cameras suggest different aesthetic qualities:
 | `high-key lighting` | Bright, minimal shadows, airy |
 | `noir lighting` | High contrast, dramatic shadows, venetian blinds |
 
-### Color Temperature
+### Color temperature
 
 | Term | Effect |
 |------|--------|
@@ -119,9 +119,9 @@ Different cameras suggest different aesthetic qualities:
 
 ---
 
-## Film Stock References
+## Film stock references
 
-### Color Negative Films
+### Color negative films
 
 | Film Stock | Characteristics |
 |------------|-----------------|
@@ -134,7 +134,7 @@ Different cameras suggest different aesthetic qualities:
 | `Fujifilm Pro 400H` | Soft pastels, low contrast, cool shadows |
 | `Fujifilm Superia 400` | Consumer film, green cast, punchy |
 
-### Slide Films (Transparency)
+### Slide films (transparency)
 
 | Film Stock | Characteristics |
 |------------|-----------------|
@@ -142,7 +142,7 @@ Different cameras suggest different aesthetic qualities:
 | `Fujifilm Provia 100F` | Natural colors, fine grain |
 | `Kodak Ektachrome E100` | Vintage look, accurate colors |
 
-### Cinematic Films
+### Cinematic films
 
 | Film Stock | Characteristics |
 |------------|-----------------|
@@ -151,7 +151,7 @@ Different cameras suggest different aesthetic qualities:
 | `Kodak Vision3 500T` | Motion picture film, rich colors |
 | `Kodak Vision3 250D` | Daylight motion picture, natural |
 
-### Black & White Films
+### Black & white films
 
 | Film Stock | Characteristics |
 |------------|-----------------|
@@ -162,17 +162,17 @@ Different cameras suggest different aesthetic qualities:
 | `Ilford FP4 Plus 125` | Classic look, medium grain |
 | `Fujifilm Acros 100` | Ultra-fine grain, smooth tones |
 
-### Using Film Stocks in Prompts
+### Using film stocks in prompts
 
 ```
 Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --raw
 ```
 
-**Note**: Film stocks add saturation, contrast, vignette, and grain. Results vary due to training data — experiment.
+**Note**: Film stocks add saturation, contrast, vignette, and grain. Results vary due to training data, so experiment.
 
 ---
 
-## Composition Terms
+## Composition terms
 
 | Term | Effect |
 |------|--------|
@@ -191,7 +191,7 @@ Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --raw
 
 ---
 
-## Shot Types
+## Shot types
 
 | Term | Description |
 |------|-------------|
@@ -206,7 +206,7 @@ Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --raw
 
 ---
 
-## Photorealistic Portrait Template
+## Photorealistic portrait template
 
 ```
 [Age] [ethnicity if relevant] [gender] [expression/pose],
@@ -226,7 +226,7 @@ Hasselblad, 80mm lens, f/2.8, Kodak Portra 400
 
 ---
 
-## Product Photography Template
+## Product photography template
 
 ```
 [Product] on [surface material], [background],
@@ -243,7 +243,7 @@ Phase One --ar 1:1 --raw
 
 ---
 
-## Landscape Photography Template
+## Landscape photography template
 
 ```
 [Scene description], [time of day], [weather/atmosphere],
@@ -261,7 +261,7 @@ low clouds clinging to peaks, ethereal and mysterious,
 
 ---
 
-## Quick Lighting Combinations
+## Quick lighting combinations
 
 **Soft, flattering portrait**:
 ```
@@ -295,7 +295,7 @@ clean studio lighting, white seamless background, soft shadows
 
 ---
 
-## Common Photography Mistakes
+## Common photography mistakes
 
 | Mistake | Solution |
 |---------|----------|
@@ -307,9 +307,9 @@ clean studio lighting, white seamless background, soft shadows
 
 ---
 
-## V7 Photography Advantages
+## V7 photography advantages
 
-V7 significantly improves photorealistic generation:
+V7 improves photorealistic generation:
 
 - **Better skin textures**: Natural, detailed skin without uncanny valley
 - **Improved eyes**: More realistic, properly lit eyes

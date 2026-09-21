@@ -3,11 +3,11 @@ name: midjourney-prompting
 description: Use when writing, fixing, or refining Midjourney prompts in any style, including photography, illustration, anime, and fine art, or when choosing Midjourney parameters and reference images. Keywords - Midjourney, MJ prompt, --ar, --stylize, --chaos, --sref style reference, character and omni reference, lighting and camera terms, image generation prompt.
 ---
 
-# Midjourney Prompting Guide
+# Midjourney prompting guide
 
 > **Version note, last verified September 2026.** The current default is V8.2, and this guide covers V7, V8.1, V8.2, and Niji 7. Midjourney ships new versions a few times a year, so if the user names a newer one, or a parameter behaves unexpectedly, check https://docs.midjourney.com with WebSearch before relying on a version-specific claim here.
 
-## Quick Reference: Prompt Structure
+## Quick reference: prompt structure
 
 A Midjourney prompt has up to four parts:
 
@@ -15,11 +15,11 @@ A Midjourney prompt has up to four parts:
 /imagine [description] [image URLs] [parameters]
 ```
 
-**Key Principle**: Short, specific prompts work best. Describe what you want to SEE, not abstract concepts.
+**Key Principle**: Short, specific prompts work best. Describe what you want to see, not abstract concepts.
 
 ---
 
-## The 7-Element Framework
+## The 7-element framework
 
 Build complete prompts systematically:
 
@@ -42,7 +42,7 @@ rule of thirds composition --ar 3:2
 
 ---
 
-## Essential Parameters
+## Essential parameters
 
 | Parameter | Purpose | Values | Default |
 |-----------|---------|--------|---------|
@@ -56,7 +56,7 @@ rule of thirds composition --ar 3:2
 | `--hd` / `--sd` | V8.1+: 2048px or 1024px render | - | `--sd` |
 | `--tile` | Seamless patterns | - | Off |
 
-### Reference Parameters
+### Reference parameters
 
 | Parameter | Purpose | Weight Control |
 |-----------|---------|----------------|
@@ -68,7 +68,7 @@ See [reference/parameters.md](reference/parameters.md) for complete details.
 
 ---
 
-## Aspect Ratio Guide
+## Aspect ratio guide
 
 | Ratio | Best For | Feel |
 |-------|----------|------|
@@ -81,9 +81,9 @@ See [reference/parameters.md](reference/parameters.md) for complete details.
 
 ---
 
-## Common Prompt Types
+## Common prompt types
 
-### Photorealistic Portrait
+### Photorealistic portrait
 
 ```
 [Age] [ethnicity if relevant] [gender] [action/pose], [clothing],
@@ -98,7 +98,7 @@ linen shirt, sitting in sun-drenched cafe, soft window light,
 Canon EOS R5, 85mm lens, f/1.8, Kodak Portra 400 --ar 2:3 --raw
 ```
 
-### Illustration/Art
+### Illustration/art
 
 ```
 [Subject] in the style of [artist/medium], [environment],
@@ -112,7 +112,7 @@ enchanted woodland, dappled sunlight, ethereal and mysterious
 --ar 2:3 --stylize 250
 ```
 
-### Anime/Manga (Niji Mode)
+### Anime/manga (Niji mode)
 
 ```
 [Subject], [action/pose], [environment], [style notes] --niji 7
@@ -126,7 +126,7 @@ battlefield, dramatic lighting, detailed armor --niji 7
 
 ---
 
-## Style Reference (--sref)
+## Style reference (--sref)
 
 Copy visual style from an image:
 
@@ -153,7 +153,7 @@ A scene --sref URL1::2 URL2::1
 
 ---
 
-## Putting a Character or Object in the Image
+## Putting a character or object in the image
 
 Which feature does this depends on the Midjourney version, so check the user's version first.
 
@@ -178,7 +178,7 @@ Source: https://docs.midjourney.com (Omni Reference, Edit Model, and Version art
 
 ---
 
-## Multi-Prompts & Weights
+## Multi-prompts & weights
 
 Use `::` to separate concepts for independent interpretation:
 
@@ -199,7 +199,7 @@ flowers::-0.5
 
 ---
 
-## Versions: What Changes and What Doesn't
+## Versions: what changes and what doesn't
 
 Ask which version the user is on when the request involves reference images, speed or cost modes, or resolution. Everything else in this guide (prompt structure, the 7 elements, lighting and camera vocabulary, `--ar`, `--stylize`, `--chaos`, `--weird`, `--no`, `--seed`, `--sref`, `--raw`) applies across V7 and V8.
 
@@ -214,7 +214,7 @@ Source: https://docs.midjourney.com Version and Parameter List articles, last ve
 
 ---
 
-## Best Practices
+## Best practices
 
 ### DO
 
@@ -226,7 +226,7 @@ Source: https://docs.midjourney.com Version and Parameter List articles, last ve
 - In V7, use `--draft` for cheap exploration before committing to a full render
 - In V8, write Edit Model prompts as instructions when changing an existing image ("make the jacket red")
 
-### DON'T (Junk Words to Avoid)
+### DON'T (junk words to avoid)
 
 Current models produce high quality by default, so these add nothing:
 - 4k, 6k, 8k, 16k, ultra 4k
@@ -236,20 +236,20 @@ Current models produce high quality by default, so these add nothing:
 
 ---
 
-## Negative Prompts (--no)
+## Negative prompts (--no)
 
 **Correct usage**:
 ```
 still life painting --no fruit, shadows, bright colors
 ```
 
-**Critical warnings**:
-- "don't" and "without" DO NOT work — use `--no` instead
+**Warnings**:
+- "don't" and "without" do not work. Use `--no` instead
 - `--no modern clothing` = "no modern" AND "no clothing" (words interpreted separately)
 
 ---
 
-## Text in Images
+## Text in images
 
 ```
 A storefront sign that says "BAKERY"
@@ -257,14 +257,14 @@ A storefront sign that says "BAKERY"
 
 **Tips** (V7 handles text better than previous versions):
 - Use double quotes only (single quotes don't work)
-- Keep text SHORT (5 words or fewer)
+- Keep text short (5 words or fewer)
 - Include context: "sign that says", "text reading"
 - Use `--raw` for better accuracy
 - Lower `--stylize` helps text clarity
 
 ---
 
-## Common Mistakes
+## Common mistakes
 
 | Mistake | Problem | Solution |
 |---------|---------|----------|
@@ -277,29 +277,29 @@ A storefront sign that says "BAKERY"
 
 ---
 
-## Key Principles
+## Key principles
 
-### The Specificity Principle
+### The specificity principle
 More specific = more control. Vague prompts let Midjourney decide; specific prompts give you your vision.
 
-### The Subtraction Principle
+### The subtraction principle
 Adding more words doesn't always help. Use `/shorten` to identify essential terms.
 
-### The Reference Power Law
+### The reference power law
 `--sref` and a character or object reference (`--oref` in V7, attached images with the Edit Model in V8) provide more consistent control than text descriptions alone.
 
-### The Iteration Mindset
+### The iteration mindset
 First generation = starting point. Use variations, remix, vary region to refine.
 
 ---
 
-## Photography Reference
+## Photography reference
 
 For detailed camera settings, lighting terminology, and film stocks, see [reference/photography.md](reference/photography.md).
 
 ---
 
-## Quick Templates
+## Quick templates
 
 **Product shot**:
 ```

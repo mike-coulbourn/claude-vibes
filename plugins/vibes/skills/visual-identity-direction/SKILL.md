@@ -3,9 +3,9 @@ name: visual-identity-direction
 description: Use when translating brand strategy into visual creative direction, such as writing a creative or logo brief, describing mood boards, or setting photography, illustration, color, and type direction for a designer. Keywords - visual identity, visual direction, creative brief, mood board, logo brief, photography style, Alina Wheeler, visual language, design direction.
 ---
 
-# Visual Identity Direction Frameworks
+# Visual identity direction frameworks
 
-Quick reference for translating brand strategy into visual identity direction, using proven methodologies from brand identity masters.
+Quick reference for translating brand strategy into visual identity direction, using proven methodologies from leading brand identity practitioners.
 
 > "A brand is a person's gut feeling about a product, service, or organization." — Marty Neumeier
 
@@ -15,7 +15,7 @@ Quick reference for translating brand strategy into visual identity direction, u
 
 ---
 
-## Key Statistics
+## Key statistics
 
 | Metric | Value | Implication |
 |--------|-------|-------------|
@@ -26,11 +26,11 @@ Quick reference for translating brand strategy into visual identity direction, u
 
 ---
 
-## The 5 Core Frameworks
+## The 5 core frameworks
 
 ### 1. Alina Wheeler's Five-Phase Process
 
-**The definitive industry standard:**
+**The industry standard:**
 
 | Phase | Focus | Key Activities |
 |-------|-------|----------------|
@@ -46,12 +46,12 @@ Quick reference for translating brand strategy into visual identity direction, u
 
 ### 2. Strategy to Visual Translation Method
 
-**The critical bridge from words to visuals:**
+**The bridge from words to visuals:**
 
 **Step 1: Commit to Words First**
 > "You must commit to words in order to remove the subjectivity of whether something works."
 
-Before ANY visual exploration, define:
+Before any visual exploration, define:
 - Brand personality adjectives (3-5 specific terms)
 - Brand essence (2-3 words capturing the soul)
 - Single-minded proposition
@@ -66,7 +66,7 @@ Translate each adjective to visual direction (see table below).
 Create 3 mood boards with textual explanations connecting each element to strategy.
 
 **Step 5: Client Alignment**
-Get agreement on direction BEFORE detailed design work.
+Get agreement on direction before detailed design work.
 
 ---
 
@@ -104,7 +104,7 @@ A four-level hierarchy where each level informs the next:
 
 The SMP is:
 - A simple statement, never more than a sentence
-- Not for public consumption—designed to inspire the creative team
+- Not for public consumption, but designed to inspire the creative team
 - The foundation for all creative decisions
 
 **Formula:** Problem + Benefits + Insight = Single-Minded Proposition
@@ -115,7 +115,7 @@ The SMP is:
 
 ## Visual Word Translation Table
 
-**Crucial for translating brand adjectives to visual expressions:**
+**For translating brand adjectives to visual expressions:**
 
 | Brand Adjective | Visual Expression |
 |-----------------|-------------------|
@@ -134,7 +134,7 @@ The SMP is:
 
 ---
 
-## Mood Board Methodology (7 Steps)
+## Mood board methodology (7 steps)
 
 1. **Define Brand Strategy First**
    Know personality, tone, emotions to convey before gathering imagery
@@ -156,7 +156,7 @@ The SMP is:
    Present multiple directions to explore possibilities
 
 6. **Add Context & Explanations**
-   Clarify how each element aligns with strategy—don't assume it's obvious
+   Clarify how each element aligns with strategy, and don't assume it's obvious
 
 7. **Arrange Cohesively**
    Use grid or bento box layouts for professional presentation
@@ -165,9 +165,9 @@ The SMP is:
 
 ---
 
-## Logo Design Brief Structure
+## Logo design brief structure
 
-### 9 Essential Components
+### 9 essential components
 
 1. **Business Information**: What they do, problems they solve, why they exist
 2. **Company Name Specifics**: Single line vs. multiple, tagline inclusion
@@ -179,7 +179,7 @@ The SMP is:
 8. **Timeline & Budget**: Project constraints
 9. **What to Avoid**: Styles, colors, or approaches to skip
 
-### Presentation Best Practices
+### Presentation best practices
 
 - Add "design rationale" slide explaining strategic approach
 - Start in black and white to highlight form and balance
@@ -188,9 +188,9 @@ The SMP is:
 
 ---
 
-## Photography Style Framework
+## Photography style framework
 
-### Core Elements to Define
+### Core elements to define
 
 **Lighting Direction:**
 | Type | Description | Best For |
@@ -215,7 +215,7 @@ The SMP is:
 - Poses and expressions
 - Wardrobe specifications
 
-### Brand Photography Examples
+### Brand photography examples
 
 | Brand | Style | Why It Works |
 |-------|-------|--------------|
@@ -225,15 +225,15 @@ The SMP is:
 
 ---
 
-## Typography Selection Rationale
+## Typography selection rationale
 
-### Strategic Questions
+### Strategic questions
 
 - Who is this brand? (Identity drives font selection)
 - What emotions should the typography evoke?
 - How will it be used across platforms?
 
-### Font Category Personalities
+### Font category personalities
 
 | Category | Personality | Best For |
 |----------|-------------|----------|
@@ -242,7 +242,7 @@ The SMP is:
 | **Script** | Traditional values, luxury, femininity, craft | Luxury, beauty, artisan |
 | **Display** | Bold, distinctive, attention-grabbing | Creative, entertainment, youth |
 
-### Selection Criteria
+### Selection criteria
 
 1. Alignment with brand personality
 2. Cross-platform legibility
@@ -252,16 +252,16 @@ The SMP is:
 
 ---
 
-## Color Direction Communication
+## Color direction communication
 
-### Selection Framework
+### Selection framework
 
 1. **Align with Brand Personality**: Colors evoke specific emotions
 2. **Know Your Audience**: Demographics respond differently to colors
-3. **Differentiate from Competitors**: Conduct color audit of competitive landscape
+3. **Differentiate from Competitors**: Conduct color audit of competitors
 4. **Build Strategic Palette**: 1 primary + 1-3 secondary + neutral
 
-### Color Associations
+### Color associations
 
 | Color | Associations | Common Industries |
 |-------|--------------|-------------------|
@@ -273,7 +273,7 @@ The SMP is:
 | **Purple** | Creativity, wisdom, luxury | Beauty, spiritual, premium |
 | **White** | Purity, simplicity, minimalism | Tech, healthcare, lifestyle |
 
-### Communication Best Practice
+### Communication best practice
 
 Always include "why" with color choices:
 > "Green = growth, trust, and sustainability, directly supporting our positioning as..."
@@ -292,13 +292,13 @@ For action-oriented creative briefs:
 
 ---
 
-## Creative Brief Best Practices
+## Creative brief best practices
 
-### 9 Essential Components
+### 9 essential components
 
 1. **Project Background & Objectives**: The "why" behind the project
 2. **Target Audience**: Detailed buyer personas and demographics
-3. **Key Message / Single-Minded Proposition**: The ONE compelling reason
+3. **Key Message / Single-Minded Proposition**: The one compelling reason
 4. **Tone & Voice**: Adjectives describing brand personality
 5. **Deliverables**: Specific outputs expected
 6. **Timeline & Budget**: Realistic constraints
@@ -306,13 +306,13 @@ For action-oriented creative briefs:
 8. **Competitor Analysis**: What to differentiate from
 9. **What to Avoid**: Clear guardrails
 
-### Brief Length
+### Brief length
 
 Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 
 ---
 
-## Brand Archetypes & Visual Expression
+## Brand archetypes & visual expression
 
 | Archetype | Visual Expression | Colors | Typography |
 |-----------|-------------------|--------|------------|
@@ -331,9 +331,9 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 
 ---
 
-## Visual Identity System Components
+## Visual identity system components
 
-### Core Elements (9)
+### Core elements (9)
 
 1. Logo design (primary, secondary, icon versions)
 2. Color palette (primary, secondary, accent, neutral)
@@ -345,15 +345,15 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 8. Layout principles
 9. Motion/animation guidelines
 
-### What Makes It a "System"
+### What makes it a "system"
 
 > "Modern visual identities are comprehensive systems, not just a collection of assets—they include the rules, structure, and governance required to implement your visual branding consistently."
 
 ---
 
-## Common Mistakes
+## Common mistakes
 
-### Creative Brief Mistakes
+### Creative brief mistakes
 
 | Mistake | Fix |
 |---------|-----|
@@ -365,7 +365,7 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 | Missing "what to avoid" | Define guardrails explicitly |
 | Too long (>2 pages) | Edit ruthlessly |
 
-### Visual Translation Mistakes
+### Visual translation mistakes
 
 | Mistake | Fix |
 |---------|-----|
@@ -375,7 +375,7 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 | No client alignment before detail | Get approval on mood boards first |
 | Tone mismatch | Check every choice against brief |
 
-### Brand Identity Mistakes
+### Brand identity mistakes
 
 | Mistake | Fix |
 |---------|-----|
@@ -387,7 +387,7 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 
 ---
 
-## Design Principles for Brand Identity
+## Design principles for brand identity
 
 | Principle | What It Means | Application |
 |-----------|---------------|-------------|
@@ -402,53 +402,53 @@ Keep creative briefs to **1-2 pages maximum**. Longer briefs dilute focus.
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Visual Identity Direction Document Template (complete output structure)
-- Creative Brief Template
-- Mood Board Description Template
-- Logo Design Brief Template
-- Photography Style Guide Template
-- Typography Selection Template
-- Color Direction Template
-- Illustration Style Template
-- Iconography Guidelines Template
-- Output Validation Checklist
+- Visual identity direction document template (complete output structure)
+- Creative brief template
+- Mood board description template
+- Logo design brief template
+- Photography style guide template
+- Typography selection template
+- Color direction template
+- Illustration style template
+- Iconography guidelines template
+- Output validation checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Strategic Foundation
+### During strategic foundation
 - Extract brand essence and define 3-5 adjectives
 - Create Single-Minded Proposition
 - Use Visual Word Translation Table
 
-### During Mood Board Creation
+### During mood board creation
 - Follow 7-step methodology
 - Include all key visual elements
 - Add context and explanations
 
-### During Logo Brief Writing
+### During logo brief writing
 - Include all 9 essential components
 - Follow presentation best practices
 
-### During Photography Direction
+### During photography direction
 - Define all core elements
 - Reference brand examples
 
-### During Finalization
+### During finalization
 - Check against common mistakes
 - Verify design principles are applied
 - Ensure system thinking, not one-off design
 
 ---
 
-## Key Principles
+## Key principles
 
 1. **Strategy drives design**: Every visual choice should have strategic rationale
 2. **Commit to words first**: Define adjectives before exploring visuals
 3. **Mood boards before detail**: Align on direction before detailed design work
 4. **Consistency creates recognition**: Visual systems, not one-off designs
 5. **Be specific**: "Modern and clean" means nothing; describe exactly what you mean
-6. **Show contrast**: Define what the brand IS and ISN'T visually
-7. **Think in systems**: Not one-off designs, but coherent visual language
+6. **Show contrast**: Define what the brand is and isn't visually
+7. **Think in systems**: Build one coherent visual language
 8. **Include the why**: Connect every visual choice back to strategy

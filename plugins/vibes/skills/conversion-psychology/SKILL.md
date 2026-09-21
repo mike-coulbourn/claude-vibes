@@ -3,9 +3,9 @@ name: conversion-psychology
 description: Use when optimizing sponsored or affiliate video scripts to convert, diagnosing why content is not driving action, or choosing which persuasion lever fits an offer. Keywords - buyer psychology, emotional triggers, social proof, scarcity, urgency, authority, reciprocity, loss aversion, why people buy.
 ---
 
-# Conversion Psychology for Sponsored Content
+# Conversion psychology for sponsored content
 
-## The Core Truth
+## The core truth
 
 **95% of purchasing decisions happen subconsciously**, driven by emotions, not logic.
 
@@ -18,7 +18,7 @@ This means:
 
 ---
 
-## Key Emotional Triggers
+## Key emotional triggers
 
 ### 1. Joy / Happiness
 - Videos evoking positive emotions are **30% more likely to be shared**
@@ -40,28 +40,28 @@ This means:
 - The need to belong is one of our strongest drives
 - "Join 50,000 people who..." triggers belonging
 
-### 5. Instant Gratification
+### 5. Instant gratification
 - One of the most pleasant triggers for driving sales
 - Emphasize quick results
 - "See results in [short timeframe]"
 
 ---
 
-## The Scarcity + Social Proof Combo
+## The scarcity + social proof combo
 
-### Scarcity Effect
+### Scarcity effect
 People assign greater value to limited availability items. Scarcity triggers:
 - FOMO (Fear of Missing Out)
 - Anticipated regret
 - Urgency that overrides normal decision-making
 
-### Social Proof
+### Social proof
 People rely on others' actions before making decisions:
 - **64% of consumers** believe genuine reviews are the most effective influencer content
 - Custom discount codes create exclusivity
 - **28% of consumers** actively motivated by exclusive deal codes
 
-### The Power Combo
+### The power combo
 Combining scarcity with social proof creates a dual trigger:
 
 > "Over 500 people have registered, only 10 spots remaining!"
@@ -71,19 +71,19 @@ This works because:
 2. Scarcity (only 10 left)
 3. Urgency (implied time pressure)
 
-### Ethical Warning
+### Ethical warning
 **Never use fake scarcity.** Audiences detect it, and it destroys credibility long-term.
 
 ---
 
-## Making Content Feel Native (Not Salesy)
+## Making content feel native (not salesy)
 
-### Why Native Advertising Works
+### Why native advertising works
 - Native ads generate **up to 5x higher engagement** than traditional display
 - They integrate with organic content
 - Influencers cultivate trust, making promotional content credible
 
-### Techniques for Authentic Feel
+### Techniques for authentic feel
 
 1. **Work with products you actually use**: audiences detect inauthenticity
 2. **Avoid being too obvious**: meaningful content shouldn't feel like a sales ask
@@ -91,19 +91,19 @@ This works because:
 4. **Focus on value over sales**: position as helpful, not promotional
 5. **Include honest cons**: perfect reviews feel fake
 
-### The 80/20 Rule
+### The 80/20 rule
 Maintain **80% value content, 20% promotional** to preserve trust.
 
 ---
 
-## Soft Sell vs Hard Sell
+## Soft sell vs hard sell
 
-### Research Data
+### Research data
 - Soft sell gets **31% positive response** vs hard sell
 - Hard sell has **25% unsubscribe rate** vs 10% for soft sell
 - Drip campaigns (soft sell) see **up to 50% higher conversion**
 
-### When to Use Each
+### When to use each
 
 **Soft Sell (Default for Creator Content)**:
 - Cold audiences / new viewers
@@ -117,16 +117,16 @@ Maintain **80% value content, 20% promotional** to preserve trust.
 - One-shot conversion opportunities
 - Flash sales to engaged followers
 
-### The YETI Example
-Their "Hungry Life" YouTube series uses incredible storytelling without ever mentioning the product. The cooler is depicted but never sold — yet viewers want it anyway.
+### The YETI example
+Their "Hungry Life" YouTube series tells stories without ever mentioning the product. The cooler is depicted but never sold, yet viewers want it anyway.
 
 **Lesson**: Sometimes the softest sell is the strongest.
 
 ---
 
-## Conversion Killers
+## Conversion killers
 
-### Script Mistakes That Tank Conversions
+### Script mistakes that tank conversions
 
 1. **Weak hook**: Nothing else matters if they scroll
 2. **Pushing sales too early**: Most viewers aren't ready
@@ -135,40 +135,40 @@ Their "Hungry Life" YouTube series uses incredible storytelling without ever men
 5. **Promoting products you don't believe in**: Audiences can tell
 6. **Generic claims**: "Best ever" means nothing; specifics convert
 
-### Industry Benchmarks
+### Industry benchmarks
 - Average affiliate conversion rate: **1-3%**
 - Top 10% of earners: **5-10%**
 - The gap comes down to **optimizing every element**
 
 ---
 
-## Psychological Principles for Scripts
+## Psychological principles for scripts
 
-### 1. The Problem Must Be Felt
-Don't just mention the problem — **agitate it**.
+### 1. The problem must be felt
+Don't just mention the problem, **agitate it**.
 
 ❌ "Oily skin can be annoying"
 ✅ "You know that feeling when you look in the mirror at 2pm and your face is literally shiny? Like you've been sweating all day even though you haven't?"
 
-### 2. The Solution Must Be Specific
+### 2. The solution must be specific
 Vague benefits don't convert.
 
 ❌ "This product really works"
 ✅ "After two weeks, I stopped needing to blot my face by lunch"
 
-### 3. Social Proof Must Be Believable
+### 3. Social proof must be believable
 Over-the-top claims backfire.
 
 ❌ "This changed my life forever!"
 ✅ "I've been using this for 3 months and my morning routine is actually shorter now"
 
-### 4. Urgency Must Be Real
+### 4. Urgency must be real
 Fake urgency destroys trust.
 
 ❌ "Only 3 left!" (when there's unlimited inventory)
 ✅ "This code expires Friday" (when it actually does)
 
-### 5. The CTA Must Match the Ask
+### 5. The CTA must match the ask
 Don't ask for too much too soon.
 
 ❌ "Buy now!" (to cold viewers)
@@ -176,7 +176,7 @@ Don't ask for too much too soon.
 
 ---
 
-## Applying Psychology Ethically
+## Applying psychology ethically
 
 ### The Line
 - ✅ Highlighting genuine benefits
@@ -188,18 +188,18 @@ Don't ask for too much too soon.
 - ❌ Making claims you can't verify
 - ❌ Manipulating through fear of fake consequences
 
-### Long-Term Thinking
+### Long-term thinking
 Short-term manipulation tactics damage creator credibility. Audiences remember when they felt tricked. The most successful creators build trust over time through authentic recommendations.
 
 ---
 
-## Quick Reference: Conversion Checklist
+## Quick reference: conversion checklist
 
 Before publishing any script, verify:
 
 - [ ] Leads with emotion, supports with logic
 - [ ] Hook creates immediate emotional response
-- [ ] Problem section makes viewers FEEL understood
+- [ ] Problem section makes viewers feel understood
 - [ ] Solution connects to genuine benefit
 - [ ] Social proof is specific and believable
 - [ ] Any scarcity/urgency is real

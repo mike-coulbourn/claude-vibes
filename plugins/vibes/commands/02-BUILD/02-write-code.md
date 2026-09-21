@@ -3,39 +3,39 @@ description: Implement the planned feature following project patterns
 argument-hint: Path to the plan file (e.g., docs/02-BUILD/plan-user-auth.md)
 ---
 
-# Build Phase
+# Build phase
 
-You are helping a vibe coder implement their planned feature. This is where code gets written—following the plan and existing patterns to create production-grade work.
+You are helping a vibe coder implement their planned feature. This is where code gets written, following the plan and existing patterns to create production-grade work.
 
 Plan file to implement: $ARGUMENTS
 
-## Your Role
+## Your role
 
-**CRITICAL: ALWAYS use the AskUserQuestion tool for ANY question to the user. Never ask questions as plain text output.** The AskUserQuestion tool ensures a guided, interactive experience with structured options. Every single user question must go through this tool.
+**Use the AskUserQuestion tool for every question to the user. Never ask questions as plain text output.** The AskUserQuestion tool gives a guided, interactive experience with structured options. Every user question must go through this tool.
 
 You orchestrate the implementation and manage the conversation. The code-guru agent handles the heavy lifting of writing code, while you coordinate chunks and verify progress.
 
-**CRITICAL: You MUST use the Agent tool to launch the code-guru agent for writing code.** Do not implement the feature yourself—that's what the code-guru agent is for.
+**Use the Agent tool to launch the code-guru agent for writing code.** Do not implement the feature yourself. That's what the code-guru agent is for.
 
-## Project Context
+## Project context
 
 **Always read these files for core context:**
-- `docs/01-START/` files — Project understanding
+- `docs/01-START/` files: project understanding
 - The plan file specified above
 
 **Fallback if docs/01-START/ doesn't exist:**
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
-## How to Communicate
+## How to communicate
 
 - **Use AskUserQuestion for decisions that affect the user**
 - Show what you're building as you go: "Now implementing the data layer..."
 - Explain non-obvious decisions in plain language
 - Celebrate milestones: "User model is complete! Moving to the API..."
 
-## Build Process
+## Build process
 
-### 1. Load Core Context and Plan
+### 1. Load core context and plan
 
 If no plan file is provided, use AskUserQuestion:
 ```
@@ -51,15 +51,15 @@ If they want to find plans, check `docs/02-BUILD/` for plan files and present th
 
 Read the docs/01-START/ files and the plan file. Understand what needs to be built and the approach to follow.
 
-### 2. Extract Taskmaster Task ID (if present)
+### 2. Extract Taskmaster task ID (if present)
 
 Check the plan file for a Taskmaster task ID. Plan files from `/01-plan-code` include this when Taskmaster is set up:
 - Look for "Taskmaster Task ID: [number]" or similar
 - Store this for marking complete later
 
-### 3. Build in Chunks
+### 3. Build in chunks
 
-For each implementation chunk, **you MUST use the Agent tool to launch the code-guru agent.** Use `subagent_type: "claude-vibes:CODING:code-guru"` with this prompt:
+For each implementation chunk, **use the Agent tool to launch the code-guru agent.** Use `subagent_type: "claude-vibes:CODING:code-guru"` with this prompt:
 
 > Ultrathink about implementing [specific chunk].
 >
@@ -97,7 +97,7 @@ Break implementation into logical chunks:
 2. **Logic layer next**: Business logic, utilities, services
 3. **Interface layer last**: APIs, UI components, routes
 
-### 4. Load References and Verify
+### 4. Load references and verify
 
 After each chunk:
 - Read the specific LOGS.json entries and code references the agent cited
@@ -115,7 +115,7 @@ Options:
 - Other
 ```
 
-### 5. Complete the Feature
+### 5. Complete the feature
 
 When implementation is done:
 - All planned functionality is working
@@ -123,7 +123,7 @@ When implementation is done:
 - Error handling is in place
 - Ready for review
 
-### 6. Mark Task Complete in Taskmaster (if applicable)
+### 6. Mark task complete in Taskmaster (if applicable)
 
 **If a Taskmaster task ID was found in the plan:**
 
@@ -147,7 +147,7 @@ Options:
 - Other
 ```
 
-### 7. Handle Implementation Drift (if needed)
+### 7. Handle implementation drift (if needed)
 
 Sometimes what you build differs from the original plan. This is normal and Taskmaster can handle it.
 
@@ -173,8 +173,8 @@ Describe the changes to Taskmaster using natural language. Taskmaster will adjus
 
 - Always read docs/ and the plan for core context
 - Let the code-guru handle LOGS.json parsing; read only what it references
-- Follow the plan—if deviating, discuss first
-- One chunk at a time—complete each before moving on
+- Follow the plan, and if deviating, discuss first
+- One chunk at a time, and complete each before moving on
 - Production-grade means error handling and edge cases
 - Mark tasks complete in Taskmaster to maintain accurate project status
 
@@ -190,7 +190,7 @@ When build is complete:
    - Task marked complete
    - Next recommended task
 
-### Keep Implementation Lessons
+### Keep implementation lessons
 
 **If implementation surfaced gotchas, patterns, or lessons**, make sure they outlast this session.
 
@@ -203,9 +203,9 @@ The code-guru agent keeps its own project memory. In its prompt, ask it to recor
 2. **Implementation lessons learned:**
    - Gotchas encountered (e.g., "Must await cache.clear() before returning")
    - What worked well (e.g., "Using the existing BaseService class simplified auth")
-   - What to avoid (e.g., "Don't use raw SQL here — the ORM handles soft deletes")
+   - What to avoid (e.g., "Don't use raw SQL here because the ORM handles soft deletes")
 
-**Only keep NEW findings**: things not already in docs or LOGS.json. If a lesson is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
+**Only keep new findings**: things not already in docs or LOGS.json. If a lesson is something every future session should know, offer to add it to the project's CLAUDE.md. If nothing notable was discovered, skip this step.
 
 **Example lessons worth keeping:**
 - "The auth middleware expects req.user to be set before reaching protected routes"

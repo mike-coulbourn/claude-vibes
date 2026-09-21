@@ -3,7 +3,7 @@ name: brand-typography-systems
 description: Use when choosing brand typefaces, pairing fonts, building a type hierarchy or modular scale, or writing typography guidelines and design tokens. Keywords - brand typography, font selection, font pairing, serif vs sans-serif, type scale, typeface licensing, web font performance, WCAG typography and readability.
 ---
 
-# Brand Typography Systems & Strategic Type Selection
+# Brand typography systems & strategic type selection
 
 Quick reference for developing strategic brand typography systems grounded in personality, hierarchy, and practical application.
 
@@ -15,9 +15,9 @@ Quick reference for developing strategic brand typography systems grounded in pe
 
 ---
 
-## Key Principles
+## Key principles
 
-1. **Start with personality**: Typography selection flows FROM brand personality TO typeface choices. Never the reverse.
+1. **Start with personality**: Typography selection flows from brand personality to typeface choices. Never the reverse.
 2. **Honor content**: Beautiful type that doesn't serve content fails its purpose.
 3. **Contrast through classification**: Serif + sans-serif pairing creates natural hierarchy without conflict.
 4. **Form follows function**: Body text prioritizes legibility; display text can prioritize personality.
@@ -27,13 +27,13 @@ Quick reference for developing strategic brand typography systems grounded in pe
 
 ---
 
-## Core Frameworks
+## Core frameworks
 
-### 1. Brand-First Typography Selection Process
+### 1. Brand-first typography selection process
 
 Typography selection must flow from brand strategy, not aesthetic preference.
 
-**The Process:**
+**The process:**
 
 | Step | Action | Purpose |
 |------|--------|---------|
@@ -44,15 +44,15 @@ Typography selection must flow from brand strategy, not aesthetic preference.
 | 5 | **Establish Hierarchy** | Define primary, secondary, tertiary with clear purposes |
 | 6 | **Create Guidelines** | Document everything with examples and specifications |
 
-**Key Insight**: "If the brand can define itself using descriptions to capture the tone, personality, and principles—we can translate that into typographic forms."
+**Key insight**: "If the brand can define itself using descriptions to capture the tone, personality, and principles—we can translate that into typographic forms."
 
 ---
 
-### 2. Modular Scale Typography System
+### 2. Modular scale typography system
 
 A mathematical approach to creating harmonious type hierarchies using consistent ratios.
 
-**Common Ratios:**
+**Common ratios:**
 
 | Ratio | Value | Character | Best For |
 |-------|-------|-----------|----------|
@@ -63,22 +63,22 @@ A mathematical approach to creating harmonious type hierarchies using consistent
 | Perfect Fourth | 1.333 | Distinct visual hierarchy | Editorial, marketing |
 | Golden Ratio | 1.618 | Dramatic, high-end | Premium brands, display-heavy |
 
-**The Process:**
+**The process:**
 1. **Define Base Size**: Start with 16px for web (browser default, accessibility baseline)
 2. **Choose a Ratio**: Match to brand personality and content type
 3. **Calculate Sizes**: Multiply base by ratio for each step up, divide for steps down
 4. **Apply to Hierarchy**: Map calculated sizes to H1–H6, body, captions
 5. **Test Responsively**: Adjust ratio or base for different screen sizes
 
-**Key Principle**: Limit to 6-8 distinct sizes. Larger screens can use more dramatic ratios; smaller screens benefit from conservative ratios.
+**Key principle**: Limit to 6-8 distinct sizes. Larger screens can use more dramatic ratios; smaller screens benefit from conservative ratios.
 
 **Tools**: [Typescale.io](https://typescale.io/) | [Type Scale Tool](https://precise-type.com/)
 
 ---
 
-### 3. Ellen Lupton's "Thinking with Type" Framework
+### 3. Ellen Lupton's "Thinking with Type" framework
 
-A comprehensive approach covering three interconnected systems:
+An approach covering three connected systems:
 
 | System | Focus | Key Elements |
 |--------|-------|--------------|
@@ -86,7 +86,7 @@ A comprehensive approach covering three interconnected systems:
 | **Text** | Words and paragraphs | Alignment, spacing, kerning, tracking, leading |
 | **Grid** | Page structure | Columns, margins, spatial relationships |
 
-**Key Principles:**
+**Key principles:**
 - "Learn the rules and how to break them"
 - Historical context informs modern practice
 - Visual balance and Gestalt grouping guide effective layouts
@@ -94,7 +94,7 @@ A comprehensive approach covering three interconnected systems:
 
 ---
 
-## Font Classification & Personality Matrix
+## Font classification & personality matrix
 
 | Classification | Personality Traits | Best For | Example Industries |
 |---------------|-------------------|----------|-------------------|
@@ -108,19 +108,19 @@ A comprehensive approach covering three interconnected systems:
 
 ---
 
-## Serif vs. Sans-Serif Decision Framework
+## Serif vs. sans-serif decision framework
 
-### Choose Serif When:
+### Choose serif when:
 - Brand leans artisanal, authoritative, or editorial
 - **Industries**: Boutique hotels, legal firms, investment advisory, craft producers, heritage brands
 - Long-form print content leads touchpoints
 - You want to convey tradition, trust, premium positioning
 - Target audience expects established credibility
 
-### Choose Sans-Serif When:
+### Choose sans-serif when:
 - 70%+ of touchpoints are digital UI (apps, dashboards, small screens)
 - **Industries**: Tech, startups, digital products, contemporary retail, healthcare
-- Quick legibility is paramount
+- Quick legibility matters most
 - You want to convey modernity, accessibility, innovation
 - Audiences expect contemporary, forward-thinking brands
 
@@ -128,13 +128,13 @@ A comprehensive approach covering three interconnected systems:
 
 ---
 
-## Typeface Evaluation Criteria
+## Typeface evaluation criteria
 
 Seven dimensions for evaluating any typeface:
 
 | Criterion | Question to Ask | Why It Matters |
 |-----------|-----------------|----------------|
-| **Comprehensiveness** | Does it have all characters, weights, and styles needed? | Brand needs evolve; typeface must grow with you |
+| **Completeness** | Does it have all characters, weights, and styles needed? | Brand needs evolve; typeface must grow with you |
 | **Legibility** | Is it readable at small sizes? Are characters distinctive? | Content must be consumable |
 | **Versatility** | Works across headlines, body, captions, different media? | One system must serve many contexts |
 | **Complementarity** | Works well with logo, colors, imagery? | Typography exists within visual system |
@@ -144,13 +144,13 @@ Seven dimensions for evaluating any typeface:
 
 ---
 
-## Font Pairing Principles
+## Font pairing principles
 
-### The Classic Approach: Contrast Through Classification
+### The classic approach: contrast through classification
 
 The oldest reliable rule: pair serif with sans-serif. This creates clear contrast through form while allowing both typefaces to serve distinct purposes.
 
-### Five Key Principles
+### Five key principles
 
 1. **Seek Contrast, Not Conflict**
    > "When two styles are paired that are almost the same—but not quite—they begin to clash, like wearing two slightly different plaid patterns at once." — Ellen Lupton
@@ -159,11 +159,11 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 
 3. **Create Meaningful Hierarchy**: Use contrast in weight, size, and style to guide readers.
 
-4. **Limit Strong Personalities**: Mixing two bold typographic personalities rarely works—they compete for attention.
+4. **Limit Strong Personalities**: Mixing two bold typographic personalities rarely works. They compete for attention.
 
 5. **Consider Weight Contrast**: Bolder weights for titles, lighter for body (or vice versa for specific effects).
 
-### Practical Tips
+### Practical tips
 - Keep one font simple when using a distinctive display font
 - Serif headlines + sans-serif body (or reverse) is reliable
 - Look for shared characteristics: similar x-heights, proportions, or historical era
@@ -171,9 +171,9 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 
 ---
 
-## Typography Spacing Guidelines
+## Typography spacing guidelines
 
-### Line Height (Leading)
+### Line height (leading)
 
 | Text Type | Line Height | Rationale |
 |-----------|-------------|-----------|
@@ -182,7 +182,7 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 | Body copy | 1.5 - 1.7 | Optimal readability |
 | Long-form content | 1.6 - 1.8 | Extra breathing room |
 
-### Letter Spacing (Tracking)
+### Letter spacing (tracking)
 
 | Context | Tracking | Rationale |
 |---------|----------|-----------|
@@ -193,7 +193,7 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 | All caps | 0.05em to 0.1em | Always add spacing |
 | Buttons/Labels | 0.05em | Improve readability |
 
-### Line Length (Measure)
+### Line length (measure)
 
 - **Optimal**: 50-75 characters per line (66 often cited as ideal)
 - **Minimum**: 45 characters (below = choppy reading)
@@ -201,11 +201,11 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 
 ---
 
-## Digital Typography Specifics
+## Digital typography specifics
 
-### Variable Fonts
+### Variable fonts
 
-**What They Are**: Single font file containing all weights, widths, and styles through continuous interpolation.
+**What they are**: Single font file containing all weights, widths, and styles through continuous interpolation.
 
 **Benefits**:
 - **Performance**: One file vs. multiple static files (e.g., 405KB vs 1,170KB for full Source Sans Pro family)
@@ -213,7 +213,7 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 - **Responsive Typography**: Adjust weight/width based on viewport
 - **Animation**: Smooth transitions between styles
 
-**Key Axes**:
+**Key axes**:
 
 | Axis | Code | Range | Effect |
 |------|------|-------|--------|
@@ -223,23 +223,23 @@ The oldest reliable rule: pair serif with sans-serif. This creates clear contras
 | Slant | `slnt` | Angle of lean | Oblique angle |
 | Optical Size | `opsz` | Size-specific adjustments | Auto-adjusts details for size |
 
-### Web Font Performance
+### Web font performance
 
-**The Problem**: Custom fonts require downloads that delay text rendering.
+**The problem**: Custom fonts require downloads that delay text rendering.
 
 **FOIT vs FOUT**:
-- **FOIT (Flash of Invisible Text)**: Browser hides text until font loads—poor UX
-- **FOUT (Flash of Unstyled Text)**: Shows fallback font first, swaps when ready—preferred
+- **FOIT (Flash of Invisible Text)**: Browser hides text until font loads, which is poor UX
+- **FOUT (Flash of Unstyled Text)**: Shows fallback font first, then swaps when ready, which is preferred
 
-**Recommended Strategies**:
+**Recommended strategies**:
 1. Use `font-display: swap`
 2. Preload critical fonts
 3. Use `font-display: optional` for maximum performance
 4. Match fallback metrics to reduce layout shift
 
-### Responsive Typography
+### Responsive typography
 
-**Fluid Typography with `clamp()`**:
+**Fluid typography with `clamp()`**:
 ```css
 h1 {
   font-size: clamp(2rem, 5vw, 4rem);
@@ -249,11 +249,11 @@ h1 {
 - **Preferred**: 5vw (scales with viewport)
 - **Maximum**: 4rem (won't grow above)
 
-### System Font Stacks
+### System font stacks
 
-**When to Use**: Applications, dashboards, content-heavy tools where neutrality and performance matter.
+**When to use**: Applications, dashboards, content-heavy tools where neutrality and performance matter.
 
-**Modern System Font Stack**:
+**Modern system font stack**:
 ```css
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
              Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -263,9 +263,9 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 
 ---
 
-## WCAG Typography Requirements
+## WCAG typography requirements
 
-### Contrast Ratios
+### Contrast ratios
 
 | Standard | Ratio | Use Case |
 |----------|-------|----------|
@@ -274,11 +274,11 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 | **Level AAA (enhanced)** | 7:1 | Normal text |
 | **Level AAA (enhanced)** | 4.5:1 | Large text |
 
-### Text Resizing (WCAG 1.4.4)
+### Text resizing (WCAG 1.4.4)
 - Text must be resizable to 200% without loss of content or functionality
 - Use relative units (rem, em, %) not fixed pixels
 
-### Text Spacing (WCAG 1.4.12)
+### Text spacing (WCAG 1.4.12)
 Must accommodate user overrides for:
 - Line height: 1.5x font size
 - Paragraph spacing: 2x font size
@@ -287,16 +287,16 @@ Must accommodate user overrides for:
 
 ---
 
-## Dyslexia-Friendly Typography
+## Dyslexia-friendly typography
 
-**Key Characteristics**:
+**Key characteristics**:
 - Simple letter shapes (sans-serif generally preferred)
 - Wider letter and word spacing
 - Distinct letterforms (clear b/d, p/q differentiation)
 - Upright (avoid italics for body text)
 - Adequate size (16px+ for body)
 
-**Recommended Fonts**:
+**Recommended fonts**:
 
 | Font | Why It Works |
 |------|--------------|
@@ -306,11 +306,11 @@ Must accommodate user overrides for:
 | **Atkinson Hyperlegible** | Designed for low-vision readers, benefits all |
 | **Inter** | Clear shapes, excellent for digital |
 
-**Key Finding**: Sans-serif, monospaced, and roman fonts are most readable for dyslexic readers. Italics significantly reduce readability.
+**Key finding**: Sans-serif, monospaced, and roman fonts are most readable for dyslexic readers. Italics significantly reduce readability.
 
 ---
 
-## Print vs. Digital Considerations
+## Print vs. digital considerations
 
 | Factor | Print | Digital |
 |--------|-------|---------|
@@ -320,7 +320,7 @@ Must accommodate user overrides for:
 | **Rendering** | Consistent across prints | Varies by device/browser |
 | **Serif Readability** | Excellent for long text | Depends on screen quality |
 
-### Cross-Channel Best Practices
+### Cross-channel best practices
 - Choose typefaces designed for both environments
 - Test selected fonts in both print and digital mockups
 - Consider typeface superfamilies (versions optimized for each medium)
@@ -329,9 +329,9 @@ Must accommodate user overrides for:
 
 ---
 
-## Font Licensing
+## Font licensing
 
-### License Types
+### License types
 
 | Type | Use Case | Typical Limits |
 |------|----------|----------------|
@@ -341,23 +341,23 @@ Must accommodate user overrides for:
 | **ePub** | Digital publications | Title count |
 | **Server/API** | Dynamic image generation | Impressions |
 
-### Key Considerations
+### Key considerations
 1. **Read the EULA**: Every foundry's terms differ
 2. **Logo Use**: Some licenses explicitly prohibit logo use
 3. **Client Work**: Clients need their own license; you cannot transfer yours
 4. **Modifications**: Most licenses prohibit altering font files
 5. **Embedding**: PDF embedding, video embedding have specific rules
 
-### Open Source Options
+### Open source options
 - **SIL Open Font License (OFL)**: Free for personal and commercial use, can modify
 - **Google Fonts**: All fonts licensed for commercial use
 - **The League of Moveable Type**: Quality open-source fonts
 
 ---
 
-## Recommended Free Fonts (Google Fonts)
+## Recommended free fonts (Google Fonts)
 
-### Sans-Serif
+### Sans-serif
 - **Inter**: Excellent for digital interfaces, 9 weights
 - **DM Sans**: Clean, geometric, 9 weights
 - **Source Sans Pro**: Adobe's first open-source font
@@ -377,7 +377,7 @@ Must accommodate user overrides for:
 
 ---
 
-## Common Mistakes
+## Common mistakes
 
 | Mistake | Problem | Solution |
 |---------|---------|----------|
@@ -396,7 +396,7 @@ Must accommodate user overrides for:
 
 ---
 
-## Key Mental Models
+## Key mental models
 
 **Contrast Through Classification**: Serif + sans-serif pairing creates natural hierarchy and visual interest without conflict.
 
@@ -404,9 +404,9 @@ Must accommodate user overrides for:
 
 **Consistency Builds Recognition**: Every touchpoint reinforces (or undermines) brand perception.
 
-**Accessibility is Non-Negotiable**: Design for the widest possible audience—good accessibility is good design.
+**Accessibility is Non-Negotiable**: Design for the widest possible audience. Good accessibility is good design.
 
-**Start With Personality**: Typography selection flows FROM brand personality TO typeface choices. Never the reverse.
+**Start With Personality**: Typography selection flows from brand personality to typeface choices. Never the reverse.
 
 **If You Have Fewer Choices**: "It doesn't necessarily make your life more difficult. It often makes it easier." — Erik Spiekermann
 
@@ -415,31 +415,31 @@ Must accommodate user overrides for:
 ## Templates
 
 Read [reference/templates.md](reference/templates.md) when producing a deliverable the user will keep, such as a filled worksheet, a documented decision, or a final write-up. Skip it for conceptual questions and quick recommendations, which this file covers. It opens with a table of contents, so load only the template needed:
-- Typography System Documentation Template (complete output structure)
-- Modular Scale Calculator Reference
-- Accessibility Testing Checklist
-- Font Licensing Checklist
+- Typography system documentation template (complete output structure)
+- Modular scale calculator reference
+- Accessibility testing checklist
+- Font licensing checklist
 
 ---
 
-## When to Apply This Knowledge
+## When to apply this knowledge
 
-### During Strategy Phase
-- Apply Brand-First Typography Selection Process
-- Use Font Classification & Personality Matrix
-- Consider Serif vs. Sans-Serif Decision Framework
+### During strategy phase
+- Apply the brand-first typography selection process
+- Use the font classification & personality matrix
+- Consider the serif vs. sans-serif decision framework
 
-### During Font Selection
-- Apply Typeface Evaluation Criteria (7 dimensions)
-- Use Font Pairing Principles
+### During font selection
+- Apply the typeface evaluation criteria (7 dimensions)
+- Use the font pairing principles
 - Research font options (Google Fonts, premium foundries)
 
-### During Hierarchy Development
+### During hierarchy development
 - Apply Modular Scale System
 - Set spacing guidelines (line height, tracking, measure)
 - Define typography tokens
 
-### During Validation
+### During validation
 - Test WCAG accessibility requirements
 - Verify dyslexia-friendly considerations
 - Test across print and digital

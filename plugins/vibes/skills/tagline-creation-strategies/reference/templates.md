@@ -1,4 +1,4 @@
-# Tagline Creation Templates
+# Tagline creation templates
 
 Reusable templates for documenting tagline development and evaluation.
 
@@ -6,17 +6,17 @@ Reusable templates for documenting tagline development and evaluation.
 
 ## Contents
 
-- [Tagline Document Template](#tagline-document-template)
-- [Strategic Foundation Template](#strategic-foundation-template)
-- [Tagline Option Template](#tagline-option-template)
-- [Evaluation Matrix Template](#evaluation-matrix-template)
-- [Anti-Pattern Check Template](#anti-pattern-check-template)
-- [Usage Guidelines Template](#usage-guidelines-template)
-- [Testing Protocol Template](#testing-protocol-template)
-- [Quick Reference Card Template](#quick-reference-card-template)
-- [Output Validation Checklist](#output-validation-checklist)
+- [Tagline document template](#tagline-document-template)
+- [Strategic foundation template](#strategic-foundation-template)
+- [Tagline option template](#tagline-option-template)
+- [Evaluation matrix template](#evaluation-matrix-template)
+- [Anti-pattern check template](#anti-pattern-check-template)
+- [Usage guidelines template](#usage-guidelines-template)
+- [Testing protocol template](#testing-protocol-template)
+- [Quick reference card template](#quick-reference-card-template)
+- [Output validation checklist](#output-validation-checklist)
 
-## Tagline Document Template
+## Tagline document template
 
 Use this complete structure for final tagline documentation:
 
@@ -132,7 +132,7 @@ Use this complete structure for final tagline documentation:
 
 ---
 
-## Strategic Foundation Template
+## Strategic foundation template
 
 Use this to document the positioning inputs before generating taglines:
 
@@ -206,7 +206,7 @@ Based on the above, the tagline must:
 
 ---
 
-## Tagline Option Template
+## Tagline option template
 
 Use this structure for each tagline option:
 
@@ -218,7 +218,7 @@ Use this structure for each tagline option:
 **Word Count**: [Number]
 
 **Why It Works:**
-[Strategic rationale — how this connects to positioning, what it captures from the brand strategy]
+[Strategic rationale for how this connects to positioning and what it captures from the brand strategy]
 
 **What It Communicates:**
 - **Primary message**: [Main takeaway]
@@ -237,12 +237,12 @@ Use this structure for each tagline option:
 [Situations or contexts where this tagline shines]
 
 **Sound Test:**
-[How it sounds when spoken aloud — rhythm, flow, mouth feel]
+[How it sounds when spoken aloud: rhythm, flow, mouth feel]
 ```
 
 ---
 
-## Evaluation Matrix Template
+## Evaluation matrix template
 
 ```markdown
 ## Evaluation Matrix
@@ -262,11 +262,11 @@ Use this structure for each tagline option:
 
 | Score | Meaning |
 |-------|---------|
-| 5 | Exceptional — best-in-class |
-| 4 | Strong — clearly above average |
-| 3 | Good — meets expectations |
-| 2 | Weak — below expectations |
-| 1 | Poor — significant concerns |
+| 5 | Exceptional, best-in-class |
+| 4 | Strong, clearly above average |
+| 3 | Good, meets expectations |
+| 2 | Weak, below expectations |
+| 1 | Poor, significant concerns |
 
 ### AIDA Scores (Top 3 Candidates)
 
@@ -287,7 +287,7 @@ Use this structure for each tagline option:
 
 ---
 
-## Anti-Pattern Check Template
+## Anti-pattern check template
 
 ```markdown
 ## Anti-Pattern Check
@@ -324,7 +324,7 @@ For each finalist, complete:
 
 ---
 
-## Usage Guidelines Template
+## Usage guidelines template
 
 ```markdown
 ## Usage Guidelines
@@ -336,7 +336,7 @@ For each finalist, complete:
 | **Placement** | [Below logo / Right of logo / Separate from logo] |
 | **Size relationship** | [% of logo height, e.g., "30% of logo height"] |
 | **Minimum clearance** | [Space required around tagline] |
-| **Can stand alone?** | [Yes/No — when tagline can appear without logo] |
+| **Can stand alone?** | [Yes/No, and when the tagline can appear without the logo] |
 
 ### Context Usage
 
@@ -363,9 +363,9 @@ For each finalist, complete:
 
 | Version | When to Use |
 |---------|-------------|
-| **Primary** | "[Full tagline]" — default usage |
-| **Short** | "[Abbreviated if exists]" — limited space |
-| **Campaign** | "[Variant if exists]" — specific campaigns |
+| **Primary** | "[Full tagline]", default usage |
+| **Short** | "[Abbreviated if exists]", limited space |
+| **Campaign** | "[Variant if exists]", specific campaigns |
 
 ### Voice Consistency
 
@@ -377,7 +377,7 @@ When writing content around the tagline, maintain these qualities:
 
 ---
 
-## Testing Protocol Template
+## Testing protocol template
 
 ```markdown
 ## Testing Protocol
@@ -386,8 +386,8 @@ When writing content around the tagline, maintain these qualities:
 
 #### A/B Test Plan
 
-**Test Context**: [Where to test — landing page, social, email]
-**Audience**: [Who to test with — segment, size]
+**Test Context**: [Where to test: landing page, social, email]
+**Audience**: [Who to test with: segment, size]
 **Duration**: [How long to run test]
 
 | Variant | Tagline | Hypothesis |
@@ -395,7 +395,7 @@ When writing content around the tagline, maintain these qualities:
 | A | "[Tagline 1]" | [Why this might win] |
 | B | "[Tagline 2]" | [Why this might win] |
 
-**Success Metric**: [What indicates winner — CTR, recall, preference %]
+**Success Metric**: [What indicates winner: CTR, recall, preference %]
 **Minimum sample**: [Number needed for significance]
 
 #### Focus Group Questions
@@ -442,7 +442,7 @@ When writing content around the tagline, maintain these qualities:
 
 ---
 
-## Quick Reference Card Template
+## Quick reference card template
 
 One-page summary for daily use:
 
@@ -490,7 +490,7 @@ When spoken: [Description of rhythm, emphasis, feel]
 
 ---
 
-## Output Validation Checklist
+## Output validation checklist
 
 Before finalizing tagline documentation, verify:
 
