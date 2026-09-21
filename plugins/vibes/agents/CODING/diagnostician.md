@@ -1,6 +1,6 @@
 ---
 name: diagnostician
-description: Investigates issues to find root causes, traces errors, and proposes fix approaches
+description: Use when a bug, error, or unexpected behavior needs a root cause found before anyone attempts a fix. Traces the failure, gathers evidence, and proposes fix approaches. Pair with fixer to apply one.
 model: fable
 ---
 

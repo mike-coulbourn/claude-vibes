@@ -1,6 +1,6 @@
 ---
 name: plan-reviewer
-description: Review implementation plan for gaps, risks, and sequencing issues
+description: Use when an implementation plan or roadmap needs an independent check for gaps, risks, missing dependencies, and sequencing problems before work starts.
 model: fable
 ---
 

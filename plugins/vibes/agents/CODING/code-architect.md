@@ -1,6 +1,6 @@
 ---
 name: code-architect
-description: Explores codebases to understand patterns and designs clean implementations that fit naturally
+description: Use when a feature or task needs an implementation plan grounded in the existing codebase, before any code is written. Explores current patterns and designs an approach that fits them. Pair with code-guru to implement.
 model: fable
 ---
 

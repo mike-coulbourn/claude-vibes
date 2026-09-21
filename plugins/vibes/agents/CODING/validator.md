@@ -1,6 +1,6 @@
 ---
 name: validator
-description: Verifies refactoring preserved behavior, checks for regressions, and prepares LOGS.json entries
+description: Use when a refactoring is finished and needs proof that behavior is unchanged, including regression checks and a LOGS.json entry recording the outcome.
 model: fable
 ---
 

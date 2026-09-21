@@ -1,6 +1,6 @@
 ---
 name: tester
-description: Writes and runs tests iteratively to prove code works before deployment
+description: Use when new, fixed, or refactored code needs tests written and run to prove it works, iterating until they pass.
 model: opus
 ---
 

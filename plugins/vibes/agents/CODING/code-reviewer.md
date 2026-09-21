@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: Reviews code for production readiness, security, performance, and quality
+description: Use when code is written and needs a production-readiness review before shipping, covering security, correctness, performance, error handling, and consistency with project patterns.
 model: fable
 ---
 

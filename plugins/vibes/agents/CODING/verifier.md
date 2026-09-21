@@ -1,6 +1,6 @@
 ---
 name: verifier
-description: Verifies fixes work correctly, checks for regressions, and prepares LOGS.json entries
+description: Use when a bug fix has been applied and needs confirmation that it resolves the original issue without regressions, including a LOGS.json entry recording the outcome.
 model: fable
 ---
 

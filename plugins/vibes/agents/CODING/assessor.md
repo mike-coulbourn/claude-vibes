@@ -1,6 +1,6 @@
 ---
 name: assessor
-description: Analyzes code for refactoring opportunities, identifies patterns and improvements
+description: Use when code needs a refactoring assessment before any changes are made, such as finding duplication, tangled responsibilities, or risky hotspots and ranking improvements by value and risk. Pair with refactorer to apply changes.
 model: fable
 ---
 

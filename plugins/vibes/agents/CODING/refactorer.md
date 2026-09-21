@@ -1,6 +1,6 @@
 ---
 name: refactorer
-description: Applies refactoring changes while preserving behavior exactly
+description: Use when assessed refactoring improvements are approved and need applying without changing behavior. Works in small verifiable steps. Pair with validator afterwards.
 model: opus
 ---
 

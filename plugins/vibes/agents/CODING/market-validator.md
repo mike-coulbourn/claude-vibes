@@ -1,6 +1,6 @@
 ---
 name: market-validator
-description: Research market viability through community discussions, competitor analysis, and pain point validation
+description: Use when a product idea needs evidence of real demand before building, drawn from community discussions, competitor analysis, and validation of the pain point.
 model: fable
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: feature-brainstormer
-description: Brainstorm comprehensive feature ideas based on discovery context
+description: Use when product discovery is done and the full space of possible features needs exploring before scoping an MVP.
 model: fable
 ---
 

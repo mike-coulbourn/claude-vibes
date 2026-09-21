@@ -1,6 +1,6 @@
 ---
 name: fixer
-description: Implements minimal, targeted fixes following project patterns
+description: Use when a diagnosed issue with an agreed fix approach needs implementing. Applies the smallest change that addresses the root cause, following project patterns. Pair with verifier afterwards.
 model: opus
 ---
 

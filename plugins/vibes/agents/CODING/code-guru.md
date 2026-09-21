@@ -1,6 +1,6 @@
 ---
 name: code-guru
-description: Master coder who implements features with expertise, precision, and craftsmanship
+description: Use when an approved implementation plan is ready to be built. Implements features following the project's existing patterns, with validation and error handling included.
 model: opus
 ---
 

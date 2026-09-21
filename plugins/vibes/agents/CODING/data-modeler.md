@@ -1,6 +1,6 @@
 ---
 name: data-modeler
-description: Design complete data model based on MVP features and user stories
+description: Use when a new product or feature needs its data model designed from MVP features and user stories, including entities, relationships, constraints, and access patterns, before architecture or implementation begins.
 model: fable
 ---
 

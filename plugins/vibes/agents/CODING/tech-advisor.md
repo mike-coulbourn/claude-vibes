@@ -1,6 +1,6 @@
 ---
 name: tech-advisor
-description: Research and recommend solutions for specific technical challenges
+description: Use when a specific technical decision needs researching, such as choosing a library, service, or architecture approach, with options compared against the project's constraints.
 model: fable
 ---
 
