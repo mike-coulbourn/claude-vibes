@@ -2,6 +2,10 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 2.0.1
+
+- `midjourney-prompting`: `--cref` is V6 only. V7 uses Omni Reference (`--oref`, `--ow` 1 to 1000), and V8.1/V8.2, the default since July 2026, use the Edit Model with up to four attached images. Thanks to @sbley for the report (#5).
+
 ## 2.0.0
 
 A slimmer plugin that leans on what Claude Code now does natively and focuses on what it does not.

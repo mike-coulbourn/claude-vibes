@@ -29,7 +29,7 @@ You orchestrate an interactive prompt-crafting process:
 - **Were any images provided with the request?** Look at the full input — users may paste, drag, or attach images
 - **If images are present, analyze each one:**
   - Is this a style reference? (for --sref usage)
-  - Is this a character reference? (for --cref usage)
+  - Is this a character or object reference? (`--oref` in V7, an attached Edit Model image in V8)
   - Is this an image to use as a starting point? (for image prompting)
   - Is this just inspiration/mood? (extract visual elements to describe)
   - What visual elements should be extracted? (colors, lighting, composition, mood)
@@ -170,7 +170,7 @@ For each image, clarify:
 Question: "For this reference image, what do you want to capture from it?"
 Options:
 - The visual style (colors, texture, artistic approach) — will use as --sref
-- The character/person appearance — will use as --cref
+- The character/person appearance — will use as a character reference (`--oref` in V7, attached image in V8)
 - The composition and framing
 - The mood and atmosphere
 - Specific elements (I'll describe)
@@ -261,15 +261,15 @@ Using ultrathink (extended thinking), craft the prompt by applying:
 - --style raw (if photorealistic or detailed prompts)
 - --no [negative prompts if specified]
 - --sref [if style reference needed] with --sw for weight
-- --cref [if character reference needed] with --cw for weight
+- --oref [if a character or object reference is needed, V7 only] with --ow for weight; in V8.1/V8.2 tell the user to attach the image with the Edit Model instead
 - --draft (suggest for initial exploration)
 
 **4. If reference images are involved:**
 - For style references: Include `--sref [IMAGE_URL]` placeholder with usage instructions
-- For character references: Include `--cref [IMAGE_URL]` placeholder with usage instructions
+- For character references: in V7 include an `--oref [IMAGE_URL]` placeholder with usage instructions; in V8 give attach-image instructions and no parameter
 - Clearly instruct user where to add their images in the final prompt
 - **Web app**: Click the image icon, drag-and-drop reference, select "Style Reference" or "Character Reference"
-- **Discord**: Upload image first, right-click to copy URL, add to prompt with --sref or --cref
+- **Discord**: Upload image first, right-click to copy URL, add to prompt with --sref or --oref (V7)
 
 ### Step 4: Present the Prompt
 
@@ -417,7 +417,7 @@ Create in `prompts/midjourney/` with structure:
 2. **Character Reference**
    - What it captures: [character elements]
    - **Web App**: Click image icon → drag-and-drop → select "Character Reference"
-   - **Discord**: Upload image, copy URL, add `--cref [URL]` to prompt
+   - **Discord**: Upload image, copy URL, add `--oref [URL]` to prompt (V7)
 
 [If no references: "None required — prompt works standalone."]
 
@@ -457,7 +457,7 @@ Create in `prompts/midjourney/` with structure:
 - **Richer textures and details** — Higher quality output by default
 - **Draft Mode** — 10x faster, half cost for exploration
 - **Personalization ON by default** — V7 applies learned preferences automatically
-- **Omni Reference** — Enhanced reference capabilities
+- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
 
 ## Common Prompt Patterns
 
@@ -486,7 +486,7 @@ Create in `prompts/midjourney/` with structure:
 
 **Character design:**
 - Full description: pose, outfit, expression, distinguishing features
-- Use --cref for consistency across multiple generations
+- Use a character reference for consistency across generations (`--oref` in V7, attached images with the Edit Model in V8)
 - Include art style reference
 - V7's coherence improvements make complex characters more reliable
 
