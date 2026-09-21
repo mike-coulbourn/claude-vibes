@@ -1,4 +1,6 @@
-# Complete Midjourney V7 Parameter Reference
+# Complete Midjourney Parameter Reference
+
+Written against V7 and checked against the V8.2 parameter list in September 2026. Version-specific parameters are marked. Legacy parameters such as `--cref` and `--cw` are V6 only.
 
 ## Contents
 
@@ -155,12 +157,12 @@ Stops generation partway through for softer, less detailed results.
 
 ## Style Parameters
 
-### Style Raw (--style raw)
+### Style Raw (--raw)
 
 Reduces Midjourney's auto-beautification for more literal interpretation.
 
 ```
-A still life arrangement --style raw
+A still life arrangement --raw
 ```
 
 **When to use**:
@@ -187,7 +189,7 @@ warrior princess in battle --niji 6
 - `--style cute`: Chibi, adorable
 - `--style expressive`: Emotional, detailed linework
 
-**Niji 6**: Only supports default or `--style raw`
+**Niji 6**: Only supports default or `--raw`
 
 ---
 
@@ -292,7 +294,7 @@ Costs 2x GPU time. Not compatible with Fast Mode, Draft Mode, Conversational Mod
 
 ### Edit Model, V8.1 and V8.2
 
-In V8 the Edit Model replaces Omni Reference, Character Reference, and Retexture. Attach up to four reference images in the Imagine bar ("Attach to prompt") with no parameter, and write either a description or an instruction. It matches the first image's aspect ratio unless the prompt sets `--ar`. Not compatible with `--tile` or Remix.
+In V8 the Edit Model replaces Omni Reference, Character Reference, and Retexture. On the web, attach up to four reference images in the Imagine bar ("Attach to prompt"). In Discord, end the prompt with `--edit` followed by the image URLs separated by spaces. Write either a description or an instruction. It matches the first image's aspect ratio unless the prompt sets `--ar`. Not compatible with `--tile` or Remix.
 
 Source: https://docs.midjourney.com (Omni Reference, Edit Model, and Version articles), last verified September 2026.
 
@@ -396,7 +398,7 @@ Enable Remix Mode for editing prompts during variations.
 
 **Photorealism**:
 ```
---style raw --ar 2:3 --s 50
+--raw --ar 2:3 --s 50
 ```
 
 **Artistic freedom**:
@@ -416,5 +418,5 @@ Enable Remix Mode for editing prompts during variations.
 
 **Seamless textures**:
 ```
---tile --style raw --ar 1:1
+--tile --raw --ar 1:1
 ```

@@ -1,11 +1,11 @@
 ---
-description: Craft effective Midjourney V7 prompts through guided interactive discovery
+description: Craft effective Midjourney prompts through guided interactive discovery
 argument-hint: What you want to create — can include reference images (e.g., "[image] make this in oil painting style")
 ---
 
-# Midjourney V7 Prompt Crafter
+# Midjourney Prompt Crafter
 
-You are helping a user craft an effective Midjourney V7 prompt. Your goal is to interactively discover what they want, then deliver a polished, copy-paste ready prompt optimized for Midjourney's latest model.
+You are helping a user craft an effective Midjourney prompt. Assume the current default version (V8.2 as of September 2026) unless the user says otherwise, and ask which version they use whenever reference images, Draft Mode, or HD resolution come up, because those differ between V7 and V8 (the `midjourney-prompting` skill has the version table). Your goal is to interactively discover what they want, then deliver a polished, copy-paste ready prompt optimized for Midjourney's latest model.
 
 ## Your Role
 
@@ -244,29 +244,28 @@ Using ultrathink (extended thinking), craft the prompt by applying:
 - Mood: [Emotional feeling]
 - Composition: [How it's framed]
 
-**2. V7 Best Practices:**
-- V7 has superior prompt understanding and better coherence
+**2. Best Practices:**
 - Place important elements early
 - Be specific with visual details
 - Use natural language clearly
-- AVOID junk words: 4k, 8k, HDR, ultra, award-winning, photorealistic (V7 produces high quality by default)
-- Use `--style raw` for photorealism and precise control
-- Personalization is ON by default in V7 — use `--p` variations if needed
-- V7 has improved hands, bodies, and object coherence
-- Draft Mode (`--draft`) available for 10x faster exploration
+- AVOID junk words: 4k, 8k, HDR, ultra, award-winning, photorealistic (current models produce high quality by default)
+- Use `--raw` for photorealism and precise control
+- Personalization may be on by default for the user — mention `--p` if results look unlike the prompt
+- V7 only: Draft Mode (`--draft`) for cheap exploration
+- V8.1 and later: `--hd` for 2048px renders
 
 **3. Parameter Selection:**
 - --ar [aspect ratio based on use case]
 - --stylize [based on their preference, 0-1000]
-- --style raw (if photorealistic or detailed prompts)
+- --raw (if photorealistic or detailed prompts)
 - --no [negative prompts if specified]
 - --sref [if style reference needed] with --sw for weight
-- --oref [if a character or object reference is needed, V7 only] with --ow for weight; in V8.1/V8.2 tell the user to attach the image with the Edit Model instead
+- --oref [if a character or object reference is needed, V7 only] with --ow for weight; in V8.1/V8.2 use the Edit Model instead (attach the image on the web, or `--edit [IMAGE_URL]` in Discord)
 - --draft (suggest for initial exploration)
 
 **4. If reference images are involved:**
 - For style references: Include `--sref [IMAGE_URL]` placeholder with usage instructions
-- For character references: in V7 include an `--oref [IMAGE_URL]` placeholder with usage instructions; in V8 give attach-image instructions and no parameter
+- For character references: in V7 include an `--oref [IMAGE_URL]` placeholder with usage instructions; in V8 give Edit Model instructions (attach the image on the web, or `--edit [IMAGE_URL]` in Discord)
 - Clearly instruct user where to add their images in the final prompt
 - **Web app**: Click the image icon, drag-and-drop reference, select "Style Reference" or "Character Reference"
 - **Discord**: Upload image first, right-click to copy URL, add to prompt with --sref or --oref (V7)
@@ -277,7 +276,7 @@ Using ultrathink (extended thinking), craft the prompt by applying:
 
 **For Web App users:**
 ```
-Here's your Midjourney V7 prompt:
+Here's your Midjourney prompt:
 
 ---
 
@@ -288,7 +287,7 @@ Here's your Midjourney V7 prompt:
 **Why this works:**
 - [Explain key choices: lighting, composition, style elements]
 - [Explain parameter choices]
-- [Note V7-specific benefits for this prompt]
+- [Note anything version-specific about this prompt]
 
 **How to use (Web App):**
 1. Paste this prompt into the prompt bar
@@ -304,7 +303,7 @@ Here's your Midjourney V7 prompt:
 
 **For Discord users:**
 ```
-Here's your Midjourney V7 prompt:
+Here's your Midjourney prompt:
 
 ---
 
@@ -315,7 +314,7 @@ Here's your Midjourney V7 prompt:
 **Why this works:**
 - [Explain key choices: lighting, composition, style elements]
 - [Explain parameter choices]
-- [Note V7-specific benefits for this prompt]
+- [Note anything version-specific about this prompt]
 
 **How to use (Discord):**
 [If no references: Ready to paste directly into Midjourney]
@@ -390,7 +389,7 @@ Create in `prompts/midjourney/` with structure:
 > Purpose: [what it's for]
 > Style: [image type]
 > Aspect Ratio: [ratio]
-> Model: V7
+> Model: [version, e.g. V8.2]
 > Platform: [Web App / Discord]
 
 ---
@@ -434,7 +433,7 @@ Create in `prompts/midjourney/` with structure:
 [Suggestions for refinement]
 - Try Draft Mode (toggle in Model panel on web, or add --draft on Discord)
 - Adjust --stylize up/down for more/less artistic interpretation
-- Add --style raw for more literal interpretation
+- Add --raw for more literal interpretation
 - **Web App note**: UI controls (Image Size, Stylization sliders) may override text parameters
 ```
 
@@ -450,45 +449,40 @@ Create in `prompts/midjourney/` with structure:
 - **Make delivery easy** — Clipboard is fastest for most users
 - **Handle image references clearly** — Tell users exactly how to include their images in Midjourney
 
-## V7 Key Features
+## Version Differences
 
-- **Superior prompt understanding** — More accurate interpretation of complex prompts
-- **Better coherence** — Improved hands, bodies, and object relationships
-- **Richer textures and details** — Higher quality output by default
-- **Draft Mode** — 10x faster, half cost for exploration
-- **Personalization ON by default** — V7 applies learned preferences automatically
-- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
+The `midjourney-prompting` skill holds the full table. In short: V8.2 is the default and uses the Edit Model for reference images (attach on the web, `--edit [URL]` in Discord); V8.1 added `--hd`; V7 has Draft Mode and Omni Reference (`--oref`, `--ow`); `--cref` is V6 only; `--niji 7` is the current anime model.
 
 ## Common Prompt Patterns
 
 **Photorealistic portrait:**
 - Include camera, lens, aperture, lighting
-- Use `--style raw` for realism
+- Use `--raw` for realism
 - Describe subject in detail (age, features, expression, clothing)
-- V7 handles skin texture and eyes exceptionally well
+- Current models handle skin texture and eyes well, so describe them rather than adding quality words
 
 **Artistic illustration:**
 - Reference artist or style explicitly
 - Use higher --stylize (250-500)
 - Focus on mood and color palette
-- V7's improved coherence helps with complex compositions
+- Current models keep complex compositions coherent, so describe the full scene
 
 **Product shot:**
 - Describe surface, lighting setup, background
-- Use `--style raw` for clean results
+- Use `--raw` for clean results
 - Include professional product photography terminology
 
 **Landscape:**
 - Include time of day, weather, atmosphere
 - Describe depth and composition
 - Consider cinematic or fine art references
-- V7 excels at atmospheric effects
+- Atmospheric effects (fog, haze, light rays) render well when named explicitly
 
 **Character design:**
 - Full description: pose, outfit, expression, distinguishing features
 - Use a character reference for consistency across generations (`--oref` in V7, attached images with the Edit Model in V8)
 - Include art style reference
-- V7's coherence improvements make complex characters more reliable
+- Describe distinguishing features explicitly; references keep them consistent across images
 
 ## User's Request
 

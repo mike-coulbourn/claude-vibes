@@ -165,7 +165,7 @@ Different cameras suggest different aesthetic qualities:
 ### Using Film Stocks in Prompts
 
 ```
-Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --style raw
+Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --raw
 ```
 
 **Note**: Film stocks add saturation, contrast, vignette, and grain. Results vary due to training data — experiment.
@@ -213,7 +213,7 @@ Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --style raw
 [clothing details], [environment/setting],
 [lighting type], [camera] [lens] [aperture],
 [film stock if desired]
---ar [ratio] --style raw
+--ar [ratio] --raw
 ```
 
 **Example**:
@@ -221,7 +221,7 @@ Portrait, Kodak Portra 400, soft window light, 85mm lens --ar 2:3 --style raw
 45-year-old man with gray beard and weathered skin, wearing wool sweater,
 seated in rustic cabin, soft window light mixed with warm firelight,
 Hasselblad, 80mm lens, f/2.8, Kodak Portra 400
---ar 4:5 --style raw
+--ar 4:5 --raw
 ```
 
 ---
@@ -231,14 +231,14 @@ Hasselblad, 80mm lens, f/2.8, Kodak Portra 400
 ```
 [Product] on [surface material], [background],
 [lighting setup], professional product photography,
-[camera if desired] --ar [ratio] --style raw
+[camera if desired] --ar [ratio] --raw
 ```
 
 **Example**:
 ```
 Luxury watch on black marble surface, dark gradient background,
 dramatic side lighting with subtle rim light, professional product photography,
-Phase One --ar 1:1 --style raw
+Phase One --ar 1:1 --raw
 ```
 
 ---
@@ -303,7 +303,7 @@ clean studio lighting, white seamless background, soft shadows
 | Forgetting lighting direction | Specify where light comes from |
 | Over-complicating lighting setup | Start simple, add complexity |
 | Using incompatible terms | Avoid mixing film looks with digital |
-| Ignoring --style raw | Essential for photorealism |
+| Ignoring --raw | Essential for photorealism |
 
 ---
 

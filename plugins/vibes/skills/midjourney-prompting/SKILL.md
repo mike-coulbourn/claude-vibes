@@ -3,9 +3,9 @@ name: midjourney-prompting
 description: Use when writing, fixing, or refining Midjourney prompts in any style, including photography, illustration, anime, and fine art, or when choosing Midjourney parameters and reference images. Keywords - Midjourney, MJ prompt, --ar, --stylize, --chaos, --sref style reference, character and omni reference, lighting and camera terms, image generation prompt.
 ---
 
-# Midjourney V7 Prompting Guide
+# Midjourney Prompting Guide
 
-> **Version note, last verified September 2026.** This guide was written against Midjourney V7, and the current default is V8.2 (released July 24, 2026). Prompt structure, lighting and camera vocabulary, and most parameters carry across versions. Reference features do not: V8.1 and V8.2 replace Omni Reference and Character Reference with the Edit Model, and other V7 features such as Draft Mode and the `--q` values may differ in V8. Ask which version the user is on, and check https://docs.midjourney.com with WebSearch before relying on a version-specific claim here.
+> **Version note, last verified September 2026.** The current default is V8.2, and this guide covers V7, V8.1, V8.2, and Niji 7. Midjourney ships new versions a few times a year, so if the user names a newer one, or a parameter behaves unexpectedly, check https://docs.midjourney.com with WebSearch before relying on a version-specific claim here.
 
 ## Quick Reference: Prompt Structure
 
@@ -52,7 +52,8 @@ rule of thirds composition --ar 3:2
 | `--weird` / `--w` | Unusual aesthetics | 0-3000 | 0 |
 | `--no` | Exclude elements | Words (comma-separated) | - |
 | `--seed` | Reproducibility | 0-4294967295 | Random |
-| `--style raw` | Less MJ beautification | - | Off |
+| `--raw` | Less Midjourney beautification, closer prompt adherence (older prompts wrote `--style raw`) | - | Off |
+| `--hd` / `--sd` | V8.1+: 2048px or 1024px render | - | `--sd` |
 | `--tile` | Seamless patterns | - | Off |
 
 ### Reference Parameters
@@ -87,14 +88,14 @@ See [reference/parameters.md](reference/parameters.md) for complete details.
 ```
 [Age] [ethnicity if relevant] [gender] [action/pose], [clothing],
 [environment], [lighting type], [camera] [lens] [aperture],
-[film stock if desired] --ar [ratio] --style raw
+[film stock if desired] --ar [ratio] --raw
 ```
 
 **Example**:
 ```
 30-year-old woman with freckles and auburn hair, wearing cream
 linen shirt, sitting in sun-drenched cafe, soft window light,
-Canon EOS R5, 85mm lens, f/1.8, Kodak Portra 400 --ar 2:3 --style raw
+Canon EOS R5, 85mm lens, f/1.8, Kodak Portra 400 --ar 2:3 --raw
 ```
 
 ### Illustration/Art
@@ -114,13 +115,13 @@ enchanted woodland, dappled sunlight, ethereal and mysterious
 ### Anime/Manga (Niji Mode)
 
 ```
-[Subject], [action/pose], [environment], [style notes] --niji 6
+[Subject], [action/pose], [environment], [style notes] --niji 7
 ```
 
 **Example**:
 ```
 A fierce warrior princess, dynamic action pose, cherry blossom
-battlefield, dramatic lighting, detailed armor --niji 6
+battlefield, dramatic lighting, detailed armor --niji 7
 ```
 
 ---
@@ -158,7 +159,7 @@ Which feature does this depends on the Midjourney version, so check the user's v
 
 | Version | Feature | How |
 |---------|---------|-----|
-| V8.1, V8.2 (V8.2 is the default since July 2026) | **Edit Model** | Attach up to four reference images in the Imagine bar ("Attach to prompt"). No parameter. Prompts may be instructions, such as "make this girl into a real character" |
+| V8.1, V8.2 (V8.2 is the default since July 2026) | **Edit Model** | On the web, attach up to four reference images in the Imagine bar ("Attach to prompt"). In Discord, end the prompt with `--edit` followed by the image URLs, separated by spaces. Prompts may be instructions, such as "make this girl into a real character" |
 | V7 | **Omni Reference** | `--oref [image_URL]`, one image only, with `--ow` for weight |
 | V6 | Character Reference | `--cref [image_URL]` with `--cw 0-100`. Not supported in V7 or later |
 
@@ -198,20 +199,22 @@ flowers::-0.5
 
 ---
 
-## V7 Key Features
+## Versions: What Changes and What Doesn't
 
-V7 is Midjourney's latest and most capable model:
+Ask which version the user is on when the request involves reference images, speed or cost modes, or resolution. Everything else in this guide (prompt structure, the 7 elements, lighting and camera vocabulary, `--ar`, `--stylize`, `--chaos`, `--weird`, `--no`, `--seed`, `--sref`, `--raw`) applies across V7 and V8.
 
-- **Superior prompt understanding** — More accurate interpretation of complex prompts
-- **Better coherence** — Improved hands, bodies, and object relationships
-- **Richer textures and details** — Higher quality output by default
-- **Draft Mode** — 10x faster, half cost for exploration (`--draft`)
-- **Personalization ON by default** — V7 applies learned preferences automatically
-- **Omni Reference** — `--oref` replaces V6's `--cref` for characters and objects
+| Version | Status | What is specific to it |
+|---------|--------|------------------------|
+| **V8.2** | Default since July 24, 2026 | Tuned for aesthetics, image quality, and Personalization. Uses the Edit Model for reference images, editing, and retexturing |
+| **V8.1** | Released April 14, 2026 | About 4 to 5 times faster than earlier versions and holds small prompt details better. Adds HD images: `--hd` renders 2048px without upscaling (1.3 GPU minutes against 0.8 for `--sd`). Add `--raw` for even closer prompt adherence |
+| **V7** | Default June 2025 to June 2026; select with `--v 7` | Draft Mode (`--draft`, half the GPU cost) and Omni Reference (`--oref`). `--q` accepts 1, 2, or 4 |
+| **Niji 7** | Released January 9, 2026; `--niji 7` | Anime and illustration model. More literal than Niji 6, so vague "vibey" prompts behave differently, with a cleaner, flatter look |
+
+Source: https://docs.midjourney.com Version and Parameter List articles, last verified September 2026.
 
 ---
 
-## V7 Best Practices
+## Best Practices
 
 ### DO
 
@@ -219,13 +222,13 @@ V7 is Midjourney's latest and most capable model:
 - Use natural language clearly
 - Include time of day, weather, specific elements
 - Place important elements early in prompt
-- Use `--style raw` for photorealism and precise control
-- Use `--draft` for quick exploration iterations
-- Leverage V7's improved coherence for complex scenes
+- Use `--raw` for photorealism and precise control
+- In V7, use `--draft` for cheap exploration before committing to a full render
+- In V8, write Edit Model prompts as instructions when changing an existing image ("make the jacket red")
 
 ### DON'T (Junk Words to Avoid)
 
-V7 produces high quality by default — these waste tokens:
+Current models produce high quality by default, so these add nothing:
 - 4k, 6k, 8k, 16k, ultra 4k
 - Octane, unreal, v-ray, lumion
 - HDR, high-resolution
@@ -256,7 +259,7 @@ A storefront sign that says "BAKERY"
 - Use double quotes only (single quotes don't work)
 - Keep text SHORT (5 words or fewer)
 - Include context: "sign that says", "text reading"
-- Use `--style raw` for better accuracy
+- Use `--raw` for better accuracy
 - Lower `--stylize` helps text clarity
 
 ---
@@ -269,7 +272,7 @@ A storefront sign that says "BAKERY"
 | Using "don't/without" | Words ignored or reversed | Use `--no` parameter |
 | Prompt overload | Confused output | Keep under ~40 words |
 | Too many --no items | Contradictory exclusions | Limit to essential exclusions |
-| Ignoring --style raw | Over-stylized photos | Use raw for photorealism |
+| Ignoring --raw | Over-stylized photos | Use raw for photorealism |
 | Not saving seeds | Can't reproduce results | Note seeds for favorites |
 
 ---
@@ -301,7 +304,7 @@ For detailed camera settings, lighting terminology, and film stocks, see [refere
 **Product shot**:
 ```
 [Product] on [surface], [lighting], professional product photography,
-clean background --ar 1:1 --style raw
+clean background --ar 1:1 --raw
 ```
 
 **Landscape**:

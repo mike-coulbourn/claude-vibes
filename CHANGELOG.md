@@ -2,6 +2,14 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 2.0.2
+
+Midjourney skill and command checked against docs.midjourney.com for V8.2:
+
+- Version table covering V8.2 (default since July 2026), V8.1 (`--hd`, faster), V7 (Draft Mode, Omni Reference), and Niji 7. The command no longer assumes V7.
+- The Edit Model takes attached images on the web and `--edit [URL]` in Discord. 2.0.1 wrongly said it has no parameter.
+- `--raw` replaces the older `--style raw`, and the anime examples use `--niji 7`.
+
 ## 2.0.1
 
 - `midjourney-prompting`: `--cref` is V6 only. V7 uses Omni Reference (`--oref`, `--ow` 1 to 1000), and V8.1/V8.2, the default since July 2026, use the Edit Model with up to four attached images. Thanks to @sbley for the report (#5).
