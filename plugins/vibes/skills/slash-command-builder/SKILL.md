@@ -18,6 +18,8 @@ Create effective custom slash commands for Claude Code with proper structure, dy
 - Bash execution: [execute: command] (requires `allowed-tools: Bash(...)`)
 - File references: `@path/to/file`
 
+**Placeholder notice — read before writing any command file**: `[execute: command]` is NOT real syntax. It is a stand-in used throughout this skill and its reference files, because Claude Code runs the real bash-injection syntax when a skill file loads, so writing it here literally would execute every example. The real syntax is an exclamation mark immediately followed by the command wrapped in single backticks, placed at the start of a line or after whitespace. When generating a command file for the user, always convert each `[execute: command]` to that real form; a command file containing the literal text `[execute: ...]` does nothing.
+
 **Frontmatter**: Optional YAML with `description`, `allowed-tools`, `argument-hint`, `model`
 
 ## The Slash Command Creation Workflow
@@ -271,7 +273,7 @@ Recent commits: [execute: git log --oneline -5]
 
 **Requirements**:
 1. Must include `allowed-tools: Bash(...)`
-2. Use [execute: command] syntax (backticks required)
+2. Use the real injection syntax in the generated file (`[execute: command]` here is a placeholder; see the Placeholder notice in Quick Reference)
 3. Output is captured and included in prompt
 
 **Security**: Limit bash access with specific tool patterns:
@@ -384,7 +386,7 @@ disable-model-invocation: false               # Optional, prevent auto-calling
 
 **Solutions**:
 - Add frontmatter: `allowed-tools: Bash(command:*)`
-- Use correct syntax: [execute: command]
+- Use the real injection syntax, not the literal `[execute: command]` placeholder (see the Placeholder notice in Quick Reference)
 - Test command in terminal first
 
 ### Issue: File references not working
