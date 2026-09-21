@@ -190,7 +190,7 @@ Commands and agents for work outside the development workflow: research, copy, s
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:TOOLKIT/midjourney-prompt` | Craft effective Midjourney V7 prompts through guided discovery |
+| `/claude-vibes:TOOLKIT/midjourney-prompt` | Craft Midjourney prompts through guided discovery (covers V8.2, V8.1, V7, and Niji 7) |
 | `/claude-vibes:TOOLKIT/nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
 | `/claude-vibes:TOOLKIT/research` | Deep research on any topic |
 | `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
@@ -207,6 +207,8 @@ Commands and agents for work outside the development workflow: research, copy, s
 - `hook-generator` - Write several opening hooks for a video
 - `nano-banana-pro-expert` - Guidance for Nano Banana Pro image generation
 - `sponsor-script-writer` - Write scripts for sponsored and affiliate videos
+
+---
 
 ### 02-BUILD (implementation)
 
@@ -229,15 +231,15 @@ Build features methodically. Plan each feature, implement with best practices, a
 
 ### 03-SHIP (deployment)
 
-Ship with confidence. Run checks, commit cleanly, and create PRs.
+Check, commit, push, and open a pull request. The commit command confirms its message with you first, and nothing force-pushes without your approval.
 
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:03-SHIP/01-pre-commit` | Run linting, tests, and pre-commit checks |
-| `/claude-vibes:03-SHIP/02-commit` | Create a clean commit with descriptive message |
-| `/claude-vibes:03-SHIP/03-push` | Push to remote branch |
-| `/claude-vibes:03-SHIP/04-pr` | Create pull request with summary |
+| `/claude-vibes:03-SHIP/01-pre-commit` | Check uncommitted changes before shipping |
+| `/claude-vibes:03-SHIP/02-commit` | Commit with a generated, descriptive message |
+| `/claude-vibes:03-SHIP/03-push` | Commit and push to the remote branch |
+| `/claude-vibes:03-SHIP/04-pr` | Commit, push, and open a pull request |
 
 ---
 
@@ -250,7 +252,7 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 |---------|-------------|
 | `/claude-vibes:04-DEBUG/01-diagnose-issue` | Investigate and identify root cause |
 | `/claude-vibes:04-DEBUG/02-fix-issue` | Apply the fix with minimal changes |
-| `/claude-vibes:04-DEBUG/03-verify-fix` | Verify fix works correctly |
+| `/claude-vibes:04-DEBUG/03-verify-fix` | Verify the fix and record it in `LOGS.json` |
 
 **Agents:**
 - `diagnostician` - Deep investigation and root cause analysis
@@ -279,11 +281,9 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 
 ---
 
----
-
 ## Skills
 
-Skills are knowledge packs that Claude loads on its own when a conversation calls for them. You never invoke them by name. The commands and agents above lean on them, and they also work in any ordinary conversation once the plugin is installed.
+Skills are knowledge packs that Claude loads on its own when a conversation calls for them, in any conversation once the plugin is installed. The commands and agents above rely on them. You can also run one directly, which is how you would normally start the two thinking tools: `/claude-vibes:interview-me` and `/claude-vibes:graph-engineering`.
 
 | Area | Skills |
 |------|--------|
@@ -295,7 +295,7 @@ Skills are knowledge packs that Claude loads on its own when a conversation call
 
 `platform-optimization` and `midjourney-prompting` describe fast-moving targets. Each carries a last-verified date and tells Claude to check current sources before relying on specific numbers.
 
-**Building your own skills, agents, hooks, or plugins?** Version 1 shipped builder skills for that. Anthropic now maintains better ones alongside the product, so install `plugin-dev` and `skill-creator` from the official marketplace (`/plugin marketplace add anthropics/claude-plugins-official`).
+**Building your own skills, agents, hooks, or plugins?** Version 1 shipped builder skills for that. Anthropic now maintains better ones alongside the product, so install those instead: `/plugin install plugin-dev@claude-plugins-official` and `/plugin install skill-creator@claude-plugins-official`. Claude Code adds that marketplace automatically. If it reports the marketplace as not found, run `/plugin marketplace add anthropics/claude-plugins-official` first.
 
 ---
 
@@ -313,42 +313,26 @@ These servers start automatically when the plugin is enabled:
 | **Taskmaster** | AI-powered task management | [github.com/eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master) |
 | **Whois** | Domain/IP lookup | [@mcp-server/whois-mcp](https://www.npmjs.com/package/@mcp-server/whois-mcp) |
 
-**Usage Tips:**
-- Add `use context7` to prompts for current library documentation
-- Cross-session learning uses Claude Code's native agent memory (stored in `.claude/agent-memory/` in your project), so no memory server is needed
-- Taskmaster config is created automatically during installation (step 4)
+Notes:
+- Add `use context7` to a prompt to pull current library documentation. Context7 is a hosted service, so those lookups leave your machine.
+- Taskmaster and Whois run locally through `npx`. The roadmap command sets Taskmaster up the first time you run it.
+- Cross-session learning uses Claude Code's native agent memory, stored in `.claude/agent-memory/` in your project, so there is no memory server. Commit that folder to share it with your team, or add it to `.gitignore` to keep it private.
 
 ### Optional servers (setup required)
 
-Add these based on your workflow. Each requires authentication or additional setup.
+None of these are needed by the plugin. They are the ones that pair well with it, and each asks you to sign in the first time you use it (run `/mcp` inside Claude Code). All use the HTTP transport, since Claude Code has deprecated SSE.
 
-#### Version control and issues
+| Server | Purpose | Install |
+|--------|---------|---------|
+| **GitHub** | Pull requests and issues | `claude mcp add --transport http github https://api.githubcopilot.com/mcp/ --header "Authorization: Bearer YOUR_GITHUB_PAT"` |
+| **Linear** | Issue tracking | `claude mcp add --transport http linear https://mcp.linear.app/mcp` |
+| **Sentry** | Error tracking | `claude mcp add --transport http sentry https://mcp.sentry.dev/mcp` |
+| **Supabase** | Database and backend | `claude mcp add --transport http supabase https://mcp.supabase.com/mcp` |
+| **Vercel** | Hosting and deployments | `claude mcp add --transport http vercel https://mcp.vercel.com` |
+| **Cloudflare** | Edge deployment | `claude mcp add --transport http cloudflare https://mcp.cloudflare.com/mcp` |
+| **Playwright** | Browser automation (local) | `claude mcp add playwright -- npx @playwright/mcp@latest` |
 
-| Server | Purpose | Install | Docs |
-|--------|---------|---------|------|
-| **GitHub** | PR/issue management | `claude mcp add --transport http github https://api.githubcopilot.com/mcp` | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
-| **Linear** | Issue tracking | Connect via `/mcp` | [linear.app/changelog/2025-05-01-mcp](https://linear.app/changelog/2025-05-01-mcp) |
-
-#### Debugging and testing
-
-| Server | Purpose | Install | Docs |
-|--------|---------|---------|------|
-| **Sentry** | Error tracking | `claude mcp add --transport http sentry https://mcp.sentry.dev/mcp` | [docs.sentry.io/product/sentry-mcp](https://docs.sentry.io/product/sentry-mcp/) |
-| **Playwright** | Browser automation | `claude mcp add playwright -- npx @playwright/mcp@latest` | [github.com/microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) |
-
-#### Database and backend
-
-| Server | Purpose | Install | Docs |
-|--------|---------|---------|------|
-| **Supabase** | Database management | Configure via JSON | [supabase.com/docs/guides/getting-started/mcp](https://supabase.com/docs/guides/getting-started/mcp) |
-| **PostgreSQL** | SQL queries | `claude mcp add-json "postgres" '{"command":"npx","args":["-y","@modelcontextprotocol/server-postgres"]}'` | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
-
-#### Deployment
-
-| Server | Purpose | Install | Docs |
-|--------|---------|---------|------|
-| **Cloudflare** | Edge deployment | `claude mcp add --transport sse cloudflare https://mcp.cloudflare.com/sse` | [github.com/cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) |
-| **Vercel** | Frontend hosting | `claude mcp add-json "vercel" '{"command":"npx","args":["-y","vercel-mcp"]}'` | [vercel.com/docs/mcp/vercel-mcp](https://vercel.com/docs/mcp/vercel-mcp) |
+Vendors change these endpoints, so if one fails, check the vendor's MCP page or the [Claude Code MCP guide](https://code.claude.com/docs/en/mcp).
 
 ### Keep the list short
 
@@ -361,47 +345,45 @@ Every MCP server adds to Claude Code's startup time, so add one only when you ne
 ```
 claude-vibes/
 ├── .claude-plugin/
-│   └── marketplace.json         # Plugin marketplace manifest
-├── README.md                    # This file
+│   └── marketplace.json         # Marketplace manifest
+├── .github/                     # CI workflow, issue and PR templates
+├── scripts/
+│   └── validate_plugin.py       # Checks frontmatter, references, links, and counts
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CLAUDE.md                    # The vibe coding framework this repo is built with
 └── plugins/
-    └── vibes/                   # Bundled plugin
+    └── vibes/                   # The plugin
         ├── .claude-plugin/
-        │   └── plugin.json      # Plugin manifest with MCP servers
+        │   └── plugin.json      # Plugin manifest, including MCP servers
         ├── commands/
-        │   ├── 00-BRAND/        # Brand Identity
-        │   ├── 01-START/        # Discovery & Planning
+        │   ├── 00-BRAND/        # Brand identity
+        │   ├── 01-START/        # Discovery and planning
         │   ├── 02-BUILD/        # Implementation
-        │   ├── 03-SHIP/         # Deployment
+        │   ├── 03-SHIP/         # Commit, push, pull request
         │   ├── 04-DEBUG/        # Debugging
-        │   ├── 05-REFACTOR/     # Code Evolution
-        │   └── TOOLKIT/         # Specialized Tools
+        │   ├── 05-REFACTOR/     # Improving existing code
+        │   └── TOOLKIT/         # Research, copy, scripts, image prompts
         ├── agents/
-        │   ├── BRANDING/        # Brand identity agents
-        │   ├── CODING/          # Development agents
-        │   └── TOOLKIT/         # Utility agents
-        └── skills/              # Agent enhancement skills
+        │   ├── BRANDING/
+        │   ├── CODING/
+        │   └── TOOLKIT/
+        └── skills/              # 21 knowledge skills
 ```
+
+---
+
+## Contributing, security, and license
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request, and [CHANGELOG.md](CHANGELOG.md) for what changed in each release. Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md). If a skill teaches something that is out of date, open an issue with the "Outdated or wrong content" form. Released under the [MIT License](LICENSE).
 
 ---
 
 ## References
 
-### Plugins
-- [Plugins Overview](https://code.claude.com/docs/en/plugins) - Install and create plugins
-- [Plugins Reference](https://code.claude.com/docs/en/plugins-reference) - Technical specifications
-- [Plugin Announcement](https://www.anthropic.com/news/claude-code-plugins) - Introduction to the plugin system
-
-### Plugin components
-- [Slash Commands](https://code.claude.com/docs/en/slash-commands) - Custom command syntax
-- [Subagents](https://code.claude.com/docs/en/sub-agents) - Specialized agent configuration
-- [Hooks Reference](https://code.claude.com/docs/en/hooks) - Event-driven automation
-- [Agent Skills](https://www.anthropic.com/news/skills) - Model-invoked capabilities
-
-### MCP (Model Context Protocol)
-- [Claude Code MCP](https://docs.anthropic.com/en/docs/claude-code/mcp) - Connect to external tools
-- [Introducing MCP](https://www.anthropic.com/news/model-context-protocol) - Protocol overview
-
-### Claude Code
-- [Claude Code Overview](https://docs.anthropic.com/en/docs/claude-code/overview) - Getting started
-- [Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) - Agentic coding patterns
-
+- [Plugins](https://code.claude.com/docs/en/plugins) and the [plugins reference](https://code.claude.com/docs/en/plugins-reference)
+- [Skills and custom commands](https://code.claude.com/docs/en/skills), which are now one system
+- [Subagents](https://code.claude.com/docs/en/sub-agents)
+- [MCP in Claude Code](https://code.claude.com/docs/en/mcp)
+- [Claude Code overview](https://code.claude.com/docs/en/overview) and [best practices](https://code.claude.com/docs/en/best-practices)
