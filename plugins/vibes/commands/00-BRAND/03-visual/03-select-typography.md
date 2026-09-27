@@ -251,4 +251,4 @@ After the founder approves the typography:
    - Accessibility verification
    - Quick reference
 
-3. **Next step:** "Visual phase complete! Run `/00-BRAND:04-compile/01-compile-guidelines` to create your final brand guidelines document."
+3. **Next step:** "Visual phase complete! Run `/claude-vibes:00-BRAND:04-compile:01-compile-guidelines` to create your final brand guidelines document."

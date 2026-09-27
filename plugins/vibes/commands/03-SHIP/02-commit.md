@@ -147,7 +147,7 @@ EOF
 "Committed successfully!"
 - Show commit hash
 - Summarize what was committed
-- Suggest next step: `/03-push` to push, or continue working
+- Suggest next step: `/claude-vibes:03-SHIP:03-push` to push, or continue working
 
 ## Guidelines
 

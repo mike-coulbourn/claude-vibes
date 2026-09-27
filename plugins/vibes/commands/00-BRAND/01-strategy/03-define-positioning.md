@@ -198,4 +198,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
 2. Save to `docs/00-BRAND/01-STRATEGY/03-positioning.md`
 
-3. **Next step:** "Run `/00-BRAND:01-strategy/04-select-archetype` to select your brand archetype."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:01-strategy:04-select-archetype` to select your brand archetype."

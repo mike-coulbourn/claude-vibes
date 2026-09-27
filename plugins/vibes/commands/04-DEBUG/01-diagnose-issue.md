@@ -187,7 +187,7 @@ Use a descriptive name derived from the issue (e.g., `diagnosis-search-500-error
 - **Never save a diagnosis doc without user validation**
 - Don't guess at the fix. Understand the problem first
 - If unsure, ask more questions
-- Save diagnosis for handoff to `/02-fix-issue` only after validation
+- Save diagnosis for handoff to `/claude-vibes:04-DEBUG:02-fix-issue` only after validation
 
 ## Output
 
@@ -197,7 +197,7 @@ When diagnosis is complete:
 2. **Validate diagnosis with AskUserQuestion** before proceeding
 3. Confirm root cause and fix approach with user
 4. Save validated diagnosis to docs/04-DEBUG/
-5. Next step: "Run `/02-fix-issue docs/04-DEBUG/diagnosis-<name>.md` to implement the fix"
+5. Next step: "Run `/claude-vibes:04-DEBUG:02-fix-issue docs/04-DEBUG/diagnosis-<name>.md` to implement the fix"
 
 ### Record diagnostic findings
 

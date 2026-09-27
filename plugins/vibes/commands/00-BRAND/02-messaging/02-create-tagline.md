@@ -203,4 +203,4 @@ After the founder selects their tagline:
    - Usage guidelines
    - Other finalists (for reference)
 
-3. **Next step:** "Run `/00-BRAND:02-messaging/03-write-pitch` to create your elevator pitches."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:02-messaging:03-write-pitch` to create your elevator pitches."

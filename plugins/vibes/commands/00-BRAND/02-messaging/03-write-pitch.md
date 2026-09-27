@@ -232,4 +232,4 @@ After the founder selects their pitches:
    - Hook options
    - Testing framework
 
-3. **Next step:** "Messaging phase complete! Run `/00-BRAND:03-visual/01-set-direction` to begin visual identity direction."
+3. **Next step:** "Messaging phase complete! Run `/claude-vibes:00-BRAND:03-visual:01-set-direction` to begin visual identity direction."

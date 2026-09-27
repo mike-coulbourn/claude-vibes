@@ -240,4 +240,4 @@ After the founder approves the palette:
    - Accessibility validation
    - Quick reference
 
-3. **Next step:** "Run `/00-BRAND:03-visual/03-select-typography` to develop your brand typography."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:03-visual:03-select-typography` to develop your brand typography."

@@ -88,7 +88,7 @@ git push
 "Couldn't push. You might not have permission to this repository, or you need to authenticate."
 
 **Branch protection:**
-"This branch is protected and can't be pushed to directly. Consider using `/04-pr` to create a pull request instead."
+"This branch is protected and can't be pushed to directly. Consider using `/claude-vibes:03-SHIP:04-pr` to create a pull request instead."
 
 ### 5. Report success
 
@@ -97,7 +97,7 @@ git push
 - Commits pushed: 2
 - Remote: `origin`
 
-"Your changes are now on the remote. To create a pull request, run `/04-pr`."
+"Your changes are now on the remote. To create a pull request, run `/claude-vibes:03-SHIP:04-pr`."
 
 ## Guidelines
 
@@ -112,7 +112,7 @@ git push
 User-provided message: $ARGUMENTS
 
 If uncommitted changes exist and $ARGUMENTS is provided, use that message.
-If no message provided, generate one following the format in `/02-commit`.
+If no message provided, generate one following the format in `/claude-vibes:03-SHIP:02-commit`.
 
 ## Edge cases
 

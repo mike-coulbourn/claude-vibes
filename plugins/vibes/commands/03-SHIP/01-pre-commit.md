@@ -112,6 +112,6 @@ After all checks complete:
 1. Summary of files checked (uncommitted changes only)
 2. Issues found (if any) with plain language explanations
 3. Next steps:
-   - `/02-commit`: Just commit locally
-   - `/03-push`: Commit and push to remote
-   - `/04-pr`: Commit, push, and create PR
+   - `/claude-vibes:03-SHIP:02-commit`: Just commit locally
+   - `/claude-vibes:03-SHIP:03-push`: Commit and push to remote
+   - `/claude-vibes:03-SHIP:04-pr`: Commit, push, and create PR

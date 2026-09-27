@@ -271,13 +271,13 @@ When review is complete:
 2. What's good about the code
 3. Any accepted trade-offs
 4. Confirmation that LOGS.json was updated
-5. Next step: "Run `/03-SHIP/01-pre-commit` before committing"
+5. Next step: "Run `/claude-vibes:03-SHIP:01-pre-commit` before committing"
 
 **If failed:**
 1. Clear list of blocking issues
 2. How to fix each one
 3. Offer to fix them
-4. "Re-run `/03-review-code` after fixes"
+4. "Re-run `/claude-vibes:02-BUILD:03-review-code` after fixes"
 
 ### Keep review findings
 

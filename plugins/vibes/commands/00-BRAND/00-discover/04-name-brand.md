@@ -19,7 +19,7 @@ You are helping a startup founder finalize their brand name. Whether they alread
 **Competitive Audit** (optional):
 @docs/00-BRAND/00-DISCOVERY/03-competitive-audit.md
 
-**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
+**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/claude-vibes:00-BRAND:00-discover:01-discover-founder` first.
 
 Optional input: $ARGUMENTS
 
@@ -229,4 +229,4 @@ After the founder confirms their selection:
 1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
 2. Save to `docs/00-BRAND/00-DISCOVERY/04-brand-name.md` using the Final Selection Documentation Template from the skill
 
-3. **Next step:** "Discovery phase complete! Run `/00-BRAND:01-strategy/01-define-purpose` to begin building your brand strategy."
+3. **Next step:** "Discovery phase complete! Run `/claude-vibes:00-BRAND:01-strategy:01-define-purpose` to begin building your brand strategy."

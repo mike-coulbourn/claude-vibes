@@ -108,38 +108,38 @@ Build a startup's brand identity step by step, from the founder interview to a f
 #### Discovery phase
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:00-BRAND/00-discover/01-discover-founder` | Interactive founder discovery session |
-| `/claude-vibes:00-BRAND/00-discover/02-research-audience` | Research and define target audience |
-| `/claude-vibes:00-BRAND/00-discover/03-audit-competitors` | Audit competitor brands |
-| `/claude-vibes:00-BRAND/00-discover/04-name-brand` | Finalize brand name with domain verification |
+| `/claude-vibes:00-BRAND:00-discover:01-discover-founder` | Interactive founder discovery session |
+| `/claude-vibes:00-BRAND:00-discover:02-research-audience` | Research and define target audience |
+| `/claude-vibes:00-BRAND:00-discover:03-audit-competitors` | Audit competitor brands |
+| `/claude-vibes:00-BRAND:00-discover:04-name-brand` | Finalize brand name with domain verification |
 
 #### Strategy phase
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:00-BRAND/01-strategy/01-define-purpose` | Define purpose, mission, and vision |
-| `/claude-vibes:00-BRAND/01-strategy/02-define-values` | Define differentiating core values |
-| `/claude-vibes:00-BRAND/01-strategy/03-define-positioning` | Develop positioning strategy |
-| `/claude-vibes:00-BRAND/01-strategy/04-select-archetype` | Select brand archetype |
-| `/claude-vibes:00-BRAND/01-strategy/05-define-voice` | Define brand voice and personality |
+| `/claude-vibes:00-BRAND:01-strategy:01-define-purpose` | Define purpose, mission, and vision |
+| `/claude-vibes:00-BRAND:01-strategy:02-define-values` | Define differentiating core values |
+| `/claude-vibes:00-BRAND:01-strategy:03-define-positioning` | Develop positioning strategy |
+| `/claude-vibes:00-BRAND:01-strategy:04-select-archetype` | Select brand archetype |
+| `/claude-vibes:00-BRAND:01-strategy:05-define-voice` | Define brand voice and personality |
 
 #### Messaging phase
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:00-BRAND/02-messaging/01-create-framework` | Create messaging framework |
-| `/claude-vibes:00-BRAND/02-messaging/02-create-tagline` | Create tagline options |
-| `/claude-vibes:00-BRAND/02-messaging/03-write-pitch` | Write elevator pitch variations |
+| `/claude-vibes:00-BRAND:02-messaging:01-create-framework` | Create messaging framework |
+| `/claude-vibes:00-BRAND:02-messaging:02-create-tagline` | Create tagline options |
+| `/claude-vibes:00-BRAND:02-messaging:03-write-pitch` | Write elevator pitch variations |
 
 #### Visual phase
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:00-BRAND/03-visual/01-set-direction` | Create visual identity direction |
-| `/claude-vibes:00-BRAND/03-visual/02-choose-colors` | Develop brand color palette |
-| `/claude-vibes:00-BRAND/03-visual/03-select-typography` | Develop typography system |
+| `/claude-vibes:00-BRAND:03-visual:01-set-direction` | Create visual identity direction |
+| `/claude-vibes:00-BRAND:03-visual:02-choose-colors` | Develop brand color palette |
+| `/claude-vibes:00-BRAND:03-visual:03-select-typography` | Develop typography system |
 
 #### Compile phase
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:00-BRAND/04-compile/01-compile-guidelines` | Compile final brand guidelines |
+| `/claude-vibes:00-BRAND:04-compile:01-compile-guidelines` | Compile final brand guidelines |
 
 **Agents:**
 - `brand-archetype-selector` - Jungian archetype selection
@@ -167,11 +167,11 @@ Plan before you build. Discover the problem, scope the MVP, design the foundatio
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:01-START/01-discover` | Understand the problem space and user needs |
-| `/claude-vibes:01-START/02-scope` | Define MVP boundaries and prioritize features |
-| `/claude-vibes:01-START/03-architect` | Plan technical approach and system design |
-| `/claude-vibes:01-START/04-plan-roadmap` | Scope the whole project with `graph-engineering` and save the approved graph as the roadmap |
-| `/claude-vibes:01-START/05-track-progress` | See where the project stands, move the next task forward, and change the roadmap on purpose |
+| `/claude-vibes:01-START:01-discover` | Understand the problem space and user needs |
+| `/claude-vibes:01-START:02-scope` | Define MVP boundaries and prioritize features |
+| `/claude-vibes:01-START:03-architect` | Plan technical approach and system design |
+| `/claude-vibes:01-START:04-plan-roadmap` | Scope the whole project with `graph-engineering` and save the approved graph as the roadmap |
+| `/claude-vibes:01-START:05-track-progress` | See where the project stands, move the next task forward, and change the roadmap on purpose |
 
 **Agents:**
 - `market-validator` - Research market viability and competition
@@ -206,14 +206,14 @@ Commands and agents for work outside the development workflow: research, copy, s
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:TOOLKIT/midjourney-prompt` | Craft Midjourney prompts through guided discovery (covers V8.2, V8.1, V7, and Niji 7) |
-| `/claude-vibes:TOOLKIT/nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
-| `/claude-vibes:TOOLKIT/research` | Deep research on any topic |
-| `/claude-vibes:TOOLKIT/research-brand` | Research a brand for sponsored content |
-| `/claude-vibes:TOOLKIT/scale-business` | Strategic business growth consultation with prioritized opportunities |
-| `/claude-vibes:TOOLKIT/write` | Write emails, messages, notes naturally |
-| `/claude-vibes:TOOLKIT/write-copy` | Write marketing copy for a page, ad, or email |
-| `/claude-vibes:TOOLKIT/write-sponsor-script` | Write scripts for sponsored/affiliate content |
+| `/claude-vibes:TOOLKIT:midjourney-prompt` | Craft Midjourney prompts through guided discovery (covers V8.2, V8.1, V7, and Niji 7) |
+| `/claude-vibes:TOOLKIT:nano-banana-prompt` | Craft prompts for Nano Banana Pro image generation |
+| `/claude-vibes:TOOLKIT:research` | Deep research on any topic |
+| `/claude-vibes:TOOLKIT:research-brand` | Research a brand for sponsored content |
+| `/claude-vibes:TOOLKIT:scale-business` | Strategic business growth consultation with prioritized opportunities |
+| `/claude-vibes:TOOLKIT:write` | Write emails, messages, notes naturally |
+| `/claude-vibes:TOOLKIT:write-copy` | Write marketing copy for a page, ad, or email |
+| `/claude-vibes:TOOLKIT:write-sponsor-script` | Write scripts for sponsored/affiliate content |
 
 **Agents:**
 - `brand-researcher` - Deep brand research for content creators
@@ -233,9 +233,9 @@ Build features methodically. Plan each feature, implement with best practices, a
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:02-BUILD/01-plan-code` | Plan the code implementation |
-| `/claude-vibes:02-BUILD/02-write-code` | Write the code with production quality |
-| `/claude-vibes:02-BUILD/03-review-code` | Review code for production readiness |
+| `/claude-vibes:02-BUILD:01-plan-code` | Plan the code implementation |
+| `/claude-vibes:02-BUILD:02-write-code` | Write the code with production quality |
+| `/claude-vibes:02-BUILD:03-review-code` | Review code for production readiness |
 
 **Agents:**
 - `code-architect` - Design feature architecture and patterns
@@ -252,10 +252,10 @@ Check, commit, push, and open a pull request. The commit command confirms its me
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:03-SHIP/01-pre-commit` | Check uncommitted changes before shipping |
-| `/claude-vibes:03-SHIP/02-commit` | Commit with a generated, descriptive message |
-| `/claude-vibes:03-SHIP/03-push` | Commit and push to the remote branch |
-| `/claude-vibes:03-SHIP/04-pr` | Commit, push, and open a pull request |
+| `/claude-vibes:03-SHIP:01-pre-commit` | Check uncommitted changes before shipping |
+| `/claude-vibes:03-SHIP:02-commit` | Commit with a generated, descriptive message |
+| `/claude-vibes:03-SHIP:03-push` | Commit and push to the remote branch |
+| `/claude-vibes:03-SHIP:04-pr` | Commit, push, and open a pull request |
 
 ---
 
@@ -266,9 +266,9 @@ Fix bugs systematically. Diagnose root causes, apply fixes, and verify they work
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:04-DEBUG/01-diagnose-issue` | Investigate and identify root cause |
-| `/claude-vibes:04-DEBUG/02-fix-issue` | Apply the fix with minimal changes |
-| `/claude-vibes:04-DEBUG/03-verify-fix` | Verify the fix and record it in `LOGS.json` |
+| `/claude-vibes:04-DEBUG:01-diagnose-issue` | Investigate and identify root cause |
+| `/claude-vibes:04-DEBUG:02-fix-issue` | Apply the fix with minimal changes |
+| `/claude-vibes:04-DEBUG:03-verify-fix` | Verify the fix and record it in `LOGS.json` |
 
 **Agents:**
 - `diagnostician` - Deep investigation and root cause analysis
@@ -285,9 +285,9 @@ Improve code without changing behavior. Assess opportunities, refactor safely, a
 **Commands:**
 | Command | Description |
 |---------|-------------|
-| `/claude-vibes:05-REFACTOR/01-assess-improvements` | Identify improvement opportunities |
-| `/claude-vibes:05-REFACTOR/02-improve-code` | Apply improvements with behavior preservation |
-| `/claude-vibes:05-REFACTOR/03-validate-improvements` | Verify behavior unchanged |
+| `/claude-vibes:05-REFACTOR:01-assess-improvements` | Identify improvement opportunities |
+| `/claude-vibes:05-REFACTOR:02-improve-code` | Apply improvements with behavior preservation |
+| `/claude-vibes:05-REFACTOR:03-validate-improvements` | Verify behavior unchanged |
 
 **Agents:**
 - `assessor` - Code archaeology and improvement analysis

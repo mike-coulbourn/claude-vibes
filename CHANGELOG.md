@@ -2,6 +2,13 @@
 
 Notable changes to the claude-vibes plugin. Versions follow the `version` field in `plugins/vibes/.claude-plugin/plugin.json`.
 
+## 3.1.1
+
+Fixes found by running the plugin live in Claude Code 2.1.282.
+
+- Commands in subfolders register with a colon between every level, such as `/claude-vibes:02-BUILD:01-plan-code`. The README and the "next step" hints in 33 commands used slashes or short names like `/02-scope`, which are not real command names. All now use the full name, and `validate_plugin.py` rejects the old forms.
+- `01-discover`, `02-scope`, and `03-architect` listed `TodoWrite`, which Claude Code now replaces with `TaskCreate` and `TaskUpdate` and leaves off by default on newer models. They list the Task tools instead.
+
 ## 3.1.0
 
 `graph-engineering` is now available throughout the workflow, not only for the roadmap.

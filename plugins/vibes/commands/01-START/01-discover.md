@@ -1,7 +1,7 @@
 ---
 description: Discover the problem space, users, and value proposition
 argument-hint: Your project idea or problem to solve
-allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, WebSearch, WebFetch, Write, TaskCreate, TaskUpdate
 ---
 
 # Discovery phase
@@ -216,4 +216,4 @@ When discovery feels complete:
    - Audience insights (Jobs-to-be-Done, emotional drivers)
    - Identified risks and opportunities
 
-3. Tell the user they're ready for `/02-scope` to define features and MVP
+3. Tell the user they're ready for `/claude-vibes:01-START:02-scope` to define features and MVP

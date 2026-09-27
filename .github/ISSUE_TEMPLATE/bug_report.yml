@@ -6,7 +6,7 @@ body:
     id: what
     attributes:
       label: Which command, agent, or skill?
-      placeholder: /claude-vibes:TOOLKIT/research, brand-tagline-creator, midjourney-prompting
+      placeholder: /claude-vibes:TOOLKIT:research, brand-tagline-creator, midjourney-prompting
     validations:
       required: true
   - type: textarea

@@ -113,14 +113,24 @@ for path in command_files:
     if data is not None:
         check_description(path, data)
 
-# Plugin agents in subfolders register as plugin:folder:name, so every reference must use that form.
-reference = re.compile(rf"{PLUGIN_NAME}:[A-Za-z0-9_-]+(?::[A-Za-z0-9_-]+)?")
-for path in command_files + agent_files:
+# Plugin agents and commands in subfolders register as plugin:folder:name, so every reference must use that form.
+command_ids = {
+    f"{PLUGIN_NAME}:" + ":".join(path.relative_to(PLUGIN / "commands").with_suffix("").parts) for path in command_files
+}
+command_names = {command_id.rsplit(":", 1)[1] for command_id in command_ids}
+known_ids = agent_ids | command_ids | {f"{PLUGIN_NAME}:{name}" for name in skill_names}
+reference = re.compile(rf"{PLUGIN_NAME}:[A-Za-z0-9_-]+(?::[A-Za-z0-9_-]+)*")
+# A command named by a short or slash-separated form, such as `/02-scope` or `/03-SHIP/01-pre-commit`, does not resolve.
+short_command = re.compile(r"`/(?!" + PLUGIN_NAME + r":)[A-Za-z0-9:/_-]*?([A-Za-z0-9_-]+)`")
+readme = ROOT / "README.md"
+for path in command_files + agent_files + [readme]:
     for number, line in enumerate(path.read_text(encoding="utf-8").split("\n"), 1):
         for ref in reference.findall(line):
-            is_skill = ref.count(":") == 1 and ref.split(":")[1] in skill_names
-            if ref not in agent_ids and not is_skill:
-                fail(path, f"line {number}: '{ref}' is not a known agent or skill")
+            if ref not in known_ids:
+                fail(path, f"line {number}: '{ref}' is not a known agent, command, or skill")
+        for match in short_command.finditer(line):
+            if match.group(1) in command_names:
+                fail(path, f"line {number}: '{match.group(0)}' should use the full /{PLUGIN_NAME}:<FOLDER>:<name> form")
 
 link = re.compile(r"\[[^\]]*\]\(([^)\s]+)\)")
 inline_code = re.compile(r"`[^`\n]*`")

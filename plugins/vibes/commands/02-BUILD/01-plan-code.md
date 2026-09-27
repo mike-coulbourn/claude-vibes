@@ -67,7 +67,7 @@ The roadmap at `docs/01-START/roadmap.md` is the project's single source of trut
 **If the roadmap exists:** read it, including its alignment contract.
 
 1. If `$ARGUMENTS` names a task, match it to a roadmap task by ID or by name and use that task. If nothing matches, go to the scope gate below.
-2. Otherwise, find the unchecked tasks whose dependencies are all ticked, in phase order. If the first ready task is not a `build` task, name it and point the user to `/05-track-progress`, which handles every task type, before offering any build task. Skipping it would put the project out of order.
+2. Otherwise, find the unchecked tasks whose dependencies are all ticked, in phase order. If the first ready task is not a `build` task, name it and point the user to `/claude-vibes:01-START:05-track-progress`, which handles every task type, before offering any build task. Skipping it would put the project out of order.
 3. Recommend the first ready `build` task.
 
 If the task has a `gate` field, it needs the user's approval before work starts. Ask for it with AskUserQuestion, and do not treat approval of the roadmap as approval of this task.
@@ -90,7 +90,7 @@ Options:
 - Other
 ```
 
-**If they want other tasks:** list the unchecked tasks that are ready, with their phase and type, and let them pick. If they pick a task that is not a `build` task (brand, content, setup, legal, launch, or something they do by hand), point them to `/05-track-progress`, which handles every task type.
+**If they want other tasks:** list the unchecked tasks that are ready, with their phase and type, and let them pick. If they pick a task that is not a `build` task (brand, content, setup, legal, launch, or something they do by hand), point them to `/claude-vibes:01-START:05-track-progress`, which handles every task type.
 
 **Scope gate.** If `$ARGUMENTS` or the user's answer describes work that is not on the roadmap, stop before planning it.
 
@@ -109,7 +109,7 @@ Options:
 
 Then edit `docs/01-START/roadmap.md` in place to match the answer, using the line format described in that file's tasks, update "Last updated", and add a dated line to its change log saying what changed and why. Run `date +%Y-%m-%d` for the date. Build only what the roadmap contains.
 
-**If there is no roadmap:** say so, and recommend running `/04-plan-roadmap` first so the whole project is scoped. If the user wants to go ahead anyway, use `$ARGUMENTS` as the task, or ask:
+**If there is no roadmap:** say so, and recommend running `/claude-vibes:01-START:04-plan-roadmap` first so the whole project is scoped. If the user wants to go ahead anyway, use `$ARGUMENTS` as the task, or ask:
 
 ```
 Question: "What would you like to build next?"
@@ -249,7 +249,7 @@ Once the user approves, document the plan:
 **Summary:**
 - What we're building
 - Why it matters
-- The literal line `Roadmap task ID: <id>` (if the task came from the roadmap), which `/02-write-code` looks for
+- The literal line `Roadmap task ID: <id>` (if the task came from the roadmap), which `/claude-vibes:02-BUILD:02-write-code` looks for
 
 **Approach:**
 - Files to create/modify
@@ -266,7 +266,7 @@ Once the user approves, document the plan:
 - Let the agent explore LOGS.json; you read only what's relevant
 - Prefer simple solutions over clever ones
 - Flag complexity early, because it's better to discuss than surprise
-- The plan should be specific enough that `/02-write-code` can execute it
+- The plan should be specific enough that `/claude-vibes:02-BUILD:02-write-code` can execute it
 
 ## Output
 
@@ -277,7 +277,7 @@ When planning is complete:
    - If manual: `docs/02-BUILD/plan-[feature-name].md`
 
 2. **Save the plan** with:
-   - The literal line `Roadmap task ID: <id>` (if the task came from the roadmap), which `/02-write-code` looks for
+   - The literal line `Roadmap task ID: <id>` (if the task came from the roadmap), which `/claude-vibes:02-BUILD:02-write-code` looks for
    - Summary of what's being built
    - Approach and file changes
    - Patterns to follow
@@ -288,10 +288,10 @@ When planning is complete:
 ```
 Question: "Plan saved to [filename]. Ready to implement?"
 Options:
-- Yes, run /02-write-code now
+- Yes, run /claude-vibes:02-BUILD:02-write-code now
 - I want to review the plan file first
 - I have more questions
 - Other
 ```
 
-If they're ready, tell them: "Run `/02-write-code [plan-file-path]` to start implementing!"
+If they're ready, tell them: "Run `/claude-vibes:02-BUILD:02-write-code [plan-file-path]` to start implementing!"

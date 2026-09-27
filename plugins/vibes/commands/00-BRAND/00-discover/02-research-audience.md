@@ -13,7 +13,7 @@ You are helping a startup founder deeply understand their target audience. This 
 **Founder Brief** (required):
 @docs/00-BRAND/00-DISCOVERY/01-founder-brief.md
 
-**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
+**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/claude-vibes:00-BRAND:00-discover:01-discover-founder` first.
 
 Optional focus area: $ARGUMENTS
 
@@ -158,4 +158,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/00-DISCOVERY/` directory exists
 2. Save the audience research to `docs/00-BRAND/00-DISCOVERY/02-audience-research.md`
 
-3. **Next step:** "Run `/00-BRAND:00-discover/03-audit-competitors` to analyze your competitors."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:00-discover:03-audit-competitors` to analyze your competitors."

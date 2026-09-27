@@ -10,7 +10,7 @@ python3 scripts/validate_plugin.py
 claude plugin validate ./plugins/vibes
 ```
 
-The first command checks frontmatter, agent and skill references, skills that agents preload, relative links, MCP version pinning, and the counts claimed in `marketplace.json`. CI runs it on every PR. The second is Claude Code's own manifest check.
+The first command checks frontmatter, agent, command, and skill references, skills that agents preload, relative links, MCP version pinning, and the counts claimed in `marketplace.json`. CI runs it on every PR. The second is Claude Code's own manifest check.
 
 ## Conventions
 
@@ -25,7 +25,7 @@ Agents that write prose for the user preload the writing skill with `skills: nat
 - Teach what Claude does not already know: decision rules, templates, and hard-won specifics. Skip textbook summaries.
 - Mark facts that go stale (platform numbers, tool versions) with a last-verified date.
 
-**Commands** live in `plugins/vibes/commands/`. Ask the user questions with the AskUserQuestion tool rather than plain text. When you add, remove, or rename a command or agent, update its row in `README.md` and the counts in `.claude-plugin/marketplace.json`.
+**Commands** live in `plugins/vibes/commands/<FOLDER>/<name>.md` and register the same way, with a colon between every level, so refer to them in full as `/claude-vibes:02-BUILD:01-plan-code` or `/claude-vibes:00-BRAND:00-discover:01-discover-founder`. Short forms such as `/01-plan-code` are not command names, and CI rejects them. Ask the user questions with the AskUserQuestion tool rather than plain text. When you add, remove, or rename a command or agent, update its row in `README.md` and the counts in `.claude-plugin/marketplace.json`.
 
 **Writing style.** These files are prompts, and their style carries into what the plugin writes for users. Use plain words and sentence-case headings. Keep em dashes out of running text (they are fine inside a real person's quotation). State an instruction once, without capitals such as CRITICAL or ALWAYS, and give the reason when it is not obvious. Leave sample copy, "words to avoid" lists, and deliberately bad examples as they are.
 

@@ -281,17 +281,17 @@ When validation is complete:
 3. Improvement metrics achieved
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-SHIP/01-pre-commit`: Run pre-commit checks
-   - `/03-SHIP/02-commit`: Just commit locally
-   - `/03-SHIP/03-push`: Commit and push
-   - `/03-SHIP/04-pr`: Commit, push, and create PR
+   - `/claude-vibes:03-SHIP:01-pre-commit`: Run pre-commit checks
+   - `/claude-vibes:03-SHIP:02-commit`: Just commit locally
+   - `/claude-vibes:03-SHIP:03-push`: Commit and push
+   - `/claude-vibes:03-SHIP:04-pr`: Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
 2. Whether they're behavior changes or test failures
 3. How to fix each one
 4. Offer to adjust the refactoring
-5. "Re-run `/03-validate-improvements` after fixes"
+5. "Re-run `/claude-vibes:05-REFACTOR:03-validate-improvements` after fixes"
 
 ### Record validation insights
 

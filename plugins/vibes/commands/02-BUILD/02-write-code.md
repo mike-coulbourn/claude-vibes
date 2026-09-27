@@ -43,7 +43,7 @@ Question: "Which plan should I implement?"
 Options:
 - Let me find available plans (I'll check docs/02-BUILD/)
 - I'll provide the path
-- Run /01-plan-code first to create one
+- Run /claude-vibes:02-BUILD:01-plan-code first to create one
 - Other
 ```
 
@@ -53,7 +53,7 @@ Read the docs/01-START/ files and the plan file. Understand what needs to be bui
 
 ### 2. Find the roadmap task (if present)
 
-Check the plan file for a roadmap task ID. Plan files from `/01-plan-code` include one when the project has a roadmap at `docs/01-START/roadmap.md`:
+Check the plan file for a roadmap task ID. Plan files from `/claude-vibes:02-BUILD:01-plan-code` include one when the project has a roadmap at `docs/01-START/roadmap.md`:
 - Look for "Roadmap task ID: [id]" or similar
 - Read that task's done-when line in the roadmap, because that is the finish line for this build
 - Keep the ID so you can tick the task off later
@@ -143,14 +143,14 @@ Next up:
 
 What would you like to do?"
 Options:
-- Continue building: run /01-plan-code for the next task
-- Review this code first: run /03-review-code
-- See the whole roadmap: run /05-track-progress
+- Continue building: run /claude-vibes:02-BUILD:01-plan-code for the next task
+- Review this code first: run /claude-vibes:02-BUILD:03-review-code
+- See the whole roadmap: run /claude-vibes:01-START:05-track-progress
 - Take a break: I'll come back later
 - Other
 ```
 
-If the next task is not a `build` task, say so and point to `/05-track-progress`, which handles checks, brand, content, setup, legal, launch, and by-hand tasks. If the roadmap has a `check` task that depends on this one, recommend running it next, because a task someone else has not checked is not yet proven.
+If the next task is not a `build` task, say so and point to `/claude-vibes:01-START:05-track-progress`, which handles checks, brand, content, setup, legal, launch, and by-hand tasks. If the roadmap has a `check` task that depends on this one, recommend running it next, because a task someone else has not checked is not yet proven.
 
 **If the done-when line is only partly true:** leave the box unticked, tell the user exactly what is still missing, and use AskUserQuestion to offer finishing it now or splitting the remainder into a new subtask in the roadmap (with a dated change-log line).
 
@@ -173,7 +173,7 @@ Options:
 - Other
 ```
 
-**If they want to update tasks:** edit the affected tasks in `docs/01-START/roadmap.md` in place, show the user the before and after, update "Last updated", and add a dated line to the roadmap's change log saying what changed and why. If the change touches the alignment contract's objective or definition of done, say so and recommend re-running `/04-plan-roadmap` so the graph is approved again.
+**If they want to update tasks:** edit the affected tasks in `docs/01-START/roadmap.md` in place, show the user the before and after, update "Last updated", and add a dated line to the roadmap's change log saying what changed and why. If the change touches the alignment contract's objective or definition of done, say so and recommend re-running `/claude-vibes:01-START:04-plan-roadmap` so the graph is approved again.
 
 ## Guidelines
 
@@ -223,8 +223,8 @@ The code-guru agent keeps its own project memory. In its prompt, ask it to recor
 ```
 Question: "Build complete! What's next?"
 Options:
-- Review the code: run /03-review-code
-- Ship it: run /01-pre-commit
-- Build the next task: run /01-plan-code
+- Review the code: run /claude-vibes:02-BUILD:03-review-code
+- Ship it: run /claude-vibes:03-SHIP:01-pre-commit
+- Build the next task: run /claude-vibes:02-BUILD:01-plan-code
 - Other
 ```

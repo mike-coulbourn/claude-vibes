@@ -188,4 +188,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
 2. Save to `docs/00-BRAND/01-STRATEGY/05-brand-personality-voice.md`
 
-3. **Next step:** "Strategy phase complete! Run `/00-BRAND:02-messaging/01-create-framework` to begin building your brand messaging."
+3. **Next step:** "Strategy phase complete! Run `/claude-vibes:00-BRAND:02-messaging:01-create-framework` to begin building your brand messaging."

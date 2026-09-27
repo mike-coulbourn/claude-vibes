@@ -203,4 +203,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
 2. Save to `docs/00-BRAND/01-STRATEGY/04-archetype.md`
 
-3. **Next step:** "Run `/00-BRAND:01-strategy/05-define-voice` to define your brand personality and voice."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:01-strategy:05-define-voice` to define your brand personality and voice."

@@ -16,7 +16,7 @@ You are helping a vibe coder keep a whole project on track. The roadmap is the p
 @docs/01-START/roadmap.md
 @docs/01-START/02-scope.md
 
-**If no roadmap loaded above:** say that the project has no roadmap yet, recommend running `/04-plan-roadmap`, and stop.
+**If no roadmap loaded above:** say that the project has no roadmap yet, recommend running `/claude-vibes:01-START:04-plan-roadmap`, and stop.
 
 ## Your role
 
@@ -66,7 +66,7 @@ Options:
 
 How a task gets done depends on its type:
 
-- **build**: tell the user to run `/01-plan-code`, which picks the task up from the roadmap, then `/02-write-code`, which ticks it off. Do not write code from this command.
+- **build**: tell the user to run `/claude-vibes:02-BUILD:01-plan-code`, which picks the task up from the roadmap, then `/claude-vibes:02-BUILD:02-write-code`, which ticks it off. Do not write code from this command.
 - **brand**: name the BRAND command in the task's "how" and tell the user to run it. The brand commands save their own documents under `docs/00-BRAND/`.
 - **content** and **research**: name the TOOLKIT command in the task's "how" (`write-copy`, `write-sponsor-script`, `research`, `research-brand`, `midjourney-prompt`, and so on) and tell the user to run it.
 - **check**: a review of another task's output, owned by someone other than whoever did the work. Run the command in its "how" (for example `03-review-code`). If the check fails, the task it reviewed is not done. Untick both lines: remove `[x]` and the `| done:` field from the reviewed task and from the check, add `| note: failed <date>, <what failed>` to the check line, and log it in the change log. Then say what failed and send the work back.
@@ -87,7 +87,7 @@ If the done-when line is only partly true, leave the box unticked, say what is m
 
 ### 5. Change the roadmap on purpose
 
-New ideas arrive constantly, and that is how projects drift. When the user wants something that is not on the roadmap, check it against the alignment contract, then ask where it belongs before anyone acts on it. If it would change the contract's objective, its definition of done, or what it optimizes for, say so plainly: that is a change of direction, not a new task, and it means re-running `/04-plan-roadmap` to re-approve the graph.
+New ideas arrive constantly, and that is how projects drift. When the user wants something that is not on the roadmap, check it against the alignment contract, then ask where it belongs before anyone acts on it. If it would change the contract's objective, its definition of done, or what it optimizes for, say so plainly: that is a change of direction, not a new task, and it means re-running `/claude-vibes:01-START:04-plan-roadmap` to re-approve the graph.
 
 ```
 Question: "[The new thing] isn't on the roadmap. Where should it go?"

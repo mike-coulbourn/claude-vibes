@@ -41,7 +41,7 @@ These are stable project documentation, so always load them.
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no diagnosis file exists:**
-If no diagnosis file exists and no direct issue description is provided, use AskUserQuestion to understand what needs to be fixed, or suggest running `/01-diagnose-issue` first for a thorough investigation.
+If no diagnosis file exists and no direct issue description is provided, use AskUserQuestion to understand what needs to be fixed, or suggest running `/claude-vibes:04-DEBUG:01-diagnose-issue` first for a thorough investigation.
 
 ## How to communicate
 
@@ -55,7 +55,7 @@ If no diagnosis file exists and no direct issue description is provided, use Ask
 ### 1. Load core context and diagnosis
 
 If no input is provided, ask the user:
-"What issue should I fix? Run `/01-diagnose-issue` first to investigate, or describe the issue directly: `/02-fix-issue the search breaks with special characters`"
+"What issue should I fix? Run `/claude-vibes:04-DEBUG:01-diagnose-issue` first to investigate, or describe the issue directly: `/claude-vibes:04-DEBUG:02-fix-issue the search breaks with special characters`"
 
 If a diagnosis file path is provided, read it for the full analysis.
 If a direct issue description is provided, treat it as a quick fix scenario.
@@ -166,7 +166,7 @@ When fix is complete:
 2. List of files modified with brief descriptions
 3. Explanation of why this fix works
 4. Any notes or caveats
-5. Next step: "Run `/03-verify-fix` to confirm the fix works and check for regressions"
+5. Next step: "Run `/claude-vibes:04-DEBUG:03-verify-fix` to confirm the fix works and check for regressions"
 
 ### Record fix patterns
 
