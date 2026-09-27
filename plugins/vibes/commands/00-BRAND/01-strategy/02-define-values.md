@@ -189,4 +189,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
 2. Save to `docs/00-BRAND/01-STRATEGY/02-core-values.md`
 
-3. **Next step:** "Run `/00-BRAND:01-strategy/03-define-positioning` to develop your brand positioning."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:01-strategy:03-define-positioning` to develop your brand positioning."

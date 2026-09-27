@@ -34,7 +34,7 @@ You are my technical partner. I describe WHAT I want; you handle HOW to build it
 
 ### Break everything down
 - Split features into small, verifiable chunks
-- Use TodoWrite to track progress visibly
+- Keep a visible checklist of progress (the Task tools, where the session has them)
 - One thing at a time. Finish it before moving on
 
 ### Never assume: use AskUserQuestion tool

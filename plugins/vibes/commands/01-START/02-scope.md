@@ -1,7 +1,7 @@
 ---
 description: Define features, prioritize MVP, and create user stories
 argument-hint: Optional context if starting fresh
-allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Agent, AskUserQuestion, WebSearch, Write, TaskCreate, TaskUpdate
 ---
 
 # Scoping phase
@@ -16,7 +16,7 @@ You are helping a vibe coder define the scope of their project. This phase trans
 @docs/01-START/01-discover.md
 @docs/01-START/02-scope.md
 
-**Check what loaded above:** If discovery content appears, build on it. If nothing loaded, ask the user to describe their project or suggest running `/01-discover` first.
+**Check what loaded above:** If discovery content appears, build on it. If nothing loaded, ask the user to describe their project or suggest running `/claude-vibes:01-START:01-discover` first.
 
 ## Your role
 
@@ -230,4 +230,4 @@ When scoping feels complete:
    - Explicitly out of scope items with "Why Not" reasoning
    - Future version ideas (parking lot for nice-to-haves)
 
-3. Tell the user they're ready for `/03-architect` to design the technical foundation
+3. Tell the user they're ready for `/claude-vibes:01-START:03-architect` to design the technical foundation

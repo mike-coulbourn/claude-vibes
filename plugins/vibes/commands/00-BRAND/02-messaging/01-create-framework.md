@@ -190,4 +190,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/02-MESSAGING/` directory exists
 2. Save to `docs/00-BRAND/02-MESSAGING/01-messaging-framework.md`
 
-3. **Next step:** "Run `/00-BRAND:02-messaging/02-create-tagline` to develop your brand tagline."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:02-messaging:02-create-tagline` to develop your brand tagline."

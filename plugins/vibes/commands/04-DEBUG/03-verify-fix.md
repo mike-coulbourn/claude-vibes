@@ -272,16 +272,16 @@ When verification is complete:
 3. Any accepted trade-offs
 4. Confirmation that LOGS.json was updated
 5. Next steps:
-   - `/03-SHIP/01-pre-commit`: Run pre-commit checks
-   - `/03-SHIP/02-commit`: Just commit locally
-   - `/03-SHIP/03-push`: Commit and push
-   - `/03-SHIP/04-pr`: Commit, push, and create PR
+   - `/claude-vibes:03-SHIP:01-pre-commit`: Run pre-commit checks
+   - `/claude-vibes:03-SHIP:02-commit`: Just commit locally
+   - `/claude-vibes:03-SHIP:03-push`: Commit and push
+   - `/claude-vibes:03-SHIP:04-pr`: Commit, push, and create PR
 
 **If failed:**
 1. Clear list of issues found
 2. How to fix each one
 3. Offer to fix them
-4. "Re-run `/03-verify-fix` after fixes"
+4. "Re-run `/claude-vibes:04-DEBUG:03-verify-fix` after fixes"
 
 ### Record verification insights
 

@@ -231,4 +231,4 @@ After the founder approves the direction:
    - Photography style
    - Visual system overview
 
-3. **Next step:** "Run `/00-BRAND:03-visual/02-choose-colors` to develop your brand color palette."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:03-visual:02-choose-colors` to develop your brand color palette."

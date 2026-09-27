@@ -22,7 +22,7 @@ You are helping a startup founder articulate WHY their brand exists. Using Simon
 **Brand Name** (optional):
 @docs/00-BRAND/00-DISCOVERY/04-brand-name.md
 
-**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/00-BRAND:00-discover/01-discover-founder` first.
+**Check above:** If no founder brief content loaded, **STOP** and tell the user to run `/claude-vibes:00-BRAND:00-discover:01-discover-founder` first.
 
 Optional additional context: $ARGUMENTS
 
@@ -182,4 +182,4 @@ After the agent returns:
 1. Ensure `docs/00-BRAND/01-STRATEGY/` directory exists
 2. Save to `docs/00-BRAND/01-STRATEGY/01-purpose-mission-vision.md`
 
-3. **Next step:** "Run `/00-BRAND:01-strategy/02-define-values` to define your brand's core values."
+3. **Next step:** "Run `/claude-vibes:00-BRAND:01-strategy:02-define-values` to define your brand's core values."

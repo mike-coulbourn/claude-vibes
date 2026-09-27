@@ -57,9 +57,9 @@ Some requests here are bigger than one pass: a refactoring that spans many files
 
 If no input is provided:
 "What would you like me to assess for refactoring opportunities? Examples:
-- A specific file: `/01-assess-improvements src/api/search.ts`
-- A directory: `/01-assess-improvements src/utils/`
-- A concept: `/01-assess-improvements the authentication flow`"
+- A specific file: `/claude-vibes:05-REFACTOR:01-assess-improvements src/api/search.ts`
+- A directory: `/claude-vibes:05-REFACTOR:01-assess-improvements src/utils/`
+- A concept: `/claude-vibes:05-REFACTOR:01-assess-improvements the authentication flow`"
 
 If input is vague, use AskUserQuestion to clarify:
 - "You mentioned 'the API'. Should I assess all API endpoints, or focus on a specific area?"
@@ -195,7 +195,7 @@ Save the assessment to `docs/05-REFACTOR/assessment-<topic>.md`:
 After the user has validated findings:
 - Use AskUserQuestion if prioritization isn't clear
 - Offer to proceed with specific refactorings
-- "Ready to improve? Run `/02-improve-code docs/05-REFACTOR/assessment-<topic>.md` or describe what to tackle first"
+- "Ready to improve? Run `/claude-vibes:05-REFACTOR:02-improve-code docs/05-REFACTOR/assessment-<topic>.md` or describe what to tackle first"
 
 ## Guidelines
 
@@ -206,7 +206,7 @@ After the user has validated findings:
 - Focus on impact over elegance (what actually matters)
 - Don't suggest refactoring working code just to refactor it
 - Consider the cost/benefit tradeoff for each opportunity
-- Save assessment for handoff to /02-improve-code only after validation
+- Save assessment for handoff to /claude-vibes:05-REFACTOR:02-improve-code only after validation
 
 ## Output
 
@@ -216,4 +216,4 @@ When assessment is complete:
 2. **Validate each finding with AskUserQuestion** before proceeding
 3. Update findings based on user confirmation
 4. Save validated assessment to docs/05-REFACTOR/
-5. Next step: "Run `/02-improve-code` to start improving the code"
+5. Next step: "Run `/claude-vibes:05-REFACTOR:02-improve-code` to start improving the code"

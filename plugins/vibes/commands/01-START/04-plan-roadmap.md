@@ -144,7 +144,7 @@ Let the skill run its full process, including its alignment contract and its own
 
 ### Step 3: Save the approved graph as the roadmap
 
-Once the user approves the graph, save it to `docs/01-START/roadmap.md`, so that each job leaves a record later sessions can inspect. `/01-plan-code`, `/02-write-code`, and `/05-track-progress` all read this file before doing anything, and tick jobs off as they finish.
+Once the user approves the graph, save it to `docs/01-START/roadmap.md`, so that each job leaves a record later sessions can inspect. `/claude-vibes:02-BUILD:01-plan-code`, `/claude-vibes:02-BUILD:02-write-code`, and `/claude-vibes:01-START:05-track-progress` all read this file before doing anything, and tick jobs off as they finish.
 
 **If `roadmap.md` already exists**, edit it in place with Edit and never replace it with Write. Keep every `- [x]` line with its date, and keep the whole change log. Add new tasks, note removed ones in the change log, and append a dated line. Use the template below only when the file does not exist.
 
@@ -250,4 +250,4 @@ Take each blocker to the user with AskUserQuestion, then edit the roadmap in pla
 - roadmap.md: the approved graph as a checklist of every task, which every command keeps up to date
 
 **What to do next:**
-Run `/05-track-progress` at any time to see where the project stands and what comes next, whatever kind of task it is. When the next task is code, run `/01-plan-code` and it will pick that task up from the roadmap."
+Run `/claude-vibes:01-START:05-track-progress` at any time to see where the project stands and what comes next, whatever kind of task it is. When the next task is code, run `/claude-vibes:02-BUILD:01-plan-code` and it will pick that task up from the roadmap."

@@ -129,4 +129,4 @@ When discovery feels complete:
 [Notable observations from the conversation: emotional drivers, underlying motivations, unique perspectives]
 ```
 
-4. **Next step:** "Run `/00-BRAND:00-discover/02-research-audience` to research your target audience."
+4. **Next step:** "Run `/claude-vibes:00-BRAND:00-discover:02-research-audience` to research your target audience."

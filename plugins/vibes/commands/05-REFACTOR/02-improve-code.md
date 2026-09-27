@@ -38,7 +38,7 @@ Never assume the right approach. Ask to confirm.
 
 **The code must do exactly the same thing before and after, only structured better.**
 
-Refactoring improves structure without changing behavior. Validation happens in `/03-validate-improvements`.
+Refactoring improves structure without changing behavior. Validation happens in `/claude-vibes:05-REFACTOR:03-validate-improvements`.
 
 ## Project context
 
@@ -52,7 +52,7 @@ These are stable documentation, so always load them. The refactorer agent will p
 If these files don't exist (common when using claude-vibes on an existing project), explore the codebase directly to understand the project's structure, patterns, and conventions.
 
 **Fallback if no assessment file exists:**
-If no assessment file exists, use AskUserQuestion to understand what improvements the user wants to make, or suggest running `/01-assess-improvements` first for a full analysis.
+If no assessment file exists, use AskUserQuestion to understand what improvements the user wants to make, or suggest running `/claude-vibes:05-REFACTOR:01-assess-improvements` first for a full analysis.
 
 ## How to communicate
 
@@ -67,7 +67,7 @@ If no assessment file exists, use AskUserQuestion to understand what improvement
 ### 1. Load context
 
 If no input is provided:
-"What would you like to improve? Run `/01-assess-improvements` first for a full analysis, or describe the improvement: `/02-improve-code extract the validation logic into a shared utility`"
+"What would you like to improve? Run `/claude-vibes:05-REFACTOR:01-assess-improvements` first for a full analysis, or describe the improvement: `/claude-vibes:05-REFACTOR:02-improve-code extract the validation logic into a shared utility`"
 
 If an assessment file path is provided, read it for the full analysis.
 If a direct description is provided, treat it as a targeted refactoring.
@@ -159,7 +159,7 @@ Refactoring complete!
 - Single point of change for validation logic
 - Consistent validation across endpoints
 
-Ready to validate? Run `/03-validate-improvements`
+Ready to validate? Run `/claude-vibes:05-REFACTOR:03-validate-improvements`
 ```
 
 ## Guidelines
@@ -168,7 +168,7 @@ Ready to validate? Run `/03-validate-improvements`
 - Follow existing patterns, and don't invent new approaches
 - Refactoring ≠ adding features or fixing bugs
 - Let the refactorer explore LOGS.json; read only what it references
-- Validation and testing happen in `/03-validate-improvements`
+- Validation and testing happen in `/claude-vibes:05-REFACTOR:03-validate-improvements`
 
 ## Output
 
@@ -177,7 +177,7 @@ When refactoring is complete:
 1. Summary of what was improved
 2. List of files modified with descriptions
 3. Improvement metrics (lines saved, complexity reduced, etc.)
-4. Next step: "Run `/03-validate-improvements` to verify behavior and document"
+4. Next step: "Run `/claude-vibes:05-REFACTOR:03-validate-improvements` to verify behavior and document"
 
 ### Record refactoring lessons
 

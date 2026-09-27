@@ -1,7 +1,7 @@
 ---
 description: 'Design the technical foundation: data model, APIs, and key decisions'
 argument-hint: Optional specific areas to focus on
-allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, Write, TodoWrite
+allowed-tools: Read, Glob, Grep, Skill, Agent, AskUserQuestion, Write, TaskCreate, TaskUpdate
 ---
 
 # Architecture phase
@@ -473,4 +473,4 @@ When architecture feels complete:
    - Integration dependencies
    - Scaling concerns
 
-3. Tell the user they're ready for `/04-plan-roadmap` to create the implementation roadmap
+3. Tell the user they're ready for `/claude-vibes:01-START:04-plan-roadmap` to create the implementation roadmap
